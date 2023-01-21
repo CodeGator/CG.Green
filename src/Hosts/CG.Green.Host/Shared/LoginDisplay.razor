@@ -1,0 +1,12 @@
+﻿<AuthorizeView>
+    <Authorized>
+        <MudButton Href="Identity/Account/Manage" Color="Color.Inherit">@context.User.Identity?.Name</MudButton>
+        <form method="post" action="Identity/Account/LogOut">
+            <MudButton ButtonType="ButtonType.Submit" Color="Color.Inherit">Log out</MudButton>
+        </form>
+    </Authorized>
+    <NotAuthorized>
+        @*<MudButton Link="Identity/Account/Register" Color="Color.Inherit">Register</MudButton>*@
+        <MudButton Link="Identity/Account/Login?redirectUri=/" Color="Color.Inherit">Log in</MudButton>
+    </NotAuthorized>
+</AuthorizeView>

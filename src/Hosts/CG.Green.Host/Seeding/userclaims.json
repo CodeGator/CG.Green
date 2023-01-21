@@ -1,0 +1,17 @@
+{
+  "UserClaims": [
+    {
+      "UserEmail": "bob@codegator.com",
+      "Claims": [
+        {
+          "ClaimType": "fooA",
+          "ClaimValue": "fooA-value"
+        },
+        {
+          "ClaimType": "fooB",
+          "ClaimValue": "fooB-value"
+        }
+      ]
+    }
+  ]
+}
