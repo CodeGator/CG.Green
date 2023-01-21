@@ -9,22 +9,6 @@
 
 Green is an idea for an identity microservice. The scenario is: You configure your website / microservice / mobile app / whatever to point to CG.Green, and it takes care of all the messy identity related details, for you. 
 
-### What does it look like?
-
-This is all very subject to change. But here's a sample of what I have, so far:
-
-Clients screen
-![messges](screens/clients.png)
-
-Client screen
-![messges](screens/client.png)
-
-Users screen
-![messges](screens/users.png)
-
-User screen
-![messges](screens/user.png)
-
 ### What libraries are used, on the back-end?
 
 If you're saying to yourself "Self! There's no way CodeGator wrote an entire identity microservice from scratch!", then you'd be right. Here are some of the libraries we leveraged:
