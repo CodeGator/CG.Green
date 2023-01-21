@@ -1,13 +1,9 @@
 # CG.Green: 
 
-[![Build Status](https://dev.azure.com/codegator/CG.Green/_apis/build/status/CodeGator.CG.Green?branchName=main)](https://dev.azure.com/codegator/CG.Green/_build/latest?definitionId=98&branchName=main)
+[![Build Status](https://dev.azure.com/codegator/CG.Green/_apis/build/status/CodeGator.CG.Green?branchName=main)](https://dev.azure.com/codegator/CG.Green/_build/latest?definitionId=105&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Green/index.html)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Green/98)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Green/105)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Green/discussions)
-
-#### GitHub Stats
-
-![Alt](https://repobeats.axiom.co/api/embed/41a4e82dce342ef013cf86e5b99214d7273b9659.svg "Repobeats analytics image")
 
 ### What does it do?
 
