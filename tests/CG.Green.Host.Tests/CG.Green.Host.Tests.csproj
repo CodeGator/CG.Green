@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Libraries\CG.Green.Controllers\CG.Green.Controllers.csproj" />
+    <ProjectReference Include="..\..\src\Hosts\CG.Green.Host\CG.Green.Host.csproj" />
   </ItemGroup>
 
 </Project>
