@@ -1,6 +1,4 @@
 ﻿
-using CG.Blazor.Themes;
-
 namespace CG.Green.Host.Themes;
 
 /// <summary>
@@ -20,10 +18,10 @@ public class GreenTheme : DefaultTheme<GreenTheme>
     /// </summary>
     public GreenTheme()
     {
-        // Create the Purple default palette
-        Palette.Primary = Colors.Orange.Darken2;
-        Palette.Secondary = Colors.Blue.Default;
-        Palette.Tertiary = Colors.Purple.Default;
+        // Create the default palette
+        Palette.Primary = Colors.Blue.Default;
+        Palette.Secondary = Colors.Orange.Default;
+        Palette.Tertiary = Colors.Purple.Lighten2;
         Palette.AppbarBackground = Colors.Green.Default;
     }
 

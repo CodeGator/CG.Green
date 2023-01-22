@@ -163,11 +163,6 @@ internal class ClientRepository : IClientRepository
                 nameof(ConfigurationDbContext)
                 );
 
-            // If we leave this property set EFCORE will try to add the object to
-            //   the data-context, which will fail because the mime type likely 
-            //   already exists. 
-            //entity.MimeType = null;
-
             // Add the entity to the data-store.
             _configurationDbContext.Clients.Attach(entity);
 
@@ -301,6 +296,10 @@ internal class ClientRepository : IClientRepository
 
             // Perform the client search.
             var clients = await _configurationDbContext.Clients
+                .Include(x => x.AllowedGrantTypes)
+                .Include(x => x.AllowedCorsOrigins)
+                .Include(x => x.AllowedScopes)
+                .Include(x => x.ClientSecrets)
                 .ToListAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
@@ -330,6 +329,64 @@ internal class ClientRepository : IClientRepository
     // *******************************************************************
 
     /// <inheritdoc/>
+    public virtual async Task<Client?> FindByIdAsync(
+        string clientId,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(clientId, nameof(clientId));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogDebug(
+                "Searching clients."
+                );
+
+            // Perform the client search.
+            var client = await _configurationDbContext.Clients.Where(
+                 x => x.ClientId == clientId
+                 ).Include(x => x.AllowedGrantTypes)
+                  .Include(x => x.AllowedCorsOrigins)
+                  .Include(x => x.AllowedScopes)
+                  .Include(x => x.ClientSecrets)
+                  .FirstOrDefaultAsync(
+                        cancellationToken
+                        ).ConfigureAwait(false);
+
+            // Did we fail?
+            if (client is null)
+            {
+                return null;
+            }
+
+            // Convert the entity to a model.
+            var result = client.ToModel();
+
+            // Return the results.
+            return result;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for a client by id!"
+                );
+
+            // Provider better context.
+            throw new RepositoryException(
+                message: $"The repository failed to search for a client " +
+                "by id!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
     public virtual async Task<Client> UpdateAsync(
         Client client,
         CancellationToken cancellationToken = default
@@ -350,7 +407,11 @@ internal class ClientRepository : IClientRepository
             // Look for the given entity.
             var entity = await _configurationDbContext.Clients.Where(x =>
                 x.ClientId == client.ClientId
-                ).FirstOrDefaultAsync(
+                ).Include(x => x.AllowedGrantTypes)
+                  .Include(x => x.AllowedCorsOrigins)
+                  .Include(x => x.AllowedScopes)
+                  .Include(x => x.ClientSecrets)
+                  .FirstOrDefaultAsync(
                     cancellationToken
                     ).ConfigureAwait(false);
 
@@ -369,14 +430,6 @@ internal class ClientRepository : IClientRepository
                 nameof(Client),
                 nameof(ConfigurationDbContext)
                 );
-
-            // If we leave this property set EFCORE will try to update the object
-            //   in the data-context, which will fail and isn't what we want to do
-            //   in this context anyway.
-            //entity.MimeType = null;
-
-            // Update the editable properties.
-            //entity.Extension = client.Extension;
 
             // We never change these 'read only' properties.
             _configurationDbContext.Entry(entity).Property(x => x.ClientId).IsModified = false;

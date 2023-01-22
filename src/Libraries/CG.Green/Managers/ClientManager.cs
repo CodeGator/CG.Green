@@ -299,6 +299,51 @@ internal class ClientManager : IClientManager
     // *******************************************************************
 
     /// <inheritdoc/>
+    public virtual async Task<Client?> FindByIdAsync(
+       string clientId,
+       CancellationToken cancellationToken = default
+       )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(clientId, nameof(clientId));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogTrace(
+                "Deferring to {name}",
+                nameof(IClientRepository.FindByIdAsync)
+                );
+
+            // Perform the operation.
+            var client = await _clientRepository.FindByIdAsync(
+                clientId,
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Return the results.
+            return client;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for a client by id!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for a client " +
+                "by id!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
     public virtual async Task<Client> UpdateAsync(
         Client client,
         string userName,

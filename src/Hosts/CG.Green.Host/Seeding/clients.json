@@ -12,7 +12,7 @@
       "ClientId": "cg.green.samples.blazorapp",
       "ClientSecrets": [
         {
-          "Description": null,
+          "Description": "Client secret for the green blazorf sample",
           "Value": "secret",
           "Expiration": null,
           "Type": "SharedSecret"

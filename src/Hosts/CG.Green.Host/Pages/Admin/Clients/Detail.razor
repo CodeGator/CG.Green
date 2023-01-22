@@ -1,0 +1,195 @@
+﻿@page "/admin/clients/detail/{ClientId}"
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
+
+<PageTitle>Client Details</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+@if (_model is null)
+{
+    if (_isLoading)
+    {
+        <MudText Typo="Typo.h6" Color="Color.Primary">Loading ...</MudText>
+    }
+    else
+    {
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! we couldn't find that client!</MudText>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => NavigationManager.NavigateTo("/admin/clients"))">Back to Clients</MudButton>
+    }
+}
+else
+{
+    <MudText Typo="Typo.h6">Client Details</MudText>
+    <MudText Typo="Typo.body2" Class="pb-5">Use this page to edit this client.</MudText>
+
+    <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+        <MudGrid>
+            <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField AutoFocus
+                              Required
+                              Immediate
+                              Counter="@(Globals.Models.Clients.ClientIdLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="Client Id"
+                              For="@(() => _model.ClientId)"
+                              @bind-Value="@_model.ClientId" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Required
+                              Immediate
+                              Counter="@(Globals.Models.Clients.ClientNameLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="Client Name"
+                              For="@(() => _model.ClientName)"
+                              @bind-Value="@_model.ClientName" />
+            </MudItem>
+            <MudItem xs="12">
+                    <div class="groupbox">
+                        <MudText Style="font-size:small" Typo="Typo.body2">Client Grant Types</MudText>
+                        <MudSelect T="AllowedGrantTypes"
+                            HelperText="The type of grant(s) this client will request."
+                            @bind-Value="@_selectedGrantType"
+                            Clearable
+                            Placeholder="Select a grant type">
+                            @foreach (var grantType in Enum.GetNames<AllowedGrantTypes>())
+                            {
+                                <MudSelectItem Value="@(Enum.Parse<AllowedGrantTypes>(grantType))">@grantType</MudSelectItem>
+                            }
+                        </MudSelect>
+                    </div>
+                </MudItem>
+                <MudItem xs="4">
+                    <MudCheckBox T="bool"
+                                 Class="mb-n3"
+                    @bind-Checked="_model.Enabled"
+                                 Label="Is Enabled" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Enable/disable the client.</MudText>
+                </MudItem>
+                <MudItem xs="4">
+                    <MudCheckBox T="bool"
+                                 Class="mb-n3"
+                    @bind-Checked="_model.AllowOfflineAccess"
+                                 Label="Allow Offline Access" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Allow the client offline access.</MudText>
+                </MudItem>
+                <MudItem xs="4">
+                    <MudCheckBox T="bool"
+                                 Class="mb-n3"
+                    @bind-Checked="_model.RequireRequestObject"
+                                 Label="Require Request Object" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Require a request object on authorize requests.</MudText>
+                </MudItem>
+                <MudItem xs="6">
+                    <div class="groupbox" style="height:120px">
+                        <MudTextField HelperText="Lifetime of an access token (in seconds)."
+                                      Label="Access Token Lifetime"
+                                      InputType="InputType.Number"
+                        @bind-Value="_model.AccessTokenLifetime" />
+                    </div>
+                </MudItem>
+                <MudItem xs="6">
+                    <div class="groupbox" style="height:120px">
+                        <MudText Style="font-size:small" Typo="Typo.body2">Client Scopes</MudText>
+                        <MudSelect T="string"
+                                   HelperText="The scopes this client will ask for."
+                                   MultiSelection
+                                   Clearable
+                                   Dense
+                                   Placeholder="Select one or more scopes"
+                                   @bind-SelectedValues="@_selectedScopes">
+                            @foreach (var scope in _allScopes)
+                            {
+                                <MudSelectItem Value="@scope">@scope</MudSelectItem>
+                            }
+                        </MudSelect>
+                    </div>
+                </MudItem>
+                @if (_selectedGrantType == AllowedGrantTypes.Code ||
+                       _selectedGrantType == AllowedGrantTypes.CodeAndClientCredentials)
+                {
+                    <MudCheckBox T="bool"
+                                 Class="mb-n3 ml-3"
+                                 @bind-Checked="_model.RequireClientSecret"
+                                 Label="Require Client Secret" />
+                    @if (_model.RequireClientSecret)
+                    {
+                        <MudItem xs="12">
+                            <div class="groupbox">
+                                <MudText Style="font-size:small" Typo="Typo.body2">Client Secrets</MudText>
+                                <MudTable Items="_model.ClientSecrets"
+                                          Dense
+                                          Striped
+                                          CanCancelEdit
+                                          IsEditRowSwitchingBlocked
+                                          EditTrigger="TableEditTrigger.EditButton">
+                                    <ToolBarContent>
+                                        <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                                    Variant="Variant.Filled"
+                                                    Disabled="@_isLoading"
+                                                    Color="Color.Secondary"
+                                                    OnClick="OnCreateSecretAsync">Create</MudButton>
+                                        <MudSpacer />
+                                    </ToolBarContent>
+                                    <ColGroup>
+                                        <col style="width:30%" />
+                                        <col style="width:30%" />
+                                        <col style="width:30%" />
+                                        <col style="width:40px;" />
+                                    </ColGroup>
+                                    <HeaderContent>
+                                        <MudTh><MudTableSortLabel SortBy="new Func<Secret, object>(x=>x.Expiration)">Expiration</MudTableSortLabel></MudTh>
+                                        <MudTh><MudTableSortLabel SortBy="new Func<Secret, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
+                                        <MudTh><MudTableSortLabel SortBy="new Func<Secret, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
+                                        <MudTh></MudTh>
+                                    </HeaderContent>
+                                    <RowTemplate Context="context2">
+                                        <MudTd DataLabel="Expiration">@context2.Expiration</MudTd>
+                                        <MudTd DataLabel="Description">@context2.Description</MudTd>
+                                        <MudTd DataLabel="Value">@context2.Value</MudTd>
+                                        <MudTd>
+                                            <MudIconButton Icon="@Icons.Material.Filled.Delete" OnClick="() => OnDeleteSecretAsync(context2)" Disabled="@_isLoading" />
+                                        </MudTd>
+                                    </RowTemplate>
+                                    <RowEditingTemplate Context="context2">
+                                        <MudTd DataLabel="Expiration">
+                                            <MudTextField T="DateTime?" Format="yyyy-MM-dd" InputType="InputType.Date" @bind-Value="@context2.Expiration" />
+                                        </MudTd>
+                                        <MudTd DataLabel="Description">
+                                            <MudTextField @bind-Value="@context2.Description" />
+                                        </MudTd>
+                                        <MudTd DataLabel="Value">
+                                            <MudTextField @bind-Value="@context2.Value" Required />
+                                        </MudTd>
+                                    </RowEditingTemplate>
+                                    <NoRecordsContent>
+                                        No secrets were found.
+                                    </NoRecordsContent>
+                                    <LoadingContent>
+                                        Loading secrets ...
+                                    </LoadingContent>
+                                </MudTable>
+                            </div>
+                        </MudItem>
+                    }
+                }
+                <MudItem xs="12">
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth ButtonType="ButtonType.Submit">Save Changes</MudButton>
+                </MudItem>
+        </MudGrid>
+    </EditForm>
+}
+
+
+<style>
+    .groupbox {
+        border: @($"1px solid {@GreenTheme.Instance().Palette.GrayLight} !important");
+        border-radius: 8px;
+        padding: 10px;
+    }
+</style>

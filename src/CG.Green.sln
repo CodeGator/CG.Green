@@ -42,13 +42,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50. Tools", "50. Tools", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Green.Tests", "..\tests\CG.Green.Tests\CG.Green.Tests.csproj", "{F470D2AC-D3D7-46DA-9344-86432C9E34E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.Green.Controllers.Tests", "..\tests\CG.Green.Controllers.Tests\CG.Green.Controllers.Tests.csproj", "{69E1CD35-D311-433D-81F2-79313DF3EDF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Green.Controllers.Tests", "..\tests\CG.Green.Controllers.Tests\CG.Green.Controllers.Tests.csproj", "{69E1CD35-D311-433D-81F2-79313DF3EDF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.Green.Identity.Tests", "..\tests\CG.Green.Identity.Tests\CG.Green.Identity.Tests.csproj", "{91A14891-C47C-4AA9-B6C2-46AEA6BF0CDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Green.Identity.Tests", "..\tests\CG.Green.Identity.Tests\CG.Green.Identity.Tests.csproj", "{91A14891-C47C-4AA9-B6C2-46AEA6BF0CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.Green.Data.Tests", "..\tests\CG.Green.Data.Tests\CG.Green.Data.Tests.csproj", "{BB4B457B-33FF-4C3E-8C60-27CB4FBD2E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Green.Data.Tests", "..\tests\CG.Green.Data.Tests\CG.Green.Data.Tests.csproj", "{BB4B457B-33FF-4C3E-8C60-27CB4FBD2E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.Green.Host.Tests", "..\tests\CG.Green.Host.Tests\CG.Green.Host.Tests.csproj", "{5AD5E07D-57D3-48AC-B700-315551E592F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Green.Host.Tests", "..\tests\CG.Green.Host.Tests\CG.Green.Host.Tests.csproj", "{5AD5E07D-57D3-48AC-B700-315551E592F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
