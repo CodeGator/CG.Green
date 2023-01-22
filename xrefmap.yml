@@ -4734,6 +4734,12 @@ references:
   commentId: T:CG.Green.Globals
   fullName: CG.Green.Globals
   nameWithType: Globals
+- uid: CG.Green.Globals.Caption
+  name: Caption
+  href: api/CG.Green.Globals.html#CG_Green_Globals_Caption
+  commentId: F:CG.Green.Globals.Caption
+  fullName: CG.Green.Globals.Caption
+  nameWithType: Globals.Caption
 - uid: CG.Green.Globals.Models
   name: Globals.Models
   href: api/CG.Green.Globals.Models.html
@@ -5253,6 +5259,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Clients.Index.GreenApi
   nameWithType: Index.GreenApi
+- uid: CG.Green.Host.Pages.Admin.Clients.Index.HttpContextAccessor
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.Clients.Index.html#CG_Green_Host_Pages_Admin_Clients_Index_HttpContextAccessor
+  commentId: P:CG.Green.Host.Pages.Admin.Clients.Index.HttpContextAccessor
+  fullName: CG.Green.Host.Pages.Admin.Clients.Index.HttpContextAccessor
+  nameWithType: Index.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.Clients.Index.HttpContextAccessor*
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.Clients.Index.html#CG_Green_Host_Pages_Admin_Clients_Index_HttpContextAccessor_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.Index.HttpContextAccessor
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.Index.HttpContextAccessor
+  nameWithType: Index.HttpContextAccessor
 - uid: CG.Green.Host.Pages.Admin.Clients.Index.LoadClientsAsync
   name: LoadClientsAsync()
   href: api/CG.Green.Host.Pages.Admin.Clients.Index.html#CG_Green_Host_Pages_Admin_Clients_Index_LoadClientsAsync
@@ -5357,6 +5376,116 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Clients.Index.SnackbarService
   nameWithType: Index.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Clients.Index.UserName
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.Clients.Index.html#CG_Green_Host_Pages_Admin_Clients_Index_UserName
+  commentId: P:CG.Green.Host.Pages.Admin.Clients.Index.UserName
+  fullName: CG.Green.Host.Pages.Admin.Clients.Index.UserName
+  nameWithType: Index.UserName
+- uid: CG.Green.Host.Pages.Admin.Clients.Index.UserName*
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.Clients.Index.html#CG_Green_Host_Pages_Admin_Clients_Index_UserName_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.Index.UserName
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.Index.UserName
+  nameWithType: Index.UserName
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog
+  name: NewDialog
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html
+  commentId: T:CG.Green.Host.Pages.Admin.Clients.NewDialog
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog
+  nameWithType: NewDialog
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.Cancel
+  name: Cancel()
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_Cancel
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.NewDialog.Cancel
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.Cancel()
+  nameWithType: NewDialog.Cancel()
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.Cancel*
+  name: Cancel
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_Cancel_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.NewDialog.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.Cancel
+  nameWithType: NewDialog.Cancel
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.DialogService
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_DialogService
+  commentId: P:CG.Green.Host.Pages.Admin.Clients.NewDialog.DialogService
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.DialogService
+  nameWithType: NewDialog.DialogService
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.DialogService*
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_DialogService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.NewDialog.DialogService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.DialogService
+  nameWithType: NewDialog.DialogService
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.Logger
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_Logger
+  commentId: P:CG.Green.Host.Pages.Admin.Clients.NewDialog.Logger
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.Logger
+  nameWithType: NewDialog.Logger
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.Logger*
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_Logger_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.NewDialog.Logger
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.Logger
+  nameWithType: NewDialog.Logger
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.Model
+  name: Model
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_Model
+  commentId: P:CG.Green.Host.Pages.Admin.Clients.NewDialog.Model
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.Model
+  nameWithType: NewDialog.Model
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.Model*
+  name: Model
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_Model_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.NewDialog.Model
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.Model
+  nameWithType: NewDialog.Model
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.MudDialog
+  name: MudDialog
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_MudDialog
+  commentId: P:CG.Green.Host.Pages.Admin.Clients.NewDialog.MudDialog
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.MudDialog
+  nameWithType: NewDialog.MudDialog
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.MudDialog*
+  name: MudDialog
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_MudDialog_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.NewDialog.MudDialog
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.MudDialog
+  nameWithType: NewDialog.MudDialog
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.OnValidSubmit(EditContext)
+  name: OnValidSubmit(EditContext)
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_OnValidSubmit_EditContext_
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.NewDialog.OnValidSubmit(EditContext)
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.OnValidSubmit(EditContext)
+  nameWithType: NewDialog.OnValidSubmit(EditContext)
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.OnValidSubmit*
+  name: OnValidSubmit
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_OnValidSubmit_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.NewDialog.OnValidSubmit
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.OnValidSubmit
+  nameWithType: NewDialog.OnValidSubmit
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.SnackbarService
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_SnackbarService
+  commentId: P:CG.Green.Host.Pages.Admin.Clients.NewDialog.SnackbarService
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.SnackbarService
+  nameWithType: NewDialog.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Clients.NewDialog.SnackbarService*
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Clients.NewDialog.html#CG_Green_Host_Pages_Admin_Clients_NewDialog_SnackbarService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.NewDialog.SnackbarService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.NewDialog.SnackbarService
+  nameWithType: NewDialog.SnackbarService
 - uid: CG.Green.Host.Pages.Admin.Resources
   name: CG.Green.Host.Pages.Admin.Resources
   href: api/CG.Green.Host.Pages.Admin.Resources.html
@@ -5598,6 +5727,25 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.AllowedGrantTypesExtensions.ToAllowedGrantTypes
   nameWithType: AllowedGrantTypesExtensions.ToAllowedGrantTypes
+- uid: CG.Green.Host.ViewModels.NewClientVM
+  name: NewClientVM
+  href: api/CG.Green.Host.ViewModels.NewClientVM.html
+  commentId: T:CG.Green.Host.ViewModels.NewClientVM
+  fullName: CG.Green.Host.ViewModels.NewClientVM
+  nameWithType: NewClientVM
+- uid: CG.Green.Host.ViewModels.NewClientVM.ClientId
+  name: ClientId
+  href: api/CG.Green.Host.ViewModels.NewClientVM.html#CG_Green_Host_ViewModels_NewClientVM_ClientId
+  commentId: P:CG.Green.Host.ViewModels.NewClientVM.ClientId
+  fullName: CG.Green.Host.ViewModels.NewClientVM.ClientId
+  nameWithType: NewClientVM.ClientId
+- uid: CG.Green.Host.ViewModels.NewClientVM.ClientId*
+  name: ClientId
+  href: api/CG.Green.Host.ViewModels.NewClientVM.html#CG_Green_Host_ViewModels_NewClientVM_ClientId_
+  commentId: Overload:CG.Green.Host.ViewModels.NewClientVM.ClientId
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.NewClientVM.ClientId
+  nameWithType: NewClientVM.ClientId
 - uid: CG.Green.Identity
   name: CG.Green.Identity
   href: api/CG.Green.Identity.html
