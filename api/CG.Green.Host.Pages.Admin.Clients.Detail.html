@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Index
+    <title>Class Detail
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Index
+    <meta name="title" content="Class Detail
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,18 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.Host.Pages.Admin.Clients.Index">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail">
   
   
-  <h1 id="CG_Green_Host_Pages_Admin_Clients_Index" data-uid="CG.Green.Host.Pages.Admin.Clients.Index" class="text-break">Class Index
+  <h1 id="CG_Green_Host_Pages_Admin_Clients_Detail" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail" class="text-break">Class Detail
   </h1>
-  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Green.Host.Pages.Admin.Clients.Index.html">Index</a> page.</p>
+  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Green.Host.Pages.Admin.Clients.Detail.html">Detail</a> page.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Index</span></div>
+    <div class="level1"><span class="xref">Detail</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -117,19 +117,19 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Host.Pages.Admin.Clients.html">CG.Green.Host.Pages.Admin.Clients</a></h6>
   <h6><strong>Assembly</strong>: CG.Green.Host.dll</h6>
-  <h5 id="CG_Green_Host_Pages_Admin_Clients_Index_syntax">Syntax</h5>
+  <h5 id="CG_Green_Host_Pages_Admin_Clients_Detail_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Index</code></pre>
+    <pre><code class="lang-csharp hljs">public class Detail</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index__clients" data-uid="CG.Green.Host.Pages.Admin.Clients.Index._clients">_clients</h4>
-  <div class="markdown level1 summary"><p>This field contains the list of clients.</p>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail__allScopes" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail._allScopes">_allScopes</h4>
+  <div class="markdown level1 summary"><p>This field contains the list of all scopes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly List&lt;Client&gt; _clients</code></pre>
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;string&gt; _allScopes</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,18 +141,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">Client</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index__crumbs" data-uid="CG.Green.Host.Pages.Admin.Clients.Index._crumbs">_crumbs</h4>
-  <div class="markdown level1 summary"><p>This field contains a reference to breadcrumbs for the view.</p>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail__crumbs" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail._crumbs">_crumbs</h4>
+  <div class="markdown level1 summary"><p>This field contains a reference to breadcrumbs for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly List&lt;BreadcrumbItem&gt; _crumbs</code></pre>
+    <pre><code class="lang-csharp hljs">protected List&lt;BreadcrumbItem&gt; _crumbs</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,31 +169,8 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index__gridSearchString" data-uid="CG.Green.Host.Pages.Admin.Clients.Index._gridSearchString">_gridSearchString</h4>
-  <div class="markdown level1 summary"><p>This field contains the current search string.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string _gridSearchString</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index__isLoading" data-uid="CG.Green.Host.Pages.Admin.Clients.Index._isLoading">_isLoading</h4>
-  <div class="markdown level1 summary"><p>This field indicates when the page is loading data.</p>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail__isLoading" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail._isLoading">_isLoading</h4>
+  <div class="markdown level1 summary"><p>This field indicates the page is loading data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -215,10 +192,103 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail__model" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail._model">_model</h4>
+  <div class="markdown level1 summary"><p>This field contains the model for the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Client? _model</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Client</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail__selectedGrantType" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail._selectedGrantType">_selectedGrantType</h4>
+  <div class="markdown level1 summary"><p>This field contains the selected grant type, for the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AllowedGrantTypes _selectedGrantType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AllowedGrantTypes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail__selectedScopes" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail._selectedScopes">_selectedScopes</h4>
+  <div class="markdown level1 summary"><p>This field contains the list of selected scopes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;string&gt; _selectedScopes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_DialogService_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.DialogService*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_DialogService" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.DialogService">DialogService</h4>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_ClientId_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.ClientId*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_ClientId" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.ClientId">ClientId</h4>
+  <div class="markdown level1 summary"><p>This property contains the identifier for the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ClientId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_DialogService_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.DialogService*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_DialogService" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.DialogService">DialogService</h4>
   <div class="markdown level1 summary"><p>This property contains the dialog service for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -241,9 +311,9 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_GreenApi_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.GreenApi*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_GreenApi" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.GreenApi">GreenApi</h4>
-  <div class="markdown level1 summary"><p>This property contains the green api for this page.</p>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_GreenApi_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.GreenApi*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_GreenApi" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.GreenApi">GreenApi</h4>
+  <div class="markdown level1 summary"><p>This property contains the green API for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -265,14 +335,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_Logger_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.Logger*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_Logger" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.Logger">Logger</h4>
-  <div class="markdown level1 summary"><p>This property contains the logger for this page.</p>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_HttpContextAccessor_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.HttpContextAccessor*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_HttpContextAccessor" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.HttpContextAccessor">HttpContextAccessor</h4>
+  <div class="markdown level1 summary"><p>This property contains the HTTP context accessor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ILogger&lt;Index&gt; Logger { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IHttpContextAccessor HttpContextAccessor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -284,13 +354,37 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Host.Pages.Admin.Clients.Index.html">Index</a>&gt;</td>
+        <td><span class="xref">IHttpContextAccessor</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_NavigationManager_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.NavigationManager*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_NavigationManager" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.NavigationManager">NavigationManager</h4>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_Logger_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.Logger*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_Logger" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>This property contains the logger for this page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogger&lt;Detail&gt; Logger { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Host.Pages.Admin.Clients.Detail.html">Detail</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_NavigationManager_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.NavigationManager*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_NavigationManager" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.NavigationManager">NavigationManager</h4>
   <div class="markdown level1 summary"><p>This property contains the navigation manager for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -313,9 +407,9 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_SnackbarService_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.SnackbarService*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_SnackbarService" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.SnackbarService">SnackbarService</h4>
-  <div class="markdown level1 summary"><p>This property contains the snackbar service for this page.</p>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_SnackbarService_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.SnackbarService*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_SnackbarService" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.SnackbarService">SnackbarService</h4>
+  <div class="markdown level1 summary"><p>This property contains the snackbar service for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -337,36 +431,17 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_DisableClientAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.DisableClientAsync*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_DisableClientAsync_Client_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.DisableClientAsync(Client)">DisableClientAsync(Client)</h4>
-  <div class="markdown level1 summary"><p>This method disables the given client.</p>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_UserName_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.UserName*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_UserName" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.UserName">UserName</h4>
+  <div class="markdown level1 summary"><p>This property contains the name of the current user, or the word
+'anonymous' if nobody is currently authenticated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task DisableClientAsync(Client client)</code></pre>
+    <pre><code class="lang-csharp hljs">protected string UserName { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Client</span></td>
-        <td><span class="parametername">client</span></td>
-        <td><p>The client to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -375,157 +450,22 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_EnableClientAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.EnableClientAsync*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_EnableClientAsync_Client_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.EnableClientAsync(Client)">EnableClientAsync(Client)</h4>
-  <div class="markdown level1 summary"><p>This method enables the given client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task EnableClientAsync(Client client)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Client</span></td>
-        <td><span class="parametername">client</span></td>
-        <td><p>The client to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_FilterFunc_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.FilterFunc*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_FilterFunc_Client_System_String_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.FilterFunc(Client,System.String)">FilterFunc(Client, String)</h4>
-  <div class="markdown level1 summary"><p>This method performs a search of the clients.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool FilterFunc(Client element, string searchString)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Client</span></td>
-        <td><span class="parametername">element</span></td>
-        <td><p>The element to uses for the operation.</p>
-</td>
-      </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">searchString</span></td>
-        <td><p>The search string to use for the operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if a match was found; <code>false</code> otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_FilterFunc1_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.FilterFunc1*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_FilterFunc1_Client_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.FilterFunc1(Client)">FilterFunc1(Client)</h4>
-  <div class="markdown level1 summary"><p>This method adapts the <a class="xref" href="CG.Green.Host.Pages.Admin.Clients.Index.html#CG_Green_Host_Pages_Admin_Clients_Index_FilterFunc_Client_System_String_">FilterFunc(Client, String)</a> method for use with
-a <see cref="!:MudTable&lt;T>"></see> control.</p>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_LoadDataAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.LoadDataAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_LoadDataAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.LoadDataAsync">LoadDataAsync()</h4>
+  <div class="markdown level1 summary"><p>This method loads the data for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool FilterFunc1(Client element)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Client</span></td>
-        <td><span class="parametername">element</span></td>
-        <td><p>The element to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if a match was found; <code>false</code> otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_LoadClientsAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.LoadClientsAsync*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_LoadClientsAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.LoadClientsAsync">LoadClientsAsync()</h4>
-  <div class="markdown level1 summary"><p>This method loads clients for the page.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">async Task LoadClientsAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">async Task LoadDataAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -543,14 +483,14 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_OnCreateAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.OnCreateAsync*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_OnCreateAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.OnCreateAsync">OnCreateAsync()</h4>
-  <div class="markdown level1 summary"><p>This method adds a new client.</p>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateSecretAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateSecretAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateSecretAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateSecretAsync">OnCreateSecretAsync()</h4>
+  <div class="markdown level1 summary"><p>This method creates a new secret for the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCreateAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task OnCreateSecretAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -567,14 +507,14 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_OnDeleteAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.OnDeleteAsync*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_OnDeleteAsync_Client_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.OnDeleteAsync(Client)">OnDeleteAsync(Client)</h4>
-  <div class="markdown level1 summary"><p>This method deletes the given client.</p>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteSecretAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteSecretAsync_Secret_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync(Secret)">OnDeleteSecretAsync(Secret)</h4>
+  <div class="markdown level1 summary"><p>This method deletes a secret from the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteAsync(Client client)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task OnDeleteSecretAsync(Secret secret)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -587,9 +527,9 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Client</span></td>
-        <td><span class="parametername">client</span></td>
-        <td><p>The client to use for the operation.</p>
+        <td><span class="xref">Secret</span></td>
+        <td><span class="parametername">secret</span></td>
+        <td><p>The secret to use for the operation.</p>
 </td>
       </tr>
     </tbody>
@@ -605,62 +545,43 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_OnEditAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.OnEditAsync*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_OnEditAsync_Client_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.OnEditAsync(Client)">OnEditAsync(Client)</h4>
-  <div class="markdown level1 summary"><p>This method edits the given client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnEditAsync(Client client)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Client</span></td>
-        <td><span class="parametername">client</span></td>
-        <td><p>The client to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Host_Pages_Admin_Clients_Index_OnInitializedAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.OnInitializedAsync*"></a>
-  <h4 id="CG_Green_Host_Pages_Admin_Clients_Index_OnInitializedAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Index.OnInitializedAsync">OnInitializedAsync()</h4>
-  <div class="markdown level1 summary"><p>This method initializes the page.</p>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnInitializedAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnInitializedAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnInitializedAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnInitializedAsync">OnInitializedAsync()</h4>
+  <div class="markdown level1 summary"><p>This method is called to initialize the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override async Task OnInitializedAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnValidSubmitAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnValidSubmitAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnValidSubmitAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnValidSubmitAsync">OnValidSubmitAsync()</h4>
+  <div class="markdown level1 summary"><p>This method is called when the user submits the form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnValidSubmitAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
