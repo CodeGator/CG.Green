@@ -2,3 +2,24 @@
 
 <PageTitle>Index</PageTitle>
 
+<div class="container">
+    <div class="jumbotron">
+        <MudText Typo="Typo.h4">@typeof(Index).Assembly.ReadProduct()</MudText>
+        <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-5" Typo="Typo.body1">Version [ @typeof(Index).Assembly.ReadInformationalVersion() ]</MudText>
+    </div>
+
+    <MudText Class="pt-3" Typo="Typo.h6">An identity microservice</MudText>
+    <ul style="list-style-type:square;">
+        <li style="margin: 10px">Open-source, 100% free to use (<a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://opensource.org/licenses/MIT">MIT</a> license *).</li>
+        <li style="margin: 10px">Written 100% in <strong>C#</strong>, <strong>.NET 7.x</strong>, and <strong>Blazor</strong>.</li>
+        <li style="margin: 10px">Leverages the <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://mudblazor.com">MudBlazor</a> library for a clean, reliable UI.</li>
+        <li style="margin: 10px">Built on top of the <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://duendesoftware.com/">Duende</a> and <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://github.com/dotnet/aspnetcore">ASP.NET</a> libraries.</li>
+        <li style="margin: 10px">Available <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">SQL-Server</a> provider, for data access.</li>
+        <li style="margin: 10px">Available <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://www.sqlite.org/index.html">SQLite</a> provider, for data access.</li>
+        <li style="margin: 10px">Easily adaptable to work with any database capable of working with Entity Framework Library.</li>
+    </ul>
+    <br />
+    <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-4" Typo="Typo.caption">* (additional third party license(s) may apply)</MudText>
+</div>
+
+

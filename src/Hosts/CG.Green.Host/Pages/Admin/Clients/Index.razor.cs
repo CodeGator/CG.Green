@@ -70,6 +70,18 @@ public partial class Index
     protected NavigationManager NavigationManager { get; set; } = null!;
 
     /// <summary>
+    /// This property contains the HTTP context accessor.
+    /// </summary>
+    [Inject]
+    protected IHttpContextAccessor HttpContextAccessor { get; set; } = null!;
+
+    /// <summary>
+    /// This property contains the name of the current user, or the word
+    /// 'anonymous' if nobody is currently authenticated.
+    /// </summary>
+    protected string UserName => HttpContextAccessor.HttpContext?.User?.Identity?.Name ?? "anonymous";
+
+    /// <summary>
     /// This property contains the logger for this page.
     /// </summary>
     [Inject]
@@ -112,7 +124,7 @@ public partial class Index
             // Log what we are about to do.
             Logger.LogError(
                 ex,
-                "Failed to fetch clients"
+                "Failed to fetch clients!"
                 );
 
             // Log what we are about to do.
@@ -141,7 +153,68 @@ public partial class Index
         Client client
         )
     {
+        try
+        {
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
 
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the client " +
+                $"<b>'{client.ClientName}'</b> <br /> <br /> Are you <i>sure</i> " +
+                "you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting a client."
+                );
+
+            // Delete the client.
+            await GreenApi.Clients.DeleteAsync(
+                client,
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Loading data for the page."
+                );
+
+            // Load the clients.
+            await LoadClientsAsync();
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex,
+                "Failed to delete a client!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            SnackbarService.Add(
+                $"<b>Something broke!</b> " +
+                $"<ul><li>{ex.GetBaseException().Message}</li></ul>",
+                Severity.Error,
+                options => options.CloseAfterNavigation = true
+                );
+        }
     }
 
     // *******************************************************************
@@ -155,6 +228,11 @@ public partial class Index
         Client client
         )
     {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Navigating to the client detail page."
+            );
+
         // Go to the detail page.
         NavigationManager.NavigateTo(
             $"/admin/clients/detail/{Uri.EscapeDataString(client.ClientId)}"
@@ -168,7 +246,123 @@ public partial class Index
     /// </summary>
     protected async Task OnCreateAsync()
     {
+        try
+        {
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog options."
+                );
 
+            // Create the dialog options.
+            var options = new DialogOptions
+            {
+                MaxWidth = MaxWidth.Small,
+                CloseOnEscapeKey = true,
+                FullWidth = true
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog parameters."
+                );
+
+            // Create the dialog parameters.
+            var parameters = new DialogParameters()
+            {
+                { "Model", new NewClientVM() }
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating new dialog."
+                );
+
+            // Create the dialog.
+            var dialog = DialogService.Show<NewDialog>(
+                "Create Client",
+                parameters,
+                options
+                );
+
+            // Get the results of the dialog.
+            var result = await dialog.Result;
+
+            // Did the user cancel?
+            if (result.Canceled)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Recovering the dialog model."
+                );
+
+            // Recover the model.
+            var model = (NewClientVM)result.Data;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating the new client."
+                );
+
+            // Create the new client.
+            var newClient = await GreenApi.Clients.CreateAsync(
+                new Client()
+                {
+                    ClientId = model.ClientId.Trim(),
+                    ClientName = model.ClientId
+                },
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Navigating to the client detail page."
+                );
+
+            // Go to the detail page.
+            NavigationManager.NavigateTo(
+                $"/admin/clients/detail/{Uri.EscapeDataString(newClient.ClientId)}"
+                );
+        }
+        catch (Exception ex)
+        {
+            // Did the user try to reuse an existing client id?
+            if (ex.GetBaseException().Message.Contains("Cannot insert duplicate key"))
+            {
+                // Log what we are about to do.
+                Logger.LogDebug(
+                    "Showing the message box."
+                    );
+
+                // Prompt the user.
+                await DialogService.ShowMessageBox(
+                    title: Globals.Caption,
+                    markupMessage: (MarkupString)"That client id is already in use!"
+                    );
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogError(
+                ex,
+                "Failed to create a client!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            SnackbarService.Add(
+                $"<b>Something broke!</b> " +
+                $"<ul><li>{ex.GetBaseException().Message}</li></ul>",
+                Severity.Error,
+                options => options.CloseAfterNavigation = true
+                );
+        }
     }
 
     // *******************************************************************

@@ -8,6 +8,11 @@ namespace CG.Green;
 public static class Globals
 {
     /// <summary>
+    /// This constant represents the caption for the application.
+    /// </summary>
+    public const string Caption = "Green";
+
+    /// <summary>
     /// This class contains model property sizes.
     /// </summary>
     public static class Models
