@@ -123,7 +123,7 @@ public partial class Index
         {
             // Log what we are about to do.
             Logger.LogError(
-                ex,
+                ex.GetBaseException(),
                 "Failed to fetch clients!"
                 );
 
@@ -133,11 +133,10 @@ public partial class Index
                 );
 
             // Tell the world what happened.
-            SnackbarService.Add(
-                $"<b>Something broke!</b> " +
-                $"<ul><li>{ex.GetBaseException().Message}</li></ul>",
-                Severity.Error,
-                options => options.CloseAfterNavigation = true
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
                 );
         }
     }
@@ -198,7 +197,7 @@ public partial class Index
         {
             // Log what we are about to do.
             Logger.LogError(
-                ex,
+                ex.GetBaseException(),
                 "Failed to delete a client!"
                 );
 
@@ -208,11 +207,10 @@ public partial class Index
                 );
 
             // Tell the world what happened.
-            SnackbarService.Add(
-                $"<b>Something broke!</b> " +
-                $"<ul><li>{ex.GetBaseException().Message}</li></ul>",
-                Severity.Error,
-                options => options.CloseAfterNavigation = true
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
                 );
         }
     }
@@ -329,7 +327,7 @@ public partial class Index
         catch (Exception ex)
         {
             // Did the user try to reuse an existing client id?
-            if (ex.GetBaseException().Message.Contains("Cannot insert duplicate key"))
+            if (ex.GetBaseException().Message.Contains("duplicate key"))
             {
                 // Log what we are about to do.
                 Logger.LogDebug(
@@ -346,7 +344,7 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogError(
-                ex,
+                ex.GetBaseException(),
                 "Failed to create a client!"
                 );
 
@@ -356,11 +354,10 @@ public partial class Index
                 );
 
             // Tell the world what happened.
-            SnackbarService.Add(
-                $"<b>Something broke!</b> " +
-                $"<ul><li>{ex.GetBaseException().Message}</li></ul>",
-                Severity.Error,
-                options => options.CloseAfterNavigation = true
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
                 );
         }
     }
@@ -376,7 +373,43 @@ public partial class Index
         Client client
         )
     {
+        try
+        {
+            // Can we take a shortcut?
+            if (!client.Enabled)
+            {
+                return;
+            }
 
+            // Clear the flag.
+            client.Enabled = false;
+
+            // Update the client.
+            await GreenApi.Clients.UpdateAsync(
+                client,
+                UserName
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to disable a client!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
     }
 
     // *******************************************************************
@@ -390,7 +423,43 @@ public partial class Index
         Client client
         )
     {
+        try
+        {
+            // Can we take a shortcut?
+            if (client.Enabled)
+            {
+                return;
+            }
 
+            // Set the flag.
+            client.Enabled = true;
+
+            // Update the client.
+            await GreenApi.Clients.UpdateAsync(
+                client,
+                UserName
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to enable a client!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
     }
 
     // *******************************************************************

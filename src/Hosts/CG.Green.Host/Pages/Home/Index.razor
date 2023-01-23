@@ -1,4 +1,6 @@
 ﻿@page "/"
+@inject ISnackbar SnackbarService
+@inject IDialogService DialogService
 
 <PageTitle>Index</PageTitle>
 
@@ -21,5 +23,3 @@
     <br />
     <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-4" Typo="Typo.caption">* (additional third party license(s) may apply)</MudText>
 </div>
-
-

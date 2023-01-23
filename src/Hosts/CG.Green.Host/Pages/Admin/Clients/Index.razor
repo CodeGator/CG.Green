@@ -37,11 +37,11 @@
                 <MudTd DataLabel="Enabled">
                     @if (context.Enabled)
                     {
-                        <MudIconButton Icon="@Icons.Material.Outlined.CheckBox" OnClick="@(() => EnableClientAsync(context))" />
+                        <MudIconButton Icon="@Icons.Material.Outlined.CheckBox" OnClick="@(() => DisableClientAsync(context))" />
                     }
                     else
                     {
-                        <MudIconButton Icon="@Icons.Material.Outlined.CheckBoxOutlineBlank" OnClick="@(() => DisableClientAsync(context))" />
+                     <MudIconButton Icon="@Icons.Material.Outlined.CheckBoxOutlineBlank" OnClick="@(() => EnableClientAsync(context))" />   
                     }
                 </MudTd>
                 <MudTd DataLabel="Name">@context.ClientName</MudTd>
@@ -62,3 +62,4 @@
         </MudTable>
     </MudItem>
 </MudGrid>
+

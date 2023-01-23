@@ -158,21 +158,6 @@ internal class ClientManager : IClientManager
                 nameof(Client)
                 );
 
-            // Ensure the stats are correct.
-            //client.CreatedOnUtc = DateTime.UtcNow;
-            //client.CreatedBy = userName;
-            //client.LastUpdatedBy = null;
-            //client.LastUpdatedOnUtc = null;
-
-            // Extensions are always lower case.
-            //client.Extension = client.Extension.ToLower().Trim();
-
-            // Extensions always start with a '.' character.
-            //if (!client.Extension.StartsWith('.'))
-            //{
-            //    client.Extension = $".{client.Extension}";
-           // }
-
             // Log what we are about to do.
             _logger.LogTrace(
                 "Deferring to {name}",
@@ -361,19 +346,6 @@ internal class ClientManager : IClientManager
                 "Updating the {name} model stats",
                 nameof(Client)
                 );
-
-            // Ensure the stats are correct.
-            //client.LastUpdatedOnUtc = DateTime.UtcNow;
-            //client.LastUpdatedBy = userName;
-
-            // Extensions are always lower case.
-            //client.Extension = client.Extension.ToLower().Trim();
-
-            // Extensions always start with a '.' character.
-            //if (!client.Extension.StartsWith('.'))
-            //{
-            //    client.Extension = $".{client.Extension}";
-            //}
 
             // Log what we are about to do.
             _logger.LogTrace(

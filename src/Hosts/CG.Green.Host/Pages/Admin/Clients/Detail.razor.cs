@@ -1,4 +1,6 @@
 ﻿
+using IdentityModel;
+
 namespace CG.Green.Host.Pages.Admin.Clients;
 
 /// <summary>
@@ -41,6 +43,11 @@ public partial class Detail
     /// This field contains the list of selected scopes.
     /// </summary>
     internal protected IEnumerable<string> _selectedScopes = new HashSet<string>();
+
+    /// <summary>
+    /// This field contains the list of client secrets.
+    /// </summary>
+    internal protected IEnumerable<SecretVM> _secrets = new HashSet<SecretVM>();    
 
     #endregion
 
@@ -148,7 +155,7 @@ public partial class Detail
         {
             // Log what happened.
             Logger.LogError(
-                ex,
+                ex.GetBaseException(),
                 "Failed to initialize the page."
                 );
 
@@ -158,11 +165,10 @@ public partial class Detail
                 );
 
             // Tell the world what happened.
-            SnackbarService.Add(
-                $"<b>Something broke!</b> " +
-                $"<ul><li>{ex.GetBaseException().Message}</li></ul>",
-                Severity.Error,
-                options => options.CloseAfterNavigation = true
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
                 );
         }
     }
@@ -197,6 +203,20 @@ public partial class Detail
         foreach (var selectedScope in _selectedScopes)
         {
             _model.AllowedScopes.Add(selectedScope);
+        }
+
+        // Remove any previous secrets.
+        _model.ClientSecrets.Clear();
+
+        // Add the secrets to the model.
+        foreach (var secret in _secrets)
+        {
+            // Should we hash the secret?
+            if (secret.IsHashed)
+            {
+                secret.Secret.Value = secret.Secret.Value.ToSha256();
+            }
+            _model.ClientSecrets.Add(secret.Secret);
         }
     }
 
@@ -254,9 +274,33 @@ public partial class Detail
             // We're now officially busy.
             _isLoading = true;
 
-            // Get the list of available api scopes.
-            _allScopes = (await GreenApi.ApiScopes.FindAllAsync())
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Fetching identity resources."
+                );
+
+            // Get the list of API scopes.
+            var apiScopes = (await GreenApi.ApiScopes.FindAllAsync())
                 .Select(x => x.Name);
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Fetching api scopes."
+                );
+
+            // Get the list of identity resources.
+            var identityResources = (await GreenApi.IdentityResources.FindAllAsync())
+                .Select(x => x.Name);
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Building the combines list of scopes."
+                );
+
+            // Get the list of all scopes.
+            _allScopes = apiScopes.Union(
+                    identityResources
+                    ).Order();
 
             // Log what we are about to do.
             Logger.LogDebug(
@@ -276,12 +320,20 @@ public partial class Detail
 
                 // Select the client scopes.
                 _selectedScopes = _model.AllowedScopes;
+
+                // Build the list of secrets.
+                _secrets = _model.ClientSecrets.Select(x => new SecretVM()
+                {
+                    Secret = x,
+                    IsHashed = true // Anything from Duende is hashed.
+                });
             }
             else
             {
                 // Select defaults since we don't have a model.
                 _selectedGrantType = AllowedGrantTypes.Ciba;
                 _selectedScopes = new HashSet<string>();
+                _secrets = new HashSet<SecretVM>();   
             }
         }
         finally
