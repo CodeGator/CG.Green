@@ -4970,6 +4970,12 @@ references:
   commentId: F:CG.Green.Host.Pages.Admin.Clients.Detail._model
   fullName: CG.Green.Host.Pages.Admin.Clients.Detail._model
   nameWithType: Detail._model
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail._secrets
+  name: _secrets
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail__secrets
+  commentId: F:CG.Green.Host.Pages.Admin.Clients.Detail._secrets
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail._secrets
+  nameWithType: Detail._secrets
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail._selectedGrantType
   name: _selectedGrantType
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail__selectedGrantType
@@ -5589,6 +5595,18 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.ErrorModel.ShowRequestId
   nameWithType: ErrorModel.ShowRequestId
+- uid: CG.Green.Host.Pages.Home
+  name: CG.Green.Host.Pages.Home
+  href: api/CG.Green.Host.Pages.Home.html
+  commentId: N:CG.Green.Host.Pages.Home
+  fullName: CG.Green.Host.Pages.Home
+  nameWithType: CG.Green.Host.Pages.Home
+- uid: CG.Green.Host.Pages.Home.Index
+  name: Index
+  href: api/CG.Green.Host.Pages.Home.Index.html
+  commentId: T:CG.Green.Host.Pages.Home.Index
+  fullName: CG.Green.Host.Pages.Home.Index
+  nameWithType: Index
 - uid: CG.Green.Host.Themes
   name: CG.Green.Host.Themes
   href: api/CG.Green.Host.Themes.html
@@ -5746,6 +5764,38 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.NewClientVM.ClientId
   nameWithType: NewClientVM.ClientId
+- uid: CG.Green.Host.ViewModels.SecretVM
+  name: SecretVM
+  href: api/CG.Green.Host.ViewModels.SecretVM.html
+  commentId: T:CG.Green.Host.ViewModels.SecretVM
+  fullName: CG.Green.Host.ViewModels.SecretVM
+  nameWithType: SecretVM
+- uid: CG.Green.Host.ViewModels.SecretVM.IsHashed
+  name: IsHashed
+  href: api/CG.Green.Host.ViewModels.SecretVM.html#CG_Green_Host_ViewModels_SecretVM_IsHashed
+  commentId: P:CG.Green.Host.ViewModels.SecretVM.IsHashed
+  fullName: CG.Green.Host.ViewModels.SecretVM.IsHashed
+  nameWithType: SecretVM.IsHashed
+- uid: CG.Green.Host.ViewModels.SecretVM.IsHashed*
+  name: IsHashed
+  href: api/CG.Green.Host.ViewModels.SecretVM.html#CG_Green_Host_ViewModels_SecretVM_IsHashed_
+  commentId: Overload:CG.Green.Host.ViewModels.SecretVM.IsHashed
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.SecretVM.IsHashed
+  nameWithType: SecretVM.IsHashed
+- uid: CG.Green.Host.ViewModels.SecretVM.Secret
+  name: Secret
+  href: api/CG.Green.Host.ViewModels.SecretVM.html#CG_Green_Host_ViewModels_SecretVM_Secret
+  commentId: P:CG.Green.Host.ViewModels.SecretVM.Secret
+  fullName: CG.Green.Host.ViewModels.SecretVM.Secret
+  nameWithType: SecretVM.Secret
+- uid: CG.Green.Host.ViewModels.SecretVM.Secret*
+  name: Secret
+  href: api/CG.Green.Host.ViewModels.SecretVM.html#CG_Green_Host_ViewModels_SecretVM_Secret_
+  commentId: Overload:CG.Green.Host.ViewModels.SecretVM.Secret
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.SecretVM.Secret
+  nameWithType: SecretVM.Secret
 - uid: CG.Green.Identity
   name: CG.Green.Identity
   href: api/CG.Green.Identity.html
