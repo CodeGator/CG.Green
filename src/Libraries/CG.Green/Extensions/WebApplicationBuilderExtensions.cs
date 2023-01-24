@@ -61,7 +61,7 @@ public static class WebApplicationBuilderExtensions001
         webApplicationBuilder.Services.AddScoped<IGreenUserRoleManager, GreenUserRoleManager>();
         webApplicationBuilder.Services.AddScoped<IGreenUserClaimManager, GreenUserClaimManager>();
         webApplicationBuilder.Services.AddScoped<IIdentityResourceManager, IdentityResourceManager>();
-        
+
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
             "Wiring up the Green directors"

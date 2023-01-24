@@ -399,6 +399,15 @@ internal class ClientRepository : IClientRepository
         {
             // Log what we are about to do.
             _logger.LogDebug(
+                "Converting a {model} model to an entity.",
+                nameof(Client)
+                );
+
+            // Change the incoming model to an entity.
+            var clientEntity = client.ToEntity();
+
+            // Log what we are about to do.
+            _logger.LogDebug(
                 "Looking for a matching {entity} entity in the {ctx} data-context.",
                 nameof(Client),
                 nameof(ConfigurationDbContext)
@@ -426,13 +435,27 @@ internal class ClientRepository : IClientRepository
 
             // Log what we are about to do.
             _logger.LogDebug(
+                "Updating editable properties for {entity} entity in the {ctx} data-context.",
+                nameof(Client),
+                nameof(ConfigurationDbContext)
+                );
+
+            // Update the editable properties.
+            entity.ClientId = clientEntity.ClientId;
+            entity.ClientName = clientEntity.ClientName;
+            entity.AllowedGrantTypes = clientEntity.AllowedGrantTypes;    
+            entity.ClientSecrets = clientEntity.ClientSecrets;
+            entity.AllowedScopes = clientEntity.AllowedScopes;
+
+            // Log what we are about to do.
+            _logger.LogDebug(
                 "Updating a {entity} entity in the {ctx} data-context.",
                 nameof(Client),
                 nameof(ConfigurationDbContext)
                 );
 
             // We never change these 'read only' properties.
-            _configurationDbContext.Entry(entity).Property(x => x.ClientId).IsModified = false;
+            //_configurationDbContext.Entry(entity).Property(x => x.ClientId).IsModified = false;
 
             // Log what we are about to do.
             _logger.LogDebug(

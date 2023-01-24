@@ -12,3 +12,4 @@ global using MudBlazor;
 global using MudBlazor.Services;
 global using System.ComponentModel.DataAnnotations;
 global using System.Diagnostics;
+global using IdentityModel;

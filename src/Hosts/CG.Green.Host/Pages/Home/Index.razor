@@ -10,6 +10,8 @@
         <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-5" Typo="Typo.body1">Version [ @typeof(Index).Assembly.ReadInformationalVersion() ]</MudText>
     </div>
 
+    <MudAlert Class="my-8" Severity="Severity.Info">Log in to get started!</MudAlert>
+
     <MudText Class="pt-3" Typo="Typo.h6">An identity microservice</MudText>
     <ul style="list-style-type:square;">
         <li style="margin: 10px">Open-source, 100% free to use (<a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://opensource.org/licenses/MIT">MIT</a> license *).</li>

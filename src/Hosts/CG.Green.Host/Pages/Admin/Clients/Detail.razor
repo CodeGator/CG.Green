@@ -154,18 +154,27 @@ else
                                         <MudTd DataLabel="Description">@context2.Secret.Description</MudTd>
                                         <MudTd DataLabel="Value">@context2.Secret.Value</MudTd>
                                         <MudTd>
-                                            <MudIconButton Icon="@Icons.Material.Filled.Delete" OnClick="() => OnDeleteSecretAsync(context2.Secret)" Disabled="@_isLoading" />
+                                            <MudIconButton 
+                                                Icon="@Icons.Material.Filled.Delete" 
+                                                OnClick="() => OnDeleteSecretAsync(context2)" 
+                                                Disabled="@_isLoading" />
                                         </MudTd>
                                     </RowTemplate>
                                     <RowEditingTemplate Context="context2">
                                         <MudTd DataLabel="Expiration">
-                                            <MudTextField T="DateTime?" Format="yyyy-MM-dd" InputType="InputType.Date" @bind-Value="@context2.Secret.Expiration" />
+                                            <MudTextField T="DateTime?" 
+                                                Format="yyyy-MM-dd" 
+                                                InputType="InputType.Date" 
+                                                @bind-Value="@context2.Secret.Expiration" />
                                         </MudTd>
                                         <MudTd DataLabel="Description">
                                             <MudTextField @bind-Value="@context2.Secret.Description" />
                                         </MudTd>
                                         <MudTd DataLabel="Value">
-                                            <MudTextField DisableUnderline="@context2.IsHashed" @bind-Value="@context2.Secret.Value" Required="@(!context2.IsHashed)" ReadOnly="@context2.IsHashed" />
+                                            <MudTextField DisableUnderline="@context2.IsHashed" 
+                                                @bind-Value="@context2.Secret.Value" 
+                                                Required="@(!context2.IsHashed)" 
+                                                ReadOnly="@context2.IsHashed" />
                                         </MudTd>
                                     </RowEditingTemplate>
                                     <NoRecordsContent>

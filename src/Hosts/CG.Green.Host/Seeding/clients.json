@@ -12,7 +12,7 @@
       "ClientId": "cg.green.samples.blazorapp",
       "ClientSecrets": [
         {
-          "Description": "Client secret for the green blazorf sample",
+          "Description": "green blazor sample client secret",
           "Value": "secret",
           "Expiration": null,
           "Type": "SharedSecret"
@@ -41,7 +41,7 @@
       "ClientId": "cg.orange.host",
       "ClientSecrets": [
         {
-          "Description": null,
+          "Description": "orange host client secret",
           "Value": "secret",
           "Expiration": null,
           "Type": "SharedSecret"
@@ -70,7 +70,7 @@
       "ClientId": "cg.purple.host",
       "ClientSecrets": [
         {
-          "Description": null,
+          "Description": "purple host client secret",
           "Value": "secret",
           "Expiration": null,
           "Type": "SharedSecret"
