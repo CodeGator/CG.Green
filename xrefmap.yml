@@ -5092,12 +5092,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateSecretAsync
   nameWithType: Detail.OnCreateSecretAsync
-- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync(Secret)
-  name: OnDeleteSecretAsync(Secret)
-  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteSecretAsync_Secret_
-  commentId: M:CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync(Secret)
-  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync(Secret)
-  nameWithType: Detail.OnDeleteSecretAsync(Secret)
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync(SecretVM)
+  name: OnDeleteSecretAsync(SecretVM)
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteSecretAsync_SecretVM_
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync(SecretVM)
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync(SecretVM)
+  nameWithType: Detail.OnDeleteSecretAsync(SecretVM)
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync*
   name: OnDeleteSecretAsync
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteSecretAsync_
