@@ -10,7 +10,11 @@
         <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-5" Typo="Typo.body1">Version [ @typeof(Index).Assembly.ReadInformationalVersion() ]</MudText>
     </div>
 
-    <MudAlert Class="my-8" Severity="Severity.Info">Log in to get started!</MudAlert>
+    <AuthorizeView>
+        <NotAuthorized>
+            <MudAlert Class="my-8" Severity="Severity.Info">Log in to get started!</MudAlert>
+        </NotAuthorized>
+    </AuthorizeView>    
 
     <MudText Class="pt-3" Typo="Typo.h6">An identity microservice</MudText>
     <ul style="list-style-type:square;">

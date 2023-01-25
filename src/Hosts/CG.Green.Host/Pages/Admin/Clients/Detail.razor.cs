@@ -448,8 +448,8 @@ public partial class Detail
                     "Saving the allowed scopes."
                     );
 
-                // Select the client scopes.
-                _selectedScopes = _model.AllowedScopes;
+                // Copy the client scopes.
+                _selectedScopes = _model.AllowedScopes.ToList();
 
                 // Log what we are about to do.
                 Logger.LogDebug(

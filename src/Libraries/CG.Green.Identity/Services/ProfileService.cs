@@ -1,7 +1,4 @@
-﻿using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
-using IdentityModel;
-
+﻿
 namespace CG.Green.Services
 {
     /// <summary>
@@ -54,6 +51,16 @@ namespace CG.Green.Services
             // Add the name from the subject
             var nameClaims = context.Subject.FindAll(JwtClaimTypes.Name);
             context.IssuedClaims.AddRange(nameClaims);
+
+            // Loop through the client claims.
+            foreach (var clientClaim in context.Client.Claims)
+            {
+                // Add the claim.
+                context.IssuedClaims.Add(new Claim(
+                    clientClaim.Type, 
+                    clientClaim.Value)
+                    );
+            }
         }
 
         #endregion

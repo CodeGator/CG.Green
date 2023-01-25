@@ -444,18 +444,19 @@ internal class ClientRepository : IClientRepository
             entity.ClientId = clientEntity.ClientId;
             entity.ClientName = clientEntity.ClientName;
             entity.AllowedGrantTypes = clientEntity.AllowedGrantTypes;    
-            entity.ClientSecrets = clientEntity.ClientSecrets;
+            entity.Enabled = clientEntity.Enabled;
+            entity.AllowOfflineAccess = clientEntity.AllowOfflineAccess;    
+            entity.RequireRequestObject = clientEntity.RequireRequestObject;    
+            entity.AccessTokenLifetime =  clientEntity.AccessTokenLifetime;
             entity.AllowedScopes = clientEntity.AllowedScopes;
-
-            // Log what we are about to do.
-            _logger.LogDebug(
-                "Updating a {entity} entity in the {ctx} data-context.",
-                nameof(Client),
-                nameof(ConfigurationDbContext)
-                );
-
-            // We never change these 'read only' properties.
-            //_configurationDbContext.Entry(entity).Property(x => x.ClientId).IsModified = false;
+            entity.RequireClientSecret = clientEntity.RequireClientSecret;  
+            entity.ClientSecrets = clientEntity.ClientSecrets;
+            
+            entity.RedirectUris = clientEntity.RedirectUris;
+            entity.FrontChannelLogoutUri = clientEntity.FrontChannelLogoutUri;
+            entity.PostLogoutRedirectUris = clientEntity.PostLogoutRedirectUris;
+            entity.AllowedCorsOrigins = clientEntity.AllowedCorsOrigins;
+            entity.Claims = clientEntity.Claims;
 
             // Log what we are about to do.
             _logger.LogDebug(

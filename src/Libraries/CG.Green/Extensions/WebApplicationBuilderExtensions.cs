@@ -91,14 +91,6 @@ public static class WebApplicationBuilderExtensions001
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Wiring up the Green facades"
-            );
-
-        // Add the facades.
-        //webApplicationBuilder.Services.AddScoped<IAspNetFacade, AspNetFacade>();
-        
-        // Tell the world what we are about to do.
-        bootstrapLogger?.LogDebug(
             "Wiring up the Green API"
             );
 

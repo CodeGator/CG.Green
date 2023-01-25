@@ -15,8 +15,9 @@
 
     <AuthorizeView Policy=@PolicyNameDefaults.SuperAdminPolicy>
         <Authorized>
-            <MudNavGroup Icon="@Icons.Material.TwoTone.BugReport" Title="Debug">
+            <MudNavGroup Icon="@Icons.Material.TwoTone.BugReport" Title="Debugging">
                 <MudNavLink Href="swagger" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.HeartBroken">Swagger</MudNavLink>
+                <MudNavLink Href="debugging/whoami" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.Face">Who Am I?</MudNavLink>
             </MudNavGroup>
         </Authorized>
     </AuthorizeView>

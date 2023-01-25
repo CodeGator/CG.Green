@@ -1,0 +1,30 @@
+﻿@page "/debugging/whoami"
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
+
+<PageTitle>Who Am I?</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+<MudText Typo="Typo.h6">ASP.NET Identity Details</MudText>
+
+<MudGrid>
+    <MudItem xs="12">
+        <MudTable Items="@HttpContextAccessor.HttpContext?.User.Claims" Dense Striped>
+            <ToolBarContent>
+                <MudText Typo="Typo.h6">Claims for:&nbsp;</MudText><MudText Color="Color.Primary" Typo="Typo.h6">@HttpContextAccessor.HttpContext.User.Identity.Name</MudText>
+                <MudSpacer />
+            </ToolBarContent>
+            <HeaderContent>
+                <MudTh><MudTableSortLabel SortBy="new Func<Claim, object>(x=>x.Type)">Type</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<Claim, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Type">@context.Type</MudTd>
+                <MudTd DataLabel="Value"><MudText Color="Color.Primary">@context.Value</MudText></MudTd>
+            </RowTemplate>
+            <NoRecordsContent>
+                No claims were found.
+            </NoRecordsContent>
+        </MudTable>
+    </MudItem>
+</MudGrid>
