@@ -5528,6 +5528,37 @@ references:
   commentId: T:CG.Green.Host.Pages.Admin.Users.Index
   fullName: CG.Green.Host.Pages.Admin.Users.Index
   nameWithType: Index
+- uid: CG.Green.Host.Pages.Debugging
+  name: CG.Green.Host.Pages.Debugging
+  href: api/CG.Green.Host.Pages.Debugging.html
+  commentId: N:CG.Green.Host.Pages.Debugging
+  fullName: CG.Green.Host.Pages.Debugging
+  nameWithType: CG.Green.Host.Pages.Debugging
+- uid: CG.Green.Host.Pages.Debugging.WhoAmI
+  name: WhoAmI
+  href: api/CG.Green.Host.Pages.Debugging.WhoAmI.html
+  commentId: T:CG.Green.Host.Pages.Debugging.WhoAmI
+  fullName: CG.Green.Host.Pages.Debugging.WhoAmI
+  nameWithType: WhoAmI
+- uid: CG.Green.Host.Pages.Debugging.WhoAmI._crumbs
+  name: _crumbs
+  href: api/CG.Green.Host.Pages.Debugging.WhoAmI.html#CG_Green_Host_Pages_Debugging_WhoAmI__crumbs
+  commentId: F:CG.Green.Host.Pages.Debugging.WhoAmI._crumbs
+  fullName: CG.Green.Host.Pages.Debugging.WhoAmI._crumbs
+  nameWithType: WhoAmI._crumbs
+- uid: CG.Green.Host.Pages.Debugging.WhoAmI.HttpContextAccessor
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Debugging.WhoAmI.html#CG_Green_Host_Pages_Debugging_WhoAmI_HttpContextAccessor
+  commentId: P:CG.Green.Host.Pages.Debugging.WhoAmI.HttpContextAccessor
+  fullName: CG.Green.Host.Pages.Debugging.WhoAmI.HttpContextAccessor
+  nameWithType: WhoAmI.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Debugging.WhoAmI.HttpContextAccessor*
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Debugging.WhoAmI.html#CG_Green_Host_Pages_Debugging_WhoAmI_HttpContextAccessor_
+  commentId: Overload:CG.Green.Host.Pages.Debugging.WhoAmI.HttpContextAccessor
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Debugging.WhoAmI.HttpContextAccessor
+  nameWithType: WhoAmI.HttpContextAccessor
 - uid: CG.Green.Host.Pages.ErrorModel
   name: ErrorModel
   href: api/CG.Green.Host.Pages.ErrorModel.html
@@ -8187,11 +8218,11 @@ references:
   isSpec: "True"
   fullName: CG.Green.Services.ProfileService.ProfileService
   nameWithType: ProfileService.ProfileService
-- uid: CG.Green.Services.ProfileService.GetProfileDataAsync(Duende.IdentityServer.Models.ProfileDataRequestContext)
+- uid: CG.Green.Services.ProfileService.GetProfileDataAsync(ProfileDataRequestContext)
   name: GetProfileDataAsync(ProfileDataRequestContext)
-  href: api/CG.Green.Services.ProfileService.html#CG_Green_Services_ProfileService_GetProfileDataAsync_Duende_IdentityServer_Models_ProfileDataRequestContext_
-  commentId: M:CG.Green.Services.ProfileService.GetProfileDataAsync(Duende.IdentityServer.Models.ProfileDataRequestContext)
-  fullName: CG.Green.Services.ProfileService.GetProfileDataAsync(Duende.IdentityServer.Models.ProfileDataRequestContext)
+  href: api/CG.Green.Services.ProfileService.html#CG_Green_Services_ProfileService_GetProfileDataAsync_ProfileDataRequestContext_
+  commentId: M:CG.Green.Services.ProfileService.GetProfileDataAsync(ProfileDataRequestContext)
+  fullName: CG.Green.Services.ProfileService.GetProfileDataAsync(ProfileDataRequestContext)
   nameWithType: ProfileService.GetProfileDataAsync(ProfileDataRequestContext)
 - uid: CG.Green.Services.ProfileService.GetProfileDataAsync*
   name: GetProfileDataAsync

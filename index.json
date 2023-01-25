@@ -509,6 +509,16 @@
     "title": "Class Index",
     "keywords": "Class Index This class is the code-behind for the Index page. Inheritance System.Object Index Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Green.Host.Pages.Admin.Users Assembly : CG.Green.Host.dll Syntax public class Index"
   },
+  "api/CG.Green.Host.Pages.Debugging.html": {
+    "href": "api/CG.Green.Host.Pages.Debugging.html",
+    "title": "Namespace CG.Green.Host.Pages.Debugging",
+    "keywords": "Namespace CG.Green.Host.Pages.Debugging Classes WhoAmI This class is the code-behind for the WhoAmI page."
+  },
+  "api/CG.Green.Host.Pages.Debugging.WhoAmI.html": {
+    "href": "api/CG.Green.Host.Pages.Debugging.WhoAmI.html",
+    "title": "Class WhoAmI",
+    "keywords": "Class WhoAmI This class is the code-behind for the WhoAmI page. Inheritance System.Object WhoAmI Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Green.Host.Pages.Debugging Assembly : CG.Green.Host.dll Syntax public class WhoAmI Fields _crumbs This field contains a reference to breadcrumbs for the view. Declaration protected readonly List<BreadcrumbItem> _crumbs Field Value Type Description List < BreadcrumbItem > Properties HttpContextAccessor This property contains the HTTP context accessor. Declaration protected IHttpContextAccessor HttpContextAccessor { get; set; } Property Value Type Description IHttpContextAccessor"
+  },
   "api/CG.Green.Host.Pages.ErrorModel.html": {
     "href": "api/CG.Green.Host.Pages.ErrorModel.html",
     "title": "Class ErrorModel",
@@ -837,12 +847,12 @@
   "api/CG.Green.Services.html": {
     "href": "api/CG.Green.Services.html",
     "title": "Namespace CG.Green.Services",
-    "keywords": "Namespace CG.Green.Services Classes ClipboardService This class performs clipboard operations. ProfileService This class is a custom implementation of Duende.IdentityServer.Services.DefaultProfileService PurpleEmailSender This class is a CG.Purple implementation of the interface. SmtpEmailSender This class is an SMTP implementation of the interface."
+    "keywords": "Namespace CG.Green.Services Classes ClipboardService This class performs clipboard operations. ProfileService This class is a custom implementation of PurpleEmailSender This class is a CG.Purple implementation of the interface. SmtpEmailSender This class is an SMTP implementation of the interface."
   },
   "api/CG.Green.Services.ProfileService.html": {
     "href": "api/CG.Green.Services.ProfileService.html",
     "title": "Class ProfileService",
-    "keywords": "Class ProfileService This class is a custom implementation of Duende.IdentityServer.Services.DefaultProfileService Inheritance System.Object Duende.IdentityServer.Services.DefaultProfileService ProfileService Implements Duende.IdentityServer.Services.IProfileService Inherited Members Duende.IdentityServer.Services.DefaultProfileService.Logger Duende.IdentityServer.Services.DefaultProfileService.IsActiveAsync(Duende.IdentityServer.Models.IsActiveContext) System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Green.Services Assembly : CG.Green.Identity.dll Syntax public class ProfileService : DefaultProfileService, IProfileService Constructors ProfileService(ILogger<ProfileService>) This constructor creates a new instance of the ProfileService class. Declaration public ProfileService(ILogger<ProfileService> logger) Parameters Type Name Description ILogger < ProfileService > logger The logger to use with this service. Methods GetProfileDataAsync(ProfileDataRequestContext) This method adds custom claims to the profile. Declaration public override async Task GetProfileDataAsync(ProfileDataRequestContext context) Parameters Type Name Description Duende.IdentityServer.Models.ProfileDataRequestContext context The context to use for the operation. Returns Type Description Task A task to perform the operation. Overrides Duende.IdentityServer.Services.DefaultProfileService.GetProfileDataAsync(Duende.IdentityServer.Models.ProfileDataRequestContext) Implements Duende.IdentityServer.Services.IProfileService"
+    "keywords": "Class ProfileService This class is a custom implementation of Inheritance System.Object ProfileService Namespace : CG.Green.Services Assembly : CG.Green.Identity.dll Syntax public class ProfileService : DefaultProfileService Constructors ProfileService(ILogger<ProfileService>) This constructor creates a new instance of the ProfileService class. Declaration public ProfileService(ILogger<ProfileService> logger) Parameters Type Name Description ILogger < ProfileService > logger The logger to use with this service. Methods GetProfileDataAsync(ProfileDataRequestContext) This method adds custom claims to the profile. Declaration public override async Task GetProfileDataAsync(ProfileDataRequestContext context) Parameters Type Name Description ProfileDataRequestContext context The context to use for the operation. Returns Type Description Task A task to perform the operation."
   },
   "api/CG.Green.Services.PurpleEmailSender.html": {
     "href": "api/CG.Green.Services.PurpleEmailSender.html",
