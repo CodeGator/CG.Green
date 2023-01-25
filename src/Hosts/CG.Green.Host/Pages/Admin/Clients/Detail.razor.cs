@@ -47,6 +47,11 @@ public partial class Detail
     /// </summary>
     internal protected readonly List<SecretVM> _secrets = new();
 
+    /// <summary>
+    /// This field contains a temporay redirect url (for use while editing).
+    /// </summary>
+    internal protected string _tempRedirectUrl = "";
+
     #endregion
 
     // *******************************************************************
@@ -187,6 +192,9 @@ public partial class Detail
                 return; // Nothing to do!
             }
 
+            // We have to fiddle with the grant types here because we converted
+            //   them to an enumeration, for binding purposes.
+
             // Remove any existing grant type(s).
             _model.AllowedGrantTypes.Clear();
 
@@ -196,6 +204,9 @@ public partial class Detail
                 _model.AllowedGrantTypes.Add(grantType);
             }
 
+            // We have to fiddle with the allowed scopes here because we converted
+            //   them to an external list, for binding purposes.
+
             // Remove any existing scope(s).
             _model.AllowedScopes.Clear();
 
@@ -204,6 +215,9 @@ public partial class Detail
             {
                 _model.AllowedScopes.Add(selectedScope);
             }
+
+            // We have to fiddle with the client secrets here because we converted
+            //   them to a view-model, for binding and hashing purposes.
 
             // Remove any previous secrets.
             _model.ClientSecrets.Clear();
@@ -285,6 +299,122 @@ public partial class Detail
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to add a secret!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method creates a redirect url for the client.
+    /// </summary>
+    protected async Task OnCreateRedirectUrlAsync()
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Adding a new redirect url."
+                );
+
+            // Add a new redirect url.
+            _model.RedirectUris.Add("https://yourcallbackhere");
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a redirect url!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method deletes a redirect url from the client.
+    /// </summary>
+    /// <param name="url">The url to use for the operation.</param>
+    protected async Task OnDeleteRedirectUrlAsync(
+        string url
+        )
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
+
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the redirect " +
+                $"url <b>'{url}'</b> <br /> <br /> Are you <i>sure</i> you " +
+                "want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting a redirect url."
+                );
+
+            // Remove the redirect url from the client.
+            _model.RedirectUris.Remove(url);
+
+            // Tell Blazor to update.
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete a secret!"
                 );
 
             // Log what we are about to do.

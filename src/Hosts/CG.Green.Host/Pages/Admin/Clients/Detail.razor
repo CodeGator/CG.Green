@@ -114,6 +114,55 @@ else
                 @if (_selectedGrantType == AllowedGrantTypes.Code ||
                        _selectedGrantType == AllowedGrantTypes.CodeAndClientCredentials)
                 {
+                      <MudItem xs="12">
+                        <div class="groupbox">
+                            <MudText Style="font-size:small" Typo="Typo.body2">Redirect URLs</MudText>
+                            <MudTable Items="_model.RedirectUris"
+                                        Dense
+                                        Striped
+                                        CanCancelEdit
+                                        IsEditRowSwitchingBlocked
+                                        EditTrigger="TableEditTrigger.EditButton">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                                Variant=" Variant.Filled"
+                                                Disabled="@_isLoading"
+                                                Color="Color.Secondary"
+                                                OnClick="OnCreateRedirectUrlAsync">Create</MudButton>
+                                <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col style="width:90%" />
+                                    <col style="width:40px;" />
+                                </ColGroup>
+                            <HeaderContent>
+                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)">URL</MudTableSortLabel></MudTh>
+                                <MudTh></MudTh>
+                            </HeaderContent>
+                            <RowTemplate Context="context2">
+                                <MudTd DataLabel="URL">@context2</MudTd>
+                                <MudTd>
+                                    <MudTooltip Text="Delete the URL">
+                                        <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                                        OnClick="() => OnDeleteRedirectUrlAsync(context2)" 
+                                                        Disabled="@_isLoading" />
+                                    </MudTooltip>
+                                </MudTd>
+                            </RowTemplate>
+                            <RowEditingTemplate Context="context2">
+                                <MudTd DataLabel="URL">
+                                    <MudTextField @bind-Value="@context2" />
+                                </MudTd>
+                            </RowEditingTemplate>
+                            <NoRecordsContent>
+                                No URLs were found.
+                            </NoRecordsContent>
+                            <LoadingContent>
+                                Loading URLs ...
+                            </LoadingContent>
+                        </MudTable>
+                    </div>
+                </MudItem>
                     <MudCheckBox T="bool"
                                  Class="mb-n3 ml-3"
                                  @bind-Checked="_model.RequireClientSecret"
@@ -154,10 +203,9 @@ else
                                         <MudTd DataLabel="Description">@context2.Secret.Description</MudTd>
                                         <MudTd DataLabel="Value">@context2.Secret.Value</MudTd>
                                         <MudTd>
-                                            <MudIconButton 
-                                                Icon="@Icons.Material.Filled.Delete" 
-                                                OnClick="() => OnDeleteSecretAsync(context2)" 
-                                                Disabled="@_isLoading" />
+                                            <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                                           OnClick="() => OnDeleteSecretAsync(context2)" 
+                                                           Disabled="@_isLoading" />
                                         </MudTd>
                                     </RowTemplate>
                                     <RowEditingTemplate Context="context2">

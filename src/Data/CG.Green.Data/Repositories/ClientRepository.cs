@@ -180,14 +180,19 @@ internal class ClientRepository : IClientRepository
                 cancellationToken
                 ).ConfigureAwait(false);
 
-            // Log what we are about to do.
-            _logger.LogDebug(
-                "Converting a {entity} entity to a model",
-                nameof(Client)
+            // Look for the complete entity (with sub-objects).
+            var result = await FindByIdAsync(
+                entity.ClientId
                 );
 
-            // Convert the entity to a model.
-            var result = entity.ToModel();
+            // Did we fail?
+            if(result  is null)
+            {
+                // Panic!!
+                throw new KeyNotFoundException(
+                    $"The client: '{entity.ClientId}' was not found!"
+                    );
+            }
 
             // Return the results.
             return result;
@@ -300,6 +305,7 @@ internal class ClientRepository : IClientRepository
                 .Include(x => x.AllowedCorsOrigins)
                 .Include(x => x.AllowedScopes)
                 .Include(x => x.ClientSecrets)
+                .Include(x => x.RedirectUris)
                 .ToListAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
@@ -351,6 +357,7 @@ internal class ClientRepository : IClientRepository
                   .Include(x => x.AllowedCorsOrigins)
                   .Include(x => x.AllowedScopes)
                   .Include(x => x.ClientSecrets)
+                  .Include(x => x.RedirectUris)
                   .FirstOrDefaultAsync(
                         cancellationToken
                         ).ConfigureAwait(false);
@@ -420,6 +427,7 @@ internal class ClientRepository : IClientRepository
                   .Include(x => x.AllowedCorsOrigins)
                   .Include(x => x.AllowedScopes)
                   .Include(x => x.ClientSecrets)
+                  .Include(x => x.RedirectUris)
                   .FirstOrDefaultAsync(
                     cancellationToken
                     ).ConfigureAwait(false);
@@ -451,8 +459,8 @@ internal class ClientRepository : IClientRepository
             entity.AllowedScopes = clientEntity.AllowedScopes;
             entity.RequireClientSecret = clientEntity.RequireClientSecret;  
             entity.ClientSecrets = clientEntity.ClientSecrets;
-            
             entity.RedirectUris = clientEntity.RedirectUris;
+
             entity.FrontChannelLogoutUri = clientEntity.FrontChannelLogoutUri;
             entity.PostLogoutRedirectUris = clientEntity.PostLogoutRedirectUris;
             entity.AllowedCorsOrigins = clientEntity.AllowedCorsOrigins;
