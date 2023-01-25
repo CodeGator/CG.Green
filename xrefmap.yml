@@ -4988,6 +4988,12 @@ references:
   commentId: F:CG.Green.Host.Pages.Admin.Clients.Detail._selectedScopes
   fullName: CG.Green.Host.Pages.Admin.Clients.Detail._selectedScopes
   nameWithType: Detail._selectedScopes
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail._tempRedirectUrl
+  name: _tempRedirectUrl
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail__tempRedirectUrl
+  commentId: F:CG.Green.Host.Pages.Admin.Clients.Detail._tempRedirectUrl
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail._tempRedirectUrl
+  nameWithType: Detail._tempRedirectUrl
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail.ClientId
   name: ClientId
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_ClientId
@@ -5079,6 +5085,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Clients.Detail.NavigationManager
   nameWithType: Detail.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateRedirectUrlAsync
+  name: OnCreateRedirectUrlAsync()
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateRedirectUrlAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateRedirectUrlAsync
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateRedirectUrlAsync()
+  nameWithType: Detail.OnCreateRedirectUrlAsync()
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateRedirectUrlAsync*
+  name: OnCreateRedirectUrlAsync
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateRedirectUrlAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateRedirectUrlAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateRedirectUrlAsync
+  nameWithType: Detail.OnCreateRedirectUrlAsync
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateSecretAsync
   name: OnCreateSecretAsync()
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateSecretAsync
@@ -5092,6 +5111,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateSecretAsync
   nameWithType: Detail.OnCreateSecretAsync
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteRedirectUrlAsync(System.String)
+  name: OnDeleteRedirectUrlAsync(String)
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteRedirectUrlAsync_System_String_
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteRedirectUrlAsync(System.String)
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteRedirectUrlAsync(System.String)
+  nameWithType: Detail.OnDeleteRedirectUrlAsync(String)
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteRedirectUrlAsync*
+  name: OnDeleteRedirectUrlAsync
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteRedirectUrlAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteRedirectUrlAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteRedirectUrlAsync
+  nameWithType: Detail.OnDeleteRedirectUrlAsync
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteSecretAsync(SecretVM)
   name: OnDeleteSecretAsync(SecretVM)
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteSecretAsync_SecretVM_
