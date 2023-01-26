@@ -28,11 +28,13 @@
       "Claims": [
         {
           "Type": "clientAclaimA",
-          "Value": "clientAclaimA-value"
+          "Value": "clientAclaimA-value",
+          "ValueType":  ""
         },
         {
           "Type": "clientAclaimB",
-          "Value": "clientAclaimB-value"
+          "Value": "clientAclaimB-value",
+          "ValueType": ""
         }
       ]
     },
@@ -57,11 +59,13 @@
       "Claims": [
         {
           "Type": "clientBclaimA",
-          "Value": "clientBclaimA-value"
+          "Value": "clientBclaimA-value",
+          "ValueType": ""
         },
         {
           "Type": "clientBclaimB",
-          "Value": "clientBclaimB-value"
+          "Value": "clientBclaimB-value",
+          "ValueType": ""
         }
       ]
     },
@@ -86,11 +90,13 @@
       "Claims": [
         {
           "Type": "clientBclaimA",
-          "Value": "clientBclaimA-value"
+          "Value": "clientBclaimA-value",
+          "ValueType": ""
         },
         {
           "Type": "clientBclaimB",
-          "Value": "clientBclaimB-value"
+          "Value": "clientBclaimB-value",
+          "ValueType": ""
         }
       ]
     }

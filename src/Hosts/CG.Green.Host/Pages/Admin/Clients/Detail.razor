@@ -52,11 +52,12 @@ else
             </MudItem>
             <MudItem xs="12">
                     <div class="groupbox">
-                        <MudText Style="font-size:small" Typo="Typo.body2">Client Grant Types</MudText>
                         <MudSelect T="AllowedGrantTypes"
                             HelperText="The type of grant(s) this client will request."
                             @bind-Value="@_selectedGrantType"
                             Clearable
+                            Label="Client Grant Types"
+                            Required
                             Placeholder="Select a grant type">
                             @foreach (var grantType in Enum.GetNames<AllowedGrantTypes>())
                             {
@@ -90,17 +91,18 @@ else
                     <div class="groupbox" style="height:120px">
                         <MudTextField HelperText="Lifetime of an access token (in seconds)."
                                       Label="Access Token Lifetime"
+                                      Required
                                       InputType="InputType.Number"
                         @bind-Value="_model.AccessTokenLifetime" />
                     </div>
                 </MudItem>
                 <MudItem xs="6">
                     <div class="groupbox" style="height:120px">
-                        <MudText Style="font-size:small" Typo="Typo.body2">Client Scopes</MudText>
                         <MudSelect T="string"
                                    HelperText="The scopes this client will ask for."
                                    MultiSelection
                                    Clearable
+                                   Label=""Client Scopes
                                    Dense
                                    Placeholder="Select one or more scopes"
                                    @bind-SelectedValues="@_selectedScopes">
@@ -302,7 +304,115 @@ else
                         </MudTable>
                     </div>
                 </MudItem>
+                    <MudItem xs="12">
+                        <div class="groupbox">
+                            <MudText Style="font-size:small" Typo="Typo.body2">Allowed CORS origins</MudText>
+                            <MudTable Items="_allowedCorsOrigins"
+                                        Dense
+                                        Striped
+                                        IsEditRowSwitchingBlocked
+                                        EditTrigger="TableEditTrigger.EditButton">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                                Variant=" Variant.Filled"
+                                                Disabled="@_isLoading"
+                                                Color="Color.Secondary"
+                                                OnClick="OnCreateAllowedCorsOriginAsync">Create</MudButton>
+                                <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col  />
+                                    <col style="width:10px;" />
+                                </ColGroup>
+                            <HeaderContent>
+                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)">URI</MudTableSortLabel></MudTh>
+                                <MudTh></MudTh>
+                            </HeaderContent>
+                            <RowTemplate Context="context2">
+                                <MudTd DataLabel="URI">@context2.Value</MudTd>
+                                <MudTd>
+                                    <MudTooltip Text="Delete the URI">
+                                        <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                                        OnClick="() => OnDeleteAllowedCorsOriginAsync(context2.Value)" 
+                                                        Class="pa-0"
+                                                        Disabled="@_isLoading" />
+                                    </MudTooltip>
+                                </MudTd>
+                            </RowTemplate>
+                            <RowEditingTemplate Context="context2">
+                                <MudTd DataLabel="URI">
+                                    <MudTextField @bind-Value="@context2.Value" />
+                                </MudTd>
+                            </RowEditingTemplate>
+                            <NoRecordsContent>
+                                No CORS origins were found.
+                            </NoRecordsContent>
+                            <LoadingContent>
+                                Loading CORS origins ...
+                            </LoadingContent>
+                            <PagerContent>
+                                <MudTablePager />
+                            </PagerContent>
+                        </MudTable>
+                    </div>
+                </MudItem>
                 }
+                    <MudItem xs="12">
+                        <div class="groupbox">
+                            <MudText Style="font-size:small" Typo="Typo.body2">Claims</MudText>
+                            <MudTable Items="_model.Claims"
+                                        Dense
+                                        Striped
+                                        IsEditRowSwitchingBlocked
+                                        EditTrigger="TableEditTrigger.EditButton">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                                Variant=" Variant.Filled"
+                                                Disabled="@_isLoading"
+                                                Color="Color.Secondary"
+                                                OnClick="OnCreateClaimAsync">Create</MudButton>
+                                <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col />
+                                    <col />
+                                    <col style="width:10px;" />
+                                </ColGroup>
+                            <HeaderContent>
+                                <MudTh><MudTableSortLabel SortBy="new Func<ClientClaim, object>(x=>x)">Type</MudTableSortLabel></MudTh>
+                                <MudTh><MudTableSortLabel SortBy="new Func<ClientClaim, object>(x=>x)">Value</MudTableSortLabel></MudTh>
+                                <MudTh></MudTh>
+                            </HeaderContent>
+                            <RowTemplate Context="context2">
+                                <MudTd DataLabel="Type">@context2.Type</MudTd>
+                                <MudTd DataLabel="Value">@context2.Value</MudTd>
+                                <MudTd>
+                                    <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                                    OnClick="() => OnDeleteClaimAsync(context2)" 
+                                                    Class="pa-0"
+                                                    Disabled="@_isLoading" />
+                                </MudTd>
+                            </RowTemplate>
+                            <RowEditingTemplate Context="context2">
+                                <MudTd DataLabel="Type">
+                                    <MudTextField @bind-Value="@context2.Type" />
+                                </MudTd>
+                                <MudTd DataLabel="Value">
+                                    <MudTextField @bind-Value="@context2.Value" />
+                                </MudTd>
+                            </RowEditingTemplate>
+                            <NoRecordsContent>
+                                No claims origins were found.
+                            </NoRecordsContent>
+                            <LoadingContent>
+                                Loading claims origins ...
+                            </LoadingContent>
+                            <PagerContent>
+                                <MudTablePager />
+                            </PagerContent>
+                        </MudTable>
+                    </div>
+                </MudItem>
                 <MudItem xs="12">
                     <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth ButtonType="ButtonType.Submit">Save Changes</MudButton>
                 </MudItem>

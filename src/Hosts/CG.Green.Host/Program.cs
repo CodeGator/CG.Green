@@ -41,7 +41,12 @@ try
         );
 
     // Add MudBlazor stuff
-    builder.Services.AddMudServices();
+    builder.Services.AddMudServices(options =>
+    {
+        options.SnackbarConfiguration.PositionClass = Defaults.Classes.Position.TopCenter;
+        options.SnackbarConfiguration.PreventDuplicates = true;
+        options.SnackbarConfiguration.ClearAfterNavigation = true;
+    });
 
     // Log what we are about to do.
     BootstrapLogger.Instance().LogDebug(

@@ -57,6 +57,11 @@ public partial class Detail
     /// </summary>
     internal protected readonly List<_Wrapper> _postLogoutRedirectUris = new();
 
+    /// <summary>
+    /// This field contains the list of allowed CORS origins.
+    /// </summary>
+    internal protected readonly List<_Wrapper> _allowedCorsOrigins = new();
+
     #endregion
 
     // *******************************************************************
@@ -262,6 +267,18 @@ public partial class Detail
                 _model.PostLogoutRedirectUris.Add(uri.Value);
             }
 
+            // We have to fiddle with the CORS origins here because we
+            //   converted them to a view-model, for binding purposes.
+
+            // Remove any previous redirect uris.
+            _model.AllowedCorsOrigins.Clear();
+
+            // Add the redirect uris to the model.
+            foreach (var uri in _allowedCorsOrigins)
+            {
+                _model.AllowedCorsOrigins.Add(uri.Value);
+            }
+           
             // Update the client in the api.
             await GreenApi.Clients.UpdateAsync(
                 _model,
@@ -275,6 +292,17 @@ public partial class Detail
 
             // Load the client.
             await LoadDataAsync();
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what we did.
+            SnackbarService.Add(
+                $"Saved changes to client",
+                Severity.Info
+                );
         }
         catch (Exception ex)
         {
@@ -347,7 +375,7 @@ public partial class Detail
     // *******************************************************************
 
     /// <summary>
-    /// This method creates a redirect uri for the client.
+    /// This method creates a redirect claim for the client.
     /// </summary>
     protected async Task OnCreateRedirectUriAsync()
     {
@@ -364,8 +392,11 @@ public partial class Detail
                 "Adding a new redirect uri."
                 );
 
-            // Create the new redirect uri.
-            var newItem = new _Wrapper() { Value = $"https://callback{_redirectUris.Count()+1}" };
+            // Create the new redirect claim.
+            var newItem = new _Wrapper() 
+            { 
+                Value = $"https://localhost/{_redirectUris.Count()+1}/signin-oidc" 
+            };
 
             // Add the item to the list.
             _redirectUris.Add(newItem);
@@ -398,7 +429,7 @@ public partial class Detail
     // *******************************************************************
 
     /// <summary>
-    /// This method creates a post logout redirect uri for the client.
+    /// This method creates a post logout redirect claim for the client.
     /// </summary>
     protected async Task OnCreatePostLogoutRedirectUriAsync()
     {
@@ -415,10 +446,10 @@ public partial class Detail
                 "Adding a new post logout redirect uri."
                 );
 
-            // Create the new post logout redirect uri.
+            // Create the new post logout redirect claim.
             var newItem = new _Wrapper() 
             {
-                Value = $"https://callback{_postLogoutRedirectUris.Count() + 1}" 
+                Value = $"https://localhost{_postLogoutRedirectUris.Count() + 1}/signout-callback-oidc" 
             };
 
             // Add the item to the list.
@@ -452,9 +483,119 @@ public partial class Detail
     // *******************************************************************
 
     /// <summary>
-    /// This method deletes a redirect uri from the client.
+    /// This method creates an allowed CORS origin for the client.
     /// </summary>
-    /// <param name="uri">The uri to use for the operation.</param>
+    protected async Task OnCreateAllowedCorsOriginAsync()
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Adding a new CORS origin."
+                );
+
+            // Create the new CORS origin.
+            var newItem = new _Wrapper()
+            {
+                Value = $"https://localhost{_allowedCorsOrigins.Count() + 1}"
+            };
+
+            // Add the item to the list.
+            _allowedCorsOrigins.Add(newItem);
+
+            // Tell Blazor to update.
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a CORS origin!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method creates a claim for the client.
+    /// </summary>
+    protected async Task OnCreateClaimAsync()
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Adding a new claim."
+                );
+
+            // Create the new claim.
+            var newItem = new ClientClaim()
+            {
+                Value = $"claim value {_model.Claims.Count() + 1}",
+                Type = $"claim type {_model.Claims.Count() + 1}",
+                ValueType = ""
+            };
+
+            // Add the item to the list.
+            _model.Claims.Add(newItem);
+
+            // Tell Blazor to update.
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a claim!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method deletes a redirect claim from the client.
+    /// </summary>
+    /// <param name="uri">The claim to use for the operation.</param>
     protected async Task OnDeleteRedirectUriAsync(
         string uri
         )
@@ -492,7 +633,7 @@ public partial class Detail
                 "Deleting a redirect uri."
                 );
 
-            // Look for the uri.
+            // Look for the claim.
             var item = _redirectUris.FirstOrDefault(x => 
                 x.Value == uri
                 );
@@ -532,9 +673,9 @@ public partial class Detail
     // *******************************************************************
 
     /// <summary>
-    /// This method deletes a post logout redirect uri from the client.
+    /// This method deletes a post logout redirect claim from the client.
     /// </summary>
-    /// <param name="uri">The uri to use for the operation.</param>
+    /// <param name="uri">The claim to use for the operation.</param>
     protected async Task OnDeletePostLogoutRedirectUriAsync(
         string uri
         )
@@ -572,7 +713,7 @@ public partial class Detail
                 "Deleting a post logout redirect uri."
                 );
 
-            // Look for the uri.
+            // Look for the claim.
             var item = _postLogoutRedirectUris.FirstOrDefault(x =>
                 x.Value == uri
                 );
@@ -593,6 +734,157 @@ public partial class Detail
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to delete a post logout redirect uri!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method deletes an allowed CORS origin.
+    /// </summary>
+    /// <param name="uri">The claim to use for the operation.</param>
+    protected async Task OnDeleteAllowedCorsOriginAsync(
+        string uri
+        )
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
+
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the allowed " +
+                $"CORS origin <b>'{uri}'</b> <br /> <br /> Are you <i>sure</i> " +
+                "you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting an allowed CORS origin."
+                );
+
+            // Look for the claim.
+            var item = _allowedCorsOrigins.FirstOrDefault(x =>
+                x.Value == uri
+                );
+
+            // Did we find it?
+            if (item is not null)
+            {
+                // Remove the item.
+                _allowedCorsOrigins.Remove(item);
+
+                // Tell Blazor to update.
+                StateHasChanged();
+            }
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete an allowed CORS origin!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method deletes a claim.
+    /// </summary>
+    /// <param name="claim">The claim to use for the operation.</param>
+    protected async Task OnDeleteClaimAsync(
+        ClientClaim claim
+        )
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
+
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the claim " +
+                $"<b>'{claim.Type}'</b> <br /> <br /> Are you <i>sure</i> " +
+                "you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting a claim."
+                );
+
+            // Remove the item.
+            _model.Claims.Remove(claim);
+
+            // Tell Blazor to update.
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete a claim!"
                 );
 
             // Log what we are about to do.
@@ -794,6 +1086,16 @@ public partial class Detail
                     {
                         Value = x
                     }));
+
+                // Remove any existing CORS origins.
+                _allowedCorsOrigins.Clear();
+
+                // Build the list of CORS origins.
+                _allowedCorsOrigins.AddRange(
+                    _model.AllowedCorsOrigins.Select(x => new _Wrapper()
+                    {
+                        Value = x
+                    }));
             }
             else
             {
@@ -808,6 +1110,7 @@ public partial class Detail
                 _secrets.Clear();
                 _redirectUris.Clear();
                 _postLogoutRedirectUris.Clear();
+                _allowedCorsOrigins.Clear();
             }
         }
         finally
