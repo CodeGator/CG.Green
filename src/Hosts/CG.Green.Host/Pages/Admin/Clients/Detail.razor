@@ -132,7 +132,7 @@ else
                                           IsEditRowSwitchingBlocked
                                           EditTrigger="TableEditTrigger.EditButton">
                                     <ToolBarContent>
-                                        <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                        <MudButton StartIcon="@Icons.Material.Outlined.Create"
                                                     Variant="Variant.Filled"
                                                     Disabled="@_isLoading"
                                                     Color="Color.Secondary"
@@ -140,10 +140,10 @@ else
                                         <MudSpacer />
                                     </ToolBarContent>
                                     <ColGroup>
-                                        <col style="width:30%" />
-                                        <col style="width:30%" />
-                                        <col style="width:30%" />
-                                        <col style="width:40px;" />
+                                        <col style="width:20%" />
+                                        <col style="width:35%" />
+                                        <col style="width:35%" />
+                                        <col />
                                     </ColGroup>
                                     <HeaderContent>
                                         <MudTh><MudTableSortLabel SortBy="new Func<SecretVM, object>(x=>x.Secret.Expiration)">Expiration</MudTableSortLabel></MudTh>
@@ -156,7 +156,7 @@ else
                                         <MudTd DataLabel="Description">@context2.Secret.Description</MudTd>
                                         <MudTd DataLabel="Value">@context2.Secret.Value</MudTd>
                                         <MudTd>
-                                            <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                            <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
                                                            OnClick="() => OnDeleteSecretAsync(context2)" 
                                                            Disabled="@_isLoading" />
                                         </MudTd>
@@ -187,6 +187,9 @@ else
                                     <PagerContent>
                                         <MudTablePager />
                                     </PagerContent>
+                                    <EditButtonContent Context="button">
+                                        <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                                    </EditButtonContent>
                                 </MudTable>
                             </div>
                         </MudItem>
@@ -209,7 +212,7 @@ else
                                         IsEditRowSwitchingBlocked
                                         EditTrigger="TableEditTrigger.EditButton">
                                 <ToolBarContent>
-                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
                                                 Variant=" Variant.Filled"
                                                 Disabled="@_isLoading"
                                                 Color="Color.Secondary"
@@ -217,8 +220,8 @@ else
                                 <MudSpacer />
                                 </ToolBarContent>
                                 <ColGroup>
+                                    <col style="width:90%" />
                                     <col  />
-                                    <col style="width:10px;" />
                                 </ColGroup>
                             <HeaderContent>
                                 <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)">URI</MudTableSortLabel></MudTh>
@@ -228,7 +231,7 @@ else
                                 <MudTd DataLabel="URI">@context2.Value</MudTd>
                                 <MudTd>
                                     <MudTooltip Text="Delete the URI">
-                                        <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
                                                         OnClick="() => OnDeleteRedirectUriAsync(context2.Value)" 
                                                         Class="pa-0"
                                                         Disabled="@_isLoading" />
@@ -249,6 +252,9 @@ else
                             <PagerContent>
                                 <MudTablePager />
                             </PagerContent>
+                            <EditButtonContent Context="button">
+                                <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                            </EditButtonContent>
                         </MudTable>
                     </div>
                 </MudItem>
@@ -261,7 +267,7 @@ else
                                         IsEditRowSwitchingBlocked
                                         EditTrigger="TableEditTrigger.EditButton">
                                 <ToolBarContent>
-                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
                                                 Variant=" Variant.Filled"
                                                 Disabled="@_isLoading"
                                                 Color="Color.Secondary"
@@ -269,8 +275,8 @@ else
                                 <MudSpacer />
                                 </ToolBarContent>
                                 <ColGroup>
-                                    <col  />
-                                    <col style="width:10px;" />
+                                    <col style="width:90%" />
+                                    <col />
                                 </ColGroup>
                             <HeaderContent>
                                 <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)">URI</MudTableSortLabel></MudTh>
@@ -280,7 +286,7 @@ else
                                 <MudTd DataLabel="URI">@context2.Value</MudTd>
                                 <MudTd>
                                     <MudTooltip Text="Delete the URI">
-                                        <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
                                                         OnClick="() => OnDeletePostLogoutRedirectUriAsync(context2.Value)" 
                                                         Class="pa-0"
                                                         Disabled="@_isLoading" />
@@ -301,6 +307,9 @@ else
                             <PagerContent>
                                 <MudTablePager />
                             </PagerContent>
+                            <EditButtonContent Context="button">
+                                <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                            </EditButtonContent>
                         </MudTable>
                     </div>
                 </MudItem>
@@ -313,7 +322,7 @@ else
                                         IsEditRowSwitchingBlocked
                                         EditTrigger="TableEditTrigger.EditButton">
                                 <ToolBarContent>
-                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
                                                 Variant=" Variant.Filled"
                                                 Disabled="@_isLoading"
                                                 Color="Color.Secondary"
@@ -321,8 +330,8 @@ else
                                 <MudSpacer />
                                 </ToolBarContent>
                                 <ColGroup>
-                                    <col  />
-                                    <col style="width:10px;" />
+                                    <col style="width:90%" />
+                                    <col />
                                 </ColGroup>
                             <HeaderContent>
                                 <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)">URI</MudTableSortLabel></MudTh>
@@ -332,7 +341,7 @@ else
                                 <MudTd DataLabel="URI">@context2.Value</MudTd>
                                 <MudTd>
                                     <MudTooltip Text="Delete the URI">
-                                        <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
                                                         OnClick="() => OnDeleteAllowedCorsOriginAsync(context2.Value)" 
                                                         Class="pa-0"
                                                         Disabled="@_isLoading" />
@@ -353,6 +362,9 @@ else
                             <PagerContent>
                                 <MudTablePager />
                             </PagerContent>
+                            <EditButtonContent Context="button">
+                                <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                            </EditButtonContent>
                         </MudTable>
                     </div>
                 </MudItem>
@@ -366,7 +378,7 @@ else
                                         IsEditRowSwitchingBlocked
                                         EditTrigger="TableEditTrigger.EditButton">
                                 <ToolBarContent>
-                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
                                                 Variant=" Variant.Filled"
                                                 Disabled="@_isLoading"
                                                 Color="Color.Secondary"
@@ -374,9 +386,9 @@ else
                                 <MudSpacer />
                                 </ToolBarContent>
                                 <ColGroup>
-                                    <col />
-                                    <col />
-                                    <col style="width:10px;" />
+                                    <col style="width:45%" />
+                                    <col style="width:45%" />
+                                    <col  />
                                 </ColGroup>
                             <HeaderContent>
                                 <MudTh><MudTableSortLabel SortBy="new Func<ClientClaim, object>(x=>x)">Type</MudTableSortLabel></MudTh>
@@ -387,7 +399,7 @@ else
                                 <MudTd DataLabel="Type">@context2.Type</MudTd>
                                 <MudTd DataLabel="Value">@context2.Value</MudTd>
                                 <MudTd>
-                                    <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                    <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
                                                     OnClick="() => OnDeleteClaimAsync(context2)" 
                                                     Class="pa-0"
                                                     Disabled="@_isLoading" />
@@ -410,6 +422,9 @@ else
                             <PagerContent>
                                 <MudTablePager />
                             </PagerContent>
+                            <EditButtonContent Context="button">
+                                <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                            </EditButtonContent>
                         </MudTable>
                     </div>
                 </MudItem>

@@ -28,6 +28,11 @@
                               AdornmentIcon="@Icons.Material.Outlined.Search"
                               IconSize="Size.Medium" Class="mt-0"></MudTextField>
             </ToolBarContent>
+            <ColGroup>
+                <col style="width:10%" />
+                <col style="width:70%" />
+                <col />
+            </ColGroup>
             <HeaderContent>
                 <MudTh><MudTableSortLabel SortBy="new Func<Client, object>(x=>x.Enabled)">Enabled</MudTableSortLabel></MudTh>
                 <MudTh><MudTableSortLabel SortBy="new Func<Client, object>(x=>x.ClientName)">Name</MudTableSortLabel></MudTh>
@@ -46,8 +51,12 @@
                 </MudTd>
                 <MudTd DataLabel="Name">@context.ClientName</MudTd>
                 <MudTd>
-                    <MudIconButton Icon="@Icons.Material.Filled.Delete" OnClick="() => OnDeleteAsync(context)" Disabled="@_isLoading" />
-                    <MudIconButton Icon="@Icons.Material.Filled.Edit" OnClick="() => OnEditAsync(context)" Disabled="@_isLoading" />
+                    <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
+                                   OnClick="() => OnDeleteAsync(context)" 
+                                   Disabled="@_isLoading" />
+                    <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                   OnClick="() => OnEditAsync(context)" 
+                                   Disabled="@_isLoading" />
                 </MudTd>
             </RowTemplate>
              <PagerContent>

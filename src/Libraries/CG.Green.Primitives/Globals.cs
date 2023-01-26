@@ -40,5 +40,29 @@ public static class Globals
             /// </summary>
             public const int FrontChannelLogoutUriLength = 2000;
         }
+
+        /// <summary>
+        /// This class contains sizes for <see cref="GreenUser"/> properties.
+        /// </summary>
+        public static class Users
+        {
+            /// <summary>
+            /// This constant represents the length of the <see cref="GreenUser.UserName"/> 
+            /// property.
+            /// </summary>
+            public const int UserNameLength = 256;
+
+            /// <summary>
+            /// This constant represents the length of the <see cref="GreenUser.PasswordHash"/> 
+            /// property.
+            /// </summary>
+            public const int PasswordHashLength = 100;
+
+            /// <summary>
+            /// This constant represents the length of the <see cref="GreenUser.Email"/> 
+            /// property.
+            /// </summary>
+            public const int EmailLength = 256;
+        }
     }
 }

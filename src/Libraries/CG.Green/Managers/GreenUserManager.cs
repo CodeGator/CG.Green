@@ -148,7 +148,7 @@ internal class GreenUserManager : IGreenUserManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    $"ASP.NET user manager errors: {string.Join(",", result.Errors)}"
+                    string.Join(", ", result.Errors.Select(x => x.Description))
                     );
             }
 
@@ -224,7 +224,7 @@ internal class GreenUserManager : IGreenUserManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    $"ASP.NET user manager errors: {string.Join(",", result.Errors)}"
+                    string.Join(", ", result.Errors.Select(x => x.Description))
                     );
             }
         }
@@ -300,7 +300,7 @@ internal class GreenUserManager : IGreenUserManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    $"ASP.NET user manager errors: {string.Join(",", result.Errors)}"
+                    string.Join(", ", result.Errors.Select(x => x.Description))
                     );
             }
 

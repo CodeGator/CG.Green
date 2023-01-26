@@ -1,0 +1,50 @@
+﻿<MudDialog>
+    <DialogContent>
+        <EditForm Model="@Model" OnValidSubmit="OnValidSubmit">
+            <MudCard Outlined>
+                <MudCardContent>
+                    <DataAnnotationsValidator />
+                    <MudTextField AutoFocus
+                                  Required
+                                  Immediate
+                                  Counter="@(Globals.Models.Users.UserNameLength)"
+                                  Variant="Variant.Outlined"
+                                  Label="User Name"
+                                  For="@(() => Model.UserName)"
+                                  @bind-Value="@Model.UserName"
+                                  Class="ml-auto" />
+                    <MudTextField Required
+                                  Immediate
+                                  Counter="@(Globals.Models.Users.EmailLength)"
+                                  Variant="Variant.Outlined"
+                                  Label="Email"
+                                  For="@(() => Model.Email)"
+                                  @bind-Value="@Model.Email"
+                                  Class="ml-auto" />
+                    <MudTextField Required
+                                  Immediate
+                                  Counter="@(Globals.Models.Users.PasswordHashLength)"
+                                  Variant="Variant.Outlined"
+                                  Label="Password"
+                                  For="@(() => Model.Password)"
+                                  @bind-Value="@Model.Password"
+                                  Class="ml-auto" />
+                    <MudTextField Required
+                                  Immediate
+                                  Counter="@(Globals.Models.Users.PasswordHashLength)"
+                                  Variant="Variant.Outlined"
+                                  Label="Confirm Password"
+                                  For="@(() => Model.ConfirmPassword)"
+                                  @bind-Value="@Model.ConfirmPassword"
+                                  Class="ml-auto" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">Cancel</MudButton>
+                    <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">Save</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </DialogContent>
+</MudDialog>
+
+
