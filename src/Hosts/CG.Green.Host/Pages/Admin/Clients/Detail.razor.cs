@@ -48,9 +48,14 @@ public partial class Detail
     internal protected readonly List<SecretVM> _secrets = new();
 
     /// <summary>
-    /// This field contains a temporay redirect url (for use while editing).
+    /// This field contains the list of redirect uris.
     /// </summary>
-    internal protected string _tempRedirectUrl = "";
+    internal protected readonly List<_Wrapper> _redirectUris = new();
+
+    /// <summary>
+    /// This field contains the list of post logout redirect uris.
+    /// </summary>
+    internal protected readonly List<_Wrapper> _postLogoutRedirectUris = new();
 
     #endregion
 
@@ -233,6 +238,30 @@ public partial class Detail
                 _model.ClientSecrets.Add(secret.Secret);
             }
 
+            // We have to fiddle with the redirect uris here because we converted
+            //   them to a view-model, for binding purposes.
+
+            // Remove any previous redirect uris.
+            _model.RedirectUris.Clear();
+            
+            // Add the redirect uris to the model.
+            foreach (var uri in _redirectUris)
+            {
+                _model.RedirectUris.Add(uri.Value);
+            }
+
+            // We have to fiddle with the post logout redirect uris here because
+            //   we converted them to a view-model, for binding purposes.
+
+            // Remove any previous redirect uris.
+            _model.PostLogoutRedirectUris.Clear();
+
+            // Add the redirect uris to the model.
+            foreach (var uri in _postLogoutRedirectUris)
+            {
+                _model.PostLogoutRedirectUris.Add(uri.Value);
+            }
+
             // Update the client in the api.
             await GreenApi.Clients.UpdateAsync(
                 _model,
@@ -318,9 +347,9 @@ public partial class Detail
     // *******************************************************************
 
     /// <summary>
-    /// This method creates a redirect url for the client.
+    /// This method creates a redirect uri for the client.
     /// </summary>
-    protected async Task OnCreateRedirectUrlAsync()
+    protected async Task OnCreateRedirectUriAsync()
     {
         try
         {
@@ -332,18 +361,24 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Adding a new redirect url."
+                "Adding a new redirect uri."
                 );
 
-            // Add a new redirect url.
-            _model.RedirectUris.Add("https://yourcallbackhere");
+            // Create the new redirect uri.
+            var newItem = new _Wrapper() { Value = $"https://callback{_redirectUris.Count()+1}" };
+
+            // Add the item to the list.
+            _redirectUris.Add(newItem);
+
+            // Tell Blazor to update.
+            StateHasChanged();
         }
         catch (Exception ex)
         {
             // Log what we are about to do.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to add a redirect url!"
+                "Failed to add a redirect uri!"
                 );
 
             // Log what we are about to do.
@@ -363,11 +398,65 @@ public partial class Detail
     // *******************************************************************
 
     /// <summary>
-    /// This method deletes a redirect url from the client.
+    /// This method creates a post logout redirect uri for the client.
     /// </summary>
-    /// <param name="url">The url to use for the operation.</param>
-    protected async Task OnDeleteRedirectUrlAsync(
-        string url
+    protected async Task OnCreatePostLogoutRedirectUriAsync()
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Adding a new post logout redirect uri."
+                );
+
+            // Create the new post logout redirect uri.
+            var newItem = new _Wrapper() 
+            {
+                Value = $"https://callback{_postLogoutRedirectUris.Count() + 1}" 
+            };
+
+            // Add the item to the list.
+            _postLogoutRedirectUris.Add(newItem);
+
+            // Tell Blazor to update.
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a post logout redirect uri!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method deletes a redirect uri from the client.
+    /// </summary>
+    /// <param name="uri">The uri to use for the operation.</param>
+    protected async Task OnDeleteRedirectUriAsync(
+        string uri
         )
     {
         try
@@ -387,7 +476,7 @@ public partial class Detail
             var result = await DialogService.ShowMessageBox(
                 title: Globals.Caption,
                 markupMessage: new MarkupString("This will delete the redirect " +
-                $"url <b>'{url}'</b> <br /> <br /> Are you <i>sure</i> you " +
+                $"uri <b>'{uri}'</b> <br /> <br /> Are you <i>sure</i> you " +
                 "want to do that?"),
                 noText: "Cancel"
                 );
@@ -400,21 +489,110 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Deleting a redirect url."
+                "Deleting a redirect uri."
                 );
 
-            // Remove the redirect url from the client.
-            _model.RedirectUris.Remove(url);
+            // Look for the uri.
+            var item = _redirectUris.FirstOrDefault(x => 
+                x.Value == uri
+                );
 
-            // Tell Blazor to update.
-            StateHasChanged();
+            // Did we find it?
+            if (item is not null)
+            {
+                // Remove the item.
+                _redirectUris.Remove(item);
+
+                // Tell Blazor to update.
+                StateHasChanged();
+            }
         }
         catch (Exception ex)
         {
             // Log what we are about to do.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to delete a secret!"
+                "Failed to delete a redirect uri!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar message."
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
+                $"<ul><li>{ex.Message}</li></ul>")
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method deletes a post logout redirect uri from the client.
+    /// </summary>
+    /// <param name="uri">The uri to use for the operation.</param>
+    protected async Task OnDeletePostLogoutRedirectUriAsync(
+        string uri
+        )
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
+
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the post " +
+                "logout redirect uri <b>'{uri}'</b> <br /> <br /> Are you " +
+                "<i>sure</i> you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting a post logout redirect uri."
+                );
+
+            // Look for the uri.
+            var item = _postLogoutRedirectUris.FirstOrDefault(x =>
+                x.Value == uri
+                );
+
+            // Did we find it?
+            if (item is not null)
+            {
+                // Remove the item.
+                _postLogoutRedirectUris.Remove(item);
+
+                // Tell Blazor to update.
+                StateHasChanged();
+            }
+        }
+        catch (Exception ex)
+        {
+            // Log what we are about to do.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete a post logout redirect uri!"
                 );
 
             // Log what we are about to do.
@@ -596,6 +774,26 @@ public partial class Detail
                         Secret = x,
                         IsHashed = true
                     }));
+
+                // Remove any existing redirect uris.
+                _redirectUris.Clear();
+
+                // Build the list of redirect uris.
+                _redirectUris.AddRange(
+                    _model.RedirectUris.Select(x => new _Wrapper()
+                    {
+                        Value = x
+                    }));
+
+                // Remove any existing post logout redirect uris.
+                _postLogoutRedirectUris.Clear();
+
+                // Build the list of post logout redirect uris.
+                _postLogoutRedirectUris.AddRange(
+                    _model.PostLogoutRedirectUris.Select(x => new _Wrapper()
+                    {
+                        Value = x
+                    }));
             }
             else
             {
@@ -608,6 +806,8 @@ public partial class Detail
                 _selectedGrantType = AllowedGrantTypes.Ciba;
                 _selectedScopes = new HashSet<string>();
                 _secrets.Clear();
+                _redirectUris.Clear();
+                _postLogoutRedirectUris.Clear();
             }
         }
         finally
@@ -623,4 +823,13 @@ public partial class Detail
     }
 
     #endregion
+}
+
+/// <summary>
+/// This class wraps a string for the <see cref="MudTable{T}"/> component, since 
+/// that type is incapable of binding to a single string object.
+/// </summary>
+public class _Wrapper
+{
+    public string Value { get; set; } = null!;
 }

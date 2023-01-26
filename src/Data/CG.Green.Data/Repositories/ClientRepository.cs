@@ -306,6 +306,7 @@ internal class ClientRepository : IClientRepository
                 .Include(x => x.AllowedScopes)
                 .Include(x => x.ClientSecrets)
                 .Include(x => x.RedirectUris)
+                .Include(x => x.PostLogoutRedirectUris)
                 .ToListAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
@@ -358,6 +359,7 @@ internal class ClientRepository : IClientRepository
                   .Include(x => x.AllowedScopes)
                   .Include(x => x.ClientSecrets)
                   .Include(x => x.RedirectUris)
+                  .Include(x => x.PostLogoutRedirectUris)
                   .FirstOrDefaultAsync(
                         cancellationToken
                         ).ConfigureAwait(false);
@@ -428,6 +430,7 @@ internal class ClientRepository : IClientRepository
                   .Include(x => x.AllowedScopes)
                   .Include(x => x.ClientSecrets)
                   .Include(x => x.RedirectUris)
+                  .Include(x => x.PostLogoutRedirectUris)
                   .FirstOrDefaultAsync(
                     cancellationToken
                     ).ConfigureAwait(false);
@@ -460,9 +463,9 @@ internal class ClientRepository : IClientRepository
             entity.RequireClientSecret = clientEntity.RequireClientSecret;  
             entity.ClientSecrets = clientEntity.ClientSecrets;
             entity.RedirectUris = clientEntity.RedirectUris;
-
             entity.FrontChannelLogoutUri = clientEntity.FrontChannelLogoutUri;
             entity.PostLogoutRedirectUris = clientEntity.PostLogoutRedirectUris;
+
             entity.AllowedCorsOrigins = clientEntity.AllowedCorsOrigins;
             entity.Claims = clientEntity.Claims;
 

@@ -33,6 +33,12 @@ public static class Globals
             /// property.
             /// </summary>
             public const int ClientIdLength = 200;
+
+            /// <summary>
+            /// This constant represents the length of the <see cref="Client.FrontChannelLogoutUri"/> 
+            /// property.
+            /// </summary>
+            public const int FrontChannelLogoutUriLength = 2000;
         }
     }
 }

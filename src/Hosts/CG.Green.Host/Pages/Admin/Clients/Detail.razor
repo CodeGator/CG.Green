@@ -114,55 +114,6 @@ else
                 @if (_selectedGrantType == AllowedGrantTypes.Code ||
                        _selectedGrantType == AllowedGrantTypes.CodeAndClientCredentials)
                 {
-                      <MudItem xs="12">
-                        <div class="groupbox">
-                            <MudText Style="font-size:small" Typo="Typo.body2">Redirect URLs</MudText>
-                            <MudTable Items="_model.RedirectUris"
-                                        Dense
-                                        Striped
-                                        CanCancelEdit
-                                        IsEditRowSwitchingBlocked
-                                        EditTrigger="TableEditTrigger.EditButton">
-                                <ToolBarContent>
-                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
-                                                Variant=" Variant.Filled"
-                                                Disabled="@_isLoading"
-                                                Color="Color.Secondary"
-                                                OnClick="OnCreateRedirectUrlAsync">Create</MudButton>
-                                <MudSpacer />
-                                </ToolBarContent>
-                                <ColGroup>
-                                    <col style="width:90%" />
-                                    <col style="width:40px;" />
-                                </ColGroup>
-                            <HeaderContent>
-                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)">URL</MudTableSortLabel></MudTh>
-                                <MudTh></MudTh>
-                            </HeaderContent>
-                            <RowTemplate Context="context2">
-                                <MudTd DataLabel="URL">@context2</MudTd>
-                                <MudTd>
-                                    <MudTooltip Text="Delete the URL">
-                                        <MudIconButton Icon="@Icons.Material.Filled.Delete" 
-                                                        OnClick="() => OnDeleteRedirectUrlAsync(context2)" 
-                                                        Disabled="@_isLoading" />
-                                    </MudTooltip>
-                                </MudTd>
-                            </RowTemplate>
-                            <RowEditingTemplate Context="context2">
-                                <MudTd DataLabel="URL">
-                                    <MudTextField @bind-Value="@context2" />
-                                </MudTd>
-                            </RowEditingTemplate>
-                            <NoRecordsContent>
-                                No URLs were found.
-                            </NoRecordsContent>
-                            <LoadingContent>
-                                Loading URLs ...
-                            </LoadingContent>
-                        </MudTable>
-                    </div>
-                </MudItem>
                     <MudCheckBox T="bool"
                                  Class="mb-n3 ml-3"
                                  @bind-Checked="_model.RequireClientSecret"
@@ -231,10 +182,131 @@ else
                                     <LoadingContent>
                                         Loading secrets ...
                                     </LoadingContent>
+                                    <PagerContent>
+                                        <MudTablePager />
+                                    </PagerContent>
+                                    <FooterContent>
+                                        <MudTFootRow>
+                                            <MudTd colspan="5">This is a sample footer</MudTd>
+                                        </MudTFootRow>
+                                    </FooterContent>
                                 </MudTable>
                             </div>
                         </MudItem>
                     }
+                    <MudItem xs="12">
+                        <MudTextField Immediate
+                                      Counter="@(Globals.Models.Clients.FrontChannelLogoutUriLength)"
+                                      Class="ml-auto"
+                                      Variant="Variant.Outlined"
+                                      Label="Front Channel Logout Uri"
+                                      For="@(() => _model.FrontChannelLogoutUri)"
+                                      @bind-Value="@_model.FrontChannelLogoutUri" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <div class="groupbox">
+                            <MudText Style="font-size:small" Typo="Typo.body2">Redirect URIs</MudText>
+                            <MudTable Items="_redirectUris"
+                                        Dense
+                                        Striped
+                                        IsEditRowSwitchingBlocked
+                                        EditTrigger="TableEditTrigger.EditButton">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                                Variant=" Variant.Filled"
+                                                Disabled="@_isLoading"
+                                                Color="Color.Secondary"
+                                                OnClick="OnCreateRedirectUriAsync">Create</MudButton>
+                                <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col  />
+                                    <col style="width:10px;" />
+                                </ColGroup>
+                            <HeaderContent>
+                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)">URI</MudTableSortLabel></MudTh>
+                                <MudTh></MudTh>
+                            </HeaderContent>
+                            <RowTemplate Context="context2">
+                                <MudTd DataLabel="URI">@context2.Value</MudTd>
+                                <MudTd>
+                                    <MudTooltip Text="Delete the URI">
+                                        <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                                        OnClick="() => OnDeleteRedirectUriAsync(context2.Value)" 
+                                                        Class="pa-0"
+                                                        Disabled="@_isLoading" />
+                                    </MudTooltip>
+                                </MudTd>
+                            </RowTemplate>
+                            <RowEditingTemplate Context="context2">
+                                <MudTd DataLabel="URI">
+                                    <MudTextField @bind-Value="@context2.Value" />
+                                </MudTd>
+                            </RowEditingTemplate>
+                            <NoRecordsContent>
+                                No URIs were found.
+                            </NoRecordsContent>
+                            <LoadingContent>
+                                Loading URIs ...
+                            </LoadingContent>
+                            <PagerContent>
+                                <MudTablePager />
+                            </PagerContent>
+                        </MudTable>
+                    </div>
+                </MudItem>
+                    <MudItem xs="12">
+                        <div class="groupbox">
+                            <MudText Style="font-size:small" Typo="Typo.body2">Post Logout Redirect URIs</MudText>
+                            <MudTable Items="_postLogoutRedirectUris"
+                                        Dense
+                                        Striped
+                                        IsEditRowSwitchingBlocked
+                                        EditTrigger="TableEditTrigger.EditButton">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Filled.Create"
+                                                Variant=" Variant.Filled"
+                                                Disabled="@_isLoading"
+                                                Color="Color.Secondary"
+                                                OnClick="OnCreatePostLogoutRedirectUriAsync">Create</MudButton>
+                                <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col  />
+                                    <col style="width:10px;" />
+                                </ColGroup>
+                            <HeaderContent>
+                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)">URI</MudTableSortLabel></MudTh>
+                                <MudTh></MudTh>
+                            </HeaderContent>
+                            <RowTemplate Context="context2">
+                                <MudTd DataLabel="URI">@context2.Value</MudTd>
+                                <MudTd>
+                                    <MudTooltip Text="Delete the URI">
+                                        <MudIconButton Icon="@Icons.Material.Filled.Delete" 
+                                                        OnClick="() => OnDeletePostLogoutRedirectUriAsync(context2.Value)" 
+                                                        Class="pa-0"
+                                                        Disabled="@_isLoading" />
+                                    </MudTooltip>
+                                </MudTd>
+                            </RowTemplate>
+                            <RowEditingTemplate Context="context2">
+                                <MudTd DataLabel="URI">
+                                    <MudTextField @bind-Value="@context2.Value" />
+                                </MudTd>
+                            </RowEditingTemplate>
+                            <NoRecordsContent>
+                                No URIs were found.
+                            </NoRecordsContent>
+                            <LoadingContent>
+                                Loading URIs ...
+                            </LoadingContent>
+                            <PagerContent>
+                                <MudTablePager />
+                            </PagerContent>
+                        </MudTable>
+                    </div>
+                </MudItem>
                 }
                 <MudItem xs="12">
                     <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth ButtonType="ButtonType.Submit">Save Changes</MudButton>
