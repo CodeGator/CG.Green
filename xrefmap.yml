@@ -4971,6 +4971,12 @@ references:
   commentId: T:CG.Green.Host.Pages.Admin.Clients.Detail
   fullName: CG.Green.Host.Pages.Admin.Clients.Detail
   nameWithType: Detail
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail._allowedCorsOrigins
+  name: _allowedCorsOrigins
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail__allowedCorsOrigins
+  commentId: F:CG.Green.Host.Pages.Admin.Clients.Detail._allowedCorsOrigins
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail._allowedCorsOrigins
+  nameWithType: Detail._allowedCorsOrigins
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail._allScopes
   name: _allScopes
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail__allScopes
@@ -5116,6 +5122,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Clients.Detail.NavigationManager
   nameWithType: Detail.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateAllowedCorsOriginAsync
+  name: OnCreateAllowedCorsOriginAsync()
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateAllowedCorsOriginAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateAllowedCorsOriginAsync
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateAllowedCorsOriginAsync()
+  nameWithType: Detail.OnCreateAllowedCorsOriginAsync()
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateAllowedCorsOriginAsync*
+  name: OnCreateAllowedCorsOriginAsync
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateAllowedCorsOriginAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateAllowedCorsOriginAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateAllowedCorsOriginAsync
+  nameWithType: Detail.OnCreateAllowedCorsOriginAsync
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateClaimAsync
+  name: OnCreateClaimAsync()
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateClaimAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateClaimAsync
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateClaimAsync()
+  nameWithType: Detail.OnCreateClaimAsync()
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateClaimAsync*
+  name: OnCreateClaimAsync
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateClaimAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateClaimAsync
+  nameWithType: Detail.OnCreateClaimAsync
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreatePostLogoutRedirectUriAsync
   name: OnCreatePostLogoutRedirectUriAsync()
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnCreatePostLogoutRedirectUriAsync
@@ -5155,6 +5187,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateSecretAsync
   nameWithType: Detail.OnCreateSecretAsync
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteAllowedCorsOriginAsync(System.String)
+  name: OnDeleteAllowedCorsOriginAsync(String)
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteAllowedCorsOriginAsync_System_String_
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteAllowedCorsOriginAsync(System.String)
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteAllowedCorsOriginAsync(System.String)
+  nameWithType: Detail.OnDeleteAllowedCorsOriginAsync(String)
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteAllowedCorsOriginAsync*
+  name: OnDeleteAllowedCorsOriginAsync
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteAllowedCorsOriginAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteAllowedCorsOriginAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteAllowedCorsOriginAsync
+  nameWithType: Detail.OnDeleteAllowedCorsOriginAsync
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteClaimAsync(ClientClaim)
+  name: OnDeleteClaimAsync(ClientClaim)
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteClaimAsync_ClientClaim_
+  commentId: M:CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteClaimAsync(ClientClaim)
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteClaimAsync(ClientClaim)
+  nameWithType: Detail.OnDeleteClaimAsync(ClientClaim)
+- uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteClaimAsync*
+  name: OnDeleteClaimAsync
+  href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteClaimAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteClaimAsync
+  nameWithType: Detail.OnDeleteClaimAsync
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail.OnDeletePostLogoutRedirectUriAsync(System.String)
   name: OnDeletePostLogoutRedirectUriAsync(String)
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html#CG_Green_Host_Pages_Admin_Clients_Detail_OnDeletePostLogoutRedirectUriAsync_System_String_

@@ -123,6 +123,29 @@
   </div>
   <h3 id="fields">Fields
   </h3>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail__allowedCorsOrigins" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail._allowedCorsOrigins">_allowedCorsOrigins</h4>
+  <div class="markdown level1 summary"><p>This field contains the list of allowed CORS origins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;_Wrapper&gt; _allowedCorsOrigins</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="CG.Green.Host.Pages.Admin.Clients._Wrapper.html">_Wrapper</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail__allScopes" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail._allScopes">_allScopes</h4>
   <div class="markdown level1 summary"><p>This field contains the list of all scopes.</p>
 </div>
@@ -552,9 +575,57 @@
       </tr>
     </tbody>
   </table>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateAllowedCorsOriginAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateAllowedCorsOriginAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateAllowedCorsOriginAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateAllowedCorsOriginAsync">OnCreateAllowedCorsOriginAsync()</h4>
+  <div class="markdown level1 summary"><p>This method creates an allowed CORS origin for the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnCreateAllowedCorsOriginAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateClaimAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateClaimAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateClaimAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateClaimAsync">OnCreateClaimAsync()</h4>
+  <div class="markdown level1 summary"><p>This method creates a claim for the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnCreateClaimAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreatePostLogoutRedirectUriAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreatePostLogoutRedirectUriAsync*"></a>
   <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreatePostLogoutRedirectUriAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreatePostLogoutRedirectUriAsync">OnCreatePostLogoutRedirectUriAsync()</h4>
-  <div class="markdown level1 summary"><p>This method creates a post logout redirect uri for the client.</p>
+  <div class="markdown level1 summary"><p>This method creates a post logout redirect claim for the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -578,7 +649,7 @@
   </table>
   <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateRedirectUriAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateRedirectUriAsync*"></a>
   <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnCreateRedirectUriAsync" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnCreateRedirectUriAsync">OnCreateRedirectUriAsync()</h4>
-  <div class="markdown level1 summary"><p>This method creates a redirect uri for the client.</p>
+  <div class="markdown level1 summary"><p>This method creates a redirect claim for the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -624,9 +695,93 @@
       </tr>
     </tbody>
   </table>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteAllowedCorsOriginAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteAllowedCorsOriginAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteAllowedCorsOriginAsync_System_String_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteAllowedCorsOriginAsync(System.String)">OnDeleteAllowedCorsOriginAsync(String)</h4>
+  <div class="markdown level1 summary"><p>This method deletes an allowed CORS origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnDeleteAllowedCorsOriginAsync(string uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The claim to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteClaimAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteClaimAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteClaimAsync_ClientClaim_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteClaimAsync(ClientClaim)">OnDeleteClaimAsync(ClientClaim)</h4>
+  <div class="markdown level1 summary"><p>This method deletes a claim.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnDeleteClaimAsync(ClientClaim claim)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ClientClaim</span></td>
+        <td><span class="parametername">claim</span></td>
+        <td><p>The claim to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeletePostLogoutRedirectUriAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeletePostLogoutRedirectUriAsync*"></a>
   <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeletePostLogoutRedirectUriAsync_System_String_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeletePostLogoutRedirectUriAsync(System.String)">OnDeletePostLogoutRedirectUriAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method deletes a post logout redirect uri from the client.</p>
+  <div class="markdown level1 summary"><p>This method deletes a post logout redirect claim from the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -646,7 +801,7 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">uri</span></td>
-        <td><p>The uri to use for the operation.</p>
+        <td><p>The claim to use for the operation.</p>
 </td>
       </tr>
     </tbody>
@@ -668,7 +823,7 @@
   </table>
   <a id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteRedirectUriAsync_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteRedirectUriAsync*"></a>
   <h4 id="CG_Green_Host_Pages_Admin_Clients_Detail_OnDeleteRedirectUriAsync_System_String_" data-uid="CG.Green.Host.Pages.Admin.Clients.Detail.OnDeleteRedirectUriAsync(System.String)">OnDeleteRedirectUriAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method deletes a redirect uri from the client.</p>
+  <div class="markdown level1 summary"><p>This method deletes a redirect claim from the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -688,7 +843,7 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">uri</span></td>
-        <td><p>The uri to use for the operation.</p>
+        <td><p>The claim to use for the operation.</p>
 </td>
       </tr>
     </tbody>
