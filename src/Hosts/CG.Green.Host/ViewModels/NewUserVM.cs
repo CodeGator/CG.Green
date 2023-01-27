@@ -1,9 +1,10 @@
-﻿namespace CG.Green.Host.ViewModels;
+﻿
+namespace CG.Green.Host.ViewModels;
 
 /// <summary>
-/// This class is a view-model for a user create operation.
+/// This class is a view-model for creating a new user.
 /// </summary>
-public class UserVM
+public class NewUserVM
 {
     // *******************************************************************
     // Properties.

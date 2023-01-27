@@ -22,7 +22,7 @@ public partial class NewDialog
     /// This property contains the edit form's model.
     /// </summary>
     [Parameter]
-    public UserVM Model { get; set; } = null!;
+    public NewUserVM Model { get; set; } = null!;
 
     /// <summary>
     /// This property contains the dialog service for this page.

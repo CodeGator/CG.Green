@@ -1,4 +1,6 @@
 ﻿
+using Serilog;
+
 namespace CG.Green.Host.Pages.Admin.Clients;
 
 /// <summary>
@@ -174,15 +176,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -295,7 +293,7 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what we did.
@@ -314,15 +312,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -360,15 +354,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -414,15 +404,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -468,15 +454,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -522,15 +504,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -578,15 +556,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -658,15 +632,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -738,15 +708,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -818,15 +784,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -889,15 +851,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -951,15 +909,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
-            // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            /// Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -996,7 +950,7 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Fetching identity resources."
+                "Fetching api scopes."
                 );
 
             // Get the list of API scopes.
@@ -1005,7 +959,7 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Fetching api scopes."
+                "Fetching identity resources."
                 );
 
             // Get the list of identity resources.
@@ -1128,11 +1082,3 @@ public partial class Detail
     #endregion
 }
 
-/// <summary>
-/// This class wraps a string for the <see cref="MudTable{T}"/> component, since 
-/// that type is incapable of binding to a single string object.
-/// </summary>
-public class _Wrapper
-{
-    public string Value { get; set; } = null!;
-}

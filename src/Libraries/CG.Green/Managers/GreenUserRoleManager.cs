@@ -200,7 +200,7 @@ internal class GreenUserRoleManager : IGreenUserRoleManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    string.Join(", ", result.Errors.Select(x => x.Description))
+                    string.Join("|", result.Errors.Select(x => x.Description))
                     );
             }
 
@@ -281,7 +281,7 @@ internal class GreenUserRoleManager : IGreenUserRoleManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    string.Join(", ", result.Errors.Select(x => x.Description))
+                    string.Join("|", result.Errors.Select(x => x.Description))
                     );
             }
 

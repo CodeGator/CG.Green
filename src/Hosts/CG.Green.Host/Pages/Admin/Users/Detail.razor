@@ -1,3 +1,55 @@
 ﻿@page "/admin/users/detail/{UserId}"
 @attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
 
+<PageTitle>User Details</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+@if (_model is null)
+{
+    if (_isLoading)
+    {
+        <MudText Typo="Typo.h6" Color="Color.Primary">Loading ...</MudText>
+    }
+    else
+    {
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! we couldn't find that user!</MudText>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => NavigationManager.NavigateTo("/admin/users"))">Back to Users</MudButton>
+    }
+}
+else
+{
+    <MudText Typo="Typo.h6">User Details</MudText>
+    <MudText Typo="Typo.body2" Class="pb-5">Use this page to edit the user.</MudText>
+
+    <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+        <MudGrid>
+            <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField AutoFocus
+                              Required
+                              Immediate
+                              Counter="@(Globals.Models.Users.EmailLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="Email"
+                              For="@(() => _model.Email)"
+                              @bind-Value="@_model.Email" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Required
+                              Immediate
+                              Counter="@(Globals.Models.Users.UserNameLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="User Name"
+                              For="@(() => _model.UserName)"
+                              @bind-Value="@_model.UserName" />
+            </MudItem>
+        </MudGrid>
+    </EditForm>
+}
+

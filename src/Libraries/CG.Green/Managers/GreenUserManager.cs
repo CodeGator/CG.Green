@@ -148,7 +148,7 @@ internal class GreenUserManager : IGreenUserManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    string.Join(", ", result.Errors.Select(x => x.Description))
+                    string.Join("|", result.Errors.Select(x => x.Description))
                     );
             }
 
@@ -224,7 +224,7 @@ internal class GreenUserManager : IGreenUserManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    string.Join(", ", result.Errors.Select(x => x.Description))
+                    string.Join("|", result.Errors.Select(x => x.Description))
                     );
             }
         }
@@ -278,6 +278,41 @@ internal class GreenUserManager : IGreenUserManager
     // *******************************************************************
 
     /// <inheritdoc/>
+    public virtual async Task<GreenUser?> FindByIdAsync(
+        string userId,
+        CancellationToken cancellationToken = default
+        )
+    {
+        try
+        {
+            // Look for the user.
+            var user = await _signInManager.UserManager.FindByIdAsync(
+                userId
+                );
+
+            // Return the result.
+            return user;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for a user by id!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for a user " +
+                "by id!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
     public virtual async Task<GreenUser> UpdateAsync(
         GreenUser greenUser,
         string userName,
@@ -300,7 +335,7 @@ internal class GreenUserManager : IGreenUserManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    string.Join(", ", result.Errors.Select(x => x.Description))
+                    string.Join("|", result.Errors.Select(x => x.Description))
                     );
             }
 

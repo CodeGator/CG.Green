@@ -1,5 +1,4 @@
-﻿using CG.Green.Host.Pages.Admin.Clients;
-
+﻿
 namespace CG.Green.Host.Pages.Admin.Users;
 
 /// <summary>
@@ -114,7 +113,13 @@ public partial class Detail
                 new BreadcrumbItem("Details", href: $"/admin/users/detail/{UserId}")
             };
 
-            // TODO : write the code for this.
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Loading data for the page."
+                );
+
+            // Load the user.
+            await LoadDataAsync();
 
             // Give the base class a chance.
             await base.OnInitializedAsync();
@@ -129,15 +134,11 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -157,11 +158,15 @@ public partial class Detail
                 return; // Nothing to do!
             }
 
-            // TODO : write the code for this.
+            // Save the model.
+            await GreenApi.Users.UpdateAsync(
+                _model,
+                UserName
+                );
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what we did.
@@ -180,15 +185,58 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
+            await DialogService.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method loads the data for the page.
+    /// </summary>
+    /// <returns>A task to perform the operation.</returns>
+    private async Task LoadDataAsync()
+    {
+        try
+        {
+            // Sanity check the id.
+            if (string.IsNullOrEmpty(UserId))
+            {
+                _model = null; // no user!
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Marking the page as busy."
                 );
+
+            // We're now officially busy.
+            _isLoading = true;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Fetching user."
+                );
+
+            // Get the user.
+            _model = await GreenApi.Users.FindByIdAsync(
+                UserId ?? ""
+                );
+        }
+        finally
+        {
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Marking the page as idle."
+                );
+
+            // We're now officially idle.
+            _isLoading = false;
         }
     }
 

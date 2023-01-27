@@ -129,15 +129,11 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -203,15 +199,11 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -336,8 +328,8 @@ public partial class Index
 
                 // Prompt the user.
                 await DialogService.ShowMessageBox(
-                    title: Globals.Caption,
-                    markupMessage: (MarkupString)"That client id is already in use!"
+                    title: "Something broke!",
+                    message: "That client id is already in use!"
                     );
                 return;
             }
@@ -350,15 +342,11 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -400,15 +388,11 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -450,15 +434,11 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 

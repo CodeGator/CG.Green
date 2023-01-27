@@ -92,6 +92,23 @@ public interface IGreenUserManager
         );
 
     /// <summary>
+    /// This method searches for all the <ee cref="GreenUser"/> objects.
+    /// </summary>
+    /// <param name="userId">The identifier to use for the operation.</param>
+    /// <param name="cancellationToken">A cancellation token that is monitored
+    /// for the lifetime of the method.</param>
+    /// <returns>A task to perform the operation that returns a matching 
+    /// <see cref="GreenUser"/> objects, or <c>NULL</c> if no match was found.</returns>
+    /// <exception cref="ArgumentException">This exception is thrown whenever one
+    /// or more arguments are missing, or invalid.</exception>
+    /// <exception cref="ManagerException">This exception is thrown whenever the
+    /// manager fails to complete the operation.</exception>
+    Task<GreenUser?> FindByIdAsync(
+        string userId,
+        CancellationToken cancellationToken = default
+        );
+
+    /// <summary>
     /// This method updates an existing <see cref="GreenUser"/> object in the 
     /// underlying storage.
     /// </summary>

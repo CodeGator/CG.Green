@@ -129,15 +129,11 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -203,15 +199,11 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<ul><li>{ex.Message}</li></ul>")
-                );
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
@@ -267,7 +259,7 @@ public partial class Index
             // Create the dialog parameters.
             var parameters = new DialogParameters()
             {
-                { "Model", new UserVM() }
+                { "Model", new NewUserVM() }
             };
 
             // Log what we are about to do.
@@ -297,7 +289,7 @@ public partial class Index
                 );
 
             // Recover the model.
-            var model = (UserVM)result.Data;
+            var model = (NewUserVM)result.Data;
 
             // Log what we are about to do.
             Logger.LogDebug(
@@ -337,8 +329,8 @@ public partial class Index
 
                 // Prompt the user.
                 await DialogService.ShowMessageBox(
-                    title: Globals.Caption,
-                    markupMessage: (MarkupString)"That user name is already in use!"
+                    title: "Something broke!",
+                    message: "That user name is already in use!"
                     );
                 return;
             }
@@ -351,17 +343,11 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the snackbar message."
+                "Showing the message box"
                 );
 
             // Tell the world what happened.
-            await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: (MarkupString)($"<b>Something broke!</b> " +
-                $"<p>{ex.Message}</p><ul>" +
-                string.Join("", ex.GetBaseException().Message.Split(',').Select(x => $"<li>{x}</li>")) +
-                "</ul>"
-                ));
+            await DialogService.ShowErrorBox(ex);
         }
     }
 
