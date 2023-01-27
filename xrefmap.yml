@@ -4970,25 +4970,6 @@ references:
   commentId: N:CG.Green.Host.Pages.Admin.Clients
   fullName: CG.Green.Host.Pages.Admin.Clients
   nameWithType: CG.Green.Host.Pages.Admin.Clients
-- uid: CG.Green.Host.Pages.Admin.Clients._Wrapper
-  name: _Wrapper
-  href: api/CG.Green.Host.Pages.Admin.Clients._Wrapper.html
-  commentId: T:CG.Green.Host.Pages.Admin.Clients._Wrapper
-  fullName: CG.Green.Host.Pages.Admin.Clients._Wrapper
-  nameWithType: _Wrapper
-- uid: CG.Green.Host.Pages.Admin.Clients._Wrapper.Value
-  name: Value
-  href: api/CG.Green.Host.Pages.Admin.Clients._Wrapper.html#CG_Green_Host_Pages_Admin_Clients__Wrapper_Value
-  commentId: P:CG.Green.Host.Pages.Admin.Clients._Wrapper.Value
-  fullName: CG.Green.Host.Pages.Admin.Clients._Wrapper.Value
-  nameWithType: _Wrapper.Value
-- uid: CG.Green.Host.Pages.Admin.Clients._Wrapper.Value*
-  name: Value
-  href: api/CG.Green.Host.Pages.Admin.Clients._Wrapper.html#CG_Green_Host_Pages_Admin_Clients__Wrapper_Value_
-  commentId: Overload:CG.Green.Host.Pages.Admin.Clients._Wrapper.Value
-  isSpec: "True"
-  fullName: CG.Green.Host.Pages.Admin.Clients._Wrapper.Value
-  nameWithType: _Wrapper.Value
 - uid: CG.Green.Host.Pages.Admin.Clients.Detail
   name: Detail
   href: api/CG.Green.Host.Pages.Admin.Clients.Detail.html
@@ -5756,6 +5737,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Users.Detail.HttpContextAccessor
   nameWithType: Detail.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.Users.Detail.LoadDataAsync
+  name: LoadDataAsync()
+  href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_LoadDataAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Users.Detail.LoadDataAsync
+  fullName: CG.Green.Host.Pages.Admin.Users.Detail.LoadDataAsync()
+  nameWithType: Detail.LoadDataAsync()
+- uid: CG.Green.Host.Pages.Admin.Users.Detail.LoadDataAsync*
+  name: LoadDataAsync
+  href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_LoadDataAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Users.Detail.LoadDataAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Users.Detail.LoadDataAsync
+  nameWithType: Detail.LoadDataAsync
 - uid: CG.Green.Host.Pages.Admin.Users.Detail.Logger
   name: Logger
   href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_Logger
@@ -6303,6 +6297,25 @@ references:
   commentId: N:CG.Green.Host.ViewModels
   fullName: CG.Green.Host.ViewModels
   nameWithType: CG.Green.Host.ViewModels
+- uid: CG.Green.Host.ViewModels._Wrapper
+  name: _Wrapper
+  href: api/CG.Green.Host.ViewModels._Wrapper.html
+  commentId: T:CG.Green.Host.ViewModels._Wrapper
+  fullName: CG.Green.Host.ViewModels._Wrapper
+  nameWithType: _Wrapper
+- uid: CG.Green.Host.ViewModels._Wrapper.Value
+  name: Value
+  href: api/CG.Green.Host.ViewModels._Wrapper.html#CG_Green_Host_ViewModels__Wrapper_Value
+  commentId: P:CG.Green.Host.ViewModels._Wrapper.Value
+  fullName: CG.Green.Host.ViewModels._Wrapper.Value
+  nameWithType: _Wrapper.Value
+- uid: CG.Green.Host.ViewModels._Wrapper.Value*
+  name: Value
+  href: api/CG.Green.Host.ViewModels._Wrapper.html#CG_Green_Host_ViewModels__Wrapper_Value_
+  commentId: Overload:CG.Green.Host.ViewModels._Wrapper.Value
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels._Wrapper.Value
+  nameWithType: _Wrapper.Value
 - uid: CG.Green.Host.ViewModels.AllowedGrantTypes
   name: AllowedGrantTypes
   href: api/CG.Green.Host.ViewModels.AllowedGrantTypes.html
@@ -6429,6 +6442,64 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.NewClientVM.ClientId
   nameWithType: NewClientVM.ClientId
+- uid: CG.Green.Host.ViewModels.NewUserVM
+  name: NewUserVM
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html
+  commentId: T:CG.Green.Host.ViewModels.NewUserVM
+  fullName: CG.Green.Host.ViewModels.NewUserVM
+  nameWithType: NewUserVM
+- uid: CG.Green.Host.ViewModels.NewUserVM.ConfirmPassword
+  name: ConfirmPassword
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html#CG_Green_Host_ViewModels_NewUserVM_ConfirmPassword
+  commentId: P:CG.Green.Host.ViewModels.NewUserVM.ConfirmPassword
+  fullName: CG.Green.Host.ViewModels.NewUserVM.ConfirmPassword
+  nameWithType: NewUserVM.ConfirmPassword
+- uid: CG.Green.Host.ViewModels.NewUserVM.ConfirmPassword*
+  name: ConfirmPassword
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html#CG_Green_Host_ViewModels_NewUserVM_ConfirmPassword_
+  commentId: Overload:CG.Green.Host.ViewModels.NewUserVM.ConfirmPassword
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.NewUserVM.ConfirmPassword
+  nameWithType: NewUserVM.ConfirmPassword
+- uid: CG.Green.Host.ViewModels.NewUserVM.Email
+  name: Email
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html#CG_Green_Host_ViewModels_NewUserVM_Email
+  commentId: P:CG.Green.Host.ViewModels.NewUserVM.Email
+  fullName: CG.Green.Host.ViewModels.NewUserVM.Email
+  nameWithType: NewUserVM.Email
+- uid: CG.Green.Host.ViewModels.NewUserVM.Email*
+  name: Email
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html#CG_Green_Host_ViewModels_NewUserVM_Email_
+  commentId: Overload:CG.Green.Host.ViewModels.NewUserVM.Email
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.NewUserVM.Email
+  nameWithType: NewUserVM.Email
+- uid: CG.Green.Host.ViewModels.NewUserVM.Password
+  name: Password
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html#CG_Green_Host_ViewModels_NewUserVM_Password
+  commentId: P:CG.Green.Host.ViewModels.NewUserVM.Password
+  fullName: CG.Green.Host.ViewModels.NewUserVM.Password
+  nameWithType: NewUserVM.Password
+- uid: CG.Green.Host.ViewModels.NewUserVM.Password*
+  name: Password
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html#CG_Green_Host_ViewModels_NewUserVM_Password_
+  commentId: Overload:CG.Green.Host.ViewModels.NewUserVM.Password
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.NewUserVM.Password
+  nameWithType: NewUserVM.Password
+- uid: CG.Green.Host.ViewModels.NewUserVM.UserName
+  name: UserName
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html#CG_Green_Host_ViewModels_NewUserVM_UserName
+  commentId: P:CG.Green.Host.ViewModels.NewUserVM.UserName
+  fullName: CG.Green.Host.ViewModels.NewUserVM.UserName
+  nameWithType: NewUserVM.UserName
+- uid: CG.Green.Host.ViewModels.NewUserVM.UserName*
+  name: UserName
+  href: api/CG.Green.Host.ViewModels.NewUserVM.html#CG_Green_Host_ViewModels_NewUserVM_UserName_
+  commentId: Overload:CG.Green.Host.ViewModels.NewUserVM.UserName
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.NewUserVM.UserName
+  nameWithType: NewUserVM.UserName
 - uid: CG.Green.Host.ViewModels.SecretVM
   name: SecretVM
   href: api/CG.Green.Host.ViewModels.SecretVM.html
@@ -6461,64 +6532,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.SecretVM.Secret
   nameWithType: SecretVM.Secret
-- uid: CG.Green.Host.ViewModels.UserVM
-  name: UserVM
-  href: api/CG.Green.Host.ViewModels.UserVM.html
-  commentId: T:CG.Green.Host.ViewModels.UserVM
-  fullName: CG.Green.Host.ViewModels.UserVM
-  nameWithType: UserVM
-- uid: CG.Green.Host.ViewModels.UserVM.ConfirmPassword
-  name: ConfirmPassword
-  href: api/CG.Green.Host.ViewModels.UserVM.html#CG_Green_Host_ViewModels_UserVM_ConfirmPassword
-  commentId: P:CG.Green.Host.ViewModels.UserVM.ConfirmPassword
-  fullName: CG.Green.Host.ViewModels.UserVM.ConfirmPassword
-  nameWithType: UserVM.ConfirmPassword
-- uid: CG.Green.Host.ViewModels.UserVM.ConfirmPassword*
-  name: ConfirmPassword
-  href: api/CG.Green.Host.ViewModels.UserVM.html#CG_Green_Host_ViewModels_UserVM_ConfirmPassword_
-  commentId: Overload:CG.Green.Host.ViewModels.UserVM.ConfirmPassword
-  isSpec: "True"
-  fullName: CG.Green.Host.ViewModels.UserVM.ConfirmPassword
-  nameWithType: UserVM.ConfirmPassword
-- uid: CG.Green.Host.ViewModels.UserVM.Email
-  name: Email
-  href: api/CG.Green.Host.ViewModels.UserVM.html#CG_Green_Host_ViewModels_UserVM_Email
-  commentId: P:CG.Green.Host.ViewModels.UserVM.Email
-  fullName: CG.Green.Host.ViewModels.UserVM.Email
-  nameWithType: UserVM.Email
-- uid: CG.Green.Host.ViewModels.UserVM.Email*
-  name: Email
-  href: api/CG.Green.Host.ViewModels.UserVM.html#CG_Green_Host_ViewModels_UserVM_Email_
-  commentId: Overload:CG.Green.Host.ViewModels.UserVM.Email
-  isSpec: "True"
-  fullName: CG.Green.Host.ViewModels.UserVM.Email
-  nameWithType: UserVM.Email
-- uid: CG.Green.Host.ViewModels.UserVM.Password
-  name: Password
-  href: api/CG.Green.Host.ViewModels.UserVM.html#CG_Green_Host_ViewModels_UserVM_Password
-  commentId: P:CG.Green.Host.ViewModels.UserVM.Password
-  fullName: CG.Green.Host.ViewModels.UserVM.Password
-  nameWithType: UserVM.Password
-- uid: CG.Green.Host.ViewModels.UserVM.Password*
-  name: Password
-  href: api/CG.Green.Host.ViewModels.UserVM.html#CG_Green_Host_ViewModels_UserVM_Password_
-  commentId: Overload:CG.Green.Host.ViewModels.UserVM.Password
-  isSpec: "True"
-  fullName: CG.Green.Host.ViewModels.UserVM.Password
-  nameWithType: UserVM.Password
-- uid: CG.Green.Host.ViewModels.UserVM.UserName
-  name: UserName
-  href: api/CG.Green.Host.ViewModels.UserVM.html#CG_Green_Host_ViewModels_UserVM_UserName
-  commentId: P:CG.Green.Host.ViewModels.UserVM.UserName
-  fullName: CG.Green.Host.ViewModels.UserVM.UserName
-  nameWithType: UserVM.UserName
-- uid: CG.Green.Host.ViewModels.UserVM.UserName*
-  name: UserName
-  href: api/CG.Green.Host.ViewModels.UserVM.html#CG_Green_Host_ViewModels_UserVM_UserName_
-  commentId: Overload:CG.Green.Host.ViewModels.UserVM.UserName
-  isSpec: "True"
-  fullName: CG.Green.Host.ViewModels.UserVM.UserName
-  nameWithType: UserVM.UserName
 - uid: CG.Green.Identity
   name: CG.Green.Identity
   href: api/CG.Green.Identity.html
@@ -7430,6 +7443,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.GreenUserManager.FindAllAsync
   nameWithType: GreenUserManager.FindAllAsync
+- uid: CG.Green.Managers.GreenUserManager.FindByIdAsync(System.String,CancellationToken)
+  name: FindByIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.GreenUserManager.html#CG_Green_Managers_GreenUserManager_FindByIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenUserManager.FindByIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenUserManager.FindByIdAsync(System.String, CancellationToken)
+  nameWithType: GreenUserManager.FindByIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.GreenUserManager.FindByIdAsync*
+  name: FindByIdAsync
+  href: api/CG.Green.Managers.GreenUserManager.html#CG_Green_Managers_GreenUserManager_FindByIdAsync_
+  commentId: Overload:CG.Green.Managers.GreenUserManager.FindByIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenUserManager.FindByIdAsync
+  nameWithType: GreenUserManager.FindByIdAsync
 - uid: CG.Green.Managers.GreenUserManager.UpdateAsync(GreenUser,System.String,CancellationToken)
   name: UpdateAsync(GreenUser, String, CancellationToken)
   href: api/CG.Green.Managers.GreenUserManager.html#CG_Green_Managers_GreenUserManager_UpdateAsync_GreenUser_System_String_CancellationToken_
@@ -8033,6 +8059,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.IGreenUserManager.FindAllAsync
   nameWithType: IGreenUserManager.FindAllAsync
+- uid: CG.Green.Managers.IGreenUserManager.FindByIdAsync(System.String,CancellationToken)
+  name: FindByIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenUserManager.html#CG_Green_Managers_IGreenUserManager_FindByIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenUserManager.FindByIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IGreenUserManager.FindByIdAsync(System.String, CancellationToken)
+  nameWithType: IGreenUserManager.FindByIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IGreenUserManager.FindByIdAsync*
+  name: FindByIdAsync
+  href: api/CG.Green.Managers.IGreenUserManager.html#CG_Green_Managers_IGreenUserManager_FindByIdAsync_
+  commentId: Overload:CG.Green.Managers.IGreenUserManager.FindByIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenUserManager.FindByIdAsync
+  nameWithType: IGreenUserManager.FindByIdAsync
 - uid: CG.Green.Managers.IGreenUserManager.UpdateAsync(GreenUser,System.String,CancellationToken)
   name: UpdateAsync(GreenUser, String, CancellationToken)
   href: api/CG.Green.Managers.IGreenUserManager.html#CG_Green_Managers_IGreenUserManager_UpdateAsync_GreenUser_System_String_CancellationToken_

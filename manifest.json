@@ -1134,7 +1134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Clients.Detail.html",
-          "hash": "Fln4exEFFkgpYTmohk/wcADOL4yiuBRQlu5/dHUgNzs="
+          "hash": "r4mv4yZTp9nhq3cDbHYyTV3WVgB2e5e/CiOHxkdAK/o="
         }
       },
       "is_incremental": false,
@@ -1166,23 +1166,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Host.Pages.Admin.Clients._Wrapper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Host.Pages.Admin.Clients._Wrapper.html",
-          "hash": "4RjP9J7FhiJ3TlEzteMjDLFlTqozkWaV32i7bEFZHBE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Host.Pages.Admin.Clients.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Clients.html",
-          "hash": "/t2RMjrTN9YszabP0ph6OrRkclfO8ioBVcgFqxNFKNw="
+          "hash": "fKnaf/XYkOVwg+bl20vcfFzXBKDuB1QcnO1STiDRLic="
         }
       },
       "is_incremental": false,
@@ -1242,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Users.Detail.html",
-          "hash": "JxC8y/26oXK+m/FDmHgBgOO6CpKeZ5kRKysGlCLBVkY="
+          "hash": "GMv1SA/wIi77cVKOZGzKxZObiBBu14BMJSYiM1T+rSo="
         }
       },
       "is_incremental": false,
@@ -1266,7 +1254,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Users.NewDialog.html",
-          "hash": "A3EX3RmE/FqwER1WyYt2+dqKMGj9rQ3zXLdsXlJaQ80="
+          "hash": "f/CsE3X1IDeZydqcZVmMNEIdBsu2vvsEsJl/4aHUP+U="
         }
       },
       "is_incremental": false,
@@ -1418,6 +1406,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.ViewModels.NewUserVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.ViewModels.NewUserVM.html",
+          "hash": "G5OBSA676njykyN/+qmmHYzjsIbn168ZOYk0zrf9lGo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Host.ViewModels.SecretVM.yml",
       "output": {
         ".html": {
@@ -1430,11 +1430,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Host.ViewModels.UserVM.yml",
+      "source_relative_path": "api/CG.Green.Host.ViewModels._Wrapper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Green.Host.ViewModels.UserVM.html",
-          "hash": "0TJc6LrIcNiVfMVrlkM4d1BcLA5zT5eVA3DXGJbAOT8="
+          "relative_path": "api/CG.Green.Host.ViewModels._Wrapper.html",
+          "hash": "k+OOMKgNWG+J3OdfBn1sB32Rb0OOCfSNhUoCVnMYp9M="
         }
       },
       "is_incremental": false,
@@ -1446,7 +1446,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.html",
-          "hash": "bSP7Q3wZi1rl27OF0/O7ew2+jz90Kgfacl/9X1Gwkk8="
+          "hash": "lEPNMSd+3Ebib2wyj+kuDMDpEGh3FAfhi7cJEPhoPYY="
         }
       },
       "is_incremental": false,
@@ -1710,7 +1710,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.GreenUserManager.html",
-          "hash": "PKKhKR5oNxSDNKmeNFqF6f+g6LLX1HgNVm508nKki38="
+          "hash": "bhDnA3WjGe0OMRe4dod86TW8EUgUqN4uU3AJVAzZj5w="
         }
       },
       "is_incremental": false,
@@ -1782,7 +1782,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IGreenUserManager.html",
-          "hash": "O88ni5AdPK6r8k3NZl9rRVl0C1/mh9Z2Gv5p3C/WM6I="
+          "hash": "J1mhzXp7CwUgxzS2Vw7G4KQcd2e2OR2On2EGUGS69iI="
         }
       },
       "is_incremental": false,
@@ -2358,7 +2358,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "e9RVf6T2XBwVh3igtvcz5QQIK7F/tuPxp+Chw9IZ20E="
+          "hash": "QZ+eW9a6u/GxDG2xxj7bxJCKBgSQzz6Pr50FBplZIwQ="
         }
       },
       "is_incremental": false,
