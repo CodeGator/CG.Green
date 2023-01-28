@@ -584,6 +584,11 @@
     "title": "Class EditClaimVM",
     "keywords": "Class EditClaimVM This class is a view-model for editing a claim. Inheritance System.Object EditClaimVM Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Green.Host.ViewModels Assembly : CG.Green.Host.dll Syntax public class EditClaimVM Properties ClaimType This property contains the type for the claim. Declaration public string ClaimType { get; set; } Property Value Type Description System.String ClaimValue This property contains the value for the claim. Declaration public string ClaimValue { get; set; } Property Value Type Description System.String"
   },
+  "api/CG.Green.Host.ViewModels.EditClientVM.html": {
+    "href": "api/CG.Green.Host.ViewModels.EditClientVM.html",
+    "title": "Class EditClientVM",
+    "keywords": "Class EditClientVM This class is a view-model for editing an existing client. Inheritance System.Object EditClientVM Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Green.Host.ViewModels Assembly : CG.Green.Host.dll Syntax public class EditClientVM"
+  },
   "api/CG.Green.Host.ViewModels.EditUserVM.html": {
     "href": "api/CG.Green.Host.ViewModels.EditUserVM.html",
     "title": "Class EditUserVM",
@@ -592,7 +597,7 @@
   "api/CG.Green.Host.ViewModels.html": {
     "href": "api/CG.Green.Host.ViewModels.html",
     "title": "Namespace CG.Green.Host.ViewModels",
-    "keywords": "Namespace CG.Green.Host.ViewModels Classes _Wrapper This class wraps a string for the component, since that type is incapable of binding (correctly) to a single string object, as documented HERE: https://github.com/MudBlazor/MudBlazor/discussions/6217 AllowedGrantTypesExtensions This class contains extensions for the AllowedGrantTypes type. EditClaimVM This class is a view-model for editing a claim. EditUserVM This class is a view-model for editing an existing user. NewClientVM This class is a view-model for creating a new client. NewUserVM This class is a view-model for creating a new user. SecretVM This class is a view-model for a Duende client secret. Enums AllowedGrantTypes This enumerations lists the valid grant types, and combinations of grant types."
+    "keywords": "Namespace CG.Green.Host.ViewModels Classes _Wrapper This class wraps a string for the component, since that type is incapable of binding (correctly) to a single string object, as documented HERE: https://github.com/MudBlazor/MudBlazor/discussions/6217 AllowedGrantTypesExtensions This class contains extensions for the AllowedGrantTypes type. EditClaimVM This class is a view-model for editing a claim. EditClientVM This class is a view-model for editing an existing client. EditUserVM This class is a view-model for editing an existing user. NewClientVM This class is a view-model for creating a new client. NewUserVM This class is a view-model for creating a new user. SecretVM This class is a view-model for a Duende client secret. Enums AllowedGrantTypes This enumerations lists the valid grant types, and combinations of grant types."
   },
   "api/CG.Green.Host.ViewModels.NewClientVM.html": {
     "href": "api/CG.Green.Host.ViewModels.NewClientVM.html",
@@ -693,6 +698,16 @@
     "href": "api/CG.Green.Identity.RoleNameDefaults.html",
     "title": "Class RoleNameDefaults",
     "keywords": "Class RoleNameDefaults This class utility contains constants related to roles. Inheritance System.Object RoleNameDefaults Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Green.Identity Assembly : CG.Green.Identity.dll Syntax public static class RoleNameDefaults Fields Admin This constant contains the name of an 'administrator' role. Declaration public const string Admin = \"Admin\" Field Value Type Description System.String SuperAdmin This constant contains the name of a 'super administrator' role. Declaration public const string SuperAdmin = \"SuperAdmin\" Field Value Type Description System.String"
+  },
+  "api/CG.Green.Identity.Services.ClaimsTransformation.html": {
+    "href": "api/CG.Green.Identity.Services.ClaimsTransformation.html",
+    "title": "Class ClaimsTransformation",
+    "keywords": "Class ClaimsTransformation This class is a default implementation of the interface. Inheritance System.Object ClaimsTransformation Namespace : CG.Green.Identity.Services Assembly : CG.Green.Identity.dll Syntax class ClaimsTransformation : IClaimsTransformation Constructors ClaimsTransformation(SignInManager<GreenUser>, ILogger<IClaimsTransformation>) This constructor creates a new instance of the ClaimsTransformation class. Declaration public ClaimsTransformation(SignInManager<GreenUser> signInManager, ILogger<IClaimsTransformation> logger) Parameters Type Name Description SignInManager < GreenUser > signInManager The sign in manager to use with the service. ILogger < IClaimsTransformation > logger The logger to use with this service. Fields _logger This field contains the logger for the service. Declaration protected readonly ILogger<IClaimsTransformation> _logger Field Value Type Description ILogger < IClaimsTransformation > _signInManager This field contains the sign in manager for the service. Declaration protected readonly SignInManager<GreenUser> _signInManager Field Value Type Description SignInManager < GreenUser > Methods TransformAsync(ClaimsPrincipal) This method performs a claims transformation operation. Declaration public virtual async Task<ClaimsPrincipal> TransformAsync(ClaimsPrincipal principal) Parameters Type Name Description ClaimsPrincipal principal The principal to use for the operation. Returns Type Description Task < ClaimsPrincipal > A task to perform the operation that returns a object containing custom claims."
+  },
+  "api/CG.Green.Identity.Services.html": {
+    "href": "api/CG.Green.Identity.Services.html",
+    "title": "Namespace CG.Green.Identity.Services",
+    "keywords": "Namespace CG.Green.Identity.Services Classes ClaimsTransformation This class is a default implementation of the interface."
   },
   "api/CG.Green.IGreenApi.html": {
     "href": "api/CG.Green.IGreenApi.html",

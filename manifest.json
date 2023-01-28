@@ -1406,6 +1406,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.ViewModels.EditClientVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.ViewModels.EditClientVM.html",
+          "hash": "shuAg7/peDGMV5QzDEfkHYwG9IzF0qidzVXoz6comK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Host.ViewModels.EditUserVM.yml",
       "output": {
         ".html": {
@@ -1470,7 +1482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.html",
-          "hash": "5ZSdXrEnnrvT42CdLOSJnrtEntpSchHgZN+bi6S4Dmw="
+          "hash": "rTaWm+4+W7RHTMva5gLl0fLqUCXJ6hdSQ6yM9pNf9Lc="
         }
       },
       "is_incremental": false,
@@ -1663,6 +1675,30 @@
         ".html": {
           "relative_path": "api/CG.Green.Identity.RoleNameDefaults.html",
           "hash": "b//nD2865dIosAY5pvTH/woGse4UDlwPdR5JEQnrfnw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Identity.Services.ClaimsTransformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Identity.Services.ClaimsTransformation.html",
+          "hash": "XwwdlcKDDYU9SSNV4NFUo5p1JI5g3RTDW/AmMNzkVeg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Identity.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Identity.Services.html",
+          "hash": "0hx81D/DnItY9j9IhwrwwcQT4Pzrx1uTmMbxKgYerqA="
         }
       },
       "is_incremental": false,
@@ -2382,7 +2418,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wA9AcBWyMh3omZyZixBjwM/UVy0J/H+EJv6krkJytlM="
+          "hash": "vdFRI5vU9S9H8Dvxt4SbZKu0R7aBFvG8h3g3pZFlFLY="
         }
       },
       "is_incremental": false,
@@ -2501,7 +2537,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 197,
+          "total_file_count": 200,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

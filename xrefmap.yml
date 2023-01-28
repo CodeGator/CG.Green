@@ -6487,6 +6487,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.EditClaimVM.ClaimValue
   nameWithType: EditClaimVM.ClaimValue
+- uid: CG.Green.Host.ViewModels.EditClientVM
+  name: EditClientVM
+  href: api/CG.Green.Host.ViewModels.EditClientVM.html
+  commentId: T:CG.Green.Host.ViewModels.EditClientVM
+  fullName: CG.Green.Host.ViewModels.EditClientVM
+  nameWithType: EditClientVM
 - uid: CG.Green.Host.ViewModels.EditUserVM
   name: EditUserVM
   href: api/CG.Green.Host.ViewModels.EditUserVM.html
@@ -7001,6 +7007,59 @@ references:
   commentId: F:CG.Green.Identity.RoleNameDefaults.SuperAdmin
   fullName: CG.Green.Identity.RoleNameDefaults.SuperAdmin
   nameWithType: RoleNameDefaults.SuperAdmin
+- uid: CG.Green.Identity.Services
+  name: CG.Green.Identity.Services
+  href: api/CG.Green.Identity.Services.html
+  commentId: N:CG.Green.Identity.Services
+  fullName: CG.Green.Identity.Services
+  nameWithType: CG.Green.Identity.Services
+- uid: CG.Green.Identity.Services.ClaimsTransformation
+  name: ClaimsTransformation
+  href: api/CG.Green.Identity.Services.ClaimsTransformation.html
+  commentId: T:CG.Green.Identity.Services.ClaimsTransformation
+  fullName: CG.Green.Identity.Services.ClaimsTransformation
+  nameWithType: ClaimsTransformation
+- uid: CG.Green.Identity.Services.ClaimsTransformation.#ctor(SignInManager{GreenUser},ILogger{IClaimsTransformation})
+  name: ClaimsTransformation(SignInManager<GreenUser>, ILogger<IClaimsTransformation>)
+  href: api/CG.Green.Identity.Services.ClaimsTransformation.html#CG_Green_Identity_Services_ClaimsTransformation__ctor_SignInManager_GreenUser__ILogger_IClaimsTransformation__
+  commentId: M:CG.Green.Identity.Services.ClaimsTransformation.#ctor(SignInManager{GreenUser},ILogger{IClaimsTransformation})
+  name.vb: ClaimsTransformation(SignInManager(Of GreenUser), ILogger(Of IClaimsTransformation))
+  fullName: CG.Green.Identity.Services.ClaimsTransformation.ClaimsTransformation(SignInManager<GreenUser>, ILogger<IClaimsTransformation>)
+  fullName.vb: CG.Green.Identity.Services.ClaimsTransformation.ClaimsTransformation(SignInManager(Of GreenUser), ILogger(Of IClaimsTransformation))
+  nameWithType: ClaimsTransformation.ClaimsTransformation(SignInManager<GreenUser>, ILogger<IClaimsTransformation>)
+  nameWithType.vb: ClaimsTransformation.ClaimsTransformation(SignInManager(Of GreenUser), ILogger(Of IClaimsTransformation))
+- uid: CG.Green.Identity.Services.ClaimsTransformation.#ctor*
+  name: ClaimsTransformation
+  href: api/CG.Green.Identity.Services.ClaimsTransformation.html#CG_Green_Identity_Services_ClaimsTransformation__ctor_
+  commentId: Overload:CG.Green.Identity.Services.ClaimsTransformation.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Identity.Services.ClaimsTransformation.ClaimsTransformation
+  nameWithType: ClaimsTransformation.ClaimsTransformation
+- uid: CG.Green.Identity.Services.ClaimsTransformation._logger
+  name: _logger
+  href: api/CG.Green.Identity.Services.ClaimsTransformation.html#CG_Green_Identity_Services_ClaimsTransformation__logger
+  commentId: F:CG.Green.Identity.Services.ClaimsTransformation._logger
+  fullName: CG.Green.Identity.Services.ClaimsTransformation._logger
+  nameWithType: ClaimsTransformation._logger
+- uid: CG.Green.Identity.Services.ClaimsTransformation._signInManager
+  name: _signInManager
+  href: api/CG.Green.Identity.Services.ClaimsTransformation.html#CG_Green_Identity_Services_ClaimsTransformation__signInManager
+  commentId: F:CG.Green.Identity.Services.ClaimsTransformation._signInManager
+  fullName: CG.Green.Identity.Services.ClaimsTransformation._signInManager
+  nameWithType: ClaimsTransformation._signInManager
+- uid: CG.Green.Identity.Services.ClaimsTransformation.TransformAsync(ClaimsPrincipal)
+  name: TransformAsync(ClaimsPrincipal)
+  href: api/CG.Green.Identity.Services.ClaimsTransformation.html#CG_Green_Identity_Services_ClaimsTransformation_TransformAsync_ClaimsPrincipal_
+  commentId: M:CG.Green.Identity.Services.ClaimsTransformation.TransformAsync(ClaimsPrincipal)
+  fullName: CG.Green.Identity.Services.ClaimsTransformation.TransformAsync(ClaimsPrincipal)
+  nameWithType: ClaimsTransformation.TransformAsync(ClaimsPrincipal)
+- uid: CG.Green.Identity.Services.ClaimsTransformation.TransformAsync*
+  name: TransformAsync
+  href: api/CG.Green.Identity.Services.ClaimsTransformation.html#CG_Green_Identity_Services_ClaimsTransformation_TransformAsync_
+  commentId: Overload:CG.Green.Identity.Services.ClaimsTransformation.TransformAsync
+  isSpec: "True"
+  fullName: CG.Green.Identity.Services.ClaimsTransformation.TransformAsync
+  nameWithType: ClaimsTransformation.TransformAsync
 - uid: CG.Green.IGreenApi
   name: IGreenApi
   href: api/CG.Green.IGreenApi.html
