@@ -102,7 +102,37 @@ public partial class Detail
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnCreateClaimAsync()
     {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
 
+            // Add the new claim.
+            _model.AssignedClaims.Add(new EditClaimVM()
+            {
+                ClaimType = $"claim type {_model.AssignedClaims.Count+1}",
+                ClaimValue = $"value {_model.AssignedClaims.Count+1}"
+            });
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a claim!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
     }
 
     // *******************************************************************
@@ -116,7 +146,53 @@ public partial class Detail
         EditClaimVM claim
         )
     {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
 
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the claim " +
+                $"<b>'{claim.ClaimType}'</b> <br /> <br /> Are you <i>sure</i> " +
+                "you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting a claim"
+                );
+
+            // Remove the claim.
+            _model.AssignedClaims.Remove(claim);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete a claim!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
     }
 
     // *******************************************************************
@@ -200,6 +276,7 @@ public partial class Detail
             _model.User.LockoutEnabled = _model.LockoutEnabled;
             _model.User.TwoFactorEnabled = _model.TwoFactorEnabled;
             _model.User.AccessFailedCount = _model.AccessFailedCount;
+            _model.User.LockoutEnd = _model.LockoutEnd;
 
             // Log what we are about to do.
             Logger.LogDebug(
@@ -321,6 +398,9 @@ public partial class Detail
                     TwoFactorEnabled = user.TwoFactorEnabled,
                     AccessFailedCount = user.AccessFailedCount,
                     LockoutEnabled = user.LockoutEnabled,
+                    LockoutEnd = user.LockoutEnd.HasValue 
+                        ? user.LockoutEnd.Value.DateTime
+                        : null
                 };
 
                 // Save the list of available roles.

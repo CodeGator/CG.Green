@@ -1,6 +1,4 @@
 ﻿
-using Serilog;
-
 namespace CG.Green.Host.Pages.Admin.Clients;
 
 /// <summary>
@@ -363,7 +361,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to add a secret!"
@@ -413,7 +411,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to add a redirect uri!"
@@ -463,7 +461,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to add a post logout redirect uri!"
@@ -513,7 +511,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to add a CORS origin!"
@@ -565,7 +563,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to add a claim!"
@@ -641,7 +639,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to delete a redirect uri!"
@@ -717,7 +715,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to delete a post logout redirect uri!"
@@ -793,7 +791,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to delete an allowed CORS origin!"
@@ -860,7 +858,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to delete a claim!"
@@ -918,7 +916,7 @@ public partial class Detail
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to delete a secret!"

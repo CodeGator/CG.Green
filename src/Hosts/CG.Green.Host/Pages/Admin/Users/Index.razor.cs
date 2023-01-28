@@ -121,7 +121,7 @@ public partial class Index
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to fetch users!"
@@ -191,7 +191,7 @@ public partial class Index
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to delete a user!"
@@ -335,7 +335,7 @@ public partial class Index
                 return;
             }
 
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to create a user!"

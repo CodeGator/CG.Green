@@ -121,7 +121,7 @@ public partial class Index
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to fetch clients!"
@@ -191,7 +191,7 @@ public partial class Index
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to delete a client!"
@@ -334,7 +334,7 @@ public partial class Index
                 return;
             }
 
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to create a client!"
@@ -380,7 +380,7 @@ public partial class Index
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to disable a client!"
@@ -426,7 +426,7 @@ public partial class Index
         }
         catch (Exception ex)
         {
-            // Log what we are about to do.
+            // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
                 "Failed to enable a client!"

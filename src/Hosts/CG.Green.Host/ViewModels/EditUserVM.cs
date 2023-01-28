@@ -54,6 +54,12 @@ public class EditUserVM
     public bool LockoutEnabled { get; set; }
 
     /// <summary>
+    /// This property contains the lockout end date.
+    /// </summary>
+    [Display(Name = "Lockout End")]
+    public DateTime? LockoutEnd { get; set; }
+
+    /// <summary>
     /// This property indicates whether two factor authentication is enabled 
     /// for the user.
     /// </summary>

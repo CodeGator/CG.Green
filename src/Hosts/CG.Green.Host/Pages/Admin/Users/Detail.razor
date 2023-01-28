@@ -56,23 +56,35 @@ else
                               For="@(() => _model.UserName)"
                               @bind-Value="@_model.UserName" />
             </MudItem>
-            <MudItem xs="4">
+            <MudItem xs="3">
                 <MudCheckBox T="bool"
                              Class="mb-n3"
                              @bind-Checked="_model.LockoutEnabled"
                              Label="Lockout Enabled" />
                     <MudText Class="text-muted ml-3" Typo="Typo.caption">Can this user be locked out?</MudText>
             </MudItem>
-            <MudItem xs="4">
+            <MudItem xs="3">
                 <div class="groupbox" style="height:120px">
                         <MudTextField HelperText="Failed login attempts."
                                       Label="Failed Access Count"
                                       Required
+                                      Disabled="@(!_model.LockoutEnabled)"
                                       InputType="InputType.Number"
                                       @bind-Value="_model.AccessFailedCount" />
                     </div>
             </MudItem>
-            <MudItem xs="4">
+             <MudItem xs="3">
+                <div class="groupbox" style="height:120px">
+                        <MudTextField HelperText="Lockout end date."
+                                      Label="Lockout End"
+                                      Clearable
+                                      InputType="InputType.DateTimeLocal"
+                                      Disabled="@(!_model.LockoutEnabled)"
+                                      Format="s"
+                                      @bind-Value="_model.LockoutEnd" />
+                    </div>
+            </MudItem>
+            <MudItem xs="3">
                 <MudCheckBox T="bool"
                              Class="mb-n3"
                              @bind-Checked="_model.TwoFactorEnabled"
