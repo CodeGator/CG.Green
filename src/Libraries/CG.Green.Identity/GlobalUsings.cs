@@ -1,6 +1,7 @@
 ﻿global using CG.Green.Identity;
 global using CG.Green.Identity.Models;
 global using CG.Green.Identity.Options;
+global using CG.Green.Identity.Services;
 global using CG.Green.Services;
 global using CG.Purple.Clients;
 global using CG.Purple.Clients.Options;

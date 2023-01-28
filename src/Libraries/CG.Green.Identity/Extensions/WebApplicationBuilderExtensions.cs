@@ -165,6 +165,7 @@ public static class WebApplicationBuilderExtensions007
         // Add support services.
         webApplicationBuilder.Services.AddScoped<TemplateProcessor>();
         webApplicationBuilder.Services.AddScoped<ClipboardService>();
+        webApplicationBuilder.Services.AddTransient<IClaimsTransformation, ClaimsTransformation>();
 
         // Which email service should we register?
         switch (identityOptions.Email?.DefaultStrategy.ToLower().Trim())
