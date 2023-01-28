@@ -6571,6 +6571,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.EditUserVM.LockoutEnabled
   nameWithType: EditUserVM.LockoutEnabled
+- uid: CG.Green.Host.ViewModels.EditUserVM.LockoutEnd
+  name: LockoutEnd
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_LockoutEnd
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.LockoutEnd
+  fullName: CG.Green.Host.ViewModels.EditUserVM.LockoutEnd
+  nameWithType: EditUserVM.LockoutEnd
+- uid: CG.Green.Host.ViewModels.EditUserVM.LockoutEnd*
+  name: LockoutEnd
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_LockoutEnd_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.LockoutEnd
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.LockoutEnd
+  nameWithType: EditUserVM.LockoutEnd
 - uid: CG.Green.Host.ViewModels.EditUserVM.TwoFactorEnabled
   name: TwoFactorEnabled
   href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_TwoFactorEnabled
