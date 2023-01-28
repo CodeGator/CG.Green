@@ -71,7 +71,7 @@ public interface IClientRepository
         );
 
     /// <summary>
-    /// This method searches for all the <ee cref="Client"/> objects.
+    /// This method searches for all the <see cref="Client"/> objects.
     /// </summary>
     /// <param name="cancellationToken">A cancellation token that is monitored
     /// for the lifetime of the method.</param>
@@ -84,7 +84,7 @@ public interface IClientRepository
         );
 
     /// <summary>
-    /// This method searches for a matching <ee cref="Client"/> object, by identifier.
+    /// This method searches for a matching <see cref="Client"/> object, by identifier.
     /// </summary>
     /// <param name="clientId">The client identifier to use for the operation.</param>
     /// <param name="cancellationToken">A cancellation token that is monitored

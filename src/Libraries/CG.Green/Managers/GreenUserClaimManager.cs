@@ -1,4 +1,6 @@
 ﻿
+using static CG.Green.Globals.Models;
+
 namespace CG.Green.Managers;
 
 /// <summary>
@@ -265,6 +267,165 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
             // Provider better context.
             throw new ManagerException(
                 message: $"The manager failed to create a user claim!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
+    public virtual async Task<IEnumerable<GreenUserClaim>> FindByUserIdAsync(
+        string userId,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the arguments before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(userId, nameof(userId));
+
+        try
+        {
+            // Look for the user.
+            var user = await _signInManager.UserManager.FindByIdAsync(
+                userId
+                ).ConfigureAwait(false);
+
+            // Did we fail?
+            if (user is null)
+            {
+                // Panic!!
+                throw new KeyNotFoundException(
+                    $"Failed to find user: {userId}"
+                    );
+            }
+
+            // Get the user's claims.
+            var claims = (await _signInManager.UserManager.GetClaimsAsync(
+                user
+                )).Select(x => new GreenUserClaim()
+                {
+                    ClaimType = x.Type,
+                    ClaimValue = x.Value,
+                    UserId = userId
+                }).ToList();
+
+            // Return the results.
+            return claims;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for user claims by user id!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for user " +
+                "claims by user id",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
+    public virtual async Task<GreenUser> UpdateAsync(
+        GreenUser greenUser,
+        IEnumerable<GreenUserClaim> userClaims,
+        string userName,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the arguments before attempting to use them.
+        Guard.Instance().ThrowIfNull(greenUser, nameof(greenUser))
+            .ThrowIfNull(userClaims, nameof(userClaims))
+            .ThrowIfNullOrEmpty(userName, nameof(userName));
+
+        try
+        {
+            // Get the user's existing claims.
+            var existingClaims = (await _signInManager.UserManager.GetClaimsAsync(
+                greenUser
+                )).ToList();
+
+            // Did we fail?
+            if (!existingClaims.Any())
+            { 
+                // If we get here then the user doesn't have any claims
+                //  assigned already so everything must be an addition.
+
+                // Loop through the assigned claims.
+                foreach (var userClaim in userClaims)
+                {
+                    // Assign the claim to the user.
+                    await _signInManager.UserManager.AddClaimAsync(
+                        greenUser,
+                        new Claim(
+                            userClaim.ClaimType ?? "",
+                            userClaim.ClaimValue ?? ""
+                            )
+                        );
+                }
+            }
+            else
+            {
+                // If we get here then we need to check for deletions, as
+                //   well as additions.
+
+                // Find any claims that were deleted.
+                var deletedClaims = existingClaims.Where(p1 =>
+                    userClaims.All(p2 => p2.GetHashCode() != p1.GetHashCode())
+                    ).ToList();
+
+                // Loop through the deleted claims.
+                foreach (var userClaim in deletedClaims)
+                {
+                    // Remove the claim from the user.
+                    await _signInManager.UserManager .RemoveClaimAsync(
+                        greenUser,
+                        new Claim(
+                            userClaim.Type ?? "",
+                            userClaim.Value ?? ""
+                            )
+                        );
+                }
+
+                // Find any claims that were added.
+                var addedClaims = userClaims.Where(p1 =>
+                    existingClaims.All(p2 => p2.GetHashCode() != p1.GetHashCode())
+                    ).ToList();
+
+                // Loop through the added claims.
+                foreach (var userClaim in addedClaims)
+                {
+                    // Assign the claim to the user.
+                    await _signInManager.UserManager.AddClaimAsync(
+                        greenUser,
+                        new Claim(
+                            userClaim.ClaimType ?? "",
+                            userClaim.ClaimValue ?? ""
+                            )
+                        );
+                }
+            }
+
+            // Return the result.
+            return greenUser;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to update the claims for a user!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to update the claims for a user!",
                 innerException: ex
                 );
         }

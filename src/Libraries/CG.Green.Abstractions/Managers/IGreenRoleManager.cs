@@ -77,7 +77,7 @@ public interface IGreenRoleManager
         );
 
     /// <summary>
-    /// This method searches for all the <ee cref="GreenRole"/> objects.
+    /// This method searches for all the <see cref="GreenRole"/> objects.
     /// </summary>
     /// <param name="cancellationToken">A cancellation token that is monitored
     /// for the lifetime of the method.</param>

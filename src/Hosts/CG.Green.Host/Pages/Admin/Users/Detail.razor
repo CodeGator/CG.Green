@@ -28,16 +28,23 @@ else
             <MudItem xs="12">
                 <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
             </MudItem>
-            <MudItem xs="12">
+            <MudItem xs="8">
                 <MudTextField AutoFocus
                               Required
                               Immediate
                               Counter="@(Globals.Models.Users.EmailLength)"
                               Class="ml-auto"
                               Variant="Variant.Outlined"
-                              Label="Email"
+                              Label="User Email"
                               For="@(() => _model.Email)"
                               @bind-Value="@_model.Email" />
+            </MudItem>
+            <MudItem xs="4">
+                <MudCheckBox T="bool"
+                             Class="mb-n3"
+                             @bind-Checked="_model.EmailConfirmed"
+                             Label="Email Confirmed" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Is this email address confirmed?.</MudText>
             </MudItem>
             <MudItem xs="12">
                 <MudTextField Required
@@ -48,6 +55,107 @@ else
                               Label="User Name"
                               For="@(() => _model.UserName)"
                               @bind-Value="@_model.UserName" />
+            </MudItem>
+            <MudItem xs="4">
+                <MudCheckBox T="bool"
+                             Class="mb-n3"
+                             @bind-Checked="_model.LockoutEnabled"
+                             Label="Lockout Enabled" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Can this user be locked out?</MudText>
+            </MudItem>
+            <MudItem xs="4">
+                <div class="groupbox" style="height:120px">
+                        <MudTextField HelperText="Failed login attempts."
+                                      Label="Failed Access Count"
+                                      Required
+                                      InputType="InputType.Number"
+                                      @bind-Value="_model.AccessFailedCount" />
+                    </div>
+            </MudItem>
+            <MudItem xs="4">
+                <MudCheckBox T="bool"
+                             Class="mb-n3"
+                             @bind-Checked="_model.TwoFactorEnabled"
+                             Label="Two Factor Enabled" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Enabled two factor authentication?</MudText>
+            </MudItem>    
+            <MudItem xs="12">
+                <div class="groupbox">
+                        <MudSelect T="string"
+                                   @bind-SelectedValues="@_model.AssignedRoles"
+                                   Clearable
+                                   MultiSelection
+                                   Label="User Roles"                            
+                                   Placeholder="Select one or more roles"
+                                   HelperText="The roles assigned to this user.">
+                            @foreach (var role in _roles)
+                            {
+                                <MudSelectItem Value="@role">@role</MudSelectItem>
+                            }
+                        </MudSelect>
+                    </div>
+            </MudItem>    
+            <MudItem xs="12">
+                <div class="groupbox">
+                    <MudText Style="font-size:small" Typo="Typo.body2">Claims</MudText>
+                    <MudTable Items="_model.AssignedClaims"
+                                Dense
+                                Striped
+                                IsEditRowSwitchingBlocked
+                                EditTrigger="TableEditTrigger.EditButton">
+                        <ToolBarContent>
+                            <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                        Variant=" Variant.Filled"
+                                        Disabled="@_isLoading"
+                                        Color="Color.Secondary"
+                                        OnClick="OnCreateClaimAsync">Create</MudButton>
+                        <MudSpacer />
+                        </ToolBarContent>
+                        <ColGroup>
+                            <col style="width:45%" />
+                            <col style="width:45%" />
+                            <col  />
+                        </ColGroup>
+                        <HeaderContent>
+                            <MudTh><MudTableSortLabel SortBy="new Func<GreenUserClaim, object>(x=>x)">ClaimType</MudTableSortLabel></MudTh>
+                            <MudTh><MudTableSortLabel SortBy="new Func<GreenUserClaim, object>(x=>x)">ClaimValue</MudTableSortLabel></MudTh>
+                            <MudTh></MudTh>
+                        </HeaderContent>
+                        <RowTemplate Context="context2">
+                            <MudTd DataLabel="Type">@context2.ClaimType</MudTd>
+                            <MudTd DataLabel="Value">@context2.ClaimValue</MudTd>
+                            <MudTd>
+                                <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
+                                                OnClick="() => OnDeleteClaimAsync(context2)" 
+                                                Class="pa-0"
+                                                Disabled="@_isLoading" />
+                            </MudTd>
+                        </RowTemplate>
+                        <RowEditingTemplate Context="context2">
+                            <MudTd DataLabel="Type">
+                                <MudTextField @bind-Value="@context2.ClaimType" />
+                            </MudTd>
+                            <MudTd DataLabel="Value">
+                                <MudTextField @bind-Value="@context2.ClaimValue" />
+                            </MudTd>
+                        </RowEditingTemplate>
+                        <NoRecordsContent>
+                            No claims were found.
+                        </NoRecordsContent>
+                        <LoadingContent>
+                            Loading claims ...
+                        </LoadingContent>
+                        <PagerContent>
+                            <MudTablePager />
+                        </PagerContent>
+                        <EditButtonContent Context="button">
+                            <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                        </EditButtonContent>
+                    </MudTable>
+                </div>
+            </MudItem>
+            <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
             </MudItem>
         </MudGrid>
     </EditForm>

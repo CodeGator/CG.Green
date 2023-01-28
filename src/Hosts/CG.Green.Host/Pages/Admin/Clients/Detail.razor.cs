@@ -200,8 +200,10 @@ public partial class Detail
                 return; // Nothing to do!
             }
 
-            // We have to fiddle with the grant types here because we converted
-            //   them to an enumeration, for binding purposes.
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the allowed grant types"
+                );
 
             // Remove any existing grant type(s).
             _model.AllowedGrantTypes.Clear();
@@ -212,8 +214,10 @@ public partial class Detail
                 _model.AllowedGrantTypes.Add(grantType);
             }
 
-            // We have to fiddle with the allowed scopes here because we converted
-            //   them to an external list, for binding purposes.
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the allowed scopes"
+                );
 
             // Remove any existing scope(s).
             _model.AllowedScopes.Clear();
@@ -224,8 +228,10 @@ public partial class Detail
                 _model.AllowedScopes.Add(selectedScope);
             }
 
-            // We have to fiddle with the client secrets here because we converted
-            //   them to a view-model, for binding and hashing purposes.
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the client secrets"
+                );
 
             // Remove any previous secrets.
             _model.ClientSecrets.Clear();
@@ -241,8 +247,10 @@ public partial class Detail
                 _model.ClientSecrets.Add(secret.Secret);
             }
 
-            // We have to fiddle with the redirect uris here because we converted
-            //   them to a view-model, for binding purposes.
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the redirect uris"
+                );
 
             // Remove any previous redirect uris.
             _model.RedirectUris.Clear();
@@ -253,8 +261,10 @@ public partial class Detail
                 _model.RedirectUris.Add(uri.Value);
             }
 
-            // We have to fiddle with the post logout redirect uris here because
-            //   we converted them to a view-model, for binding purposes.
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the post logout redirect uris"
+                );
 
             // Remove any previous redirect uris.
             _model.PostLogoutRedirectUris.Clear();
@@ -265,8 +275,10 @@ public partial class Detail
                 _model.PostLogoutRedirectUris.Add(uri.Value);
             }
 
-            // We have to fiddle with the CORS origins here because we
-            //   converted them to a view-model, for binding purposes.
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving allowed the CORS origins"
+                );
 
             // Remove any previous redirect uris.
             _model.AllowedCorsOrigins.Clear();
@@ -276,7 +288,12 @@ public partial class Detail
             {
                 _model.AllowedCorsOrigins.Add(uri.Value);
             }
-           
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the client changes"
+                );
+
             // Update the client in the api.
             await GreenApi.Clients.UpdateAsync(
                 _model,
@@ -293,7 +310,7 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Showing the message box"
+                "Showing the snackbar"
                 );
 
             // Tell the world what we did.

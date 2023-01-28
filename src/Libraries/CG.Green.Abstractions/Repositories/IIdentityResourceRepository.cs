@@ -71,7 +71,7 @@ public interface IIdentityResourceRepository
         );
 
     /// <summary>
-    /// This method searches for all the <ee cref="IdentityResource"/> objects.
+    /// This method searches for all the <see cref="IdentityResource"/> objects.
     /// </summary>
     /// <param name="cancellationToken">A cancellation token that is monitored
     /// for the lifetime of the method.</param>

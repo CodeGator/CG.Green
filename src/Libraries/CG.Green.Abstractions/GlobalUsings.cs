@@ -3,3 +3,4 @@ global using Duende.IdentityServer.Models;
 global using System.ComponentModel.DataAnnotations;
 global using CG.Green.Identity.Models;
 global using CG.Green.Options;
+global using System.Security.Claims;

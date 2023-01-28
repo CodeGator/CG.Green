@@ -79,7 +79,7 @@ public interface IGreenUserManager
         );
 
     /// <summary>
-    /// This method searches for all the <ee cref="GreenUser"/> objects.
+    /// This method searches for all the <see cref="GreenUser"/> objects.
     /// </summary>
     /// <param name="cancellationToken">A cancellation token that is monitored
     /// for the lifetime of the method.</param>
@@ -92,7 +92,7 @@ public interface IGreenUserManager
         );
 
     /// <summary>
-    /// This method searches for all the <ee cref="GreenUser"/> objects.
+    /// This method searches for all the <see cref="GreenUser"/> objects.
     /// </summary>
     /// <param name="userId">The identifier to use for the operation.</param>
     /// <param name="cancellationToken">A cancellation token that is monitored

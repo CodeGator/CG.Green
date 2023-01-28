@@ -1,4 +1,6 @@
 ﻿
+using static CG.Green.Globals.Models;
+
 namespace CG.Green.Managers;
 
 /// <summary>
@@ -303,6 +305,150 @@ internal class GreenUserRoleManager : IGreenUserRoleManager
             // Provider better context.
             throw new ManagerException(
                 message: $"The manager failed to create a user role!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
+    public virtual async Task<IEnumerable<string>> FindByUserIdAsync(
+        string userId,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the arguments before attempting to use them.
+        Guard.Instance().ThrowIfNull(userId, nameof(userId));
+
+        try
+        {
+            // Look for the user.
+            var user = await _signInManager.UserManager.FindByIdAsync(
+                userId
+                ).ConfigureAwait(false);
+
+            // Did we fail?
+            if (user is null)
+            {
+                // Panic!!
+                throw new KeyNotFoundException(
+                    $"Failed to find user: {userId}"
+                    );
+            }
+
+            // Look for the user's roles.
+            var userRoles = await _signInManager.UserManager.GetRolesAsync(
+                user
+                ).ConfigureAwait(false);
+
+            // Return the results.
+            return userRoles;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for user roles by user id!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for user roles by user id!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
+    public virtual async Task<GreenUser> UpdateAsync(
+        GreenUser greenUser,
+        IEnumerable<string> userRoles,
+        string userName,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the arguments before attempting to use them.
+        Guard.Instance().ThrowIfNull(greenUser, nameof(greenUser))
+            .ThrowIfNull(userRoles, nameof(userRoles))
+            .ThrowIfNullOrEmpty(userName, nameof(userName));
+
+        try
+        {
+            // Look for any existing roles for this user.
+            var existingRoles = await _signInManager.UserManager.GetRolesAsync(
+                greenUser
+                );
+
+            // Did we fail?
+            if (!existingRoles.Any())
+            {
+                // If we get here then the user doesn't have any roles
+                //  assigned already so everything must be an addition.
+
+                // Loop through the assigned roles.
+                foreach (var userRole in userRoles)
+                {
+                    // Assign the role to the user.
+                    await _signInManager.UserManager.AddToRoleAsync(
+                        greenUser,
+                        userRole
+                        );
+                }
+            }
+            else
+            {
+                // If we get here then we need to check for deletions, as
+                //   well as additions.
+
+                // Find any roles that were deleted.
+                var deletedRoles = existingRoles.Where(p1 =>
+                    userRoles.All(p2 => p2 != p1)
+                    ).ToList();
+
+                // Loop through the deleted roles.
+                foreach (var userRole in deletedRoles)
+                {
+                    // Remove the role from the user.
+                    await _signInManager.UserManager.RemoveFromRoleAsync(
+                        greenUser,
+                        userRole
+                        );
+                }
+
+                // Find any roles that were added.
+                var addedRoles = userRoles.Where(p1 =>
+                    existingRoles.All(p2 => p2 != p1)
+                    ).ToList();
+
+                // Loop through the added roles.
+                foreach (var userRole in addedRoles)
+                {
+                    // Assign the role to the user.
+                    await _signInManager.UserManager.AddToRoleAsync(
+                        greenUser,
+                        userRole
+                        );
+                }                
+            }
+
+            // Return the results.
+            return greenUser;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to update user roles for a given user!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to update user roles for a given user!",
                 innerException: ex
                 );
         }
