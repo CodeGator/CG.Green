@@ -1230,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Users.Detail.html",
-          "hash": "GMv1SA/wIi77cVKOZGzKxZObiBBu14BMJSYiM1T+rSo="
+          "hash": "KBuPgHWHoww/JESL9Py1QZtbHqisXJtr2xBx0JzM4xU="
         }
       },
       "is_incremental": false,
@@ -1394,6 +1394,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.ViewModels.EditClaimVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.ViewModels.EditClaimVM.html",
+          "hash": "ZokbkfmWuopaxENExghkesr1CP/mbwc1rYG5Okunu/o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.ViewModels.EditUserVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.ViewModels.EditUserVM.html",
+          "hash": "fQGmdbHO9lzkiVerg7au6CYCHZnmMQqLGF9kNBDmLDE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Host.ViewModels.NewClientVM.yml",
       "output": {
         ".html": {
@@ -1446,7 +1470,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.html",
-          "hash": "lEPNMSd+3Ebib2wyj+kuDMDpEGh3FAfhi7cJEPhoPYY="
+          "hash": "5ZSdXrEnnrvT42CdLOSJnrtEntpSchHgZN+bi6S4Dmw="
         }
       },
       "is_incremental": false,
@@ -1698,7 +1722,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.GreenUserClaimManager.html",
-          "hash": "AmPqvVPSSVF80vdsdn1lafE/wUnN29d9TDT+uenlqz0="
+          "hash": "/0Zfr7pWH8urioYQ8M0ttsKjxKqLq7ODgNzHr8y9Mfo="
         }
       },
       "is_incremental": false,
@@ -1722,7 +1746,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.GreenUserRoleManager.html",
-          "hash": "666YpQtTKlH9ts0knYtuILMhbpNTksA7pRVGdAqa1eI="
+          "hash": "4di/vsMGIgQNPvOe9/5eFS0PC4VU8AUssjdRR6Ci6lU="
         }
       },
       "is_incremental": false,
@@ -1734,7 +1758,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IApiScopeManager.html",
-          "hash": "heFeTSDNcUxAAksVQiY8ySsjCKEtu8p95WcdeWafIII="
+          "hash": "zyybZqKigIQoahgk2DIcpXosgNZJ3mbRF0/yZggf/vE="
         }
       },
       "is_incremental": false,
@@ -1746,7 +1770,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IClientManager.html",
-          "hash": "ShYlPbk4FMHbEM7GJ5+iQosbSqwfPoJhDvRRCbpzieo="
+          "hash": "LS9cfzxmQxlSxXSVHGSL7m+N33D73Jo+wl3BR1UoPLY="
         }
       },
       "is_incremental": false,
@@ -1758,7 +1782,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IGreenRoleManager.html",
-          "hash": "/oYPXYm2Ctc0prDDrsCCUcWP3gFt/12WsuEO3K9bLzs="
+          "hash": "CZisWXHg06qIsN8pOfh4JqRatewemEGtJIRhLCaLD28="
         }
       },
       "is_incremental": false,
@@ -1770,7 +1794,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IGreenUserClaimManager.html",
-          "hash": "2c5qxLkqoxNd3QaV27b2gMhHITmKOnxINLimRYJ8uJc="
+          "hash": "e2ejFBGnpTfdN0TWUwZaLlqN4DIXg003zVPxTp9tTHQ="
         }
       },
       "is_incremental": false,
@@ -1782,7 +1806,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IGreenUserManager.html",
-          "hash": "J1mhzXp7CwUgxzS2Vw7G4KQcd2e2OR2On2EGUGS69iI="
+          "hash": "CS79Yk3KKuWV7Mv18gR1S9fnrD+H2yCuiCMUlxJ2VPQ="
         }
       },
       "is_incremental": false,
@@ -1794,7 +1818,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IGreenUserRoleManager.html",
-          "hash": "afuR1XYjL3q+ry6NCdgHO5/P+TitkMcihWCtArRAvWQ="
+          "hash": "6RCEKSUgues7EGYwuI69qrgA9YKg+p6ycV+trHit5Vw="
         }
       },
       "is_incremental": false,
@@ -1806,7 +1830,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IIdentityResourceManager.html",
-          "hash": "9NbvKAA0Eb2KnnQ+5plD71sy/ZzcypoTdJXlTC4ZOkM="
+          "hash": "NTiODzhUzDX/n8k6lUSjrYNr/mj+wGXNjAMQRs9Lzo0="
         }
       },
       "is_incremental": false,
@@ -1998,7 +2022,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Repositories.IApiScopeRepository.html",
-          "hash": "T4YO01SwWuOZ/gTlegmIlshAv7OK8ChXkhulUCYIETs="
+          "hash": "9mlXQMxHJLMLfdmFG1m+DtKi/JaAphoIkGPvUTxLMbo="
         }
       },
       "is_incremental": false,
@@ -2010,7 +2034,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Repositories.IClientRepository.html",
-          "hash": "MURKDSJpFSOm4ls8BzWMRRVOqyqGw7yPEr5aavKoZXw="
+          "hash": "KUFR9ZTn6SqOXOWHXFh7Jy/Fi7/Ac8MclOOujPwZ3Gs="
         }
       },
       "is_incremental": false,
@@ -2046,7 +2070,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Repositories.IIdentityResourceRepository.html",
-          "hash": "9E1D96Z2/ELmJmoSy/IgIrEp0RpIM2L0USI98z53V2A="
+          "hash": "NLgy1sa9pYXK1AbVdrxm/1nG1veP7ciZEJI/Hs1CfhE="
         }
       },
       "is_incremental": false,
@@ -2358,7 +2382,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "QZ+eW9a6u/GxDG2xxj7bxJCKBgSQzz6Pr50FBplZIwQ="
+          "hash": "wA9AcBWyMh3omZyZixBjwM/UVy0J/H+EJv6krkJytlM="
         }
       },
       "is_incremental": false,
@@ -2477,7 +2501,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 195,
+          "total_file_count": 197,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

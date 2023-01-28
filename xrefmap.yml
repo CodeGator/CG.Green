@@ -5698,6 +5698,12 @@ references:
   commentId: F:CG.Green.Host.Pages.Admin.Users.Detail._model
   fullName: CG.Green.Host.Pages.Admin.Users.Detail._model
   nameWithType: Detail._model
+- uid: CG.Green.Host.Pages.Admin.Users.Detail._roles
+  name: _roles
+  href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail__roles
+  commentId: F:CG.Green.Host.Pages.Admin.Users.Detail._roles
+  fullName: CG.Green.Host.Pages.Admin.Users.Detail._roles
+  nameWithType: Detail._roles
 - uid: CG.Green.Host.Pages.Admin.Users.Detail.DialogService
   name: DialogService
   href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_DialogService
@@ -5776,6 +5782,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Users.Detail.NavigationManager
   nameWithType: Detail.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.Users.Detail.OnCreateClaimAsync
+  name: OnCreateClaimAsync()
+  href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_OnCreateClaimAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Users.Detail.OnCreateClaimAsync
+  fullName: CG.Green.Host.Pages.Admin.Users.Detail.OnCreateClaimAsync()
+  nameWithType: Detail.OnCreateClaimAsync()
+- uid: CG.Green.Host.Pages.Admin.Users.Detail.OnCreateClaimAsync*
+  name: OnCreateClaimAsync
+  href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_OnCreateClaimAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Users.Detail.OnCreateClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Users.Detail.OnCreateClaimAsync
+  nameWithType: Detail.OnCreateClaimAsync
+- uid: CG.Green.Host.Pages.Admin.Users.Detail.OnDeleteClaimAsync(EditClaimVM)
+  name: OnDeleteClaimAsync(EditClaimVM)
+  href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_OnDeleteClaimAsync_EditClaimVM_
+  commentId: M:CG.Green.Host.Pages.Admin.Users.Detail.OnDeleteClaimAsync(EditClaimVM)
+  fullName: CG.Green.Host.Pages.Admin.Users.Detail.OnDeleteClaimAsync(EditClaimVM)
+  nameWithType: Detail.OnDeleteClaimAsync(EditClaimVM)
+- uid: CG.Green.Host.Pages.Admin.Users.Detail.OnDeleteClaimAsync*
+  name: OnDeleteClaimAsync
+  href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_OnDeleteClaimAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Users.Detail.OnDeleteClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Users.Detail.OnDeleteClaimAsync
+  nameWithType: Detail.OnDeleteClaimAsync
 - uid: CG.Green.Host.Pages.Admin.Users.Detail.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/CG.Green.Host.Pages.Admin.Users.Detail.html#CG_Green_Host_Pages_Admin_Users_Detail_OnInitializedAsync
@@ -6423,6 +6455,161 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.AllowedGrantTypesExtensions.ToAllowedGrantTypes
   nameWithType: AllowedGrantTypesExtensions.ToAllowedGrantTypes
+- uid: CG.Green.Host.ViewModels.EditClaimVM
+  name: EditClaimVM
+  href: api/CG.Green.Host.ViewModels.EditClaimVM.html
+  commentId: T:CG.Green.Host.ViewModels.EditClaimVM
+  fullName: CG.Green.Host.ViewModels.EditClaimVM
+  nameWithType: EditClaimVM
+- uid: CG.Green.Host.ViewModels.EditClaimVM.ClaimType
+  name: ClaimType
+  href: api/CG.Green.Host.ViewModels.EditClaimVM.html#CG_Green_Host_ViewModels_EditClaimVM_ClaimType
+  commentId: P:CG.Green.Host.ViewModels.EditClaimVM.ClaimType
+  fullName: CG.Green.Host.ViewModels.EditClaimVM.ClaimType
+  nameWithType: EditClaimVM.ClaimType
+- uid: CG.Green.Host.ViewModels.EditClaimVM.ClaimType*
+  name: ClaimType
+  href: api/CG.Green.Host.ViewModels.EditClaimVM.html#CG_Green_Host_ViewModels_EditClaimVM_ClaimType_
+  commentId: Overload:CG.Green.Host.ViewModels.EditClaimVM.ClaimType
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditClaimVM.ClaimType
+  nameWithType: EditClaimVM.ClaimType
+- uid: CG.Green.Host.ViewModels.EditClaimVM.ClaimValue
+  name: ClaimValue
+  href: api/CG.Green.Host.ViewModels.EditClaimVM.html#CG_Green_Host_ViewModels_EditClaimVM_ClaimValue
+  commentId: P:CG.Green.Host.ViewModels.EditClaimVM.ClaimValue
+  fullName: CG.Green.Host.ViewModels.EditClaimVM.ClaimValue
+  nameWithType: EditClaimVM.ClaimValue
+- uid: CG.Green.Host.ViewModels.EditClaimVM.ClaimValue*
+  name: ClaimValue
+  href: api/CG.Green.Host.ViewModels.EditClaimVM.html#CG_Green_Host_ViewModels_EditClaimVM_ClaimValue_
+  commentId: Overload:CG.Green.Host.ViewModels.EditClaimVM.ClaimValue
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditClaimVM.ClaimValue
+  nameWithType: EditClaimVM.ClaimValue
+- uid: CG.Green.Host.ViewModels.EditUserVM
+  name: EditUserVM
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html
+  commentId: T:CG.Green.Host.ViewModels.EditUserVM
+  fullName: CG.Green.Host.ViewModels.EditUserVM
+  nameWithType: EditUserVM
+- uid: CG.Green.Host.ViewModels.EditUserVM.AccessFailedCount
+  name: AccessFailedCount
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_AccessFailedCount
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.AccessFailedCount
+  fullName: CG.Green.Host.ViewModels.EditUserVM.AccessFailedCount
+  nameWithType: EditUserVM.AccessFailedCount
+- uid: CG.Green.Host.ViewModels.EditUserVM.AccessFailedCount*
+  name: AccessFailedCount
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_AccessFailedCount_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.AccessFailedCount
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.AccessFailedCount
+  nameWithType: EditUserVM.AccessFailedCount
+- uid: CG.Green.Host.ViewModels.EditUserVM.AssignedClaims
+  name: AssignedClaims
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_AssignedClaims
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.AssignedClaims
+  fullName: CG.Green.Host.ViewModels.EditUserVM.AssignedClaims
+  nameWithType: EditUserVM.AssignedClaims
+- uid: CG.Green.Host.ViewModels.EditUserVM.AssignedClaims*
+  name: AssignedClaims
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_AssignedClaims_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.AssignedClaims
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.AssignedClaims
+  nameWithType: EditUserVM.AssignedClaims
+- uid: CG.Green.Host.ViewModels.EditUserVM.AssignedRoles
+  name: AssignedRoles
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_AssignedRoles
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.AssignedRoles
+  fullName: CG.Green.Host.ViewModels.EditUserVM.AssignedRoles
+  nameWithType: EditUserVM.AssignedRoles
+- uid: CG.Green.Host.ViewModels.EditUserVM.AssignedRoles*
+  name: AssignedRoles
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_AssignedRoles_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.AssignedRoles
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.AssignedRoles
+  nameWithType: EditUserVM.AssignedRoles
+- uid: CG.Green.Host.ViewModels.EditUserVM.Email
+  name: Email
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_Email
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.Email
+  fullName: CG.Green.Host.ViewModels.EditUserVM.Email
+  nameWithType: EditUserVM.Email
+- uid: CG.Green.Host.ViewModels.EditUserVM.Email*
+  name: Email
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_Email_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.Email
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.Email
+  nameWithType: EditUserVM.Email
+- uid: CG.Green.Host.ViewModels.EditUserVM.EmailConfirmed
+  name: EmailConfirmed
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_EmailConfirmed
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.EmailConfirmed
+  fullName: CG.Green.Host.ViewModels.EditUserVM.EmailConfirmed
+  nameWithType: EditUserVM.EmailConfirmed
+- uid: CG.Green.Host.ViewModels.EditUserVM.EmailConfirmed*
+  name: EmailConfirmed
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_EmailConfirmed_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.EmailConfirmed
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.EmailConfirmed
+  nameWithType: EditUserVM.EmailConfirmed
+- uid: CG.Green.Host.ViewModels.EditUserVM.LockoutEnabled
+  name: LockoutEnabled
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_LockoutEnabled
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.LockoutEnabled
+  fullName: CG.Green.Host.ViewModels.EditUserVM.LockoutEnabled
+  nameWithType: EditUserVM.LockoutEnabled
+- uid: CG.Green.Host.ViewModels.EditUserVM.LockoutEnabled*
+  name: LockoutEnabled
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_LockoutEnabled_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.LockoutEnabled
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.LockoutEnabled
+  nameWithType: EditUserVM.LockoutEnabled
+- uid: CG.Green.Host.ViewModels.EditUserVM.TwoFactorEnabled
+  name: TwoFactorEnabled
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_TwoFactorEnabled
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.TwoFactorEnabled
+  fullName: CG.Green.Host.ViewModels.EditUserVM.TwoFactorEnabled
+  nameWithType: EditUserVM.TwoFactorEnabled
+- uid: CG.Green.Host.ViewModels.EditUserVM.TwoFactorEnabled*
+  name: TwoFactorEnabled
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_TwoFactorEnabled_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.TwoFactorEnabled
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.TwoFactorEnabled
+  nameWithType: EditUserVM.TwoFactorEnabled
+- uid: CG.Green.Host.ViewModels.EditUserVM.User
+  name: User
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_User
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.User
+  fullName: CG.Green.Host.ViewModels.EditUserVM.User
+  nameWithType: EditUserVM.User
+- uid: CG.Green.Host.ViewModels.EditUserVM.User*
+  name: User
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_User_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.User
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.User
+  nameWithType: EditUserVM.User
+- uid: CG.Green.Host.ViewModels.EditUserVM.UserName
+  name: UserName
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_UserName
+  commentId: P:CG.Green.Host.ViewModels.EditUserVM.UserName
+  fullName: CG.Green.Host.ViewModels.EditUserVM.UserName
+  nameWithType: EditUserVM.UserName
+- uid: CG.Green.Host.ViewModels.EditUserVM.UserName*
+  name: UserName
+  href: api/CG.Green.Host.ViewModels.EditUserVM.html#CG_Green_Host_ViewModels_EditUserVM_UserName_
+  commentId: Overload:CG.Green.Host.ViewModels.EditUserVM.UserName
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditUserVM.UserName
+  nameWithType: EditUserVM.UserName
 - uid: CG.Green.Host.ViewModels.NewClientVM
   name: NewClientVM
   href: api/CG.Green.Host.ViewModels.NewClientVM.html
@@ -7344,6 +7531,35 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.GreenUserClaimManager.CreateAsync
   nameWithType: GreenUserClaimManager.CreateAsync
+- uid: CG.Green.Managers.GreenUserClaimManager.FindByUserIdAsync(System.String,CancellationToken)
+  name: FindByUserIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.GreenUserClaimManager.html#CG_Green_Managers_GreenUserClaimManager_FindByUserIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenUserClaimManager.FindByUserIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenUserClaimManager.FindByUserIdAsync(System.String, CancellationToken)
+  nameWithType: GreenUserClaimManager.FindByUserIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.GreenUserClaimManager.FindByUserIdAsync*
+  name: FindByUserIdAsync
+  href: api/CG.Green.Managers.GreenUserClaimManager.html#CG_Green_Managers_GreenUserClaimManager_FindByUserIdAsync_
+  commentId: Overload:CG.Green.Managers.GreenUserClaimManager.FindByUserIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenUserClaimManager.FindByUserIdAsync
+  nameWithType: GreenUserClaimManager.FindByUserIdAsync
+- uid: CG.Green.Managers.GreenUserClaimManager.UpdateAsync(GreenUser,IEnumerable{GreenUserClaim},System.String,CancellationToken)
+  name: UpdateAsync(GreenUser, IEnumerable<GreenUserClaim>, String, CancellationToken)
+  href: api/CG.Green.Managers.GreenUserClaimManager.html#CG_Green_Managers_GreenUserClaimManager_UpdateAsync_GreenUser_IEnumerable_GreenUserClaim__System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenUserClaimManager.UpdateAsync(GreenUser,IEnumerable{GreenUserClaim},System.String,CancellationToken)
+  name.vb: UpdateAsync(GreenUser, IEnumerable(Of GreenUserClaim), String, CancellationToken)
+  fullName: CG.Green.Managers.GreenUserClaimManager.UpdateAsync(GreenUser, IEnumerable<GreenUserClaim>, System.String, CancellationToken)
+  fullName.vb: CG.Green.Managers.GreenUserClaimManager.UpdateAsync(GreenUser, IEnumerable(Of GreenUserClaim), System.String, CancellationToken)
+  nameWithType: GreenUserClaimManager.UpdateAsync(GreenUser, IEnumerable<GreenUserClaim>, String, CancellationToken)
+  nameWithType.vb: GreenUserClaimManager.UpdateAsync(GreenUser, IEnumerable(Of GreenUserClaim), String, CancellationToken)
+- uid: CG.Green.Managers.GreenUserClaimManager.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Green.Managers.GreenUserClaimManager.html#CG_Green_Managers_GreenUserClaimManager_UpdateAsync_
+  commentId: Overload:CG.Green.Managers.GreenUserClaimManager.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenUserClaimManager.UpdateAsync
+  nameWithType: GreenUserClaimManager.UpdateAsync
 - uid: CG.Green.Managers.GreenUserManager
   name: GreenUserManager
   href: api/CG.Green.Managers.GreenUserManager.html
@@ -7560,6 +7776,35 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.GreenUserRoleManager.CreateAsync
   nameWithType: GreenUserRoleManager.CreateAsync
+- uid: CG.Green.Managers.GreenUserRoleManager.FindByUserIdAsync(System.String,CancellationToken)
+  name: FindByUserIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.GreenUserRoleManager.html#CG_Green_Managers_GreenUserRoleManager_FindByUserIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenUserRoleManager.FindByUserIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenUserRoleManager.FindByUserIdAsync(System.String, CancellationToken)
+  nameWithType: GreenUserRoleManager.FindByUserIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.GreenUserRoleManager.FindByUserIdAsync*
+  name: FindByUserIdAsync
+  href: api/CG.Green.Managers.GreenUserRoleManager.html#CG_Green_Managers_GreenUserRoleManager_FindByUserIdAsync_
+  commentId: Overload:CG.Green.Managers.GreenUserRoleManager.FindByUserIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenUserRoleManager.FindByUserIdAsync
+  nameWithType: GreenUserRoleManager.FindByUserIdAsync
+- uid: CG.Green.Managers.GreenUserRoleManager.UpdateAsync(GreenUser,IEnumerable{System.String},System.String,CancellationToken)
+  name: UpdateAsync(GreenUser, IEnumerable<String>, String, CancellationToken)
+  href: api/CG.Green.Managers.GreenUserRoleManager.html#CG_Green_Managers_GreenUserRoleManager_UpdateAsync_GreenUser_IEnumerable_System_String__System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenUserRoleManager.UpdateAsync(GreenUser,IEnumerable{System.String},System.String,CancellationToken)
+  name.vb: UpdateAsync(GreenUser, IEnumerable(Of String), String, CancellationToken)
+  fullName: CG.Green.Managers.GreenUserRoleManager.UpdateAsync(GreenUser, IEnumerable<System.String>, System.String, CancellationToken)
+  fullName.vb: CG.Green.Managers.GreenUserRoleManager.UpdateAsync(GreenUser, IEnumerable(Of System.String), System.String, CancellationToken)
+  nameWithType: GreenUserRoleManager.UpdateAsync(GreenUser, IEnumerable<String>, String, CancellationToken)
+  nameWithType.vb: GreenUserRoleManager.UpdateAsync(GreenUser, IEnumerable(Of String), String, CancellationToken)
+- uid: CG.Green.Managers.GreenUserRoleManager.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Green.Managers.GreenUserRoleManager.html#CG_Green_Managers_GreenUserRoleManager_UpdateAsync_
+  commentId: Overload:CG.Green.Managers.GreenUserRoleManager.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenUserRoleManager.UpdateAsync
+  nameWithType: GreenUserRoleManager.UpdateAsync
 - uid: CG.Green.Managers.IApiScopeManager
   name: IApiScopeManager
   href: api/CG.Green.Managers.IApiScopeManager.html
@@ -7988,6 +8233,35 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.IGreenUserClaimManager.CreateAsync
   nameWithType: IGreenUserClaimManager.CreateAsync
+- uid: CG.Green.Managers.IGreenUserClaimManager.FindByUserIdAsync(System.String,CancellationToken)
+  name: FindByUserIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenUserClaimManager.html#CG_Green_Managers_IGreenUserClaimManager_FindByUserIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenUserClaimManager.FindByUserIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IGreenUserClaimManager.FindByUserIdAsync(System.String, CancellationToken)
+  nameWithType: IGreenUserClaimManager.FindByUserIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IGreenUserClaimManager.FindByUserIdAsync*
+  name: FindByUserIdAsync
+  href: api/CG.Green.Managers.IGreenUserClaimManager.html#CG_Green_Managers_IGreenUserClaimManager_FindByUserIdAsync_
+  commentId: Overload:CG.Green.Managers.IGreenUserClaimManager.FindByUserIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenUserClaimManager.FindByUserIdAsync
+  nameWithType: IGreenUserClaimManager.FindByUserIdAsync
+- uid: CG.Green.Managers.IGreenUserClaimManager.UpdateAsync(GreenUser,IEnumerable{GreenUserClaim},System.String,CancellationToken)
+  name: UpdateAsync(GreenUser, IEnumerable<GreenUserClaim>, String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenUserClaimManager.html#CG_Green_Managers_IGreenUserClaimManager_UpdateAsync_GreenUser_IEnumerable_GreenUserClaim__System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenUserClaimManager.UpdateAsync(GreenUser,IEnumerable{GreenUserClaim},System.String,CancellationToken)
+  name.vb: UpdateAsync(GreenUser, IEnumerable(Of GreenUserClaim), String, CancellationToken)
+  fullName: CG.Green.Managers.IGreenUserClaimManager.UpdateAsync(GreenUser, IEnumerable<GreenUserClaim>, System.String, CancellationToken)
+  fullName.vb: CG.Green.Managers.IGreenUserClaimManager.UpdateAsync(GreenUser, IEnumerable(Of GreenUserClaim), System.String, CancellationToken)
+  nameWithType: IGreenUserClaimManager.UpdateAsync(GreenUser, IEnumerable<GreenUserClaim>, String, CancellationToken)
+  nameWithType.vb: IGreenUserClaimManager.UpdateAsync(GreenUser, IEnumerable(Of GreenUserClaim), String, CancellationToken)
+- uid: CG.Green.Managers.IGreenUserClaimManager.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Green.Managers.IGreenUserClaimManager.html#CG_Green_Managers_IGreenUserClaimManager_UpdateAsync_
+  commentId: Overload:CG.Green.Managers.IGreenUserClaimManager.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenUserClaimManager.UpdateAsync
+  nameWithType: IGreenUserClaimManager.UpdateAsync
 - uid: CG.Green.Managers.IGreenUserManager
   name: IGreenUserManager
   href: api/CG.Green.Managers.IGreenUserManager.html
@@ -8136,6 +8410,35 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.IGreenUserRoleManager.CreateAsync
   nameWithType: IGreenUserRoleManager.CreateAsync
+- uid: CG.Green.Managers.IGreenUserRoleManager.FindByUserIdAsync(System.String,CancellationToken)
+  name: FindByUserIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenUserRoleManager.html#CG_Green_Managers_IGreenUserRoleManager_FindByUserIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenUserRoleManager.FindByUserIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IGreenUserRoleManager.FindByUserIdAsync(System.String, CancellationToken)
+  nameWithType: IGreenUserRoleManager.FindByUserIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IGreenUserRoleManager.FindByUserIdAsync*
+  name: FindByUserIdAsync
+  href: api/CG.Green.Managers.IGreenUserRoleManager.html#CG_Green_Managers_IGreenUserRoleManager_FindByUserIdAsync_
+  commentId: Overload:CG.Green.Managers.IGreenUserRoleManager.FindByUserIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenUserRoleManager.FindByUserIdAsync
+  nameWithType: IGreenUserRoleManager.FindByUserIdAsync
+- uid: CG.Green.Managers.IGreenUserRoleManager.UpdateAsync(GreenUser,IEnumerable{System.String},System.String,CancellationToken)
+  name: UpdateAsync(GreenUser, IEnumerable<String>, String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenUserRoleManager.html#CG_Green_Managers_IGreenUserRoleManager_UpdateAsync_GreenUser_IEnumerable_System_String__System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenUserRoleManager.UpdateAsync(GreenUser,IEnumerable{System.String},System.String,CancellationToken)
+  name.vb: UpdateAsync(GreenUser, IEnumerable(Of String), String, CancellationToken)
+  fullName: CG.Green.Managers.IGreenUserRoleManager.UpdateAsync(GreenUser, IEnumerable<System.String>, System.String, CancellationToken)
+  fullName.vb: CG.Green.Managers.IGreenUserRoleManager.UpdateAsync(GreenUser, IEnumerable(Of System.String), System.String, CancellationToken)
+  nameWithType: IGreenUserRoleManager.UpdateAsync(GreenUser, IEnumerable<String>, String, CancellationToken)
+  nameWithType.vb: IGreenUserRoleManager.UpdateAsync(GreenUser, IEnumerable(Of String), String, CancellationToken)
+- uid: CG.Green.Managers.IGreenUserRoleManager.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Green.Managers.IGreenUserRoleManager.html#CG_Green_Managers_IGreenUserRoleManager_UpdateAsync_
+  commentId: Overload:CG.Green.Managers.IGreenUserRoleManager.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenUserRoleManager.UpdateAsync
+  nameWithType: IGreenUserRoleManager.UpdateAsync
 - uid: CG.Green.Managers.IIdentityResourceManager
   name: IIdentityResourceManager
   href: api/CG.Green.Managers.IIdentityResourceManager.html

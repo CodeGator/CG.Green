@@ -175,7 +175,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GreenUser? _model</code></pre>
+    <pre><code class="lang-csharp hljs">protected EditUserVM? _model</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,7 +187,30 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">GreenUser</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EditUserVM</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CG_Green_Host_Pages_Admin_Users_Detail__roles" data-uid="CG.Green.Host.Pages.Admin.Users.Detail._roles">_roles</h4>
+  <div class="markdown level1 summary"><p>This field contains the list of available user roles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;string&gt; _roles</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -398,6 +421,74 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">async Task LoadDataAsync()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Users_Detail_OnCreateClaimAsync_" data-uid="CG.Green.Host.Pages.Admin.Users.Detail.OnCreateClaimAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Users_Detail_OnCreateClaimAsync" data-uid="CG.Green.Host.Pages.Admin.Users.Detail.OnCreateClaimAsync">OnCreateClaimAsync()</h4>
+  <div class="markdown level1 summary"><p>This method is called to create a new claim.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnCreateClaimAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Users_Detail_OnDeleteClaimAsync_" data-uid="CG.Green.Host.Pages.Admin.Users.Detail.OnDeleteClaimAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Users_Detail_OnDeleteClaimAsync_EditClaimVM_" data-uid="CG.Green.Host.Pages.Admin.Users.Detail.OnDeleteClaimAsync(EditClaimVM)">OnDeleteClaimAsync(EditClaimVM)</h4>
+  <div class="markdown level1 summary"><p>This method is called to delete a claim.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnDeleteClaimAsync(EditClaimVM claim)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EditClaimVM</span></td>
+        <td><span class="parametername">claim</span></td>
+        <td><p>The claim to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
