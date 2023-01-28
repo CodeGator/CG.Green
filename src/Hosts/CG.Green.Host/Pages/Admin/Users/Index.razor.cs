@@ -23,7 +23,7 @@ public partial class Index
     };
 
     /// <summary>
-    /// This field contains the list of user.
+    /// This field contains the list of users.
     /// </summary>
     internal protected readonly List<GreenUser> _users = new();
 

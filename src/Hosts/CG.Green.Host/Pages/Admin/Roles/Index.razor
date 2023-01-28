@@ -1,7 +1,69 @@
 ﻿@page "/admin/roles"
 
-<h3>Roles</h3>
+<PageTitle>Roles</PageTitle>
 
-@code {
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
 
-}
+<MudText Typo="Typo.h6" Class="py-4 px-5">Roles</MudText>
+
+<MudGrid>
+    <MudItem xs="12">
+        <MudTable Items="_roles"
+                  Loading="_isLoading"
+                  Dense
+                  Striped
+                  Virtualize
+                  IsEditRowSwitchingBlocked
+                  EditTrigger="TableEditTrigger.EditButton"
+                  ApplyButtonPosition="TableApplyButtonPosition.End"
+                  EditButtonPosition="TableEditButtonPosition.End"
+                  Filter="new Func<EditRoleVM,bool>(FilterFunc1)">
+            <ToolBarContent>
+                <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                            Variant="Variant.Filled"
+                            Disabled="@_isLoading"
+                            Color="Color.Primary"
+                            OnClick="OnCreateAsync">Create</MudButton>
+                <MudSpacer />
+                <MudTextField @bind-Value="_gridSearchString"
+                              Placeholder="Search"
+                              Adornment="Adornment.Start"
+                              AdornmentIcon="@Icons.Material.Outlined.Search"
+                              IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            </ToolBarContent>
+            <ColGroup>
+                <col style="width:90%" />
+                <col />
+            </ColGroup>
+            <HeaderContent>
+                <MudTh><MudTableSortLabel SortBy="new Func<EditRoleVM, object>(x=>x.Name)">Role</MudTableSortLabel></MudTh>
+                <MudTh></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Role">@context.Name</MudTd>
+                <MudTd>
+                    <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
+                                   OnClick="() => OnDeleteAsync(context)" 
+                                   Disabled="@_isLoading" />
+                </MudTd>
+            </RowTemplate>
+            <RowEditingTemplate>
+                <MudTd DataLabel="Value">
+                    <MudTextField @bind-Value="@context.Name" />
+                </MudTd>
+            </RowEditingTemplate>
+             <PagerContent>
+                <MudTablePager />
+            </PagerContent>
+            <NoRecordsContent>
+                No roles were found.
+            </NoRecordsContent>
+            <LoadingContent>
+                Loading roles ...
+            </LoadingContent>
+             <EditButtonContent Context="button">
+                 <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+             </EditButtonContent>
+        </MudTable>
+    </MudItem>
+</MudGrid>
