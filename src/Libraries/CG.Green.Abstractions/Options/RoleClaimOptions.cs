@@ -2,10 +2,10 @@
 namespace CG.Green.Options;
 
 /// <summary>
-/// This class contains configuration settings for seeding user claim 
+/// This class contains configuration settings for seeding role claim 
 /// assignments.
 /// </summary>
-public class UserClaimOptions
+public class RoleClaimOptions
 {
     // *******************************************************************
     // Properties.
@@ -14,20 +14,20 @@ public class UserClaimOptions
     #region Properties
 
     /// <summary>
-    /// This property contains a list of <see cref="UserClaimAssignmentOptions"/> objects.
+    /// This property contains a list of <see cref="RoleClaimAssignmentOptions"/> objects.
     /// </summary>
     [Required]
-    public List<UserClaimAssignmentOptions> UserClaims { get; set; } = new();
+    public List<RoleClaimAssignmentOptions> RoleClaims { get; set; } = new();
 
     #endregion
 }
 
 
 /// <summary>
-/// This class contains configuration settings for seeding a user claim
+/// This class contains configuration settings for seeding a role claim
 /// assignment.
 /// </summary>
-public class UserClaimAssignmentOptions
+public class RoleClaimAssignmentOptions
 {
     // *******************************************************************
     // Properties.
@@ -36,15 +36,14 @@ public class UserClaimAssignmentOptions
     #region Properties
 
     /// <summary>
-    /// This property contains the email address for a user.
+    /// This property contains the name for the role.
     /// </summary>
     [Required]
-    [EmailAddress]
-    [MaxLength(Globals.Models.Users.EmailLength)]
-    public string UserEmail { get; set; } = null!;
+    [MaxLength(Globals.Models.Roles.NameLength)]
+    public string RoleName { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the list of claims assigned to the user.
+    /// This property contains the list of claims assigned to the role.
     /// </summary>
     [Required]
     public List<ClaimOptions> Claims { get; set; } = new();

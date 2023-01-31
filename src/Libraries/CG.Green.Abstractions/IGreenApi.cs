@@ -27,6 +27,11 @@ public interface IGreenApi
     IGreenRoleManager Roles { get; }
 
     /// <summary>
+    /// This property contains an object for performing role claim operations.
+    /// </summary>
+    IGreenRoleClaimManager RoleClaims { get; }
+
+    /// <summary>
     /// This property contains an object for performing user operations.
     /// </summary>
     IGreenUserManager Users { get; }

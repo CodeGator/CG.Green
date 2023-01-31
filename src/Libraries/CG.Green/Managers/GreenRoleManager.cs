@@ -1,4 +1,6 @@
 ﻿
+using CG.Green.Identity.Models;
+
 namespace CG.Green.Managers;
 
 /// <summary>
@@ -67,8 +69,43 @@ internal class GreenRoleManager : IGreenRoleManager
     {
         try
         {
-            // Check the repository for the data.
+            // Check the manager for the data.
             var result = _roleManager.Roles.Any();
+
+            // Return the results,
+            return Task.FromResult(result);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for roles!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for roles!",
+                innerException: ex
+                );
+        }
+    }
+
+    /// <inheritdoc/>
+    public virtual Task<bool> AnyByNameAsync(
+       string roleName,
+       CancellationToken cancellationToken = default
+       )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(roleName, nameof(roleName));
+
+        try
+        {
+            // Check the manager for the data.
+            var result = _roleManager.Roles.Any(
+                role => role.Name == roleName
+                );
 
             // Return the results,
             return Task.FromResult(result);
@@ -275,6 +312,81 @@ internal class GreenRoleManager : IGreenRoleManager
     // *******************************************************************
 
     /// <inheritdoc/>
+    public virtual Task<GreenRole?> FindByIdAsync(
+        string roleId,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(roleId, nameof(roleId));
+
+        try
+        {
+            // Look for a matching role.
+            var role = _roleManager.Roles.FirstOrDefault(x =>
+                x.Id == roleId
+                );
+
+            // Return the results.
+            return Task.FromResult(role);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for a role by id!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for a role by id!",
+                innerException: ex
+                );
+        }
+    }
+
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
+    public virtual Task<GreenRole?> FindByNameAsync(
+        string roleName,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(roleName, nameof(roleName));
+
+        try
+        {
+            // Look for a matching role.
+            var role = _roleManager.Roles.FirstOrDefault(x =>
+                x.Name == roleName
+                );
+
+            // Return the results.
+            return Task.FromResult(role);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for a role by name!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for a role by name!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
     public virtual async Task<GreenRole> UpdateAsync(
         GreenRole greenRole,
         string userName,
@@ -287,9 +399,27 @@ internal class GreenRoleManager : IGreenRoleManager
 
         try
         {
+            // Look for the tracked instance.
+            var trackedRole = await _roleManager.FindByIdAsync(
+                greenRole.Id
+                );
+
+            // Did we fail?
+            if (trackedRole is null)
+            {
+                // Panic!!
+                throw new KeyNotFoundException(
+                    $"Role: {greenRole.Id} was not found!"
+                    );
+            }
+
+            // Update the properties.
+            trackedRole.Name = greenRole.Name;
+            trackedRole.NormalizedName = greenRole.Name?.ToUpper();
+
             // Update the role.
             var result = await _roleManager.UpdateAsync(
-                greenRole
+                trackedRole
                 ).ConfigureAwait(false);
 
             // Did we fail?
@@ -301,22 +431,8 @@ internal class GreenRoleManager : IGreenRoleManager
                     );
             }
 
-            // Look for the role.
-            var role = await _roleManager.FindByNameAsync(
-                greenRole.Name ?? ""
-                ).ConfigureAwait(false);
-
-            // Did we fail?
-            if (role is null)
-            {
-                // Panic!!
-                throw new KeyNotFoundException(
-                    $"Failed to find role: {greenRole.Name}"
-                    );
-            }
-
             // Return the results.
-            return role;
+            return trackedRole;
         }
         catch (Exception ex)
         {

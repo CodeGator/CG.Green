@@ -1,13 +1,14 @@
 ﻿
-using Microsoft.AspNetCore.Identity;
+using CG.Green.Identity.Models;
+using CG.Green.Repositories;
 
 namespace CG.Green.Managers;
 
 /// <summary>
-/// This class is a default implementation of the <see cref="IGreenUserClaimManager"/>
+/// This class is a default implementation of the <see cref="IGreenRoleClaimManager"/>
 /// interface.
 /// </summary>
-internal class GreenUserClaimManager : IGreenUserClaimManager
+internal class GreenRoleClaimManager : IGreenRoleClaimManager
 {
     // *******************************************************************
     // Fields.
@@ -16,9 +17,9 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
     #region Fields
 
     /// <summary>
-    /// This field contains the green user claim repository for this manager.
+    /// This field contains the green role claim repository for this manager.
     /// </summary>
-    internal protected readonly IGreenUserClaimRepository _greenUserClaimRepository = null!;
+    internal protected readonly IGreenRoleClaimRepository _greenRoleClaimRepository = null!;
 
     /// <summary>
     /// This field contains the ASP.NET claim manager for this manager.
@@ -33,7 +34,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
     /// <summary>
     /// This field contains the logger for this manager.
     /// </summary>
-    internal protected readonly ILogger<IGreenUserClaimManager> _logger = null!;
+    internal protected readonly ILogger<IGreenRoleClaimManager> _logger = null!;
 
     #endregion
 
@@ -44,31 +45,31 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
     #region Constructors
 
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="GreenUserClaimManager"/>
+    /// This constructor creates a new instance of the <see cref="GreenRoleClaimManager"/>
     /// class.
     /// </summary>
-    /// <param name="greenUserClaimRepository">The green user claim repository
+    /// <param name="greenRoleClaimRepository">The green role claim repository
     /// to use with this manager.</param>
     /// <param name="roleManager">The ASP.NET claim manager to use with this
     /// manager.</param>
     /// <param name="signInManager">The ASP.NET sign-in manager to use with 
     /// this manager.</param>
     /// <param name="logger">The logger to use with this manager.</param>
-    public GreenUserClaimManager(
-        IGreenUserClaimRepository greenUserClaimRepository,
+    public GreenRoleClaimManager(
+        IGreenRoleClaimRepository greenRoleClaimRepository,
         RoleManager<GreenRole> roleManager,
         SignInManager<GreenUser> signInManager,
-        ILogger<IGreenUserClaimManager> logger
+        ILogger<IGreenRoleClaimManager> logger
         )
     {
         // Validate the arguments before attempting to use them.
-        Guard.Instance().ThrowIfNull(greenUserClaimRepository, nameof(greenUserClaimRepository))
+        Guard.Instance().ThrowIfNull(greenRoleClaimRepository, nameof(greenRoleClaimRepository))
             .ThrowIfNull(roleManager, nameof(roleManager))
             .ThrowIfNull(signInManager, nameof(signInManager))
             .ThrowIfNull(logger, nameof(logger));
 
         // Save the reference(s).
-        _greenUserClaimRepository = greenUserClaimRepository;
+        _greenRoleClaimRepository = greenRoleClaimRepository;
         _roleManager = roleManager;
         _signInManager = signInManager;
         _logger = logger;
@@ -90,7 +91,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
         try
         {
             // Perform the search.
-            var result = await _greenUserClaimRepository.AnyAsync(
+            var result = await _greenRoleClaimRepository.AnyAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
 
@@ -102,12 +103,12 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
             // Log what happened.
             _logger.LogError(
                 ex,
-                "Failed to search for user claims!"
+                "Failed to search for role claims!"
                 );
 
             // Provider better context.
             throw new ManagerException(
-                message: $"The manager failed to search for user claims!",
+                message: $"The manager failed to search for role claims!",
                 innerException: ex
                 );
         }
@@ -123,7 +124,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
         try
         {
             // Perform the search.
-            var result = await _greenUserClaimRepository.CountAsync(
+            var result = await _greenRoleClaimRepository.CountAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
 
@@ -135,12 +136,12 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
             // Log what happened.
             _logger.LogError(
                 ex,
-                "Failed to count user claims!"
+                "Failed to count role claims!"
                 );
 
             // Provider better context.
             throw new ManagerException(
-                message: $"The manager failed to count user claims!",
+                message: $"The manager failed to count role claims!",
                 innerException: ex
                 );
         }
@@ -149,110 +150,38 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
     // *******************************************************************
 
     /// <inheritdoc/>
-    public virtual async Task<GreenUserClaim> CreateAsync(
-        string userEmail,
-        string claimType,
-        string claimValue,
+    public virtual async Task<GreenRoleClaim> CreateAsync(
+        GreenRoleClaim roleClaim,
         string userName,
         CancellationToken cancellationToken = default
         )
     {
         // Validate the arguments before attempting to use them.
-        Guard.Instance().ThrowIfNullOrEmpty(userEmail, nameof(userEmail))
-            .ThrowIfNullOrEmpty(claimType, nameof(claimType))
-            .ThrowIfNullOrEmpty(claimValue, nameof(claimValue))
+        Guard.Instance().ThrowIfNull(roleClaim, nameof(roleClaim))
             .ThrowIfNullOrEmpty(userName, nameof(userName));
 
         try
         {
-            // Look for the user.
-            var user = await _signInManager.UserManager.FindByEmailAsync(
-                userEmail
+            // Look for the role.
+            var role = await _roleManager.FindByIdAsync(
+                roleClaim.RoleId
                 ).ConfigureAwait(false);
 
             // Did we fail?
-            if (user is null)
+            if (role is null)
             {
                 // Panic!!
                 throw new KeyNotFoundException(
-                    $"Failed to find user: {userEmail}"
+                    $"Failed to find role: {roleClaim.RoleId}"
                     );
             }
 
-            // Create the user role assignment.
-            var result = await _signInManager.UserManager.AddClaimAsync(
-                user,
-                new Claim(claimType, claimValue)
-                );
-
-            // Did we fail?
-            if (!result.Succeeded)
-            {
-                // Panic!!
-                throw new ManagerException(
-                    $"ASP.NET user manager errors: {string.Join(",", result.Errors)}"
-                    );
-            }
-
-            // Return the results.
-            return new GreenUserClaim()
-            {
-                ClaimType = claimType,
-                ClaimValue = claimValue,
-                UserId = user.Id,   
-            };
-        }
-        catch (Exception ex)
-        {
-            // Log what happened.
-            _logger.LogError(
-                ex,
-                "Failed to create a user claim!"
-                );
-
-            // Provider better context.
-            throw new ManagerException(
-                message: $"The manager failed to create a user claim!",
-                innerException: ex
-                );
-        }
-    }
-
-    // *******************************************************************
-
-    /// <inheritdoc/>
-    public virtual async Task<GreenUserClaim> CreateAsync(
-        GreenUserClaim userClaim,
-        string userName,
-        CancellationToken cancellationToken = default
-        )
-    {
-        // Validate the arguments before attempting to use them.
-        Guard.Instance().ThrowIfNull(userClaim, nameof(userClaim))
-            .ThrowIfNullOrEmpty(userName, nameof(userName));
-
-        try
-        {
-            // Look for the user.
-            var user = await _signInManager.UserManager.FindByIdAsync(
-                userClaim.UserId
-                ).ConfigureAwait(false);
-
-            // Did we fail?
-            if (user is null)
-            {
-                // Panic!!
-                throw new KeyNotFoundException(
-                    $"Failed to find user: {userClaim.UserId}"
-                );
-            }
-
-            // Assign the claim to the user.
-            var result = await _signInManager.UserManager.AddClaimAsync(
-                user,
+            // Assign the claim to the role.
+            var result = await _roleManager.AddClaimAsync(
+                role,
                 new Claim(
-                    userClaim.ClaimType ?? "",
-                    userClaim.ClaimValue ?? ""
+                    roleClaim.ClaimType ?? "", 
+                    roleClaim.ClaimValue ?? ""
                     )
                 );
 
@@ -261,24 +190,24 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
             {
                 // Panic!!
                 throw new ManagerException(
-                    $"ASP.NET user manager errors: {string.Join(",", result.Errors)}"
+                    string.Join("|", result.Errors.Select(x => x.Description))
                     );
             }
 
             // Return the results.
-            return userClaim;
+            return roleClaim;
         }
         catch (Exception ex)
         {
             // Log what happened.
             _logger.LogError(
                 ex,
-                "Failed to create a user claim!"
+                "Failed to create a role claim!"
                 );
 
             // Provider better context.
             throw new ManagerException(
-                message: $"The manager failed to create a user claim!",
+                message: $"The manager failed to create a role claim!",
                 innerException: ex
                 );
         }
@@ -287,38 +216,38 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
     // *******************************************************************
 
     /// <inheritdoc/>
-    public virtual async Task<IEnumerable<GreenUserClaim>> FindByUserIdAsync(
-        string userId,
+    public virtual async Task<IEnumerable<GreenRoleClaim>> FindByRoleIdAsync(
+        string roleId,
         CancellationToken cancellationToken = default
         )
     {
         // Validate the arguments before attempting to use them.
-        Guard.Instance().ThrowIfNullOrEmpty(userId, nameof(userId));
+        Guard.Instance().ThrowIfNullOrEmpty(roleId, nameof(roleId));
 
         try
         {
-            // Look for the user.
-            var user = await _signInManager.UserManager.FindByIdAsync(
-                userId
+            // Look for the role.
+            var role = await _roleManager.FindByIdAsync(
+                roleId
                 ).ConfigureAwait(false);
 
             // Did we fail?
-            if (user is null)
+            if (role is null)
             {
                 // Panic!!
                 throw new KeyNotFoundException(
-                    $"Failed to find user: {userId}"
+                    $"Failed to find role: {roleId}"
                     );
             }
 
-            // Get the user's claims.
-            var claims = (await _signInManager.UserManager.GetClaimsAsync(
-                user
-                )).Select(x => new GreenUserClaim()
+            // Get the role's claims.
+            var claims = (await _roleManager.GetClaimsAsync(
+                role
+                )).Select(x => new GreenRoleClaim()
                 {
                     ClaimType = x.Type,
                     ClaimValue = x.Value,
-                    UserId = userId
+                    RoleId = roleId
                 }).ToList();
 
             // Return the results.
@@ -329,13 +258,13 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
             // Log what happened.
             _logger.LogError(
                 ex,
-                "Failed to search for user claims by user id!"
+                "Failed to search for role claims by role id!"
                 );
 
             // Provider better context.
             throw new ManagerException(
-                message: $"The manager failed to search for user " +
-                "claims by user id",
+                message: $"The manager failed to search for role " +
+                "claims by role id",
                 innerException: ex
                 );
         }
@@ -344,40 +273,40 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
     // *******************************************************************
 
     /// <inheritdoc/>
-    public virtual async Task<GreenUser> UpdateAsync(
-        GreenUser greenUser,
-        IEnumerable<GreenUserClaim> userClaims,
-        string userName,
-        CancellationToken cancellationToken = default
-        )
+    public virtual async Task<GreenRole> UpdateAsync(
+       GreenRole greenRole,
+       IEnumerable<GreenRoleClaim> roleClaims,
+       string userName,
+       CancellationToken cancellationToken = default
+       )
     {
         // Validate the arguments before attempting to use them.
-        Guard.Instance().ThrowIfNull(greenUser, nameof(greenUser))
-            .ThrowIfNull(userClaims, nameof(userClaims))
+        Guard.Instance().ThrowIfNull(greenRole, nameof(greenRole))
+            .ThrowIfNull(roleClaims, nameof(roleClaims))
             .ThrowIfNullOrEmpty(userName, nameof(userName));
 
         try
         {
-            // Get the user's existing claims.
-            var existingClaims = (await _signInManager.UserManager.GetClaimsAsync(
-                greenUser
+            // Get the role's existing claims.
+            var existingClaims = (await _roleManager.GetClaimsAsync(
+                greenRole
                 )).ToList();
 
             // Did we fail?
             if (!existingClaims.Any())
-            { 
-                // If we get here then the user doesn't have any claims
+            {
+                // If we get here then the role doesn't have any claims
                 //  assigned already so everything must be an addition.
 
                 // Loop through the assigned claims.
-                foreach (var userClaim in userClaims)
+                foreach (var roleClaim in roleClaims)
                 {
-                    // Assign the claim to the user.
-                    await _signInManager.UserManager.AddClaimAsync(
-                        greenUser,
+                    // Assign the claim to the role.
+                    await _roleManager.AddClaimAsync(
+                        greenRole,
                         new Claim(
-                            userClaim.ClaimType ?? "",
-                            userClaim.ClaimValue ?? ""
+                            roleClaim.ClaimType ?? "",
+                            roleClaim.ClaimValue ?? ""
                             )
                         );
                 }
@@ -389,55 +318,55 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
 
                 // Find any claims that were deleted.
                 var deletedClaims = existingClaims.Where(p1 =>
-                    userClaims.All(p2 => p2.GetHashCode() != p1.GetHashCode())
+                    roleClaims.All(p2 => p2.GetHashCode() != p1.GetHashCode())
                     ).ToList();
 
                 // Loop through the deleted claims.
-                foreach (var userClaim in deletedClaims)
+                foreach (var roleClaim in deletedClaims)
                 {
-                    // Remove the claim from the user.
-                    await _signInManager.UserManager .RemoveClaimAsync(
-                        greenUser,
+                    // Remove the claim from the role.
+                    await _roleManager.RemoveClaimAsync(
+                        greenRole,
                         new Claim(
-                            userClaim.Type ?? "",
-                            userClaim.Value ?? ""
+                            roleClaim.Type ?? "",
+                            roleClaim.Value ?? ""
                             )
                         );
                 }
 
                 // Find any claims that were added.
-                var addedClaims = userClaims.Where(p1 =>
+                var addedClaims = roleClaims.Where(p1 =>
                     existingClaims.All(p2 => p2.GetHashCode() != p1.GetHashCode())
                     ).ToList();
 
                 // Loop through the added claims.
-                foreach (var userClaim in addedClaims)
+                foreach (var roleClaim in addedClaims)
                 {
-                    // Assign the claim to the user.
-                    await _signInManager.UserManager.AddClaimAsync(
-                        greenUser,
+                    // Assign the claim to the role.
+                    await _roleManager.AddClaimAsync(
+                        greenRole,
                         new Claim(
-                            userClaim.ClaimType ?? "",
-                            userClaim.ClaimValue ?? ""
+                            roleClaim.ClaimType ?? "",
+                            roleClaim.ClaimValue ?? ""
                             )
                         );
                 }
             }
 
             // Return the result.
-            return greenUser;
+            return greenRole;
         }
         catch (Exception ex)
         {
             // Log what happened.
             _logger.LogError(
                 ex,
-                "Failed to update the claims for a user!"
+                "Failed to update the claims for a role!"
                 );
 
             // Provider better context.
             throw new ManagerException(
-                message: $"The manager failed to update the claims for a user!",
+                message: $"The manager failed to update the claims for a role!",
                 innerException: ex
                 );
         }

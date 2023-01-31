@@ -35,7 +35,7 @@ public partial class Index
     /// <summary>
     /// This field contains the current search string.
     /// </summary>
-    protected string _gridSearchString = "";
+    internal protected string _gridSearchString = "";
 
     #endregion
 
@@ -145,7 +145,122 @@ public partial class Index
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnCreateAsync()
     {
+        try
+        {
+            // Sanity check the model.
+            if (_roles is null)
+            {
+                return; // Nothing to do!
+            }
 
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog options."
+                );
+
+            // Create the dialog options.
+            var options = new DialogOptions
+            {
+                MaxWidth = MaxWidth.Small,
+                CloseOnEscapeKey = true,
+                FullWidth = true
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog parameters."
+                );
+
+            // Create the dialog parameters.
+            var parameters = new DialogParameters()
+            {
+                { "Roles", _roles },
+                { "Model", new EditRoleVM() }
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating new dialog."
+                );
+
+            // Create the dialog.
+            var dialog = DialogService.Show<NewDialog>(
+                "Create Role",
+                parameters,
+                options
+                );
+
+            // Get the results of the dialog.
+            var result = await dialog.Result;
+
+            // Did the user cancel?
+            if (result.Canceled)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Recovering the dialog model."
+                );
+
+            // Recover the model.
+            var model = (EditRoleVM)result.Data;
+
+            // The model needs a PK here.
+            model.Id = $"{Guid.NewGuid():N}";
+
+            // Create the role in the backend.
+            await GreenApi.Roles.CreateAsync(
+                new GreenRole()
+                {
+                    Id = model.Id,
+                    Name = model.Name
+                },
+                UserName
+                );
+
+            // Create the role in the UI.
+            _roles.Insert(0, model);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a role!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method edits the given role.
+    /// </summary>
+    /// <param name="role">The role to use for the operation.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task OnEditAsync(
+        EditRoleVM role
+        )
+    {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Navigating to the role detail page."
+            );
+
+        // Go to the detail page.
+        NavigationManager.NavigateTo(
+            $"/admin/roles/detail/{Uri.EscapeDataString(role.Id)}"
+            );
     }
 
     // *******************************************************************
@@ -156,10 +271,71 @@ public partial class Index
     /// <param name="role">The role to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnDeleteAsync(
-        GreenRole role
+        EditRoleVM role
         )
     {
+        try
+        {
+            // Sanity check the model.
+            if (_roles is null)
+            {
+                return; // Nothing to do!
+            }
 
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the role " +
+                $"<b>'{role.Name}'</b> <br /> <br /> Are you <i>sure</i> " +
+                "you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting role from the backend"
+                );
+
+            // Delete the role from the backend.
+            await GreenApi.Roles.DeleteAsync(
+                new GreenRole() 
+                { 
+                    Id = role.Id,
+                    Name = role.Name
+                },
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting role from the UI"
+                );
+
+            // Remove the role from the UI.
+            _roles.Remove(role);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete a claim!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
     }
 
     #endregion
@@ -201,8 +377,11 @@ public partial class Index
 
             // Get the list of roles.
             _roles = (await GreenApi.Roles.FindAllAsync())
-                .Select(x => new EditRoleVM() { Name = x.Name ?? "" })
-                .ToList();
+                .Select(x => new EditRoleVM() 
+                { 
+                    Id = x.Id,
+                    Name = x.Name ?? "" 
+                }).ToList();
         }
         finally
         {

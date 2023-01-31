@@ -2,10 +2,10 @@
 namespace CG.Green.Data.Repositories;
 
 /// <summary>
-/// This class is a default implementation of the <see cref="IGreenUserClaimRepository"/>
+/// This class is a default implementation of the <see cref="IGreenRoleClaimRepository"/>
 /// interface.
 /// </summary>
-internal class GreenUserClaimRepository : IGreenUserClaimRepository
+internal class GreenRoleClaimRepository : IGreenRoleClaimRepository
 {
     // *******************************************************************
     // Fields.
@@ -21,7 +21,7 @@ internal class GreenUserClaimRepository : IGreenUserClaimRepository
     /// <summary>
     /// This field contains the logger for this repository.
     /// </summary>
-    internal protected readonly ILogger<IGreenUserClaimRepository> _logger;
+    internal protected readonly ILogger<IGreenRoleClaimRepository> _logger;
 
     #endregion
 
@@ -32,15 +32,15 @@ internal class GreenUserClaimRepository : IGreenUserClaimRepository
     #region Constructors
 
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="GreenUserClaimRepository"/>
+    /// This constructor creates a new instance of the <see cref="GreenRoleClaimRepository"/>
     /// class.
     /// </summary>
     /// <param name="greenDbContext">The Duende configuration 
     /// data-context to use with this repository.</param>
     /// <param name="logger">The logger to use with this repository.</param>
-    public GreenUserClaimRepository(
+    public GreenRoleClaimRepository(
         GreenDbContext greenDbContext,
-        ILogger<IGreenUserClaimRepository> logger
+        ILogger<IGreenRoleClaimRepository> logger
         )
     {
         // Validate the arguments before attempting to use them.
@@ -73,7 +73,7 @@ internal class GreenUserClaimRepository : IGreenUserClaimRepository
                 );
 
             // Search for any entities in the data-store.
-            var data = await _greenDbContext.UserClaims.AnyAsync(
+            var data = await _greenDbContext.UserRoles.AnyAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
 
@@ -111,7 +111,7 @@ internal class GreenUserClaimRepository : IGreenUserClaimRepository
                 );
 
             // Search for any entities in the data-store.
-            var data = await _greenDbContext.UserClaims.CountAsync(
+            var data = await _greenDbContext.UserRoles.CountAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
 

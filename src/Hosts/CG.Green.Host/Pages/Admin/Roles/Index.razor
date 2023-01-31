@@ -13,10 +13,6 @@
                   Dense
                   Striped
                   Virtualize
-                  IsEditRowSwitchingBlocked
-                  EditTrigger="TableEditTrigger.EditButton"
-                  ApplyButtonPosition="TableApplyButtonPosition.End"
-                  EditButtonPosition="TableEditButtonPosition.End"
                   Filter="new Func<EditRoleVM,bool>(FilterFunc1)">
             <ToolBarContent>
                 <MudButton StartIcon="@Icons.Material.Outlined.Create"
@@ -32,7 +28,7 @@
                               IconSize="Size.Medium" Class="mt-0"></MudTextField>
             </ToolBarContent>
             <ColGroup>
-                <col style="width:90%" />
+                <col style="width:80%" />
                 <col />
             </ColGroup>
             <HeaderContent>
@@ -44,6 +40,9 @@
                 <MudTd>
                     <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
                                    OnClick="() => OnDeleteAsync(context)" 
+                                   Disabled="@_isLoading" />
+                    <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                   OnClick="() => OnEditAsync(context)" 
                                    Disabled="@_isLoading" />
                 </MudTd>
             </RowTemplate>

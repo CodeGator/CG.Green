@@ -64,6 +64,24 @@ public static class Globals
             /// </summary>
             public const int EmailLength = 256;
         }
+
+        /// <summary>
+        /// This class contains sizes for <see cref="GreenUserRole"/> properties.
+        /// </summary>
+        public static class Roles
+        {
+            /// <summary>
+            /// This constant represents the length of a role id.
+            /// property.
+            /// </summary>
+            public const int IdLength = 256;
+
+            /// <summary>
+            /// This constant represents the length of a role name.
+            /// property.
+            /// </summary>
+            public const int NameLength = 256;
+        }
     }
 }
 

@@ -1,0 +1,107 @@
+﻿@page "/admin/roles/detail/{RoleId}"
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
+
+<PageTitle>Role Details</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+@if (_model is null)
+{
+    if (_isLoading)
+    {
+        <MudText Typo="Typo.h6" Color="Color.Primary">Loading ...</MudText>
+    }
+    else
+    {
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! we couldn't find that role!</MudText>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => NavigationManager.NavigateTo("/admin/roles"))">Back to Roles</MudButton>
+    }
+}
+else
+{
+    <MudText Typo="Typo.h6">Role Details</MudText>
+    <MudText Typo="Typo.body2" Class="pb-5">Use this page to edit the role.</MudText>
+
+    <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+        <MudGrid>
+            <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+            </MudItem>
+            <MudItem xs="8">
+                <MudTextField AutoFocus
+                              Required
+                              Immediate
+                              Counter="@(Globals.Models.Roles.NameLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="Role Name"
+                              For="@(() => _model.Name)"
+                              @bind-Value="@_model.Name" />
+            </MudItem>
+            <MudItem xs="12">
+                <div class="groupbox">
+                    <MudText Style="font-size:small" Typo="Typo.body2">Claims</MudText>
+                    <MudTable Items="_model.AssignedClaims"
+                                Dense
+                                Striped
+                                IsEditRowSwitchingBlocked
+                                EditTrigger="TableEditTrigger.EditButton">
+                        <ToolBarContent>
+                            <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                        Variant=" Variant.Filled"
+                                        Disabled="@_isLoading"
+                                        Color="Color.Secondary"
+                                        OnClick="OnCreateClaimAsync">Create</MudButton>
+                        <MudSpacer />
+                        </ToolBarContent>
+                        <ColGroup>
+                            <col style="width:45%" />
+                            <col style="width:45%" />
+                            <col  />
+                        </ColGroup>
+                        <HeaderContent>
+                            <MudTh><MudTableSortLabel SortBy="new Func<GreenUserClaim, object>(x=>x)">ClaimType</MudTableSortLabel></MudTh>
+                            <MudTh><MudTableSortLabel SortBy="new Func<GreenUserClaim, object>(x=>x)">ClaimValue</MudTableSortLabel></MudTh>
+                            <MudTh></MudTh>
+                        </HeaderContent>
+                        <RowTemplate Context="context2">
+                            <MudTd DataLabel="Type">@context2.ClaimType</MudTd>
+                            <MudTd DataLabel="Value">@context2.ClaimValue</MudTd>
+                            <MudTd>
+                                <MudIconButton Icon="@Icons.Material.Outlined.Delete" 
+                                                OnClick="() => OnDeleteClaimAsync(context2)" 
+                                                Class="pa-0"
+                                                Disabled="@_isLoading" />
+                            </MudTd>
+                        </RowTemplate>
+                        <RowEditingTemplate Context="context2">
+                            <MudTd DataLabel="Type">
+                                <MudTextField @bind-Value="@context2.ClaimType" />
+                            </MudTd>
+                            <MudTd DataLabel="Value">
+                                <MudTextField @bind-Value="@context2.ClaimValue" />
+                            </MudTd>
+                        </RowEditingTemplate>
+                        <NoRecordsContent>
+                            No claims were found.
+                        </NoRecordsContent>
+                        <LoadingContent>
+                            Loading claims ...
+                        </LoadingContent>
+                        <PagerContent>
+                            <MudTablePager />
+                        </PagerContent>
+                        <EditButtonContent Context="button">
+                            <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                        </EditButtonContent>
+                    </MudTable>
+                </div>
+            </MudItem>
+            <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+            </MudItem>
+        </MudGrid>
+    </EditForm>
+}
+

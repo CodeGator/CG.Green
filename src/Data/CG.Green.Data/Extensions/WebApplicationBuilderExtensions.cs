@@ -45,6 +45,7 @@ public static class WebApplicationBuilderExtensions006
         // Add the repositories
         webApplicationBuilder.Services.AddScoped<IApiScopeRepository, ApiScopeRepository>();
         webApplicationBuilder.Services.AddScoped<IClientRepository, ClientRepository>();
+        webApplicationBuilder.Services.AddScoped<IGreenRoleClaimRepository, GreenRoleClaimRepository>();
         webApplicationBuilder.Services.AddScoped<IGreenUserClaimRepository, GreenUserClaimRepository>();
         webApplicationBuilder.Services.AddScoped<IGreenUserRoleRepository, GreenUserRoleRepository>();
         webApplicationBuilder.Services.AddScoped<IIdentityResourceRepository, IdentityResourceRepository>();

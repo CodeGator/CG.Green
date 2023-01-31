@@ -57,6 +57,7 @@ public static class WebApplicationBuilderExtensions001
         webApplicationBuilder.Services.AddScoped<IApiScopeManager, ApiScopeManager>();
         webApplicationBuilder.Services.AddScoped<IClientManager, ClientManager>();
         webApplicationBuilder.Services.AddScoped<IGreenRoleManager, GreenRoleManager>();
+        webApplicationBuilder.Services.AddScoped<IGreenRoleClaimManager, GreenRoleClaimManager>();
         webApplicationBuilder.Services.AddScoped<IGreenUserManager, GreenUserManager>();
         webApplicationBuilder.Services.AddScoped<IGreenUserRoleManager, GreenUserRoleManager>();
         webApplicationBuilder.Services.AddScoped<IGreenUserClaimManager, GreenUserClaimManager>();

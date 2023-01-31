@@ -1,0 +1,13 @@
+{
+  "RoleClaims": [
+    {
+      "RoleName": "SuperAdmin",
+      "Claims": [
+        {
+          "ClaimType": "SuperAdminClaim",
+          "ClaimValue": "claim-value"
+        }
+      ]
+    }
+  ]
+}

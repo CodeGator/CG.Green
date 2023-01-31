@@ -479,6 +479,139 @@ public class SeedDirector : SeedDirectorBase<SeedDirector>, ISeedDirector
     // *******************************************************************
 
     /// <inheritdoc/>
+    public virtual async Task SeedRoleClaimsAsync(
+        List<RoleClaimAssignmentOptions> roleClaims,
+        string userName,
+        bool force = false,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNull(roleClaims, nameof(roleClaims))
+            .ThrowIfNullOrEmpty(userName, nameof(userName));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogDebug(
+                "Checking the force flag"
+                );
+
+            // Should we check for existing data?
+            if (!force)
+            {
+                // Log what we are about to do.
+                _logger.LogDebug(
+                    "Checking for existing role claims"
+                    );
+
+                // Are there existing role claims?
+                var hasExistingData = await _greenApi.RoleClaims.AnyAsync(
+                    cancellationToken
+                    ).ConfigureAwait(false);
+
+                // Should we stop?
+                if (hasExistingData)
+                {
+                    // Log what we didn't do.
+                    _logger.LogWarning(
+                        "Skipping seeding role claims because the 'force' flag " +
+                        "was not specified and there are existing rows in the " +
+                        "database."
+                        );
+                    return; // Nothing else to do!
+                }
+            }
+
+            // Start by counting how many objects are already there.
+            var originalRoleClaimCount = await _greenApi.RoleClaims.CountAsync(
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Log what we are about to do.
+            _logger.LogDebug(
+                "Seeding '{count}' role claims",
+                roleClaims.Count()
+                );
+
+            // Loop through the objects.
+            foreach (var roleClaim in roleClaims)
+            {
+                // Look for the associated role.
+                var role = await _greenApi.Roles.FindByNameAsync(
+                    roleClaim.RoleName
+                    );
+
+                // Did we fail?
+                if (role is null)
+                {
+                    // Panic!!
+                    throw new KeyNotFoundException(
+                        $"Role: {roleClaim.RoleName} was not found!"
+                        );
+                }
+
+                // Log what we are about to do.
+                _logger.LogDebug(
+                    "Seeding '{count}' claim assignments to role: {e}",
+                    roleClaim.Claims.Count(),
+                    roleClaim.RoleName
+                    );
+
+                // Loop through the objects.
+                foreach (var claim in roleClaim.Claims)
+                {
+                    // Log what we are about to do.
+                    _logger.LogDebug(
+                        "Creating claim: {e}",
+                        claim.ClaimType
+                        );
+
+                    // Assign the claim.
+                    await _greenApi.RoleClaims.CreateAsync(
+                        new GreenRoleClaim()
+                        { 
+                            RoleId = role.Id,
+                            ClaimType = claim.ClaimType,    
+                            ClaimValue = claim.ClaimValue
+                        },
+                        userName,
+                        cancellationToken
+                        ).ConfigureAwait(false);
+                }
+            }
+
+            // Count how many objects there are now.
+            var finalRoleClaimCount = await _greenApi.RoleClaims.CountAsync(
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Log what we did.
+            _logger.LogInformation(
+                "Seeded a total of {count} role claims",
+                finalRoleClaimCount - originalRoleClaimCount
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to seed one or more role claims!"
+                );
+
+            // Provider better context.
+            throw new DirectorException(
+                message: $"The director failed to seed one or more " +
+                "role claims!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
     public virtual async Task SeedUsersAsync(
         List<GreenUser> users,
         string userName,
@@ -669,7 +802,7 @@ public class SeedDirector : SeedDirectorBase<SeedDirector>, ISeedDirector
             }
 
             // Count how many objects there are now.
-            var finalUserClaimCount = await _greenApi.UserRoles.CountAsync(
+            var finalUserClaimCount = await _greenApi.UserClaims.CountAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
 
@@ -864,6 +997,14 @@ public class SeedDirector : SeedDirectorBase<SeedDirector>, ISeedDirector
                 break;
             case "roles":
                 await SeedRolesAsync(
+                    dataSection,
+                    userName,
+                    force,
+                    cancellationToken
+                    ).ConfigureAwait(false);
+                break;
+            case "roleclaims":
+                await SeedRoleClaimsAsync(
                     dataSection,
                     userName,
                     force,
@@ -1115,6 +1256,61 @@ public class SeedDirector : SeedDirectorBase<SeedDirector>, ISeedDirector
         // Call the overload
         await SeedRolesAsync(
             options.Roles,
+            userName,
+            force,
+            cancellationToken
+            ).ConfigureAwait(false);
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method performs a seeding operation for <see cref="GreenRoleClaim"/>
+    /// objects, from the given configuration.
+    /// </summary>
+    /// <param name="dataSection">The data to use for the operation.</param>
+    /// <param name="userName">The role name of the person performing the 
+    /// operation.</param>
+    /// <param name="force"><c>true</c> to force the seeding operation when data
+    /// already exists in the associated table(s), <c>false</c> to stop the 
+    /// operation whenever data is detected in the associated table(s).</param>
+
+    /// <param name="cancellationToken">A cancellation token that is monitored
+    /// for the lifetime of the method.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected async virtual Task SeedRoleClaimsAsync(
+        IConfiguration dataSection,
+        string userName,
+        bool force,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Log what we are about to do.
+        _logger.LogDebug(
+            "Binding the incoming seed data to a model"
+            );
+
+        // Bind the incoming data to our options.
+        var options = new RoleClaimOptions();
+        dataSection.Bind(options);
+
+        // Log what we are about to do.
+        _logger.LogDebug(
+            "Validating the incoming seed data"
+            );
+
+        // Validate the options.
+        Guard.Instance().ThrowIfInvalidObject(options, nameof(options));
+
+        // Log what we are about to do.
+        _logger.LogTrace(
+            "Deferring to the {name} method",
+            nameof(ISeedDirector.SeedRoleClaimsAsync)
+            );
+
+        // Call the overload
+        await SeedRoleClaimsAsync(
+            options.RoleClaims,
             userName,
             force,
             cancellationToken

@@ -34,6 +34,11 @@ internal class GreenApi : IGreenApi
     internal protected readonly IGreenRoleManager _greenRoleManager = null!;
 
     /// <summary>
+    /// This field backs the <see cref="IGreenApi.RoleClaims"/> property.
+    /// </summary>
+    internal protected readonly IGreenRoleClaimManager _greenRoleClaimManager = null!;
+
+    /// <summary>
     /// This field backs the <see cref="IGreenApi.Users"/> property.
     /// </summary>
     internal protected readonly IGreenUserManager _greenUserManager = null!;
@@ -69,6 +74,9 @@ internal class GreenApi : IGreenApi
     public IGreenRoleManager Roles => _greenRoleManager;
 
     /// <inheritdoc/>
+    public IGreenRoleClaimManager RoleClaims => _greenRoleClaimManager;
+
+    /// <inheritdoc/>
     public IGreenUserManager Users => _greenUserManager;
 
     /// <inheritdoc/>
@@ -92,6 +100,7 @@ internal class GreenApi : IGreenApi
     /// <param name="apiScopeManager">The API scope manager to use with this API.</param>
     /// <param name="clientManager">The client manager to use with this API.</param>
     /// <param name="greenRoleManager">The green role manager to use with this API.</param>
+    /// <param name="greenRoleClaimManager">The green role claim manager to use with this API.</param>
     /// <param name="greenUserManager">The green user manager to use with this API.</param>
     /// <param name="greenUserClaimManager">The green user claim manager to use with this API.</param>
     /// <param name="greenUserRoleManager">The green user role manager to use with this API.</param>
@@ -100,6 +109,7 @@ internal class GreenApi : IGreenApi
         IApiScopeManager apiScopeManager,
         IClientManager clientManager,
         IGreenRoleManager greenRoleManager,
+        IGreenRoleClaimManager greenRoleClaimManager,
         IGreenUserManager greenUserManager,
         IGreenUserClaimManager greenUserClaimManager,
         IGreenUserRoleManager greenUserRoleManager,
@@ -110,6 +120,7 @@ internal class GreenApi : IGreenApi
         Guard.Instance().ThrowIfNull(apiScopeManager, nameof(apiScopeManager))
             .ThrowIfNull(clientManager, nameof(clientManager))
             .ThrowIfNull(greenRoleManager, nameof(greenRoleManager))
+            .ThrowIfNull(greenRoleClaimManager, nameof(greenRoleClaimManager))
             .ThrowIfNull(greenUserManager, nameof(greenUserManager))
             .ThrowIfNull(greenUserRoleManager, nameof(greenUserRoleManager))
             .ThrowIfNull(greenUserClaimManager, nameof(greenUserClaimManager))
@@ -119,10 +130,11 @@ internal class GreenApi : IGreenApi
         _apiScopeManager = apiScopeManager;
         _clientManager = clientManager;
         _greenRoleManager = greenRoleManager;
+        _greenRoleClaimManager = greenRoleClaimManager;
         _greenUserManager = greenUserManager;
         _greenUserClaimManager = greenUserClaimManager;
         _greenUserRoleManager = greenUserRoleManager;
-        _identityResourceManager = identityResourceManager;        
+        _identityResourceManager = identityResourceManager;
     }
 
     #endregion
