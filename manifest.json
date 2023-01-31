@@ -674,11 +674,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.Repositories.GreenRoleClaimRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html",
+          "hash": "kq0//Xh2S86ORTHlDwZGwbwK8ZDX5Fd2OLM/7D6TMFI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Data.Repositories.GreenUserClaimRepository.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.Repositories.GreenUserClaimRepository.html",
-          "hash": "eXRTCJqrqQ5Mz25vsKS0BnhdKK9c8k93/ZHpSl8gOts="
+          "hash": "jYQIBZNX01gsQYEj/C1BX7gn+Ti3z9yopo4uvDaejnA="
         }
       },
       "is_incremental": false,
@@ -714,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.Repositories.html",
-          "hash": "LhWNgI0oVmpcsipTDZtrRYVQCJiNk45vx+4huhyft9U="
+          "hash": "YweP5U0rP3nGyoEDK1fIRM2rjt10zUabOLvyzJ7aaF8="
         }
       },
       "is_incremental": false,
@@ -1014,7 +1026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Directors.ISeedDirector.html",
-          "hash": "DI07DvAmwM7TcJKVcUfj+DWKf+p1xcvNT+VP9DPw1rw="
+          "hash": "JIommyLHcT36UVbxpNndh7mPuGDz3wrq+D3S53l7EtI="
         }
       },
       "is_incremental": false,
@@ -1026,7 +1038,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Directors.SeedDirector.html",
-          "hash": "pJj2fajXNzUBDogQoBHXfl4UYJhjiJzkWUzBVt9UoQA="
+          "hash": "lo+FCnnR9czzMLbv8/rxTT8AoTz6AnIM9E+wmgEBFhg="
         }
       },
       "is_incremental": false,
@@ -1051,6 +1063,18 @@
         ".html": {
           "relative_path": "api/CG.Green.Globals.Models.Clients.html",
           "hash": "+xNaSP3WYBb5IrMaKqD8tHw1ykEk0YbDvZF05SQqbh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Globals.Models.Roles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Globals.Models.Roles.html",
+          "hash": "o0Qy4gmGO23aXepKd1dqjGj+dSJzVnUMPHW9eyN75aA="
         }
       },
       "is_incremental": false,
@@ -1098,7 +1122,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.GreenApi.html",
-          "hash": "ABK81VNWW/I1sN449Lp4VsnhSOfMMPMhj61AdvrIFuY="
+          "hash": "E7yFbzsKdP28kxoQJzvKBTCAhrbH3a8j3cC33jo8w3M="
         }
       },
       "is_incremental": false,
@@ -1110,7 +1134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html",
-          "hash": "SmPeeL8uqxKm0S/FsiMJJ6FXFCSWgQlOlZ3BsQu1XQg="
+          "hash": "f0Nm46f40veQoyrA9pu+bri9BTFXQblpS0+YTq5oKDU="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Resources.Index.html",
-          "hash": "3WebXmpUvsjSzzQjZxOXZYBAdAmqUKGBVkThPkzaZgI="
+          "hash": "gWeu8gmLLVe/hzMLVTCuR130IdEyvPq07j/cjwKvpKA="
         }
       },
       "is_incremental": false,
@@ -1202,11 +1226,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.Roles.Detail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.Pages.Admin.Roles.Detail.html",
+          "hash": "gh7kPkaxVtMBuGxK9NSwLDvS95hKbfpMnKclgRyNJCk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Host.Pages.Admin.Roles.Index.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Roles.Index.html",
-          "hash": "ayS6c8vkpq7N/KuhzTqfoPJpcCpzbmOIBY9a96mXOoE="
+          "hash": "3ELNXAf9iyIf0w/uNi+gd+FR+iPNzmoMYnnR0I7MK+M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.Roles.NewDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html",
+          "hash": "Ivl04+w2PG8Ra/uFddtOK14SaYiE44zJRJuxKe4/41U="
         }
       },
       "is_incremental": false,
@@ -1218,7 +1266,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Roles.html",
-          "hash": "XNoRS7hW4fplmpfhC+a3QOEOyle6lY9avWGTmYue5x4="
+          "hash": "MJVwKgB04iN0amcUpwHgT9ALHKzx2wxa7w5UP+GrnG4="
         }
       },
       "is_incremental": false,
@@ -1242,7 +1290,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Users.Index.html",
-          "hash": "yatDxbUMii9R6HgUaxJCO9/xWxNynSFi3qdRYrDrZ5w="
+          "hash": "jVyot+xfoBXm223akr7sPQ/3/ksqeNGvqQnpQKTz4nw="
         }
       },
       "is_incremental": false,
@@ -1406,11 +1454,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Host.ViewModels.EditClientVM.yml",
+      "source_relative_path": "api/CG.Green.Host.ViewModels.EditRoleVM.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Green.Host.ViewModels.EditClientVM.html",
-          "hash": "shuAg7/peDGMV5QzDEfkHYwG9IzF0qidzVXoz6comK0="
+          "relative_path": "api/CG.Green.Host.ViewModels.EditRoleVM.html",
+          "hash": "EPI4fmZFt7JXYvTIlhb4Md2L9tfLk25HR4ti2Zp/9Gg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.ViewModels.EditScopeVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.ViewModels.EditScopeVM.html",
+          "hash": "FptWRhL5eETQM1BHsZTgeUf9pWF317mSuZ5WPEpEUqo="
         }
       },
       "is_incremental": false,
@@ -1482,7 +1542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.html",
-          "hash": "rTaWm+4+W7RHTMva5gLl0fLqUCXJ6hdSQ6yM9pNf9Lc="
+          "hash": "rYaYBOls1ZEfL22o7FjdZVRkK1kc3OhhJNPgQw13XEE="
         }
       },
       "is_incremental": false,
@@ -1494,7 +1554,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.IGreenApi.html",
-          "hash": "g28UPEVv7vzcHovu5rwfzDw7k2zlzmfNwlxB1a6iA1I="
+          "hash": "EFXNML1IIirTYEd1Wkg/oWuPFwVwxRKJGiK9z0DWVnk="
         }
       },
       "is_incremental": false,
@@ -1742,11 +1802,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Managers.GreenRoleClaimManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Managers.GreenRoleClaimManager.html",
+          "hash": "mvqNHQntSmZDwL7jcAQDHe4P+Rxvi0RQw4rApiPFtZk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Managers.GreenRoleManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.GreenRoleManager.html",
-          "hash": "0xSjsxWZY3xJo/Ahe5S3CCM1ACpBv5OAnY7/2e/qVWA="
+          "hash": "m3WkVtVfdpVt9lzGxdg1x7UGAEqWmHQ9kbqPTgb6pX0="
         }
       },
       "is_incremental": false,
@@ -1758,7 +1830,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.GreenUserClaimManager.html",
-          "hash": "/0Zfr7pWH8urioYQ8M0ttsKjxKqLq7ODgNzHr8y9Mfo="
+          "hash": "y2NP068lli5ZpDmtuCQY8vfFJdKlJxBAsrVutcXCfD0="
         }
       },
       "is_incremental": false,
@@ -1814,11 +1886,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Managers.IGreenRoleClaimManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Managers.IGreenRoleClaimManager.html",
+          "hash": "xuUw1Trhq/Ydx3gXFhioGquVyxIZaG1MLdYyywaubBo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Managers.IGreenRoleManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.IGreenRoleManager.html",
-          "hash": "CZisWXHg06qIsN8pOfh4JqRatewemEGtJIRhLCaLD28="
+          "hash": "7f88fR5l7tFBdu/vv0Zogf50WcQ1GC9seP5c6DMh+h8="
         }
       },
       "is_incremental": false,
@@ -1902,7 +1986,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.html",
-          "hash": "adQ9deFRUSt8vYcOvF0JPNfi21tHcSS1oIy2PQGddcg="
+          "hash": "b5YWnmJRPH0Qx32kwjxbadT8YSkzviYyn0bRNDuMOWU="
         }
       },
       "is_incremental": false,
@@ -1994,6 +2078,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Options.RoleClaimAssignmentOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Options.RoleClaimAssignmentOptions.html",
+          "hash": "mJxXRlvgakM6Pj4/h5nRxJz8gQRzDjXiViqASQ4M+1c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Options.RoleClaimOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Options.RoleClaimOptions.html",
+          "hash": "H21Y2ujCL1819oE0WrR+AmTYZlg4srfyhdODSxFQbeI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Options.UserClaimAssignmentOptions.yml",
       "output": {
         ".html": {
@@ -2046,7 +2154,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Options.html",
-          "hash": "0PCM3pegriCc91L+UpYg/VruYxbBRF8BneaPi/CgnQ0="
+          "hash": "RsXgyyJvA6UINtbziU93r+U7JbNHZpQi7pQLnYxp2KM="
         }
       },
       "is_incremental": false,
@@ -2078,11 +2186,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Repositories.IGreenRoleClaimRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Repositories.IGreenRoleClaimRepository.html",
+          "hash": "FIWdbjlR46eqsicmgK/KIO2yrVqpgwvTEeFmkmT9gXE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Repositories.IGreenUserClaimRepository.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Repositories.IGreenUserClaimRepository.html",
-          "hash": "Ca92T/CFIQGtDWBkpqcQJNnjTT2ajUdeUPHmZKfGDQ0="
+          "hash": "MPbWJvd2+9xJcLp6QKj6RBvA4O7EIc3h9sVb9+VfLyA="
         }
       },
       "is_incremental": false,
@@ -2130,7 +2250,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Repositories.html",
-          "hash": "g8QkIXg0EEdh9YVysVeUuCw1PL/Jvk6OTSZypSc+EWY="
+          "hash": "ZD3Kg9yBxs88U6x0niwnzb1PMhhlaP90vfpqH0u7dj4="
         }
       },
       "is_incremental": false,
@@ -2238,7 +2358,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.html",
-          "hash": "0HLPwz8qC1w2KfWf4k2X3QcaP/AKYHzOuCxIMAQyxf0="
+          "hash": "6NLTKTowePo7eg+m3x3SyNY2OKBRxxIbuWKwIeomc6U="
         }
       },
       "is_incremental": false,
@@ -2418,7 +2538,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vdFRI5vU9S9H8Dvxt4SbZKu0R7aBFvG8h3g3pZFlFLY="
+          "hash": "SGkeK4KivRjjdlwhkxAD2Qc/yAgsdB8Ju8sKviLkItU="
         }
       },
       "is_incremental": false,
@@ -2537,7 +2657,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 200,
+          "total_file_count": 210,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

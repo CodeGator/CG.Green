@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IGreenApi
+    <title>Class NewDialog
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IGreenApi
+    <meta name="title" content="Class NewDialog
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,30 +78,59 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.IGreenApi">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog">
   
   
-  <h1 id="CG_Green_IGreenApi" data-uid="CG.Green.IGreenApi" class="text-break">Interface IGreenApi
+  <h1 id="CG_Green_Host_Pages_Admin_Roles_NewDialog" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog" class="text-break">Class NewDialog
   </h1>
-  <div class="markdown level0 summary"><p>This interface represents the API for the <a class="xref" href="CG.Green.html">CG.Green</a> microservice.</p>
+  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Green.Host.Pages.Admin.Roles.NewDialog.html">NewDialog</a> page.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.html">CG.Green</a></h6>
-  <h6><strong>Assembly</strong>: CG.Green.Abstractions.dll</h6>
-  <h5 id="CG_Green_IGreenApi_syntax">Syntax</h5>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NewDialog</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Host.Pages.Admin.Roles.html">CG.Green.Host.Pages.Admin.Roles</a></h6>
+  <h6><strong>Assembly</strong>: CG.Green.Host.dll</h6>
+  <h5 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IGreenApi</code></pre>
+    <pre><code class="lang-csharp hljs">public class NewDialog</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Green_IGreenApi_ApiScopes_" data-uid="CG.Green.IGreenApi.ApiScopes*"></a>
-  <h4 id="CG_Green_IGreenApi_ApiScopes" data-uid="CG.Green.IGreenApi.ApiScopes">ApiScopes</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing api scope related operations.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewDialog_DialogService_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.DialogService*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_DialogService" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.DialogService">DialogService</h4>
+  <div class="markdown level1 summary"><p>This property contains the dialog service for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IApiScopeManager ApiScopes { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IDialogService DialogService { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -113,19 +142,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IApiScopeManager</span></td>
+        <td><span class="xref">IDialogService</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_Clients_" data-uid="CG.Green.IGreenApi.Clients*"></a>
-  <h4 id="CG_Green_IGreenApi_Clients" data-uid="CG.Green.IGreenApi.Clients">Clients</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing client related operations.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewDialog_Logger_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.Logger*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_Logger" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>This property contains the logger for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IClientManager Clients { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ILogger&lt;NewDialog&gt; Logger { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,19 +166,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IClientManager</span></td>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Host.Pages.Admin.Roles.NewDialog.html">NewDialog</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_IdentityResources_" data-uid="CG.Green.IGreenApi.IdentityResources*"></a>
-  <h4 id="CG_Green_IGreenApi_IdentityResources" data-uid="CG.Green.IGreenApi.IdentityResources">IdentityResources</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing identity resource operations.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewDialog_Model_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.Model*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_Model" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.Model">Model</h4>
+  <div class="markdown level1 summary"><p>This property contains the edit form's model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IIdentityResourceManager IdentityResources { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public EditRoleVM Model { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,19 +190,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IIdentityResourceManager</span></td>
+        <td><span class="xref">EditRoleVM</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_RoleClaims_" data-uid="CG.Green.IGreenApi.RoleClaims*"></a>
-  <h4 id="CG_Green_IGreenApi_RoleClaims" data-uid="CG.Green.IGreenApi.RoleClaims">RoleClaims</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing role claim operations.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewDialog_MudDialog_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.MudDialog*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_MudDialog" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.MudDialog">MudDialog</h4>
+  <div class="markdown level1 summary"><p>This property contains the dialog reference.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenRoleClaimManager RoleClaims { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public MudDialogInstance MudDialog { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -185,19 +214,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGreenRoleClaimManager</span></td>
+        <td><span class="xref">MudDialogInstance</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_Roles_" data-uid="CG.Green.IGreenApi.Roles*"></a>
-  <h4 id="CG_Green_IGreenApi_Roles" data-uid="CG.Green.IGreenApi.Roles">Roles</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing role operations.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewDialog_Roles_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.Roles*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_Roles" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.Roles">Roles</h4>
+  <div class="markdown level1 summary"><p>This property contains the existing roles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenRoleManager Roles { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;EditRoleVM&gt; Roles { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,19 +238,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGreenRoleManager</span></td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">EditRoleVM</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_UserClaims_" data-uid="CG.Green.IGreenApi.UserClaims*"></a>
-  <h4 id="CG_Green_IGreenApi_UserClaims" data-uid="CG.Green.IGreenApi.UserClaims">UserClaims</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing user claim operations.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewDialog_SnackbarService_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.SnackbarService*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_SnackbarService" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.SnackbarService">SnackbarService</h4>
+  <div class="markdown level1 summary"><p>This property contains the snackbar service for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenUserClaimManager UserClaims { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ISnackbar SnackbarService { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,55 +262,44 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGreenUserClaimManager</span></td>
+        <td><span class="xref">ISnackbar</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_UserRoles_" data-uid="CG.Green.IGreenApi.UserRoles*"></a>
-  <h4 id="CG_Green_IGreenApi_UserRoles" data-uid="CG.Green.IGreenApi.UserRoles">UserRoles</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing user role operations.</p>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewDialog_Cancel_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.Cancel*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_Cancel" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"><p>This method cancels the dialog.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenUserRoleManager UserRoles { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Cancel()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewDialog_OnValidSubmit_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.OnValidSubmit*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewDialog_OnValidSubmit_Microsoft_AspNetCore_Components_Forms_EditContext_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewDialog.OnValidSubmit(Microsoft.AspNetCore.Components.Forms.EditContext)">OnValidSubmit(EditContext)</h4>
+  <div class="markdown level1 summary"><p>This method submits the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnValidSubmit(EditContext editContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGreenUserRoleManager</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_IGreenApi_Users_" data-uid="CG.Green.IGreenApi.Users*"></a>
-  <h4 id="CG_Green_IGreenApi_Users" data-uid="CG.Green.IGreenApi.Users">Users</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing user operations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenUserManager Users { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IGreenUserManager</span></td>
+        <td><span class="xref">Microsoft.AspNetCore.Components.Forms.EditContext</span></td>
+        <td><span class="parametername">editContext</span></td>
         <td></td>
       </tr>
     </tbody>

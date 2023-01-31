@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace CG.Green.Repositories
+    <title>Class RoleClaimAssignmentOptions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace CG.Green.Repositories
+    <meta name="title" content="Class RoleClaimAssignmentOptions
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,44 +78,100 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.Repositories">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Options.RoleClaimAssignmentOptions">
   
-  <h1 id="CG_Green_Repositories" data-uid="CG.Green.Repositories" class="text-break">Namespace CG.Green.Repositories
+  
+  <h1 id="CG_Green_Options_RoleClaimAssignmentOptions" data-uid="CG.Green.Options.RoleClaimAssignmentOptions" class="text-break">Class RoleClaimAssignmentOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This class contains configuration settings for seeding a role claim
+assignment.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RoleClaimAssignmentOptions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Options.html">CG.Green.Options</a></h6>
+  <h6><strong>Assembly</strong>: CG.Green.Abstractions.dll</h6>
+  <h5 id="CG_Green_Options_RoleClaimAssignmentOptions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RoleClaimAssignmentOptions</code></pre>
+  </div>
+  <h3 id="properties">Properties
   </h3>
-      <h4><a class="xref" href="CG.Green.Repositories.RepositoryException.html">RepositoryException</a></h4>
-      <section><p>This class represents a repository related exception.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="CG.Green.Repositories.IApiScopeRepository.html">IApiScopeRepository</a></h4>
-      <section><p>This interface represents an object that manages the storage and retrieval
-of <see cref="!:ApiScope"></see> objects.</p>
-</section>
-      <h4><a class="xref" href="CG.Green.Repositories.IClientRepository.html">IClientRepository</a></h4>
-      <section><p>This interface represents an object that manages the storage and retrieval
-of <see cref="!:Client"></see> objects.</p>
-</section>
-      <h4><a class="xref" href="CG.Green.Repositories.IGreenRoleClaimRepository.html">IGreenRoleClaimRepository</a></h4>
-      <section><p>This interface represents an object that manages the storage and retrieval
-of <see cref="!:GreenRoleClaim"></see> objects.</p>
-</section>
-      <h4><a class="xref" href="CG.Green.Repositories.IGreenUserClaimRepository.html">IGreenUserClaimRepository</a></h4>
-      <section><p>This interface represents an object that manages the storage and retrieval
-of <see cref="!:GreenUserClaim"></see> objects.</p>
-</section>
-      <h4><a class="xref" href="CG.Green.Repositories.IGreenUserRoleRepository.html">IGreenUserRoleRepository</a></h4>
-      <section><p>This interface represents an object that manages the storage and retrieval
-of <see cref="!:GreenUserRole"></see> objects.</p>
-</section>
-      <h4><a class="xref" href="CG.Green.Repositories.IIdentityResourceRepository.html">IIdentityResourceRepository</a></h4>
-      <section><p>This interface represents an object that manages the storage and retrieval
-of <see cref="!:IdentityResource"></see> objects.</p>
-</section>
+  <a id="CG_Green_Options_RoleClaimAssignmentOptions_Claims_" data-uid="CG.Green.Options.RoleClaimAssignmentOptions.Claims*"></a>
+  <h4 id="CG_Green_Options_RoleClaimAssignmentOptions_Claims" data-uid="CG.Green.Options.RoleClaimAssignmentOptions.Claims">Claims</h4>
+  <div class="markdown level1 summary"><p>This property contains the list of claims assigned to the role.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ClaimOptions&gt; Claims { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="CG.Green.Options.ClaimOptions.html">ClaimOptions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Options_RoleClaimAssignmentOptions_RoleName_" data-uid="CG.Green.Options.RoleClaimAssignmentOptions.RoleName*"></a>
+  <h4 id="CG_Green_Options_RoleClaimAssignmentOptions_RoleName" data-uid="CG.Green.Options.RoleClaimAssignmentOptions.RoleName">RoleName</h4>
+  <div class="markdown level1 summary"><p>This property contains the name for the role.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RoleName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

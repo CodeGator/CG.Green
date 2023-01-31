@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IGreenApi
+    <title>Class GreenRoleClaimRepository
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IGreenApi
+    <meta name="title" content="Class GreenRoleClaimRepository
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,32 +78,74 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.IGreenApi">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository">
   
   
-  <h1 id="CG_Green_IGreenApi" data-uid="CG.Green.IGreenApi" class="text-break">Interface IGreenApi
+  <h1 id="CG_Green_Data_Repositories_GreenRoleClaimRepository" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository" class="text-break">Class GreenRoleClaimRepository
   </h1>
-  <div class="markdown level0 summary"><p>This interface represents the API for the <a class="xref" href="CG.Green.html">CG.Green</a> microservice.</p>
+  <div class="markdown level0 summary"><p>This class is a default implementation of the <see cref="!:IGreenRoleClaimRepository"></see>
+interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.html">CG.Green</a></h6>
-  <h6><strong>Assembly</strong>: CG.Green.Abstractions.dll</h6>
-  <h5 id="CG_Green_IGreenApi_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IGreenApi</code></pre>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GreenRoleClaimRepository</span></div>
   </div>
-  <h3 id="properties">Properties
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Data.Repositories.html">CG.Green.Data.Repositories</a></h6>
+  <h6><strong>Assembly</strong>: CG.Green.Data.dll</h6>
+  <h5 id="CG_Green_Data_Repositories_GreenRoleClaimRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">class GreenRoleClaimRepository : IGreenRoleClaimRepository</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
   </h3>
-  <a id="CG_Green_IGreenApi_ApiScopes_" data-uid="CG.Green.IGreenApi.ApiScopes*"></a>
-  <h4 id="CG_Green_IGreenApi_ApiScopes" data-uid="CG.Green.IGreenApi.ApiScopes">ApiScopes</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing api scope related operations.</p>
+  <a id="CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor*"></a>
+  <h4 id="CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_CG_Green_Data_GreenDbContext_ILogger_IGreenRoleClaimRepository__" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenRoleClaimRepository})">GreenRoleClaimRepository(GreenDbContext, ILogger&lt;IGreenRoleClaimRepository&gt;)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Green.Data.Repositories.GreenRoleClaimRepository.html">GreenRoleClaimRepository</a>
+class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IApiScopeManager ApiScopes { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public GreenRoleClaimRepository(GreenDbContext greenDbContext, ILogger&lt;IGreenRoleClaimRepository&gt; logger)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Green.Data.GreenDbContext.html">GreenDbContext</a></td>
+        <td><span class="parametername">greenDbContext</span></td>
+        <td><p>The Duende configuration
+data-context to use with this repository.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<span class="xref">IGreenRoleClaimRepository</span>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger to use with this repository.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="CG_Green_Data_Repositories_GreenRoleClaimRepository__greenDbContext" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository._greenDbContext">_greenDbContext</h4>
+  <div class="markdown level1 summary"><p>This field contains the green data-context for this repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly GreenDbContext _greenDbContext</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -113,21 +155,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IApiScopeManager</span></td>
+        <td><a class="xref" href="CG.Green.Data.GreenDbContext.html">GreenDbContext</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_Clients_" data-uid="CG.Green.IGreenApi.Clients*"></a>
-  <h4 id="CG_Green_IGreenApi_Clients" data-uid="CG.Green.IGreenApi.Clients">Clients</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing client related operations.</p>
+  <h4 id="CG_Green_Data_Repositories_GreenRoleClaimRepository__logger" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository._logger">_logger</h4>
+  <div class="markdown level1 summary"><p>This field contains the logger for this repository.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IClientManager Clients { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly ILogger&lt;IGreenRoleClaimRepository&gt; _logger</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -137,45 +178,39 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IClientManager</span></td>
+        <td><span class="xref">ILogger</span>&lt;<span class="xref">IGreenRoleClaimRepository</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_IdentityResources_" data-uid="CG.Green.IGreenApi.IdentityResources*"></a>
-  <h4 id="CG_Green_IGreenApi_IdentityResources" data-uid="CG.Green.IGreenApi.IdentityResources">IdentityResources</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing identity resource operations.</p>
-</div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_Green_Data_Repositories_GreenRoleClaimRepository_AnyAsync_" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.AnyAsync*"></a>
+  <h4 id="CG_Green_Data_Repositories_GreenRoleClaimRepository_AnyAsync_CancellationToken_" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.AnyAsync(CancellationToken)">AnyAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IIdentityResourceManager IdentityResources { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;bool&gt; AnyAsync(CancellationToken cancellationToken = null)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IIdentityResourceManager</span></td>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_RoleClaims_" data-uid="CG.Green.IGreenApi.RoleClaims*"></a>
-  <h4 id="CG_Green_IGreenApi_RoleClaims" data-uid="CG.Green.IGreenApi.RoleClaims">RoleClaims</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing role claim operations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenRoleClaimManager RoleClaims { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -185,45 +220,37 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGreenRoleClaimManager</span></td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_Roles_" data-uid="CG.Green.IGreenApi.Roles*"></a>
-  <h4 id="CG_Green_IGreenApi_Roles" data-uid="CG.Green.IGreenApi.Roles">Roles</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing role operations.</p>
-</div>
+  <a id="CG_Green_Data_Repositories_GreenRoleClaimRepository_CountAsync_" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.CountAsync*"></a>
+  <h4 id="CG_Green_Data_Repositories_GreenRoleClaimRepository_CountAsync_CancellationToken_" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.CountAsync(CancellationToken)">CountAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenRoleManager Roles { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;long&gt; CountAsync(CancellationToken cancellationToken = null)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGreenRoleManager</span></td>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_IGreenApi_UserClaims_" data-uid="CG.Green.IGreenApi.UserClaims*"></a>
-  <h4 id="CG_Green_IGreenApi_UserClaims" data-uid="CG.Green.IGreenApi.UserClaims">UserClaims</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing user claim operations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenUserClaimManager UserClaims { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -233,55 +260,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IGreenUserClaimManager</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_IGreenApi_UserRoles_" data-uid="CG.Green.IGreenApi.UserRoles*"></a>
-  <h4 id="CG_Green_IGreenApi_UserRoles" data-uid="CG.Green.IGreenApi.UserRoles">UserRoles</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing user role operations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenUserRoleManager UserRoles { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IGreenUserRoleManager</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_IGreenApi_Users_" data-uid="CG.Green.IGreenApi.Users*"></a>
-  <h4 id="CG_Green_IGreenApi_Users" data-uid="CG.Green.IGreenApi.Users">Users</h4>
-  <div class="markdown level1 summary"><p>This property contains an object for performing user operations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGreenUserManager Users { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IGreenUserManager</span></td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

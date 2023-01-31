@@ -340,6 +340,88 @@ director fails to complete the operation.</p>
       </tr>
     </tbody>
   </table>
+  <a id="CG_Green_Directors_ISeedDirector_SeedRoleClaimsAsync_" data-uid="CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync*"></a>
+  <h4 id="CG_Green_Directors_ISeedDirector_SeedRoleClaimsAsync_List_RoleClaimAssignmentOptions__System_String_System_Boolean_CancellationToken_" data-uid="CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync(List{RoleClaimAssignmentOptions},System.String,System.Boolean,CancellationToken)">SeedRoleClaimsAsync(List&lt;RoleClaimAssignmentOptions&gt;, String, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method performs a seeding operation for <see cref="!:RoleClaimOptions"></see>
+objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SeedRoleClaimsAsync(List&lt;RoleClaimAssignmentOptions&gt; roleClaims, string userName, bool force = false, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">RoleClaimAssignmentOptions</span>&gt;</td>
+        <td><span class="parametername">roleClaims</span></td>
+        <td><p>The data to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The name of the user performing the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p><code>true</code> to force the seeding operation when
+there are existing entities in the underlying data-store; <code>false</code>
+otherwise.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that is monitored
+for the lifetime of the method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Green.Directors.DirectorException.html">DirectorException</a></td>
+        <td><p>This exception is thrown whenever the
+director fails to complete the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Green_Directors_ISeedDirector_SeedRolesAsync_" data-uid="CG.Green.Directors.ISeedDirector.SeedRolesAsync*"></a>
   <h4 id="CG_Green_Directors_ISeedDirector_SeedRolesAsync_List_GreenRole__System_String_System_Boolean_CancellationToken_" data-uid="CG.Green.Directors.ISeedDirector.SeedRolesAsync(List{GreenRole},System.String,System.Boolean,CancellationToken)">SeedRolesAsync(List&lt;GreenRole&gt;, String, Boolean, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method performs a seeding operation for <see cref="!:GreenRole"></see>

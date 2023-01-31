@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GreenRoleManager
+    <title>Class GreenRoleClaimManager
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GreenRoleManager
+    <meta name="title" content="Class GreenRoleClaimManager
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,23 +78,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.Managers.GreenRoleManager">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Managers.GreenRoleClaimManager">
   
   
-  <h1 id="CG_Green_Managers_GreenRoleManager" data-uid="CG.Green.Managers.GreenRoleManager" class="text-break">Class GreenRoleManager
+  <h1 id="CG_Green_Managers_GreenRoleClaimManager" data-uid="CG.Green.Managers.GreenRoleClaimManager" class="text-break">Class GreenRoleClaimManager
   </h1>
-  <div class="markdown level0 summary"><p>This class is a default implementation of the <a class="xref" href="CG.Green.Managers.IGreenRoleManager.html">IGreenRoleManager</a>
+  <div class="markdown level0 summary"><p>This class is a default implementation of the <a class="xref" href="CG.Green.Managers.IGreenRoleClaimManager.html">IGreenRoleClaimManager</a>
 interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">GreenRoleManager</span></div>
+    <div class="level1"><span class="xref">GreenRoleClaimManager</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="CG.Green.Managers.IGreenRoleManager.html">IGreenRoleManager</a></div>
+    <div><a class="xref" href="CG.Green.Managers.IGreenRoleClaimManager.html">IGreenRoleClaimManager</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -122,21 +122,21 @@ interface.</p>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Managers.html">CG.Green.Managers</a></h6>
   <h6><strong>Assembly</strong>: CG.Green.dll</h6>
-  <h5 id="CG_Green_Managers_GreenRoleManager_syntax">Syntax</h5>
+  <h5 id="CG_Green_Managers_GreenRoleClaimManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class GreenRoleManager : IGreenRoleManager</code></pre>
+    <pre><code class="lang-csharp hljs">class GreenRoleClaimManager : IGreenRoleClaimManager</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="CG_Green_Managers_GreenRoleManager__ctor_" data-uid="CG.Green.Managers.GreenRoleManager.#ctor*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager__ctor_RoleManager_CG_Green_Identity_Models_GreenRole__ILogger_CG_Green_Managers_IGreenRoleManager__" data-uid="CG.Green.Managers.GreenRoleManager.#ctor(RoleManager{CG.Green.Identity.Models.GreenRole},ILogger{CG.Green.Managers.IGreenRoleManager})">GreenRoleManager(RoleManager&lt;GreenRole&gt;, ILogger&lt;IGreenRoleManager&gt;)</h4>
-  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Green.Managers.GreenRoleManager.html">GreenRoleManager</a>
+  <a id="CG_Green_Managers_GreenRoleClaimManager__ctor_" data-uid="CG.Green.Managers.GreenRoleClaimManager.#ctor*"></a>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager__ctor_CG_Green_Repositories_IGreenRoleClaimRepository_RoleManager_CG_Green_Identity_Models_GreenRole__SignInManager_CG_Green_Identity_Models_GreenUser__ILogger_CG_Green_Managers_IGreenRoleClaimManager__" data-uid="CG.Green.Managers.GreenRoleClaimManager.#ctor(CG.Green.Repositories.IGreenRoleClaimRepository,RoleManager{CG.Green.Identity.Models.GreenRole},SignInManager{CG.Green.Identity.Models.GreenUser},ILogger{CG.Green.Managers.IGreenRoleClaimManager})">GreenRoleClaimManager(IGreenRoleClaimRepository, RoleManager&lt;GreenRole&gt;, SignInManager&lt;GreenUser&gt;, ILogger&lt;IGreenRoleClaimManager&gt;)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Green.Managers.GreenRoleClaimManager.html">GreenRoleClaimManager</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GreenRoleManager(RoleManager&lt;GreenRole&gt; roleManager, ILogger&lt;IGreenRoleManager&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public GreenRoleClaimManager(IGreenRoleClaimRepository greenRoleClaimRepository, RoleManager&lt;GreenRole&gt; roleManager, SignInManager&lt;GreenUser&gt; signInManager, ILogger&lt;IGreenRoleClaimManager&gt; logger)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,14 +149,28 @@ class.</p>
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="CG.Green.Repositories.IGreenRoleClaimRepository.html">IGreenRoleClaimRepository</a></td>
+        <td><span class="parametername">greenRoleClaimRepository</span></td>
+        <td><p>The green role claim repository
+to use with this manager.</p>
+</td>
+      </tr>
+      <tr>
         <td><span class="xref">RoleManager</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenRole.html">GreenRole</a>&gt;</td>
         <td><span class="parametername">roleManager</span></td>
-        <td><p>The ASP.NET role manager to use with
+        <td><p>The ASP.NET claim manager to use with this
+manager.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">SignInManager</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a>&gt;</td>
+        <td><span class="parametername">signInManager</span></td>
+        <td><p>The ASP.NET sign-in manager to use with
 this manager.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Managers.IGreenRoleManager.html">IGreenRoleManager</a>&gt;</td>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Managers.IGreenRoleClaimManager.html">IGreenRoleClaimManager</a>&gt;</td>
         <td><span class="parametername">logger</span></td>
         <td><p>The logger to use with this manager.</p>
 </td>
@@ -165,13 +179,13 @@ this manager.</p>
   </table>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="CG_Green_Managers_GreenRoleManager__logger" data-uid="CG.Green.Managers.GreenRoleManager._logger">_logger</h4>
-  <div class="markdown level1 summary"><p>This field contains the logger for this manager.</p>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager__greenRoleClaimRepository" data-uid="CG.Green.Managers.GreenRoleClaimManager._greenRoleClaimRepository">_greenRoleClaimRepository</h4>
+  <div class="markdown level1 summary"><p>This field contains the green role claim repository for this manager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly ILogger&lt;IGreenRoleManager&gt; _logger</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly IGreenRoleClaimRepository _greenRoleClaimRepository</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,13 +197,36 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Managers.IGreenRoleManager.html">IGreenRoleManager</a>&gt;</td>
+        <td><a class="xref" href="CG.Green.Repositories.IGreenRoleClaimRepository.html">IGreenRoleClaimRepository</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="CG_Green_Managers_GreenRoleManager__roleManager" data-uid="CG.Green.Managers.GreenRoleManager._roleManager">_roleManager</h4>
-  <div class="markdown level1 summary"><p>This field contains the ASP.NET role manager for this manager.</p>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager__logger" data-uid="CG.Green.Managers.GreenRoleClaimManager._logger">_logger</h4>
+  <div class="markdown level1 summary"><p>This field contains the logger for this manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ILogger&lt;IGreenRoleClaimManager&gt; _logger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Managers.IGreenRoleClaimManager.html">IGreenRoleClaimManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager__roleManager" data-uid="CG.Green.Managers.GreenRoleClaimManager._roleManager">_roleManager</h4>
+  <div class="markdown level1 summary"><p>This field contains the ASP.NET claim manager for this manager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -211,15 +248,38 @@ this manager.</p>
       </tr>
     </tbody>
   </table>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager__signInManager" data-uid="CG.Green.Managers.GreenRoleClaimManager._signInManager">_signInManager</h4>
+  <div class="markdown level1 summary"><p>This field contains the ASP.NET sign in manager for this manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly SignInManager&lt;GreenUser&gt; _signInManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SignInManager</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="CG_Green_Managers_GreenRoleManager_AnyAsync_" data-uid="CG.Green.Managers.GreenRoleManager.AnyAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_AnyAsync_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.AnyAsync(CancellationToken)">AnyAsync(CancellationToken)</h4>
+  <a id="CG_Green_Managers_GreenRoleClaimManager_AnyAsync_" data-uid="CG.Green.Managers.GreenRoleClaimManager.AnyAsync*"></a>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager_AnyAsync_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleClaimManager.AnyAsync(CancellationToken)">AnyAsync(CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; AnyAsync(CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;bool&gt; AnyAsync(CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,58 +313,13 @@ this manager.</p>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Managers_GreenRoleManager_AnyByNameAsync_" data-uid="CG.Green.Managers.GreenRoleManager.AnyByNameAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_AnyByNameAsync_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.AnyByNameAsync(System.String,CancellationToken)">AnyByNameAsync(String, CancellationToken)</h4>
+  <a id="CG_Green_Managers_GreenRoleClaimManager_CountAsync_" data-uid="CG.Green.Managers.GreenRoleClaimManager.CountAsync*"></a>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager_CountAsync_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleClaimManager.CountAsync(CancellationToken)">CountAsync(CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; AnyByNameAsync(string roleName, CancellationToken cancellationToken = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">roleName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">CancellationToken</span></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Managers_GreenRoleManager_CountAsync_" data-uid="CG.Green.Managers.GreenRoleManager.CountAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_CountAsync_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.CountAsync(CancellationToken)">CountAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; CountAsync(CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;long&gt; CountAsync(CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -333,18 +348,18 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Managers_GreenRoleManager_CreateAsync_" data-uid="CG.Green.Managers.GreenRoleManager.CreateAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_CreateAsync_CG_Green_Identity_Models_GreenRole_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.CreateAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)">CreateAsync(GreenRole, String, CancellationToken)</h4>
+  <a id="CG_Green_Managers_GreenRoleClaimManager_CreateAsync_" data-uid="CG.Green.Managers.GreenRoleClaimManager.CreateAsync*"></a>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager_CreateAsync_CG_Green_Identity_Models_GreenRoleClaim_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleClaimManager.CreateAsync(CG.Green.Identity.Models.GreenRoleClaim,System.String,CancellationToken)">CreateAsync(GreenRoleClaim, String, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual async Task&lt;GreenRole&gt; CreateAsync(GreenRole greenRole, string roleName, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;GreenRoleClaim&gt; CreateAsync(GreenRoleClaim roleClaim, string userName, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,13 +372,13 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CG.Green.Identity.Models.GreenRole.html">GreenRole</a></td>
-        <td><span class="parametername">greenRole</span></td>
+        <td><a class="xref" href="CG.Green.Identity.Models.GreenRoleClaim.html">GreenRoleClaim</a></td>
+        <td><span class="parametername">roleClaim</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">roleName</span></td>
+        <td><span class="parametername">userName</span></td>
         <td></td>
       </tr>
       <tr>
@@ -383,108 +398,18 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenRole.html">GreenRole</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenRoleClaim.html">GreenRoleClaim</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Managers_GreenRoleManager_DeleteAsync_" data-uid="CG.Green.Managers.GreenRoleManager.DeleteAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_DeleteAsync_CG_Green_Identity_Models_GreenRole_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.DeleteAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)">DeleteAsync(GreenRole, String, CancellationToken)</h4>
+  <a id="CG_Green_Managers_GreenRoleClaimManager_FindByRoleIdAsync_" data-uid="CG.Green.Managers.GreenRoleClaimManager.FindByRoleIdAsync*"></a>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager_FindByRoleIdAsync_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleClaimManager.FindByRoleIdAsync(System.String,CancellationToken)">FindByRoleIdAsync(String, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual async Task DeleteAsync(GreenRole greenRole, string roleName, CancellationToken cancellationToken = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CG.Green.Identity.Models.GreenRole.html">GreenRole</a></td>
-        <td><span class="parametername">greenRole</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">roleName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">CancellationToken</span></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Managers_GreenRoleManager_FindAllAsync_" data-uid="CG.Green.Managers.GreenRoleManager.FindAllAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_FindAllAsync_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.FindAllAsync(CancellationToken)">FindAllAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;IEnumerable&lt;GreenRole&gt;&gt; FindAllAsync(CancellationToken cancellationToken = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">CancellationToken</span></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenRole.html">GreenRole</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Managers_GreenRoleManager_FindByIdAsync_" data-uid="CG.Green.Managers.GreenRoleManager.FindByIdAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_FindByIdAsync_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.FindByIdAsync(System.String,CancellationToken)">FindByIdAsync(String, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;GreenRole&gt; FindByIdAsync(string roleId, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;IEnumerable&lt;GreenRoleClaim&gt;&gt; FindByRoleIdAsync(string roleId, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -518,63 +443,18 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenRole.html">GreenRole</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenRoleClaim.html">GreenRoleClaim</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Managers_GreenRoleManager_FindByNameAsync_" data-uid="CG.Green.Managers.GreenRoleManager.FindByNameAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_FindByNameAsync_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.FindByNameAsync(System.String,CancellationToken)">FindByNameAsync(String, CancellationToken)</h4>
+  <a id="CG_Green_Managers_GreenRoleClaimManager_UpdateAsync_" data-uid="CG.Green.Managers.GreenRoleClaimManager.UpdateAsync*"></a>
+  <h4 id="CG_Green_Managers_GreenRoleClaimManager_UpdateAsync_CG_Green_Identity_Models_GreenRole_IEnumerable_CG_Green_Identity_Models_GreenRoleClaim__System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleClaimManager.UpdateAsync(CG.Green.Identity.Models.GreenRole,IEnumerable{CG.Green.Identity.Models.GreenRoleClaim},System.String,CancellationToken)">UpdateAsync(GreenRole, IEnumerable&lt;GreenRoleClaim&gt;, String, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;GreenRole&gt; FindByNameAsync(string roleName, CancellationToken cancellationToken = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">roleName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">CancellationToken</span></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenRole.html">GreenRole</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Managers_GreenRoleManager_UpdateAsync_" data-uid="CG.Green.Managers.GreenRoleManager.UpdateAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenRoleManager_UpdateAsync_CG_Green_Identity_Models_GreenRole_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenRoleManager.UpdateAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)">UpdateAsync(GreenRole, String, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual async Task&lt;GreenRole&gt; UpdateAsync(GreenRole greenRole, string userName, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;GreenRole&gt; UpdateAsync(GreenRole greenRole, IEnumerable&lt;GreenRoleClaim&gt; roleClaims, string userName, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -589,6 +469,11 @@ this manager.</p>
       <tr>
         <td><a class="xref" href="CG.Green.Identity.Models.GreenRole.html">GreenRole</a></td>
         <td><span class="parametername">greenRole</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenRoleClaim.html">GreenRoleClaim</a>&gt;</td>
+        <td><span class="parametername">roleClaims</span></td>
         <td></td>
       </tr>
       <tr>
@@ -620,7 +505,7 @@ this manager.</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="CG.Green.Managers.IGreenRoleManager.html">IGreenRoleManager</a>
+      <a class="xref" href="CG.Green.Managers.IGreenRoleClaimManager.html">IGreenRoleClaimManager</a>
   </div>
 </article>
           </div>

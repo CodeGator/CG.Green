@@ -3651,6 +3651,66 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.Repositories.ClientRepository.UpdateAsync
   nameWithType: ClientRepository.UpdateAsync
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository
+  name: GreenRoleClaimRepository
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html
+  commentId: T:CG.Green.Data.Repositories.GreenRoleClaimRepository
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository
+  nameWithType: GreenRoleClaimRepository
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenRoleClaimRepository})
+  name: GreenRoleClaimRepository(GreenDbContext, ILogger<IGreenRoleClaimRepository>)
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_CG_Green_Data_GreenDbContext_ILogger_IGreenRoleClaimRepository__
+  commentId: M:CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenRoleClaimRepository})
+  name.vb: GreenRoleClaimRepository(GreenDbContext, ILogger(Of IGreenRoleClaimRepository))
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository.GreenRoleClaimRepository(CG.Green.Data.GreenDbContext, ILogger<IGreenRoleClaimRepository>)
+  fullName.vb: CG.Green.Data.Repositories.GreenRoleClaimRepository.GreenRoleClaimRepository(CG.Green.Data.GreenDbContext, ILogger(Of IGreenRoleClaimRepository))
+  nameWithType: GreenRoleClaimRepository.GreenRoleClaimRepository(GreenDbContext, ILogger<IGreenRoleClaimRepository>)
+  nameWithType.vb: GreenRoleClaimRepository.GreenRoleClaimRepository(GreenDbContext, ILogger(Of IGreenRoleClaimRepository))
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor*
+  name: GreenRoleClaimRepository
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_
+  commentId: Overload:CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository.GreenRoleClaimRepository
+  nameWithType: GreenRoleClaimRepository.GreenRoleClaimRepository
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository._greenDbContext
+  name: _greenDbContext
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository__greenDbContext
+  commentId: F:CG.Green.Data.Repositories.GreenRoleClaimRepository._greenDbContext
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository._greenDbContext
+  nameWithType: GreenRoleClaimRepository._greenDbContext
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository._logger
+  name: _logger
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository__logger
+  commentId: F:CG.Green.Data.Repositories.GreenRoleClaimRepository._logger
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository._logger
+  nameWithType: GreenRoleClaimRepository._logger
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.AnyAsync(CancellationToken)
+  name: AnyAsync(CancellationToken)
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository_AnyAsync_CancellationToken_
+  commentId: M:CG.Green.Data.Repositories.GreenRoleClaimRepository.AnyAsync(CancellationToken)
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository.AnyAsync(CancellationToken)
+  nameWithType: GreenRoleClaimRepository.AnyAsync(CancellationToken)
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.AnyAsync*
+  name: AnyAsync
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository_AnyAsync_
+  commentId: Overload:CG.Green.Data.Repositories.GreenRoleClaimRepository.AnyAsync
+  isSpec: "True"
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository.AnyAsync
+  nameWithType: GreenRoleClaimRepository.AnyAsync
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.CountAsync(CancellationToken)
+  name: CountAsync(CancellationToken)
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository_CountAsync_CancellationToken_
+  commentId: M:CG.Green.Data.Repositories.GreenRoleClaimRepository.CountAsync(CancellationToken)
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository.CountAsync(CancellationToken)
+  nameWithType: GreenRoleClaimRepository.CountAsync(CancellationToken)
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.CountAsync*
+  name: CountAsync
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository_CountAsync_
+  commentId: Overload:CG.Green.Data.Repositories.GreenRoleClaimRepository.CountAsync
+  isSpec: "True"
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository.CountAsync
+  nameWithType: GreenRoleClaimRepository.CountAsync
 - uid: CG.Green.Data.Repositories.GreenUserClaimRepository
   name: GreenUserClaimRepository
   href: api/CG.Green.Data.Repositories.GreenUserClaimRepository.html
@@ -3711,19 +3771,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.Repositories.GreenUserClaimRepository.CountAsync
   nameWithType: GreenUserClaimRepository.CountAsync
-- uid: CG.Green.Data.Repositories.GreenUserClaimRepository.CreateAsync(GreenUserClaim,CancellationToken)
-  name: CreateAsync(GreenUserClaim, CancellationToken)
-  href: api/CG.Green.Data.Repositories.GreenUserClaimRepository.html#CG_Green_Data_Repositories_GreenUserClaimRepository_CreateAsync_GreenUserClaim_CancellationToken_
-  commentId: M:CG.Green.Data.Repositories.GreenUserClaimRepository.CreateAsync(GreenUserClaim,CancellationToken)
-  fullName: CG.Green.Data.Repositories.GreenUserClaimRepository.CreateAsync(GreenUserClaim, CancellationToken)
-  nameWithType: GreenUserClaimRepository.CreateAsync(GreenUserClaim, CancellationToken)
-- uid: CG.Green.Data.Repositories.GreenUserClaimRepository.CreateAsync*
-  name: CreateAsync
-  href: api/CG.Green.Data.Repositories.GreenUserClaimRepository.html#CG_Green_Data_Repositories_GreenUserClaimRepository_CreateAsync_
-  commentId: Overload:CG.Green.Data.Repositories.GreenUserClaimRepository.CreateAsync
-  isSpec: "True"
-  fullName: CG.Green.Data.Repositories.GreenUserClaimRepository.CreateAsync
-  nameWithType: GreenUserClaimRepository.CreateAsync
 - uid: CG.Green.Data.Repositories.GreenUserRoleRepository
   name: GreenUserRoleRepository
   href: api/CG.Green.Data.Repositories.GreenUserRoleRepository.html
@@ -4469,6 +4516,22 @@ references:
   isSpec: "True"
   fullName: CG.Green.Directors.ISeedDirector.SeedIdentityResourcesAsync
   nameWithType: ISeedDirector.SeedIdentityResourcesAsync
+- uid: CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync(List{RoleClaimAssignmentOptions},System.String,System.Boolean,CancellationToken)
+  name: SeedRoleClaimsAsync(List<RoleClaimAssignmentOptions>, String, Boolean, CancellationToken)
+  href: api/CG.Green.Directors.ISeedDirector.html#CG_Green_Directors_ISeedDirector_SeedRoleClaimsAsync_List_RoleClaimAssignmentOptions__System_String_System_Boolean_CancellationToken_
+  commentId: M:CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync(List{RoleClaimAssignmentOptions},System.String,System.Boolean,CancellationToken)
+  name.vb: SeedRoleClaimsAsync(List(Of RoleClaimAssignmentOptions), String, Boolean, CancellationToken)
+  fullName: CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync(List<RoleClaimAssignmentOptions>, System.String, System.Boolean, CancellationToken)
+  fullName.vb: CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync(List(Of RoleClaimAssignmentOptions), System.String, System.Boolean, CancellationToken)
+  nameWithType: ISeedDirector.SeedRoleClaimsAsync(List<RoleClaimAssignmentOptions>, String, Boolean, CancellationToken)
+  nameWithType.vb: ISeedDirector.SeedRoleClaimsAsync(List(Of RoleClaimAssignmentOptions), String, Boolean, CancellationToken)
+- uid: CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync*
+  name: SeedRoleClaimsAsync
+  href: api/CG.Green.Directors.ISeedDirector.html#CG_Green_Directors_ISeedDirector_SeedRoleClaimsAsync_
+  commentId: Overload:CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync
+  isSpec: "True"
+  fullName: CG.Green.Directors.ISeedDirector.SeedRoleClaimsAsync
+  nameWithType: ISeedDirector.SeedRoleClaimsAsync
 - uid: CG.Green.Directors.ISeedDirector.SeedRolesAsync(List{GreenRole},System.String,System.Boolean,CancellationToken)
   name: SeedRolesAsync(List<GreenRole>, String, Boolean, CancellationToken)
   href: api/CG.Green.Directors.ISeedDirector.html#CG_Green_Directors_ISeedDirector_SeedRolesAsync_List_GreenRole__System_String_System_Boolean_CancellationToken_
@@ -4640,6 +4703,28 @@ references:
   isSpec: "True"
   fullName: CG.Green.Directors.SeedDirector.SeedIdentityResourcesAsync
   nameWithType: SeedDirector.SeedIdentityResourcesAsync
+- uid: CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync(IConfiguration,System.String,System.Boolean,CancellationToken)
+  name: SeedRoleClaimsAsync(IConfiguration, String, Boolean, CancellationToken)
+  href: api/CG.Green.Directors.SeedDirector.html#CG_Green_Directors_SeedDirector_SeedRoleClaimsAsync_IConfiguration_System_String_System_Boolean_CancellationToken_
+  commentId: M:CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync(IConfiguration,System.String,System.Boolean,CancellationToken)
+  fullName: CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync(IConfiguration, System.String, System.Boolean, CancellationToken)
+  nameWithType: SeedDirector.SeedRoleClaimsAsync(IConfiguration, String, Boolean, CancellationToken)
+- uid: CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync(List{RoleClaimAssignmentOptions},System.String,System.Boolean,CancellationToken)
+  name: SeedRoleClaimsAsync(List<RoleClaimAssignmentOptions>, String, Boolean, CancellationToken)
+  href: api/CG.Green.Directors.SeedDirector.html#CG_Green_Directors_SeedDirector_SeedRoleClaimsAsync_List_RoleClaimAssignmentOptions__System_String_System_Boolean_CancellationToken_
+  commentId: M:CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync(List{RoleClaimAssignmentOptions},System.String,System.Boolean,CancellationToken)
+  name.vb: SeedRoleClaimsAsync(List(Of RoleClaimAssignmentOptions), String, Boolean, CancellationToken)
+  fullName: CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync(List<RoleClaimAssignmentOptions>, System.String, System.Boolean, CancellationToken)
+  fullName.vb: CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync(List(Of RoleClaimAssignmentOptions), System.String, System.Boolean, CancellationToken)
+  nameWithType: SeedDirector.SeedRoleClaimsAsync(List<RoleClaimAssignmentOptions>, String, Boolean, CancellationToken)
+  nameWithType.vb: SeedDirector.SeedRoleClaimsAsync(List(Of RoleClaimAssignmentOptions), String, Boolean, CancellationToken)
+- uid: CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync*
+  name: SeedRoleClaimsAsync
+  href: api/CG.Green.Directors.SeedDirector.html#CG_Green_Directors_SeedDirector_SeedRoleClaimsAsync_
+  commentId: Overload:CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync
+  isSpec: "True"
+  fullName: CG.Green.Directors.SeedDirector.SeedRoleClaimsAsync
+  nameWithType: SeedDirector.SeedRoleClaimsAsync
 - uid: CG.Green.Directors.SeedDirector.SeedRolesAsync(IConfiguration,System.String,System.Boolean,CancellationToken)
   name: SeedRolesAsync(IConfiguration, String, Boolean, CancellationToken)
   href: api/CG.Green.Directors.SeedDirector.html#CG_Green_Directors_SeedDirector_SeedRolesAsync_IConfiguration_System_String_System_Boolean_CancellationToken_
@@ -4770,6 +4855,24 @@ references:
   commentId: F:CG.Green.Globals.Models.Clients.FrontChannelLogoutUriLength
   fullName: CG.Green.Globals.Models.Clients.FrontChannelLogoutUriLength
   nameWithType: Globals.Models.Clients.FrontChannelLogoutUriLength
+- uid: CG.Green.Globals.Models.Roles
+  name: Globals.Models.Roles
+  href: api/CG.Green.Globals.Models.Roles.html
+  commentId: T:CG.Green.Globals.Models.Roles
+  fullName: CG.Green.Globals.Models.Roles
+  nameWithType: Globals.Models.Roles
+- uid: CG.Green.Globals.Models.Roles.IdLength
+  name: IdLength
+  href: api/CG.Green.Globals.Models.Roles.html#CG_Green_Globals_Models_Roles_IdLength
+  commentId: F:CG.Green.Globals.Models.Roles.IdLength
+  fullName: CG.Green.Globals.Models.Roles.IdLength
+  nameWithType: Globals.Models.Roles.IdLength
+- uid: CG.Green.Globals.Models.Roles.NameLength
+  name: NameLength
+  href: api/CG.Green.Globals.Models.Roles.html#CG_Green_Globals_Models_Roles_NameLength
+  commentId: F:CG.Green.Globals.Models.Roles.NameLength
+  fullName: CG.Green.Globals.Models.Roles.NameLength
+  nameWithType: Globals.Models.Roles.NameLength
 - uid: CG.Green.Globals.Models.Users
   name: Globals.Models.Users
   href: api/CG.Green.Globals.Models.Users.html
@@ -4800,12 +4903,12 @@ references:
   commentId: T:CG.Green.GreenApi
   fullName: CG.Green.GreenApi
   nameWithType: GreenApi
-- uid: CG.Green.GreenApi.#ctor(IApiScopeManager,IClientManager,IGreenRoleManager,IGreenUserManager,IGreenUserClaimManager,IGreenUserRoleManager,IIdentityResourceManager)
-  name: GreenApi(IApiScopeManager, IClientManager, IGreenRoleManager, IGreenUserManager, IGreenUserClaimManager, IGreenUserRoleManager, IIdentityResourceManager)
-  href: api/CG.Green.GreenApi.html#CG_Green_GreenApi__ctor_IApiScopeManager_IClientManager_IGreenRoleManager_IGreenUserManager_IGreenUserClaimManager_IGreenUserRoleManager_IIdentityResourceManager_
-  commentId: M:CG.Green.GreenApi.#ctor(IApiScopeManager,IClientManager,IGreenRoleManager,IGreenUserManager,IGreenUserClaimManager,IGreenUserRoleManager,IIdentityResourceManager)
-  fullName: CG.Green.GreenApi.GreenApi(IApiScopeManager, IClientManager, IGreenRoleManager, IGreenUserManager, IGreenUserClaimManager, IGreenUserRoleManager, IIdentityResourceManager)
-  nameWithType: GreenApi.GreenApi(IApiScopeManager, IClientManager, IGreenRoleManager, IGreenUserManager, IGreenUserClaimManager, IGreenUserRoleManager, IIdentityResourceManager)
+- uid: CG.Green.GreenApi.#ctor(IApiScopeManager,IClientManager,IGreenRoleManager,IGreenRoleClaimManager,IGreenUserManager,IGreenUserClaimManager,IGreenUserRoleManager,IIdentityResourceManager)
+  name: GreenApi(IApiScopeManager, IClientManager, IGreenRoleManager, IGreenRoleClaimManager, IGreenUserManager, IGreenUserClaimManager, IGreenUserRoleManager, IIdentityResourceManager)
+  href: api/CG.Green.GreenApi.html#CG_Green_GreenApi__ctor_IApiScopeManager_IClientManager_IGreenRoleManager_IGreenRoleClaimManager_IGreenUserManager_IGreenUserClaimManager_IGreenUserRoleManager_IIdentityResourceManager_
+  commentId: M:CG.Green.GreenApi.#ctor(IApiScopeManager,IClientManager,IGreenRoleManager,IGreenRoleClaimManager,IGreenUserManager,IGreenUserClaimManager,IGreenUserRoleManager,IIdentityResourceManager)
+  fullName: CG.Green.GreenApi.GreenApi(IApiScopeManager, IClientManager, IGreenRoleManager, IGreenRoleClaimManager, IGreenUserManager, IGreenUserClaimManager, IGreenUserRoleManager, IIdentityResourceManager)
+  nameWithType: GreenApi.GreenApi(IApiScopeManager, IClientManager, IGreenRoleManager, IGreenRoleClaimManager, IGreenUserManager, IGreenUserClaimManager, IGreenUserRoleManager, IIdentityResourceManager)
 - uid: CG.Green.GreenApi.#ctor*
   name: GreenApi
   href: api/CG.Green.GreenApi.html#CG_Green_GreenApi__ctor_
@@ -4825,6 +4928,12 @@ references:
   commentId: F:CG.Green.GreenApi._clientManager
   fullName: CG.Green.GreenApi._clientManager
   nameWithType: GreenApi._clientManager
+- uid: CG.Green.GreenApi._greenRoleClaimManager
+  name: _greenRoleClaimManager
+  href: api/CG.Green.GreenApi.html#CG_Green_GreenApi__greenRoleClaimManager
+  commentId: F:CG.Green.GreenApi._greenRoleClaimManager
+  fullName: CG.Green.GreenApi._greenRoleClaimManager
+  nameWithType: GreenApi._greenRoleClaimManager
 - uid: CG.Green.GreenApi._greenRoleManager
   name: _greenRoleManager
   href: api/CG.Green.GreenApi.html#CG_Green_GreenApi__greenRoleManager
@@ -4894,6 +5003,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.GreenApi.IdentityResources
   nameWithType: GreenApi.IdentityResources
+- uid: CG.Green.GreenApi.RoleClaims
+  name: RoleClaims
+  href: api/CG.Green.GreenApi.html#CG_Green_GreenApi_RoleClaims
+  commentId: P:CG.Green.GreenApi.RoleClaims
+  fullName: CG.Green.GreenApi.RoleClaims
+  nameWithType: GreenApi.RoleClaims
+- uid: CG.Green.GreenApi.RoleClaims*
+  name: RoleClaims
+  href: api/CG.Green.GreenApi.html#CG_Green_GreenApi_RoleClaims_
+  commentId: Overload:CG.Green.GreenApi.RoleClaims
+  isSpec: "True"
+  fullName: CG.Green.GreenApi.RoleClaims
+  nameWithType: GreenApi.RoleClaims
 - uid: CG.Green.GreenApi.Roles
   name: Roles
   href: api/CG.Green.GreenApi.html#CG_Green_GreenApi_Roles
@@ -4964,6 +5086,12 @@ references:
   commentId: T:CG.Green.Host.Pages.Admin.ApiScopes.Index
   fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index
   nameWithType: Index
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index._crumbs
+  name: _crumbs
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index__crumbs
+  commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.Index._crumbs
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index._crumbs
+  nameWithType: Index._crumbs
 - uid: CG.Green.Host.Pages.Admin.Clients
   name: CG.Green.Host.Pages.Admin.Clients
   href: api/CG.Green.Host.Pages.Admin.Clients.html
@@ -5656,18 +5784,533 @@ references:
   commentId: T:CG.Green.Host.Pages.Admin.Resources.Index
   fullName: CG.Green.Host.Pages.Admin.Resources.Index
   nameWithType: Index
+- uid: CG.Green.Host.Pages.Admin.Resources.Index._crumbs
+  name: _crumbs
+  href: api/CG.Green.Host.Pages.Admin.Resources.Index.html#CG_Green_Host_Pages_Admin_Resources_Index__crumbs
+  commentId: F:CG.Green.Host.Pages.Admin.Resources.Index._crumbs
+  fullName: CG.Green.Host.Pages.Admin.Resources.Index._crumbs
+  nameWithType: Index._crumbs
 - uid: CG.Green.Host.Pages.Admin.Roles
   name: CG.Green.Host.Pages.Admin.Roles
   href: api/CG.Green.Host.Pages.Admin.Roles.html
   commentId: N:CG.Green.Host.Pages.Admin.Roles
   fullName: CG.Green.Host.Pages.Admin.Roles
   nameWithType: CG.Green.Host.Pages.Admin.Roles
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail
+  name: Detail
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html
+  commentId: T:CG.Green.Host.Pages.Admin.Roles.Detail
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail
+  nameWithType: Detail
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail._crumbs
+  name: _crumbs
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail__crumbs
+  commentId: F:CG.Green.Host.Pages.Admin.Roles.Detail._crumbs
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail._crumbs
+  nameWithType: Detail._crumbs
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail._isLoading
+  name: _isLoading
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail__isLoading
+  commentId: F:CG.Green.Host.Pages.Admin.Roles.Detail._isLoading
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail._isLoading
+  nameWithType: Detail._isLoading
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail._model
+  name: _model
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail__model
+  commentId: F:CG.Green.Host.Pages.Admin.Roles.Detail._model
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail._model
+  nameWithType: Detail._model
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.DialogService
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_DialogService
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Detail.DialogService
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.DialogService
+  nameWithType: Detail.DialogService
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.DialogService*
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_DialogService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.DialogService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.DialogService
+  nameWithType: Detail.DialogService
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.GreenApi
+  name: GreenApi
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_GreenApi
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Detail.GreenApi
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.GreenApi
+  nameWithType: Detail.GreenApi
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.GreenApi*
+  name: GreenApi
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_GreenApi_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.GreenApi
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.GreenApi
+  nameWithType: Detail.GreenApi
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.HttpContextAccessor
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_HttpContextAccessor
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Detail.HttpContextAccessor
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.HttpContextAccessor
+  nameWithType: Detail.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.HttpContextAccessor*
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_HttpContextAccessor_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.HttpContextAccessor
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.HttpContextAccessor
+  nameWithType: Detail.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.LoadDataAsync
+  name: LoadDataAsync()
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_LoadDataAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Detail.LoadDataAsync
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.LoadDataAsync()
+  nameWithType: Detail.LoadDataAsync()
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.LoadDataAsync*
+  name: LoadDataAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_LoadDataAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.LoadDataAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.LoadDataAsync
+  nameWithType: Detail.LoadDataAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.Logger
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_Logger
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Detail.Logger
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.Logger
+  nameWithType: Detail.Logger
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.Logger*
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_Logger_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.Logger
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.Logger
+  nameWithType: Detail.Logger
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.NavigationManager
+  name: NavigationManager
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_NavigationManager
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Detail.NavigationManager
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.NavigationManager
+  nameWithType: Detail.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.NavigationManager*
+  name: NavigationManager
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_NavigationManager_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.NavigationManager
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.NavigationManager
+  nameWithType: Detail.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.OnCreateClaimAsync
+  name: OnCreateClaimAsync()
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_OnCreateClaimAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Detail.OnCreateClaimAsync
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.OnCreateClaimAsync()
+  nameWithType: Detail.OnCreateClaimAsync()
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.OnCreateClaimAsync*
+  name: OnCreateClaimAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_OnCreateClaimAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.OnCreateClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.OnCreateClaimAsync
+  nameWithType: Detail.OnCreateClaimAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.OnDeleteClaimAsync(EditClaimVM)
+  name: OnDeleteClaimAsync(EditClaimVM)
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_OnDeleteClaimAsync_EditClaimVM_
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Detail.OnDeleteClaimAsync(EditClaimVM)
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.OnDeleteClaimAsync(EditClaimVM)
+  nameWithType: Detail.OnDeleteClaimAsync(EditClaimVM)
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.OnDeleteClaimAsync*
+  name: OnDeleteClaimAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_OnDeleteClaimAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.OnDeleteClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.OnDeleteClaimAsync
+  nameWithType: Detail.OnDeleteClaimAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.OnInitializedAsync
+  name: OnInitializedAsync()
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_OnInitializedAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Detail.OnInitializedAsync
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.OnInitializedAsync()
+  nameWithType: Detail.OnInitializedAsync()
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.OnInitializedAsync*
+  name: OnInitializedAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_OnInitializedAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.OnInitializedAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.OnInitializedAsync
+  nameWithType: Detail.OnInitializedAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.OnValidSubmitAsync
+  name: OnValidSubmitAsync()
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_OnValidSubmitAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Detail.OnValidSubmitAsync
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.OnValidSubmitAsync()
+  nameWithType: Detail.OnValidSubmitAsync()
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.OnValidSubmitAsync*
+  name: OnValidSubmitAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_OnValidSubmitAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.OnValidSubmitAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.OnValidSubmitAsync
+  nameWithType: Detail.OnValidSubmitAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.RoleId
+  name: RoleId
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_RoleId
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Detail.RoleId
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.RoleId
+  nameWithType: Detail.RoleId
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.RoleId*
+  name: RoleId
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_RoleId_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.RoleId
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.RoleId
+  nameWithType: Detail.RoleId
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.SnackbarService
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_SnackbarService
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Detail.SnackbarService
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.SnackbarService
+  nameWithType: Detail.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.SnackbarService*
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_SnackbarService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.SnackbarService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.SnackbarService
+  nameWithType: Detail.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.UserName
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_UserName
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Detail.UserName
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.UserName
+  nameWithType: Detail.UserName
+- uid: CG.Green.Host.Pages.Admin.Roles.Detail.UserName*
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.Roles.Detail.html#CG_Green_Host_Pages_Admin_Roles_Detail_UserName_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Detail.UserName
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Detail.UserName
+  nameWithType: Detail.UserName
 - uid: CG.Green.Host.Pages.Admin.Roles.Index
   name: Index
   href: api/CG.Green.Host.Pages.Admin.Roles.Index.html
   commentId: T:CG.Green.Host.Pages.Admin.Roles.Index
   fullName: CG.Green.Host.Pages.Admin.Roles.Index
   nameWithType: Index
+- uid: CG.Green.Host.Pages.Admin.Roles.Index._crumbs
+  name: _crumbs
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index__crumbs
+  commentId: F:CG.Green.Host.Pages.Admin.Roles.Index._crumbs
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index._crumbs
+  nameWithType: Index._crumbs
+- uid: CG.Green.Host.Pages.Admin.Roles.Index._gridSearchString
+  name: _gridSearchString
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index__gridSearchString
+  commentId: F:CG.Green.Host.Pages.Admin.Roles.Index._gridSearchString
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index._gridSearchString
+  nameWithType: Index._gridSearchString
+- uid: CG.Green.Host.Pages.Admin.Roles.Index._isLoading
+  name: _isLoading
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index__isLoading
+  commentId: F:CG.Green.Host.Pages.Admin.Roles.Index._isLoading
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index._isLoading
+  nameWithType: Index._isLoading
+- uid: CG.Green.Host.Pages.Admin.Roles.Index._roles
+  name: _roles
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index__roles
+  commentId: F:CG.Green.Host.Pages.Admin.Roles.Index._roles
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index._roles
+  nameWithType: Index._roles
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.DialogService
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_DialogService
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Index.DialogService
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.DialogService
+  nameWithType: Index.DialogService
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.DialogService*
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_DialogService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.DialogService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.DialogService
+  nameWithType: Index.DialogService
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc(EditRoleVM,System.String)
+  name: FilterFunc(EditRoleVM, String)
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_FilterFunc_EditRoleVM_System_String_
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc(EditRoleVM,System.String)
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc(EditRoleVM, System.String)
+  nameWithType: Index.FilterFunc(EditRoleVM, String)
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc*
+  name: FilterFunc
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_FilterFunc_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc
+  nameWithType: Index.FilterFunc
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc1(EditRoleVM)
+  name: FilterFunc1(EditRoleVM)
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_FilterFunc1_EditRoleVM_
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc1(EditRoleVM)
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc1(EditRoleVM)
+  nameWithType: Index.FilterFunc1(EditRoleVM)
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc1*
+  name: FilterFunc1
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_FilterFunc1_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc1
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.FilterFunc1
+  nameWithType: Index.FilterFunc1
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.GreenApi
+  name: GreenApi
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_GreenApi
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Index.GreenApi
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.GreenApi
+  nameWithType: Index.GreenApi
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.GreenApi*
+  name: GreenApi
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_GreenApi_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.GreenApi
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.GreenApi
+  nameWithType: Index.GreenApi
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.HttpContextAccessor
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_HttpContextAccessor
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Index.HttpContextAccessor
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.HttpContextAccessor
+  nameWithType: Index.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.HttpContextAccessor*
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_HttpContextAccessor_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.HttpContextAccessor
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.HttpContextAccessor
+  nameWithType: Index.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.LoadDataAsync
+  name: LoadDataAsync()
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_LoadDataAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Index.LoadDataAsync
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.LoadDataAsync()
+  nameWithType: Index.LoadDataAsync()
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.LoadDataAsync*
+  name: LoadDataAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_LoadDataAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.LoadDataAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.LoadDataAsync
+  nameWithType: Index.LoadDataAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.Logger
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_Logger
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Index.Logger
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.Logger
+  nameWithType: Index.Logger
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.Logger*
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_Logger_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.Logger
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.Logger
+  nameWithType: Index.Logger
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.NavigationManager
+  name: NavigationManager
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_NavigationManager
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Index.NavigationManager
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.NavigationManager
+  nameWithType: Index.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.NavigationManager*
+  name: NavigationManager
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_NavigationManager_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.NavigationManager
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.NavigationManager
+  nameWithType: Index.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.OnCreateAsync
+  name: OnCreateAsync()
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_OnCreateAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Index.OnCreateAsync
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.OnCreateAsync()
+  nameWithType: Index.OnCreateAsync()
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.OnCreateAsync*
+  name: OnCreateAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_OnCreateAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.OnCreateAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.OnCreateAsync
+  nameWithType: Index.OnCreateAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.OnDeleteAsync(EditRoleVM)
+  name: OnDeleteAsync(EditRoleVM)
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_OnDeleteAsync_EditRoleVM_
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Index.OnDeleteAsync(EditRoleVM)
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.OnDeleteAsync(EditRoleVM)
+  nameWithType: Index.OnDeleteAsync(EditRoleVM)
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.OnDeleteAsync*
+  name: OnDeleteAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_OnDeleteAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.OnDeleteAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.OnDeleteAsync
+  nameWithType: Index.OnDeleteAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.OnEditAsync(EditRoleVM)
+  name: OnEditAsync(EditRoleVM)
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_OnEditAsync_EditRoleVM_
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Index.OnEditAsync(EditRoleVM)
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.OnEditAsync(EditRoleVM)
+  nameWithType: Index.OnEditAsync(EditRoleVM)
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.OnEditAsync*
+  name: OnEditAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_OnEditAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.OnEditAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.OnEditAsync
+  nameWithType: Index.OnEditAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.OnInitializedAsync
+  name: OnInitializedAsync()
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_OnInitializedAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.Index.OnInitializedAsync
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.OnInitializedAsync()
+  nameWithType: Index.OnInitializedAsync()
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.OnInitializedAsync*
+  name: OnInitializedAsync
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_OnInitializedAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.OnInitializedAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.OnInitializedAsync
+  nameWithType: Index.OnInitializedAsync
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.SnackbarService
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_SnackbarService
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Index.SnackbarService
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.SnackbarService
+  nameWithType: Index.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.SnackbarService*
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_SnackbarService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.SnackbarService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.SnackbarService
+  nameWithType: Index.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.UserName
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_UserName
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.Index.UserName
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.UserName
+  nameWithType: Index.UserName
+- uid: CG.Green.Host.Pages.Admin.Roles.Index.UserName*
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.Roles.Index.html#CG_Green_Host_Pages_Admin_Roles_Index_UserName_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.Index.UserName
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.Index.UserName
+  nameWithType: Index.UserName
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog
+  name: NewDialog
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html
+  commentId: T:CG.Green.Host.Pages.Admin.Roles.NewDialog
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog
+  nameWithType: NewDialog
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.Cancel
+  name: Cancel()
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_Cancel
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.NewDialog.Cancel
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.Cancel()
+  nameWithType: NewDialog.Cancel()
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.Cancel*
+  name: Cancel
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_Cancel_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.NewDialog.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.Cancel
+  nameWithType: NewDialog.Cancel
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.DialogService
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_DialogService
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.NewDialog.DialogService
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.DialogService
+  nameWithType: NewDialog.DialogService
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.DialogService*
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_DialogService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.NewDialog.DialogService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.DialogService
+  nameWithType: NewDialog.DialogService
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.Logger
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_Logger
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.NewDialog.Logger
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.Logger
+  nameWithType: NewDialog.Logger
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.Logger*
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_Logger_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.NewDialog.Logger
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.Logger
+  nameWithType: NewDialog.Logger
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.Model
+  name: Model
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_Model
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.NewDialog.Model
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.Model
+  nameWithType: NewDialog.Model
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.Model*
+  name: Model
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_Model_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.NewDialog.Model
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.Model
+  nameWithType: NewDialog.Model
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.MudDialog
+  name: MudDialog
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_MudDialog
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.NewDialog.MudDialog
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.MudDialog
+  nameWithType: NewDialog.MudDialog
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.MudDialog*
+  name: MudDialog
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_MudDialog_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.NewDialog.MudDialog
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.MudDialog
+  nameWithType: NewDialog.MudDialog
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.OnValidSubmit(Microsoft.AspNetCore.Components.Forms.EditContext)
+  name: OnValidSubmit(EditContext)
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_OnValidSubmit_Microsoft_AspNetCore_Components_Forms_EditContext_
+  commentId: M:CG.Green.Host.Pages.Admin.Roles.NewDialog.OnValidSubmit(Microsoft.AspNetCore.Components.Forms.EditContext)
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.OnValidSubmit(Microsoft.AspNetCore.Components.Forms.EditContext)
+  nameWithType: NewDialog.OnValidSubmit(EditContext)
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.OnValidSubmit*
+  name: OnValidSubmit
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_OnValidSubmit_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.NewDialog.OnValidSubmit
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.OnValidSubmit
+  nameWithType: NewDialog.OnValidSubmit
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.Roles
+  name: Roles
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_Roles
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.NewDialog.Roles
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.Roles
+  nameWithType: NewDialog.Roles
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.Roles*
+  name: Roles
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_Roles_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.NewDialog.Roles
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.Roles
+  nameWithType: NewDialog.Roles
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.SnackbarService
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_SnackbarService
+  commentId: P:CG.Green.Host.Pages.Admin.Roles.NewDialog.SnackbarService
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.SnackbarService
+  nameWithType: NewDialog.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Roles.NewDialog.SnackbarService*
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html#CG_Green_Host_Pages_Admin_Roles_NewDialog_SnackbarService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Roles.NewDialog.SnackbarService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Roles.NewDialog.SnackbarService
+  nameWithType: NewDialog.SnackbarService
 - uid: CG.Green.Host.Pages.Admin.Users
   name: CG.Green.Host.Pages.Admin.Users
   href: api/CG.Green.Host.Pages.Admin.Users.html
@@ -6487,12 +7130,57 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.EditClaimVM.ClaimValue
   nameWithType: EditClaimVM.ClaimValue
-- uid: CG.Green.Host.ViewModels.EditClientVM
-  name: EditClientVM
-  href: api/CG.Green.Host.ViewModels.EditClientVM.html
-  commentId: T:CG.Green.Host.ViewModels.EditClientVM
-  fullName: CG.Green.Host.ViewModels.EditClientVM
-  nameWithType: EditClientVM
+- uid: CG.Green.Host.ViewModels.EditRoleVM
+  name: EditRoleVM
+  href: api/CG.Green.Host.ViewModels.EditRoleVM.html
+  commentId: T:CG.Green.Host.ViewModels.EditRoleVM
+  fullName: CG.Green.Host.ViewModels.EditRoleVM
+  nameWithType: EditRoleVM
+- uid: CG.Green.Host.ViewModels.EditRoleVM.AssignedClaims
+  name: AssignedClaims
+  href: api/CG.Green.Host.ViewModels.EditRoleVM.html#CG_Green_Host_ViewModels_EditRoleVM_AssignedClaims
+  commentId: P:CG.Green.Host.ViewModels.EditRoleVM.AssignedClaims
+  fullName: CG.Green.Host.ViewModels.EditRoleVM.AssignedClaims
+  nameWithType: EditRoleVM.AssignedClaims
+- uid: CG.Green.Host.ViewModels.EditRoleVM.AssignedClaims*
+  name: AssignedClaims
+  href: api/CG.Green.Host.ViewModels.EditRoleVM.html#CG_Green_Host_ViewModels_EditRoleVM_AssignedClaims_
+  commentId: Overload:CG.Green.Host.ViewModels.EditRoleVM.AssignedClaims
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditRoleVM.AssignedClaims
+  nameWithType: EditRoleVM.AssignedClaims
+- uid: CG.Green.Host.ViewModels.EditRoleVM.Id
+  name: Id
+  href: api/CG.Green.Host.ViewModels.EditRoleVM.html#CG_Green_Host_ViewModels_EditRoleVM_Id
+  commentId: P:CG.Green.Host.ViewModels.EditRoleVM.Id
+  fullName: CG.Green.Host.ViewModels.EditRoleVM.Id
+  nameWithType: EditRoleVM.Id
+- uid: CG.Green.Host.ViewModels.EditRoleVM.Id*
+  name: Id
+  href: api/CG.Green.Host.ViewModels.EditRoleVM.html#CG_Green_Host_ViewModels_EditRoleVM_Id_
+  commentId: Overload:CG.Green.Host.ViewModels.EditRoleVM.Id
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditRoleVM.Id
+  nameWithType: EditRoleVM.Id
+- uid: CG.Green.Host.ViewModels.EditRoleVM.Name
+  name: Name
+  href: api/CG.Green.Host.ViewModels.EditRoleVM.html#CG_Green_Host_ViewModels_EditRoleVM_Name
+  commentId: P:CG.Green.Host.ViewModels.EditRoleVM.Name
+  fullName: CG.Green.Host.ViewModels.EditRoleVM.Name
+  nameWithType: EditRoleVM.Name
+- uid: CG.Green.Host.ViewModels.EditRoleVM.Name*
+  name: Name
+  href: api/CG.Green.Host.ViewModels.EditRoleVM.html#CG_Green_Host_ViewModels_EditRoleVM_Name_
+  commentId: Overload:CG.Green.Host.ViewModels.EditRoleVM.Name
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditRoleVM.Name
+  nameWithType: EditRoleVM.Name
+- uid: CG.Green.Host.ViewModels.EditScopeVM
+  name: EditScopeVM
+  href: api/CG.Green.Host.ViewModels.EditScopeVM.html
+  commentId: T:CG.Green.Host.ViewModels.EditScopeVM
+  fullName: CG.Green.Host.ViewModels.EditScopeVM
+  nameWithType: EditScopeVM
 - uid: CG.Green.Host.ViewModels.EditUserVM
   name: EditUserVM
   href: api/CG.Green.Host.ViewModels.EditUserVM.html
@@ -7105,6 +7793,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.IGreenApi.IdentityResources
   nameWithType: IGreenApi.IdentityResources
+- uid: CG.Green.IGreenApi.RoleClaims
+  name: RoleClaims
+  href: api/CG.Green.IGreenApi.html#CG_Green_IGreenApi_RoleClaims
+  commentId: P:CG.Green.IGreenApi.RoleClaims
+  fullName: CG.Green.IGreenApi.RoleClaims
+  nameWithType: IGreenApi.RoleClaims
+- uid: CG.Green.IGreenApi.RoleClaims*
+  name: RoleClaims
+  href: api/CG.Green.IGreenApi.html#CG_Green_IGreenApi_RoleClaims_
+  commentId: Overload:CG.Green.IGreenApi.RoleClaims
+  isSpec: "True"
+  fullName: CG.Green.IGreenApi.RoleClaims
+  nameWithType: IGreenApi.RoleClaims
 - uid: CG.Green.IGreenApi.Roles
   name: Roles
   href: api/CG.Green.IGreenApi.html#CG_Green_IGreenApi_Roles
@@ -7400,19 +8101,133 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.ClientManager.UpdateAsync
   nameWithType: ClientManager.UpdateAsync
+- uid: CG.Green.Managers.GreenRoleClaimManager
+  name: GreenRoleClaimManager
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html
+  commentId: T:CG.Green.Managers.GreenRoleClaimManager
+  fullName: CG.Green.Managers.GreenRoleClaimManager
+  nameWithType: GreenRoleClaimManager
+- uid: CG.Green.Managers.GreenRoleClaimManager.#ctor(CG.Green.Repositories.IGreenRoleClaimRepository,RoleManager{CG.Green.Identity.Models.GreenRole},SignInManager{CG.Green.Identity.Models.GreenUser},ILogger{CG.Green.Managers.IGreenRoleClaimManager})
+  name: GreenRoleClaimManager(IGreenRoleClaimRepository, RoleManager<GreenRole>, SignInManager<GreenUser>, ILogger<IGreenRoleClaimManager>)
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager__ctor_CG_Green_Repositories_IGreenRoleClaimRepository_RoleManager_CG_Green_Identity_Models_GreenRole__SignInManager_CG_Green_Identity_Models_GreenUser__ILogger_CG_Green_Managers_IGreenRoleClaimManager__
+  commentId: M:CG.Green.Managers.GreenRoleClaimManager.#ctor(CG.Green.Repositories.IGreenRoleClaimRepository,RoleManager{CG.Green.Identity.Models.GreenRole},SignInManager{CG.Green.Identity.Models.GreenUser},ILogger{CG.Green.Managers.IGreenRoleClaimManager})
+  name.vb: GreenRoleClaimManager(IGreenRoleClaimRepository, RoleManager(Of GreenRole), SignInManager(Of GreenUser), ILogger(Of IGreenRoleClaimManager))
+  fullName: CG.Green.Managers.GreenRoleClaimManager.GreenRoleClaimManager(CG.Green.Repositories.IGreenRoleClaimRepository, RoleManager<CG.Green.Identity.Models.GreenRole>, SignInManager<CG.Green.Identity.Models.GreenUser>, ILogger<CG.Green.Managers.IGreenRoleClaimManager>)
+  fullName.vb: CG.Green.Managers.GreenRoleClaimManager.GreenRoleClaimManager(CG.Green.Repositories.IGreenRoleClaimRepository, RoleManager(Of CG.Green.Identity.Models.GreenRole), SignInManager(Of CG.Green.Identity.Models.GreenUser), ILogger(Of CG.Green.Managers.IGreenRoleClaimManager))
+  nameWithType: GreenRoleClaimManager.GreenRoleClaimManager(IGreenRoleClaimRepository, RoleManager<GreenRole>, SignInManager<GreenUser>, ILogger<IGreenRoleClaimManager>)
+  nameWithType.vb: GreenRoleClaimManager.GreenRoleClaimManager(IGreenRoleClaimRepository, RoleManager(Of GreenRole), SignInManager(Of GreenUser), ILogger(Of IGreenRoleClaimManager))
+- uid: CG.Green.Managers.GreenRoleClaimManager.#ctor*
+  name: GreenRoleClaimManager
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager__ctor_
+  commentId: Overload:CG.Green.Managers.GreenRoleClaimManager.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleClaimManager.GreenRoleClaimManager
+  nameWithType: GreenRoleClaimManager.GreenRoleClaimManager
+- uid: CG.Green.Managers.GreenRoleClaimManager._greenRoleClaimRepository
+  name: _greenRoleClaimRepository
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager__greenRoleClaimRepository
+  commentId: F:CG.Green.Managers.GreenRoleClaimManager._greenRoleClaimRepository
+  fullName: CG.Green.Managers.GreenRoleClaimManager._greenRoleClaimRepository
+  nameWithType: GreenRoleClaimManager._greenRoleClaimRepository
+- uid: CG.Green.Managers.GreenRoleClaimManager._logger
+  name: _logger
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager__logger
+  commentId: F:CG.Green.Managers.GreenRoleClaimManager._logger
+  fullName: CG.Green.Managers.GreenRoleClaimManager._logger
+  nameWithType: GreenRoleClaimManager._logger
+- uid: CG.Green.Managers.GreenRoleClaimManager._roleManager
+  name: _roleManager
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager__roleManager
+  commentId: F:CG.Green.Managers.GreenRoleClaimManager._roleManager
+  fullName: CG.Green.Managers.GreenRoleClaimManager._roleManager
+  nameWithType: GreenRoleClaimManager._roleManager
+- uid: CG.Green.Managers.GreenRoleClaimManager._signInManager
+  name: _signInManager
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager__signInManager
+  commentId: F:CG.Green.Managers.GreenRoleClaimManager._signInManager
+  fullName: CG.Green.Managers.GreenRoleClaimManager._signInManager
+  nameWithType: GreenRoleClaimManager._signInManager
+- uid: CG.Green.Managers.GreenRoleClaimManager.AnyAsync(CancellationToken)
+  name: AnyAsync(CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_AnyAsync_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleClaimManager.AnyAsync(CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleClaimManager.AnyAsync(CancellationToken)
+  nameWithType: GreenRoleClaimManager.AnyAsync(CancellationToken)
+- uid: CG.Green.Managers.GreenRoleClaimManager.AnyAsync*
+  name: AnyAsync
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_AnyAsync_
+  commentId: Overload:CG.Green.Managers.GreenRoleClaimManager.AnyAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleClaimManager.AnyAsync
+  nameWithType: GreenRoleClaimManager.AnyAsync
+- uid: CG.Green.Managers.GreenRoleClaimManager.CountAsync(CancellationToken)
+  name: CountAsync(CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_CountAsync_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleClaimManager.CountAsync(CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleClaimManager.CountAsync(CancellationToken)
+  nameWithType: GreenRoleClaimManager.CountAsync(CancellationToken)
+- uid: CG.Green.Managers.GreenRoleClaimManager.CountAsync*
+  name: CountAsync
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_CountAsync_
+  commentId: Overload:CG.Green.Managers.GreenRoleClaimManager.CountAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleClaimManager.CountAsync
+  nameWithType: GreenRoleClaimManager.CountAsync
+- uid: CG.Green.Managers.GreenRoleClaimManager.CreateAsync(CG.Green.Identity.Models.GreenRoleClaim,System.String,CancellationToken)
+  name: CreateAsync(GreenRoleClaim, String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_CreateAsync_CG_Green_Identity_Models_GreenRoleClaim_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleClaimManager.CreateAsync(CG.Green.Identity.Models.GreenRoleClaim,System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleClaimManager.CreateAsync(CG.Green.Identity.Models.GreenRoleClaim, System.String, CancellationToken)
+  nameWithType: GreenRoleClaimManager.CreateAsync(GreenRoleClaim, String, CancellationToken)
+- uid: CG.Green.Managers.GreenRoleClaimManager.CreateAsync*
+  name: CreateAsync
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_CreateAsync_
+  commentId: Overload:CG.Green.Managers.GreenRoleClaimManager.CreateAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleClaimManager.CreateAsync
+  nameWithType: GreenRoleClaimManager.CreateAsync
+- uid: CG.Green.Managers.GreenRoleClaimManager.FindByRoleIdAsync(System.String,CancellationToken)
+  name: FindByRoleIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_FindByRoleIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleClaimManager.FindByRoleIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleClaimManager.FindByRoleIdAsync(System.String, CancellationToken)
+  nameWithType: GreenRoleClaimManager.FindByRoleIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.GreenRoleClaimManager.FindByRoleIdAsync*
+  name: FindByRoleIdAsync
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_FindByRoleIdAsync_
+  commentId: Overload:CG.Green.Managers.GreenRoleClaimManager.FindByRoleIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleClaimManager.FindByRoleIdAsync
+  nameWithType: GreenRoleClaimManager.FindByRoleIdAsync
+- uid: CG.Green.Managers.GreenRoleClaimManager.UpdateAsync(CG.Green.Identity.Models.GreenRole,IEnumerable{CG.Green.Identity.Models.GreenRoleClaim},System.String,CancellationToken)
+  name: UpdateAsync(GreenRole, IEnumerable<GreenRoleClaim>, String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_UpdateAsync_CG_Green_Identity_Models_GreenRole_IEnumerable_CG_Green_Identity_Models_GreenRoleClaim__System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleClaimManager.UpdateAsync(CG.Green.Identity.Models.GreenRole,IEnumerable{CG.Green.Identity.Models.GreenRoleClaim},System.String,CancellationToken)
+  name.vb: UpdateAsync(GreenRole, IEnumerable(Of GreenRoleClaim), String, CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleClaimManager.UpdateAsync(CG.Green.Identity.Models.GreenRole, IEnumerable<CG.Green.Identity.Models.GreenRoleClaim>, System.String, CancellationToken)
+  fullName.vb: CG.Green.Managers.GreenRoleClaimManager.UpdateAsync(CG.Green.Identity.Models.GreenRole, IEnumerable(Of CG.Green.Identity.Models.GreenRoleClaim), System.String, CancellationToken)
+  nameWithType: GreenRoleClaimManager.UpdateAsync(GreenRole, IEnumerable<GreenRoleClaim>, String, CancellationToken)
+  nameWithType.vb: GreenRoleClaimManager.UpdateAsync(GreenRole, IEnumerable(Of GreenRoleClaim), String, CancellationToken)
+- uid: CG.Green.Managers.GreenRoleClaimManager.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Green.Managers.GreenRoleClaimManager.html#CG_Green_Managers_GreenRoleClaimManager_UpdateAsync_
+  commentId: Overload:CG.Green.Managers.GreenRoleClaimManager.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleClaimManager.UpdateAsync
+  nameWithType: GreenRoleClaimManager.UpdateAsync
 - uid: CG.Green.Managers.GreenRoleManager
   name: GreenRoleManager
   href: api/CG.Green.Managers.GreenRoleManager.html
   commentId: T:CG.Green.Managers.GreenRoleManager
   fullName: CG.Green.Managers.GreenRoleManager
   nameWithType: GreenRoleManager
-- uid: CG.Green.Managers.GreenRoleManager.#ctor(RoleManager{GreenRole},ILogger{CG.Green.Managers.IGreenRoleManager})
+- uid: CG.Green.Managers.GreenRoleManager.#ctor(RoleManager{CG.Green.Identity.Models.GreenRole},ILogger{CG.Green.Managers.IGreenRoleManager})
   name: GreenRoleManager(RoleManager<GreenRole>, ILogger<IGreenRoleManager>)
-  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager__ctor_RoleManager_GreenRole__ILogger_CG_Green_Managers_IGreenRoleManager__
-  commentId: M:CG.Green.Managers.GreenRoleManager.#ctor(RoleManager{GreenRole},ILogger{CG.Green.Managers.IGreenRoleManager})
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager__ctor_RoleManager_CG_Green_Identity_Models_GreenRole__ILogger_CG_Green_Managers_IGreenRoleManager__
+  commentId: M:CG.Green.Managers.GreenRoleManager.#ctor(RoleManager{CG.Green.Identity.Models.GreenRole},ILogger{CG.Green.Managers.IGreenRoleManager})
   name.vb: GreenRoleManager(RoleManager(Of GreenRole), ILogger(Of IGreenRoleManager))
-  fullName: CG.Green.Managers.GreenRoleManager.GreenRoleManager(RoleManager<GreenRole>, ILogger<CG.Green.Managers.IGreenRoleManager>)
-  fullName.vb: CG.Green.Managers.GreenRoleManager.GreenRoleManager(RoleManager(Of GreenRole), ILogger(Of CG.Green.Managers.IGreenRoleManager))
+  fullName: CG.Green.Managers.GreenRoleManager.GreenRoleManager(RoleManager<CG.Green.Identity.Models.GreenRole>, ILogger<CG.Green.Managers.IGreenRoleManager>)
+  fullName.vb: CG.Green.Managers.GreenRoleManager.GreenRoleManager(RoleManager(Of CG.Green.Identity.Models.GreenRole), ILogger(Of CG.Green.Managers.IGreenRoleManager))
   nameWithType: GreenRoleManager.GreenRoleManager(RoleManager<GreenRole>, ILogger<IGreenRoleManager>)
   nameWithType.vb: GreenRoleManager.GreenRoleManager(RoleManager(Of GreenRole), ILogger(Of IGreenRoleManager))
 - uid: CG.Green.Managers.GreenRoleManager.#ctor*
@@ -7447,6 +8262,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.GreenRoleManager.AnyAsync
   nameWithType: GreenRoleManager.AnyAsync
+- uid: CG.Green.Managers.GreenRoleManager.AnyByNameAsync(System.String,CancellationToken)
+  name: AnyByNameAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_AnyByNameAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleManager.AnyByNameAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleManager.AnyByNameAsync(System.String, CancellationToken)
+  nameWithType: GreenRoleManager.AnyByNameAsync(String, CancellationToken)
+- uid: CG.Green.Managers.GreenRoleManager.AnyByNameAsync*
+  name: AnyByNameAsync
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_AnyByNameAsync_
+  commentId: Overload:CG.Green.Managers.GreenRoleManager.AnyByNameAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleManager.AnyByNameAsync
+  nameWithType: GreenRoleManager.AnyByNameAsync
 - uid: CG.Green.Managers.GreenRoleManager.CountAsync(CancellationToken)
   name: CountAsync(CancellationToken)
   href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_CountAsync_CancellationToken_
@@ -7460,11 +8288,11 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.GreenRoleManager.CountAsync
   nameWithType: GreenRoleManager.CountAsync
-- uid: CG.Green.Managers.GreenRoleManager.CreateAsync(GreenRole,System.String,CancellationToken)
+- uid: CG.Green.Managers.GreenRoleManager.CreateAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)
   name: CreateAsync(GreenRole, String, CancellationToken)
-  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_CreateAsync_GreenRole_System_String_CancellationToken_
-  commentId: M:CG.Green.Managers.GreenRoleManager.CreateAsync(GreenRole,System.String,CancellationToken)
-  fullName: CG.Green.Managers.GreenRoleManager.CreateAsync(GreenRole, System.String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_CreateAsync_CG_Green_Identity_Models_GreenRole_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleManager.CreateAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleManager.CreateAsync(CG.Green.Identity.Models.GreenRole, System.String, CancellationToken)
   nameWithType: GreenRoleManager.CreateAsync(GreenRole, String, CancellationToken)
 - uid: CG.Green.Managers.GreenRoleManager.CreateAsync*
   name: CreateAsync
@@ -7473,11 +8301,11 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.GreenRoleManager.CreateAsync
   nameWithType: GreenRoleManager.CreateAsync
-- uid: CG.Green.Managers.GreenRoleManager.DeleteAsync(GreenRole,System.String,CancellationToken)
+- uid: CG.Green.Managers.GreenRoleManager.DeleteAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)
   name: DeleteAsync(GreenRole, String, CancellationToken)
-  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_DeleteAsync_GreenRole_System_String_CancellationToken_
-  commentId: M:CG.Green.Managers.GreenRoleManager.DeleteAsync(GreenRole,System.String,CancellationToken)
-  fullName: CG.Green.Managers.GreenRoleManager.DeleteAsync(GreenRole, System.String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_DeleteAsync_CG_Green_Identity_Models_GreenRole_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleManager.DeleteAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleManager.DeleteAsync(CG.Green.Identity.Models.GreenRole, System.String, CancellationToken)
   nameWithType: GreenRoleManager.DeleteAsync(GreenRole, String, CancellationToken)
 - uid: CG.Green.Managers.GreenRoleManager.DeleteAsync*
   name: DeleteAsync
@@ -7499,11 +8327,37 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.GreenRoleManager.FindAllAsync
   nameWithType: GreenRoleManager.FindAllAsync
-- uid: CG.Green.Managers.GreenRoleManager.UpdateAsync(GreenRole,System.String,CancellationToken)
+- uid: CG.Green.Managers.GreenRoleManager.FindByIdAsync(System.String,CancellationToken)
+  name: FindByIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_FindByIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleManager.FindByIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleManager.FindByIdAsync(System.String, CancellationToken)
+  nameWithType: GreenRoleManager.FindByIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.GreenRoleManager.FindByIdAsync*
+  name: FindByIdAsync
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_FindByIdAsync_
+  commentId: Overload:CG.Green.Managers.GreenRoleManager.FindByIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleManager.FindByIdAsync
+  nameWithType: GreenRoleManager.FindByIdAsync
+- uid: CG.Green.Managers.GreenRoleManager.FindByNameAsync(System.String,CancellationToken)
+  name: FindByNameAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_FindByNameAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleManager.FindByNameAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleManager.FindByNameAsync(System.String, CancellationToken)
+  nameWithType: GreenRoleManager.FindByNameAsync(String, CancellationToken)
+- uid: CG.Green.Managers.GreenRoleManager.FindByNameAsync*
+  name: FindByNameAsync
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_FindByNameAsync_
+  commentId: Overload:CG.Green.Managers.GreenRoleManager.FindByNameAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.GreenRoleManager.FindByNameAsync
+  nameWithType: GreenRoleManager.FindByNameAsync
+- uid: CG.Green.Managers.GreenRoleManager.UpdateAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)
   name: UpdateAsync(GreenRole, String, CancellationToken)
-  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_UpdateAsync_GreenRole_System_String_CancellationToken_
-  commentId: M:CG.Green.Managers.GreenRoleManager.UpdateAsync(GreenRole,System.String,CancellationToken)
-  fullName: CG.Green.Managers.GreenRoleManager.UpdateAsync(GreenRole, System.String, CancellationToken)
+  href: api/CG.Green.Managers.GreenRoleManager.html#CG_Green_Managers_GreenRoleManager_UpdateAsync_CG_Green_Identity_Models_GreenRole_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.GreenRoleManager.UpdateAsync(CG.Green.Identity.Models.GreenRole,System.String,CancellationToken)
+  fullName: CG.Green.Managers.GreenRoleManager.UpdateAsync(CG.Green.Identity.Models.GreenRole, System.String, CancellationToken)
   nameWithType: GreenRoleManager.UpdateAsync(GreenRole, String, CancellationToken)
 - uid: CG.Green.Managers.GreenRoleManager.UpdateAsync*
   name: UpdateAsync
@@ -7518,13 +8372,13 @@ references:
   commentId: T:CG.Green.Managers.GreenUserClaimManager
   fullName: CG.Green.Managers.GreenUserClaimManager
   nameWithType: GreenUserClaimManager
-- uid: CG.Green.Managers.GreenUserClaimManager.#ctor(IGreenUserClaimRepository,RoleManager{GreenRole},SignInManager{GreenUser},ILogger{CG.Green.Managers.IGreenUserClaimManager})
+- uid: CG.Green.Managers.GreenUserClaimManager.#ctor(IGreenUserClaimRepository,Microsoft.AspNetCore.Identity.RoleManager{GreenRole},Microsoft.AspNetCore.Identity.SignInManager{GreenUser},ILogger{CG.Green.Managers.IGreenUserClaimManager})
   name: GreenUserClaimManager(IGreenUserClaimRepository, RoleManager<GreenRole>, SignInManager<GreenUser>, ILogger<IGreenUserClaimManager>)
-  href: api/CG.Green.Managers.GreenUserClaimManager.html#CG_Green_Managers_GreenUserClaimManager__ctor_IGreenUserClaimRepository_RoleManager_GreenRole__SignInManager_GreenUser__ILogger_CG_Green_Managers_IGreenUserClaimManager__
-  commentId: M:CG.Green.Managers.GreenUserClaimManager.#ctor(IGreenUserClaimRepository,RoleManager{GreenRole},SignInManager{GreenUser},ILogger{CG.Green.Managers.IGreenUserClaimManager})
+  href: api/CG.Green.Managers.GreenUserClaimManager.html#CG_Green_Managers_GreenUserClaimManager__ctor_IGreenUserClaimRepository_Microsoft_AspNetCore_Identity_RoleManager_GreenRole__Microsoft_AspNetCore_Identity_SignInManager_GreenUser__ILogger_CG_Green_Managers_IGreenUserClaimManager__
+  commentId: M:CG.Green.Managers.GreenUserClaimManager.#ctor(IGreenUserClaimRepository,Microsoft.AspNetCore.Identity.RoleManager{GreenRole},Microsoft.AspNetCore.Identity.SignInManager{GreenUser},ILogger{CG.Green.Managers.IGreenUserClaimManager})
   name.vb: GreenUserClaimManager(IGreenUserClaimRepository, RoleManager(Of GreenRole), SignInManager(Of GreenUser), ILogger(Of IGreenUserClaimManager))
-  fullName: CG.Green.Managers.GreenUserClaimManager.GreenUserClaimManager(IGreenUserClaimRepository, RoleManager<GreenRole>, SignInManager<GreenUser>, ILogger<CG.Green.Managers.IGreenUserClaimManager>)
-  fullName.vb: CG.Green.Managers.GreenUserClaimManager.GreenUserClaimManager(IGreenUserClaimRepository, RoleManager(Of GreenRole), SignInManager(Of GreenUser), ILogger(Of CG.Green.Managers.IGreenUserClaimManager))
+  fullName: CG.Green.Managers.GreenUserClaimManager.GreenUserClaimManager(IGreenUserClaimRepository, Microsoft.AspNetCore.Identity.RoleManager<GreenRole>, Microsoft.AspNetCore.Identity.SignInManager<GreenUser>, ILogger<CG.Green.Managers.IGreenUserClaimManager>)
+  fullName.vb: CG.Green.Managers.GreenUserClaimManager.GreenUserClaimManager(IGreenUserClaimRepository, Microsoft.AspNetCore.Identity.RoleManager(Of GreenRole), Microsoft.AspNetCore.Identity.SignInManager(Of GreenUser), ILogger(Of CG.Green.Managers.IGreenUserClaimManager))
   nameWithType: GreenUserClaimManager.GreenUserClaimManager(IGreenUserClaimRepository, RoleManager<GreenRole>, SignInManager<GreenUser>, ILogger<IGreenUserClaimManager>)
   nameWithType.vb: GreenUserClaimManager.GreenUserClaimManager(IGreenUserClaimRepository, RoleManager(Of GreenRole), SignInManager(Of GreenUser), ILogger(Of IGreenUserClaimManager))
 - uid: CG.Green.Managers.GreenUserClaimManager.#ctor*
@@ -8170,6 +9024,80 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.IdentityResourceManager.UpdateAsync
   nameWithType: IdentityResourceManager.UpdateAsync
+- uid: CG.Green.Managers.IGreenRoleClaimManager
+  name: IGreenRoleClaimManager
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html
+  commentId: T:CG.Green.Managers.IGreenRoleClaimManager
+  fullName: CG.Green.Managers.IGreenRoleClaimManager
+  nameWithType: IGreenRoleClaimManager
+- uid: CG.Green.Managers.IGreenRoleClaimManager.AnyAsync(CancellationToken)
+  name: AnyAsync(CancellationToken)
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_AnyAsync_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenRoleClaimManager.AnyAsync(CancellationToken)
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.AnyAsync(CancellationToken)
+  nameWithType: IGreenRoleClaimManager.AnyAsync(CancellationToken)
+- uid: CG.Green.Managers.IGreenRoleClaimManager.AnyAsync*
+  name: AnyAsync
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_AnyAsync_
+  commentId: Overload:CG.Green.Managers.IGreenRoleClaimManager.AnyAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.AnyAsync
+  nameWithType: IGreenRoleClaimManager.AnyAsync
+- uid: CG.Green.Managers.IGreenRoleClaimManager.CountAsync(CancellationToken)
+  name: CountAsync(CancellationToken)
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_CountAsync_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenRoleClaimManager.CountAsync(CancellationToken)
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.CountAsync(CancellationToken)
+  nameWithType: IGreenRoleClaimManager.CountAsync(CancellationToken)
+- uid: CG.Green.Managers.IGreenRoleClaimManager.CountAsync*
+  name: CountAsync
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_CountAsync_
+  commentId: Overload:CG.Green.Managers.IGreenRoleClaimManager.CountAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.CountAsync
+  nameWithType: IGreenRoleClaimManager.CountAsync
+- uid: CG.Green.Managers.IGreenRoleClaimManager.CreateAsync(GreenRoleClaim,System.String,CancellationToken)
+  name: CreateAsync(GreenRoleClaim, String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_CreateAsync_GreenRoleClaim_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenRoleClaimManager.CreateAsync(GreenRoleClaim,System.String,CancellationToken)
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.CreateAsync(GreenRoleClaim, System.String, CancellationToken)
+  nameWithType: IGreenRoleClaimManager.CreateAsync(GreenRoleClaim, String, CancellationToken)
+- uid: CG.Green.Managers.IGreenRoleClaimManager.CreateAsync*
+  name: CreateAsync
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_CreateAsync_
+  commentId: Overload:CG.Green.Managers.IGreenRoleClaimManager.CreateAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.CreateAsync
+  nameWithType: IGreenRoleClaimManager.CreateAsync
+- uid: CG.Green.Managers.IGreenRoleClaimManager.FindByRoleIdAsync(System.String,CancellationToken)
+  name: FindByRoleIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_FindByRoleIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenRoleClaimManager.FindByRoleIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.FindByRoleIdAsync(System.String, CancellationToken)
+  nameWithType: IGreenRoleClaimManager.FindByRoleIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IGreenRoleClaimManager.FindByRoleIdAsync*
+  name: FindByRoleIdAsync
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_FindByRoleIdAsync_
+  commentId: Overload:CG.Green.Managers.IGreenRoleClaimManager.FindByRoleIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.FindByRoleIdAsync
+  nameWithType: IGreenRoleClaimManager.FindByRoleIdAsync
+- uid: CG.Green.Managers.IGreenRoleClaimManager.UpdateAsync(GreenRole,IEnumerable{GreenRoleClaim},System.String,CancellationToken)
+  name: UpdateAsync(GreenRole, IEnumerable<GreenRoleClaim>, String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_UpdateAsync_GreenRole_IEnumerable_GreenRoleClaim__System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenRoleClaimManager.UpdateAsync(GreenRole,IEnumerable{GreenRoleClaim},System.String,CancellationToken)
+  name.vb: UpdateAsync(GreenRole, IEnumerable(Of GreenRoleClaim), String, CancellationToken)
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.UpdateAsync(GreenRole, IEnumerable<GreenRoleClaim>, System.String, CancellationToken)
+  fullName.vb: CG.Green.Managers.IGreenRoleClaimManager.UpdateAsync(GreenRole, IEnumerable(Of GreenRoleClaim), System.String, CancellationToken)
+  nameWithType: IGreenRoleClaimManager.UpdateAsync(GreenRole, IEnumerable<GreenRoleClaim>, String, CancellationToken)
+  nameWithType.vb: IGreenRoleClaimManager.UpdateAsync(GreenRole, IEnumerable(Of GreenRoleClaim), String, CancellationToken)
+- uid: CG.Green.Managers.IGreenRoleClaimManager.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Green.Managers.IGreenRoleClaimManager.html#CG_Green_Managers_IGreenRoleClaimManager_UpdateAsync_
+  commentId: Overload:CG.Green.Managers.IGreenRoleClaimManager.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenRoleClaimManager.UpdateAsync
+  nameWithType: IGreenRoleClaimManager.UpdateAsync
 - uid: CG.Green.Managers.IGreenRoleManager
   name: IGreenRoleManager
   href: api/CG.Green.Managers.IGreenRoleManager.html
@@ -8189,6 +9117,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.IGreenRoleManager.AnyAsync
   nameWithType: IGreenRoleManager.AnyAsync
+- uid: CG.Green.Managers.IGreenRoleManager.AnyByNameAsync(System.String,CancellationToken)
+  name: AnyByNameAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenRoleManager.html#CG_Green_Managers_IGreenRoleManager_AnyByNameAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenRoleManager.AnyByNameAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IGreenRoleManager.AnyByNameAsync(System.String, CancellationToken)
+  nameWithType: IGreenRoleManager.AnyByNameAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IGreenRoleManager.AnyByNameAsync*
+  name: AnyByNameAsync
+  href: api/CG.Green.Managers.IGreenRoleManager.html#CG_Green_Managers_IGreenRoleManager_AnyByNameAsync_
+  commentId: Overload:CG.Green.Managers.IGreenRoleManager.AnyByNameAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenRoleManager.AnyByNameAsync
+  nameWithType: IGreenRoleManager.AnyByNameAsync
 - uid: CG.Green.Managers.IGreenRoleManager.CountAsync(CancellationToken)
   name: CountAsync(CancellationToken)
   href: api/CG.Green.Managers.IGreenRoleManager.html#CG_Green_Managers_IGreenRoleManager_CountAsync_CancellationToken_
@@ -8241,6 +9182,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.IGreenRoleManager.FindAllAsync
   nameWithType: IGreenRoleManager.FindAllAsync
+- uid: CG.Green.Managers.IGreenRoleManager.FindByIdAsync(System.String,CancellationToken)
+  name: FindByIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenRoleManager.html#CG_Green_Managers_IGreenRoleManager_FindByIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenRoleManager.FindByIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IGreenRoleManager.FindByIdAsync(System.String, CancellationToken)
+  nameWithType: IGreenRoleManager.FindByIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IGreenRoleManager.FindByIdAsync*
+  name: FindByIdAsync
+  href: api/CG.Green.Managers.IGreenRoleManager.html#CG_Green_Managers_IGreenRoleManager_FindByIdAsync_
+  commentId: Overload:CG.Green.Managers.IGreenRoleManager.FindByIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenRoleManager.FindByIdAsync
+  nameWithType: IGreenRoleManager.FindByIdAsync
+- uid: CG.Green.Managers.IGreenRoleManager.FindByNameAsync(System.String,CancellationToken)
+  name: FindByNameAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IGreenRoleManager.html#CG_Green_Managers_IGreenRoleManager_FindByNameAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IGreenRoleManager.FindByNameAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IGreenRoleManager.FindByNameAsync(System.String, CancellationToken)
+  nameWithType: IGreenRoleManager.FindByNameAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IGreenRoleManager.FindByNameAsync*
+  name: FindByNameAsync
+  href: api/CG.Green.Managers.IGreenRoleManager.html#CG_Green_Managers_IGreenRoleManager_FindByNameAsync_
+  commentId: Overload:CG.Green.Managers.IGreenRoleManager.FindByNameAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IGreenRoleManager.FindByNameAsync
+  nameWithType: IGreenRoleManager.FindByNameAsync
 - uid: CG.Green.Managers.IGreenRoleManager.UpdateAsync(GreenRole,System.String,CancellationToken)
   name: UpdateAsync(GreenRole, String, CancellationToken)
   href: api/CG.Green.Managers.IGreenRoleManager.html#CG_Green_Managers_IGreenRoleManager_UpdateAsync_GreenRole_System_String_CancellationToken_
@@ -8771,6 +9738,57 @@ references:
   isSpec: "True"
   fullName: CG.Green.Options.IdentityResourceOptions.IdentityResources
   nameWithType: IdentityResourceOptions.IdentityResources
+- uid: CG.Green.Options.RoleClaimAssignmentOptions
+  name: RoleClaimAssignmentOptions
+  href: api/CG.Green.Options.RoleClaimAssignmentOptions.html
+  commentId: T:CG.Green.Options.RoleClaimAssignmentOptions
+  fullName: CG.Green.Options.RoleClaimAssignmentOptions
+  nameWithType: RoleClaimAssignmentOptions
+- uid: CG.Green.Options.RoleClaimAssignmentOptions.Claims
+  name: Claims
+  href: api/CG.Green.Options.RoleClaimAssignmentOptions.html#CG_Green_Options_RoleClaimAssignmentOptions_Claims
+  commentId: P:CG.Green.Options.RoleClaimAssignmentOptions.Claims
+  fullName: CG.Green.Options.RoleClaimAssignmentOptions.Claims
+  nameWithType: RoleClaimAssignmentOptions.Claims
+- uid: CG.Green.Options.RoleClaimAssignmentOptions.Claims*
+  name: Claims
+  href: api/CG.Green.Options.RoleClaimAssignmentOptions.html#CG_Green_Options_RoleClaimAssignmentOptions_Claims_
+  commentId: Overload:CG.Green.Options.RoleClaimAssignmentOptions.Claims
+  isSpec: "True"
+  fullName: CG.Green.Options.RoleClaimAssignmentOptions.Claims
+  nameWithType: RoleClaimAssignmentOptions.Claims
+- uid: CG.Green.Options.RoleClaimAssignmentOptions.RoleName
+  name: RoleName
+  href: api/CG.Green.Options.RoleClaimAssignmentOptions.html#CG_Green_Options_RoleClaimAssignmentOptions_RoleName
+  commentId: P:CG.Green.Options.RoleClaimAssignmentOptions.RoleName
+  fullName: CG.Green.Options.RoleClaimAssignmentOptions.RoleName
+  nameWithType: RoleClaimAssignmentOptions.RoleName
+- uid: CG.Green.Options.RoleClaimAssignmentOptions.RoleName*
+  name: RoleName
+  href: api/CG.Green.Options.RoleClaimAssignmentOptions.html#CG_Green_Options_RoleClaimAssignmentOptions_RoleName_
+  commentId: Overload:CG.Green.Options.RoleClaimAssignmentOptions.RoleName
+  isSpec: "True"
+  fullName: CG.Green.Options.RoleClaimAssignmentOptions.RoleName
+  nameWithType: RoleClaimAssignmentOptions.RoleName
+- uid: CG.Green.Options.RoleClaimOptions
+  name: RoleClaimOptions
+  href: api/CG.Green.Options.RoleClaimOptions.html
+  commentId: T:CG.Green.Options.RoleClaimOptions
+  fullName: CG.Green.Options.RoleClaimOptions
+  nameWithType: RoleClaimOptions
+- uid: CG.Green.Options.RoleClaimOptions.RoleClaims
+  name: RoleClaims
+  href: api/CG.Green.Options.RoleClaimOptions.html#CG_Green_Options_RoleClaimOptions_RoleClaims
+  commentId: P:CG.Green.Options.RoleClaimOptions.RoleClaims
+  fullName: CG.Green.Options.RoleClaimOptions.RoleClaims
+  nameWithType: RoleClaimOptions.RoleClaims
+- uid: CG.Green.Options.RoleClaimOptions.RoleClaims*
+  name: RoleClaims
+  href: api/CG.Green.Options.RoleClaimOptions.html#CG_Green_Options_RoleClaimOptions_RoleClaims_
+  commentId: Overload:CG.Green.Options.RoleClaimOptions.RoleClaims
+  isSpec: "True"
+  fullName: CG.Green.Options.RoleClaimOptions.RoleClaims
+  nameWithType: RoleClaimOptions.RoleClaims
 - uid: CG.Green.Options.UserClaimAssignmentOptions
   name: UserClaimAssignmentOptions
   href: api/CG.Green.Options.UserClaimAssignmentOptions.html
@@ -9060,6 +10078,38 @@ references:
   isSpec: "True"
   fullName: CG.Green.Repositories.IClientRepository.UpdateAsync
   nameWithType: IClientRepository.UpdateAsync
+- uid: CG.Green.Repositories.IGreenRoleClaimRepository
+  name: IGreenRoleClaimRepository
+  href: api/CG.Green.Repositories.IGreenRoleClaimRepository.html
+  commentId: T:CG.Green.Repositories.IGreenRoleClaimRepository
+  fullName: CG.Green.Repositories.IGreenRoleClaimRepository
+  nameWithType: IGreenRoleClaimRepository
+- uid: CG.Green.Repositories.IGreenRoleClaimRepository.AnyAsync(CancellationToken)
+  name: AnyAsync(CancellationToken)
+  href: api/CG.Green.Repositories.IGreenRoleClaimRepository.html#CG_Green_Repositories_IGreenRoleClaimRepository_AnyAsync_CancellationToken_
+  commentId: M:CG.Green.Repositories.IGreenRoleClaimRepository.AnyAsync(CancellationToken)
+  fullName: CG.Green.Repositories.IGreenRoleClaimRepository.AnyAsync(CancellationToken)
+  nameWithType: IGreenRoleClaimRepository.AnyAsync(CancellationToken)
+- uid: CG.Green.Repositories.IGreenRoleClaimRepository.AnyAsync*
+  name: AnyAsync
+  href: api/CG.Green.Repositories.IGreenRoleClaimRepository.html#CG_Green_Repositories_IGreenRoleClaimRepository_AnyAsync_
+  commentId: Overload:CG.Green.Repositories.IGreenRoleClaimRepository.AnyAsync
+  isSpec: "True"
+  fullName: CG.Green.Repositories.IGreenRoleClaimRepository.AnyAsync
+  nameWithType: IGreenRoleClaimRepository.AnyAsync
+- uid: CG.Green.Repositories.IGreenRoleClaimRepository.CountAsync(CancellationToken)
+  name: CountAsync(CancellationToken)
+  href: api/CG.Green.Repositories.IGreenRoleClaimRepository.html#CG_Green_Repositories_IGreenRoleClaimRepository_CountAsync_CancellationToken_
+  commentId: M:CG.Green.Repositories.IGreenRoleClaimRepository.CountAsync(CancellationToken)
+  fullName: CG.Green.Repositories.IGreenRoleClaimRepository.CountAsync(CancellationToken)
+  nameWithType: IGreenRoleClaimRepository.CountAsync(CancellationToken)
+- uid: CG.Green.Repositories.IGreenRoleClaimRepository.CountAsync*
+  name: CountAsync
+  href: api/CG.Green.Repositories.IGreenRoleClaimRepository.html#CG_Green_Repositories_IGreenRoleClaimRepository_CountAsync_
+  commentId: Overload:CG.Green.Repositories.IGreenRoleClaimRepository.CountAsync
+  isSpec: "True"
+  fullName: CG.Green.Repositories.IGreenRoleClaimRepository.CountAsync
+  nameWithType: IGreenRoleClaimRepository.CountAsync
 - uid: CG.Green.Repositories.IGreenUserClaimRepository
   name: IGreenUserClaimRepository
   href: api/CG.Green.Repositories.IGreenUserClaimRepository.html
@@ -9092,19 +10142,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Repositories.IGreenUserClaimRepository.CountAsync
   nameWithType: IGreenUserClaimRepository.CountAsync
-- uid: CG.Green.Repositories.IGreenUserClaimRepository.CreateAsync(GreenUserClaim,CancellationToken)
-  name: CreateAsync(GreenUserClaim, CancellationToken)
-  href: api/CG.Green.Repositories.IGreenUserClaimRepository.html#CG_Green_Repositories_IGreenUserClaimRepository_CreateAsync_GreenUserClaim_CancellationToken_
-  commentId: M:CG.Green.Repositories.IGreenUserClaimRepository.CreateAsync(GreenUserClaim,CancellationToken)
-  fullName: CG.Green.Repositories.IGreenUserClaimRepository.CreateAsync(GreenUserClaim, CancellationToken)
-  nameWithType: IGreenUserClaimRepository.CreateAsync(GreenUserClaim, CancellationToken)
-- uid: CG.Green.Repositories.IGreenUserClaimRepository.CreateAsync*
-  name: CreateAsync
-  href: api/CG.Green.Repositories.IGreenUserClaimRepository.html#CG_Green_Repositories_IGreenUserClaimRepository_CreateAsync_
-  commentId: Overload:CG.Green.Repositories.IGreenUserClaimRepository.CreateAsync
-  isSpec: "True"
-  fullName: CG.Green.Repositories.IGreenUserClaimRepository.CreateAsync
-  nameWithType: IGreenUserClaimRepository.CreateAsync
 - uid: CG.Green.Repositories.IGreenUserRoleRepository
   name: IGreenUserRoleRepository
   href: api/CG.Green.Repositories.IGreenUserRoleRepository.html
