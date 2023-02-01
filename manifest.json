@@ -1070,6 +1070,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Globals.Models.Claims.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Globals.Models.Claims.html",
+          "hash": "n0kjeH4h+tVmS/TMg1dSVYGDsnnY4cFd2iLkA0qwhl8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Globals.Models.Clients.yml",
       "output": {
         ".html": {
@@ -1142,11 +1154,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.yml",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html",
-          "hash": "wBDeRUv7e/lwIrNkVgPLirkk19JFYz3I5ECFtXKgmmU="
+          "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html",
+          "hash": "oESbaLvPzHolaYo6cMg231RUYcMI8BuqtqL8EfGB2uc="
         }
       },
       "is_incremental": false,
@@ -1154,11 +1166,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.Index.yml",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopesIndex.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html",
-          "hash": "oQNpAL7ce97YfJvEAYx0tSoRH/AotWASMmDkVoDVyRM="
+          "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopesIndex.html",
+          "hash": "Q2SEeLvBpKi46b6Kf/2ogAvK5EJD3RqmvtA7tiLpBxw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.NewApiScopeDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.NewApiScopeDialog.html",
+          "hash": "nedkuH5PMG32JefKeivmdd2Wja6G5xSC1qLKAuJOOhk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.NewClaimDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.NewClaimDialog.html",
+          "hash": "KodHr+O7vArvfHDwiUJRJ4rDgCwQ8saIkc14BXKz33Q="
         }
       },
       "is_incremental": false,
@@ -1170,7 +1206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.html",
-          "hash": "5QDF90onqkYwU6t6NdOYAetrD/UHvNQjR6U9M4CrUzs="
+          "hash": "y65Z+fr9WnhLfM1D39NO/WAsPk6J1gg9r2aMGlxByq8="
         }
       },
       "is_incremental": false,
@@ -1274,11 +1310,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Host.Pages.Admin.Roles.NewDialog.yml",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Green.Host.Pages.Admin.Roles.NewDialog.html",
-          "hash": "Ivl04+w2PG8Ra/uFddtOK14SaYiE44zJRJuxKe4/41U="
+          "relative_path": "api/CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.html",
+          "hash": "iGmex0CCVgJOtQG34KRAf6vTnFKrf/4hTZiiyKaxKMk="
         }
       },
       "is_incremental": false,
@@ -1290,7 +1326,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Roles.html",
-          "hash": "MJVwKgB04iN0amcUpwHgT9ALHKzx2wxa7w5UP+GrnG4="
+          "hash": "M8XUvWRWidAhn2Boze/yI4u3C1dfplDgFhSSPfdpaQY="
         }
       },
       "is_incremental": false,
@@ -1322,11 +1358,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Host.Pages.Admin.Users.NewDialog.yml",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.Users.NewUserDialog.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Green.Host.Pages.Admin.Users.NewDialog.html",
-          "hash": "f/CsE3X1IDeZydqcZVmMNEIdBsu2vvsEsJl/4aHUP+U="
+          "relative_path": "api/CG.Green.Host.Pages.Admin.Users.NewUserDialog.html",
+          "hash": "RNn7l2QpeuK2PE9ubzGtXLrwHftZRKI/1dxbXWwW1Yc="
         }
       },
       "is_incremental": false,
@@ -1338,7 +1374,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Users.html",
-          "hash": "Kb8QhH9+Jo5aszZY2FXwBlazgayc1Vyxp0zwrmImE+U="
+          "hash": "U1tPIlRTGI5r1dvvw2qEPOKPXUvY40ghsdrpIzx8cBI="
         }
       },
       "is_incremental": false,
@@ -1470,7 +1506,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.EditApiScopeVM.html",
-          "hash": "lfrJW928g+DA/Q+q7p+YKsovfWbAmIv/76rDvxXrauM="
+          "hash": "aIHZ4SZnjvRNEG4ko6rT4yNXUVNPBDJkJU/X/cfAKiM="
         }
       },
       "is_incremental": false,
@@ -1519,6 +1555,18 @@
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.EditUserVM.html",
           "hash": "lmj92aWylQimMRDkBqGsIdrNvVuHFjijyF002MGAvv4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.ViewModels.NewApiScopeVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.ViewModels.NewApiScopeVM.html",
+          "hash": "fhjtXTp9/ZRvpFYxwvnT5ShB1UWbrq8F80GDdl+xQdI="
         }
       },
       "is_incremental": false,
@@ -1578,7 +1626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.html",
-          "hash": "XLMO0InSkxnsLSQcQ1Xk2Whe1Ojbav0xyMtzUW1NDxQ="
+          "hash": "4R1HOr8pe5c51pH8amc0nXgNdZKK5dd2Ltf9zd0IFXg="
         }
       },
       "is_incremental": false,
@@ -1866,7 +1914,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Managers.GreenUserClaimManager.html",
-          "hash": "y2NP068lli5ZpDmtuCQY8vfFJdKlJxBAsrVutcXCfD0="
+          "hash": "/0Zfr7pWH8urioYQ8M0ttsKjxKqLq7ODgNzHr8y9Mfo="
         }
       },
       "is_incremental": false,
@@ -2394,7 +2442,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.html",
-          "hash": "EOAaVSwYQ4pefy34ZsRDGdvWcAZNRMvIb+CDa48iXTs="
+          "hash": "YHNSx2PSMeyS9v7Q5wE+7DJMkH5tkuEWpvzzS/YjoLA="
         }
       },
       "is_incremental": false,
@@ -2574,7 +2622,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "pZShJceJ4pbEcTxvYJdTFgCNNK3FqlvR6GmP0kjvFU4="
+          "hash": "Ay2FImjS0Mwf0zmNJ/Ees9AocFKQOvDMuZpOqezcHzQ="
         }
       },
       "is_incremental": false,
@@ -2693,7 +2741,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 213,
+          "total_file_count": 217,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

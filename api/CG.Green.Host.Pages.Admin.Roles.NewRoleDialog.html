@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class EditApiScopeVM
+    <title>Class NewRoleDialog
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class EditApiScopeVM
+    <meta name="title" content="Class NewRoleDialog
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,18 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog">
   
   
-  <h1 id="CG_Green_Host_ViewModels_EditApiScopeVM" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM" class="text-break">Class EditApiScopeVM
+  <h1 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog" class="text-break">Class NewRoleDialog
   </h1>
-  <div class="markdown level0 summary"><p>This class is a view-model for editing an API scope.</p>
+  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.html">NewRoleDialog</a> page.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">EditApiScopeVM</span></div>
+    <div class="level1"><span class="xref">NewRoleDialog</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,22 +115,22 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Host.ViewModels.html">CG.Green.Host.ViewModels</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Host.Pages.Admin.Roles.html">CG.Green.Host.Pages.Admin.Roles</a></h6>
   <h6><strong>Assembly</strong>: CG.Green.Host.dll</h6>
-  <h5 id="CG_Green_Host_ViewModels_EditApiScopeVM_syntax">Syntax</h5>
+  <h5 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EditApiScopeVM</code></pre>
+    <pre><code class="lang-csharp hljs">public class NewRoleDialog</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_Description_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Description*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_Description" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Description">Description</h4>
-  <div class="markdown level1 summary"><p>This property contains the description of the API scope.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_DialogService_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.DialogService*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_DialogService" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.DialogService">DialogService</h4>
+  <div class="markdown level1 summary"><p>This property contains the dialog service for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IDialogService DialogService { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -142,19 +142,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">IDialogService</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_DisplayName_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.DisplayName*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_DisplayName" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.DisplayName">DisplayName</h4>
-  <div class="markdown level1 summary"><p>This property contains the display name of the API scope.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_Logger_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.Logger*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_Logger" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>This property contains the logger for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DisplayName { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ILogger&lt;NewRoleDialog&gt; Logger { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,20 +166,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.html">NewRoleDialog</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_Emphasize_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Emphasize*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_Emphasize" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Emphasize">Emphasize</h4>
-  <div class="markdown level1 summary"><p>This property indicates whether the API scope should be emphasized
-in consent screens, or not.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_Model_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.Model*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_Model" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.Model">Model</h4>
+  <div class="markdown level1 summary"><p>This property contains the edit form's model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Emphasize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public EditRoleVM Model { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,19 +190,19 @@ in consent screens, or not.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">EditRoleVM</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_Enabled_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Enabled*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_Enabled" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Enabled">Enabled</h4>
-  <div class="markdown level1 summary"><p>This property indicates whether the API scope is enabled, or not.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_MudDialog_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.MudDialog*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_MudDialog" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.MudDialog">MudDialog</h4>
+  <div class="markdown level1 summary"><p>This property contains the dialog reference.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Enabled { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public MudDialogInstance MudDialog { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,19 +214,19 @@ in consent screens, or not.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">MudDialogInstance</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_Name_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Name*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_Name" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Name">Name</h4>
-  <div class="markdown level1 summary"><p>This property contains the name of the API scope.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_Roles_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.Roles*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_Roles" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.Roles">Roles</h4>
+  <div class="markdown level1 summary"><p>This property contains the existing roles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;EditRoleVM&gt; Roles { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -239,19 +238,19 @@ in consent screens, or not.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">EditRoleVM</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_Properties_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Properties*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_Properties" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Properties">Properties</h4>
-  <div class="markdown level1 summary"><p>This property contains properties associated with the API scope.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_SnackbarService_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.SnackbarService*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_SnackbarService" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.SnackbarService">SnackbarService</h4>
+  <div class="markdown level1 summary"><p>This property contains the snackbar service for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, string&gt; Properties { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ISnackbar SnackbarService { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,109 +262,45 @@ in consent screens, or not.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_Required_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Required*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_Required" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.Required">Required</h4>
-  <div class="markdown level1 summary"><p>This property indicates whether the API scope is required, or not.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Required { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_ShowInDiscoveryDocument_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.ShowInDiscoveryDocument*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_ShowInDiscoveryDocument" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.ShowInDiscoveryDocument">ShowInDiscoveryDocument</h4>
-  <div class="markdown level1 summary"><p>This property indicates whether the API scope is visible in the discovery
-document, or not.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ShowInDiscoveryDocument { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_UserClaims_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.UserClaims*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_UserClaims" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.UserClaims">UserClaims</h4>
-  <div class="markdown level1 summary"><p>This property contains user claims associated with the API scope.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;_Wrapper&gt; UserClaims { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="CG.Green.Host.ViewModels._Wrapper.html">_Wrapper</a>&gt;</td>
+        <td><span class="xref">ISnackbar</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="CG_Green_Host_ViewModels_EditApiScopeVM_ToDuende_" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.ToDuende*"></a>
-  <h4 id="CG_Green_Host_ViewModels_EditApiScopeVM_ToDuende" data-uid="CG.Green.Host.ViewModels.EditApiScopeVM.ToDuende">ToDuende()</h4>
-  <div class="markdown level1 summary"><p>This method converts the object to a Duende <see cref="!:ApiScope"></see>
-object.</p>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_Cancel_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.Cancel*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_Cancel" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"><p>This method cancels the dialog.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ApiScope ToDuende()</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Cancel()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <a id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_OnValidSubmit_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.OnValidSubmit*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Roles_NewRoleDialog_OnValidSubmit_EditContext_" data-uid="CG.Green.Host.Pages.Admin.Roles.NewRoleDialog.OnValidSubmit(EditContext)">OnValidSubmit(EditContext)</h4>
+  <div class="markdown level1 summary"><p>This method submits the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnValidSubmit(EditContext editContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ApiScope</span></td>
-        <td><p>A <see cref="!:ApiScope"></see> object.</p>
-</td>
+        <td><span class="xref">EditContext</span></td>
+        <td><span class="parametername">editContext</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
