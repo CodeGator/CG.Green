@@ -8,11 +8,11 @@
 
 ### What does it do?
 
-Green is an idea for an identity microservice. Essentially, we stood up the ASP.NET and Duende libraries as a ASP.NET (Blazor) microservice, then we added some additional administrative features.
+Green is an idea for an identity microservice. Essentially, we stood up the ASP.NET and Duende libraries as a Blazor microservice, then we added some additional administrative features.
 
 ### What works, and what doesn't, at this point?
 
-We're tracking the status of the project in Azure devops [HERE](https://dev.azure.com/codegator/796f6869-3c91-495d-b4dd-16562d48d319/_boards/board/t/4b6e700e-dd5c-440a-9c8e-d63aebfc018e/Issues/), but, essentially, we're a few admin pages away from an MVP.
+Most of the microservice is functional, at this point. We're a few admin pages away from an initial MVP. For now, just ignore the admin pages until we get those completed.
 
 ### What does the roadmap look like?
 
@@ -54,7 +54,7 @@ We also have a discussion group [HERE](https://github.com/CodeGator/CG.Green/dis
 
 There is developer documentation [HERE](https://codegator.github.io/CG.Green/)
 
-We also write about projects like this one on our website, [HERE](http://www.codegator.com)
+We also write about projects like this one on our website [HERE](http://www.codegator.com)
 
 ## Disclaimer
 
