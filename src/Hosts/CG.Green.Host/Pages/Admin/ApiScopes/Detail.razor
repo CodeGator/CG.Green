@@ -1,0 +1,66 @@
+﻿@page "/admin/apiscopes/detail/{ApiScopeName}"
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
+
+<PageTitle>API Scope Details</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+@if (_model is null)
+{
+    if (_isLoading)
+    {
+        <MudText Typo="Typo.h6" Color="Color.Primary">Loading ...</MudText>
+    }
+    else
+    {
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! we couldn't find that API scope!</MudText>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => NavigationManager.NavigateTo("/admin/apiscopes"))">Back to API Scopes</MudButton>
+    }
+}
+else
+{
+    <MudText Typo="Typo.h6">API Scope Details</MudText>
+    <MudText Typo="Typo.body2" Class="pb-5">Use this page to edit the API scope.</MudText>
+
+    <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+        <MudGrid>
+            <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField AutoFocus
+                              Required
+                              Immediate
+                              Counter="@(Globals.Models.ApiScopes.NameLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="Name"
+                              For="@(() => _model.Name)"
+                              @bind-Value="@_model.Name" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Immediate
+                              Counter="@(Globals.Models.ApiScopes.DisplayNameLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="Display Name"
+                              For="@(() => _model.DisplayName)"
+                              @bind-Value="@_model.DisplayName" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Immediate
+                              Counter="@(Globals.Models.ApiScopes.DescriptionLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="Description"
+                              Lines="2"
+                              For="@(() => _model.Description)"
+                              @bind-Value="@_model.Description" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+            </MudItem>
+        </MudGrid>
+    </EditForm>
+}

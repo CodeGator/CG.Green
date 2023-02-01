@@ -84,6 +84,24 @@ public interface IApiScopeRepository
         );
 
     /// <summary>
+    /// This method searches for a <see cref="ApiScope"/> object that matches 
+    /// the given name.
+    /// </summary>
+    /// <param name="name">The name to use for the operation.</param>
+    /// <param name="cancellationToken">A cancellation token that is monitored
+    /// for the lifetime of the method.</param>
+    /// <returns>A task to perform the operation that returns a sequence of 
+    /// <see cref="ApiScope"/> objects.</returns>
+    /// <exception cref="ArgumentException">This exception is thrown whenever one
+    /// or more arguments are missing, or invalid.</exception>
+    /// <exception cref="RepositoryException">This exception is thrown whenever the
+    /// repository fails to complete the operation.</exception>
+    Task<ApiScope?> FindByNameAsync(
+        string name,
+        CancellationToken cancellationToken = default
+        );
+
+    /// <summary>
     /// This method updates an existing <see cref="ApiScope"/> object in the 
     /// underlying storage.
     /// </summary>

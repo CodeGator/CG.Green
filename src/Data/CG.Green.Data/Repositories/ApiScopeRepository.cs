@@ -295,13 +295,14 @@ internal class ApiScopeRepository : IApiScopeRepository
                 );
 
             // Perform the apiScope search.
-            var clients = await _configurationDbContext.ApiScopes
+            var scopes = await _configurationDbContext.ApiScopes
+                .Include(x => x.UserClaims)
                 .ToListAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
 
             // Convert the entities to models.
-            var models = clients.Select(x => x.ToModel());
+            var models = scopes.Select(x => x.ToModel());
 
             // Return the results.
             return models;
@@ -317,6 +318,61 @@ internal class ApiScopeRepository : IApiScopeRepository
             // Provider better context.
             throw new RepositoryException(
                 message: $"The repository failed to search for api scopes!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
+    public virtual async Task<ApiScope?> FindByNameAsync(
+        string name,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(name, nameof(name));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogDebug(
+                "Searching api scopes."
+                );
+
+            // Perform the apiScope search.
+            var scope = await _configurationDbContext.ApiScopes.Where(
+                x => x.Name == name
+                ).Include(x => x.UserClaims)
+                .FirstOrDefaultAsync(
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Did we fail?
+            if (scope is null)
+            {
+                return null;
+            }
+
+            // Convert the entity to a model.
+            var model = scope.ToModel();
+
+            // Return the results.
+            return model;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for an api scope by name!"
+                );
+
+            // Provider better context.
+            throw new RepositoryException(
+                message: $"The repository failed to search for an api scope " +
+                "by name!",
                 innerException: ex
                 );
         }

@@ -7,4 +7,58 @@
 
 <MudText Typo="Typo.h6" Class="py-4 px-5">API Scopes</MudText>
 
-This page is in progress
+<MudGrid>
+    <MudItem xs="12">
+        <MudTable Items="_apiScopes"
+                  Loading="_isLoading"
+                  Dense
+                  Striped
+                  Virtualize
+                  Filter="new Func<EditApiScopeVM,bool>(FilterFunc1)">
+            <ToolBarContent>
+                <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                           Variant="Variant.Filled"
+                           Disabled="@_isLoading"
+                           Color="Color.Primary"
+                           OnClick="OnCreateAsync">Create</MudButton>
+                <MudSpacer />
+                <MudTextField @bind-Value="_gridSearchString"
+                              Placeholder="Search"
+                              Adornment="Adornment.Start"
+                              AdornmentIcon="@Icons.Material.Outlined.Search"
+                              IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            </ToolBarContent>
+            <ColGroup>
+                <col style="width:40%" />
+                <col style="width:40%" />
+                <col />
+            </ColGroup>
+            <HeaderContent>
+                <MudTh><MudTableSortLabel SortBy="new Func<EditApiScopeVM, object>(x=>x.Name)">Name</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<EditApiScopeVM, object>(x=>x.DisplayName)">Display Name</MudTableSortLabel></MudTh>
+                <MudTh></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Name">@context.Name</MudTd>
+                <MudTd DataLabel="Display Name">@context.DisplayName</MudTd>
+                <MudTd>
+                    <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                   OnClick="() => OnDeleteAsync(context)"
+                                   Disabled="@_isLoading" />
+                    <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                   OnClick="() => OnEditAsync(context)"
+                                   Disabled="@_isLoading" />
+                </MudTd>
+            </RowTemplate>
+            <PagerContent>
+                <MudTablePager />
+            </PagerContent>
+            <NoRecordsContent>
+                No API scopes were found.
+            </NoRecordsContent>
+            <LoadingContent>
+                Loading API scopes ...
+            </LoadingContent>
+        </MudTable>
+        </MudItem>
+        </MudGrid>

@@ -338,6 +338,44 @@ public partial class Index
         }
     }
 
+    // *******************************************************************
+
+    /// <summary>
+    /// This method adapts the <see cref="FilterFunc"/> method for use with 
+    /// a <see cref="MudTable{T}"/> control.
+    /// </summary>
+    /// <param name="element">The element to use for the operation.</param>
+    /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
+    protected bool FilterFunc1(EditRoleVM element) =>
+        FilterFunc(element, _gridSearchString);
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method performs a search of the roles.
+    /// </summary>
+    /// <param name="element">The element to uses for the operation.</param>
+    /// <param name="searchString">The search string to use for the operation.</param>
+    /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
+    protected bool FilterFunc(
+        EditRoleVM element,
+        string searchString
+        )
+    {
+        if (string.IsNullOrWhiteSpace(searchString))
+        {
+            return true;
+        }
+        if ((element.Name ?? "").Contains(
+            searchString,
+            StringComparison.OrdinalIgnoreCase)
+            )
+        {
+            return true;
+        }
+        return false;
+    }
+
     #endregion
 
     // *******************************************************************
@@ -393,44 +431,6 @@ public partial class Index
             // We're now officially idle.
             _isLoading = false;
         }
-    }
-
-    // *******************************************************************
-
-    /// <summary>
-    /// This method adapts the <see cref="FilterFunc"/> method for use with 
-    /// a <see cref="MudTable{T}"/> control.
-    /// </summary>
-    /// <param name="element">The element to use for the operation.</param>
-    /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
-    protected bool FilterFunc1(EditRoleVM element) =>
-        FilterFunc(element, _gridSearchString);
-
-    // *******************************************************************
-
-    /// <summary>
-    /// This method performs a search of the roles.
-    /// </summary>
-    /// <param name="element">The element to uses for the operation.</param>
-    /// <param name="searchString">The search string to use for the operation.</param>
-    /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
-    protected bool FilterFunc(
-        EditRoleVM element,
-        string searchString
-        )
-    {
-        if (string.IsNullOrWhiteSpace(searchString))
-        {
-            return true;
-        }
-        if ((element.Name ?? "").Contains(
-            searchString,
-            StringComparison.OrdinalIgnoreCase)
-            )
-        {
-            return true;
-        }
-        return false;
     }
 
     #endregion

@@ -18,6 +18,30 @@ public static class Globals
     public static class Models
     {
         /// <summary>
+        /// This class contains sizes for API scope properties.
+        /// </summary>
+        public static class ApiScopes
+        {
+            /// <summary>
+            /// This constant represents the length of an API scope name.
+            /// property.
+            /// </summary>
+            public const int NameLength = 200;
+
+            /// <summary>
+            /// This constant represents the length of an API scope display name.
+            /// property.
+            /// </summary>
+            public const int DisplayNameLength = 200;
+
+            /// <summary>
+            /// This constant represents the length of an API scope description.
+            /// property.
+            /// </summary>
+            public const int DescriptionLength = 1000;
+        }
+
+        /// <summary>
         /// This class contains sizes for <see cref="Client"/> properties.
         /// </summary>
         public static class Clients
@@ -42,6 +66,24 @@ public static class Globals
         }
 
         /// <summary>
+        /// This class contains sizes for <see cref="GreenUserRole"/> properties.
+        /// </summary>
+        public static class Roles
+        {
+            /// <summary>
+            /// This constant represents the length of a role id.
+            /// property.
+            /// </summary>
+            public const int IdLength = 256;
+
+            /// <summary>
+            /// This constant represents the length of a role name.
+            /// property.
+            /// </summary>
+            public const int NameLength = 256;
+        }
+
+        /// <summary>
         /// This class contains sizes for <see cref="GreenUser"/> properties.
         /// </summary>
         public static class Users
@@ -63,25 +105,7 @@ public static class Globals
             /// property.
             /// </summary>
             public const int EmailLength = 256;
-        }
-
-        /// <summary>
-        /// This class contains sizes for <see cref="GreenUserRole"/> properties.
-        /// </summary>
-        public static class Roles
-        {
-            /// <summary>
-            /// This constant represents the length of a role id.
-            /// property.
-            /// </summary>
-            public const int IdLength = 256;
-
-            /// <summary>
-            /// This constant represents the length of a role name.
-            /// property.
-            /// </summary>
-            public const int NameLength = 256;
-        }
+        }        
     }
 }
 

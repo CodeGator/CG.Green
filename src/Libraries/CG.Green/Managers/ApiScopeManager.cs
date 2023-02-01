@@ -1,4 +1,6 @@
 ﻿
+using Duende.IdentityServer.Models;
+
 namespace CG.Green.Managers;
 
 /// <summary>
@@ -254,12 +256,12 @@ internal class ApiScopeManager : IApiScopeManager
                 );
 
             // Perform the operation.
-            var clients = await _apiScopeRepository.FindAllAsync(
+            var scopes = await _apiScopeRepository.FindAllAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
 
             // Return the results.
-            return clients;
+            return scopes;
         }
         catch (Exception ex)
         {
@@ -275,6 +277,51 @@ internal class ApiScopeManager : IApiScopeManager
                 innerException: ex
                 );
         }
+    }
+
+    // *******************************************************************
+
+    public virtual async Task<ApiScope?> FindByNameAsync(
+        string name,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(name, nameof(name));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogTrace(
+                "Deferring to {name}",
+                nameof(IApiScopeRepository.FindByNameAsync)
+                );
+
+            // Perform the operation.
+            var scopes = await _apiScopeRepository.FindByNameAsync(
+                name,
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Return the results.
+            return scopes;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for an api scope by name!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for an api scope " +
+                "by name!",
+                innerException: ex
+                );
+        }
+
     }
 
     // *******************************************************************
