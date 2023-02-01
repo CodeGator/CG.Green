@@ -3513,6 +3513,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.Repositories.ApiScopeRepository.FindAllAsync
   nameWithType: ApiScopeRepository.FindAllAsync
+- uid: CG.Green.Data.Repositories.ApiScopeRepository.FindByNameAsync(System.String,CancellationToken)
+  name: FindByNameAsync(String, CancellationToken)
+  href: api/CG.Green.Data.Repositories.ApiScopeRepository.html#CG_Green_Data_Repositories_ApiScopeRepository_FindByNameAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Data.Repositories.ApiScopeRepository.FindByNameAsync(System.String,CancellationToken)
+  fullName: CG.Green.Data.Repositories.ApiScopeRepository.FindByNameAsync(System.String, CancellationToken)
+  nameWithType: ApiScopeRepository.FindByNameAsync(String, CancellationToken)
+- uid: CG.Green.Data.Repositories.ApiScopeRepository.FindByNameAsync*
+  name: FindByNameAsync
+  href: api/CG.Green.Data.Repositories.ApiScopeRepository.html#CG_Green_Data_Repositories_ApiScopeRepository_FindByNameAsync_
+  commentId: Overload:CG.Green.Data.Repositories.ApiScopeRepository.FindByNameAsync
+  isSpec: "True"
+  fullName: CG.Green.Data.Repositories.ApiScopeRepository.FindByNameAsync
+  nameWithType: ApiScopeRepository.FindByNameAsync
 - uid: CG.Green.Data.Repositories.ApiScopeRepository.UpdateAsync(ApiScope,CancellationToken)
   name: UpdateAsync(ApiScope, CancellationToken)
   href: api/CG.Green.Data.Repositories.ApiScopeRepository.html#CG_Green_Data_Repositories_ApiScopeRepository_UpdateAsync_ApiScope_CancellationToken_
@@ -4831,6 +4844,30 @@ references:
   commentId: T:CG.Green.Globals.Models
   fullName: CG.Green.Globals.Models
   nameWithType: Globals.Models
+- uid: CG.Green.Globals.Models.ApiScopes
+  name: Globals.Models.ApiScopes
+  href: api/CG.Green.Globals.Models.ApiScopes.html
+  commentId: T:CG.Green.Globals.Models.ApiScopes
+  fullName: CG.Green.Globals.Models.ApiScopes
+  nameWithType: Globals.Models.ApiScopes
+- uid: CG.Green.Globals.Models.ApiScopes.DescriptionLength
+  name: DescriptionLength
+  href: api/CG.Green.Globals.Models.ApiScopes.html#CG_Green_Globals_Models_ApiScopes_DescriptionLength
+  commentId: F:CG.Green.Globals.Models.ApiScopes.DescriptionLength
+  fullName: CG.Green.Globals.Models.ApiScopes.DescriptionLength
+  nameWithType: Globals.Models.ApiScopes.DescriptionLength
+- uid: CG.Green.Globals.Models.ApiScopes.DisplayNameLength
+  name: DisplayNameLength
+  href: api/CG.Green.Globals.Models.ApiScopes.html#CG_Green_Globals_Models_ApiScopes_DisplayNameLength
+  commentId: F:CG.Green.Globals.Models.ApiScopes.DisplayNameLength
+  fullName: CG.Green.Globals.Models.ApiScopes.DisplayNameLength
+  nameWithType: Globals.Models.ApiScopes.DisplayNameLength
+- uid: CG.Green.Globals.Models.ApiScopes.NameLength
+  name: NameLength
+  href: api/CG.Green.Globals.Models.ApiScopes.html#CG_Green_Globals_Models_ApiScopes_NameLength
+  commentId: F:CG.Green.Globals.Models.ApiScopes.NameLength
+  fullName: CG.Green.Globals.Models.ApiScopes.NameLength
+  nameWithType: Globals.Models.ApiScopes.NameLength
 - uid: CG.Green.Globals.Models.Clients
   name: Globals.Models.Clients
   href: api/CG.Green.Globals.Models.Clients.html
@@ -5080,18 +5117,385 @@ references:
   commentId: N:CG.Green.Host.Pages.Admin.ApiScopes
   fullName: CG.Green.Host.Pages.Admin.ApiScopes
   nameWithType: CG.Green.Host.Pages.Admin.ApiScopes
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail
+  name: Detail
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html
+  commentId: T:CG.Green.Host.Pages.Admin.ApiScopes.Detail
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail
+  nameWithType: Detail
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail._crumbs
+  name: _crumbs
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail__crumbs
+  commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.Detail._crumbs
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail._crumbs
+  nameWithType: Detail._crumbs
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail._isLoading
+  name: _isLoading
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail__isLoading
+  commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.Detail._isLoading
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail._isLoading
+  nameWithType: Detail._isLoading
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail._model
+  name: _model
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail__model
+  commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.Detail._model
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail._model
+  nameWithType: Detail._model
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.ApiScopeName
+  name: ApiScopeName
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_ApiScopeName
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Detail.ApiScopeName
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.ApiScopeName
+  nameWithType: Detail.ApiScopeName
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.ApiScopeName*
+  name: ApiScopeName
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_ApiScopeName_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.ApiScopeName
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.ApiScopeName
+  nameWithType: Detail.ApiScopeName
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.DialogService
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_DialogService
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Detail.DialogService
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.DialogService
+  nameWithType: Detail.DialogService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.DialogService*
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_DialogService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.DialogService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.DialogService
+  nameWithType: Detail.DialogService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.GreenApi
+  name: GreenApi
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_GreenApi
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Detail.GreenApi
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.GreenApi
+  nameWithType: Detail.GreenApi
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.GreenApi*
+  name: GreenApi
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_GreenApi_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.GreenApi
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.GreenApi
+  nameWithType: Detail.GreenApi
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.HttpContextAccessor
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_HttpContextAccessor
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Detail.HttpContextAccessor
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.HttpContextAccessor
+  nameWithType: Detail.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.HttpContextAccessor*
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_HttpContextAccessor_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.HttpContextAccessor
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.HttpContextAccessor
+  nameWithType: Detail.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.LoadDataAsync
+  name: LoadDataAsync()
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_LoadDataAsync
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Detail.LoadDataAsync
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.LoadDataAsync()
+  nameWithType: Detail.LoadDataAsync()
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.LoadDataAsync*
+  name: LoadDataAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_LoadDataAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.LoadDataAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.LoadDataAsync
+  nameWithType: Detail.LoadDataAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.Logger
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_Logger
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Detail.Logger
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.Logger
+  nameWithType: Detail.Logger
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.Logger*
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_Logger_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.Logger
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.Logger
+  nameWithType: Detail.Logger
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.NavigationManager
+  name: NavigationManager
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_NavigationManager
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Detail.NavigationManager
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.NavigationManager
+  nameWithType: Detail.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.NavigationManager*
+  name: NavigationManager
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_NavigationManager_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.NavigationManager
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.NavigationManager
+  nameWithType: Detail.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnInitializedAsync
+  name: OnInitializedAsync()
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_OnInitializedAsync
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnInitializedAsync
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnInitializedAsync()
+  nameWithType: Detail.OnInitializedAsync()
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnInitializedAsync*
+  name: OnInitializedAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_OnInitializedAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnInitializedAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnInitializedAsync
+  nameWithType: Detail.OnInitializedAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnValidSubmitAsync
+  name: OnValidSubmitAsync()
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_OnValidSubmitAsync
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnValidSubmitAsync
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnValidSubmitAsync()
+  nameWithType: Detail.OnValidSubmitAsync()
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnValidSubmitAsync*
+  name: OnValidSubmitAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_OnValidSubmitAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnValidSubmitAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.OnValidSubmitAsync
+  nameWithType: Detail.OnValidSubmitAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.SnackbarService
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_SnackbarService
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Detail.SnackbarService
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.SnackbarService
+  nameWithType: Detail.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.SnackbarService*
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_SnackbarService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.SnackbarService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.SnackbarService
+  nameWithType: Detail.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.UserName
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_UserName
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Detail.UserName
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.UserName
+  nameWithType: Detail.UserName
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Detail.UserName*
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Detail.html#CG_Green_Host_Pages_Admin_ApiScopes_Detail_UserName_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Detail.UserName
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Detail.UserName
+  nameWithType: Detail.UserName
 - uid: CG.Green.Host.Pages.Admin.ApiScopes.Index
   name: Index
   href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html
   commentId: T:CG.Green.Host.Pages.Admin.ApiScopes.Index
   fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index
   nameWithType: Index
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index._apiScopes
+  name: _apiScopes
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index__apiScopes
+  commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.Index._apiScopes
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index._apiScopes
+  nameWithType: Index._apiScopes
 - uid: CG.Green.Host.Pages.Admin.ApiScopes.Index._crumbs
   name: _crumbs
   href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index__crumbs
   commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.Index._crumbs
   fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index._crumbs
   nameWithType: Index._crumbs
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index._gridSearchString
+  name: _gridSearchString
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index__gridSearchString
+  commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.Index._gridSearchString
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index._gridSearchString
+  nameWithType: Index._gridSearchString
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index._isLoading
+  name: _isLoading
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index__isLoading
+  commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.Index._isLoading
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index._isLoading
+  nameWithType: Index._isLoading
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.DialogService
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_DialogService
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Index.DialogService
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.DialogService
+  nameWithType: Index.DialogService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.DialogService*
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_DialogService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.DialogService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.DialogService
+  nameWithType: Index.DialogService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc(EditApiScopeVM,System.String)
+  name: FilterFunc(EditApiScopeVM, String)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_FilterFunc_EditApiScopeVM_System_String_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc(EditApiScopeVM,System.String)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc(EditApiScopeVM, System.String)
+  nameWithType: Index.FilterFunc(EditApiScopeVM, String)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc*
+  name: FilterFunc
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_FilterFunc_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc
+  nameWithType: Index.FilterFunc
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc1(EditApiScopeVM)
+  name: FilterFunc1(EditApiScopeVM)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_FilterFunc1_EditApiScopeVM_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc1(EditApiScopeVM)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc1(EditApiScopeVM)
+  nameWithType: Index.FilterFunc1(EditApiScopeVM)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc1*
+  name: FilterFunc1
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_FilterFunc1_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc1
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.FilterFunc1
+  nameWithType: Index.FilterFunc1
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.GreenApi
+  name: GreenApi
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_GreenApi
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Index.GreenApi
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.GreenApi
+  nameWithType: Index.GreenApi
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.GreenApi*
+  name: GreenApi
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_GreenApi_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.GreenApi
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.GreenApi
+  nameWithType: Index.GreenApi
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.HttpContextAccessor
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_HttpContextAccessor
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Index.HttpContextAccessor
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.HttpContextAccessor
+  nameWithType: Index.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.HttpContextAccessor*
+  name: HttpContextAccessor
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_HttpContextAccessor_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.HttpContextAccessor
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.HttpContextAccessor
+  nameWithType: Index.HttpContextAccessor
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.LoadDataAsync
+  name: LoadDataAsync()
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_LoadDataAsync
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Index.LoadDataAsync
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.LoadDataAsync()
+  nameWithType: Index.LoadDataAsync()
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.LoadDataAsync*
+  name: LoadDataAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_LoadDataAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.LoadDataAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.LoadDataAsync
+  nameWithType: Index.LoadDataAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.Logger
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_Logger
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Index.Logger
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.Logger
+  nameWithType: Index.Logger
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.Logger*
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_Logger_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.Logger
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.Logger
+  nameWithType: Index.Logger
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.NavigationManager
+  name: NavigationManager
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_NavigationManager
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Index.NavigationManager
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.NavigationManager
+  nameWithType: Index.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.NavigationManager*
+  name: NavigationManager
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_NavigationManager_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.NavigationManager
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.NavigationManager
+  nameWithType: Index.NavigationManager
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnCreateAsync
+  name: OnCreateAsync()
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_OnCreateAsync
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Index.OnCreateAsync
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnCreateAsync()
+  nameWithType: Index.OnCreateAsync()
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnCreateAsync*
+  name: OnCreateAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_OnCreateAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.OnCreateAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnCreateAsync
+  nameWithType: Index.OnCreateAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnDeleteAsync(EditApiScopeVM)
+  name: OnDeleteAsync(EditApiScopeVM)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_OnDeleteAsync_EditApiScopeVM_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Index.OnDeleteAsync(EditApiScopeVM)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnDeleteAsync(EditApiScopeVM)
+  nameWithType: Index.OnDeleteAsync(EditApiScopeVM)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnDeleteAsync*
+  name: OnDeleteAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_OnDeleteAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.OnDeleteAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnDeleteAsync
+  nameWithType: Index.OnDeleteAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnEditAsync(EditApiScopeVM)
+  name: OnEditAsync(EditApiScopeVM)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_OnEditAsync_EditApiScopeVM_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Index.OnEditAsync(EditApiScopeVM)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnEditAsync(EditApiScopeVM)
+  nameWithType: Index.OnEditAsync(EditApiScopeVM)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnEditAsync*
+  name: OnEditAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_OnEditAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.OnEditAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnEditAsync
+  nameWithType: Index.OnEditAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnInitializedAsync
+  name: OnInitializedAsync()
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_OnInitializedAsync
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.Index.OnInitializedAsync
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnInitializedAsync()
+  nameWithType: Index.OnInitializedAsync()
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnInitializedAsync*
+  name: OnInitializedAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_OnInitializedAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.OnInitializedAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.OnInitializedAsync
+  nameWithType: Index.OnInitializedAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.SnackbarService
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_SnackbarService
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Index.SnackbarService
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.SnackbarService
+  nameWithType: Index.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.SnackbarService*
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_SnackbarService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.SnackbarService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.SnackbarService
+  nameWithType: Index.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.UserName
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_UserName
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.Index.UserName
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.UserName
+  nameWithType: Index.UserName
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.Index.UserName*
+  name: UserName
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.Index.html#CG_Green_Host_Pages_Admin_ApiScopes_Index_UserName_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.Index.UserName
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.Index.UserName
+  nameWithType: Index.UserName
 - uid: CG.Green.Host.Pages.Admin.Clients
   name: CG.Green.Host.Pages.Admin.Clients
   href: api/CG.Green.Host.Pages.Admin.Clients.html
@@ -7098,6 +7502,129 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.AllowedGrantTypesExtensions.ToAllowedGrantTypes
   nameWithType: AllowedGrantTypesExtensions.ToAllowedGrantTypes
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM
+  name: EditApiScopeVM
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html
+  commentId: T:CG.Green.Host.ViewModels.EditApiScopeVM
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM
+  nameWithType: EditApiScopeVM
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Description
+  name: Description
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Description
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.Description
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Description
+  nameWithType: EditApiScopeVM.Description
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Description*
+  name: Description
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Description_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.Description
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Description
+  nameWithType: EditApiScopeVM.Description
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.DisplayName
+  name: DisplayName
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_DisplayName
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.DisplayName
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.DisplayName
+  nameWithType: EditApiScopeVM.DisplayName
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.DisplayName*
+  name: DisplayName
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_DisplayName_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.DisplayName
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.DisplayName
+  nameWithType: EditApiScopeVM.DisplayName
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Emphasize
+  name: Emphasize
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Emphasize
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.Emphasize
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Emphasize
+  nameWithType: EditApiScopeVM.Emphasize
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Emphasize*
+  name: Emphasize
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Emphasize_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.Emphasize
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Emphasize
+  nameWithType: EditApiScopeVM.Emphasize
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Enabled
+  name: Enabled
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Enabled
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.Enabled
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Enabled
+  nameWithType: EditApiScopeVM.Enabled
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Enabled*
+  name: Enabled
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Enabled_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.Enabled
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Enabled
+  nameWithType: EditApiScopeVM.Enabled
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Name
+  name: Name
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Name
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.Name
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Name
+  nameWithType: EditApiScopeVM.Name
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Name*
+  name: Name
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Name_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.Name
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Name
+  nameWithType: EditApiScopeVM.Name
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Properties
+  name: Properties
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Properties
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.Properties
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Properties
+  nameWithType: EditApiScopeVM.Properties
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Properties*
+  name: Properties
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Properties_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.Properties
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Properties
+  nameWithType: EditApiScopeVM.Properties
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Required
+  name: Required
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Required
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.Required
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Required
+  nameWithType: EditApiScopeVM.Required
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.Required*
+  name: Required
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_Required_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.Required
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.Required
+  nameWithType: EditApiScopeVM.Required
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.ShowInDiscoveryDocument
+  name: ShowInDiscoveryDocument
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_ShowInDiscoveryDocument
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.ShowInDiscoveryDocument
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.ShowInDiscoveryDocument
+  nameWithType: EditApiScopeVM.ShowInDiscoveryDocument
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.ShowInDiscoveryDocument*
+  name: ShowInDiscoveryDocument
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_ShowInDiscoveryDocument_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.ShowInDiscoveryDocument
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.ShowInDiscoveryDocument
+  nameWithType: EditApiScopeVM.ShowInDiscoveryDocument
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.UserClaims
+  name: UserClaims
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_UserClaims
+  commentId: P:CG.Green.Host.ViewModels.EditApiScopeVM.UserClaims
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.UserClaims
+  nameWithType: EditApiScopeVM.UserClaims
+- uid: CG.Green.Host.ViewModels.EditApiScopeVM.UserClaims*
+  name: UserClaims
+  href: api/CG.Green.Host.ViewModels.EditApiScopeVM.html#CG_Green_Host_ViewModels_EditApiScopeVM_UserClaims_
+  commentId: Overload:CG.Green.Host.ViewModels.EditApiScopeVM.UserClaims
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditApiScopeVM.UserClaims
+  nameWithType: EditApiScopeVM.UserClaims
 - uid: CG.Green.Host.ViewModels.EditClaimVM
   name: EditClaimVM
   href: api/CG.Green.Host.ViewModels.EditClaimVM.html
@@ -7924,11 +8451,11 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.ApiScopeManager.CountAsync
   nameWithType: ApiScopeManager.CountAsync
-- uid: CG.Green.Managers.ApiScopeManager.CreateAsync(ApiScope,System.String,CancellationToken)
+- uid: CG.Green.Managers.ApiScopeManager.CreateAsync(Duende.IdentityServer.Models.ApiScope,System.String,CancellationToken)
   name: CreateAsync(ApiScope, String, CancellationToken)
-  href: api/CG.Green.Managers.ApiScopeManager.html#CG_Green_Managers_ApiScopeManager_CreateAsync_ApiScope_System_String_CancellationToken_
-  commentId: M:CG.Green.Managers.ApiScopeManager.CreateAsync(ApiScope,System.String,CancellationToken)
-  fullName: CG.Green.Managers.ApiScopeManager.CreateAsync(ApiScope, System.String, CancellationToken)
+  href: api/CG.Green.Managers.ApiScopeManager.html#CG_Green_Managers_ApiScopeManager_CreateAsync_Duende_IdentityServer_Models_ApiScope_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.ApiScopeManager.CreateAsync(Duende.IdentityServer.Models.ApiScope,System.String,CancellationToken)
+  fullName: CG.Green.Managers.ApiScopeManager.CreateAsync(Duende.IdentityServer.Models.ApiScope, System.String, CancellationToken)
   nameWithType: ApiScopeManager.CreateAsync(ApiScope, String, CancellationToken)
 - uid: CG.Green.Managers.ApiScopeManager.CreateAsync*
   name: CreateAsync
@@ -7937,11 +8464,11 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.ApiScopeManager.CreateAsync
   nameWithType: ApiScopeManager.CreateAsync
-- uid: CG.Green.Managers.ApiScopeManager.DeleteAsync(ApiScope,System.String,CancellationToken)
+- uid: CG.Green.Managers.ApiScopeManager.DeleteAsync(Duende.IdentityServer.Models.ApiScope,System.String,CancellationToken)
   name: DeleteAsync(ApiScope, String, CancellationToken)
-  href: api/CG.Green.Managers.ApiScopeManager.html#CG_Green_Managers_ApiScopeManager_DeleteAsync_ApiScope_System_String_CancellationToken_
-  commentId: M:CG.Green.Managers.ApiScopeManager.DeleteAsync(ApiScope,System.String,CancellationToken)
-  fullName: CG.Green.Managers.ApiScopeManager.DeleteAsync(ApiScope, System.String, CancellationToken)
+  href: api/CG.Green.Managers.ApiScopeManager.html#CG_Green_Managers_ApiScopeManager_DeleteAsync_Duende_IdentityServer_Models_ApiScope_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.ApiScopeManager.DeleteAsync(Duende.IdentityServer.Models.ApiScope,System.String,CancellationToken)
+  fullName: CG.Green.Managers.ApiScopeManager.DeleteAsync(Duende.IdentityServer.Models.ApiScope, System.String, CancellationToken)
   nameWithType: ApiScopeManager.DeleteAsync(ApiScope, String, CancellationToken)
 - uid: CG.Green.Managers.ApiScopeManager.DeleteAsync*
   name: DeleteAsync
@@ -7963,11 +8490,24 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.ApiScopeManager.FindAllAsync
   nameWithType: ApiScopeManager.FindAllAsync
-- uid: CG.Green.Managers.ApiScopeManager.UpdateAsync(ApiScope,System.String,CancellationToken)
+- uid: CG.Green.Managers.ApiScopeManager.FindByNameAsync(System.String,CancellationToken)
+  name: FindByNameAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.ApiScopeManager.html#CG_Green_Managers_ApiScopeManager_FindByNameAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.ApiScopeManager.FindByNameAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.ApiScopeManager.FindByNameAsync(System.String, CancellationToken)
+  nameWithType: ApiScopeManager.FindByNameAsync(String, CancellationToken)
+- uid: CG.Green.Managers.ApiScopeManager.FindByNameAsync*
+  name: FindByNameAsync
+  href: api/CG.Green.Managers.ApiScopeManager.html#CG_Green_Managers_ApiScopeManager_FindByNameAsync_
+  commentId: Overload:CG.Green.Managers.ApiScopeManager.FindByNameAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.ApiScopeManager.FindByNameAsync
+  nameWithType: ApiScopeManager.FindByNameAsync
+- uid: CG.Green.Managers.ApiScopeManager.UpdateAsync(Duende.IdentityServer.Models.ApiScope,System.String,CancellationToken)
   name: UpdateAsync(ApiScope, String, CancellationToken)
-  href: api/CG.Green.Managers.ApiScopeManager.html#CG_Green_Managers_ApiScopeManager_UpdateAsync_ApiScope_System_String_CancellationToken_
-  commentId: M:CG.Green.Managers.ApiScopeManager.UpdateAsync(ApiScope,System.String,CancellationToken)
-  fullName: CG.Green.Managers.ApiScopeManager.UpdateAsync(ApiScope, System.String, CancellationToken)
+  href: api/CG.Green.Managers.ApiScopeManager.html#CG_Green_Managers_ApiScopeManager_UpdateAsync_Duende_IdentityServer_Models_ApiScope_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.ApiScopeManager.UpdateAsync(Duende.IdentityServer.Models.ApiScope,System.String,CancellationToken)
+  fullName: CG.Green.Managers.ApiScopeManager.UpdateAsync(Duende.IdentityServer.Models.ApiScope, System.String, CancellationToken)
   nameWithType: ApiScopeManager.UpdateAsync(ApiScope, String, CancellationToken)
 - uid: CG.Green.Managers.ApiScopeManager.UpdateAsync*
   name: UpdateAsync
@@ -8802,6 +9342,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.IApiScopeManager.FindAllAsync
   nameWithType: IApiScopeManager.FindAllAsync
+- uid: CG.Green.Managers.IApiScopeManager.FindByNameAsync(System.String,CancellationToken)
+  name: FindByNameAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IApiScopeManager.html#CG_Green_Managers_IApiScopeManager_FindByNameAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IApiScopeManager.FindByNameAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IApiScopeManager.FindByNameAsync(System.String, CancellationToken)
+  nameWithType: IApiScopeManager.FindByNameAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IApiScopeManager.FindByNameAsync*
+  name: FindByNameAsync
+  href: api/CG.Green.Managers.IApiScopeManager.html#CG_Green_Managers_IApiScopeManager_FindByNameAsync_
+  commentId: Overload:CG.Green.Managers.IApiScopeManager.FindByNameAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IApiScopeManager.FindByNameAsync
+  nameWithType: IApiScopeManager.FindByNameAsync
 - uid: CG.Green.Managers.IApiScopeManager.UpdateAsync(ApiScope,System.String,CancellationToken)
   name: UpdateAsync(ApiScope, String, CancellationToken)
   href: api/CG.Green.Managers.IApiScopeManager.html#CG_Green_Managers_IApiScopeManager_UpdateAsync_ApiScope_System_String_CancellationToken_
@@ -9968,6 +10521,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Repositories.IApiScopeRepository.FindAllAsync
   nameWithType: IApiScopeRepository.FindAllAsync
+- uid: CG.Green.Repositories.IApiScopeRepository.FindByNameAsync(System.String,CancellationToken)
+  name: FindByNameAsync(String, CancellationToken)
+  href: api/CG.Green.Repositories.IApiScopeRepository.html#CG_Green_Repositories_IApiScopeRepository_FindByNameAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Repositories.IApiScopeRepository.FindByNameAsync(System.String,CancellationToken)
+  fullName: CG.Green.Repositories.IApiScopeRepository.FindByNameAsync(System.String, CancellationToken)
+  nameWithType: IApiScopeRepository.FindByNameAsync(String, CancellationToken)
+- uid: CG.Green.Repositories.IApiScopeRepository.FindByNameAsync*
+  name: FindByNameAsync
+  href: api/CG.Green.Repositories.IApiScopeRepository.html#CG_Green_Repositories_IApiScopeRepository_FindByNameAsync_
+  commentId: Overload:CG.Green.Repositories.IApiScopeRepository.FindByNameAsync
+  isSpec: "True"
+  fullName: CG.Green.Repositories.IApiScopeRepository.FindByNameAsync
+  nameWithType: IApiScopeRepository.FindByNameAsync
 - uid: CG.Green.Repositories.IApiScopeRepository.UpdateAsync(ApiScope,CancellationToken)
   name: UpdateAsync(ApiScope, CancellationToken)
   href: api/CG.Green.Repositories.IApiScopeRepository.html#CG_Green_Repositories_IApiScopeRepository_UpdateAsync_ApiScope_CancellationToken_
