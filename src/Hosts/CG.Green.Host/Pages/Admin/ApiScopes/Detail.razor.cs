@@ -109,7 +109,7 @@ public partial class Detail
             {
                 new BreadcrumbItem("Home", href: "/"),
                 new BreadcrumbItem("Admin", href: "/admin", disabled: true),
-                new BreadcrumbItem("API scopes", href: "/admin/apiscopes"),
+                new BreadcrumbItem("APIScopes", href: "/admin/apiscopes"),
                 new BreadcrumbItem("Details", href: $"/admin/apiscopes/detail/{Uri.EscapeDataString(ApiScopeName)}")
             };
 

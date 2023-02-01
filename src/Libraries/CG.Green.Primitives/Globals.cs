@@ -42,31 +42,28 @@ public static class Globals
         }
 
         /// <summary>
-        /// This class contains sizes for <see cref="Client"/> properties.
+        /// This class contains sizes for Client properties.
         /// </summary>
         public static class Clients
         {
             /// <summary>
-            /// This constant represents the length of the <see cref="Client.ClientName"/> 
-            /// property.
+            /// This constant represents the length of the ClientName property.
             /// </summary>
             public const int ClientNameLength = 200;
 
             /// <summary>
-            /// This constant represents the length of the <see cref="Client.ClientId"/> 
-            /// property.
+            /// This constant represents the length of the ClientId property.
             /// </summary>
             public const int ClientIdLength = 200;
 
             /// <summary>
-            /// This constant represents the length of the <see cref="Client.FrontChannelLogoutUri"/> 
-            /// property.
+            /// This constant represents the length of the FrontChannelLogoutUri property.
             /// </summary>
             public const int FrontChannelLogoutUriLength = 2000;
         }
 
         /// <summary>
-        /// This class contains sizes for <see cref="GreenUserRole"/> properties.
+        /// This class contains sizes for GreenUserRole properties.
         /// </summary>
         public static class Roles
         {
@@ -84,25 +81,22 @@ public static class Globals
         }
 
         /// <summary>
-        /// This class contains sizes for <see cref="GreenUser"/> properties.
+        /// This class contains sizes for GreenUser properties.
         /// </summary>
         public static class Users
         {
             /// <summary>
-            /// This constant represents the length of the <see cref="GreenUser.UserName"/> 
-            /// property.
+            /// This constant represents the length of the UserName property.
             /// </summary>
             public const int UserNameLength = 256;
 
             /// <summary>
-            /// This constant represents the length of the <see cref="GreenUser.PasswordHash"/> 
-            /// property.
+            /// This constant represents the length of the PasswordHash property.
             /// </summary>
             public const int PasswordHashLength = 100;
 
             /// <summary>
-            /// This constant represents the length of the <see cref="GreenUser.Email"/> 
-            /// property.
+            /// This constant represents the length of the Email property.
             /// </summary>
             public const int EmailLength = 256;
         }        

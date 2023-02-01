@@ -1,13 +1,14 @@
 # CG.Green: 
 
 [![Build Status](https://dev.azure.com/codegator/CG.Green/_apis/build/status/CodeGator.CG.Green?branchName=main)](https://dev.azure.com/codegator/CG.Green/_build/latest?definitionId=105&branchName=main)
-[![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Green/index.html)
+[![Board Status](https://dev.azure.com/codegator/796f6869-3c91-495d-b4dd-16562d48d319/4b6e700e-dd5c-440a-9c8e-d63aebfc018e/_apis/work/boardbadge/f6d51148-5732-41b6-a699-2b0fdb281c56)](https://dev.azure.com/codegator/796f6869-3c91-495d-b4dd-16562d48d319/_boards/board/t/4b6e700e-dd5c-440a-9c8e-d63aebfc018e/Issues/)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Green/105)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Green/discussions)
+[![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Green/index.html)
 
 ### What does it do?
 
-Green is an idea for an identity microservice. The scenario is: You configure your website / microservice / mobile app / whatever to point to CG.Green, and it takes care of all the messy identity related details, for you. 
+Green is an idea for an identity microservice. Essentially, we've stood up the ASP.NET and Duende libraries as a microservice, then we added some additional administrative features.
 
 ### What libraries are used, on the back-end?
 

@@ -1,7 +1,7 @@
 ﻿
 namespace CG.Green.Managers;
 
-// <summary>
+/// <summary>
 /// This interface represents an object that manages operations related to
 /// <see cref="GreenUserClaim"/> objects.
 /// </summary>

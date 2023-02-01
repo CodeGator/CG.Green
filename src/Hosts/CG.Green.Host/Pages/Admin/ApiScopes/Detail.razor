@@ -27,40 +27,68 @@ else
         <MudGrid>
             <MudItem xs="12">
                 <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
-            </MudItem>
-            <MudItem xs="12">
+                </MudItem>
+                <MudItem xs="12">
                 <MudTextField AutoFocus
-                              Required
-                              Immediate
-                              Counter="@(Globals.Models.ApiScopes.NameLength)"
-                              Class="ml-auto"
-                              Variant="Variant.Outlined"
-                              Label="Name"
-                              For="@(() => _model.Name)"
-                              @bind-Value="@_model.Name" />
-            </MudItem>
-            <MudItem xs="12">
+                                Required
+                                Immediate
+                          Counter="@(Globals.Models.ApiScopes.NameLength)"
+                          Class="ml-auto"
+                          Variant="Variant.Outlined"
+                          Label="Name"
+                          For="@(() => _model.Name)"
+                          @bind-Value="@_model.Name" />
+                </MudItem>
+                <MudItem xs="12">
                 <MudTextField Immediate
-                              Counter="@(Globals.Models.ApiScopes.DisplayNameLength)"
-                              Class="ml-auto"
-                              Variant="Variant.Outlined"
-                              Label="Display Name"
-                              For="@(() => _model.DisplayName)"
-                              @bind-Value="@_model.DisplayName" />
-            </MudItem>
-            <MudItem xs="12">
+                          Counter="@(Globals.Models.ApiScopes.DisplayNameLength)"
+                          Class="ml-auto"
+                          Variant="Variant.Outlined"
+                          Label="Display Name"
+                          For="@(() => _model.DisplayName)"
+                          @bind-Value="@_model.DisplayName" />
+                </MudItem>
+                <MudItem xs="12">
                 <MudTextField Immediate
-                              Counter="@(Globals.Models.ApiScopes.DescriptionLength)"
-                              Class="ml-auto"
-                              Variant="Variant.Outlined"
-                              Label="Description"
-                              Lines="2"
-                              For="@(() => _model.Description)"
-                              @bind-Value="@_model.Description" />
-            </MudItem>
-            <MudItem xs="12">
+                          Counter="@(Globals.Models.ApiScopes.DescriptionLength)"
+                          Class="ml-auto"
+                          Variant="Variant.Outlined"
+                          Label="Description"
+                          Lines="2"
+                          For="@(() => _model.Description)"
+                          @bind-Value="@_model.Description" />
+                </MudItem>
+                <MudItem xs="4">
+                <MudCheckBox T="bool"
+                         Class="mb-n3"
+                         @bind-Checked="_model.Enabled"
+                         Label="Is Enabled" />
+                <MudText Class="text-muted ml-3" Typo="Typo.caption">Enable/disable the API scope.</MudText>
+                </MudItem>
+                <MudItem xs="4">
+                <MudCheckBox T="bool"
+                         Class="mb-n3"
+                         @bind-Checked="_model.Required"
+                         Label="Is Required" />
+                <MudText Class="text-muted ml-3" Typo="Typo.caption">Is the scope required?</MudText>
+                </MudItem>
+                <MudItem xs="4">
+                <MudCheckBox T="bool"
+                         Class="mb-n3"
+                         @bind-Checked="_model.Emphasize"
+                         Label="Emphasize" />
+                <MudText Class="text-muted ml-3" Typo="Typo.caption">Emphasize in discovery documents?</MudText>
+                </MudItem>
+                <MudItem xs="4">
+                <MudCheckBox T="bool"
+                         Class="mb-n3"
+                         @bind-Checked="_model.ShowInDiscoveryDocument"
+                         Label="Show in discovery" />
+                <MudText Class="text-muted ml-3" Typo="Typo.caption">Show this scope in discovery document?</MudText>
+                </MudItem>
+                <MudItem xs="12">
                 <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
-            </MudItem>
-        </MudGrid>
-    </EditForm>
+                </MudItem>
+                </MudGrid>
+                </EditForm>
 }
