@@ -8,25 +8,33 @@
 
 ### What does it do?
 
-Green is an idea for an identity microservice. Essentially, we've stood up the ASP.NET and Duende libraries as a microservice, then we added some additional administrative features.
+Green is an idea for an identity microservice. Essentially, we stood up the ASP.NET and Duende libraries as a ASP.NET (Blazor) microservice, then we added some additional administrative features.
 
-### What libraries are used, on the back-end?
+### What works, and what doesn't, at this point?
 
-If you're saying to yourself "Self! There's no way CodeGator wrote an entire identity microservice from scratch!", then you'd be right. Here are some of the libraries we leveraged:
+We're tracking the status of the project in Azure devops [HERE](https://dev.azure.com/codegator/796f6869-3c91-495d-b4dd-16562d48d319/_boards/board/t/4b6e700e-dd5c-440a-9c8e-d63aebfc018e/Issues/), but, essentially, we're a few admin pages away from an MVP.
+
+### What does the roadmap look like?
+
+We're not to the point where we can commit to a feature plan, yet. Keep checking back.
+
+### What are the main dependencies?
 
 * [Duende](https://duendesoftware.com/) (The library formerly known as IdentityServer4)
 
-* [Microsoft Identity UI](https://github.com/dotnet/aspnetcore) (Reliable, if a bit stodgy)
+* [Microsoft Identity UI](https://github.com/dotnet/aspnetcore)
+
+* [MudBlazor](https://mudblazor.com/)
 
 ### What OS(s) does it support?
 
-* [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) 
+* [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) (of course)
 
-* [Linux](https://en.wikipedia.org/wiki/Linux) (not tested)
+* [Linux](https://en.wikipedia.org/wiki/Linux) (not fully tested)
 
-* [macOS](https://en.wikipedia.org/wiki/MacOS) (not tested)
+* [macOS](https://en.wikipedia.org/wiki/MacOS) (not tested at all)
 
-### What runtime(s) does it support?
+### What .NET runtime(s) does it support?
 
 * [.NET 7.x](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or higher
 
