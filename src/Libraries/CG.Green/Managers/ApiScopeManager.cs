@@ -356,7 +356,7 @@ internal class ApiScopeManager : IApiScopeManager
                 client,
                 cancellationToken
                 ).ConfigureAwait(false);
-
+                        
             // Return the results.
             return updatedApiScope;
         }

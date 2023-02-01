@@ -72,4 +72,34 @@ public class EditApiScopeVM
     public IDictionary<string, string> Properties { get; set; } = new Dictionary<string, string>();
 
     #endregion
+
+    // *******************************************************************
+    // Public methods.
+    // *******************************************************************
+
+    #region Public methods
+
+    /// <summary>
+    /// This method converts the object to a Duende <see cref="ApiScope"/>
+    /// object.
+    /// </summary>
+    /// <returns>A <see cref="ApiScope"/> object.</returns>
+    public ApiScope ToDuende()
+    {
+        var obj = new ApiScope()
+        {
+            Name = Name,
+            DisplayName = DisplayName,
+            Description = Description,
+            Required = Required,
+            Enabled = Enabled,
+            ShowInDiscoveryDocument = ShowInDiscoveryDocument,
+            Emphasize = Emphasize,
+            UserClaims = UserClaims.Select(x => x.Value).ToList(),
+            Properties = Properties
+        };
+        return obj;
+    }
+
+    #endregion
 }

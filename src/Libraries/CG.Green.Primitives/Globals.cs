@@ -42,6 +42,17 @@ public static class Globals
         }
 
         /// <summary>
+        /// This class contains sizes for Claim properties.
+        /// </summary>
+        public static class Claims
+        {
+            /// <summary>
+            /// This constant represents the length of the Type property.
+            /// </summary>
+            public const int TypeLength = 200;
+        }
+
+        /// <summary>
         /// This class contains sizes for Client properties.
         /// </summary>
         public static class Clients

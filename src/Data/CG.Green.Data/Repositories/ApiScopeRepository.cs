@@ -297,6 +297,7 @@ internal class ApiScopeRepository : IApiScopeRepository
             // Perform the apiScope search.
             var scopes = await _configurationDbContext.ApiScopes
                 .Include(x => x.UserClaims)
+                .Include(x => x.Properties)
                 .ToListAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
@@ -345,6 +346,7 @@ internal class ApiScopeRepository : IApiScopeRepository
             var scope = await _configurationDbContext.ApiScopes.Where(
                 x => x.Name == name
                 ).Include(x => x.UserClaims)
+                .Include(x => x.Properties)
                 .FirstOrDefaultAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
@@ -401,7 +403,9 @@ internal class ApiScopeRepository : IApiScopeRepository
             // Look for the given entity.
             var entity = await _configurationDbContext.ApiScopes.Where(x =>
                 x.Name == apiScope.Name
-                ).FirstOrDefaultAsync(
+                ).Include(x => x.UserClaims)
+                 .Include(x => x.Properties)
+                 .FirstOrDefaultAsync(
                     cancellationToken
                     ).ConfigureAwait(false);
 
@@ -420,6 +424,40 @@ internal class ApiScopeRepository : IApiScopeRepository
                 nameof(ApiScope),
                 nameof(ConfigurationDbContext)
                 );
+
+            // Update the editable properties.
+            entity.Name = apiScope.Name;
+            entity.DisplayName = apiScope.DisplayName;
+            entity.Description = apiScope.Description;
+            entity.Required = apiScope.Required;
+            entity.Enabled = apiScope.Enabled;
+            entity.Emphasize = apiScope.Emphasize;
+
+            // Find any claims that were deleted.
+            var deletedClaims = entity.UserClaims.Where(p1 =>
+                apiScope.UserClaims.All(p2 => p2 != p1.Type)
+                ).ToList();
+
+            // Loop and remove claims.
+            foreach (var claim in deletedClaims)
+            {
+                entity.UserClaims.Remove(claim);
+            }
+
+            // Find any claims that were added.
+            var addedClaims = apiScope.UserClaims.Where(p1 =>
+                entity.UserClaims.All(p2 => p2.Type != p1)
+                ).ToList();
+
+            // Loop and add claims.
+            foreach (var claim in addedClaims)
+            {
+                entity.UserClaims.Add(new Duende.IdentityServer.EntityFramework.Entities.ApiScopeClaim()
+                {
+                    ScopeId = entity.Id,
+                    Type = claim
+                });
+            }
 
             // Log what we are about to do.
             _logger.LogDebug(

@@ -1,6 +1,4 @@
 ﻿
-using Microsoft.AspNetCore.Identity;
-
 namespace CG.Green.Managers;
 
 /// <summary>

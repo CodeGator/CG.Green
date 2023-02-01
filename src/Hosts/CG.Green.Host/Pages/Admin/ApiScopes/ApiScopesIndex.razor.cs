@@ -1,12 +1,10 @@
-﻿using System.Data;
-using static CG.Green.Globals.Models;
-
+﻿
 namespace CG.Green.Host.Pages.Admin.ApiScopes;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="Index"/> page.
+/// This class is the code-behind for the <see cref="ApiScopesIndex"/> page.
 /// </summary>
-public partial class Index
+public partial class ApiScopesIndex
 {
     // *******************************************************************
     // Fields.
@@ -87,7 +85,7 @@ public partial class Index
     /// This property contains the logger for this page.
     /// </summary>
     [Inject]
-    protected ILogger<Index> Logger { get; set; } = null!;
+    protected ILogger<ApiScopesIndex> Logger { get; set; } = null!;
 
     #endregion
 
@@ -192,7 +190,101 @@ public partial class Index
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnCreateAsync()
     {
+        try
+        {
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog options."
+                );
 
+            // Create the dialog options.
+            var options = new DialogOptions
+            {
+                MaxWidth = MaxWidth.Small,
+                CloseOnEscapeKey = true,
+                FullWidth = true
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog parameters."
+                );
+
+            // Create the dialog parameters.
+            var parameters = new DialogParameters()
+            {
+                { "Model", new NewApiScopeVM() }
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating new dialog."
+                );
+
+            // Create the dialog.
+            var dialog = DialogService.Show<NewApiScopeDialog>(
+                "Create API Scope",
+                parameters,
+                options
+                );
+
+            // Get the results of the dialog.
+            var result = await dialog.Result;
+
+            // Did the user cancel?
+            if (result.Canceled)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Recovering the dialog model."
+                );
+
+            // Recover the model.
+            var model = (NewApiScopeVM)result.Data;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating the new API scope"
+                );
+
+            // Create the new API scope.
+            var newScope = await GreenApi.ApiScopes.CreateAsync(
+                new ApiScope()
+                {
+                    Name = model.Name
+                },
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Navigating to the API scope detail page."
+                );
+
+            // Go to the detail page.
+            NavigationManager.NavigateTo(
+                $"/admin/apiscopes/detail/{Uri.EscapeDataString(newScope.Name)}"
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to create an API scope!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
     }
 
     // *******************************************************************
@@ -206,7 +298,66 @@ public partial class Index
         EditApiScopeVM apiScope
         )
     {
+        try
+        {
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
 
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the API scope " +
+                $"<b>'{apiScope.Name}'</b> <br /> <br /> Are you <i>sure</i> " +
+                "you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting an API scope."
+                );
+
+            // Delete the API scope.
+            await GreenApi.ApiScopes.DeleteAsync(
+                new ApiScope()
+                {
+                    Name = apiScope.Name
+                },
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Loading data for the page."
+                );
+
+            // Load the API scopes.
+            await LoadDataAsync();
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete an API scope!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
     }
 
     // *******************************************************************

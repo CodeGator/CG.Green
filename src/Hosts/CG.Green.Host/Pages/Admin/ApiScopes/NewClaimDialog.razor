@@ -1,0 +1,28 @@
+﻿<MudDialog>
+    <DialogContent>
+        <EditForm Model="@Model" OnValidSubmit="OnValidSubmit">
+            <MudCard Outlined>
+                <MudCardContent>
+                    <DataAnnotationsValidator />
+                    <MudTextField AutoFocus
+                                        Required
+                                        Immediate
+                                  Counter="@(Globals.Models.Claims.TypeLength)"
+                                  Variant="Variant.Outlined"
+                                  Label="Type"
+                                  For="@(() => Model.Value)"
+                                  Mask="@(new RegexMask(@"^[\.a-zA-Z0-9]*$"))"
+                                  HelperText="Use letters, numbers, or periods to form a claim type."
+                                  @bind-Value="@Model.Value"
+                                  Class="ml-auto" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">Cancel</MudButton>
+                    <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">Save</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </DialogContent>
+</MudDialog>
+
+

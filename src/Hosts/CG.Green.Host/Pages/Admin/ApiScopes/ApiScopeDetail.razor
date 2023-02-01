@@ -26,7 +26,7 @@ else
         <DataAnnotationsValidator />
         <MudGrid>
             <MudItem xs="12">
-                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary" Disabled="@(_isLoading || _tempClaim != null)">Save Changes</MudButton>
                 </MudItem>
                 <MudItem xs="12">
                 <MudTextField AutoFocus
@@ -36,6 +36,8 @@ else
                           Class="ml-auto"
                           Variant="Variant.Outlined"
                           Label="Name"
+                          Mask="@(new RegexMask(@"^[\.a-zA-Z0-9]*$"))"
+                          HelperText="Use letters, numbers, or periods to form a scope name."
                           For="@(() => _model.Name)"
                           @bind-Value="@_model.Name" />
                 </MudItem>
@@ -87,7 +89,64 @@ else
                 <MudText Class="text-muted ml-3" Typo="Typo.caption">Show this scope in discovery document?</MudText>
                 </MudItem>
                 <MudItem xs="12">
-                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+                <div class="groupbox">
+                    <MudText Style="font-size:small" Typo="Typo.body2">Claims</MudText>
+                    <MudTable Items="_model.UserClaims"
+                                Dense
+                                Striped
+                                CanCancelEdit
+                                IsEditRowSwitchingBlocked
+                                RowEditCancel="OnEditClaimCancel"
+                                RowEditCommit="OnEditClaimCommit"
+                                RowEditPreview="OnEditClaimStart"
+                          EditTrigger="TableEditTrigger.EditButton">
+                    <ToolBarContent>
+                        <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                   Variant=" Variant.Filled"
+                                   Disabled="@(_isLoading || _tempClaim != null)"
+                                   Color="Color.Secondary"
+                                   OnClick="OnCreateClaimAsync">Create</MudButton>
+                        <MudSpacer />
+                    </ToolBarContent>
+                    <ColGroup>
+                        <col style="width:90%" />
+                        <col />
+                    </ColGroup>
+                    <HeaderContent>
+                        <MudTh><MudTableSortLabel SortBy="new Func<ClientClaim, object>(x=>x)">Type</MudTableSortLabel></MudTh>
+                        <MudTh></MudTh>
+                    </HeaderContent>
+                    <RowTemplate Context="context2">
+                        <MudTd DataLabel="Type">@context2.Value</MudTd>
+                        <MudTd>
+                            <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                           OnClick="() => OnDeleteClaimAsync(context2)"
+                                           Class="pa-0"
+                                           Disabled="@_isLoading" />
+                        </MudTd>
+                    </RowTemplate>
+                    <RowEditingTemplate Context="context2">
+                        <MudTd DataLabel="Type">
+                            <MudTextField @bind-Value="@context2.Value" />
+                        </MudTd>
+                    </RowEditingTemplate>
+                    <NoRecordsContent>
+                        No claims were found.
+                    </NoRecordsContent>
+                    <LoadingContent>
+                        Loading claims ...
+                    </LoadingContent>
+                    <PagerContent>
+                        <MudTablePager />
+                    </PagerContent>
+                    <EditButtonContent Context="button">
+                        <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                    </EditButtonContent>
+                    </MudTable>
+                </div>
+                </MudItem>
+                <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary" Disabled="@(_isLoading || _tempClaim != null)">Save Changes</MudButton>
                 </MudItem>
                 </MudGrid>
                 </EditForm>

@@ -1,10 +1,10 @@
 ﻿
-namespace CG.Green.Host.Pages.Admin.Users;
+namespace CG.Green.Host.Pages.Admin.ApiScopes;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="NewDialog"/> page.
+/// This class is the code-behind for the <see cref="NewApiScopeDialog"/> page.
 /// </summary>
-public partial class NewDialog
+public partial class NewApiScopeDialog
 {
     // *******************************************************************
     // Properties.
@@ -22,7 +22,7 @@ public partial class NewDialog
     /// This property contains the edit form's model.
     /// </summary>
     [Parameter]
-    public NewUserVM Model { get; set; } = null!;
+    public NewApiScopeVM Model { get; set; } = null!;
 
     /// <summary>
     /// This property contains the dialog service for this page.
@@ -40,7 +40,7 @@ public partial class NewDialog
     /// This property contains the logger for this page.
     /// </summary>
     [Inject]
-    protected ILogger<NewDialog> Logger { get; set; } = null!;
+    protected ILogger<NewApiScopeDialog> Logger { get; set; } = null!;
 
     #endregion
 

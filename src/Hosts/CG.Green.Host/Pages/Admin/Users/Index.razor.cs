@@ -268,7 +268,7 @@ public partial class Index
                 );
 
             // Create the dialog.
-            var dialog = DialogService.Show<NewDialog>(
+            var dialog = DialogService.Show<NewUserDialog>(
                 "Create User",
                 parameters,
                 options

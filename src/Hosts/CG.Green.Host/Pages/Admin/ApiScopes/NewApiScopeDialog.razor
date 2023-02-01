@@ -1,0 +1,28 @@
+﻿<MudDialog>
+    <DialogContent>
+        <EditForm Model="@Model" OnValidSubmit="OnValidSubmit">
+            <MudCard Outlined>
+                <MudCardContent>
+                    <DataAnnotationsValidator />
+                    <MudTextField AutoFocus
+                                        Required
+                                        Immediate
+                                  Counter="@(Globals.Models.ApiScopes.NameLength)"
+                                  Variant="Variant.Outlined"
+                                  Label="Name"
+                                  For="@(() => Model.Name)"
+                                  Mask="@(new RegexMask(@"^[\.a-zA-Z0-9]*$"))"
+                                  HelperText="Use letters, numbers, or periods to form a scope name."
+                                  @bind-Value="@Model.Name"
+                                  Class="ml-auto" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">Cancel</MudButton>
+                    <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">Save</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </DialogContent>
+</MudDialog>
+
+
