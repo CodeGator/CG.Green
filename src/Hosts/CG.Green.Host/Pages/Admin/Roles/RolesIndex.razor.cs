@@ -1,10 +1,10 @@
 ﻿
-namespace CG.Green.Host.Pages.Admin.Users;
+namespace CG.Green.Host.Pages.Admin.Roles;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="Index"/> page.
+/// This class is the code-behind for the <see cref="RolesIndex"/> page.
 /// </summary>
-public partial class Index
+public partial class RolesIndex
 {
     // *******************************************************************
     // Fields.
@@ -19,13 +19,13 @@ public partial class Index
     {
         new BreadcrumbItem("Home", href: "/"),
         new BreadcrumbItem("Admin", href: "/admin", disabled: true),
-        new BreadcrumbItem("Users", href: "/admin/users")
+        new BreadcrumbItem("Roles", href: "/admin/roles")
     };
 
     /// <summary>
-    /// This field contains the list of users.
+    /// This field contains the list of roles.
     /// </summary>
-    internal protected readonly List<GreenUser> _users = new();
+    internal protected List<EditRoleVM> _roles = new();
 
     /// <summary>
     /// This field indicates when the page is loading data.
@@ -35,7 +35,7 @@ public partial class Index
     /// <summary>
     /// This field contains the current search string.
     /// </summary>
-    protected string _gridSearchString = "";
+    internal protected string _gridSearchString = "";
 
     #endregion
 
@@ -85,7 +85,7 @@ public partial class Index
     /// This property contains the logger for this page.
     /// </summary>
     [Inject]
-    protected ILogger<Index> Logger { get; set; } = null!;
+    protected ILogger<RolesIndex> Logger { get; set; } = null!;
 
     #endregion
 
@@ -108,7 +108,7 @@ public partial class Index
                 "Loading data for the page."
                 );
 
-            // Load the users.
+            // Load the roles.
             await LoadDataAsync();
 
             // Log what we are about to do.
@@ -124,7 +124,7 @@ public partial class Index
             // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to fetch users!"
+                "Failed to fetch roles!"
                 );
 
             // Log what we are about to do.
@@ -140,104 +140,19 @@ public partial class Index
     // *******************************************************************
 
     /// <summary>
-    /// This method deletes the given user.
+    /// This method is called to create a new role.
     /// </summary>
-    /// <param name="user">The user to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
-    protected async Task OnDeleteAsync(
-        GreenUser user
-        )
-    {
-        try
-        {
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Prompting the caller."
-                );
-
-            // Prompt the user.
-            var result = await DialogService.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: new MarkupString("This will delete the user " +
-                $"<b>'{user.UserName}'</b> <br /> <br /> Are you <i>sure</i> " +
-                "you want to do that?"),
-                noText: "Cancel"
-                );
-
-            // Did the user cancel?
-            if (result.HasValue && !result.Value)
-            {
-                return; // Nothing more to do.
-            }
-
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Deleting a user."
-                );
-
-            // Delete the user.
-            await GreenApi.Users.DeleteAsync(
-                user,
-                UserName
-                );
-
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Loading data for the page."
-                );
-
-            // Load the users.
-            await LoadDataAsync();
-        }
-        catch (Exception ex)
-        {
-            // Log what happened.
-            Logger.LogError(
-                ex.GetBaseException(),
-                "Failed to delete a user!"
-                );
-
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Showing the message box"
-                );
-
-            // Tell the world what happened.
-            await DialogService.ShowErrorBox(ex);
-        }
-    }
-
-    // *******************************************************************
-
-    /// <summary>
-    /// This method edits the given user.
-    /// </summary>
-    /// <param name="user">The user to use for the operation.</param>
-    /// <returns>A task to perform the operation.</returns>
-    protected async Task OnEditAsync(
-        GreenUser user
-        )
-    {
-        // Log what we are about to do.
-        Logger.LogDebug(
-            "Navigating to the user detail page."
-            );
-
-        // Go to the detail page.
-        NavigationManager.NavigateTo(
-            $"/admin/users/detail/{Uri.EscapeDataString(user.Id)}"
-            );
-    }
-
-    // *******************************************************************
-
-    /// <summary>
-    /// This method adds a new user.
-    /// </summary>
     protected async Task OnCreateAsync()
     {
         try
         {
+            // Sanity check the model.
+            if (_roles is null)
+            {
+                return; // Nothing to do!
+            }
+
             // Log what we are about to do.
             Logger.LogDebug(
                 "Creating dialog options."
@@ -259,7 +174,8 @@ public partial class Index
             // Create the dialog parameters.
             var parameters = new DialogParameters()
             {
-                { "Model", new NewUserVM() }
+                { "Roles", _roles },
+                { "Model", new EditRoleVM() }
             };
 
             // Log what we are about to do.
@@ -268,8 +184,8 @@ public partial class Index
                 );
 
             // Create the dialog.
-            var dialog = DialogService.Show<NewUserDialog>(
-                "Create User",
+            var dialog = DialogService.Show<NewRoleDialog>(
+                "Create Role",
                 parameters,
                 options
                 );
@@ -289,56 +205,130 @@ public partial class Index
                 );
 
             // Recover the model.
-            var model = (NewUserVM)result.Data;
+            var model = (EditRoleVM)result.Data;
+
+            // The model needs a PK here.
+            model.Id = $"{Guid.NewGuid():N}";
+
+            // Create the role in the backend.
+            await GreenApi.Roles.CreateAsync(
+                new GreenRole()
+                {
+                    Id = model.Id,
+                    Name = model.Name
+                },
+                UserName
+                );
+
+            // Create the role in the UI.
+            _roles.Insert(0, model);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a role!"
+                );
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Creating the new user."
+                "Showing the message box"
                 );
 
-            // Create the new user.
-            var newGreenUser = await GreenApi.Users.CreateAsync(
-                new GreenUser()
-                {
-                    UserName = model.UserName,
-                    Email = model.Email,   
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method edits the given role.
+    /// </summary>
+    /// <param name="role">The role to use for the operation.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected Task OnEditAsync(
+        EditRoleVM role
+        )
+    {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Navigating to the role detail page."
+            );
+
+        // Go to the detail page.
+        NavigationManager.NavigateTo(
+            $"/admin/roles/detail/{Uri.EscapeDataString(role.Id)}"
+            );
+
+        // Return the task.
+        return Task.CompletedTask;
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to delete a role.
+    /// </summary>
+    /// <param name="role">The role to use for the operation.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task OnDeleteAsync(
+        EditRoleVM role
+        )
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_roles is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the role " +
+                $"<b>'{role.Name}'</b> <br /> <br /> Are you <i>sure</i> " +
+                "you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting role from the backend"
+                );
+
+            // Delete the role from the backend.
+            await GreenApi.Roles.DeleteAsync(
+                new GreenRole() 
+                { 
+                    Id = role.Id,
+                    Name = role.Name
                 },
-                model.Password ?? "",
                 UserName
                 );
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Navigating to the user detail page."
+                "Deleting role from the UI"
                 );
 
-            // Go to the detail page.
-            NavigationManager.NavigateTo(
-                $"/admin/users/detail/{Uri.EscapeDataString(newGreenUser.Id)}"
-                );
+            // Remove the role from the UI.
+            _roles.Remove(role);
         }
         catch (Exception ex)
         {
-            // Did the user try to reuse an existing user name?
-            if (ex.GetBaseException().Message.Contains("duplicate key"))
-            {
-                // Log what we are about to do.
-                Logger.LogDebug(
-                    "Showing the message box."
-                    );
-
-                // Prompt the user.
-                await DialogService.ShowMessageBox(
-                    title: "Something broke!",
-                    message: "That user name is already in use!"
-                    );
-                return;
-            }
-
             // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to create a user!"
+                "Failed to delete a role!"
                 );
 
             // Log what we are about to do.
@@ -359,19 +349,19 @@ public partial class Index
     /// </summary>
     /// <param name="element">The element to use for the operation.</param>
     /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
-    protected bool FilterFunc1(GreenUser element) =>
+    protected bool FilterFunc1(EditRoleVM element) =>
         FilterFunc(element, _gridSearchString);
 
     // *******************************************************************
 
     /// <summary>
-    /// This method performs a search of the users.
+    /// This method performs a search of the roles.
     /// </summary>
     /// <param name="element">The element to uses for the operation.</param>
     /// <param name="searchString">The search string to use for the operation.</param>
     /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
     protected bool FilterFunc(
-        GreenUser element,
+        EditRoleVM element,
         string searchString
         )
     {
@@ -379,14 +369,7 @@ public partial class Index
         {
             return true;
         }
-        if ((element.UserName ?? "").Contains(
-            searchString,
-            StringComparison.OrdinalIgnoreCase)
-            )
-        {
-            return true;
-        }
-        if ((element.Email ?? "").Contains(
+        if ((element.Name ?? "").Contains(
             searchString,
             StringComparison.OrdinalIgnoreCase)
             )
@@ -405,7 +388,7 @@ public partial class Index
     #region Private methods
 
     /// <summary>
-    /// This method loads users for the page.
+    /// This method loads roles for the page.
     /// </summary>
     /// <returns>A task to perform the operation.</returns>
     private async Task LoadDataAsync()
@@ -422,27 +405,24 @@ public partial class Index
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Clearing any old users."
+                "Clearing any old roles."
                 );
 
-            // Get rid of any old users.
-            _users.Clear();
+            // Get rid of any old roles.
+            _roles.Clear();
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Fetching users from the API."
+                "Fetching roles from the API."
                 );
 
-            // Get the list of users.
-            var users = await GreenApi.Users.FindAllAsync();
-
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Adding users to the page's list."
-                );
-
-            // Add to the page's list.
-            _users.AddRange(users);
+            // Get the list of roles.
+            _roles = (await GreenApi.Roles.FindAllAsync())
+                .Select(x => new EditRoleVM() 
+                { 
+                    Id = x.Id,
+                    Name = x.Name ?? "" 
+                }).ToList();
         }
         finally
         {

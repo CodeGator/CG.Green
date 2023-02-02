@@ -1,10 +1,10 @@
 ﻿
-namespace CG.Green.Host.Pages.Admin.ApiScopes;
+namespace CG.Green.Host.Pages.Admin.Users;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="ApiScopeDetail"/> page.
+/// This class is the code-behind for the <see cref="UserDetail"/> page.
 /// </summary>
-public partial class ApiScopeDetail
+public partial class UserDetail
 {
     // *******************************************************************
     // Fields.
@@ -20,7 +20,7 @@ public partial class ApiScopeDetail
     /// <summary>
     /// This field contains the model for the page.
     /// </summary>
-    internal protected EditApiScopeVM? _model;
+    internal protected EditUserVM? _model;
 
     /// <summary>
     /// This field indicates the page is loading data.
@@ -28,9 +28,14 @@ public partial class ApiScopeDetail
     internal protected bool _isLoading;
 
     /// <summary>
+    /// This field contains the list of available user roles.
+    /// </summary>
+    internal protected List<string> _roles = new();
+
+    /// <summary>
     /// This field contains a temporary claim, for editing purposes.
     /// </summary>
-    internal protected _Wrapper? _tempClaim;
+    internal protected EditClaimVM? _tempClaim;
 
     #endregion
 
@@ -41,10 +46,10 @@ public partial class ApiScopeDetail
     #region Properties
 
     /// <summary>
-    /// This property contains the name for the API scope.
+    /// This property contains the identifier for the user.
     /// </summary>
     [Parameter]
-    public string? ApiScopeName { get; set; }
+    public string? UserId { get; set; }
 
     /// <summary>
     /// This property contains the dialog service for this page.
@@ -77,7 +82,7 @@ public partial class ApiScopeDetail
     protected IGreenApi GreenApi { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the name of the current claim, or the word
+    /// This property contains the name of the current user, or the word
     /// 'anonymous' if nobody is currently authenticated.
     /// </summary>
     protected string UserName => HttpContextAccessor.HttpContext?.User?.Identity?.Name ?? "anonymous";
@@ -86,7 +91,7 @@ public partial class ApiScopeDetail
     /// This property contains the logger for this page.
     /// </summary>
     [Inject]
-    protected ILogger<ApiScopeDetail> Logger { get; set; } = null!;
+    protected ILogger<UserDetail> Logger { get; set; } = null!;
 
     #endregion
 
@@ -114,8 +119,8 @@ public partial class ApiScopeDetail
             {
                 new BreadcrumbItem("Home", href: "/"),
                 new BreadcrumbItem("Admin", href: "/admin", disabled: true),
-                new BreadcrumbItem("ApiScopes", href: "/admin/apiscopes"),
-                new BreadcrumbItem("Details", href: $"/admin/apiscopes/detail/{Uri.EscapeDataString(ApiScopeName)}")
+                new BreadcrumbItem("Users", href: "/admin/users"),
+                new BreadcrumbItem("Details", href: $"/admin/users/detail/{UserId}")
             };
 
             // Log what we are about to do.
@@ -123,7 +128,7 @@ public partial class ApiScopeDetail
                 "Loading data for the page."
                 );
 
-            // Load the claim.
+            // Load the users.
             await LoadDataAsync();
 
             // Give the base class a chance.
@@ -150,62 +155,7 @@ public partial class ApiScopeDetail
     // *******************************************************************
 
     /// <summary>
-    /// This method is called when the caller submits the form.
-    /// </summary>
-    /// <returns>A task to perform the operation.</returns>
-    protected async Task OnValidSubmitAsync()
-    {
-        try
-        {
-            // Sanity check the model.
-            if (_model is null)
-            {
-                return; // Nothing to do!
-            }
-
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Saving the API scope changes"
-                );
-
-            // Update the scope in the backend.
-            await GreenApi.ApiScopes.UpdateAsync(
-                _model.ToDuende(),
-                UserName
-                );
-
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Showing the snackbar"
-                );
-
-            // Tell the world what we did.
-            SnackbarService.Add(
-                $"Saved changes to the API scope"
-                );
-        }
-        catch (Exception ex)
-        {
-            // Log what happened.
-            Logger.LogError(
-                ex.GetBaseException(),
-                "Failed to update the model."
-                );
-
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Showing the message box"
-                );
-
-            // Tell the world what happened.
-            await DialogService.ShowErrorBox(ex);
-        }
-    }
-
-    // *******************************************************************
-
-    /// <summary>
-    /// This method is called to create a new claim for an api scope.
+    /// This method is called to create a new claim.
     /// </summary>
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnCreateClaimAsync()
@@ -239,7 +189,7 @@ public partial class ApiScopeDetail
             // Create the dialog parameters.
             var parameters = new DialogParameters()
             {
-                { "Model", new _Wrapper() }
+                { "Model", new NewClaimVM() }
             };
 
             // Log what we are about to do.
@@ -269,22 +219,26 @@ public partial class ApiScopeDetail
                 );
 
             // Recover the model.
-            var model = (_Wrapper)result.Data;
+            var model = (NewClaimVM)result.Data;
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Creating the new claim"
+                "Creating the new claim."
                 );
 
             // Add the new claim.
-            _model.UserClaims.Add(model);
+            _model.AssignedClaims.Add(new EditClaimVM()
+            {
+                ClaimType = model.ClaimType,
+                ClaimValue = model.ClaimValue
+            });
         }
         catch (Exception ex)
         {
             // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to create a claim!"
+                "Failed to add a claim!"
                 );
 
             // Log what we are about to do.
@@ -300,12 +254,12 @@ public partial class ApiScopeDetail
     // *******************************************************************
 
     /// <summary>
-    /// This method is called to delete a claim from an api scope.
+    /// This method is called to delete a claim.
     /// </summary>
     /// <param name="claim">The claim to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnDeleteClaimAsync(
-        _Wrapper claim
+        EditClaimVM claim
         )
     {
         try
@@ -316,16 +270,11 @@ public partial class ApiScopeDetail
                 return; // Nothing to do!
             }
 
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Prompting the caller."
-                );
-
             // Prompt the user.
             var result = await DialogService.ShowMessageBox(
                 title: Globals.Caption,
                 markupMessage: new MarkupString("This will delete the claim " +
-                $"<b>'{claim.Value}'</b> <br /> <br /> Are you <i>sure</i> " +
+                $"<b>'{claim.ClaimType}'</b> <br /> <br /> Are you <i>sure</i> " +
                 "you want to do that?"),
                 noText: "Cancel"
                 );
@@ -338,11 +287,11 @@ public partial class ApiScopeDetail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Deleting a claim."
+                "Deleting a claim"
                 );
 
-            // Delete the API scope.
-            _model.UserClaims.Remove(claim);
+            // Remove the claim.
+            _model.AssignedClaims.Remove(claim);
         }
         catch (Exception ex)
         {
@@ -376,7 +325,8 @@ public partial class ApiScopeDetail
             );
 
         // Restore the claim from our backup.
-        ((_Wrapper)element).Value = _tempClaim?.Value ?? "";
+        ((EditClaimVM)element).ClaimType = _tempClaim?.ClaimType ?? "";
+        ((EditClaimVM)element).ClaimValue = _tempClaim?.ClaimValue ?? "";
 
         // Log what we are about to do.
         Logger.LogDebug(
@@ -434,9 +384,10 @@ public partial class ApiScopeDetail
             );
 
         // Copy the claim.
-        _tempClaim = new _Wrapper()
+        _tempClaim = new EditClaimVM()
         {
-            Value = ((_Wrapper)element).Value
+            ClaimType = ((EditClaimVM)element).ClaimType,
+            ClaimValue = ((EditClaimVM)element).ClaimValue
         };
 
         // Log what we are about to do.
@@ -446,6 +397,103 @@ public partial class ApiScopeDetail
 
         // Tell blazor to update.
         StateHasChanged();
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called when the caller submits the form.
+    /// </summary>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task OnValidSubmitAsync()
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Building the user from the model"
+                );
+
+            // Update the original use with changes.
+            _model.User.UserName = _model.UserName;
+            _model.User.Email = _model.Email;
+            _model.User.EmailConfirmed = _model.EmailConfirmed;
+            _model.User.LockoutEnabled = _model.LockoutEnabled;
+            _model.User.TwoFactorEnabled = _model.TwoFactorEnabled;
+            _model.User.AccessFailedCount = _model.AccessFailedCount;
+            _model.User.LockoutEnd = _model.LockoutEnd;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the user claim changes"
+                );
+
+            // Save the assigned claims.
+            await GreenApi.UserClaims.UpdateAsync(
+                _model.User,
+                _model.AssignedClaims.Select(x => new GreenUserClaim()
+                {
+                    ClaimType = x.ClaimType,
+                    ClaimValue = x.ClaimValue
+                }),
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the user role changes"
+                );
+
+            // Save the assigned roles.
+            await GreenApi.UserRoles.UpdateAsync(
+                _model.User,
+                _model.AssignedRoles,
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the user changes"
+                );
+
+            // Save the model.
+            await GreenApi.Users.UpdateAsync(
+                _model.User,
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar"
+                );
+
+            // Tell the world what we did.
+            SnackbarService.Add(
+                $"Saved changes to user"
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to update the model."
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
     }
 
     #endregion
@@ -464,10 +512,10 @@ public partial class ApiScopeDetail
     {
         try
         {
-            // Sanity check the scope name.
-            if (string.IsNullOrEmpty(ApiScopeName))
+            // Sanity check the id.
+            if (string.IsNullOrEmpty(UserId))
             {
-                _model = null; // no api scope!
+                _model = null; // no user!
                 return;
             }
 
@@ -481,47 +529,57 @@ public partial class ApiScopeDetail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Clearing any previous model."
+                "Clearing any previous user."
                 );
 
             // Force defaults since we don't have a model yet.
             _model = null;
+            _roles.Clear();
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Fetching api scope."
+                "Fetching user."
                 );
 
-            // Get the api scope.
-            var apiScope = await GreenApi.ApiScopes.FindByNameAsync(
-                ApiScopeName ?? ""
+            // Get the user.
+            var user = await GreenApi.Users.FindByIdAsync(
+                UserId ?? ""
                 );
 
             // Did we succeed?
-            if (apiScope is not null)
+            if (user is not null)
             {
-                // Log what we are about to do.
-                Logger.LogDebug(
-                    "Building the model."
-                    );
-
-                // Wrap up the model.
-                _model = new EditApiScopeVM()
+                // Create the model.
+                _model = new EditUserVM()
                 {
-                    Name = apiScope.Name ?? "",
-                    DisplayName = apiScope.DisplayName ?? "",
-                    Description = apiScope.Description ?? "",
-                    Emphasize = apiScope.Emphasize,
-                    Enabled = apiScope.Enabled,
-                    Properties = apiScope.Properties,
-                    Required = apiScope.Required,
-                    ShowInDiscoveryDocument = apiScope.ShowInDiscoveryDocument,
-                    UserClaims = apiScope.UserClaims.Select(x => 
-                        new _Wrapper()
-                        {
-                            Value = x
-                        }).ToList()
+                    User = user,
+                    UserName = user.UserName ?? "",
+                    Email = user.Email ?? "",
+                    EmailConfirmed = user.EmailConfirmed,
+                    TwoFactorEnabled = user.TwoFactorEnabled,
+                    AccessFailedCount = user.AccessFailedCount,
+                    LockoutEnabled = user.LockoutEnabled,
+                    LockoutEnd = user.LockoutEnd.HasValue 
+                        ? user.LockoutEnd.Value.DateTime
+                        : null
                 };
+
+                // Save the list of available roles.
+                _roles = (await GreenApi.Roles.FindAllAsync()).Select(x => x.Name ?? "").ToList();
+
+                // Save the list of user roles.
+                _model.AssignedRoles = (await GreenApi.UserRoles.FindByUserIdAsync(
+                    user.Id ?? ""
+                    )).ToList();
+
+                // Save the list of user claims.
+                _model.AssignedClaims = (await GreenApi.UserClaims.FindByUserIdAsync(
+                    user.Id ?? ""
+                    )).Select(x => new EditClaimVM()
+                    {
+                        ClaimType = x.ClaimType ?? "",
+                        ClaimValue = x.ClaimValue ?? ""
+                    }).ToList();
             }
         }
         finally

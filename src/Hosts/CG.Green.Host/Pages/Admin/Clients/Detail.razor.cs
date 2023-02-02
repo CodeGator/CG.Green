@@ -313,8 +313,7 @@ public partial class Detail
 
             // Tell the world what we did.
             SnackbarService.Add(
-                $"Saved changes to client",
-                Severity.Info
+                $"Saved changes to client"
                 );
         }
         catch (Exception ex)

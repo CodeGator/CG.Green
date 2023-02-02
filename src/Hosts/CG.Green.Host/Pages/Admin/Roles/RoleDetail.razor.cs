@@ -1,10 +1,10 @@
 ﻿
-namespace CG.Green.Host.Pages.Admin.Users;
+namespace CG.Green.Host.Pages.Admin.Roles;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="Detail"/> page.
+/// This class is the code-behind for the <see cref="RoleDetail"/> page.
 /// </summary>
-public partial class Detail
+public partial class RoleDetail
 {
     // *******************************************************************
     // Fields.
@@ -20,7 +20,7 @@ public partial class Detail
     /// <summary>
     /// This field contains the model for the page.
     /// </summary>
-    internal protected EditUserVM? _model;
+    internal protected EditRoleVM? _model;
 
     /// <summary>
     /// This field indicates the page is loading data.
@@ -28,9 +28,9 @@ public partial class Detail
     internal protected bool _isLoading;
 
     /// <summary>
-    /// This field contains the list of available user roles.
+    /// This field contains a temporary claim, for editing purposes.
     /// </summary>
-    internal protected List<string> _roles = new();
+    internal protected EditClaimVM? _tempClaim;
 
     #endregion
 
@@ -41,10 +41,10 @@ public partial class Detail
     #region Properties
 
     /// <summary>
-    /// This property contains the identifier for the user.
+    /// This property contains the identifier for the claim.
     /// </summary>
     [Parameter]
-    public string? UserId { get; set; }
+    public string? RoleId { get; set; }
 
     /// <summary>
     /// This property contains the dialog service for this page.
@@ -77,7 +77,7 @@ public partial class Detail
     protected IGreenApi GreenApi { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the name of the current user, or the word
+    /// This property contains the name of the current claim, or the word
     /// 'anonymous' if nobody is currently authenticated.
     /// </summary>
     protected string UserName => HttpContextAccessor.HttpContext?.User?.Identity?.Name ?? "anonymous";
@@ -86,7 +86,7 @@ public partial class Detail
     /// This property contains the logger for this page.
     /// </summary>
     [Inject]
-    protected ILogger<Detail> Logger { get; set; } = null!;
+    protected ILogger<RoleDetail> Logger { get; set; } = null!;
 
     #endregion
 
@@ -95,6 +95,59 @@ public partial class Detail
     // *******************************************************************
 
     #region Protected methods
+
+    /// <summary>
+    /// This method is called to initialize the page.
+    /// </summary>
+    /// <returns>A task to perform the operation.</returns>
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating bread crumbs."
+                );
+
+            // Create the bread crumbs for the page.
+            _crumbs = new()
+            {
+                new BreadcrumbItem("Home", href: "/"),
+                new BreadcrumbItem("Admin", href: "/admin", disabled: true),
+                new BreadcrumbItem("Roles", href: "/admin/roles"),
+                new BreadcrumbItem("Details", href: $"/admin/roles/detail/{RoleId}")
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Loading data for the page."
+                );
+
+            // Load the claim.
+            await LoadDataAsync();
+
+            // Give the base class a chance.
+            await base.OnInitializedAsync();
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to initialize the page."
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
 
     /// <summary>
     /// This method is called to create a new claim.
@@ -134,7 +187,7 @@ public partial class Detail
             await DialogService.ShowErrorBox(ex);
         }
     }
-
+    
     // *******************************************************************
 
     /// <summary>
@@ -154,7 +207,7 @@ public partial class Detail
                 return; // Nothing to do!
             }
 
-            // Prompt the user.
+            // Prompt the claim.
             var result = await DialogService.ShowMessageBox(
                 title: Globals.Caption,
                 markupMessage: new MarkupString("This will delete the claim " +
@@ -198,60 +251,95 @@ public partial class Detail
     // *******************************************************************
 
     /// <summary>
-    /// This method is called to initialize the page.
+    /// This method is called to cancel an in-progress claim edit.
     /// </summary>
-    /// <returns>A task to perform the operation.</returns>
-    protected override async Task OnInitializedAsync()
+    /// <param name="element">The claim to use for the operation.</param>
+    protected void OnEditClaimCancel(object element)
     {
-        try
-        {
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Creating bread crumbs."
-                );
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Restoring claim from backup"
+            );
 
-            // Create the bread crumbs for the page.
-            _crumbs = new()
-            {
-                new BreadcrumbItem("Home", href: "/"),
-                new BreadcrumbItem("Admin", href: "/admin", disabled: true),
-                new BreadcrumbItem("Users", href: "/admin/users"),
-                new BreadcrumbItem("Details", href: $"/admin/users/detail/{UserId}")
-            };
+        // Restore the claim from our backup.
+        ((EditClaimVM)element).ClaimType = _tempClaim?.ClaimType ?? "";
+        ((EditClaimVM)element).ClaimValue = _tempClaim?.ClaimValue ?? "";
 
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Loading data for the page."
-                );
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Releasing the backup"
+            );
 
-            // Load the user.
-            await LoadDataAsync();
+        // We don't need this now.
+        _tempClaim = null;
 
-            // Give the base class a chance.
-            await base.OnInitializedAsync();
-        }
-        catch (Exception ex)
-        {
-            // Log what happened.
-            Logger.LogError(
-                ex.GetBaseException(),
-                "Failed to initialize the page."
-                );
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
 
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Showing the message box"
-                );
-
-            // Tell the world what happened.
-            await DialogService.ShowErrorBox(ex);
-        }
+        // Tell blazor to update.
+        StateHasChanged();
     }
 
     // *******************************************************************
 
     /// <summary>
-    /// This method is called when the user submits the form.
+    /// This method is called to commit an in-progress claim edit.
+    /// </summary>
+    /// <param name="element">The claim to use for the operation.</param>
+    protected void OnEditClaimCommit(object element)
+    {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Releasing the backup"
+            );
+
+        // We don't need this now.
+        _tempClaim = null;
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
+
+        // Tell blazor to update.
+        StateHasChanged();
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to start a claim edit.
+    /// </summary>
+    /// <param name="element">The claim to use for the operation.</param>
+    protected void OnEditClaimStart(object element)
+    {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Making a claim backup"
+            );
+
+        // Copy the claim.
+        _tempClaim = new EditClaimVM()
+        { 
+            ClaimType = ((EditClaimVM)element).ClaimType,
+            ClaimValue = ((EditClaimVM)element).ClaimValue
+        };
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
+
+        // Tell blazor to update.
+        StateHasChanged();
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called when the caller submits the form.
     /// </summary>
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnValidSubmitAsync()
@@ -266,54 +354,32 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Building the user from the model"
-                );
-
-            // Update the original use with changes.
-            _model.User.UserName = _model.UserName;
-            _model.User.Email = _model.Email;
-            _model.User.EmailConfirmed = _model.EmailConfirmed;
-            _model.User.LockoutEnabled = _model.LockoutEnabled;
-            _model.User.TwoFactorEnabled = _model.TwoFactorEnabled;
-            _model.User.AccessFailedCount = _model.AccessFailedCount;
-            _model.User.LockoutEnd = _model.LockoutEnd;
-
-            // Log what we are about to do.
-            Logger.LogDebug(
-                "Saving the claim changes"
-                );
-
-            // Save the assigned claims.
-            await GreenApi.UserClaims.UpdateAsync(
-                _model.User,
-                _model.AssignedClaims.Select(x => new GreenUserClaim()
-                {
-                    ClaimType = x.ClaimType,
-                    ClaimValue = x.ClaimValue
-                }),
-                UserName
-                );
-
-            // Log what we are about to do.
-            Logger.LogDebug(
                 "Saving the role changes"
                 );
 
-            // Save the assigned roles.
-            await GreenApi.UserRoles.UpdateAsync(
-                _model.User,
-                _model.AssignedRoles,
+            // Update the backend.
+            var updatedRole = await GreenApi.Roles.UpdateAsync(
+                new GreenRole()
+                {
+                    Id = _model.Id,
+                    Name = _model.Name 
+                },
                 UserName
                 );
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Saving the user changes"
+                "Saving the role claims"
                 );
 
-            // Save the model.
-            await GreenApi.Users.UpdateAsync(
-                _model.User,
+            // Update the backend.
+            await GreenApi.RoleClaims.UpdateAsync(
+                updatedRole,
+                _model.AssignedClaims.Select(x => new GreenRoleClaim()
+                {
+                    ClaimType = x.ClaimType,
+                    ClaimValue = x.ClaimValue   
+                }),
                 UserName
                 );
 
@@ -324,8 +390,7 @@ public partial class Detail
 
             // Tell the world what we did.
             SnackbarService.Add(
-                $"Saved changes to user",
-                Severity.Info
+                $"Saved changes to role"
                 );
         }
         catch (Exception ex)
@@ -346,7 +411,13 @@ public partial class Detail
         }
     }
 
+    #endregion
+
     // *******************************************************************
+    // Private methods.
+    // *******************************************************************
+
+    #region Private methods
 
     /// <summary>
     /// This method loads the data for the page.
@@ -357,9 +428,9 @@ public partial class Detail
         try
         {
             // Sanity check the id.
-            if (string.IsNullOrEmpty(UserId))
+            if (string.IsNullOrEmpty(RoleId))
             {
-                _model = null; // no user!
+                _model = null; // no claim!
                 return;
             }
 
@@ -373,52 +444,36 @@ public partial class Detail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Fetching user."
+                "Fetching role."
                 );
 
             // Force defaults since we don't have a model yet.
             _model = null;
-            _roles.Clear();
 
-            // Get the user.
-            var user = await GreenApi.Users.FindByIdAsync(
-                UserId ?? ""
+            // Get the claim.
+            var role = await GreenApi.Roles.FindByIdAsync(
+                RoleId ?? ""
                 );
 
             // Did we succeed?
-            if (user is not null)
+            if (role is not null)
             {
-                // Create the model.
-                _model = new EditUserVM()
-                {
-                    User = user,
-                    UserName = user.UserName ?? "",
-                    Email = user.Email ?? "",
-                    EmailConfirmed = user.EmailConfirmed,
-                    TwoFactorEnabled = user.TwoFactorEnabled,
-                    AccessFailedCount = user.AccessFailedCount,
-                    LockoutEnabled = user.LockoutEnabled,
-                    LockoutEnd = user.LockoutEnd.HasValue 
-                        ? user.LockoutEnd.Value.DateTime
-                        : null
-                };
-
-                // Save the list of available roles.
-                _roles = (await GreenApi.Roles.FindAllAsync()).Select(x => x.Name ?? "").ToList();
-
-                // Save the list of user roles.
-                _model.AssignedRoles = (await GreenApi.UserRoles.FindByUserIdAsync(
-                    user.Id ?? ""
-                    )).ToList();
-
-                // Save the list of user claims.
-                _model.AssignedClaims = (await GreenApi.UserClaims.FindByUserIdAsync(
-                    user.Id ?? ""
+                // Look for associated claims.
+                var claims = (await GreenApi.RoleClaims.FindByRoleIdAsync(
+                    role.Id
                     )).Select(x => new EditClaimVM()
                     {
                         ClaimType = x.ClaimType ?? "",
                         ClaimValue = x.ClaimValue ?? ""
                     }).ToList();
+
+                // Wrap up the model.
+                _model = new EditRoleVM()
+                {
+                    Id = role.Id,
+                    Name = role.Name ?? "",
+                    AssignedClaims = claims
+                };
             }
         }
         finally

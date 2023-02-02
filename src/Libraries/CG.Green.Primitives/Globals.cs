@@ -50,6 +50,11 @@ public static class Globals
             /// This constant represents the length of the Type property.
             /// </summary>
             public const int TypeLength = 200;
+
+            /// <summary>
+            /// This constant represents the length of the Value property.
+            /// </summary>
+            public const int ValueLength = 200;
         }
 
         /// <summary>

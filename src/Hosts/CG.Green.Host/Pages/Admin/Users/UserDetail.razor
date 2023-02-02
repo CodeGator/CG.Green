@@ -26,7 +26,7 @@ else
         <DataAnnotationsValidator />
         <MudGrid>
             <MudItem xs="12">
-                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary" Disabled="@(_isLoading || _tempClaim != null)">Save Changes</MudButton>
             </MudItem>
             <MudItem xs="8">
                 <MudTextField AutoFocus
@@ -113,7 +113,11 @@ else
                     <MudTable Items="_model.AssignedClaims"
                                 Dense
                                 Striped
+                                CanCancelEdit
                                 IsEditRowSwitchingBlocked
+                                RowEditCancel="OnEditClaimCancel"
+                                RowEditCommit="OnEditClaimCommit"
+                                RowEditPreview="OnEditClaimStart"
                                 EditTrigger="TableEditTrigger.EditButton">
                         <ToolBarContent>
                             <MudButton StartIcon="@Icons.Material.Outlined.Create"
@@ -167,7 +171,7 @@ else
                 </div>
             </MudItem>
             <MudItem xs="12">
-                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary" Disabled="@(_isLoading || _tempClaim != null)">Save Changes</MudButton>
             </MudItem>
         </MudGrid>
     </EditForm>

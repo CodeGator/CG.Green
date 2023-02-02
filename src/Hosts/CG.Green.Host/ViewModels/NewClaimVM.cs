@@ -1,9 +1,9 @@
 ﻿namespace CG.Green.Host.ViewModels;
 
 /// <summary>
-/// This class is a view-model for editing a claim.
+/// This class is a view-model for creating a claim.
 /// </summary>
-public class EditClaimVM
+public class NewClaimVM
 {
     // *******************************************************************
     // Properties.
