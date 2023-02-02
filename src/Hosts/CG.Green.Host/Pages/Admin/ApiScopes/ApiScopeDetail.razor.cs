@@ -206,7 +206,7 @@ public partial class ApiScopeDetail
     // *******************************************************************
 
     /// <summary>
-    /// This method is called to create a new claim.
+    /// This method is called to create a new claim for an api scope.
     /// </summary>
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnCreateClaimAsync()
@@ -301,7 +301,7 @@ public partial class ApiScopeDetail
     // *******************************************************************
 
     /// <summary>
-    /// This method is called to delete a claim.
+    /// This method is called to delete a claim from an api scope.
     /// </summary>
     /// <param name="claim">The claim to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
@@ -343,7 +343,7 @@ public partial class ApiScopeDetail
                 );
 
             // Delete the API scope.
-            _model.UserClaims.Remove(claim);           
+            _model.UserClaims.Remove(claim);
         }
         catch (Exception ex)
         {
@@ -365,22 +365,84 @@ public partial class ApiScopeDetail
 
     // *******************************************************************
 
+    /// <summary>
+    /// This method is called to cancel an in-progress claim edit.
+    /// </summary>
+    /// <param name="element">The claim to use for the operation.</param>
     protected void OnEditClaimCancel(object element)
     {
-        ((_Wrapper)element).Value = _tempClaim.Value;
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Restorig claim from backup"
+            );
+
+        // Restore the claim from our backup.
+        ((_Wrapper)element).Value = _tempClaim?.Value ?? "";
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Releasing the backup"
+            );
+
+        // We don't need this now.
         _tempClaim = null;
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
+
+        // Tell blazor to update.
         StateHasChanged();
     }
 
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to commit an in-progress claim edit.
+    /// </summary>
+    /// <param name="element">The claim to use for the operation.</param>
     protected void OnEditClaimCommit(object element)
     {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Releasing the backup"
+            );
+
+        // We don't need this now.
         _tempClaim = null;
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
+
+        // Tell blazor to update.
         StateHasChanged();
     }
 
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to start a claim edit.
+    /// </summary>
+    /// <param name="element">The claim to use for the operation.</param>
     protected void OnEditClaimStart(object element)
     {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Making a claim backup"
+            );
+
+        // Copy the claim.
         _tempClaim = ((_Wrapper)element);
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
+
+        // Tell blazor to update.
         StateHasChanged();
     }
 
@@ -417,11 +479,16 @@ public partial class ApiScopeDetail
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Fetching api scope."
+                "Clearing any previous model."
                 );
 
             // Force defaults since we don't have a model yet.
             _model = null;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Fetching api scope."
+                );
 
             // Get the api scope.
             var apiScope = await GreenApi.ApiScopes.FindByNameAsync(
@@ -431,6 +498,11 @@ public partial class ApiScopeDetail
             // Did we succeed?
             if (apiScope is not null)
             {
+                // Log what we are about to do.
+                Logger.LogDebug(
+                    "Building the model."
+                    );
+
                 // Wrap up the model.
                 _model = new EditApiScopeVM()
                 {

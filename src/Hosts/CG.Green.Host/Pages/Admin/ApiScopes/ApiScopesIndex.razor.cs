@@ -124,7 +124,7 @@ public partial class ApiScopesIndex
             // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to fetch users!"
+                "Failed to fetch api scopes!"
                 );
 
             // Log what we are about to do.
@@ -367,7 +367,7 @@ public partial class ApiScopesIndex
     /// </summary>
     /// <param name="apiScope">The API scope to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
-    protected async Task OnEditAsync(
+    protected Task OnEditAsync(
         EditApiScopeVM apiScope
         )
     {
@@ -380,6 +380,9 @@ public partial class ApiScopesIndex
         NavigationManager.NavigateTo(
             $"/admin/apiscopes/detail/{Uri.EscapeDataString(apiScope.Name)}"
             );
+
+        // Return the task.
+        return Task.CompletedTask;  
     }
 
     #endregion
@@ -408,7 +411,7 @@ public partial class ApiScopesIndex
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Clearing any old roles."
+                "Clearing any old api scopes."
                 );
 
             // Get rid of any old API scopes.
