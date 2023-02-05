@@ -31,4 +31,10 @@
         <ProjectReference Include="..\..\Libraries\CG.Green\CG.Green.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Update="Pages\Admin\Resources\NewPropertyDialog.razor">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </Content>
+    </ItemGroup>
+
 </Project>
