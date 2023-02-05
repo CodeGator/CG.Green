@@ -4923,6 +4923,24 @@ references:
   commentId: F:CG.Green.Globals.Models.Clients.FrontChannelLogoutUriLength
   fullName: CG.Green.Globals.Models.Clients.FrontChannelLogoutUriLength
   nameWithType: Globals.Models.Clients.FrontChannelLogoutUriLength
+- uid: CG.Green.Globals.Models.Properties
+  name: Globals.Models.Properties
+  href: api/CG.Green.Globals.Models.Properties.html
+  commentId: T:CG.Green.Globals.Models.Properties
+  fullName: CG.Green.Globals.Models.Properties
+  nameWithType: Globals.Models.Properties
+- uid: CG.Green.Globals.Models.Properties.KeyLength
+  name: KeyLength
+  href: api/CG.Green.Globals.Models.Properties.html#CG_Green_Globals_Models_Properties_KeyLength
+  commentId: F:CG.Green.Globals.Models.Properties.KeyLength
+  fullName: CG.Green.Globals.Models.Properties.KeyLength
+  nameWithType: Globals.Models.Properties.KeyLength
+- uid: CG.Green.Globals.Models.Properties.ValueLength
+  name: ValueLength
+  href: api/CG.Green.Globals.Models.Properties.html#CG_Green_Globals_Models_Properties_ValueLength
+  commentId: F:CG.Green.Globals.Models.Properties.ValueLength
+  fullName: CG.Green.Globals.Models.Properties.ValueLength
+  nameWithType: Globals.Models.Properties.ValueLength
 - uid: CG.Green.Globals.Models.Resources
   name: Globals.Models.Resources
   href: api/CG.Green.Globals.Models.Resources.html
@@ -5202,6 +5220,12 @@ references:
   commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail._tempClaim
   fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail._tempClaim
   nameWithType: ApiScopeDetail._tempClaim
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail._tempProperty
+  name: _tempProperty
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail__tempProperty
+  commentId: F:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail._tempProperty
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail._tempProperty
+  nameWithType: ApiScopeDetail._tempProperty
 - uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.ApiScopeName
   name: ApiScopeName
   href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_ApiScopeName
@@ -5306,6 +5330,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnCreateClaimAsync
   nameWithType: ApiScopeDetail.OnCreateClaimAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnCreatePropertyAsync
+  name: OnCreatePropertyAsync()
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnCreatePropertyAsync
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnCreatePropertyAsync
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnCreatePropertyAsync()
+  nameWithType: ApiScopeDetail.OnCreatePropertyAsync()
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnCreatePropertyAsync*
+  name: OnCreatePropertyAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnCreatePropertyAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnCreatePropertyAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnCreatePropertyAsync
+  nameWithType: ApiScopeDetail.OnCreatePropertyAsync
 - uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnDeleteClaimAsync(_Wrapper)
   name: OnDeleteClaimAsync(_Wrapper)
   href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnDeleteClaimAsync__Wrapper_
@@ -5319,6 +5356,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnDeleteClaimAsync
   nameWithType: ApiScopeDetail.OnDeleteClaimAsync
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnDeletePropertyAsync(EditPropertyVM)
+  name: OnDeletePropertyAsync(EditPropertyVM)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnDeletePropertyAsync_EditPropertyVM_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnDeletePropertyAsync(EditPropertyVM)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnDeletePropertyAsync(EditPropertyVM)
+  nameWithType: ApiScopeDetail.OnDeletePropertyAsync(EditPropertyVM)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnDeletePropertyAsync*
+  name: OnDeletePropertyAsync
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnDeletePropertyAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnDeletePropertyAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnDeletePropertyAsync
+  nameWithType: ApiScopeDetail.OnDeletePropertyAsync
 - uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditClaimCancel(System.Object)
   name: OnEditClaimCancel(Object)
   href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnEditClaimCancel_System_Object_
@@ -5358,6 +5408,45 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditClaimStart
   nameWithType: ApiScopeDetail.OnEditClaimStart
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCancel(System.Object)
+  name: OnEditPropertyCancel(Object)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnEditPropertyCancel_System_Object_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCancel(System.Object)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCancel(System.Object)
+  nameWithType: ApiScopeDetail.OnEditPropertyCancel(Object)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCancel*
+  name: OnEditPropertyCancel
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnEditPropertyCancel_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCancel
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCancel
+  nameWithType: ApiScopeDetail.OnEditPropertyCancel
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCommit(System.Object)
+  name: OnEditPropertyCommit(Object)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnEditPropertyCommit_System_Object_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCommit(System.Object)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCommit(System.Object)
+  nameWithType: ApiScopeDetail.OnEditPropertyCommit(Object)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCommit*
+  name: OnEditPropertyCommit
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnEditPropertyCommit_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCommit
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyCommit
+  nameWithType: ApiScopeDetail.OnEditPropertyCommit
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyStart(System.Object)
+  name: OnEditPropertyStart(Object)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnEditPropertyStart_System_Object_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyStart(System.Object)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyStart(System.Object)
+  nameWithType: ApiScopeDetail.OnEditPropertyStart(Object)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyStart*
+  name: OnEditPropertyStart
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnEditPropertyStart_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyStart
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnEditPropertyStart
+  nameWithType: ApiScopeDetail.OnEditPropertyStart
 - uid: CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html#CG_Green_Host_Pages_Admin_ApiScopes_ApiScopeDetail_OnInitializedAsync
@@ -5816,6 +5905,103 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewClaimDialog.SnackbarService
   nameWithType: NewClaimDialog.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog
+  name: NewPropertyDialog
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html
+  commentId: T:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog
+  nameWithType: NewPropertyDialog
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Cancel
+  name: Cancel()
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_Cancel
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Cancel
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Cancel()
+  nameWithType: NewPropertyDialog.Cancel()
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Cancel*
+  name: Cancel
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_Cancel_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Cancel
+  nameWithType: NewPropertyDialog.Cancel
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.DialogService
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_DialogService
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.DialogService
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.DialogService
+  nameWithType: NewPropertyDialog.DialogService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.DialogService*
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_DialogService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.DialogService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.DialogService
+  nameWithType: NewPropertyDialog.DialogService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Logger
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_Logger
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Logger
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Logger
+  nameWithType: NewPropertyDialog.Logger
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Logger*
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_Logger_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Logger
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Logger
+  nameWithType: NewPropertyDialog.Logger
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Model
+  name: Model
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_Model
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Model
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Model
+  nameWithType: NewPropertyDialog.Model
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Model*
+  name: Model
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_Model_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Model
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.Model
+  nameWithType: NewPropertyDialog.Model
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.MudDialog
+  name: MudDialog
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_MudDialog
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.MudDialog
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.MudDialog
+  nameWithType: NewPropertyDialog.MudDialog
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.MudDialog*
+  name: MudDialog
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_MudDialog_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.MudDialog
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.MudDialog
+  nameWithType: NewPropertyDialog.MudDialog
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.OnValidSubmit(EditContext)
+  name: OnValidSubmit(EditContext)
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_OnValidSubmit_EditContext_
+  commentId: M:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.OnValidSubmit(EditContext)
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.OnValidSubmit(EditContext)
+  nameWithType: NewPropertyDialog.OnValidSubmit(EditContext)
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.OnValidSubmit*
+  name: OnValidSubmit
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_OnValidSubmit_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.OnValidSubmit
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.OnValidSubmit
+  nameWithType: NewPropertyDialog.OnValidSubmit
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.SnackbarService
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_SnackbarService
+  commentId: P:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.SnackbarService
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.SnackbarService
+  nameWithType: NewPropertyDialog.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.SnackbarService*
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_ApiScopes_NewPropertyDialog_SnackbarService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.SnackbarService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.SnackbarService
+  nameWithType: NewPropertyDialog.SnackbarService
 - uid: CG.Green.Host.Pages.Admin.Clients
   name: CG.Green.Host.Pages.Admin.Clients
   href: api/CG.Green.Host.Pages.Admin.Clients.html
@@ -6599,6 +6785,103 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Resources.NewClaimDialog.SnackbarService
   nameWithType: NewClaimDialog.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog
+  name: NewPropertyDialog
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html
+  commentId: T:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog
+  nameWithType: NewPropertyDialog
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Cancel
+  name: Cancel()
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_Cancel
+  commentId: M:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Cancel
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Cancel()
+  nameWithType: NewPropertyDialog.Cancel()
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Cancel*
+  name: Cancel
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_Cancel_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Cancel
+  nameWithType: NewPropertyDialog.Cancel
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.DialogService
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_DialogService
+  commentId: P:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.DialogService
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.DialogService
+  nameWithType: NewPropertyDialog.DialogService
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.DialogService*
+  name: DialogService
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_DialogService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.DialogService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.DialogService
+  nameWithType: NewPropertyDialog.DialogService
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Logger
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_Logger
+  commentId: P:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Logger
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Logger
+  nameWithType: NewPropertyDialog.Logger
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Logger*
+  name: Logger
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_Logger_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Logger
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Logger
+  nameWithType: NewPropertyDialog.Logger
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Model
+  name: Model
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_Model
+  commentId: P:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Model
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Model
+  nameWithType: NewPropertyDialog.Model
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Model*
+  name: Model
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_Model_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Model
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.Model
+  nameWithType: NewPropertyDialog.Model
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.MudDialog
+  name: MudDialog
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_MudDialog
+  commentId: P:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.MudDialog
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.MudDialog
+  nameWithType: NewPropertyDialog.MudDialog
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.MudDialog*
+  name: MudDialog
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_MudDialog_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.MudDialog
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.MudDialog
+  nameWithType: NewPropertyDialog.MudDialog
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.OnValidSubmit(EditContext)
+  name: OnValidSubmit(EditContext)
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_OnValidSubmit_EditContext_
+  commentId: M:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.OnValidSubmit(EditContext)
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.OnValidSubmit(EditContext)
+  nameWithType: NewPropertyDialog.OnValidSubmit(EditContext)
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.OnValidSubmit*
+  name: OnValidSubmit
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_OnValidSubmit_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.OnValidSubmit
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.OnValidSubmit
+  nameWithType: NewPropertyDialog.OnValidSubmit
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.SnackbarService
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_SnackbarService
+  commentId: P:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.SnackbarService
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.SnackbarService
+  nameWithType: NewPropertyDialog.SnackbarService
+- uid: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.SnackbarService*
+  name: SnackbarService
+  href: api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html#CG_Green_Host_Pages_Admin_Resources_NewPropertyDialog_SnackbarService_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.SnackbarService
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.SnackbarService
+  nameWithType: NewPropertyDialog.SnackbarService
 - uid: CG.Green.Host.Pages.Admin.Resources.NewResourceDialog
   name: NewResourceDialog
   href: api/CG.Green.Host.Pages.Admin.Resources.NewResourceDialog.html
@@ -6726,6 +7009,12 @@ references:
   commentId: F:CG.Green.Host.Pages.Admin.Resources.ResourceDetail._tempClaim
   fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail._tempClaim
   nameWithType: ResourceDetail._tempClaim
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail._tempProperty
+  name: _tempProperty
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail__tempProperty
+  commentId: F:CG.Green.Host.Pages.Admin.Resources.ResourceDetail._tempProperty
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail._tempProperty
+  nameWithType: ResourceDetail._tempProperty
 - uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.DialogService
   name: DialogService
   href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_DialogService
@@ -6817,6 +7106,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreateClaimAsync
   nameWithType: ResourceDetail.OnCreateClaimAsync
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreatePropertyAsync
+  name: OnCreatePropertyAsync()
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnCreatePropertyAsync
+  commentId: M:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreatePropertyAsync
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreatePropertyAsync()
+  nameWithType: ResourceDetail.OnCreatePropertyAsync()
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreatePropertyAsync*
+  name: OnCreatePropertyAsync
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnCreatePropertyAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreatePropertyAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreatePropertyAsync
+  nameWithType: ResourceDetail.OnCreatePropertyAsync
 - uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeleteClaimAsync(_Wrapper)
   name: OnDeleteClaimAsync(_Wrapper)
   href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnDeleteClaimAsync__Wrapper_
@@ -6830,6 +7132,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeleteClaimAsync
   nameWithType: ResourceDetail.OnDeleteClaimAsync
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeletePropertyAsync(EditPropertyVM)
+  name: OnDeletePropertyAsync(EditPropertyVM)
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnDeletePropertyAsync_EditPropertyVM_
+  commentId: M:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeletePropertyAsync(EditPropertyVM)
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeletePropertyAsync(EditPropertyVM)
+  nameWithType: ResourceDetail.OnDeletePropertyAsync(EditPropertyVM)
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeletePropertyAsync*
+  name: OnDeletePropertyAsync
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnDeletePropertyAsync_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeletePropertyAsync
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeletePropertyAsync
+  nameWithType: ResourceDetail.OnDeletePropertyAsync
 - uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditClaimCancel(System.Object)
   name: OnEditClaimCancel(Object)
   href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditClaimCancel_System_Object_
@@ -6869,6 +7184,45 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditClaimStart
   nameWithType: ResourceDetail.OnEditClaimStart
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCancel(System.Object)
+  name: OnEditPropertyCancel(Object)
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyCancel_System_Object_
+  commentId: M:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCancel(System.Object)
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCancel(System.Object)
+  nameWithType: ResourceDetail.OnEditPropertyCancel(Object)
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCancel*
+  name: OnEditPropertyCancel
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyCancel_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCancel
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCancel
+  nameWithType: ResourceDetail.OnEditPropertyCancel
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCommit(System.Object)
+  name: OnEditPropertyCommit(Object)
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyCommit_System_Object_
+  commentId: M:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCommit(System.Object)
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCommit(System.Object)
+  nameWithType: ResourceDetail.OnEditPropertyCommit(Object)
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCommit*
+  name: OnEditPropertyCommit
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyCommit_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCommit
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCommit
+  nameWithType: ResourceDetail.OnEditPropertyCommit
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyStart(System.Object)
+  name: OnEditPropertyStart(Object)
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyStart_System_Object_
+  commentId: M:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyStart(System.Object)
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyStart(System.Object)
+  nameWithType: ResourceDetail.OnEditPropertyStart(Object)
+- uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyStart*
+  name: OnEditPropertyStart
+  href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyStart_
+  commentId: Overload:CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyStart
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyStart
+  nameWithType: ResourceDetail.OnEditPropertyStart
 - uid: CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html#CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnInitializedAsync
@@ -8809,6 +9163,38 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.ViewModels.EditClaimVM.ClaimValue
   nameWithType: EditClaimVM.ClaimValue
+- uid: CG.Green.Host.ViewModels.EditPropertyVM
+  name: EditPropertyVM
+  href: api/CG.Green.Host.ViewModels.EditPropertyVM.html
+  commentId: T:CG.Green.Host.ViewModels.EditPropertyVM
+  fullName: CG.Green.Host.ViewModels.EditPropertyVM
+  nameWithType: EditPropertyVM
+- uid: CG.Green.Host.ViewModels.EditPropertyVM.Key
+  name: Key
+  href: api/CG.Green.Host.ViewModels.EditPropertyVM.html#CG_Green_Host_ViewModels_EditPropertyVM_Key
+  commentId: P:CG.Green.Host.ViewModels.EditPropertyVM.Key
+  fullName: CG.Green.Host.ViewModels.EditPropertyVM.Key
+  nameWithType: EditPropertyVM.Key
+- uid: CG.Green.Host.ViewModels.EditPropertyVM.Key*
+  name: Key
+  href: api/CG.Green.Host.ViewModels.EditPropertyVM.html#CG_Green_Host_ViewModels_EditPropertyVM_Key_
+  commentId: Overload:CG.Green.Host.ViewModels.EditPropertyVM.Key
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditPropertyVM.Key
+  nameWithType: EditPropertyVM.Key
+- uid: CG.Green.Host.ViewModels.EditPropertyVM.Value
+  name: Value
+  href: api/CG.Green.Host.ViewModels.EditPropertyVM.html#CG_Green_Host_ViewModels_EditPropertyVM_Value
+  commentId: P:CG.Green.Host.ViewModels.EditPropertyVM.Value
+  fullName: CG.Green.Host.ViewModels.EditPropertyVM.Value
+  nameWithType: EditPropertyVM.Value
+- uid: CG.Green.Host.ViewModels.EditPropertyVM.Value*
+  name: Value
+  href: api/CG.Green.Host.ViewModels.EditPropertyVM.html#CG_Green_Host_ViewModels_EditPropertyVM_Value_
+  commentId: Overload:CG.Green.Host.ViewModels.EditPropertyVM.Value
+  isSpec: "True"
+  fullName: CG.Green.Host.ViewModels.EditPropertyVM.Value
+  nameWithType: EditPropertyVM.Value
 - uid: CG.Green.Host.ViewModels.EditResourceVM
   name: EditResourceVM
   href: api/CG.Green.Host.ViewModels.EditResourceVM.html

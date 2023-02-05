@@ -1094,6 +1094,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Globals.Models.Properties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Globals.Models.Properties.html",
+          "hash": "7WhTnp2/z+kTYr9jQLfaD1sYsLQa3C8RPxxjjkr3qTo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Globals.Models.Resources.yml",
       "output": {
         ".html": {
@@ -1170,7 +1182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.ApiScopeDetail.html",
-          "hash": "ASn34QbZuwd8Dw4LG0o+LJmU3e8iTxw41I1URAD3sH0="
+          "hash": "P5UzNxQPZt8hijYiVl9v/6QUQ/Phl108Sqf7FeA56PU="
         }
       },
       "is_incremental": false,
@@ -1214,11 +1226,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.NewPropertyDialog.html",
+          "hash": "swaDPfgEDWISH5zJOCnKiyEo3nV+8sfxQ4gYdQuVAwc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.ApiScopes.html",
-          "hash": "y65Z+fr9WnhLfM1D39NO/WAsPk6J1gg9r2aMGlxByq8="
+          "hash": "Q54oe4d4yQEjSuwleKpt000hs9f6EWc7mOt7HMa9vcM="
         }
       },
       "is_incremental": false,
@@ -1286,6 +1310,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.Pages.Admin.Resources.NewPropertyDialog.html",
+          "hash": "AvgkdBxclUYg7Cqkeq8e+dDrJk9LtRvn6yY6sK/hmB0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Host.Pages.Admin.Resources.NewResourceDialog.yml",
       "output": {
         ".html": {
@@ -1302,7 +1338,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Resources.ResourceDetail.html",
-          "hash": "om/yrhzRAcV+6Lv+ob1mUG1uK4wDWzL+7RvgEs00azo="
+          "hash": "7oYkmRzeHHH8FoqYbRUXtSyneqse3OiIVJ5HlPSwwi0="
         }
       },
       "is_incremental": false,
@@ -1326,7 +1362,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Admin.Resources.html",
-          "hash": "XqvbNsydC6CRxgh5itLxdlCoEOTpK7Sx4p6iuSqOwCI="
+          "hash": "MtdSv0Acyzkd82CuXOyq8PpeyF7w0ze72NW9lkGvfFQ="
         }
       },
       "is_incremental": false,
@@ -1566,7 +1602,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.EditApiScopeVM.html",
-          "hash": "aIHZ4SZnjvRNEG4ko6rT4yNXUVNPBDJkJU/X/cfAKiM="
+          "hash": "npgnIMAhwViBv/ju10glPSnPXHcIIeLC5RsWOOGBgss="
         }
       },
       "is_incremental": false,
@@ -1586,11 +1622,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Host.ViewModels.EditPropertyVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Host.ViewModels.EditPropertyVM.html",
+          "hash": "nuuLoiw5CiVYQuykYjMr3RBTJs5XoF8k5A1BaMz4dOU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Host.ViewModels.EditResourceVM.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.EditResourceVM.html",
-          "hash": "mRvL3SLY9OcGv+monmDePbu5A+MH6V/yYut2yzIz5Aw="
+          "hash": "Q1yo8sJUvEowypnQffan/sjykHvbDy6mw/t5Y78uI60="
         }
       },
       "is_incremental": false,
@@ -1722,7 +1770,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.ViewModels.html",
-          "hash": "+o95bBeI5cv2C0es3G/1kYib+Pzxe0MvxRO6CqMRfFU="
+          "hash": "w5Vg5mix4dtyfLgHCXdo5DMaMMZHl8BuTrlIngWRduw="
         }
       },
       "is_incremental": false,
@@ -2538,7 +2586,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.html",
-          "hash": "STCykPUcxZHsx2mEJVnStkex9JhcAA7YZc7U50CeJt0="
+          "hash": "Aj4UrfIkDhKMeyC4O8E/Na3aLgS1t9eqKalnBRMubD4="
         }
       },
       "is_incremental": false,
@@ -2718,7 +2766,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "spwgo8roMbSdZk0pvYjWs/OdmeJd7+NzWdLlVTxAFps="
+          "hash": "lY2iNDTw4zgdicGgwCPE5lmicg2LPq2Puy1TiH8JNmk="
         }
       },
       "is_incremental": false,
@@ -2837,7 +2885,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 225,
+          "total_file_count": 229,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

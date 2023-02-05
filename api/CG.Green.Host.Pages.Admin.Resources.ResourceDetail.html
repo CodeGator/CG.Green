@@ -215,6 +215,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail__tempProperty" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail._tempProperty">_tempProperty</h4>
+  <div class="markdown level1 summary"><p>This field contains a temporary property, for editing purposes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EditPropertyVM? _tempProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EditPropertyVM</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_DialogService_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.DialogService*"></a>
@@ -462,6 +485,31 @@
       </tr>
     </tbody>
   </table>
+  <a id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnCreatePropertyAsync_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreatePropertyAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnCreatePropertyAsync" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnCreatePropertyAsync">OnCreatePropertyAsync()</h4>
+  <div class="markdown level1 summary"><p>This method is called to create a new property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnCreatePropertyAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnDeleteClaimAsync_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeleteClaimAsync*"></a>
   <h4 id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnDeleteClaimAsync__Wrapper_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeleteClaimAsync(_Wrapper)">OnDeleteClaimAsync(_Wrapper)</h4>
   <div class="markdown level1 summary"><p>This method is called to delete a claim from a resource.</p>
@@ -485,6 +533,49 @@
         <td><span class="xref">_Wrapper</span></td>
         <td><span class="parametername">claim</span></td>
         <td><p>The claim to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnDeletePropertyAsync_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeletePropertyAsync*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnDeletePropertyAsync_EditPropertyVM_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnDeletePropertyAsync(EditPropertyVM)">OnDeletePropertyAsync(EditPropertyVM)</h4>
+  <div class="markdown level1 summary"><p>This method is called to delete a property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnDeletePropertyAsync(EditPropertyVM property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EditPropertyVM</span></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>The property to use for the operation.</p>
 </td>
       </tr>
     </tbody>
@@ -567,6 +658,87 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void OnEditClaimStart(object element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The claim to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyCancel_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCancel*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyCancel_System_Object_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCancel(System.Object)">OnEditPropertyCancel(Object)</h4>
+  <div class="markdown level1 summary"><p>This method is called to cancel an in-progress property edit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnEditPropertyCancel(object element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The claim to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyCommit_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCommit*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyCommit_System_Object_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyCommit(System.Object)">OnEditPropertyCommit(Object)</h4>
+  <div class="markdown level1 summary"><p>This method is called to commit an in-progress property edit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnEditPropertyCommit(object element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The property to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyStart_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyStart*"></a>
+  <h4 id="CG_Green_Host_Pages_Admin_Resources_ResourceDetail_OnEditPropertyStart_System_Object_" data-uid="CG.Green.Host.Pages.Admin.Resources.ResourceDetail.OnEditPropertyStart(System.Object)">OnEditPropertyStart(Object)</h4>
+  <div class="markdown level1 summary"><p>This method is called to start a property edit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnEditPropertyStart(object element)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
