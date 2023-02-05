@@ -32,6 +32,11 @@ public partial class ApiScopeDetail
     /// </summary>
     internal protected _Wrapper? _tempClaim;
 
+    /// <summary>
+    /// This field contains a temporary property, for editing purposes.
+    /// </summary>
+    internal protected EditPropertyVM? _tempProperty;
+
     #endregion
 
     // *******************************************************************
@@ -341,7 +346,7 @@ public partial class ApiScopeDetail
                 "Deleting a claim."
                 );
 
-            // Delete the API scope.
+            // Delete the claim.
             _model.UserClaims.Remove(claim);
         }
         catch (Exception ex)
@@ -448,6 +453,254 @@ public partial class ApiScopeDetail
         StateHasChanged();
     }
 
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to create a new property.
+    /// </summary>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task OnCreatePropertyAsync()
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog options."
+                );
+
+            // Create the dialog options.
+            var options = new DialogOptions
+            {
+                MaxWidth = MaxWidth.Small,
+                CloseOnEscapeKey = true,
+                FullWidth = true
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog parameters."
+                );
+
+            // Create the dialog parameters.
+            var parameters = new DialogParameters()
+            {
+                { "Model", new EditPropertyVM() }
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating new dialog."
+                );
+
+            // Create the dialog.
+            var dialog = DialogService.Show<NewPropertyDialog>(
+                "Create Property",
+                parameters,
+                options
+                );
+
+            // Get the results of the dialog.
+            var result = await dialog.Result;
+
+            // Did the user cancel?
+            if (result.Canceled)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Recovering the dialog model."
+                );
+
+            // Recover the model.
+            var model = (EditPropertyVM)result.Data;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating the new property"
+                );
+
+            // Add the new claim.
+            _model.Properties.Add(model);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to create a property!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to delete a property.
+    /// </summary>
+    /// <param name="property">The property to use for the operation.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task OnDeletePropertyAsync(
+        EditPropertyVM property
+        )
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return; // Nothing to do!
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
+
+            // Prompt the user.
+            var result = await DialogService.ShowMessageBox(
+                title: Globals.Caption,
+                markupMessage: new MarkupString("This will delete the property " +
+                $"<b>'{property.Key}'</b> <br /> <br /> Are you <i>sure</i> " +
+                "you want to do that?"),
+                noText: "Cancel"
+                );
+
+            // Did the user cancel?
+            if (result.HasValue && !result.Value)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting a property."
+                );
+
+            // Delete the property.
+            _model.Properties.Remove(property);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete a property!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to cancel an in-progress property edit.
+    /// </summary>
+    /// <param name="element">The claim to use for the operation.</param>
+    protected void OnEditPropertyCancel(object element)
+    {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Restoring claim from backup"
+            );
+
+        // Restore the property from our backup.
+        ((EditPropertyVM)element).Key = _tempProperty?.Key ?? "";
+        ((EditPropertyVM)element).Value = _tempProperty?.Value ?? "";
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Releasing the backup"
+            );
+
+        // We don't need this now.
+        _tempClaim = null;
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
+
+        // Tell blazor to update.
+        StateHasChanged();
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to commit an in-progress property edit.
+    /// </summary>
+    /// <param name="element">The property to use for the operation.</param>
+    protected void OnEditPropertyCommit(object element)
+    {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Releasing the backup"
+            );
+
+        // We don't need this now.
+        _tempProperty = null;
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
+
+        // Tell blazor to update.
+        StateHasChanged();
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method is called to start a property edit.
+    /// </summary>
+    /// <param name="element">The claim to use for the operation.</param>
+    protected void OnEditPropertyStart(object element)
+    {
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Making a property backup"
+            );
+
+        // Copy the property.
+        _tempProperty = new EditPropertyVM()
+        {
+            Key = ((EditPropertyVM)element).Key,
+            Value = ((EditPropertyVM)element).Value
+        };
+
+        // Log what we are about to do.
+        Logger.LogDebug(
+            "Forcing a blazor update"
+            );
+
+        // Tell blazor to update.
+        StateHasChanged();
+    }
+
     #endregion
 
     // *******************************************************************
@@ -513,7 +766,12 @@ public partial class ApiScopeDetail
                     Description = apiScope.Description ?? "",
                     Emphasize = apiScope.Emphasize,
                     Enabled = apiScope.Enabled,
-                    Properties = apiScope.Properties,
+                    Properties = apiScope.Properties.Select(x => 
+                        new EditPropertyVM()
+                        {
+                            Key = x.Key,
+                            Value = x.Value,
+                        }).ToList(),
                     Required = apiScope.Required,
                     ShowInDiscoveryDocument = apiScope.ShowInDiscoveryDocument,
                     UserClaims = apiScope.UserClaims.Select(x => 

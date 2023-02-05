@@ -69,7 +69,7 @@ public class EditResourceVM
     /// This property contains properties associated with the resource.
     /// </summary>
     [Display(Name = "Properties")]
-    public IDictionary<string, string> Properties { get; set; } = new Dictionary<string, string>();
+    public List<EditPropertyVM> Properties { get; set; } = new();
 
     #endregion
 
@@ -96,7 +96,7 @@ public class EditResourceVM
             ShowInDiscoveryDocument = ShowInDiscoveryDocument,
             Emphasize = Emphasize,
             UserClaims = UserClaims.Select(x => x.Value).ToList(),
-            Properties = Properties
+            Properties = Properties.ToDictionary(x => x.Key, y => y.Value)
         };
         return obj;
     }

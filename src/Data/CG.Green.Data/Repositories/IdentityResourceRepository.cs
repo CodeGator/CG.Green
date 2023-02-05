@@ -425,6 +425,67 @@ internal class IdentityResourceRepository : IIdentityResourceRepository
                 nameof(ConfigurationDbContext)
                 );
 
+            // Update the editable properties.
+            entity.Name = identityResource.Name;
+            entity.DisplayName = identityResource.DisplayName;
+            entity.Description = identityResource.Description;
+            entity.Required = identityResource.Required;
+            entity.Enabled = identityResource.Enabled;
+            entity.Emphasize = identityResource.Emphasize;
+
+            // Find any claims that were deleted.
+            var deletedClaims = entity.UserClaims.Where(p1 =>
+                identityResource.UserClaims.All(p2 => p2 != p1.Type)
+                ).ToList();
+
+            // Loop and remove claims.
+            foreach (var claim in deletedClaims)
+            {
+                entity.UserClaims.Remove(claim);
+            }
+
+            // Find any claims that were added.
+            var addedClaims = identityResource.UserClaims.Where(p1 =>
+                entity.UserClaims.All(p2 => p2.Type != p1)
+                ).ToList();
+
+            // Loop and add claims.
+            foreach (var claim in addedClaims)
+            {
+                entity.UserClaims.Add(new Duende.IdentityServer.EntityFramework.Entities.IdentityResourceClaim()
+                {
+                    IdentityResourceId = entity.Id,
+                    Type = claim
+                });
+            }
+            
+            // Find any properties that were deleted.
+            var deletedProps = entity.Properties.Where(p1 =>
+                identityResource.Properties.All(p2 => p2.Key != p1.Key)
+                ).ToList();
+
+            // Loop and remove properties.
+            foreach (var prop in deletedProps)
+            {
+                entity.Properties.Remove(prop);
+            }
+
+            // Find any properties that were added.
+            var addedProps = identityResource.Properties.Where(p1 =>
+                entity.Properties.All(p2 => p2.Key != p1.Key)
+                ).ToList();
+
+            // Loop and add properties.
+            foreach (var prop in addedProps)
+            {
+                entity.Properties.Add(new Duende.IdentityServer.EntityFramework.Entities.IdentityResourceProperty()
+                {
+                    IdentityResourceId = entity.Id,
+                    Key = prop.Key,
+                    Value = prop.Value
+                });
+            }
+            
             // Log what we are about to do.
             _logger.LogDebug(
                 "Saving changes to the {ctx} data-context",

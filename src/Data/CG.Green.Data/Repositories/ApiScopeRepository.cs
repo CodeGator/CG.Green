@@ -459,6 +459,33 @@ internal class ApiScopeRepository : IApiScopeRepository
                 });
             }
 
+            // Find any properties that were deleted.
+            var deletedProps = entity.Properties.Where(p1 =>
+                apiScope.Properties.All(p2 => p2.Key != p1.Key)
+                ).ToList();
+
+            // Loop and remove properties.
+            foreach (var prop in deletedProps)
+            {
+                entity.Properties.Remove(prop);
+            }
+
+            // Find any properties that were added.
+            var addedProps = apiScope.Properties.Where(p1 =>
+                entity.Properties.All(p2 => p2.Key != p1.Key)
+                ).ToList();
+
+            // Loop and add properties.
+            foreach (var prop in addedProps)
+            {
+                entity.Properties.Add(new Duende.IdentityServer.EntityFramework.Entities.ApiScopeProperty()
+                {
+                    ScopeId = entity.Id,
+                    Key = prop.Key,
+                    Value = prop.Value  
+                });
+            }
+
             // Log what we are about to do.
             _logger.LogDebug(
                 "Saving changes to the {ctx} data-context",

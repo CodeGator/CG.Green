@@ -79,6 +79,24 @@ public static class Globals
         }
 
         /// <summary>
+        /// This class contains sizes for property properties.
+        /// </summary>
+        public static class Properties
+        {
+            /// <summary>
+            /// This constant represents the length of a property key.
+            /// property.
+            /// </summary>
+            public const int KeyLength = 250;
+
+            /// <summary>
+            /// This constant represents the length of a property value.
+            /// property.
+            /// </summary>
+            public const int ValueLength = 200;
+        }
+
+        /// <summary>
         /// This class contains sizes for identity resources.
         /// </summary>
         public static class Resources

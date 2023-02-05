@@ -1,11 +1,9 @@
 ﻿namespace CG.Green.Host.ViewModels;
 
 /// <summary>
-/// This class wraps a string for the <see cref="MudTable{T}"/> component, since 
-/// that type is incapable of binding (correctly) to a single string object, as 
-/// documented HERE: https://github.com/MudBlazor/MudBlazor/discussions/6217
+/// This class is a view-model for editing a property.
 /// </summary>
-public class _Wrapper
+public class EditPropertyVM
 {
     // *******************************************************************
     // Properties.
@@ -14,7 +12,14 @@ public class _Wrapper
     #region Properties
 
     /// <summary>
-    /// This property contains the string value.
+    /// This property contains the property key.
+    /// </summary>
+    [Required]
+    [Display(Name = "Key")]
+    public string Key { get; set; } = null!;
+
+    /// <summary>
+    /// This property contains the property value.
     /// </summary>
     [Display(Name = "Value")]
     public string Value { get; set; } = null!;
