@@ -79,6 +79,30 @@ public static class Globals
         }
 
         /// <summary>
+        /// This class contains sizes for identity resources.
+        /// </summary>
+        public static class Resources
+        {
+            /// <summary>
+            /// This constant represents the length of a resource name.
+            /// property.
+            /// </summary>
+            public const int NameLength = 200;
+
+            /// <summary>
+            /// This constant represents the length of a resource display name.
+            /// property.
+            /// </summary>
+            public const int DisplayNameLength = 200;
+
+            /// <summary>
+            /// This constant represents the length of a resource description.
+            /// property.
+            /// </summary>
+            public const int DescriptionLength = 1000;
+        }
+
+        /// <summary>
         /// This class contains sizes for GreenUserRole properties.
         /// </summary>
         public static class Roles

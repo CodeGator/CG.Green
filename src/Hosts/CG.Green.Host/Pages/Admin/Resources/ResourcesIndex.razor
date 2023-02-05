@@ -1,20 +1,20 @@
-﻿@page "/admin/apiscopes"
+﻿@page "/admin/resources"
 @attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
 
-<PageTitle>API Scopes</PageTitle>
+<PageTitle>Identity Resources</PageTitle>
 
 <MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
 
-<MudText Typo="Typo.h6" Class="py-4 px-5">API Scopes</MudText>
+<MudText Typo="Typo.h6" Class="py-4 px-5">Identity Resources</MudText>
 
 <MudGrid>
     <MudItem xs="12">
-        <MudTable Items="_apiScopes"
+        <MudTable Items="_resources"
                   Loading="_isLoading"
                   Dense
                   Striped
                   Virtualize
-                  Filter="new Func<EditApiScopeVM,bool>(FilterFunc1)">
+                  Filter="new Func<EditResourceVM,bool>(FilterFunc1)">
             <ToolBarContent>
                 <MudButton StartIcon="@Icons.Material.Outlined.Create"
                            Variant="Variant.Filled"
@@ -34,8 +34,8 @@
                 <col />
             </ColGroup>
             <HeaderContent>
-                <MudTh><MudTableSortLabel SortBy="new Func<EditApiScopeVM, object>(x=>x.Name)">Name</MudTableSortLabel></MudTh>
-                <MudTh><MudTableSortLabel SortBy="new Func<EditApiScopeVM, object>(x=>x.DisplayName)">Display Name</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<EditResourceVM, object>(x=>x.Name)">Name</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<EditResourceVM, object>(x=>x.DisplayName)">Display Name</MudTableSortLabel></MudTh>
                 <MudTh></MudTh>
             </HeaderContent>
             <RowTemplate>
@@ -54,11 +54,12 @@
                 <MudTablePager />
             </PagerContent>
             <NoRecordsContent>
-                No API scopes were found.
+                No resources were found.
             </NoRecordsContent>
             <LoadingContent>
-                Loading API scopes ...
+                Loading resource ...
             </LoadingContent>
         </MudTable>
     </MudItem>
 </MudGrid>
+

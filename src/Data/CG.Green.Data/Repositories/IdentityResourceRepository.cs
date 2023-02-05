@@ -296,6 +296,8 @@ internal class IdentityResourceRepository : IIdentityResourceRepository
 
             // Perform the identityResource search.
             var clients = await _configurationDbContext.IdentityResources
+                .Include(x => x.UserClaims)
+                .Include(x => x.Properties)
                 .ToListAsync(
                 cancellationToken
                 ).ConfigureAwait(false);
@@ -325,6 +327,62 @@ internal class IdentityResourceRepository : IIdentityResourceRepository
     // *******************************************************************
 
     /// <inheritdoc/>
+    public virtual async Task<IdentityResource?> FindByNameAsync(
+        string name,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(name, nameof(name));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogDebug(
+                "Searching api scopes."
+                );
+
+            // Perform the resource search.
+            var resource = await _configurationDbContext.IdentityResources.Where(
+                x => x.Name == name
+                ).Include(x => x.UserClaims)
+                .Include(x => x.Properties)
+                .FirstOrDefaultAsync(
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Did we fail?
+            if (resource is null)
+            {
+                return null;
+            }
+
+            // Convert the entity to a model.
+            var model = resource.ToModel();
+
+            // Return the results.
+            return model;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for a resource by name!"
+                );
+
+            // Provider better context.
+            throw new RepositoryException(
+                message: $"The repository failed to search for a resource " +
+                "by name!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
     public virtual async Task<IdentityResource> UpdateAsync(
         IdentityResource identityResource,
         CancellationToken cancellationToken = default
@@ -345,7 +403,9 @@ internal class IdentityResourceRepository : IIdentityResourceRepository
             // Look for the given entity.
             var entity = await _configurationDbContext.IdentityResources.Where(x =>
                 x.Name == identityResource.Name
-                ).FirstOrDefaultAsync(
+                ).Include(x => x.UserClaims)
+                 .Include(x => x.Properties)
+                 .FirstOrDefaultAsync(
                     cancellationToken
                     ).ConfigureAwait(false);
 

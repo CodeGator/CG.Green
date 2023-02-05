@@ -321,7 +321,6 @@ internal class ApiScopeManager : IApiScopeManager
                 innerException: ex
                 );
         }
-
     }
 
     // *******************************************************************

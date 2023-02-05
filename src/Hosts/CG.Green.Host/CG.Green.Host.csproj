@@ -31,8 +31,4 @@
         <ProjectReference Include="..\..\Libraries\CG.Green\CG.Green.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Pages\Admin\Clients2\" />
-    </ItemGroup>
-
 </Project>

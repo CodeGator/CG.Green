@@ -1,4 +1,6 @@
 ﻿
+using CG.Green.Repositories;
+
 namespace CG.Green.Managers;
 
 /// <summary>
@@ -272,6 +274,50 @@ internal class IdentityResourceManager : IIdentityResourceManager
             // Provider better context.
             throw new ManagerException(
                 message: $"The manager failed to search for identity resources!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    public virtual async Task<IdentityResource?> FindByNameAsync(
+        string name,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(name, nameof(name));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogTrace(
+                "Deferring to {name}",
+                nameof(IApiScopeRepository.FindByNameAsync)
+                );
+
+            // Perform the operation.
+            var resources = await _identityResourceRepository.FindByNameAsync(
+                name,
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Return the results.
+            return resources;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for a resource by name!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for a resource " +
+                "by name!",
                 innerException: ex
                 );
         }

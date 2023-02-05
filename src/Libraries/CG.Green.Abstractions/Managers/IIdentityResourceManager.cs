@@ -90,6 +90,24 @@ public interface IIdentityResourceManager
         );
 
     /// <summary>
+    /// This method searches for a <see cref="IdentityResource"/> object that matches 
+    /// the given name.
+    /// </summary>
+    /// <param name="name">The name to use for the operation.</param>
+    /// <param name="cancellationToken">A cancellation token that is monitored
+    /// for the lifetime of the method.</param>
+    /// <returns>A task to perform the operation that returns a sequence of 
+    /// <see cref="IdentityResource"/> objects.</returns>
+    /// <exception cref="ArgumentException">This exception is thrown whenever one
+    /// or more arguments are missing, or invalid.</exception>
+    /// <exception cref="ManagerException">This exception is thrown whenever the
+    /// manager fails to complete the operation.</exception>
+    Task<IdentityResource?> FindByNameAsync(
+        string name,
+        CancellationToken cancellationToken = default
+        );
+
+    /// <summary>
     /// This method updates an existing <see cref="IdentityResource"/> object in the 
     /// underlying storage.
     /// </summary>
