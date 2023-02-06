@@ -1,1 +1,9 @@
 global using Microsoft.VisualStudio.TestTools.UnitTesting;
+global using CG.Green.Managers;
+global using Duende.IdentityServer.EntityFramework.DbContexts;
+global using Microsoft.Extensions.Logging;
+global using Moq;
+global using CG.Green.Repositories;
+global using Microsoft.EntityFrameworkCore;
+global using Duende.IdentityServer.EntityFramework.Options;
+global using Microsoft.Extensions.DependencyInjection;

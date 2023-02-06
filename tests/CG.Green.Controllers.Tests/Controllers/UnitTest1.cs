@@ -1,4 +1,4 @@
-namespace CG.Green.Host.Tests
+namespace CG.Green.Controllers
 {
     [TestClass]
     public class UnitTest1

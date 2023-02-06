@@ -1,6 +1,4 @@
 ﻿
-using Duende.IdentityServer.Models;
-
 namespace CG.Green.Managers;
 
 /// <summary>
