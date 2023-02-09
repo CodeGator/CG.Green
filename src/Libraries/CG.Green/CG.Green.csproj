@@ -9,7 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="CG.Cryptography.Shared" Version="2023.1.10" />
-        <PackageReference Include="CG.Seeding" Version="2023.1.9" />
+        <PackageReference Include="CG.Seeding" Version="2023.1.10" />
         <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

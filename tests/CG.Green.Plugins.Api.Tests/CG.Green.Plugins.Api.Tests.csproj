@@ -4,8 +4,8 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>CG.Green.Host</RootNamespace>
         <IsPackable>false</IsPackable>
+        <RootNamespace>CG.Green.Plugins.Api</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Hosts\CG.Green.Host\CG.Green.Host.csproj" />
+        <ProjectReference Include="..\..\src\Plugins\CG.Green.Plugins.Api\CG.Green.Plugins.Api.csproj" />
     </ItemGroup>
 
 </Project>

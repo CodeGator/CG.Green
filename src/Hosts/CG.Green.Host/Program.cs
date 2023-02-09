@@ -56,8 +56,7 @@ try
     // Add Green stuff.
     builder.AddGreenRepositories(bootstrapLogger: BootstrapLogger.Instance())
         .AddGreenManagers(bootstrapLogger: BootstrapLogger.Instance())
-        .AddGreenIdentity(bootstrapLogger: BootstrapLogger.Instance())
-        .AddGreenControllers(bootstrapLogger: BootstrapLogger.Instance());
+        .AddGreenIdentity(bootstrapLogger: BootstrapLogger.Instance());
 
     // Log what we are about to do.
     BootstrapLogger.Instance().LogDebug(
@@ -101,8 +100,7 @@ try
         .UseBlazorPlugins();
 
     // Use Green stuff.
-    app.UseGreenIdentity()
-        .UseGreenControllers();
+    app.UseGreenIdentity();
 
     // Run the application.
     app.Run();
