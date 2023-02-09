@@ -1,10 +1,10 @@
 ﻿
-namespace CG.Green.Host.Pages.Admin.Resources;
+namespace CG.Green.Host.Pages.Admin.Clients2;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="ResourcesIndex"/> page.
+/// This class is the code-behind for the <see cref="ClientsIndex"/> page.
 /// </summary>
-public partial class ResourcesIndex
+public partial class ClientsIndex
 {
     // *******************************************************************
     // Fields.
@@ -19,13 +19,13 @@ public partial class ResourcesIndex
     {
         new BreadcrumbItem("Home", href: "/"),
         new BreadcrumbItem("Admin", href: "/admin", disabled: true),
-        new BreadcrumbItem("Resources", href: "/admin/resources")
+        new BreadcrumbItem("Clients", href: "/admin/clients")
     };
 
     /// <summary>
-    /// This field contains the list of identity resources.
+    /// This field contains the list of clients.
     /// </summary>
-    internal protected List<EditResourceVM> _resources = new();
+    internal protected List<EditClientVM> _clients = new();
 
     /// <summary>
     /// This field indicates when the page is loading data.
@@ -35,7 +35,7 @@ public partial class ResourcesIndex
     /// <summary>
     /// This field contains the current search string.
     /// </summary>
-    internal protected string _gridSearchString = "";
+    protected string _gridSearchString = "";
 
     #endregion
 
@@ -85,7 +85,7 @@ public partial class ResourcesIndex
     /// This property contains the logger for this page.
     /// </summary>
     [Inject]
-    protected ILogger<ResourcesIndex> Logger { get; set; } = null!;
+    protected ILogger<ClientsIndex> Logger { get; set; } = null!;
 
     #endregion
 
@@ -108,7 +108,7 @@ public partial class ResourcesIndex
                 "Loading data for the page."
                 );
 
-            // Load the users.
+            // Load the clients.
             await LoadDataAsync();
 
             // Log what we are about to do.
@@ -124,7 +124,7 @@ public partial class ResourcesIndex
             // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to fetch identity resources!"
+                "Failed to fetch clients!"
                 );
 
             // Log what we are about to do.
@@ -145,19 +145,19 @@ public partial class ResourcesIndex
     /// </summary>
     /// <param name="element">The element to use for the operation.</param>
     /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
-    protected bool FilterFunc1(EditResourceVM element) =>
+    protected bool FilterFunc1(EditClientVM element) =>
         FilterFunc(element, _gridSearchString);
 
     // *******************************************************************
 
     /// <summary>
-    /// This method performs a search of the roles.
+    /// This method performs a search of the clients.
     /// </summary>
     /// <param name="element">The element to uses for the operation.</param>
     /// <param name="searchString">The search string to use for the operation.</param>
     /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
     protected bool FilterFunc(
-        EditResourceVM element,
+        EditClientVM element,
         string searchString
         )
     {
@@ -165,14 +165,21 @@ public partial class ResourcesIndex
         {
             return true;
         }
-        if ((element.Name ?? "").Contains(
+        if ((element.ClientName ?? "").Contains(
             searchString,
             StringComparison.OrdinalIgnoreCase)
             )
         {
             return true;
         }
-        if ((element.DisplayName ?? "").Contains(
+        if ((element.ClientId ?? "").Contains(
+            searchString,
+            StringComparison.OrdinalIgnoreCase)
+            )
+        {
+            return true;
+        }
+        if ((element.Description ?? "").Contains(
             searchString,
             StringComparison.OrdinalIgnoreCase)
             )
@@ -185,9 +192,8 @@ public partial class ResourcesIndex
     // *******************************************************************
 
     /// <summary>
-    /// This method is called to create a new identity resource.
+    /// This method adds a new client.
     /// </summary>
-    /// <returns>A task to perform the operation.</returns>
     protected async Task OnCreateAsync()
     {
         try
@@ -213,7 +219,7 @@ public partial class ResourcesIndex
             // Create the dialog parameters.
             var parameters = new DialogParameters()
             {
-                { "Model", new NewResourceVM() }
+                { "Model", new NewClientVM() }
             };
 
             // Log what we are about to do.
@@ -222,8 +228,8 @@ public partial class ResourcesIndex
                 );
 
             // Create the dialog.
-            var dialog = DialogService.Show<NewResourceDialog>(
-                "Create Resource",
+            var dialog = DialogService.Show<NewClientDialog>(
+                "Create Client",
                 parameters,
                 options
                 );
@@ -243,38 +249,55 @@ public partial class ResourcesIndex
                 );
 
             // Recover the model.
-            var model = (NewResourceVM)result.Data;
+            var model = (NewClientVM)result.Data;
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Creating the new identity resource"
+                "Creating the new client."
                 );
 
-            // Create the new identity resource.
-            var resource = await GreenApi.IdentityResources.CreateAsync(
-                new IdentityResource()
+            // Create the new client.
+            var newClient = await GreenApi.Clients.CreateAsync(
+                new Client()
                 {
-                    Name = model.Name
+                    ClientId = model.ClientId.Trim(),
+                    Enabled = true
                 },
                 UserName
                 );
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Navigating to the identity resource detail page."
+                "Navigating to the client detail page."
                 );
 
             // Go to the detail page.
             NavigationManager.NavigateTo(
-                $"/admin/resources/detail/{Uri.EscapeDataString(resource.Name)}"
+                $"/admin/clients/detail2/{Uri.EscapeDataString(newClient.ClientId)}"
                 );
         }
         catch (Exception ex)
         {
+            // Did the user try to reuse an existing client id?
+            if (ex.GetBaseException().Message.Contains("duplicate key"))
+            {
+                // Log what we are about to do.
+                Logger.LogDebug(
+                    "Showing the message box."
+                    );
+
+                // Prompt the user.
+                await DialogService.ShowMessageBox(
+                    title: "Something broke!",
+                    message: "That client id is already in use!"
+                    );
+                return;
+            }
+
             // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to create an identity resource!"
+                "Failed to create a client!"
                 );
 
             // Log what we are about to do.
@@ -290,11 +313,12 @@ public partial class ResourcesIndex
     // *******************************************************************
 
     /// <summary>
-    /// This method is called to delete an identity resource.
+    /// This method deletes the given client.
     /// </summary>
+    /// <param name="client">The client to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnDeleteAsync(
-        EditResourceVM resource
+        EditClientVM client
         )
     {
         try
@@ -307,8 +331,8 @@ public partial class ResourcesIndex
             // Prompt the user.
             var result = await DialogService.ShowMessageBox(
                 title: Globals.Caption,
-                markupMessage: new MarkupString("This will delete the resource " +
-                $"<b>'{resource.Name}'</b> <br /> <br /> Are you <i>sure</i> " +
+                markupMessage: new MarkupString("This will delete the client " +
+                $"<b>'{client.ClientId}'</b> <br /> <br /> Are you <i>sure</i> " +
                 "you want to do that?"),
                 noText: "Cancel"
                 );
@@ -321,15 +345,12 @@ public partial class ResourcesIndex
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Deleting an identity resource."
+                "Deleting a client."
                 );
 
-            // Delete the resource.
-            await GreenApi.IdentityResources.DeleteAsync(
-                new IdentityResource()
-                {
-                    Name = resource.Name
-                },
+            // Delete the client.
+            await GreenApi.Clients.DeleteAsync(
+                client.ToDuende(),
                 UserName
                 );
 
@@ -338,7 +359,7 @@ public partial class ResourcesIndex
                 "Loading data for the page."
                 );
 
-            // Load the API scopes.
+            // Load the clients.
             await LoadDataAsync();
         }
         catch (Exception ex)
@@ -346,7 +367,7 @@ public partial class ResourcesIndex
             // Log what happened.
             Logger.LogError(
                 ex.GetBaseException(),
-                "Failed to delete an identity resource!"
+                "Failed to delete a client!"
                 );
 
             // Log what we are about to do.
@@ -362,25 +383,115 @@ public partial class ResourcesIndex
     // *******************************************************************
 
     /// <summary>
-    /// This method is called to edit an identity resource.
+    /// This method edits the given client.
     /// </summary>
+    /// <param name="client">The client to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
-    protected Task OnEditAsync(
-        EditResourceVM resource
+    protected async Task OnEditAsync(
+        EditClientVM client
         )
     {
         // Log what we are about to do.
         Logger.LogDebug(
-            "Navigating to the resource detail page."
+            "Navigating to the client detail page."
             );
 
         // Go to the detail page.
         NavigationManager.NavigateTo(
-            $"/admin/resources/detail/{Uri.EscapeDataString(resource.Name)}"
+            $"/admin/clients/detail/{Uri.EscapeDataString(client.ClientId)}"
             );
+    }
 
-        // Return the task.
-        return Task.CompletedTask;
+    // *******************************************************************
+
+    /// <summary>
+    /// This method disables the given client.
+    /// </summary>
+    /// <param name="client">The client to use for the operation.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task DisableClientAsync(
+        EditClientVM client
+        )
+    {
+        try
+        {
+            // Can we take a shortcut?
+            if (!client.Enabled)
+            {
+                return;
+            }
+
+            // Clear the flag.
+            client.Enabled = false;
+
+            // Update the client.
+            await GreenApi.Clients.UpdateAsync(
+                client.ToDuende(),
+                UserName
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to disable a client!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method enables the given client.
+    /// </summary>
+    /// <param name="client">The client to use for the operation.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task EnableClientAsync(
+        EditClientVM client
+        )
+    {
+        try
+        {
+            // Can we take a shortcut?
+            if (client.Enabled)
+            {
+                return;
+            }
+
+            // Set the flag.
+            client.Enabled = true;
+
+            // Update the client.
+            await GreenApi.Clients.UpdateAsync(
+                client.ToDuende(),
+                UserName
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to enable a client!"
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the message box"
+                );
+
+            // Tell the world what happened.
+            await DialogService.ShowErrorBox(ex);
+        }
     }
 
     #endregion
@@ -392,7 +503,7 @@ public partial class ResourcesIndex
     #region Private methods
 
     /// <summary>
-    /// This method loads API scopes for the page.
+    /// This method loads data for the page.
     /// </summary>
     /// <returns>A task to perform the operation.</returns>
     private async Task LoadDataAsync()
@@ -409,25 +520,24 @@ public partial class ResourcesIndex
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Clearing any old identity resources."
+                "Clearing any old clients."
                 );
 
-            // Get rid of any old identity resources.
-            _resources.Clear();
+            // Get rid of any old clients.
+            _clients.Clear();
 
             // Log what we are about to do.
             Logger.LogDebug(
-                "Fetching identity resources from the API."
+                "Fetching clients from the API."
                 );
 
-            // Get the list of identity resources.
-            _resources = (await GreenApi.IdentityResources.FindAllAsync())
-                .Select(x => new EditResourceVM()
+            // Get the list of clients.
+            _clients = (await GreenApi.Clients.FindAllAsync())
+                .Select(x => new EditClientVM()
                 {
-                   Name = x.Name,
-                   DisplayName = x.DisplayName,
-                   Required = x.Required,
-                   Emphasize = x.Emphasize
+                    ClientId = x.ClientId,
+                    ClientName = x.ClientName,
+                    Description = x.Description,
                 }).ToList();
         }
         finally

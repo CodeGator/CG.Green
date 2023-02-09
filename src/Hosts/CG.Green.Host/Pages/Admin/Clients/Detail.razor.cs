@@ -45,7 +45,7 @@ public partial class Detail
     /// <summary>
     /// This field contains the list of client secrets.
     /// </summary>
-    internal protected readonly List<SecretVM> _secrets = new();
+    internal protected readonly List<EditSecretVM> _secrets = new();
 
     /// <summary>
     /// This field contains the list of redirect uris.
@@ -349,7 +349,7 @@ public partial class Detail
                 );
 
             // Add a new secret.
-            _secrets.Add(new SecretVM()
+            _secrets.Add(new EditSecretVM()
             {
                 Secret = new Secret()
                 {
@@ -880,7 +880,7 @@ public partial class Detail
     /// </summary>
     /// <param name="secret">The secret to use for the operation.</param>
     protected async Task OnDeleteSecretAsync(
-        SecretVM secret
+        EditSecretVM secret
         )
     {
         try
@@ -1029,7 +1029,7 @@ public partial class Detail
 
                 // Build the list of secrets.
                 _secrets.AddRange(
-                    _model.ClientSecrets.Select(x => new SecretVM()
+                    _model.ClientSecrets.Select(x => new EditSecretVM()
                     {
                         Secret = x,
                         IsHashed = true

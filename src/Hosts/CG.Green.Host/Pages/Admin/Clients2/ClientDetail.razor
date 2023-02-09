@@ -1,0 +1,69 @@
+﻿@page "/admin/clients/detail/{ClientId}"
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
+
+<PageTitle>Client Details</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+@if (_model is null)
+{
+    if (_isLoading)
+    {
+        <MudText Typo="Typo.h6" Color="Color.Primary">Loading ...</MudText>
+    }
+    else
+    {
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! we couldn't find that client!</MudText>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => NavigationManager.NavigateTo("/admin/clients"))">Back to Clients</MudButton>
+    }
+}
+else
+{
+    <MudText Typo="Typo.h6">Client Details</MudText>
+    <MudText Typo="Typo.body2" Class="pb-5">Use this page to edit the client.</MudText>
+
+    <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+        <MudGrid>
+            <MudItem xs="12">
+                <MudButton ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+                </MudItem>
+            <MudItem xs="12">
+                <MudTextField AutoFocus
+                                Required
+                                Immediate
+                          Counter="@(Globals.Models.Clients.ClientIdLength)"
+                          Class="ml-auto"
+                          Variant="Variant.Outlined"
+                          Label="Client Id"
+                          Mask="@(new RegexMask(@"^[\.a-zA-Z0-9]*$"))"
+                          For="@(() => _model.ClientId)"
+                          @bind-Value="@_model.ClientId" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Required
+                                Immediate
+                          Counter="@(Globals.Models.Clients.ClientNameLength)"
+                          Class="ml-auto"
+                          Variant="Variant.Outlined"
+                          Label="Client Name"
+                          For="@(() => _model.ClientName)"
+                          @bind-Value="@_model.ClientName" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Required
+                              Immediate
+                          Counter="@(Globals.Models.Clients.DescriptionLength)"
+                          Class="ml-auto"
+                          Variant="Variant.Outlined"
+                          Label="Description"
+                          Lines="4"
+                          For="@(() => _model.Description)"
+                          @bind-Value="@_model.Description" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth ButtonType="ButtonType.Submit">Save Changes</MudButton>
+            </MudItem>
+        </MudGrid>
+    </EditForm>
+}

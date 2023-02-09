@@ -146,9 +146,9 @@ else
                                         <col />
                                     </ColGroup>
                                     <HeaderContent>
-                                        <MudTh><MudTableSortLabel SortBy="new Func<SecretVM, object>(x=>x.Secret.Expiration)">Expiration</MudTableSortLabel></MudTh>
-                                        <MudTh><MudTableSortLabel SortBy="new Func<SecretVM, object>(x=>x.Secret.Description)">Description</MudTableSortLabel></MudTh>
-                                        <MudTh><MudTableSortLabel SortBy="new Func<SecretVM, object>(x=>x.Secret.Value)">Value</MudTableSortLabel></MudTh>
+                                        <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Secret.Expiration)">Expiration</MudTableSortLabel></MudTh>
+                                        <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Secret.Description)">Description</MudTableSortLabel></MudTh>
+                                        <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Secret.Value)">Value</MudTableSortLabel></MudTh>
                                         <MudTh></MudTh>
                                     </HeaderContent>
                                     <RowTemplate Context="context2">

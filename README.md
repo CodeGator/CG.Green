@@ -3,7 +3,7 @@
 [![Build Status](https://dev.azure.com/codegator/CG.Green/_apis/build/status/CodeGator.CG.Green?branchName=main)](https://dev.azure.com/codegator/CG.Green/_build/latest?definitionId=105&branchName=main)
 [![Board Status](https://dev.azure.com/codegator/796f6869-3c91-495d-b4dd-16562d48d319/4b6e700e-dd5c-440a-9c8e-d63aebfc018e/_apis/work/boardbadge/f6d51148-5732-41b6-a699-2b0fdb281c56)](https://dev.azure.com/codegator/796f6869-3c91-495d-b4dd-16562d48d319/_boards/board/t/4b6e700e-dd5c-440a-9c8e-d63aebfc018e/Issues/)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Green/105)
-[![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Green/discussions)
+[![Github discussion](https://img.shields.io/badge/Discussion-online-green)](https://github.com/CodeGator/CG.Green/discussions)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Green/index.html)
 
 ### What does it do?
@@ -12,7 +12,7 @@ Green is an idea for an identity microservice. Essentially, we stood up the ASP.
 
 ### What works, and what doesn't, at this point?
 
-Most of the microservice is functional, at this point. We're a few admin pages away from an initial MVP. For now, just ignore the admin pages until we get those completed.
+It's all a work in progrss, at this point.
 
 ### What does the roadmap look like?
 

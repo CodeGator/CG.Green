@@ -73,9 +73,24 @@ public static class Globals
             public const int ClientIdLength = 200;
 
             /// <summary>
+            /// This constant represents the length of the ClientUri property.
+            /// </summary>
+            public const int ClientUriLength = 2000;
+
+            /// <summary>
+            /// This constant represents the length of the Description property.
+            /// </summary>
+            public const int DescriptionLength = 1000;
+
+            /// <summary>
             /// This constant represents the length of the FrontChannelLogoutUri property.
             /// </summary>
             public const int FrontChannelLogoutUriLength = 2000;
+
+            /// <summary>
+            /// This constant represents the length of the LogoUri property.
+            /// </summary>
+            public const int LogoUriLength = 2000;
         }
 
         /// <summary>
@@ -136,6 +151,30 @@ public static class Globals
             /// property.
             /// </summary>
             public const int NameLength = 256;
+        }
+
+        /// <summary>
+        /// This class contains sizes for Duende Secret properties.
+        /// </summary>
+        public static class Secrets
+        {
+            /// <summary>
+            /// This constant represents the length of a description.
+            /// property.
+            /// </summary>
+            public const int DescriptionLength = 2000;
+
+            /// <summary>
+            /// This constant represents the length of a value.
+            /// property.
+            /// </summary>
+            public const int ValueLength = 4000;
+
+            /// <summary>
+            /// This constant represents the length of a type.
+            /// property.
+            /// </summary>
+            public const int TypeLength = 250;
         }
 
         /// <summary>
