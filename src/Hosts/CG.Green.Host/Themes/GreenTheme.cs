@@ -4,7 +4,7 @@ namespace CG.Green.Host.Themes;
 /// <summary>
 /// This class represents the default MudBlazor UI theme.
 /// </summary>
-public class GreenTheme : DefaultTheme<GreenTheme>
+public class GreenTheme : BaseTheme<GreenTheme>
 {
     // *******************************************************************
     // Constructors.

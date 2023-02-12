@@ -1,0 +1,10 @@
+﻿global using CG.Green.Admin.Areas.Admin.Dialogs.Clients;
+global using CG.Green.Admin.ViewModels;
+global using CG.Green.Identity;
+global using CG.Validations;
+global using Duende.IdentityServer.Models;
+global using Microsoft.AspNetCore.Components;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.Extensions.Logging;
+global using MudBlazor;
+global using System.ComponentModel.DataAnnotations;

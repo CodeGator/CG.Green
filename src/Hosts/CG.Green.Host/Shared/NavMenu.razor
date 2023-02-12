@@ -2,13 +2,9 @@
     <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
 
     <AuthorizeView Policy=@PolicyNameDefaults.SuperAdminPolicy>
-        <Authorized>     
+        <Authorized>
             <MudNavGroup Icon="@Icons.Material.TwoTone.AdminPanelSettings" Title="Admin">
-                <MudNavLink Href="admin/apiscopes" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.Api">API Scopes</MudNavLink>
-                <MudNavLink Href="admin/clients" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.Apps">Clients</MudNavLink>
-                <MudNavLink Href="admin/resources" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.RestartAlt">Resources</MudNavLink>
-                <MudNavLink Href="admin/roles" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.RollerShades">Roles</MudNavLink>
-                <MudNavLink Href="admin/users" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.Groups">Users</MudNavLink>
+                <MudNavLink Href="/admin/clients" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Apps">Clients</MudNavLink>
             </MudNavGroup>
         </Authorized>
     </AuthorizeView>
@@ -16,8 +12,8 @@
     <AuthorizeView Policy=@PolicyNameDefaults.SuperAdminPolicy>
         <Authorized>
             <MudNavGroup Icon="@Icons.Material.TwoTone.BugReport" Title="Debugging">
-                <MudNavLink Href="swagger" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.HeartBroken">Swagger</MudNavLink>
-                <MudNavLink Href="debugging/whoami" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.Face">Who Am I?</MudNavLink>
+                <MudNavLink Href="swagger" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Info">Swagger</MudNavLink>
+                <MudNavLink Href="debugging/whoami" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Face">Who Am I?</MudNavLink>
             </MudNavGroup>
         </Authorized>
     </AuthorizeView>
@@ -25,9 +21,11 @@
     <AuthorizeView>
         <Authorized>
             <MudNavGroup Icon="@Icons.Material.TwoTone.Help" Title="Help">
-                <MudNavLink Href="help/about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.QuestionAnswer">About</MudNavLink>
+                <MudNavLink Href="help/about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.QuestionAnswer">About</MudNavLink>
             </MudNavGroup>
         </Authorized>        
     </AuthorizeView>  
 
 </MudNavMenu>
+
+

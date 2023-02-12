@@ -1,5 +1,4 @@
-﻿global using CG.Blazor.Plugins;
-global using CG.Blazor.Themes;
+﻿global using CG.Blazor.Themes;
 global using CG.Green.Directors;
 global using CG.Validations;
 global using Microsoft.AspNetCore.Components;

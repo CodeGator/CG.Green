@@ -12,7 +12,7 @@ Green is an idea for an identity microservice. Essentially, we stood up the ASP.
 
 ### What works, and what doesn't, at this point?
 
-It's all a work in progrss, at this point.
+It's all a work in progress, at this point.
 
 ### What does the roadmap look like?
 
@@ -43,6 +43,8 @@ We're not to the point where we can commit to a feature plan, yet. Keep checking
 * [SqlServer 2019](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 * [Sqlite](https://www.sqlite.org/index.html)
+
+* InMemory (for dev/demo purposes)
 
 ### How do I contact you?
 

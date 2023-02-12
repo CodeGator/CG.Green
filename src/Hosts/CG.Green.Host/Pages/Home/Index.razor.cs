@@ -5,9 +5,5 @@
 /// </summary>
 public partial class Index
 {
-    List<string> data = new()
-    {
-        "string 1",
-        "string 2"
-    };
+    
 }

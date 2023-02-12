@@ -56,7 +56,9 @@ try
     // Add Green stuff.
     builder.AddGreenRepositories(bootstrapLogger: BootstrapLogger.Instance())
         .AddGreenManagers(bootstrapLogger: BootstrapLogger.Instance())
-        .AddGreenIdentity(bootstrapLogger: BootstrapLogger.Instance());
+        .AddGreenIdentity(bootstrapLogger: BootstrapLogger.Instance())
+        .AddGreenAdministration(bootstrapLogger: BootstrapLogger.Instance())
+        .AddGreenControllers(bootstrapLogger: BootstrapLogger.Instance());
 
     // Log what we are about to do.
     BootstrapLogger.Instance().LogDebug(
@@ -65,8 +67,7 @@ try
 
     // Add CodeGator stuff
     builder.AddDataAccess(bootstrapLogger: BootstrapLogger.Instance())
-        .AddSeeding<SeedDirector>(bootstrapLogger: BootstrapLogger.Instance())
-        .AddBlazorPlugins(bootstrapLogger: BootstrapLogger.Instance());
+        .AddSeeding<SeedDirector>(bootstrapLogger: BootstrapLogger.Instance());
 
     // Log what we are about to do.
     BootstrapLogger.Instance().LogDebug(
@@ -97,10 +98,11 @@ try
     // Use CodeGator stuff.
     app.UseDataAccess()
         .UseSeeding()
-        .UseBlazorPlugins();
+        .UseGreenControllers();
 
     // Use Green stuff.
-    app.UseGreenIdentity();
+    app.UseGreenIdentity()
+        .UseGreenAdministration();
 
     // Run the application.
     app.Run();

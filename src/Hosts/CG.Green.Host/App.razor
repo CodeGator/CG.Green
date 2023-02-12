@@ -27,10 +27,10 @@
 </CascadingAuthenticationState>
 
 @code {
-    IList<Assembly> _additionalAssemblies = BlazorResources.RoutedAssemblies.Concat(
-        new[]
+    IList<Assembly> _additionalAssemblies = new[]
         {
             Assembly.Load("CG.Blazor"),
-            Assembly.Load("CG.Green.Identity")
-        }).ToList();
+            Assembly.Load("CG.Green.Identity"),
+            Assembly.Load("CG.Green.Admin")
+        };
 }
