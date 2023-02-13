@@ -1,0 +1,9 @@
+﻿@page "/admin/clients/detail/{ClientId}"
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
+
+<PageTitle>Clients</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+<MudText Typo="Typo.h6">Clients</MudText>
+<MudText Typo="Typo.body1">Use this page to manage clients</MudText>

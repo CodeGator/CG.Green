@@ -40,4 +40,17 @@ public class EditClientVM
     public ClientFlow ClientFlow { get; set; }
 
     #endregion
+
+    // *******************************************************************
+    // Public methods.
+    // *******************************************************************
+
+    #region Public methods
+
+    public static EditClientVM FromDuende(Client client)
+    {
+        return new EditClientVM();
+    }
+
+    #endregion
 }

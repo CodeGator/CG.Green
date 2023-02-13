@@ -1,5 +1,4 @@
-﻿global using CG.Green.Admin.Areas.Admin.Dialogs.Clients;
-global using CG.Green.Admin.ViewModels;
+﻿global using CG.Green.Admin.ViewModels;
 global using CG.Green.Identity;
 global using CG.Validations;
 global using Duende.IdentityServer.Models;

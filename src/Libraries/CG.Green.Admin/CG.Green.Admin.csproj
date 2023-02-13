@@ -26,8 +26,4 @@
         <ProjectReference Include="..\CG.Green.Identity\CG.Green.Identity.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Areas\Admin\Components\" />
-    </ItemGroup>
-
 </Project>
