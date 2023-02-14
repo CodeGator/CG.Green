@@ -198,5 +198,21 @@ public static class Globals
             public const int EmailLength = 256;
         }        
     }
+
+    /// <summary>
+    /// This class contains well-known role names.
+    /// </summary>
+    public static class RoleNames
+    {
+        /// <summary>
+        /// This constant represents the administrator role.
+        /// </summary>
+        public const string Admin = "Admin";
+
+        /// <summary>
+        /// This constant represents the super administrator role.
+        /// </summary>
+        public const string SuperAdmin = "SuperAdmin";
+    }
 }
 

@@ -44,6 +44,8 @@ We're not to the point where we can commit to a feature plan, yet. Keep checking
 
 * [Sqlite](https://www.sqlite.org/index.html)
 
+* [MySql](https://mysql.com)
+
 * InMemory (for dev/demo purposes)
 
 ### How do I contact you?

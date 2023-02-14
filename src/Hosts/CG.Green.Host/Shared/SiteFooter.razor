@@ -1,0 +1,19 @@
+﻿@inherits Footer
+
+<MudAppBar Bottom="true" Color="Color.Inherit" Dense Elevation="0">
+    <MudGrid>
+        <MudItem xs="12">
+            @ChildContent
+        </MudItem>
+        <MudItem xs="2">
+            <CultureSelector />
+        </MudItem>
+        <MudItem xs="10">
+            <MudText Style="font-size: x-small" Align="Align.Right">@Assembly.GetEntryAssembly()?.ReadCopyright()</MudText>
+        </MudItem>
+    </MudGrid>
+</MudAppBar>
+
+@code {
+
+}

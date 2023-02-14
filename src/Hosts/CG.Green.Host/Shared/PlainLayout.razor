@@ -1,0 +1,29 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="@GreenTheme.Instance()" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+    
+<MudLayout>
+    <MudAppBar Elevation="0">
+        <MudSpacer />
+    </MudAppBar>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="my-4 pt-4">
+            @Body
+            <br />
+            <br />
+            <br />
+        </MudContainer>
+        <SiteFooter />
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    bool _drawerOpen;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}

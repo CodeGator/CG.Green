@@ -1,5 +1,5 @@
 ﻿
-namespace CG.Green.Admin.ViewModels;
+namespace CG.Green.ViewModels;
 
 /// <summary>
 /// This class is a view-model for creating a new Duende client.

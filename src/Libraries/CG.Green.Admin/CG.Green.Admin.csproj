@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
         <Description>A UI for administering the CG.Green microservice.</Description>
+        <RootNamespace>CG.Green</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -24,6 +25,21 @@
     <ItemGroup>
         <ProjectReference Include="..\CG.Green.Abstractions\CG.Green.Abstractions.csproj" />
         <ProjectReference Include="..\CG.Green.Identity\CG.Green.Identity.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Areas\Admin\Pages\Clients\ClientsIndex.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ClientsIndex.razor.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\ClientsIndex.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ClientsIndex.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
 </Project>

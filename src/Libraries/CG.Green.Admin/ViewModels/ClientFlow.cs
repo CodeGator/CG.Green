@@ -1,5 +1,5 @@
 ﻿
-namespace CG.Green.Admin.ViewModels;
+namespace CG.Green.ViewModels;
 
 /// <summary>
 /// This enumeration lists the various client flow types.

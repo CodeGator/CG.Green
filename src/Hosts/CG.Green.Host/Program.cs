@@ -16,6 +16,14 @@ try
 
     // Log what we are about to do.
     BootstrapLogger.Instance().LogDebug(
+        "Setting environment variable prefix to: Green_"
+        );
+
+    // Set the prefix for this application.
+    builder.Configuration.AddEnvironmentVariables("Green_");
+
+    // Log what we are about to do.
+    BootstrapLogger.Instance().LogDebug(
         "Adding serilog, for logging"
         );
 
@@ -54,7 +62,8 @@ try
         );
 
     // Add Green stuff.
-    builder.AddGreenRepositories(bootstrapLogger: BootstrapLogger.Instance())
+    builder.AddGreenLocalization(bootstrapLogger: BootstrapLogger.Instance())
+        .AddGreenRepositories(bootstrapLogger: BootstrapLogger.Instance())
         .AddGreenManagers(bootstrapLogger: BootstrapLogger.Instance())
         .AddGreenIdentity(bootstrapLogger: BootstrapLogger.Instance())
         .AddGreenAdministration(bootstrapLogger: BootstrapLogger.Instance())
@@ -94,15 +103,15 @@ try
     app.UseRouting();
     app.MapBlazorHub();
     app.MapFallbackToPage("/_Host");
-        
+    
     // Use CodeGator stuff.
-    app.UseDataAccess()
+    app.UseGreenLocalization()
+        .UseDataAccess()
         .UseSeeding()
         .UseGreenControllers();
 
     // Use Green stuff.
-    app.UseGreenIdentity()
-        .UseGreenAdministration();
+    app.UseGreenIdentity();
 
     // Run the application.
     app.Run();

@@ -1,23 +1,23 @@
 ﻿@page "/"
-@inject ISnackbar SnackbarService
-@inject IDialogService DialogService
 
 <PageTitle>Index</PageTitle>
 
-<div class="container">
-    <div class="jumbotron">
-        <MudText Typo="Typo.h4">@typeof(Index).Assembly.ReadProduct()</MudText>
-        <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-5" Typo="Typo.body1">Version [ @typeof(Index).Assembly.ReadInformationalVersion() ]</MudText>
-    </div>
+@if (_model is null)
+{
+    <div class="container">
+        <div class="jumbotron">
+            <MudText Typo="Typo.h4">@typeof(Index).Assembly.ReadProduct()</MudText>
+            <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-5" Typo="Typo.body1">Version [ @typeof(Index).Assembly.ReadInformationalVersion() ]</MudText>
+        </div>
 
-    <AuthorizeView>
-        <NotAuthorized>
-            <MudAlert Class="my-8" Severity="Severity.Info">Log in to get started!</MudAlert>
-        </NotAuthorized>
-    </AuthorizeView>    
+        <AuthorizeView>
+            <NotAuthorized>
+                <MudAlert Class="my-8" Severity="Severity.Info">Log in to get started!</MudAlert>
+            </NotAuthorized>
+        </AuthorizeView>
 
-    <MudText Class="pt-3" Typo="Typo.h6">An identity microservice</MudText>
-    <ul style="list-style-type:square;">
+        <MudText Class="pt-3" Typo="Typo.h6">An identity microservice</MudText>
+        <ul style="list-style-type:square;">
         <li style="margin: 10px">Open-source, 100% free to use (<a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://opensource.org/licenses/MIT">MIT</a> license *).</li>
         <li style="margin: 10px">Written 100% in <strong>C#</strong>, <strong>.NET 7.x</strong>, and <strong>Blazor</strong>.</li>
         <li style="margin: 10px">Leverages the <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://mudblazor.com">MudBlazor</a> library for a clean, reliable UI.</li>
@@ -27,8 +27,76 @@
         <li style="margin: 10px">Available <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://www.mysql.com">MySql</a> provider, for data access.</li>
         <li style="margin: 10px">Available In-Memory provider, for developmemt / demo purposes.</li>
         <li style="margin: 10px">Easily adaptable to work with any EFCORE capable database library.</li>
-    </ul>
-    <br />
-    <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-4" Typo="Typo.caption">* (Additional third party license(s) may apply. CodeGator does not grant permissions to any third party licenses)</MudText>
-</div>
+        </ul>
+        <br />
+        <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-4" Typo="Typo.caption">* (Additional third party license(s) may apply. CodeGator does not grant permissions to any third party license(s))</MudText>
+    </div>
+}
+else if (_model.User is null)
+{
+    <MudText Typo="Typo.h4">@typeof(Index).Assembly.ReadProduct()</MudText>
+    <MudText Class="my-2" Typo="Typo.body1">We need to create a site administrator before we do anything else.</MudText>
 
+    <hr />
+
+    <div class="mt-5">
+        <MudContainer MaxWidth="MaxWidth.Small">
+            <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
+                <DataAnnotationsValidator />
+                <MudCard>
+                    <MudCardContent>
+                        <MudTextField AutoFocus
+                                            Required
+                                            Immediate
+                                    Counter="@(Globals.Models.Users.UserNameLength)"
+                                    Variant="Variant.Outlined"
+                                    Label="User Name"
+                                    For="@(() => _model.UserName)"
+                                    @bind-Value="@_model.UserName"
+                                    Class="ml-auto" />
+                        <MudTextField Required
+                                            Immediate
+                                    Counter="@(Globals.Models.Users.EmailLength)"
+                                    Variant="Variant.Outlined"
+                                    Label="Email"
+                                    For="@(() => _model.Email)"
+                                    @bind-Value="@_model.Email"
+                                    Class="ml-auto" />
+                        <MudText Class="my-2" Typo="Typo.caption">A password must be at least 6 charactes long, have at least one capitol letter, one number, and one symbol</MudText>
+                        <MudTextField Required
+                                            Immediate
+                                    Counter="@(Globals.Models.Users.PasswordHashLength)"
+                                    Variant="Variant.Outlined"
+                                    Label="Password"
+                                    For="@(() => _model.Password)"
+                                    @bind-Value="@_model.Password"
+                                    InputType="@_passwordInput"
+                                    OnAdornmentClick="TogglePasswordVisibility"
+                                    Adornment="Adornment.End"
+                                    AdornmentIcon="@_passwordInputIcon"
+                                    Class="ml-auto" />
+                        <MudTextField Required
+                                            Immediate
+                                    Counter="@(Globals.Models.Users.PasswordHashLength)"
+                                    Variant="Variant.Outlined"
+                                    Label="Confirm Password"
+                                    For="@(() => _model.ConfirmPassword)"
+                                    @bind-Value="@_model.ConfirmPassword"
+                                    InputType="@_passwordInput"
+                                    OnAdornmentClick="TogglePasswordVisibility"
+                                    Adornment="Adornment.End"
+                                    AdornmentIcon="@_passwordInputIcon"
+                                    Class="ml-auto" />
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton ButtonType="ButtonType.Submit"
+                                FullWidth
+                                Variant="Variant.Filled"
+                                Color="Color.Primary"
+                                Class="ml-auto">Create Account</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </EditForm>
+        </MudContainer>
+    </div>
+}

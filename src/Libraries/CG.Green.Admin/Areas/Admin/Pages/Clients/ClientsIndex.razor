@@ -1,60 +1,8 @@
 ﻿@page "/admin/clients"
-@attribute [Authorize(Policy = @PolicyNameDefaults.SuperAdminPolicy)]
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
 
-<PageTitle>Clients</PageTitle>
+<h3>Clients</h3>
 
-<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+@code {
 
-<MudText Typo="Typo.h6">Clients</MudText>
-<MudText Typo="Typo.body1">Use this page to manage clients</MudText>
-
-<MudTable Items="@_model" 
-          Dense
-          Striped
-          Loading=@_isLoading
-          Filter="new Func<EditClientVM,bool>(FilterFunc1)">
-    <ToolBarContent>
-        <MudButton StartIcon="@Icons.Material.Filled.Create"
-                   Variant="Variant.Filled"
-                   OnClick="OnCreateClientAsync"
-                   Color="Color.Primary"
-                   Disabled=@(_isBusy || _isLoading)>Create</MudButton>
-        <MudSpacer />
-        <MudTextField @bind-Value="_gridSearchString"
-                      Placeholder="Search"
-                      Adornment="Adornment.Start"
-                      AdornmentIcon="@Icons.Material.Filled.Search"
-                      IconSize="Size.Medium" Class="mt-0"></MudTextField>
-    </ToolBarContent>
-    <HeaderContent>
-        <MudTh><MudTableSortLabel SortBy="new Func<EditClientVM, object>(x=>x.ClientId)">Client Id</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel SortBy="new Func<EditClientVM, object>(x=>x.ClientName)">Client Name</MudTableSortLabel></MudTh>
-        <MudTh></MudTh>
-    </HeaderContent>
-    <RowTemplate>
-        <MudTd DataLabel="Client Id">@context.ClientId</MudTd>
-        <MudTd DataLabel="Client Name">@context.ClientName</MudTd>
-        <MudTd>
-            <MudTooltip Text="Delete">
-                <MudIconButton Icon="@Icons.Material.Filled.Delete" 
-                               OnClick="() => OnDeleteClientAsync(context)"
-                               Disabled=@(_isBusy || _isLoading) />
-            </MudTooltip>
-            <MudTooltip Text="Edit">
-                <MudIconButton Icon="@Icons.Material.Filled.Edit" 
-                               OnClick="() => OnEditClientAsync(context)"
-                               Disabled=@(_isBusy || _isLoading) />
-            </MudTooltip>
-        </MudTd>
-    </RowTemplate>
-    <PagerContent>
-        <MudTablePager />
-    </PagerContent>
-    <NoRecordsContent>
-        No clients were found.
-    </NoRecordsContent>
-    <LoadingContent>
-        Loading clients ...
-    </LoadingContent>
-</MudTable>
-
+}
