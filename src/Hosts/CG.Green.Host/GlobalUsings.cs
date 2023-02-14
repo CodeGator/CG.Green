@@ -13,3 +13,5 @@ global using Microsoft.AspNetCore.Localization;
 global using Microsoft.Extensions.Localization;
 global using CG.Green.Host.ViewModels;
 global using CG.Green.Identity.Models;
+global using Microsoft.Extensions.Options;
+global using System.Globalization;

@@ -105,13 +105,13 @@ try
     app.MapFallbackToPage("/_Host");
     
     // Use CodeGator stuff.
-    app.UseGreenLocalization()
-        .UseDataAccess()
-        .UseSeeding()
-        .UseGreenControllers();
+    app.UseDataAccess()
+        .UseSeeding();
 
     // Use Green stuff.
-    app.UseGreenIdentity();
+    app.UseGreenLocalization()
+        .UseGreenIdentity()
+        .UseGreenControllers();
 
     // Run the application.
     app.Run();

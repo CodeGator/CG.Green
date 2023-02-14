@@ -46,7 +46,7 @@ We're not to the point where we can commit to a feature plan, yet. Keep checking
 
 * [MySql](https://mysql.com)
 
-* InMemory (for dev/demo purposes)
+* InMemory (for dev/demo/testing purposes)
 
 ### How do I contact you?
 

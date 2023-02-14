@@ -19,10 +19,12 @@
     </MudDrawer>
     <MudMainContent>
         <MudContainer MaxWidth="MaxWidth.Large" Class="my-4 pt-4">
-            @Body
-            <br />
-            <br />
-            <br />
+            <CascadingValue Value="@GreenTheme.Instance()">
+                @Body
+                <br />
+                <br />
+                <br />
+            </CascadingValue>
         </MudContainer>
         <SiteFooter />
     </MudMainContent>

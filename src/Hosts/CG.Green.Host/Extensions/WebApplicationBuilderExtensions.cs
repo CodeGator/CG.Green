@@ -47,9 +47,6 @@ public static class WebApplicationBuilderExtensions015
             out var greenLocalizationOptions
             );
 
-        // Add controller support, in case it hasn't already been added.
-        webApplicationBuilder.Services.AddControllers();
-
         // Add localization support.
         webApplicationBuilder.Services.AddLocalization();
         

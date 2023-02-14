@@ -94,7 +94,9 @@ public static class WebApplicationBuilderExtensions002
                 Path.Combine(
                     AppContext.BaseDirectory,
                     $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"
-                    ));
+                    ), 
+                true
+                );
         });
 
         // Tell the world what we are about to do.

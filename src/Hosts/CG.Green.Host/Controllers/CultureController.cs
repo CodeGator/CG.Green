@@ -6,7 +6,7 @@ namespace CG.Green.Host.Controllers;
 /// <summary>
 /// This class is an MVC controller for cultures.
 /// </summary>
-[Route("[controller]/[action]")]
+[Route("api/[controller]/[action]")]
 public class CultureController : Controller
 {
     // *******************************************************************
@@ -20,7 +20,8 @@ public class CultureController : Controller
     /// </summary>
     /// <param name="culture">The culture to use for the operation.</param>
     /// <param name="redirectUri">The URI to use for the operation.</param>
-    /// <returns></returns>
+    /// <returns>The results of the action.</returns>
+    [HttpGet]
     public IActionResult Set(
         string culture, 
         string redirectUri

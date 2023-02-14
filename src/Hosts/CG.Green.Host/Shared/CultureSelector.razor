@@ -1,6 +1,4 @@
-﻿@inject NavigationManager Navigation
-@inject IOptions<GreenLocalizationOptions> Options
-
+﻿
 <p>
     <label>
         <select @bind="Culture">
@@ -11,37 +9,3 @@
         </select>
     </label>
 </p>
-
-@code
-{
-    /// <summary>
-    /// This method is called to initialize the component.
-    /// </summary>
-    protected override void OnInitialized()
-    {
-        Culture = CultureInfo.CurrentCulture;
-    }
-
-    /// <summary>
-    /// This property contains the current culture.
-    /// </summary>
-    private CultureInfo Culture
-    {
-        get => CultureInfo.CurrentCulture;
-        set
-        {
-            if (CultureInfo.CurrentCulture != value)
-            {
-                var uri = new Uri(Navigation.Uri)
-                    .GetComponents(UriComponents.PathAndQuery, UriFormat.Unescaped);
-                var cultureEscaped = Uri.EscapeDataString(value.Name);
-                var uriEscaped = Uri.EscapeDataString(uri);
-
-                Navigation.NavigateTo(
-                    $"Culture/Set?culture={cultureEscaped}&redirectUri={uriEscaped}",
-                    forceLoad: true
-                );
-            }
-        }
-    }
-}

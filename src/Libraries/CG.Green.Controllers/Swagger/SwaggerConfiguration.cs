@@ -80,7 +80,7 @@ internal class SwaggerConfiguration : IConfigureOptions<SwaggerGenOptions>
     {
         // Create the purpose of the API.
         var text = new StringBuilder(
-            "A CodeGator API for identity operations."
+            "An API for the CG.Green microservice."
             );
 
         // Create the info link.
