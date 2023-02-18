@@ -80,7 +80,7 @@ There is developer documentation [HERE](https://codegator.github.io/CG.Green/)
 
 There is a WIKI, in progress, [HERE](https://github.com/CodeGator/CG.Green/wiki)
 
-We also write about projects like this one on our website [HERE](http://www.codegator.com)
+We also write about projects like this one on our website [HERE](https://www.codegator.com)
 
 ### Can I help?
 
