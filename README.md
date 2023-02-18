@@ -8,17 +8,21 @@
 
 ### What does it do?
 
-Green is an idea for an identity microservice. Essentially, we stood up the ASP.NET and Duende libraries as a Blazor microservice, then we added some additional administrative features.
+Green is an idea for an identity microservice. Essentially, we stood up the ASP.NET and Duende libraries as a Blazor microservice, then we added some additional administrative and nice-to-have debugging features.
 
 ### What works, and what doesn't, at this point?
 
-It's all a work in progress, at this point.
+Keep in mind that Green is an idea - not a product. It's all likely to change, and change again, without notice. 
+
+Otherwise, the ASP.NET and Duende portions are hosted and working perfectly. The admin UI is coming along, slowly. The identity UI is functional but needs some love and attention.
 
 ### What does the roadmap look like?
 
-We're not to the point where we can commit to a feature plan, yet. Keep checking back.
+We're not at a point where we can commit to a feature plan. Honestly, we might not ever be. Still, keep checking back. You never know.
 
 ### What are the main dependencies?
+
+One of the main goals of this project is to minimize dependencies on 3rd party libraries. Where third party libraries are used, we try to ensure that they are well established and actively in development. 
 
 * [Duende](https://duendesoftware.com/) (The library formerly known as IdentityServer4)
 
@@ -26,19 +30,27 @@ We're not to the point where we can commit to a feature plan, yet. Keep checking
 
 * [MudBlazor](https://mudblazor.com/)
 
+* [Serilog](https://serilog.net/)  
+
 ### What OS(s) does it support?
 
-* [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) (of course)
+A goal of the project is to produce a tool that can be run on (at least) Windows, and Linux. Thanks to .NET core, we support the following platforms:
+
+* [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) (tested)
 
 * [Linux](https://en.wikipedia.org/wiki/Linux) (not fully tested)
 
-* [macOS](https://en.wikipedia.org/wiki/MacOS) (not tested at all)
+* [macOS](https://en.wikipedia.org/wiki/MacOS) (theoretical, not tested)
 
 ### What .NET runtime(s) does it support?
 
-* [.NET 7.x](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or higher
+We have committed to supporting current flavors of .NET. We currently support:
+
+* [.NET 7.x](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
 ### What database(s) does it support?
+
+A goal of the project is to support a variety of back-end database. We currently support:
 
 * [SqlServer 2019](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
@@ -57,6 +69,8 @@ We also have a discussion group [HERE](https://github.com/CodeGator/CG.Green/dis
 ### Is there any documentation?
 
 There is developer documentation [HERE](https://codegator.github.io/CG.Green/)
+
+There is a WIKI, in progress, [HERE](https://github.com/CodeGator/CG.Green/wiki)
 
 We also write about projects like this one on our website [HERE](http://www.codegator.com)
 
