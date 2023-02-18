@@ -83,7 +83,7 @@
   
   <h1 id="CG_Green_Data_InMemory_Factories_GreenDbContextDesignTimeFactory" data-uid="CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory" class="text-break">Class GreenDbContextDesignTimeFactory
   </h1>
-  <div class="markdown level0 summary"><p>This class is an in-memory design time factory for the <a class="xref" href="CG.Green.Data.GreenDbContext.html">GreenDbContext</a>
+  <div class="markdown level0 summary"><p>This class is an in-memory design time factory for the <a class="xref" href="CG.Green.Data.AspNetDbContext.html">AspNetDbContext</a>
 data-context type.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -96,19 +96,19 @@ data-context type.</p>
   <h6><strong>Assembly</strong>: CG.Green.Data.InMemory.dll</h6>
   <h5 id="CG_Green_Data_InMemory_Factories_GreenDbContextDesignTimeFactory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class GreenDbContextDesignTimeFactory : DesignTimeDbContextFactory&lt;GreenDbContext&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">class GreenDbContextDesignTimeFactory : DesignTimeDbContextFactory&lt;AspNetDbContext&gt;</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="CG_Green_Data_InMemory_Factories_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_" data-uid="CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions*"></a>
-  <h4 id="CG_Green_Data_InMemory_Factories_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_GreenDbContext__IConfiguration_" data-uid="CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)">OnConfigureDataContextOptions(DbContextOptionsBuilder&lt;GreenDbContext&gt;, IConfiguration)</h4>
+  <h4 id="CG_Green_Data_InMemory_Factories_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_AspNetDbContext__IConfiguration_" data-uid="CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)">OnConfigureDataContextOptions(DbContextOptionsBuilder&lt;AspNetDbContext&gt;, IConfiguration)</h4>
   <div class="markdown level1 summary"><p>This method is overridden in order to configure the options for
 an in-memory data-context instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void OnConfigureDataContextOptions(DbContextOptionsBuilder&lt;GreenDbContext&gt; optionsBuilder, IConfiguration configuration)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void OnConfigureDataContextOptions(DbContextOptionsBuilder&lt;AspNetDbContext&gt; optionsBuilder, IConfiguration configuration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,7 +121,7 @@ an in-memory data-context instance.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbContextOptionsBuilder</span>&lt;<a class="xref" href="CG.Green.Data.GreenDbContext.html">GreenDbContext</a>&gt;</td>
+        <td><span class="xref">DbContextOptionsBuilder</span>&lt;<a class="xref" href="CG.Green.Data.AspNetDbContext.html">AspNetDbContext</a>&gt;</td>
         <td><span class="parametername">optionsBuilder</span></td>
         <td><p>The data-context options builder
 to use for the operation.</p>

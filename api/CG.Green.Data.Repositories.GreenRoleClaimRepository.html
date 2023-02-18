@@ -101,14 +101,14 @@ interface.</p>
   <h3 id="constructors">Constructors
   </h3>
   <a id="CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor*"></a>
-  <h4 id="CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_CG_Green_Data_GreenDbContext_ILogger_IGreenRoleClaimRepository__" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenRoleClaimRepository})">GreenRoleClaimRepository(GreenDbContext, ILogger&lt;IGreenRoleClaimRepository&gt;)</h4>
+  <h4 id="CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_CG_Green_Data_AspNetDbContext_ILogger_IGreenRoleClaimRepository__" data-uid="CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.AspNetDbContext,ILogger{IGreenRoleClaimRepository})">GreenRoleClaimRepository(AspNetDbContext, ILogger&lt;IGreenRoleClaimRepository&gt;)</h4>
   <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Green.Data.Repositories.GreenRoleClaimRepository.html">GreenRoleClaimRepository</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GreenRoleClaimRepository(GreenDbContext greenDbContext, ILogger&lt;IGreenRoleClaimRepository&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public GreenRoleClaimRepository(AspNetDbContext greenDbContext, ILogger&lt;IGreenRoleClaimRepository&gt; logger)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,7 +121,7 @@ class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CG.Green.Data.GreenDbContext.html">GreenDbContext</a></td>
+        <td><a class="xref" href="CG.Green.Data.AspNetDbContext.html">AspNetDbContext</a></td>
         <td><span class="parametername">greenDbContext</span></td>
         <td><p>The Duende configuration
 data-context to use with this repository.</p>
@@ -143,7 +143,7 @@ data-context to use with this repository.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly GreenDbContext _greenDbContext</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly AspNetDbContext _greenDbContext</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,7 +155,7 @@ data-context to use with this repository.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CG.Green.Data.GreenDbContext.html">GreenDbContext</a></td>
+        <td><a class="xref" href="CG.Green.Data.AspNetDbContext.html">AspNetDbContext</a></td>
         <td></td>
       </tr>
     </tbody>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace CG.Green.Data.Sqlite
+    <title>Class AspNetDbContext
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace CG.Green.Data.Sqlite
+    <meta name="title" content="Class AspNetDbContext
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,19 +78,85 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.Data.Sqlite">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Data.AspNetDbContext">
   
-  <h1 id="CG_Green_Data_Sqlite" data-uid="CG.Green.Data.Sqlite" class="text-break">Namespace CG.Green.Data.Sqlite
+  
+  <h1 id="CG_Green_Data_AspNetDbContext" data-uid="CG.Green.Data.AspNetDbContext" class="text-break">Class AspNetDbContext
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This class is the ASP.NET data-context for the <a class="xref" href="CG.Green.html">CG.Green</a>
+microservice.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AspNetDbContext</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Data.html">CG.Green.Data</a></h6>
+  <h6><strong>Assembly</strong>: CG.Green.Data.dll</h6>
+  <h5 id="CG_Green_Data_AspNetDbContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AspNetDbContext : IdentityDbContext&lt;GreenUser, GreenRole, string, GreenUserClaim, GreenUserRole, GreenUserLogin, GreenRoleClaim, GreenUserToken&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
   </h3>
-      <h4><a class="xref" href="CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.html">GreenDbContextDesignTimeFactory</a></h4>
-      <section><p>This class is a SQLite design time factory for the <a class="xref" href="CG.Green.Data.AspNetDbContext.html">AspNetDbContext</a>
-data-context type.</p>
-</section>
+  <a id="CG_Green_Data_AspNetDbContext__ctor_" data-uid="CG.Green.Data.AspNetDbContext.#ctor*"></a>
+  <h4 id="CG_Green_Data_AspNetDbContext__ctor_DbContextOptions_CG_Green_Data_AspNetDbContext__" data-uid="CG.Green.Data.AspNetDbContext.#ctor(DbContextOptions{CG.Green.Data.AspNetDbContext})">AspNetDbContext(DbContextOptions&lt;AspNetDbContext&gt;)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Green.Data.AspNetDbContext.html">AspNetDbContext</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AspNetDbContext(DbContextOptions&lt;AspNetDbContext&gt; options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DbContextOptions</span>&lt;<a class="xref" href="CG.Green.Data.AspNetDbContext.html">AspNetDbContext</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options to use with this data-context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_Green_Data_AspNetDbContext_OnModelCreating_" data-uid="CG.Green.Data.AspNetDbContext.OnModelCreating*"></a>
+  <h4 id="CG_Green_Data_AspNetDbContext_OnModelCreating_ModelBuilder_" data-uid="CG.Green.Data.AspNetDbContext.OnModelCreating(ModelBuilder)">OnModelCreating(ModelBuilder)</h4>
+  <div class="markdown level1 summary"><p>This method is called to create the data model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnModelCreating(ModelBuilder modelBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ModelBuilder</span></td>
+        <td><span class="parametername">modelBuilder</span></td>
+        <td><p>The builder to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

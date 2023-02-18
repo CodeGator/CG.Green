@@ -638,11 +638,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.GreenDbContext.yml",
+      "source_relative_path": "api/CG.Green.Data.AspNetDbContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Green.Data.GreenDbContext.html",
-          "hash": "KT3uhB37dSr1vgRneZxAe7pRCiKqOgaeMw5WLBVKSBE="
+          "relative_path": "api/CG.Green.Data.AspNetDbContext.html",
+          "hash": "BOSfjhvuO46A91RDr6DFPUP07kZeeqtgNl1xOLZGecs="
         }
       },
       "is_incremental": false,
@@ -654,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.html",
-          "hash": "0hLBDWf/rTcvJDGKS9gj+8dQUG1At8hCluXq7Fj0bsk="
+          "hash": "wyel3NwqKqxyzi5rzJ+CIRajQgmRyjCITWcg2AVJHdk="
         }
       },
       "is_incremental": false,
@@ -666,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.InMemory.Factories.html",
-          "hash": "Qiq47dgC21+MnxzeobqfdT5U2Fmb/sCsh3RIEwARhcg="
+          "hash": "ky4HPNev8K8OylLT4+DgK529yF4QIaT5D1sMzWnUtMk="
         }
       },
       "is_incremental": false,
@@ -678,7 +678,43 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.html",
-          "hash": "srHKGq0jaUvAOv7rvjbK3kRuTwA9caYxpIPJfL4qq5o="
+          "hash": "28v4tnjjRtdD3s98O+UGm+iz1CPtckWVQvNY25FrtVc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.html",
+          "hash": "SnHo3r2gxFqEu69IGc88POOUtvd/8kW8h6PvoiodMTI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.html",
+          "hash": "O5OBlkO0Mc+J2QHnNoJWm2mvDeSRuYyHkzlOXX0RPyE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.MySql.Migrations.AspNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.MySql.Migrations.AspNet.html",
+          "hash": "3fI1QUJTXnXJb29z5o2Yk+cJs8xc5XdlxwzLpHeXVg8="
         }
       },
       "is_incremental": false,
@@ -758,47 +794,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.html",
-          "hash": "FBGNW0rfN4D1Fz6BQNCLeadsqjgZY2OqLlRpKVRsTS4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.html",
-          "hash": "TR1i05bKMQriJ2tFu/96mfO8qwnl1FqIOD0y8eoQLYM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.MySql.Migrations.Green.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.MySql.Migrations.Green.html",
-          "hash": "rbwo2ll+WmEoXO64IEpiAD13kne0NVc2oE+Fp5mBoWM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Data.MySql.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.MySql.html",
-          "hash": "5d3SeJXaOfLHOzNjUj8KTfj757od2JFTat+Ogu+OpKk="
+          "hash": "PY1fXxUYEqFrPfpp3c80dtOfv35tZN/NySMZ7BROXOk="
         }
       },
       "is_incremental": false,
@@ -834,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html",
-          "hash": "kq0//Xh2S86ORTHlDwZGwbwK8ZDX5Fd2OLM/7D6TMFI="
+          "hash": "UNwXjHXL5AUAwuhM3sdy14aLGhp6/m3DfuXgrRsddK8="
         }
       },
       "is_incremental": false,
@@ -846,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.Repositories.GreenUserClaimRepository.html",
-          "hash": "jYQIBZNX01gsQYEj/C1BX7gn+Ti3z9yopo4uvDaejnA="
+          "hash": "4Mok8+73+JZsgPW8vAz3rCSmxB1d5L0FLewPowoK4MI="
         }
       },
       "is_incremental": false,
@@ -858,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.Repositories.GreenUserRoleRepository.html",
-          "hash": "qW4jw7jDQgRGUIuAA8TWqQpeveH6MGcOsWDEWrFILP0="
+          "hash": "UaTV/CWlNxCrOGeXdkIR86f8tqZVoNJaOxw0lXNKK3g="
         }
       },
       "is_incremental": false,
@@ -894,7 +894,43 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.html",
-          "hash": "AmYr4PiuTtfIz0DT+Ttudo8fxecudc0CG9+7neUkHsw="
+          "hash": "rX4aT59nypqKdQfEP0ouTCFzFah06sX67zDb7mv82as="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.html",
+          "hash": "kyaFwHOVty2Zrn5yvJDWQWMZX7HtGoenL2WFwnBaoZk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.html",
+          "hash": "okf5qD7UOk+thYtOKd7x7V4jQqOl0e4/Kt2OgcxMOjQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.SqlServer.Migrations.AspNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.SqlServer.Migrations.AspNet.html",
+          "hash": "ebFIE+q3UjJLG1EAh5Z/XSaPUNRVOtZ5WBE5px+HBI8="
         }
       },
       "is_incremental": false,
@@ -974,47 +1010,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.html",
-          "hash": "8W7BipAa2a4KqAd1/fHGEPstfmz58KfHKrJAz9pyRMU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.html",
-          "hash": "zUjXQ1NGH11kEpKN1POsjDyXV6DPnayhwiBMv6/jvt8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.SqlServer.Migrations.Green.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.SqlServer.Migrations.Green.html",
-          "hash": "huGrITiWnWj6gKDE04K364svkWFk0ReJ1pQpvllcikM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Data.SqlServer.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.SqlServer.html",
-          "hash": "KpdB67Qx7R9N7mmOyNOrP7bMHMjU90DCSpf/WYw5ILo="
+          "hash": "JlgfjFPYI7S3DLQtTHgRZQ3JS33myXDf9aVYB5eQHM4="
         }
       },
       "is_incremental": false,
@@ -1026,7 +1026,43 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.html",
-          "hash": "QGOngkIZXI26MSLzgK+QpK34YIdvtZ9b7nXSLQCyf3Y="
+          "hash": "/B/Mgzi+Qeh48IyFr56rS4HZ4Yz52w8Ijrpqw8yT6Uw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.html",
+          "hash": "ohnVCVsCBP3FApSe7TDDOmmA9AuiPkuWXOApBt72Xq8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.html",
+          "hash": "Oz3HrtkvRmXivHlZ3VjbhSHq7LE4VRfHTSYoXXHNzA0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Data.Sqlite.Migrations.AspNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Data.Sqlite.Migrations.AspNet.html",
+          "hash": "nVWQWfHkR/fPN9MgVHCvHBld5aC6Q9xgBh1Lc9pVE5g="
         }
       },
       "is_incremental": false,
@@ -1106,47 +1142,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.html",
-          "hash": "2wZ/GLOYfZ3GV6nJxDCUmGIDrjqOIhZLYIBDA07+6YQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.html",
-          "hash": "+CZ+BxNTzVhyBLRyGb6HClT39BCvCLnZ+AW3gZPJXfA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.Data.Sqlite.Migrations.Green.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.Data.Sqlite.Migrations.Green.html",
-          "hash": "pdREphpPYzZe5cLWXI6Pkbk3hUUwuv964Ve+ldv+8B0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Data.Sqlite.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.Sqlite.html",
-          "hash": "IN9zY17BDPxbmCDBKe0+GBduJ/2yYNWHBLONdwKrtao="
+          "hash": "TYzDOm/hRsjuEzcNIKQhc6Ne2XPlgDldq/0RA/3fl9E="
         }
       },
       "is_incremental": false,
@@ -1158,7 +1158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Data.html",
-          "hash": "gIOlfXkxGkLEEYx2Fv9dnP7sGzgKgtgcOCGkYOcMzAw="
+          "hash": "BZLHkqnbtG68BNtNd22jZd43k7nKvab4q5SMNBAUNKs="
         }
       },
       "is_incremental": false,
@@ -2670,7 +2670,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vr1OdmJMaOWD05cXXdacDa3+dntjJgkyMWZik1MsPaQ="
+          "hash": "MnKCgH0zOaI8XPImC1fBCRBMtYMJHrWomTRrkT5GEL0="
         }
       },
       "is_incremental": false,

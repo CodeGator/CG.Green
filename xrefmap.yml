@@ -3408,41 +3408,41 @@ references:
   commentId: N:CG.Green.Data
   fullName: CG.Green.Data
   nameWithType: CG.Green.Data
-- uid: CG.Green.Data.GreenDbContext
-  name: GreenDbContext
-  href: api/CG.Green.Data.GreenDbContext.html
-  commentId: T:CG.Green.Data.GreenDbContext
-  fullName: CG.Green.Data.GreenDbContext
-  nameWithType: GreenDbContext
-- uid: CG.Green.Data.GreenDbContext.#ctor(DbContextOptions{CG.Green.Data.GreenDbContext})
-  name: GreenDbContext(DbContextOptions<GreenDbContext>)
-  href: api/CG.Green.Data.GreenDbContext.html#CG_Green_Data_GreenDbContext__ctor_DbContextOptions_CG_Green_Data_GreenDbContext__
-  commentId: M:CG.Green.Data.GreenDbContext.#ctor(DbContextOptions{CG.Green.Data.GreenDbContext})
-  name.vb: GreenDbContext(DbContextOptions(Of GreenDbContext))
-  fullName: CG.Green.Data.GreenDbContext.GreenDbContext(DbContextOptions<CG.Green.Data.GreenDbContext>)
-  fullName.vb: CG.Green.Data.GreenDbContext.GreenDbContext(DbContextOptions(Of CG.Green.Data.GreenDbContext))
-  nameWithType: GreenDbContext.GreenDbContext(DbContextOptions<GreenDbContext>)
-  nameWithType.vb: GreenDbContext.GreenDbContext(DbContextOptions(Of GreenDbContext))
-- uid: CG.Green.Data.GreenDbContext.#ctor*
-  name: GreenDbContext
-  href: api/CG.Green.Data.GreenDbContext.html#CG_Green_Data_GreenDbContext__ctor_
-  commentId: Overload:CG.Green.Data.GreenDbContext.#ctor
+- uid: CG.Green.Data.AspNetDbContext
+  name: AspNetDbContext
+  href: api/CG.Green.Data.AspNetDbContext.html
+  commentId: T:CG.Green.Data.AspNetDbContext
+  fullName: CG.Green.Data.AspNetDbContext
+  nameWithType: AspNetDbContext
+- uid: CG.Green.Data.AspNetDbContext.#ctor(DbContextOptions{CG.Green.Data.AspNetDbContext})
+  name: AspNetDbContext(DbContextOptions<AspNetDbContext>)
+  href: api/CG.Green.Data.AspNetDbContext.html#CG_Green_Data_AspNetDbContext__ctor_DbContextOptions_CG_Green_Data_AspNetDbContext__
+  commentId: M:CG.Green.Data.AspNetDbContext.#ctor(DbContextOptions{CG.Green.Data.AspNetDbContext})
+  name.vb: AspNetDbContext(DbContextOptions(Of AspNetDbContext))
+  fullName: CG.Green.Data.AspNetDbContext.AspNetDbContext(DbContextOptions<CG.Green.Data.AspNetDbContext>)
+  fullName.vb: CG.Green.Data.AspNetDbContext.AspNetDbContext(DbContextOptions(Of CG.Green.Data.AspNetDbContext))
+  nameWithType: AspNetDbContext.AspNetDbContext(DbContextOptions<AspNetDbContext>)
+  nameWithType.vb: AspNetDbContext.AspNetDbContext(DbContextOptions(Of AspNetDbContext))
+- uid: CG.Green.Data.AspNetDbContext.#ctor*
+  name: AspNetDbContext
+  href: api/CG.Green.Data.AspNetDbContext.html#CG_Green_Data_AspNetDbContext__ctor_
+  commentId: Overload:CG.Green.Data.AspNetDbContext.#ctor
   isSpec: "True"
-  fullName: CG.Green.Data.GreenDbContext.GreenDbContext
-  nameWithType: GreenDbContext.GreenDbContext
-- uid: CG.Green.Data.GreenDbContext.OnModelCreating(ModelBuilder)
+  fullName: CG.Green.Data.AspNetDbContext.AspNetDbContext
+  nameWithType: AspNetDbContext.AspNetDbContext
+- uid: CG.Green.Data.AspNetDbContext.OnModelCreating(ModelBuilder)
   name: OnModelCreating(ModelBuilder)
-  href: api/CG.Green.Data.GreenDbContext.html#CG_Green_Data_GreenDbContext_OnModelCreating_ModelBuilder_
-  commentId: M:CG.Green.Data.GreenDbContext.OnModelCreating(ModelBuilder)
-  fullName: CG.Green.Data.GreenDbContext.OnModelCreating(ModelBuilder)
-  nameWithType: GreenDbContext.OnModelCreating(ModelBuilder)
-- uid: CG.Green.Data.GreenDbContext.OnModelCreating*
+  href: api/CG.Green.Data.AspNetDbContext.html#CG_Green_Data_AspNetDbContext_OnModelCreating_ModelBuilder_
+  commentId: M:CG.Green.Data.AspNetDbContext.OnModelCreating(ModelBuilder)
+  fullName: CG.Green.Data.AspNetDbContext.OnModelCreating(ModelBuilder)
+  nameWithType: AspNetDbContext.OnModelCreating(ModelBuilder)
+- uid: CG.Green.Data.AspNetDbContext.OnModelCreating*
   name: OnModelCreating
-  href: api/CG.Green.Data.GreenDbContext.html#CG_Green_Data_GreenDbContext_OnModelCreating_
-  commentId: Overload:CG.Green.Data.GreenDbContext.OnModelCreating
+  href: api/CG.Green.Data.AspNetDbContext.html#CG_Green_Data_AspNetDbContext_OnModelCreating_
+  commentId: Overload:CG.Green.Data.AspNetDbContext.OnModelCreating
   isSpec: "True"
-  fullName: CG.Green.Data.GreenDbContext.OnModelCreating
-  nameWithType: GreenDbContext.OnModelCreating
+  fullName: CG.Green.Data.AspNetDbContext.OnModelCreating
+  nameWithType: AspNetDbContext.OnModelCreating
 - uid: CG.Green.Data.InMemory.Factories
   name: CG.Green.Data.InMemory.Factories
   href: api/CG.Green.Data.InMemory.Factories.html
@@ -3455,15 +3455,15 @@ references:
   commentId: T:CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory
   fullName: CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory
   nameWithType: GreenDbContextDesignTimeFactory
-- uid: CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)
-  name: OnConfigureDataContextOptions(DbContextOptionsBuilder<GreenDbContext>, IConfiguration)
-  href: api/CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.html#CG_Green_Data_InMemory_Factories_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_GreenDbContext__IConfiguration_
-  commentId: M:CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)
-  name.vb: OnConfigureDataContextOptions(DbContextOptionsBuilder(Of GreenDbContext), IConfiguration)
-  fullName: CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<CG.Green.Data.GreenDbContext>, IConfiguration)
-  fullName.vb: CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of CG.Green.Data.GreenDbContext), IConfiguration)
-  nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<GreenDbContext>, IConfiguration)
-  nameWithType.vb: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of GreenDbContext), IConfiguration)
+- uid: CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)
+  name: OnConfigureDataContextOptions(DbContextOptionsBuilder<AspNetDbContext>, IConfiguration)
+  href: api/CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.html#CG_Green_Data_InMemory_Factories_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_AspNetDbContext__IConfiguration_
+  commentId: M:CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)
+  name.vb: OnConfigureDataContextOptions(DbContextOptionsBuilder(Of AspNetDbContext), IConfiguration)
+  fullName: CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<CG.Green.Data.AspNetDbContext>, IConfiguration)
+  fullName.vb: CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of CG.Green.Data.AspNetDbContext), IConfiguration)
+  nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<AspNetDbContext>, IConfiguration)
+  nameWithType.vb: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of AspNetDbContext), IConfiguration)
 - uid: CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions*
   name: OnConfigureDataContextOptions
   href: api/CG.Green.Data.InMemory.Factories.GreenDbContextDesignTimeFactory.html#CG_Green_Data_InMemory_Factories_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_
@@ -3483,15 +3483,15 @@ references:
   commentId: T:CG.Green.Data.MySql.GreenDbContextDesignTimeFactory
   fullName: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory
   nameWithType: GreenDbContextDesignTimeFactory
-- uid: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)
-  name: OnConfigureDataContextOptions(DbContextOptionsBuilder<GreenDbContext>, IConfiguration)
-  href: api/CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.html#CG_Green_Data_MySql_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_GreenDbContext__IConfiguration_
-  commentId: M:CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)
-  name.vb: OnConfigureDataContextOptions(DbContextOptionsBuilder(Of GreenDbContext), IConfiguration)
-  fullName: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<CG.Green.Data.GreenDbContext>, IConfiguration)
-  fullName.vb: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of CG.Green.Data.GreenDbContext), IConfiguration)
-  nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<GreenDbContext>, IConfiguration)
-  nameWithType.vb: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of GreenDbContext), IConfiguration)
+- uid: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)
+  name: OnConfigureDataContextOptions(DbContextOptionsBuilder<AspNetDbContext>, IConfiguration)
+  href: api/CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.html#CG_Green_Data_MySql_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_AspNetDbContext__IConfiguration_
+  commentId: M:CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)
+  name.vb: OnConfigureDataContextOptions(DbContextOptionsBuilder(Of AspNetDbContext), IConfiguration)
+  fullName: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<CG.Green.Data.AspNetDbContext>, IConfiguration)
+  fullName.vb: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of CG.Green.Data.AspNetDbContext), IConfiguration)
+  nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<AspNetDbContext>, IConfiguration)
+  nameWithType.vb: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of AspNetDbContext), IConfiguration)
 - uid: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions*
   name: OnConfigureDataContextOptions
   href: api/CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.html#CG_Green_Data_MySql_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_
@@ -3499,6 +3499,76 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.MySql.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions
   nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions
+- uid: CG.Green.Data.MySql.Migrations.AspNet
+  name: CG.Green.Data.MySql.Migrations.AspNet
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.html
+  commentId: N:CG.Green.Data.MySql.Migrations.AspNet
+  fullName: CG.Green.Data.MySql.Migrations.AspNet
+  nameWithType: CG.Green.Data.MySql.Migrations.AspNet
+- uid: CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot
+  name: AspNetDbContextModelSnapshot
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.html
+  commentId: T:CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot
+  nameWithType: AspNetDbContextModelSnapshot
+- uid: CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildModel(ModelBuilder)
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.html#CG_Green_Data_MySql_Migrations_AspNet_AspNetDbContextModelSnapshot_BuildModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: AspNetDbContextModelSnapshot.BuildModel(ModelBuilder)
+- uid: CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel*
+  name: BuildModel
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.html#CG_Green_Data_MySql_Migrations_AspNet_AspNetDbContextModelSnapshot_BuildModel_
+  commentId: Overload:CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel
+  isSpec: "True"
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel
+  nameWithType: AspNetDbContextModelSnapshot.BuildModel
+- uid: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate
+  name: InitialCreate
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.html
+  commentId: T:CG.Green.Data.MySql.Migrations.AspNet.InitialCreate
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate
+  nameWithType: InitialCreate
+- uid: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.html#CG_Green_Data_MySql_Migrations_AspNet_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: InitialCreate.BuildTargetModel(ModelBuilder)
+- uid: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.BuildTargetModel*
+  name: BuildTargetModel
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.html#CG_Green_Data_MySql_Migrations_AspNet_InitialCreate_BuildTargetModel_
+  commentId: Overload:CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.BuildTargetModel
+  isSpec: "True"
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.BuildTargetModel
+  nameWithType: InitialCreate.BuildTargetModel
+- uid: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.html#CG_Green_Data_MySql_Migrations_AspNet_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: InitialCreate.Down(MigrationBuilder)
+- uid: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Down*
+  name: Down
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.html#CG_Green_Data_MySql_Migrations_AspNet_InitialCreate_Down_
+  commentId: Overload:CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Down
+  isSpec: "True"
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Down
+  nameWithType: InitialCreate.Down
+- uid: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.html#CG_Green_Data_MySql_Migrations_AspNet_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: InitialCreate.Up(MigrationBuilder)
+- uid: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Up*
+  name: Up
+  href: api/CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.html#CG_Green_Data_MySql_Migrations_AspNet_InitialCreate_Up_
+  commentId: Overload:CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Up
+  isSpec: "True"
+  fullName: CG.Green.Data.MySql.Migrations.AspNet.InitialCreate.Up
+  nameWithType: InitialCreate.Up
 - uid: CG.Green.Data.MySql.Migrations.Configuration
   name: CG.Green.Data.MySql.Migrations.Configuration
   href: api/CG.Green.Data.MySql.Migrations.Configuration.html
@@ -3639,76 +3709,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.MySql.Migrations.Grants.PersistedGrantDbContextModelSnapshot.BuildModel
   nameWithType: PersistedGrantDbContextModelSnapshot.BuildModel
-- uid: CG.Green.Data.MySql.Migrations.Green
-  name: CG.Green.Data.MySql.Migrations.Green
-  href: api/CG.Green.Data.MySql.Migrations.Green.html
-  commentId: N:CG.Green.Data.MySql.Migrations.Green
-  fullName: CG.Green.Data.MySql.Migrations.Green
-  nameWithType: CG.Green.Data.MySql.Migrations.Green
-- uid: CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot
-  name: GreenDbContextModelSnapshot
-  href: api/CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.html
-  commentId: T:CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot
-  fullName: CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot
-  nameWithType: GreenDbContextModelSnapshot
-- uid: CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  name: BuildModel(ModelBuilder)
-  href: api/CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.html#CG_Green_Data_MySql_Migrations_Green_GreenDbContextModelSnapshot_BuildModel_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: GreenDbContextModelSnapshot.BuildModel(ModelBuilder)
-- uid: CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.BuildModel*
-  name: BuildModel
-  href: api/CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.html#CG_Green_Data_MySql_Migrations_Green_GreenDbContextModelSnapshot_BuildModel_
-  commentId: Overload:CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.BuildModel
-  isSpec: "True"
-  fullName: CG.Green.Data.MySql.Migrations.Green.GreenDbContextModelSnapshot.BuildModel
-  nameWithType: GreenDbContextModelSnapshot.BuildModel
-- uid: CG.Green.Data.MySql.Migrations.Green.InitialCreate
-  name: InitialCreate
-  href: api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.html
-  commentId: T:CG.Green.Data.MySql.Migrations.Green.InitialCreate
-  fullName: CG.Green.Data.MySql.Migrations.Green.InitialCreate
-  nameWithType: InitialCreate
-- uid: CG.Green.Data.MySql.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  name: BuildTargetModel(ModelBuilder)
-  href: api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.html#CG_Green_Data_MySql_Migrations_Green_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:CG.Green.Data.MySql.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: CG.Green.Data.MySql.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: InitialCreate.BuildTargetModel(ModelBuilder)
-- uid: CG.Green.Data.MySql.Migrations.Green.InitialCreate.BuildTargetModel*
-  name: BuildTargetModel
-  href: api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.html#CG_Green_Data_MySql_Migrations_Green_InitialCreate_BuildTargetModel_
-  commentId: Overload:CG.Green.Data.MySql.Migrations.Green.InitialCreate.BuildTargetModel
-  isSpec: "True"
-  fullName: CG.Green.Data.MySql.Migrations.Green.InitialCreate.BuildTargetModel
-  nameWithType: InitialCreate.BuildTargetModel
-- uid: CG.Green.Data.MySql.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  name: Down(MigrationBuilder)
-  href: api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.html#CG_Green_Data_MySql_Migrations_Green_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:CG.Green.Data.MySql.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: CG.Green.Data.MySql.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: InitialCreate.Down(MigrationBuilder)
-- uid: CG.Green.Data.MySql.Migrations.Green.InitialCreate.Down*
-  name: Down
-  href: api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.html#CG_Green_Data_MySql_Migrations_Green_InitialCreate_Down_
-  commentId: Overload:CG.Green.Data.MySql.Migrations.Green.InitialCreate.Down
-  isSpec: "True"
-  fullName: CG.Green.Data.MySql.Migrations.Green.InitialCreate.Down
-  nameWithType: InitialCreate.Down
-- uid: CG.Green.Data.MySql.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  name: Up(MigrationBuilder)
-  href: api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.html#CG_Green_Data_MySql_Migrations_Green_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:CG.Green.Data.MySql.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: CG.Green.Data.MySql.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: InitialCreate.Up(MigrationBuilder)
-- uid: CG.Green.Data.MySql.Migrations.Green.InitialCreate.Up*
-  name: Up
-  href: api/CG.Green.Data.MySql.Migrations.Green.InitialCreate.html#CG_Green_Data_MySql_Migrations_Green_InitialCreate_Up_
-  commentId: Overload:CG.Green.Data.MySql.Migrations.Green.InitialCreate.Up
-  isSpec: "True"
-  fullName: CG.Green.Data.MySql.Migrations.Green.InitialCreate.Up
-  nameWithType: InitialCreate.Up
 - uid: CG.Green.Data.Repositories
   name: CG.Green.Data.Repositories
   href: api/CG.Green.Data.Repositories.html
@@ -3971,15 +3971,15 @@ references:
   commentId: T:CG.Green.Data.Repositories.GreenRoleClaimRepository
   fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository
   nameWithType: GreenRoleClaimRepository
-- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenRoleClaimRepository})
-  name: GreenRoleClaimRepository(GreenDbContext, ILogger<IGreenRoleClaimRepository>)
-  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_CG_Green_Data_GreenDbContext_ILogger_IGreenRoleClaimRepository__
-  commentId: M:CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenRoleClaimRepository})
-  name.vb: GreenRoleClaimRepository(GreenDbContext, ILogger(Of IGreenRoleClaimRepository))
-  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository.GreenRoleClaimRepository(CG.Green.Data.GreenDbContext, ILogger<IGreenRoleClaimRepository>)
-  fullName.vb: CG.Green.Data.Repositories.GreenRoleClaimRepository.GreenRoleClaimRepository(CG.Green.Data.GreenDbContext, ILogger(Of IGreenRoleClaimRepository))
-  nameWithType: GreenRoleClaimRepository.GreenRoleClaimRepository(GreenDbContext, ILogger<IGreenRoleClaimRepository>)
-  nameWithType.vb: GreenRoleClaimRepository.GreenRoleClaimRepository(GreenDbContext, ILogger(Of IGreenRoleClaimRepository))
+- uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.AspNetDbContext,ILogger{IGreenRoleClaimRepository})
+  name: GreenRoleClaimRepository(AspNetDbContext, ILogger<IGreenRoleClaimRepository>)
+  href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_CG_Green_Data_AspNetDbContext_ILogger_IGreenRoleClaimRepository__
+  commentId: M:CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor(CG.Green.Data.AspNetDbContext,ILogger{IGreenRoleClaimRepository})
+  name.vb: GreenRoleClaimRepository(AspNetDbContext, ILogger(Of IGreenRoleClaimRepository))
+  fullName: CG.Green.Data.Repositories.GreenRoleClaimRepository.GreenRoleClaimRepository(CG.Green.Data.AspNetDbContext, ILogger<IGreenRoleClaimRepository>)
+  fullName.vb: CG.Green.Data.Repositories.GreenRoleClaimRepository.GreenRoleClaimRepository(CG.Green.Data.AspNetDbContext, ILogger(Of IGreenRoleClaimRepository))
+  nameWithType: GreenRoleClaimRepository.GreenRoleClaimRepository(AspNetDbContext, ILogger<IGreenRoleClaimRepository>)
+  nameWithType.vb: GreenRoleClaimRepository.GreenRoleClaimRepository(AspNetDbContext, ILogger(Of IGreenRoleClaimRepository))
 - uid: CG.Green.Data.Repositories.GreenRoleClaimRepository.#ctor*
   name: GreenRoleClaimRepository
   href: api/CG.Green.Data.Repositories.GreenRoleClaimRepository.html#CG_Green_Data_Repositories_GreenRoleClaimRepository__ctor_
@@ -4031,15 +4031,15 @@ references:
   commentId: T:CG.Green.Data.Repositories.GreenUserClaimRepository
   fullName: CG.Green.Data.Repositories.GreenUserClaimRepository
   nameWithType: GreenUserClaimRepository
-- uid: CG.Green.Data.Repositories.GreenUserClaimRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenUserClaimRepository})
-  name: GreenUserClaimRepository(GreenDbContext, ILogger<IGreenUserClaimRepository>)
-  href: api/CG.Green.Data.Repositories.GreenUserClaimRepository.html#CG_Green_Data_Repositories_GreenUserClaimRepository__ctor_CG_Green_Data_GreenDbContext_ILogger_IGreenUserClaimRepository__
-  commentId: M:CG.Green.Data.Repositories.GreenUserClaimRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenUserClaimRepository})
-  name.vb: GreenUserClaimRepository(GreenDbContext, ILogger(Of IGreenUserClaimRepository))
-  fullName: CG.Green.Data.Repositories.GreenUserClaimRepository.GreenUserClaimRepository(CG.Green.Data.GreenDbContext, ILogger<IGreenUserClaimRepository>)
-  fullName.vb: CG.Green.Data.Repositories.GreenUserClaimRepository.GreenUserClaimRepository(CG.Green.Data.GreenDbContext, ILogger(Of IGreenUserClaimRepository))
-  nameWithType: GreenUserClaimRepository.GreenUserClaimRepository(GreenDbContext, ILogger<IGreenUserClaimRepository>)
-  nameWithType.vb: GreenUserClaimRepository.GreenUserClaimRepository(GreenDbContext, ILogger(Of IGreenUserClaimRepository))
+- uid: CG.Green.Data.Repositories.GreenUserClaimRepository.#ctor(CG.Green.Data.AspNetDbContext,ILogger{IGreenUserClaimRepository})
+  name: GreenUserClaimRepository(AspNetDbContext, ILogger<IGreenUserClaimRepository>)
+  href: api/CG.Green.Data.Repositories.GreenUserClaimRepository.html#CG_Green_Data_Repositories_GreenUserClaimRepository__ctor_CG_Green_Data_AspNetDbContext_ILogger_IGreenUserClaimRepository__
+  commentId: M:CG.Green.Data.Repositories.GreenUserClaimRepository.#ctor(CG.Green.Data.AspNetDbContext,ILogger{IGreenUserClaimRepository})
+  name.vb: GreenUserClaimRepository(AspNetDbContext, ILogger(Of IGreenUserClaimRepository))
+  fullName: CG.Green.Data.Repositories.GreenUserClaimRepository.GreenUserClaimRepository(CG.Green.Data.AspNetDbContext, ILogger<IGreenUserClaimRepository>)
+  fullName.vb: CG.Green.Data.Repositories.GreenUserClaimRepository.GreenUserClaimRepository(CG.Green.Data.AspNetDbContext, ILogger(Of IGreenUserClaimRepository))
+  nameWithType: GreenUserClaimRepository.GreenUserClaimRepository(AspNetDbContext, ILogger<IGreenUserClaimRepository>)
+  nameWithType.vb: GreenUserClaimRepository.GreenUserClaimRepository(AspNetDbContext, ILogger(Of IGreenUserClaimRepository))
 - uid: CG.Green.Data.Repositories.GreenUserClaimRepository.#ctor*
   name: GreenUserClaimRepository
   href: api/CG.Green.Data.Repositories.GreenUserClaimRepository.html#CG_Green_Data_Repositories_GreenUserClaimRepository__ctor_
@@ -4091,15 +4091,15 @@ references:
   commentId: T:CG.Green.Data.Repositories.GreenUserRoleRepository
   fullName: CG.Green.Data.Repositories.GreenUserRoleRepository
   nameWithType: GreenUserRoleRepository
-- uid: CG.Green.Data.Repositories.GreenUserRoleRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenUserRoleRepository})
-  name: GreenUserRoleRepository(GreenDbContext, ILogger<IGreenUserRoleRepository>)
-  href: api/CG.Green.Data.Repositories.GreenUserRoleRepository.html#CG_Green_Data_Repositories_GreenUserRoleRepository__ctor_CG_Green_Data_GreenDbContext_ILogger_IGreenUserRoleRepository__
-  commentId: M:CG.Green.Data.Repositories.GreenUserRoleRepository.#ctor(CG.Green.Data.GreenDbContext,ILogger{IGreenUserRoleRepository})
-  name.vb: GreenUserRoleRepository(GreenDbContext, ILogger(Of IGreenUserRoleRepository))
-  fullName: CG.Green.Data.Repositories.GreenUserRoleRepository.GreenUserRoleRepository(CG.Green.Data.GreenDbContext, ILogger<IGreenUserRoleRepository>)
-  fullName.vb: CG.Green.Data.Repositories.GreenUserRoleRepository.GreenUserRoleRepository(CG.Green.Data.GreenDbContext, ILogger(Of IGreenUserRoleRepository))
-  nameWithType: GreenUserRoleRepository.GreenUserRoleRepository(GreenDbContext, ILogger<IGreenUserRoleRepository>)
-  nameWithType.vb: GreenUserRoleRepository.GreenUserRoleRepository(GreenDbContext, ILogger(Of IGreenUserRoleRepository))
+- uid: CG.Green.Data.Repositories.GreenUserRoleRepository.#ctor(CG.Green.Data.AspNetDbContext,ILogger{IGreenUserRoleRepository})
+  name: GreenUserRoleRepository(AspNetDbContext, ILogger<IGreenUserRoleRepository>)
+  href: api/CG.Green.Data.Repositories.GreenUserRoleRepository.html#CG_Green_Data_Repositories_GreenUserRoleRepository__ctor_CG_Green_Data_AspNetDbContext_ILogger_IGreenUserRoleRepository__
+  commentId: M:CG.Green.Data.Repositories.GreenUserRoleRepository.#ctor(CG.Green.Data.AspNetDbContext,ILogger{IGreenUserRoleRepository})
+  name.vb: GreenUserRoleRepository(AspNetDbContext, ILogger(Of IGreenUserRoleRepository))
+  fullName: CG.Green.Data.Repositories.GreenUserRoleRepository.GreenUserRoleRepository(CG.Green.Data.AspNetDbContext, ILogger<IGreenUserRoleRepository>)
+  fullName.vb: CG.Green.Data.Repositories.GreenUserRoleRepository.GreenUserRoleRepository(CG.Green.Data.AspNetDbContext, ILogger(Of IGreenUserRoleRepository))
+  nameWithType: GreenUserRoleRepository.GreenUserRoleRepository(AspNetDbContext, ILogger<IGreenUserRoleRepository>)
+  nameWithType.vb: GreenUserRoleRepository.GreenUserRoleRepository(AspNetDbContext, ILogger(Of IGreenUserRoleRepository))
 - uid: CG.Green.Data.Repositories.GreenUserRoleRepository.#ctor*
   name: GreenUserRoleRepository
   href: api/CG.Green.Data.Repositories.GreenUserRoleRepository.html#CG_Green_Data_Repositories_GreenUserRoleRepository__ctor_
@@ -4282,15 +4282,15 @@ references:
   commentId: T:CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory
   fullName: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory
   nameWithType: GreenDbContextDesignTimeFactory
-- uid: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)
-  name: OnConfigureDataContextOptions(DbContextOptionsBuilder<GreenDbContext>, IConfiguration)
-  href: api/CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.html#CG_Green_Data_Sqlite_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_GreenDbContext__IConfiguration_
-  commentId: M:CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)
-  name.vb: OnConfigureDataContextOptions(DbContextOptionsBuilder(Of GreenDbContext), IConfiguration)
-  fullName: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<CG.Green.Data.GreenDbContext>, IConfiguration)
-  fullName.vb: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of CG.Green.Data.GreenDbContext), IConfiguration)
-  nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<GreenDbContext>, IConfiguration)
-  nameWithType.vb: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of GreenDbContext), IConfiguration)
+- uid: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)
+  name: OnConfigureDataContextOptions(DbContextOptionsBuilder<AspNetDbContext>, IConfiguration)
+  href: api/CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.html#CG_Green_Data_Sqlite_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_AspNetDbContext__IConfiguration_
+  commentId: M:CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)
+  name.vb: OnConfigureDataContextOptions(DbContextOptionsBuilder(Of AspNetDbContext), IConfiguration)
+  fullName: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<CG.Green.Data.AspNetDbContext>, IConfiguration)
+  fullName.vb: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of CG.Green.Data.AspNetDbContext), IConfiguration)
+  nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<AspNetDbContext>, IConfiguration)
+  nameWithType.vb: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of AspNetDbContext), IConfiguration)
 - uid: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions*
   name: OnConfigureDataContextOptions
   href: api/CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.html#CG_Green_Data_Sqlite_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_
@@ -4298,6 +4298,76 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.Sqlite.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions
   nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet
+  name: CG.Green.Data.Sqlite.Migrations.AspNet
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.html
+  commentId: N:CG.Green.Data.Sqlite.Migrations.AspNet
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet
+  nameWithType: CG.Green.Data.Sqlite.Migrations.AspNet
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot
+  name: AspNetDbContextModelSnapshot
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.html
+  commentId: T:CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot
+  nameWithType: AspNetDbContextModelSnapshot
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildModel(ModelBuilder)
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.html#CG_Green_Data_Sqlite_Migrations_AspNet_AspNetDbContextModelSnapshot_BuildModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: AspNetDbContextModelSnapshot.BuildModel(ModelBuilder)
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel*
+  name: BuildModel
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.html#CG_Green_Data_Sqlite_Migrations_AspNet_AspNetDbContextModelSnapshot_BuildModel_
+  commentId: Overload:CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel
+  isSpec: "True"
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel
+  nameWithType: AspNetDbContextModelSnapshot.BuildModel
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate
+  name: InitialCreate
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.html
+  commentId: T:CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate
+  nameWithType: InitialCreate
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_AspNet_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: InitialCreate.BuildTargetModel(ModelBuilder)
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.BuildTargetModel*
+  name: BuildTargetModel
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_AspNet_InitialCreate_BuildTargetModel_
+  commentId: Overload:CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.BuildTargetModel
+  isSpec: "True"
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.BuildTargetModel
+  nameWithType: InitialCreate.BuildTargetModel
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_AspNet_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: InitialCreate.Down(MigrationBuilder)
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Down*
+  name: Down
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_AspNet_InitialCreate_Down_
+  commentId: Overload:CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Down
+  isSpec: "True"
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Down
+  nameWithType: InitialCreate.Down
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_AspNet_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: InitialCreate.Up(MigrationBuilder)
+- uid: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Up*
+  name: Up
+  href: api/CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_AspNet_InitialCreate_Up_
+  commentId: Overload:CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Up
+  isSpec: "True"
+  fullName: CG.Green.Data.Sqlite.Migrations.AspNet.InitialCreate.Up
+  nameWithType: InitialCreate.Up
 - uid: CG.Green.Data.Sqlite.Migrations.Configuration
   name: CG.Green.Data.Sqlite.Migrations.Configuration
   href: api/CG.Green.Data.Sqlite.Migrations.Configuration.html
@@ -4438,76 +4508,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.Sqlite.Migrations.Grants.PersistedGrantDbContextModelSnapshot.BuildModel
   nameWithType: PersistedGrantDbContextModelSnapshot.BuildModel
-- uid: CG.Green.Data.Sqlite.Migrations.Green
-  name: CG.Green.Data.Sqlite.Migrations.Green
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.html
-  commentId: N:CG.Green.Data.Sqlite.Migrations.Green
-  fullName: CG.Green.Data.Sqlite.Migrations.Green
-  nameWithType: CG.Green.Data.Sqlite.Migrations.Green
-- uid: CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot
-  name: GreenDbContextModelSnapshot
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.html
-  commentId: T:CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot
-  nameWithType: GreenDbContextModelSnapshot
-- uid: CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  name: BuildModel(ModelBuilder)
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.html#CG_Green_Data_Sqlite_Migrations_Green_GreenDbContextModelSnapshot_BuildModel_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: GreenDbContextModelSnapshot.BuildModel(ModelBuilder)
-- uid: CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.BuildModel*
-  name: BuildModel
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.html#CG_Green_Data_Sqlite_Migrations_Green_GreenDbContextModelSnapshot_BuildModel_
-  commentId: Overload:CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.BuildModel
-  isSpec: "True"
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.GreenDbContextModelSnapshot.BuildModel
-  nameWithType: GreenDbContextModelSnapshot.BuildModel
-- uid: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate
-  name: InitialCreate
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.html
-  commentId: T:CG.Green.Data.Sqlite.Migrations.Green.InitialCreate
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate
-  nameWithType: InitialCreate
-- uid: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  name: BuildTargetModel(ModelBuilder)
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_Green_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: InitialCreate.BuildTargetModel(ModelBuilder)
-- uid: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.BuildTargetModel*
-  name: BuildTargetModel
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_Green_InitialCreate_BuildTargetModel_
-  commentId: Overload:CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.BuildTargetModel
-  isSpec: "True"
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.BuildTargetModel
-  nameWithType: InitialCreate.BuildTargetModel
-- uid: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  name: Down(MigrationBuilder)
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_Green_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: InitialCreate.Down(MigrationBuilder)
-- uid: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Down*
-  name: Down
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_Green_InitialCreate_Down_
-  commentId: Overload:CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Down
-  isSpec: "True"
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Down
-  nameWithType: InitialCreate.Down
-- uid: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  name: Up(MigrationBuilder)
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_Green_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: InitialCreate.Up(MigrationBuilder)
-- uid: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Up*
-  name: Up
-  href: api/CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.html#CG_Green_Data_Sqlite_Migrations_Green_InitialCreate_Up_
-  commentId: Overload:CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Up
-  isSpec: "True"
-  fullName: CG.Green.Data.Sqlite.Migrations.Green.InitialCreate.Up
-  nameWithType: InitialCreate.Up
 - uid: CG.Green.Data.SqlServer
   name: CG.Green.Data.SqlServer
   href: api/CG.Green.Data.SqlServer.html
@@ -4520,15 +4520,15 @@ references:
   commentId: T:CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory
   fullName: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory
   nameWithType: GreenDbContextDesignTimeFactory
-- uid: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)
-  name: OnConfigureDataContextOptions(DbContextOptionsBuilder<GreenDbContext>, IConfiguration)
-  href: api/CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.html#CG_Green_Data_SqlServer_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_GreenDbContext__IConfiguration_
-  commentId: M:CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.GreenDbContext},IConfiguration)
-  name.vb: OnConfigureDataContextOptions(DbContextOptionsBuilder(Of GreenDbContext), IConfiguration)
-  fullName: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<CG.Green.Data.GreenDbContext>, IConfiguration)
-  fullName.vb: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of CG.Green.Data.GreenDbContext), IConfiguration)
-  nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<GreenDbContext>, IConfiguration)
-  nameWithType.vb: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of GreenDbContext), IConfiguration)
+- uid: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)
+  name: OnConfigureDataContextOptions(DbContextOptionsBuilder<AspNetDbContext>, IConfiguration)
+  href: api/CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.html#CG_Green_Data_SqlServer_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_DbContextOptionsBuilder_CG_Green_Data_AspNetDbContext__IConfiguration_
+  commentId: M:CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder{CG.Green.Data.AspNetDbContext},IConfiguration)
+  name.vb: OnConfigureDataContextOptions(DbContextOptionsBuilder(Of AspNetDbContext), IConfiguration)
+  fullName: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<CG.Green.Data.AspNetDbContext>, IConfiguration)
+  fullName.vb: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of CG.Green.Data.AspNetDbContext), IConfiguration)
+  nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder<AspNetDbContext>, IConfiguration)
+  nameWithType.vb: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions(DbContextOptionsBuilder(Of AspNetDbContext), IConfiguration)
 - uid: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions*
   name: OnConfigureDataContextOptions
   href: api/CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.html#CG_Green_Data_SqlServer_GreenDbContextDesignTimeFactory_OnConfigureDataContextOptions_
@@ -4536,6 +4536,76 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.SqlServer.GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions
   nameWithType: GreenDbContextDesignTimeFactory.OnConfigureDataContextOptions
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet
+  name: CG.Green.Data.SqlServer.Migrations.AspNet
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.html
+  commentId: N:CG.Green.Data.SqlServer.Migrations.AspNet
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet
+  nameWithType: CG.Green.Data.SqlServer.Migrations.AspNet
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot
+  name: AspNetDbContextModelSnapshot
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.html
+  commentId: T:CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot
+  nameWithType: AspNetDbContextModelSnapshot
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildModel(ModelBuilder)
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.html#CG_Green_Data_SqlServer_Migrations_AspNet_AspNetDbContextModelSnapshot_BuildModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: AspNetDbContextModelSnapshot.BuildModel(ModelBuilder)
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel*
+  name: BuildModel
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.html#CG_Green_Data_SqlServer_Migrations_AspNet_AspNetDbContextModelSnapshot_BuildModel_
+  commentId: Overload:CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel
+  isSpec: "True"
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.AspNetDbContextModelSnapshot.BuildModel
+  nameWithType: AspNetDbContextModelSnapshot.BuildModel
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate
+  name: InitialCreate
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.html
+  commentId: T:CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate
+  nameWithType: InitialCreate
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_AspNet_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: InitialCreate.BuildTargetModel(ModelBuilder)
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.BuildTargetModel*
+  name: BuildTargetModel
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_AspNet_InitialCreate_BuildTargetModel_
+  commentId: Overload:CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.BuildTargetModel
+  isSpec: "True"
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.BuildTargetModel
+  nameWithType: InitialCreate.BuildTargetModel
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_AspNet_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: InitialCreate.Down(MigrationBuilder)
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Down*
+  name: Down
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_AspNet_InitialCreate_Down_
+  commentId: Overload:CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Down
+  isSpec: "True"
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Down
+  nameWithType: InitialCreate.Down
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_AspNet_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: InitialCreate.Up(MigrationBuilder)
+- uid: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Up*
+  name: Up
+  href: api/CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_AspNet_InitialCreate_Up_
+  commentId: Overload:CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Up
+  isSpec: "True"
+  fullName: CG.Green.Data.SqlServer.Migrations.AspNet.InitialCreate.Up
+  nameWithType: InitialCreate.Up
 - uid: CG.Green.Data.SqlServer.Migrations.Configuration
   name: CG.Green.Data.SqlServer.Migrations.Configuration
   href: api/CG.Green.Data.SqlServer.Migrations.Configuration.html
@@ -4676,76 +4746,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.SqlServer.Migrations.Grants.PersistedGrantDbContextModelSnapshot.BuildModel
   nameWithType: PersistedGrantDbContextModelSnapshot.BuildModel
-- uid: CG.Green.Data.SqlServer.Migrations.Green
-  name: CG.Green.Data.SqlServer.Migrations.Green
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.html
-  commentId: N:CG.Green.Data.SqlServer.Migrations.Green
-  fullName: CG.Green.Data.SqlServer.Migrations.Green
-  nameWithType: CG.Green.Data.SqlServer.Migrations.Green
-- uid: CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot
-  name: GreenDbContextModelSnapshot
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.html
-  commentId: T:CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot
-  nameWithType: GreenDbContextModelSnapshot
-- uid: CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  name: BuildModel(ModelBuilder)
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.html#CG_Green_Data_SqlServer_Migrations_Green_GreenDbContextModelSnapshot_BuildModel_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: GreenDbContextModelSnapshot.BuildModel(ModelBuilder)
-- uid: CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.BuildModel*
-  name: BuildModel
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.html#CG_Green_Data_SqlServer_Migrations_Green_GreenDbContextModelSnapshot_BuildModel_
-  commentId: Overload:CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.BuildModel
-  isSpec: "True"
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.GreenDbContextModelSnapshot.BuildModel
-  nameWithType: GreenDbContextModelSnapshot.BuildModel
-- uid: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate
-  name: InitialCreate
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.html
-  commentId: T:CG.Green.Data.SqlServer.Migrations.Green.InitialCreate
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate
-  nameWithType: InitialCreate
-- uid: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  name: BuildTargetModel(ModelBuilder)
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_Green_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: InitialCreate.BuildTargetModel(ModelBuilder)
-- uid: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.BuildTargetModel*
-  name: BuildTargetModel
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_Green_InitialCreate_BuildTargetModel_
-  commentId: Overload:CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.BuildTargetModel
-  isSpec: "True"
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.BuildTargetModel
-  nameWithType: InitialCreate.BuildTargetModel
-- uid: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  name: Down(MigrationBuilder)
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_Green_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: InitialCreate.Down(MigrationBuilder)
-- uid: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Down*
-  name: Down
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_Green_InitialCreate_Down_
-  commentId: Overload:CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Down
-  isSpec: "True"
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Down
-  nameWithType: InitialCreate.Down
-- uid: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  name: Up(MigrationBuilder)
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_Green_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: InitialCreate.Up(MigrationBuilder)
-- uid: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Up*
-  name: Up
-  href: api/CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.html#CG_Green_Data_SqlServer_Migrations_Green_InitialCreate_Up_
-  commentId: Overload:CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Up
-  isSpec: "True"
-  fullName: CG.Green.Data.SqlServer.Migrations.Green.InitialCreate.Up
-  nameWithType: InitialCreate.Up
 - uid: CG.Green.Directors
   name: CG.Green.Directors
   href: api/CG.Green.Directors.html
