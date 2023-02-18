@@ -44,7 +44,7 @@ One of the main goals of this project is to minimize dependencies on third party
 
 ### What OS(s) does it support?
 
-A goal of the project is to produce a tool that can be run on (at least) Windows, and Linux. Thanks to .NET core, we support the following platforms:
+A goal of the project is to produce a tool that can be run on (at least) Windows, and Linux. Thanks to .NET core, we operate on the following platforms:
 
 * [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) (tested)
 
