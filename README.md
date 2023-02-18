@@ -12,7 +12,7 @@ Green is an idea for an identity microservice. Essentially, we stood up the ASP.
 
 Our main goal is to produce a tool that can be dropped into production, cheaply and easily, to provide secure, reliable identity services, without costing a fortune to operate or requiring a PHD to understand. 
 
-We chose to build on Duende and ASP.NET because they are proven technologies and offer some of the most flexibility with the lowest overall cost of ownership.
+We chose to build on Duende and ASP.NET because they are proven technologies and offer some of the most flexibility, along with the lowest overall cost of ownership.
 
 ### What works, and what doesn't, at this point?
 
@@ -26,7 +26,7 @@ We're not at a point where we can commit to a feature plan. Honestly, we might n
 
 ### What are the main dependencies?
 
-One of the main goals of this project is to minimize dependencies on 3rd party libraries. Where third party libraries are used, we try to ensure that they are well established and actively developed / supported. 
+One of the main goals of this project is to minimize dependencies on third party libraries. Where third party libraries are used, we try to ensure that they are well established and actively developed / supported. 
 
 * [Duende](https://duendesoftware.com/) (The library formerly known as IdentityServer4)
 
@@ -54,9 +54,7 @@ A goal of the project is to produce a tool that can be run on (at least) Windows
 
 ### What .NET runtime(s) does it support?
 
-We have committed to supporting current flavors of .NET. We currently support:
-
-* [.NET 7.x](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+We are building the project against [.NET 7.x](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
 ### What database(s) does it support?
 
@@ -86,7 +84,7 @@ We also write about projects like this one on our website [HERE](http://www.code
 
 ### Can I help?
 
-We're not in position to accept contributors but we hope that changs, at some point. Keep checking back. 
+We're not in position to accept contributors but we hope that changes, at some point. Keep checking back. 
 
 ## Disclaimer
 
