@@ -1,6 +1,4 @@
 ﻿
-using Duende.IdentityServer.EntityFramework.DbContexts;
-
 namespace Microsoft.AspNetCore.Builder;
 
 /// <summary>
@@ -16,7 +14,7 @@ public static class WebApplicationExtensions002
     #region Public methods
 
     /// <summary>
-    /// This method performs startup operations for this SQLite provider.
+    /// This method performs startup operations for this MySql provider.
     /// </summary>
     /// <param name="webApplication">The web application to use for the 
     /// operation.</param>
@@ -29,7 +27,7 @@ public static class WebApplicationExtensions002
     /// package.
     /// </para>
     /// </remarks>
-    public static WebApplication UseSqliteDataAccess(
+    public static WebApplication UseMySqlDataAccess(
         this WebApplication webApplication
         )
     {

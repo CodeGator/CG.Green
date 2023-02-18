@@ -158,7 +158,6 @@ public static class WebApplicationBuilderExtensions005
             // Always add these options.
             options.EnableTokenCleanup = true;
             options.RemoveConsumedTokens = true;
-
         }).AddConfigurationStore(options =>
         {
             // Use the SQLServer provider with our connection string and migration

@@ -22,7 +22,6 @@ public class GreenDbContext :
 
     #region Properties
 
-
     #endregion
 
     // *******************************************************************

@@ -1,4 +1,6 @@
 ﻿
+using CG.Green.Data;
+
 namespace Microsoft.AspNetCore.Builder;
 
 /// <summary>
