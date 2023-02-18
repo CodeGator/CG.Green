@@ -1,0 +1,32 @@
+﻿<MudDialog>
+    <DialogContent>
+        <EditForm Model="@Model" OnValidSubmit="OnValidSubmitAsync">
+            <MudCard Outlined>
+                <MudCardContent>
+                    <DataAnnotationsValidator />
+                    <MudTextField AutoFocus
+                                  Required
+                                  Immediate
+                                  OnlyValidateIfDirty
+                                  Margin="Margin.Dense"
+                                  Counter="@(Globals.Models.Clients.ClientIdLength)"
+                                  Variant="Variant.Outlined"
+                                  Label="Client Id"
+                                  Mask="@(new RegexMask(@"^[\.a-zA-Z0-9]*$"))"
+                                  HelperText="Use letters, numbers, or periods to form a client name."
+                                  For="@(() => Model.ClientId)"
+                                  @bind-Value="@Model.ClientId"
+                                  Adornment="Adornment.End"
+                                  AdornmentAriaLabel="generate id"
+                                  AdornmentIcon="@Icons.Material.TwoTone.AddToPhotos"
+                                  OnAdornmentClick="OnNewClientId"
+                                  Class="ml-auto" />
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">Cancel</MudButton>
+                        <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">Save</MudButton>
+                    </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </DialogContent>
+</MudDialog>

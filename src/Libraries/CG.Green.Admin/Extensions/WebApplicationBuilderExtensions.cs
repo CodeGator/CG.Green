@@ -36,7 +36,18 @@ public static class WebApplicationBuilderExtensions012
         // Validate the parameters before attempting to use them.
         Guard.Instance().ThrowIfNull(webApplicationBuilder, nameof(webApplicationBuilder));
 
-        // TODO : write the code for this.
+        // Tell the world what we are about to do.
+        bootstrapLogger?.LogDebug(
+            "Wiring up the auto-mapper for the admin library"
+            );
+
+        // Wire up the auto-mapper.
+        webApplicationBuilder.Services.AddAutoMapper(cfg =>
+        {
+            // Wire up the conversion maps.
+            cfg.CreateMap<Client, EditClientVM>().ReverseMap();
+            cfg.CreateMap<Client, NewClientVM>().ReverseMap();
+        });
 
         // Return the application builder.
         return webApplicationBuilder;

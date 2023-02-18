@@ -100,6 +100,50 @@ internal class ClientManager : IClientManager
     // *******************************************************************
 
     /// <inheritdoc/>
+    public virtual async Task<bool> AnyByIdAsync(
+        string clientId,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNullOrEmpty(clientId, nameof(clientId));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogTrace(
+                "Deferring to {name}",
+                nameof(IClientRepository.AnyByIdAsync)
+                );
+
+            // Check the repository for the data.
+            var result = await _clientRepository.AnyByIdAsync(
+                clientId,
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Return the results,
+            return result;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for clients by client id!"
+                );
+
+            // Provider better context.
+            throw new ManagerException(
+                message: $"The manager failed to search for clients by client id!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
     public virtual async Task<long> CountAsync(
         CancellationToken cancellationToken = default
         )

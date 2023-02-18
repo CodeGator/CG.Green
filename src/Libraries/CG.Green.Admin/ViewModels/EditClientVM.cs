@@ -34,23 +34,5 @@ public class EditClientVM
     [Display(Name = "Enabled")]
     public bool Enabled { get; set; }
 
-    /// <summary>
-    /// This property contains the client flow type.
-    /// </summary>
-    public ClientFlow ClientFlow { get; set; }
-
-    #endregion
-
-    // *******************************************************************
-    // Public methods.
-    // *******************************************************************
-
-    #region Public methods
-
-    public static EditClientVM FromDuende(Client client)
-    {
-        return new EditClientVM();
-    }
-
     #endregion
 }

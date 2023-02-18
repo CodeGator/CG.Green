@@ -1,5 +1,11 @@
-﻿global using CG.Green.ViewModels;
+﻿global using AutoMapper;
+global using CG.Green.ViewModels;
 global using CG.Validations;
 global using Duende.IdentityServer.Models;
+global using Microsoft.AspNetCore.Components;
+global using Microsoft.AspNetCore.Http;
 global using Microsoft.Extensions.Logging;
+global using MudBlazor;
 global using System.ComponentModel.DataAnnotations;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.AspNetCore.Components.Forms;

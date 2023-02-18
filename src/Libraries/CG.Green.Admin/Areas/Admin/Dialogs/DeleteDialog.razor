@@ -1,0 +1,26 @@
+﻿<EditForm Model="@_model" OnValidSubmit="OnValidSubmit">
+    <MudDialog>
+        <DialogContent>
+            <MudText Align="Align.Center" Typo="Typo.body2">Are you sure you want to delete <b>@ObjectName</b>?</MudText>
+            <MudChip Style="display: flex;justify-content:center" DisableRipple Class="my-8" Color="Color.Warning">Warning: this action is forever!</MudChip>
+            @if (Confirm)
+            {
+                <DataAnnotationsValidator />
+                <MudText Class="mb-4" Typo="Typo.body2">Please type in the name '@ObjectName' to confirm.</MudText>
+                <MudTextField AutoFocus
+                              Required
+                              OnlyValidateIfDirty
+                          Margin="Margin.Dense"
+                          Variant="Variant.Outlined"
+                          Label="Confirm"
+                          For="@(() => _model)"
+                          @bind-Value="@_model"
+                          Class="ml-auto" />
+            }
+        </DialogContent>
+        <DialogActions>
+            <MudButton Variant="Variant.Outlined" Color="Color.Inherit" OnClick="Cancel">@NoText</MudButton>
+            <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary" Disabled=@(!Confirm ? false : _model != ObjectName)>@YesText</MudButton>
+        </DialogActions>
+    </MudDialog>
+</EditForm>

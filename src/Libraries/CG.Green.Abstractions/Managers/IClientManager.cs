@@ -22,6 +22,24 @@ public interface IClientManager
         );
 
     /// <summary>
+    /// This method indicates whether there are any <see cref="Client"/> objects
+    /// in the underlying storage that match the given client identifier.
+    /// </summary>
+    /// <param name="clientId">The client identifier to use for the operation.</param>
+    /// <param name="cancellationToken">A cancellation token that is monitored
+    /// for the lifetime of the method.</param>
+    /// <returns>A task to perform the operation that returns <c>true</c> if there
+    /// are any <see cref="Client"/> objects; <c>false</c> otherwise.</returns>
+    /// <exception cref="ArgumentException">This exception is thrown whenever one
+    /// or more arguments are missing, or invalid.</exception>
+    /// <exception cref="ManagerException">This exception is thrown whenever the
+    /// manager fails to complete the operation.</exception>
+    Task<bool> AnyByIdAsync(
+        string clientId,
+        CancellationToken cancellationToken = default
+        );
+
+    /// <summary>
     /// This method counts the number of <see cref="Client"/> objects in the 
     /// underlying storage.
     /// </summary>

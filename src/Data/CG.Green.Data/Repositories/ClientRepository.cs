@@ -99,6 +99,49 @@ internal class ClientRepository : IClientRepository
     // *******************************************************************
 
     /// <inheritdoc/>
+    public virtual async Task<bool> AnyByIdAsync(
+        string clientId,
+        CancellationToken cancellationToken = default
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNull(clientId, nameof(clientId));
+
+        try
+        {
+            // Log what we are about to do.
+            _logger.LogDebug(
+                "Searching for clients by id"
+                );
+
+            // Search for any entities in the data-store.
+            var data = await _configurationDbContext.Clients.AnyAsync(
+                x => x.ClientId == clientId,
+                cancellationToken
+                ).ConfigureAwait(false);
+
+            // Return the results.
+            return data;
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            _logger.LogError(
+                ex,
+                "Failed to search for clients by id!"
+                );
+
+            // Provider better context.
+            throw new RepositoryException(
+                message: $"The repository failed to search for clients by id!",
+                innerException: ex
+                );
+        }
+    }
+
+    // *******************************************************************
+
+    /// <inheritdoc/>
     public virtual async Task<long> CountAsync(
        CancellationToken cancellationToken = default
        )
