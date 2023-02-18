@@ -7,17 +7,17 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace CG.Green.Data.MySql.Migrations.Green
+namespace CG.Green.Data.MySql.Migrations.AspNet
 {
-    [DbContext(typeof(GreenDbContext))]
-    partial class GreenDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(AspNetDbContext))]
+    partial class AspNetDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasDefaultSchema("Green")
-                .HasAnnotation("ProductVersion", "7.0.2")
+                .HasAnnotation("ProductVersion", "7.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("CG.Green.Identity.Models.GreenRole", b =>

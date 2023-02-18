@@ -4,7 +4,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace CG.Green.Data.MySql.Migrations.Green
+namespace CG.Green.Data.MySql.Migrations.AspNet
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

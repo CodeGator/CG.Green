@@ -38,9 +38,9 @@ Script-Migration -Idempotent
 
 Here are the commands used to create the initial migrations:
 
-For the `GreenDbContext`
+For the `AspNetDbContext`
 ```
-add-migration InitialCreate -p CG.Green.Data.MySql -o Migrations\Green -c GreenDbContext
+add-migration InitialCreate -p CG.Green.Data.MySql -o Migrations\AspNet -c AspNetDbContext
 ```
 
 For the `ConfigurationDbContext`

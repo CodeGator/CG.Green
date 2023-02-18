@@ -1,10 +1,10 @@
 ﻿namespace CG.Green.Data.InMemory.Factories;
 
 /// <summary>
-/// This class is an in-memory design time factory for the <see cref="GreenDbContext"/>
+/// This class is an in-memory design time factory for the <see cref="AspNetDbContext"/>
 /// data-context type.
 /// </summary>
-internal class GreenDbContextDesignTimeFactory : DesignTimeDbContextFactory<GreenDbContext>
+internal class GreenDbContextDesignTimeFactory : DesignTimeDbContextFactory<AspNetDbContext>
 {
     // *******************************************************************
     // Protected methods.
@@ -20,7 +20,7 @@ internal class GreenDbContextDesignTimeFactory : DesignTimeDbContextFactory<Gree
     /// to use for the operation.</param>
     /// <param name="configuration">The configuration to use for the operation.</param>
     protected override void OnConfigureDataContextOptions(
-        DbContextOptionsBuilder<GreenDbContext> optionsBuilder,
+        DbContextOptionsBuilder<AspNetDbContext> optionsBuilder,
         IConfiguration configuration
         )
     {

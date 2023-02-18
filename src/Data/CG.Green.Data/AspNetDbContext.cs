@@ -2,9 +2,10 @@
 namespace CG.Green.Data;
 
 /// <summary>
-/// This class is a data-context for the <see cref="CG.Green"/> microservice.
+/// This class is the ASP.NET data-context for the <see cref="CG.Green"/> 
+/// microservice.
 /// </summary>
-public class GreenDbContext : 
+public class AspNetDbContext : 
     IdentityDbContext<
         GreenUser, 
         GreenRole, 
@@ -17,26 +18,18 @@ public class GreenDbContext :
         >
 {
     // *******************************************************************
-    // Properties.
-    // *******************************************************************
-
-    #region Properties
-
-    #endregion
-
-    // *******************************************************************
     // Constructors.
     // *******************************************************************
 
     #region Constructors
 
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="GreenDbContext"/>
+    /// This constructor creates a new instance of the <see cref="AspNetDbContext"/>
     /// class.
     /// </summary>
     /// <param name="options">The options to use with this data-context.</param>
-    public GreenDbContext(
-        DbContextOptions<GreenDbContext> options
+    public AspNetDbContext(
+        DbContextOptions<AspNetDbContext> options
         ) : base(options)
     {
 

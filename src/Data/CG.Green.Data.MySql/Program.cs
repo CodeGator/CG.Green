@@ -45,7 +45,7 @@ new HostBuilder()
         // Because the Duende library uses the IUserClaimsPrincipalFactory, for
         //   migrations, and that abstraction is registered using this code.
         services.AddIdentity<GreenUser, GreenRole>()
-            .AddEntityFrameworkStores<GreenDbContext>()
+            .AddEntityFrameworkStores<AspNetDbContext>()
             .AddDefaultTokenProviders();
 
         // Because the Duende library is using some of these services, for migrations,

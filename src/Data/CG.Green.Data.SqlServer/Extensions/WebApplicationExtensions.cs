@@ -134,12 +134,12 @@ public static class WebApplicationExtensions003
         // Log what we are about to do.
         webApplication.Logger.LogDebug(
             "Creating a {ctx} instance.",
-            nameof(GreenDbContext)
+            nameof(AspNetDbContext)
             );
 
         // Create a data-context.
         var greenDbContext = scope.ServiceProvider.GetRequiredService<
-            GreenDbContext
+            AspNetDbContext
             >();
 
         // Log what we are about to do.
@@ -197,18 +197,18 @@ public static class WebApplicationExtensions003
         // Log what we are about to do.
         webApplication.Logger.LogDebug(
             "Creating a {ctx} instance.",
-            nameof(GreenDbContext)
+            nameof(AspNetDbContext)
             );
 
         // Create the green data-context.
         var greenDbContext = scope.ServiceProvider.GetRequiredService<
-            GreenDbContext
+            AspNetDbContext
             >();
 
         // Log what we are about to do.
         webApplication.Logger.LogInformation(
             "Migrating the {ctx} on database '{db}', on server '{srv}'",
-            nameof(GreenDbContext),
+            nameof(AspNetDbContext),
             greenDbContext.Database.GetDatabaseName(),
             greenDbContext.Database.GetServerName()
             );

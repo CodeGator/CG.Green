@@ -16,7 +16,7 @@ internal class GreenUserRoleRepository : IGreenUserRoleRepository
     /// <summary>
     /// This field contains the green data-context for this repository.
     /// </summary>
-    internal protected readonly GreenDbContext _greenDbContext = null!;
+    internal protected readonly AspNetDbContext _greenDbContext = null!;
 
     /// <summary>
     /// This field contains the logger for this repository.
@@ -39,7 +39,7 @@ internal class GreenUserRoleRepository : IGreenUserRoleRepository
     /// data-context to use with this repository.</param>
     /// <param name="logger">The logger to use with this repository.</param>
     public GreenUserRoleRepository(
-        GreenDbContext greenDbContext,
+        AspNetDbContext greenDbContext,
         ILogger<IGreenUserRoleRepository> logger
         )
     {

@@ -46,7 +46,7 @@ public static class WebApplicationBuilderExtensions004
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
             "Recovering the ASP.NET identity builder from cache, for the DAL",
-            nameof(GreenDbContext)
+            nameof(AspNetDbContext)
             );
 
         // Recover the identity builder.
@@ -64,7 +64,7 @@ public static class WebApplicationBuilderExtensions004
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
             "Recovering the Duende identity builder from cache, for the DAL",
-            nameof(GreenDbContext)
+            nameof(AspNetDbContext)
             );
 
         // Recover the Duende builder.
@@ -112,11 +112,11 @@ public static class WebApplicationBuilderExtensions004
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
             "Registering the {ctx} data context, for the DAL",
-            nameof(GreenDbContext)
+            nameof(AspNetDbContext)
             );
 
-        // Add the application's main data-context.
-        webApplicationBuilder.Services.AddDbContext<GreenDbContext>(options =>
+        // Add the AspNet data-context.
+        webApplicationBuilder.Services.AddDbContext<AspNetDbContext>(options =>
         {
             // Use the MySql provider with our connection string and migration
             //   assembly.
@@ -131,16 +131,16 @@ public static class WebApplicationBuilderExtensions004
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
             "Adding the {ctx} data context as the ASP.NET identity store, for the DAL",
-            nameof(GreenDbContext)
+            nameof(AspNetDbContext)
             );
 
         // Add the stores for ASP.NET identity.
-        identityBuilder.AddEntityFrameworkStores<GreenDbContext>();
+        identityBuilder.AddEntityFrameworkStores<AspNetDbContext>();
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
             "Adding the {ctx} data context as the Duende identity stores, for the DAL",
-            nameof(GreenDbContext)
+            nameof(AspNetDbContext)
             );
 
         // Add the Duende stores.
