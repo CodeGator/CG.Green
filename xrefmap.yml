@@ -7,12 +7,411 @@ references:
   commentId: N:CG.Green
   fullName: CG.Green
   nameWithType: CG.Green
+- uid: CG.Green.Areas.Admin.Dialogs
+  name: CG.Green.Areas.Admin.Dialogs
+  href: api/CG.Green.Areas.Admin.Dialogs.html
+  commentId: N:CG.Green.Areas.Admin.Dialogs
+  fullName: CG.Green.Areas.Admin.Dialogs
+  nameWithType: CG.Green.Areas.Admin.Dialogs
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog
+  name: DeleteDialog
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html
+  commentId: T:CG.Green.Areas.Admin.Dialogs.DeleteDialog
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog
+  nameWithType: DeleteDialog
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog._model
+  name: _model
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog__model
+  commentId: F:CG.Green.Areas.Admin.Dialogs.DeleteDialog._model
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog._model
+  nameWithType: DeleteDialog._model
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Cancel
+  name: Cancel()
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Cancel
+  commentId: M:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Cancel
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Cancel()
+  nameWithType: DeleteDialog.Cancel()
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Cancel
+  nameWithType: DeleteDialog.Cancel
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Confirm
+  name: Confirm
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Confirm
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Confirm
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Confirm
+  nameWithType: DeleteDialog.Confirm
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Confirm*
+  name: Confirm
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Confirm_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Confirm
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Confirm
+  nameWithType: DeleteDialog.Confirm
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Dialog
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Dialog
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Dialog
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Dialog
+  nameWithType: DeleteDialog.Dialog
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Dialog*
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Dialog_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Dialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Dialog
+  nameWithType: DeleteDialog.Dialog
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Logger
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Logger
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Logger
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Logger
+  nameWithType: DeleteDialog.Logger
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Logger*
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Logger_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Logger
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Logger
+  nameWithType: DeleteDialog.Logger
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.MudDialog
+  name: MudDialog
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_MudDialog
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog.MudDialog
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.MudDialog
+  nameWithType: DeleteDialog.MudDialog
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.MudDialog*
+  name: MudDialog
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_MudDialog_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.MudDialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.MudDialog
+  nameWithType: DeleteDialog.MudDialog
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.NoText
+  name: NoText
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_NoText
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog.NoText
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.NoText
+  nameWithType: DeleteDialog.NoText
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.NoText*
+  name: NoText
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_NoText_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.NoText
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.NoText
+  nameWithType: DeleteDialog.NoText
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.ObjectName
+  name: ObjectName
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_ObjectName
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog.ObjectName
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.ObjectName
+  nameWithType: DeleteDialog.ObjectName
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.ObjectName*
+  name: ObjectName
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_ObjectName_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.ObjectName
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.ObjectName
+  nameWithType: DeleteDialog.ObjectName
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.OnValidSubmit(EditContext)
+  name: OnValidSubmit(EditContext)
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_OnValidSubmit_EditContext_
+  commentId: M:CG.Green.Areas.Admin.Dialogs.DeleteDialog.OnValidSubmit(EditContext)
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.OnValidSubmit(EditContext)
+  nameWithType: DeleteDialog.OnValidSubmit(EditContext)
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.OnValidSubmit*
+  name: OnValidSubmit
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_OnValidSubmit_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.OnValidSubmit
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.OnValidSubmit
+  nameWithType: DeleteDialog.OnValidSubmit
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.YesText
+  name: YesText
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_YesText
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog.YesText
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.YesText
+  nameWithType: DeleteDialog.YesText
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.YesText*
+  name: YesText
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_YesText_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.YesText
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.YesText
+  nameWithType: DeleteDialog.YesText
 - uid: CG.Green.Areas.Admin.Pages.Clients
   name: CG.Green.Areas.Admin.Pages.Clients
   href: api/CG.Green.Areas.Admin.Pages.Clients.html
   commentId: N:CG.Green.Areas.Admin.Pages.Clients
   fullName: CG.Green.Areas.Admin.Pages.Clients
   nameWithType: CG.Green.Areas.Admin.Pages.Clients
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex
+  name: ClientsIndex
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex
+  nameWithType: ClientsIndex
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._clients
+  name: _clients
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex__clients
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._clients
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._clients
+  nameWithType: ClientsIndex._clients
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._crumbs
+  name: _crumbs
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex__crumbs
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._crumbs
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._crumbs
+  nameWithType: ClientsIndex._crumbs
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._gridSearchString
+  name: _gridSearchString
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex__gridSearchString
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._gridSearchString
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._gridSearchString
+  nameWithType: ClientsIndex._gridSearchString
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._isLoading
+  name: _isLoading
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex__isLoading
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._isLoading
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex._isLoading
+  nameWithType: ClientsIndex._isLoading
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.AutoMapper
+  name: AutoMapper
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_AutoMapper
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.AutoMapper
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.AutoMapper
+  nameWithType: ClientsIndex.AutoMapper
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.AutoMapper*
+  name: AutoMapper
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_AutoMapper_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.AutoMapper
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.AutoMapper
+  nameWithType: ClientsIndex.AutoMapper
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Dialog
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Dialog
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Dialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Dialog
+  nameWithType: ClientsIndex.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Dialog*
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Dialog_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Dialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Dialog
+  nameWithType: ClientsIndex.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(EditClientVM)
+  name: DisableClientAsync(EditClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_DisableClientAsync_EditClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(EditClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(EditClientVM)
+  nameWithType: ClientsIndex.DisableClientAsync(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync*
+  name: DisableClientAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_DisableClientAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync
+  nameWithType: ClientsIndex.DisableClientAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(EditClientVM)
+  name: EnableClientAsync(EditClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_EnableClientAsync_EditClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(EditClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(EditClientVM)
+  nameWithType: ClientsIndex.EnableClientAsync(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync*
+  name: EnableClientAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_EnableClientAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync
+  nameWithType: ClientsIndex.EnableClientAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(EditClientVM,System.String)
+  name: FilterFunc(EditClientVM, String)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_EditClientVM_System_String_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(EditClientVM,System.String)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(EditClientVM, System.String)
+  nameWithType: ClientsIndex.FilterFunc(EditClientVM, String)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc*
+  name: FilterFunc
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc
+  nameWithType: ClientsIndex.FilterFunc
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(EditClientVM)
+  name: FilterFunc1(EditClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc1_EditClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(EditClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(EditClientVM)
+  nameWithType: ClientsIndex.FilterFunc1(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1*
+  name: FilterFunc1
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc1_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1
+  nameWithType: ClientsIndex.FilterFunc1
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.GreenApi
+  name: GreenApi
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_GreenApi
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.GreenApi
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.GreenApi
+  nameWithType: ClientsIndex.GreenApi
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.GreenApi*
+  name: GreenApi
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_GreenApi_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.GreenApi
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.GreenApi
+  nameWithType: ClientsIndex.GreenApi
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.HttpContext
+  name: HttpContext
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_HttpContext
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.HttpContext
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.HttpContext
+  nameWithType: ClientsIndex.HttpContext
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.HttpContext*
+  name: HttpContext
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_HttpContext_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.HttpContext
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.HttpContext
+  nameWithType: ClientsIndex.HttpContext
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.LoadDataAsync
+  name: LoadDataAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_LoadDataAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.LoadDataAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.LoadDataAsync()
+  nameWithType: ClientsIndex.LoadDataAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.LoadDataAsync*
+  name: LoadDataAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_LoadDataAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.LoadDataAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.LoadDataAsync
+  nameWithType: ClientsIndex.LoadDataAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Logger
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger
+  nameWithType: ClientsIndex.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger*
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Logger_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger
+  nameWithType: ClientsIndex.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Navigation
+  name: Navigation
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Navigation
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Navigation
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Navigation
+  nameWithType: ClientsIndex.Navigation
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Navigation*
+  name: Navigation
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Navigation_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Navigation
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Navigation
+  nameWithType: ClientsIndex.Navigation
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnCreateAsync
+  name: OnCreateAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnCreateAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnCreateAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnCreateAsync()
+  nameWithType: ClientsIndex.OnCreateAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnCreateAsync*
+  name: OnCreateAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnCreateAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnCreateAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnCreateAsync
+  nameWithType: ClientsIndex.OnCreateAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(EditClientVM)
+  name: OnDeleteAsync(EditClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnDeleteAsync_EditClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(EditClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(EditClientVM)
+  nameWithType: ClientsIndex.OnDeleteAsync(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync*
+  name: OnDeleteAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnDeleteAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync
+  nameWithType: ClientsIndex.OnDeleteAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(EditClientVM)
+  name: OnEditAsync(EditClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnEditAsync_EditClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(EditClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(EditClientVM)
+  nameWithType: ClientsIndex.OnEditAsync(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync*
+  name: OnEditAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnEditAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync
+  nameWithType: ClientsIndex.OnEditAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnInitializedAsync
+  name: OnInitializedAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnInitializedAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnInitializedAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnInitializedAsync()
+  nameWithType: ClientsIndex.OnInitializedAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnInitializedAsync*
+  name: OnInitializedAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnInitializedAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnInitializedAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnInitializedAsync
+  nameWithType: ClientsIndex.OnInitializedAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Snackbar
+  name: Snackbar
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Snackbar
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Snackbar
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Snackbar
+  nameWithType: ClientsIndex.Snackbar
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Snackbar*
+  name: Snackbar
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Snackbar_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Snackbar
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Snackbar
+  nameWithType: ClientsIndex.Snackbar
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Theme
+  name: Theme
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Theme
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Theme
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Theme
+  nameWithType: ClientsIndex.Theme
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Theme*
+  name: Theme
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Theme_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Theme
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Theme
+  nameWithType: ClientsIndex.Theme
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.UserName
+  name: UserName
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_UserName
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.UserName
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.UserName
+  nameWithType: ClientsIndex.UserName
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.UserName*
+  name: UserName
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_UserName_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.UserName
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.UserName
+  nameWithType: ClientsIndex.UserName
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor
   name: ClientsIndex_razor
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.html
@@ -70,6 +469,116 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.ResourceManager
   nameWithType: ClientsIndex_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog
+  name: NewClientDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog
+  nameWithType: NewClientDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Cancel
+  name: Cancel()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Cancel
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Cancel
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Cancel()
+  nameWithType: NewClientDialog.Cancel()
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Cancel
+  nameWithType: NewClientDialog.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Dialog
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Dialog
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Dialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Dialog
+  nameWithType: NewClientDialog.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Dialog*
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Dialog_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Dialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Dialog
+  nameWithType: NewClientDialog.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.GreenApi
+  name: GreenApi
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_GreenApi
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.GreenApi
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.GreenApi
+  nameWithType: NewClientDialog.GreenApi
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.GreenApi*
+  name: GreenApi
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_GreenApi_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.GreenApi
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.GreenApi
+  nameWithType: NewClientDialog.GreenApi
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Logger
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Logger
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Logger
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Logger
+  nameWithType: NewClientDialog.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Logger*
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Logger_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Logger
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Logger
+  nameWithType: NewClientDialog.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Model
+  name: Model
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Model
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Model
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Model
+  nameWithType: NewClientDialog.Model
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Model*
+  name: Model
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Model_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Model
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Model
+  nameWithType: NewClientDialog.Model
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.MudDialog
+  name: MudDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_MudDialog
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.MudDialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.MudDialog
+  nameWithType: NewClientDialog.MudDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.MudDialog*
+  name: MudDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_MudDialog_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.MudDialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.MudDialog
+  nameWithType: NewClientDialog.MudDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnNewClientId
+  name: OnNewClientId()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_OnNewClientId
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnNewClientId
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnNewClientId()
+  nameWithType: NewClientDialog.OnNewClientId()
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnNewClientId*
+  name: OnNewClientId
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_OnNewClientId_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnNewClientId
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnNewClientId
+  nameWithType: NewClientDialog.OnNewClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnValidSubmitAsync(EditContext)
+  name: OnValidSubmitAsync(EditContext)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_OnValidSubmitAsync_EditContext_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnValidSubmitAsync(EditContext)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnValidSubmitAsync(EditContext)
+  nameWithType: NewClientDialog.OnValidSubmitAsync(EditContext)
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnValidSubmitAsync*
+  name: OnValidSubmitAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_OnValidSubmitAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnValidSubmitAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnValidSubmitAsync
+  nameWithType: NewClientDialog.OnValidSubmitAsync
 - uid: CG.Green.Areas.Identity
   name: CG.Green.Areas.Identity
   href: api/CG.Green.Areas.Identity.html
@@ -3887,6 +4396,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Data.Repositories.ClientRepository.AnyAsync
   nameWithType: ClientRepository.AnyAsync
+- uid: CG.Green.Data.Repositories.ClientRepository.AnyByIdAsync(System.String,CancellationToken)
+  name: AnyByIdAsync(String, CancellationToken)
+  href: api/CG.Green.Data.Repositories.ClientRepository.html#CG_Green_Data_Repositories_ClientRepository_AnyByIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Data.Repositories.ClientRepository.AnyByIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Data.Repositories.ClientRepository.AnyByIdAsync(System.String, CancellationToken)
+  nameWithType: ClientRepository.AnyByIdAsync(String, CancellationToken)
+- uid: CG.Green.Data.Repositories.ClientRepository.AnyByIdAsync*
+  name: AnyByIdAsync
+  href: api/CG.Green.Data.Repositories.ClientRepository.html#CG_Green_Data_Repositories_ClientRepository_AnyByIdAsync_
+  commentId: Overload:CG.Green.Data.Repositories.ClientRepository.AnyByIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Data.Repositories.ClientRepository.AnyByIdAsync
+  nameWithType: ClientRepository.AnyByIdAsync
 - uid: CG.Green.Data.Repositories.ClientRepository.CountAsync(CancellationToken)
   name: CountAsync(CancellationToken)
   href: api/CG.Green.Data.Repositories.ClientRepository.html#CG_Green_Data_Repositories_ClientRepository_CountAsync_CancellationToken_
@@ -6718,6 +7240,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.ClientManager.AnyAsync
   nameWithType: ClientManager.AnyAsync
+- uid: CG.Green.Managers.ClientManager.AnyByIdAsync(System.String,CancellationToken)
+  name: AnyByIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.ClientManager.html#CG_Green_Managers_ClientManager_AnyByIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.ClientManager.AnyByIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.ClientManager.AnyByIdAsync(System.String, CancellationToken)
+  nameWithType: ClientManager.AnyByIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.ClientManager.AnyByIdAsync*
+  name: AnyByIdAsync
+  href: api/CG.Green.Managers.ClientManager.html#CG_Green_Managers_ClientManager_AnyByIdAsync_
+  commentId: Overload:CG.Green.Managers.ClientManager.AnyByIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.ClientManager.AnyByIdAsync
+  nameWithType: ClientManager.AnyByIdAsync
 - uid: CG.Green.Managers.ClientManager.CountAsync(CancellationToken)
   name: CountAsync(CancellationToken)
   href: api/CG.Green.Managers.ClientManager.html#CG_Green_Managers_ClientManager_CountAsync_CancellationToken_
@@ -7542,6 +8077,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Managers.IClientManager.AnyAsync
   nameWithType: IClientManager.AnyAsync
+- uid: CG.Green.Managers.IClientManager.AnyByIdAsync(System.String,CancellationToken)
+  name: AnyByIdAsync(String, CancellationToken)
+  href: api/CG.Green.Managers.IClientManager.html#CG_Green_Managers_IClientManager_AnyByIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Managers.IClientManager.AnyByIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Managers.IClientManager.AnyByIdAsync(System.String, CancellationToken)
+  nameWithType: IClientManager.AnyByIdAsync(String, CancellationToken)
+- uid: CG.Green.Managers.IClientManager.AnyByIdAsync*
+  name: AnyByIdAsync
+  href: api/CG.Green.Managers.IClientManager.html#CG_Green_Managers_IClientManager_AnyByIdAsync_
+  commentId: Overload:CG.Green.Managers.IClientManager.AnyByIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Managers.IClientManager.AnyByIdAsync
+  nameWithType: IClientManager.AnyByIdAsync
 - uid: CG.Green.Managers.IClientManager.CountAsync(CancellationToken)
   name: CountAsync(CancellationToken)
   href: api/CG.Green.Managers.IClientManager.html#CG_Green_Managers_IClientManager_CountAsync_CancellationToken_
@@ -8823,6 +9371,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Repositories.IClientRepository.AnyAsync
   nameWithType: IClientRepository.AnyAsync
+- uid: CG.Green.Repositories.IClientRepository.AnyByIdAsync(System.String,CancellationToken)
+  name: AnyByIdAsync(String, CancellationToken)
+  href: api/CG.Green.Repositories.IClientRepository.html#CG_Green_Repositories_IClientRepository_AnyByIdAsync_System_String_CancellationToken_
+  commentId: M:CG.Green.Repositories.IClientRepository.AnyByIdAsync(System.String,CancellationToken)
+  fullName: CG.Green.Repositories.IClientRepository.AnyByIdAsync(System.String, CancellationToken)
+  nameWithType: IClientRepository.AnyByIdAsync(String, CancellationToken)
+- uid: CG.Green.Repositories.IClientRepository.AnyByIdAsync*
+  name: AnyByIdAsync
+  href: api/CG.Green.Repositories.IClientRepository.html#CG_Green_Repositories_IClientRepository_AnyByIdAsync_
+  commentId: Overload:CG.Green.Repositories.IClientRepository.AnyByIdAsync
+  isSpec: "True"
+  fullName: CG.Green.Repositories.IClientRepository.AnyByIdAsync
+  nameWithType: IClientRepository.AnyByIdAsync
 - uid: CG.Green.Repositories.IClientRepository.CountAsync(CancellationToken)
   name: CountAsync(CancellationToken)
   href: api/CG.Green.Repositories.IClientRepository.html#CG_Green_Repositories_IClientRepository_CountAsync_CancellationToken_
@@ -9322,61 +9883,12 @@ references:
   commentId: N:CG.Green.ViewModels
   fullName: CG.Green.ViewModels
   nameWithType: CG.Green.ViewModels
-- uid: CG.Green.ViewModels.ClientFlow
-  name: ClientFlow
-  href: api/CG.Green.ViewModels.ClientFlow.html
-  commentId: T:CG.Green.ViewModels.ClientFlow
-  fullName: CG.Green.ViewModels.ClientFlow
-  nameWithType: ClientFlow
-- uid: CG.Green.ViewModels.ClientFlow.Custom
-  name: Custom
-  href: api/CG.Green.ViewModels.ClientFlow.html#CG_Green_ViewModels_ClientFlow_Custom
-  commentId: F:CG.Green.ViewModels.ClientFlow.Custom
-  fullName: CG.Green.ViewModels.ClientFlow.Custom
-  nameWithType: ClientFlow.Custom
-- uid: CG.Green.ViewModels.ClientFlow.M2M
-  name: M2M
-  href: api/CG.Green.ViewModels.ClientFlow.html#CG_Green_ViewModels_ClientFlow_M2M
-  commentId: F:CG.Green.ViewModels.ClientFlow.M2M
-  fullName: CG.Green.ViewModels.ClientFlow.M2M
-  nameWithType: ClientFlow.M2M
-- uid: CG.Green.ViewModels.ClientFlow.Native
-  name: Native
-  href: api/CG.Green.ViewModels.ClientFlow.html#CG_Green_ViewModels_ClientFlow_Native
-  commentId: F:CG.Green.ViewModels.ClientFlow.Native
-  fullName: CG.Green.ViewModels.ClientFlow.Native
-  nameWithType: ClientFlow.Native
-- uid: CG.Green.ViewModels.ClientFlow.Spa
-  name: Spa
-  href: api/CG.Green.ViewModels.ClientFlow.html#CG_Green_ViewModels_ClientFlow_Spa
-  commentId: F:CG.Green.ViewModels.ClientFlow.Spa
-  fullName: CG.Green.ViewModels.ClientFlow.Spa
-  nameWithType: ClientFlow.Spa
-- uid: CG.Green.ViewModels.ClientFlow.Web
-  name: Web
-  href: api/CG.Green.ViewModels.ClientFlow.html#CG_Green_ViewModels_ClientFlow_Web
-  commentId: F:CG.Green.ViewModels.ClientFlow.Web
-  fullName: CG.Green.ViewModels.ClientFlow.Web
-  nameWithType: ClientFlow.Web
 - uid: CG.Green.ViewModels.EditClientVM
   name: EditClientVM
   href: api/CG.Green.ViewModels.EditClientVM.html
   commentId: T:CG.Green.ViewModels.EditClientVM
   fullName: CG.Green.ViewModels.EditClientVM
   nameWithType: EditClientVM
-- uid: CG.Green.ViewModels.EditClientVM.ClientFlow
-  name: ClientFlow
-  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_ClientFlow
-  commentId: P:CG.Green.ViewModels.EditClientVM.ClientFlow
-  fullName: CG.Green.ViewModels.EditClientVM.ClientFlow
-  nameWithType: EditClientVM.ClientFlow
-- uid: CG.Green.ViewModels.EditClientVM.ClientFlow*
-  name: ClientFlow
-  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_ClientFlow_
-  commentId: Overload:CG.Green.ViewModels.EditClientVM.ClientFlow
-  isSpec: "True"
-  fullName: CG.Green.ViewModels.EditClientVM.ClientFlow
-  nameWithType: EditClientVM.ClientFlow
 - uid: CG.Green.ViewModels.EditClientVM.ClientId
   name: ClientId
   href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_ClientId
@@ -9416,38 +9928,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.EditClientVM.Enabled
   nameWithType: EditClientVM.Enabled
-- uid: CG.Green.ViewModels.EditClientVM.FromDuende(Client)
-  name: FromDuende(Client)
-  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_FromDuende_Client_
-  commentId: M:CG.Green.ViewModels.EditClientVM.FromDuende(Client)
-  fullName: CG.Green.ViewModels.EditClientVM.FromDuende(Client)
-  nameWithType: EditClientVM.FromDuende(Client)
-- uid: CG.Green.ViewModels.EditClientVM.FromDuende*
-  name: FromDuende
-  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_FromDuende_
-  commentId: Overload:CG.Green.ViewModels.EditClientVM.FromDuende
-  isSpec: "True"
-  fullName: CG.Green.ViewModels.EditClientVM.FromDuende
-  nameWithType: EditClientVM.FromDuende
 - uid: CG.Green.ViewModels.NewClientVM
   name: NewClientVM
   href: api/CG.Green.ViewModels.NewClientVM.html
   commentId: T:CG.Green.ViewModels.NewClientVM
   fullName: CG.Green.ViewModels.NewClientVM
   nameWithType: NewClientVM
-- uid: CG.Green.ViewModels.NewClientVM.ClientFlow
-  name: ClientFlow
-  href: api/CG.Green.ViewModels.NewClientVM.html#CG_Green_ViewModels_NewClientVM_ClientFlow
-  commentId: P:CG.Green.ViewModels.NewClientVM.ClientFlow
-  fullName: CG.Green.ViewModels.NewClientVM.ClientFlow
-  nameWithType: NewClientVM.ClientFlow
-- uid: CG.Green.ViewModels.NewClientVM.ClientFlow*
-  name: ClientFlow
-  href: api/CG.Green.ViewModels.NewClientVM.html#CG_Green_ViewModels_NewClientVM_ClientFlow_
-  commentId: Overload:CG.Green.ViewModels.NewClientVM.ClientFlow
-  isSpec: "True"
-  fullName: CG.Green.ViewModels.NewClientVM.ClientFlow
-  nameWithType: NewClientVM.ClientFlow
 - uid: CG.Green.ViewModels.NewClientVM.ClientId
   name: ClientId
   href: api/CG.Green.ViewModels.NewClientVM.html#CG_Green_ViewModels_NewClientVM_ClientId
@@ -9461,19 +9947,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.NewClientVM.ClientId
   nameWithType: NewClientVM.ClientId
-- uid: CG.Green.ViewModels.NewClientVM.HelpText
-  name: HelpText
-  href: api/CG.Green.ViewModels.NewClientVM.html#CG_Green_ViewModels_NewClientVM_HelpText
-  commentId: P:CG.Green.ViewModels.NewClientVM.HelpText
-  fullName: CG.Green.ViewModels.NewClientVM.HelpText
-  nameWithType: NewClientVM.HelpText
-- uid: CG.Green.ViewModels.NewClientVM.HelpText*
-  name: HelpText
-  href: api/CG.Green.ViewModels.NewClientVM.html#CG_Green_ViewModels_NewClientVM_HelpText_
-  commentId: Overload:CG.Green.ViewModels.NewClientVM.HelpText
-  isSpec: "True"
-  fullName: CG.Green.ViewModels.NewClientVM.HelpText
-  nameWithType: NewClientVM.HelpText
 - uid: CG.Templates
   name: CG.Templates
   href: api/CG.Templates.html
@@ -9518,31 +9991,6 @@ references:
   isSpec: "True"
   fullName: CG.Templates.TemplateProcessor.ProcessTemplateFromFileAsync
   nameWithType: TemplateProcessor.ProcessTemplateFromFileAsync
-- uid: Duende.IdentityServer.Models
-  name: Duende.IdentityServer.Models
-  href: api/Duende.IdentityServer.Models.html
-  commentId: N:Duende.IdentityServer.Models
-  fullName: Duende.IdentityServer.Models
-  nameWithType: Duende.IdentityServer.Models
-- uid: Duende.IdentityServer.Models.ClientExtensions
-  name: ClientExtensions
-  href: api/Duende.IdentityServer.Models.ClientExtensions.html
-  commentId: T:Duende.IdentityServer.Models.ClientExtensions
-  fullName: Duende.IdentityServer.Models.ClientExtensions
-  nameWithType: ClientExtensions
-- uid: Duende.IdentityServer.Models.ClientExtensions.FromDuende(Duende.IdentityServer.Models.Client)
-  name: FromDuende(Client)
-  href: api/Duende.IdentityServer.Models.ClientExtensions.html#Duende_IdentityServer_Models_ClientExtensions_FromDuende_Duende_IdentityServer_Models_Client_
-  commentId: M:Duende.IdentityServer.Models.ClientExtensions.FromDuende(Duende.IdentityServer.Models.Client)
-  fullName: Duende.IdentityServer.Models.ClientExtensions.FromDuende(Duende.IdentityServer.Models.Client)
-  nameWithType: ClientExtensions.FromDuende(Client)
-- uid: Duende.IdentityServer.Models.ClientExtensions.FromDuende*
-  name: FromDuende
-  href: api/Duende.IdentityServer.Models.ClientExtensions.html#Duende_IdentityServer_Models_ClientExtensions_FromDuende_
-  commentId: Overload:Duende.IdentityServer.Models.ClientExtensions.FromDuende
-  isSpec: "True"
-  fullName: Duende.IdentityServer.Models.ClientExtensions.FromDuende
-  nameWithType: ClientExtensions.FromDuende
 - uid: Microsoft.AspNetCore.Builder
   name: Microsoft.AspNetCore.Builder
   href: api/Microsoft.AspNetCore.Builder.html
@@ -9894,3 +10342,28 @@ references:
   isSpec: "True"
   fullName: Microsoft.AspNetCore.Builder.WebApplicationExtensions015.UseGreenLocalization
   nameWithType: WebApplicationExtensions015.UseGreenLocalization
+- uid: MudBlazor
+  name: MudBlazor
+  href: api/MudBlazor.html
+  commentId: N:MudBlazor
+  fullName: MudBlazor
+  nameWithType: MudBlazor
+- uid: MudBlazor.DialogServiceExtensions
+  name: DialogServiceExtensions
+  href: api/MudBlazor.DialogServiceExtensions.html
+  commentId: T:MudBlazor.DialogServiceExtensions
+  fullName: MudBlazor.DialogServiceExtensions
+  nameWithType: DialogServiceExtensions
+- uid: MudBlazor.DialogServiceExtensions.ShowDeleteBox(MudBlazor.IDialogService,System.String,System.Boolean,System.String,System.String,System.String)
+  name: ShowDeleteBox(IDialogService, String, Boolean, String, String, String)
+  href: api/MudBlazor.DialogServiceExtensions.html#MudBlazor_DialogServiceExtensions_ShowDeleteBox_MudBlazor_IDialogService_System_String_System_Boolean_System_String_System_String_System_String_
+  commentId: M:MudBlazor.DialogServiceExtensions.ShowDeleteBox(MudBlazor.IDialogService,System.String,System.Boolean,System.String,System.String,System.String)
+  fullName: MudBlazor.DialogServiceExtensions.ShowDeleteBox(MudBlazor.IDialogService, System.String, System.Boolean, System.String, System.String, System.String)
+  nameWithType: DialogServiceExtensions.ShowDeleteBox(IDialogService, String, Boolean, String, String, String)
+- uid: MudBlazor.DialogServiceExtensions.ShowDeleteBox*
+  name: ShowDeleteBox
+  href: api/MudBlazor.DialogServiceExtensions.html#MudBlazor_DialogServiceExtensions_ShowDeleteBox_
+  commentId: Overload:MudBlazor.DialogServiceExtensions.ShowDeleteBox
+  isSpec: "True"
+  fullName: MudBlazor.DialogServiceExtensions.ShowDeleteBox
+  nameWithType: DialogServiceExtensions.ShowDeleteBox
