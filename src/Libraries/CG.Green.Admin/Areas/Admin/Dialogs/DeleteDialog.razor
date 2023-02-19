@@ -1,12 +1,12 @@
 ﻿<EditForm Model="@_model" OnValidSubmit="OnValidSubmit">
     <MudDialog>
         <DialogContent>
-            <MudText Align="Align.Center" Typo="Typo.body2">Are you sure you want to delete <b>@ObjectName</b>?</MudText>
-            <MudChip Style="display: flex;justify-content:center" DisableRipple Class="my-8" Color="Color.Warning">Warning: this action is forever!</MudChip>
+            <MudText Align="Align.Center" Typo="Typo.body2">Are you sure you want to delete <b>@ObjectName</b>&nbsp;?</MudText>
+            <MudChip Style="display: flex;justify-content:center" DisableRipple Class="my-8" Color="Color.Warning"><b>Warning:</b>&nbsp;this action cannot be undone!</MudChip>
             @if (Confirm)
             {
                 <DataAnnotationsValidator />
-                <MudText Class="mb-4" Typo="Typo.body2">Please type in the name '@ObjectName' to confirm.</MudText>
+                <MudText Class="mb-4" Typo="Typo.body2">Please type in '@ObjectName' to confirm.</MudText>
                 <MudTextField AutoFocus
                               Required
                               OnlyValidateIfDirty

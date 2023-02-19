@@ -1,4 +1,6 @@
 ﻿
+using CG.Green.Areas.Admin.Dialogs;
+
 namespace CG.Green.Areas.Admin.Pages.Clients;
 
 /// <summary>
@@ -35,6 +37,12 @@ public partial class NewClientDialog
     /// </summary>
     [Inject]
     protected IGreenApi GreenApi { get; set; } = null!;
+
+    /// <summary>
+    /// This property contains the localizer for this dialog.
+    /// </summary>
+    [Inject]
+    protected IStringLocalizer<NewClientDialog> Localizer { get; set; } = null!;
 
     /// <summary>
     /// This property contains the logger for this dialog.

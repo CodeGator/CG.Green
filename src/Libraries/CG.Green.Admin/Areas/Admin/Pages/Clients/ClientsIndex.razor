@@ -8,8 +8,6 @@
 <MudText Typo="Typo.h4">Client</MudText>
 <MudText Class="pb-4" Typo="Typo.body1">Use this page to administer clients</MudText>
 
-<MudButton OnClick=@(() => Dialog.ShowDeleteBox("My Client"))>TEST</MudButton>
-
 <MudGrid>
     <MudItem xs="12">
         <MudTable Items="_clients"
@@ -17,7 +15,7 @@
                   Dense
                   Striped
                   Virtualize
-                  Filter="new Func<EditClientVM,bool>(FilterFunc1)">
+                  Filter="new Func<ListClientVM,bool>(FilterFunc1)">
             <ToolBarContent>
                 <MudButton StartIcon="@Icons.Material.Outlined.Create"
                            Variant="Variant.Filled"
@@ -37,8 +35,8 @@
                 <col />
             </ColGroup>
             <HeaderContent>
-                <MudTh><MudTableSortLabel SortBy="new Func<EditClientVM, object>(x=>x.Enabled)">Enabled</MudTableSortLabel></MudTh>
-                <MudTh><MudTableSortLabel SortBy="new Func<EditClientVM, object>(x=>x.ClientId)">Id</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListClientVM, object>(x=>x.Enabled)">Enabled</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListClientVM, object>(x=>x.ClientId)">Id</MudTableSortLabel></MudTh>
                 <MudTh></MudTh>
             </HeaderContent>
             <RowTemplate>

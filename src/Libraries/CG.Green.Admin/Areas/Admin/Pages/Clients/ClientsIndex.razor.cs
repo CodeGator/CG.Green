@@ -25,7 +25,7 @@ public partial class ClientsIndex
     /// <summary>
     /// This field contains the list of clients.
     /// </summary>
-    internal protected List<EditClientVM> _clients = new();
+    internal protected List<ListClientVM> _clients = new();
 
     /// <summary>
     /// This field indicates when the page is loading data.
@@ -62,6 +62,12 @@ public partial class ClientsIndex
     /// </summary>
     [Inject]
     protected IMapper AutoMapper { get; set; } = null!;
+
+    /// <summary>
+    /// This property contains the localizer for this page.
+    /// </summary>
+    [Inject]
+    protected IStringLocalizer<ClientsIndex> Localizer { get; set; } = null!;
 
     /// <summary>
     /// This property contains the dialog service for this page.
@@ -152,7 +158,7 @@ public partial class ClientsIndex
     /// </summary>
     /// <param name="element">The element to use for the operation.</param>
     /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
-    protected bool FilterFunc1(EditClientVM element) =>
+    protected bool FilterFunc1(ListClientVM element) =>
         FilterFunc(element, _gridSearchString);
 
     // *******************************************************************
@@ -164,7 +170,7 @@ public partial class ClientsIndex
     /// <param name="searchString">The search string to use for the operation.</param>
     /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
     protected bool FilterFunc(
-        EditClientVM element,
+        ListClientVM element,
         string searchString
         )
     {
@@ -269,7 +275,7 @@ public partial class ClientsIndex
 
             // Go to the detail page.
             Navigation.NavigateTo(
-                $"/admin/clients/detail/{Uri.EscapeDataString(newClient.ClientId)}"
+                $"/admin/clients/{Uri.EscapeDataString(newClient.ClientId)}/detail"
                 );
         }
         catch (Exception ex)
@@ -314,7 +320,7 @@ public partial class ClientsIndex
     /// <param name="client">The client to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnDeleteAsync(
-        EditClientVM client
+        ListClientVM client
         )
     {
         try
@@ -325,16 +331,12 @@ public partial class ClientsIndex
                 );
 
             // Prompt the user.
-            var result = await Dialog.ShowMessageBox(
-                title: Globals.Caption,
-                markupMessage: new MarkupString("This will delete the client " +
-                $"<b>'{client.ClientId}'</b> <br /> <br /> Are you <i>sure</i> " +
-                "you want to do that?"),
-                noText: "Cancel"
+            var result = await Dialog.ShowDeleteBox(
+                client.ClientId
                 );
 
             // Did the user cancel?
-            if (result.HasValue && !result.Value)
+            if (!result)
             {
                 return; // Nothing more to do.
             }
@@ -384,7 +386,7 @@ public partial class ClientsIndex
     /// <param name="client">The client to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
     protected Task OnEditAsync(
-        EditClientVM client
+        ListClientVM client
         )
     {
         // Log what we are about to do.
@@ -394,7 +396,7 @@ public partial class ClientsIndex
 
         // Go to the detail page.
         Navigation.NavigateTo(
-            $"/admin/clients/detail/{Uri.EscapeDataString(client.ClientId)}"
+            $"/admin/clients/{Uri.EscapeDataString(client.ClientId)}/detail"
             );
 
         // Return the task.
@@ -409,7 +411,7 @@ public partial class ClientsIndex
     /// <param name="client">The client to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
     protected async Task DisableClientAsync(
-        EditClientVM client
+        ListClientVM client
         )
     {
         try
@@ -455,7 +457,7 @@ public partial class ClientsIndex
     /// <param name="client">The client to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
     protected async Task EnableClientAsync(
-        EditClientVM client
+        ListClientVM client
         )
     {
         try
@@ -532,7 +534,7 @@ public partial class ClientsIndex
 
             // Get the list of clients.
             _clients = (await GreenApi.Clients.FindAllAsync())
-                .Select(x => AutoMapper.Map<EditClientVM>(x))
+                .Select(x => AutoMapper.Map<ListClientVM>(x))
                     .ToList();
         }
         finally

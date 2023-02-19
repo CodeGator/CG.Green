@@ -1,4 +1,6 @@
 ﻿
+using System.Diagnostics.Contracts;
+
 namespace CG.Green.ViewModels;
 
 /// <summary>
@@ -33,6 +35,41 @@ public class EditClientVM
     /// </summary>
     [Display(Name = "Enabled")]
     public bool Enabled { get; set; }
+
+    /// <summary>
+    /// This property contains the description for the client.
+    /// </summary>
+    [Required]
+    [MaxLength(Globals.Models.Clients.DescriptionLength)]
+    [Display(Name = "Description")]
+    public string Description { get; set; } = null!;
+
+    /// <summary>
+    /// This property indicates whether or not the client is allows
+    /// offline accesss.
+    /// </summary>
+    [Display(Name = "Offline Access")]
+    public bool AllowOfflineAccess { get; set; }
+
+    /// <summary>
+    /// This property indicates whether or not the client is required
+    /// to send signed requests only.
+    /// </summary>
+    [Display(Name = "Required Request Object")]
+    public bool RequireRequestObject { get; set; }
+
+    /// <summary>
+    /// This property indicates whether or not the client is required
+    /// to know one or more secrets.
+    /// </summary>
+    [Display(Name = "Require Client Secret")]
+    public bool RequireClientSecret { get; set; }
+
+    /// <summary>
+    /// This property contains a list of secrets for the client.
+    /// </summary>
+    [Display(Name = "Secrets")]
+    public List<EditSecretVM> Secrets { get; set; } = new();
 
     #endregion
 }

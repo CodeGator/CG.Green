@@ -1,0 +1,199 @@
+﻿@page "/admin/clients/{ClientId}/detail"
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
+
+<PageTitle>Client Details</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+@if (_model is null)
+{
+    if (_isLoading)
+    {
+        <MudText Typo="Typo.h6" Color="Color.Primary">Loading ...</MudText>
+    }
+    else
+    {
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! we couldn't find that client!</MudText>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => Navigation.NavigateTo("/admin/clients"))">Back to Clients</MudButton>
+    }
+}
+else
+{
+    <MudText Typo="Typo.h4">Client Details</MudText>
+    <MudText Class="py-5" Typo="Typo.body1">Use this page to edit the client</MudText>
+
+    <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+
+        <MudTabs>
+        
+            <!-- Setting Panel -->
+            <MudTabPanel Text="Settings" Icon="@Icons.Material.Outlined.Settings">
+                <MudGrid>
+                    <MudItem xs="12">&nbsp;</MudItem>
+                    <MudItem xs="12">
+                        <MudTextField AutoFocus
+                                  Required
+                                  Immediate
+                                  OnlyValidateIfDirty
+                                  Margin="Margin.Dense"
+                                  Counter="@(Globals.Models.Clients.ClientIdLength)"
+                                  Class="ml-auto"
+                                  Variant="Variant.Outlined"
+                                  Label="Client Id"
+                                  Mask="@(new RegexMask(@"^[\.a-zA-Z0-9]*$"))"
+                                  HelperText="This is the value external callers will use to connect to this client."
+                                  Adornment="Adornment.End"
+                                  AdornmentAriaLabel="generate id"
+                                  AdornmentIcon="@Icons.Material.TwoTone.AddToPhotos"
+                                  OnAdornmentClick="OnNewClientId"
+                                  For="@(() => _model.ClientId)"
+                                  @bind-Value="@_model.ClientId" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTextField Required
+                                  Immediate
+                                  OnlyValidateIfDirty
+                                Margin="Margin.Dense"
+                                Counter="@(Globals.Models.Clients.ClientNameLength)"
+                                Class="ml-auto"
+                                Variant="Variant.Outlined"
+                                Label="Client Name"
+                                For="@(() => _model.ClientName)"
+                                @bind-Value="@_model.ClientName" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTextField Immediate
+                                  OnlyValidateIfDirty
+                              Margin="Margin.Dense"
+                              Counter="@(Globals.Models.Clients.DescriptionLength)"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              Label="Client Description"
+                              Lines="4"
+                              For="@(() => _model.Description)"
+                              @bind-Value="@_model.Description" />
+                </MudItem>
+                <MudItem xs="4">
+                    <MudCheckBox T="bool"
+                                 Class="mb-n3"
+                    @bind-Checked="_model.Enabled"
+                                 Label="Is Enabled" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Enable/disable the client.</MudText>
+                </MudItem>
+                <MudItem xs="4">
+                    <MudCheckBox T="bool"
+                            Class="mb-n3"
+                            @bind-Checked="_model.AllowOfflineAccess"
+                            Label="Allow Offline Access" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Enable/disable refresh tokens.</MudText>
+                </MudItem>
+                <MudItem xs="4">
+                    <MudCheckBox T="bool"
+                            Class="mb-n3"
+                            @bind-Checked="_model.RequireRequestObject"
+                            Label="Require Request Object" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Require signed requests only.</MudText>
+                </MudItem>
+                <MudItem xs="12">&nbsp;</MudItem>
+            </MudGrid>
+            </MudTabPanel>
+            
+            <!-- Secrets Panel -->
+            <MudTabPanel Text="Secrets" Icon="@Icons.Material.Outlined.FrontHand">
+                <MudGrid>
+                    <MudItem xs="12">
+                        <MudCheckBox T="bool"
+                                    Class="mb-n3 ml-3"
+                                    @bind-Checked="_model.RequireClientSecret"
+                                    Label="Require Client Secret" />
+                        <MudText Class="text-muted ml-3" Typo="Typo.caption">Require client to know secret(s).</MudText>
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTable Items="_model.Secrets"
+                                Dense
+                                Striped
+                                CanCancelEdit
+                                IsEditRowSwitchingBlocked
+                                Loading="@_isLoading"
+                              EditTrigger="TableEditTrigger.EditButton">
+                        <ToolBarContent>
+                            <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                       Variant="Variant.Filled"
+                                       Disabled="@_isLoading"
+                                       Color="Color.Secondary"
+                                       OnClick="OnCreateSecretAsync">Create</MudButton>
+                            <MudSpacer />
+                        </ToolBarContent>
+                        <ColGroup>
+                            <col style="width:20%" />
+                            <col style="width:35%" />
+                            <col style="width:35%" />
+                            <col />
+                        </ColGroup>
+                        <HeaderContent>
+                            <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Expiration)">Expiration</MudTableSortLabel></MudTh>
+                            <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
+                            <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
+                            <MudTh></MudTh>
+                        </HeaderContent>
+                        <RowTemplate Context="context2">
+                            <MudTd DataLabel="Expiration">@context2.Expiration</MudTd>
+                            <MudTd DataLabel="Description">@context2.Description</MudTd>
+                            <MudTd DataLabel="Value">@context2.Value</MudTd>
+                            <MudTd>
+                                <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                               OnClick="() => OnDeleteSecretAsync(context2)"
+                                               Disabled="@_isLoading" />
+                            </MudTd>
+                        </RowTemplate>
+                        <RowEditingTemplate Context="context2">
+                            <MudTd DataLabel="Expiration">
+                                <MudTextField T="DateTime?"
+                                              Format="yyyy-MM-dd"
+                                              InputType="InputType.Date"
+                                              @bind-Value="@context2.Expiration" />
+                            </MudTd>
+                            <MudTd DataLabel="Description">
+                                <MudTextField @bind-Value="@context2.Description" />
+                            </MudTd>
+                            <MudTd DataLabel="Value">
+                                <MudTextField DisableUnderline="@context2.IsHashed"
+                                              @bind-Value="@context2.Value"
+                                              Required="@(!context2.IsHashed)"
+                                              ReadOnly="@context2.IsHashed" />
+                            </MudTd>
+                        </RowEditingTemplate>
+                        <NoRecordsContent>
+                            No secrets were found.
+                        </NoRecordsContent>
+                        <LoadingContent>
+                            Loading secrets ...
+                        </LoadingContent>
+                        <PagerContent>
+                            <MudTablePager />
+                        </PagerContent>
+                        <EditButtonContent Context="button">
+                            <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+                        </EditButtonContent>
+                        </MudTable>
+                    </MudItem>
+                </MudGrid>
+            </MudTabPanel>
+
+            <!-- Application Uris Panel -->
+            <MudTabPanel Text="Application Uris" Icon="@Icons.Material.Outlined.SettingsApplications">
+
+            </MudTabPanel>
+
+            <MudTabPanel Text="Blah D" Icon="@Icons.Material.Outlined.Person4">
+
+            </MudTabPanel>
+            </MudTabs>
+
+            <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+        </EditForm>
+
+}

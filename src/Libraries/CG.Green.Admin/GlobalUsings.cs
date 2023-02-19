@@ -9,3 +9,4 @@ global using MudBlazor;
 global using System.ComponentModel.DataAnnotations;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.AspNetCore.Components.Forms;
+global using Microsoft.Extensions.Localization;

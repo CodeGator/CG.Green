@@ -45,8 +45,9 @@ public static class WebApplicationBuilderExtensions012
         webApplicationBuilder.Services.AddAutoMapper(cfg =>
         {
             // Wire up the conversion maps.
-            cfg.CreateMap<Client, EditClientVM>().ReverseMap();
+            cfg.CreateMap<Client, ListClientVM>().ReverseMap();
             cfg.CreateMap<Client, NewClientVM>().ReverseMap();
+            cfg.CreateMap<Client, EditClientVM>().ReverseMap();
         });
 
         // Return the application builder.
