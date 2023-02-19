@@ -129,7 +129,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;EditClientVM&gt; _clients</code></pre>
+    <pre><code class="lang-csharp hljs">protected List&lt;ListClientVM&gt; _clients</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">EditClientVM</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">ListClientVM</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -312,6 +312,30 @@
       </tr>
     </tbody>
   </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Localizer_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Localizer*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Localizer" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Localizer">Localizer</h4>
+  <div class="markdown level1 summary"><p>This property contains the localizer for this page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IStringLocalizer&lt;ClientsIndex&gt; Localizer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IStringLocalizer</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html">ClientsIndex</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Logger_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger*"></a>
   <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Logger" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>This property contains the logger for this page.</p>
@@ -436,13 +460,13 @@
   <h3 id="methods">Methods
   </h3>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_DisableClientAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_DisableClientAsync_EditClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(EditClientVM)">DisableClientAsync(EditClientVM)</h4>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_DisableClientAsync_ListClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(ListClientVM)">DisableClientAsync(ListClientVM)</h4>
   <div class="markdown level1 summary"><p>This method disables the given client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task DisableClientAsync(EditClientVM client)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task DisableClientAsync(ListClientVM client)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +479,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EditClientVM</span></td>
+        <td><span class="xref">ListClientVM</span></td>
         <td><span class="parametername">client</span></td>
         <td><p>The client to use for the operation.</p>
 </td>
@@ -479,13 +503,13 @@
     </tbody>
   </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_EnableClientAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_EnableClientAsync_EditClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(EditClientVM)">EnableClientAsync(EditClientVM)</h4>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_EnableClientAsync_ListClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(ListClientVM)">EnableClientAsync(ListClientVM)</h4>
   <div class="markdown level1 summary"><p>This method enables the given client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task EnableClientAsync(EditClientVM client)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task EnableClientAsync(ListClientVM client)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -498,7 +522,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EditClientVM</span></td>
+        <td><span class="xref">ListClientVM</span></td>
         <td><span class="parametername">client</span></td>
         <td><p>The client to use for the operation.</p>
 </td>
@@ -522,13 +546,13 @@
     </tbody>
   </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_EditClientVM_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(EditClientVM,System.String)">FilterFunc(EditClientVM, String)</h4>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_ListClientVM_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(ListClientVM,System.String)">FilterFunc(ListClientVM, String)</h4>
   <div class="markdown level1 summary"><p>This method performs a search of the clients.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool FilterFunc(EditClientVM element, string searchString)</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool FilterFunc(ListClientVM element, string searchString)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -541,7 +565,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EditClientVM</span></td>
+        <td><span class="xref">ListClientVM</span></td>
         <td><span class="parametername">element</span></td>
         <td><p>The element to uses for the operation.</p>
 </td>
@@ -571,14 +595,14 @@
     </tbody>
   </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc1_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc1_EditClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(EditClientVM)">FilterFunc1(EditClientVM)</h4>
-  <div class="markdown level1 summary"><p>This method adapts the <a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_EditClientVM_System_String_">FilterFunc(EditClientVM, String)</a> method for use with
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc1_ListClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(ListClientVM)">FilterFunc1(ListClientVM)</h4>
+  <div class="markdown level1 summary"><p>This method adapts the <a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_ListClientVM_System_String_">FilterFunc(ListClientVM, String)</a> method for use with
 a <see cref="!:MudTable&lt;T>"></see> control.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool FilterFunc1(EditClientVM element)</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool FilterFunc1(ListClientVM element)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,7 +615,7 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EditClientVM</span></td>
+        <td><span class="xref">ListClientVM</span></td>
         <td><span class="parametername">element</span></td>
         <td><p>The element to use for the operation.</p>
 </td>
@@ -664,13 +688,13 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
     </tbody>
   </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnDeleteAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnDeleteAsync_EditClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(EditClientVM)">OnDeleteAsync(EditClientVM)</h4>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnDeleteAsync_ListClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(ListClientVM)">OnDeleteAsync(ListClientVM)</h4>
   <div class="markdown level1 summary"><p>This method deletes the given client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteAsync(EditClientVM client)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task OnDeleteAsync(ListClientVM client)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -683,7 +707,7 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EditClientVM</span></td>
+        <td><span class="xref">ListClientVM</span></td>
         <td><span class="parametername">client</span></td>
         <td><p>The client to use for the operation.</p>
 </td>
@@ -707,13 +731,13 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
     </tbody>
   </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnEditAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnEditAsync_EditClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(EditClientVM)">OnEditAsync(EditClientVM)</h4>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnEditAsync_ListClientVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(ListClientVM)">OnEditAsync(ListClientVM)</h4>
   <div class="markdown level1 summary"><p>This method edits the given client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task OnEditAsync(EditClientVM client)</code></pre>
+    <pre><code class="lang-csharp hljs">protected Task OnEditAsync(ListClientVM client)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -726,7 +750,7 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EditClientVM</span></td>
+        <td><span class="xref">ListClientVM</span></td>
         <td><span class="parametername">client</span></td>
         <td><p>The client to use for the operation.</p>
 </td>

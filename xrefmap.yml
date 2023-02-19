@@ -64,6 +64,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Dialog
   nameWithType: DeleteDialog.Dialog
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Localizer
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Localizer
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Localizer
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Localizer
+  nameWithType: DeleteDialog.Localizer
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Localizer*
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Localizer_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog.Localizer
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Localizer
+  nameWithType: DeleteDialog.Localizer
 - uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_Logger
@@ -142,12 +155,345 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog.YesText
   nameWithType: DeleteDialog.YesText
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor
+  name: DeleteDialog_razor
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html
+  commentId: T:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor
+  nameWithType: DeleteDialog_razor
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.#ctor
+  name: DeleteDialog_razor()
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_razor__ctor
+  commentId: M:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.#ctor
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.DeleteDialog_razor()
+  nameWithType: DeleteDialog_razor.DeleteDialog_razor()
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.#ctor*
+  name: DeleteDialog_razor
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_razor__ctor_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.DeleteDialog_razor
+  nameWithType: DeleteDialog_razor.DeleteDialog_razor
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.Culture
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_razor_Culture
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.Culture
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.Culture
+  nameWithType: DeleteDialog_razor.Culture
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.Culture*
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_razor_Culture_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.Culture
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.Culture
+  nameWithType: DeleteDialog_razor.Culture
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.resourceCulture
+  name: resourceCulture
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_razor_resourceCulture
+  commentId: F:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.resourceCulture
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.resourceCulture
+  nameWithType: DeleteDialog_razor.resourceCulture
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.resourceMan
+  name: resourceMan
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_razor_resourceMan
+  commentId: F:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.resourceMan
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.resourceMan
+  nameWithType: DeleteDialog_razor.resourceMan
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.ResourceManager
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_razor_ResourceManager
+  commentId: P:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.ResourceManager
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.ResourceManager
+  nameWithType: DeleteDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.ResourceManager*
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.html#CG_Green_Areas_Admin_Dialogs_DeleteDialog_razor_ResourceManager_
+  commentId: Overload:CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.ResourceManager
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Dialogs.DeleteDialog_razor.ResourceManager
+  nameWithType: DeleteDialog_razor.ResourceManager
 - uid: CG.Green.Areas.Admin.Pages.Clients
   name: CG.Green.Areas.Admin.Pages.Clients
   href: api/CG.Green.Areas.Admin.Pages.Clients.html
   commentId: N:CG.Green.Areas.Admin.Pages.Clients
   fullName: CG.Green.Areas.Admin.Pages.Clients
   nameWithType: CG.Green.Areas.Admin.Pages.Clients
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail
+  name: ClientDetail
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.ClientDetail
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail
+  nameWithType: ClientDetail
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail._crumbs
+  name: _crumbs
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail__crumbs
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientDetail._crumbs
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail._crumbs
+  nameWithType: ClientDetail._crumbs
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail._isLoading
+  name: _isLoading
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail__isLoading
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientDetail._isLoading
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail._isLoading
+  nameWithType: ClientDetail._isLoading
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail._model
+  name: _model
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail__model
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientDetail._model
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail._model
+  nameWithType: ClientDetail._model
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.AutoMapper
+  name: AutoMapper
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_AutoMapper
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.AutoMapper
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.AutoMapper
+  nameWithType: ClientDetail.AutoMapper
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.AutoMapper*
+  name: AutoMapper
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_AutoMapper_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.AutoMapper
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.AutoMapper
+  nameWithType: ClientDetail.AutoMapper
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.ClientId
+  name: ClientId
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_ClientId
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.ClientId
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.ClientId
+  nameWithType: ClientDetail.ClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.ClientId*
+  name: ClientId
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_ClientId_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.ClientId
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.ClientId
+  nameWithType: ClientDetail.ClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Dialog
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog
+  nameWithType: ClientDetail.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog*
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Dialog_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog
+  nameWithType: ClientDetail.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.GreenApi
+  name: GreenApi
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_GreenApi
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.GreenApi
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.GreenApi
+  nameWithType: ClientDetail.GreenApi
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.GreenApi*
+  name: GreenApi
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_GreenApi_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.GreenApi
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.GreenApi
+  nameWithType: ClientDetail.GreenApi
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.HttpContext
+  name: HttpContext
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_HttpContext
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.HttpContext
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.HttpContext
+  nameWithType: ClientDetail.HttpContext
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.HttpContext*
+  name: HttpContext
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_HttpContext_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.HttpContext
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.HttpContext
+  nameWithType: ClientDetail.HttpContext
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.LoadDataAsync
+  name: LoadDataAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_LoadDataAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.LoadDataAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.LoadDataAsync()
+  nameWithType: ClientDetail.LoadDataAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.LoadDataAsync*
+  name: LoadDataAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_LoadDataAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.LoadDataAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.LoadDataAsync
+  nameWithType: ClientDetail.LoadDataAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Logger
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Logger
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Logger
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Logger
+  nameWithType: ClientDetail.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Logger*
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Logger_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Logger
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Logger
+  nameWithType: ClientDetail.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Navigation
+  name: Navigation
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Navigation
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Navigation
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Navigation
+  nameWithType: ClientDetail.Navigation
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Navigation*
+  name: Navigation
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Navigation_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Navigation
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Navigation
+  nameWithType: ClientDetail.Navigation
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync
+  name: OnCreateSecretAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateSecretAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync()
+  nameWithType: ClientDetail.OnCreateSecretAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync*
+  name: OnCreateSecretAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateSecretAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync
+  nameWithType: ClientDetail.OnCreateSecretAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync(EditSecretVM)
+  name: OnDeleteSecretAsync(EditSecretVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteSecretAsync_EditSecretVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync(EditSecretVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync(EditSecretVM)
+  nameWithType: ClientDetail.OnDeleteSecretAsync(EditSecretVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync*
+  name: OnDeleteSecretAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteSecretAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync
+  nameWithType: ClientDetail.OnDeleteSecretAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnInitializedAsync
+  name: OnInitializedAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnInitializedAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnInitializedAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnInitializedAsync()
+  nameWithType: ClientDetail.OnInitializedAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnInitializedAsync*
+  name: OnInitializedAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnInitializedAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnInitializedAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnInitializedAsync
+  nameWithType: ClientDetail.OnInitializedAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnNewClientId
+  name: OnNewClientId()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnNewClientId
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnNewClientId
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnNewClientId()
+  nameWithType: ClientDetail.OnNewClientId()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnNewClientId*
+  name: OnNewClientId
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnNewClientId_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnNewClientId
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnNewClientId
+  nameWithType: ClientDetail.OnNewClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnValidSubmitAsync
+  name: OnValidSubmitAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnValidSubmitAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnValidSubmitAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnValidSubmitAsync()
+  nameWithType: ClientDetail.OnValidSubmitAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnValidSubmitAsync*
+  name: OnValidSubmitAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnValidSubmitAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnValidSubmitAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnValidSubmitAsync
+  nameWithType: ClientDetail.OnValidSubmitAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Snackbar
+  name: Snackbar
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Snackbar
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Snackbar
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Snackbar
+  nameWithType: ClientDetail.Snackbar
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Snackbar*
+  name: Snackbar
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Snackbar_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Snackbar
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Snackbar
+  nameWithType: ClientDetail.Snackbar
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.UserName
+  name: UserName
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_UserName
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.UserName
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.UserName
+  nameWithType: ClientDetail.UserName
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.UserName*
+  name: UserName
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_UserName_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.UserName
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.UserName
+  nameWithType: ClientDetail.UserName
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor
+  name: ClientDetail_razor
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor
+  nameWithType: ClientDetail_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.#ctor
+  name: ClientDetail_razor()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor__ctor
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.#ctor
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ClientDetail_razor()
+  nameWithType: ClientDetail_razor.ClientDetail_razor()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.#ctor*
+  name: ClientDetail_razor
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor__ctor_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ClientDetail_razor
+  nameWithType: ClientDetail_razor.ClientDetail_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Culture
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Culture
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Culture
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Culture
+  nameWithType: ClientDetail_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Culture*
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Culture_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Culture
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Culture
+  nameWithType: ClientDetail_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.resourceCulture
+  name: resourceCulture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_resourceCulture
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.resourceCulture
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.resourceCulture
+  nameWithType: ClientDetail_razor.resourceCulture
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.resourceMan
+  name: resourceMan
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_resourceMan
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.resourceMan
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.resourceMan
+  nameWithType: ClientDetail_razor.resourceMan
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ResourceManager
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_ResourceManager
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ResourceManager
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ResourceManager
+  nameWithType: ClientDetail_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ResourceManager*
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_ResourceManager_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ResourceManager
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ResourceManager
+  nameWithType: ClientDetail_razor.ResourceManager
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex
   name: ClientsIndex
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html
@@ -204,12 +550,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Dialog
   nameWithType: ClientsIndex.Dialog
-- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(EditClientVM)
-  name: DisableClientAsync(EditClientVM)
-  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_DisableClientAsync_EditClientVM_
-  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(EditClientVM)
-  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(EditClientVM)
-  nameWithType: ClientsIndex.DisableClientAsync(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(ListClientVM)
+  name: DisableClientAsync(ListClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_DisableClientAsync_ListClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(ListClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync(ListClientVM)
+  nameWithType: ClientsIndex.DisableClientAsync(ListClientVM)
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync*
   name: DisableClientAsync
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_DisableClientAsync_
@@ -217,12 +563,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.DisableClientAsync
   nameWithType: ClientsIndex.DisableClientAsync
-- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(EditClientVM)
-  name: EnableClientAsync(EditClientVM)
-  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_EnableClientAsync_EditClientVM_
-  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(EditClientVM)
-  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(EditClientVM)
-  nameWithType: ClientsIndex.EnableClientAsync(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(ListClientVM)
+  name: EnableClientAsync(ListClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_EnableClientAsync_ListClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(ListClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync(ListClientVM)
+  nameWithType: ClientsIndex.EnableClientAsync(ListClientVM)
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync*
   name: EnableClientAsync
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_EnableClientAsync_
@@ -230,12 +576,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.EnableClientAsync
   nameWithType: ClientsIndex.EnableClientAsync
-- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(EditClientVM,System.String)
-  name: FilterFunc(EditClientVM, String)
-  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_EditClientVM_System_String_
-  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(EditClientVM,System.String)
-  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(EditClientVM, System.String)
-  nameWithType: ClientsIndex.FilterFunc(EditClientVM, String)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(ListClientVM,System.String)
+  name: FilterFunc(ListClientVM, String)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_ListClientVM_System_String_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(ListClientVM,System.String)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc(ListClientVM, System.String)
+  nameWithType: ClientsIndex.FilterFunc(ListClientVM, String)
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc*
   name: FilterFunc
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc_
@@ -243,12 +589,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc
   nameWithType: ClientsIndex.FilterFunc
-- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(EditClientVM)
-  name: FilterFunc1(EditClientVM)
-  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc1_EditClientVM_
-  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(EditClientVM)
-  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(EditClientVM)
-  nameWithType: ClientsIndex.FilterFunc1(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(ListClientVM)
+  name: FilterFunc1(ListClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc1_ListClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(ListClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1(ListClientVM)
+  nameWithType: ClientsIndex.FilterFunc1(ListClientVM)
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.FilterFunc1*
   name: FilterFunc1
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_FilterFunc1_
@@ -295,6 +641,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.LoadDataAsync
   nameWithType: ClientsIndex.LoadDataAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Localizer
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Localizer
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Localizer
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Localizer
+  nameWithType: ClientsIndex.Localizer
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Localizer*
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Localizer_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Localizer
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Localizer
+  nameWithType: ClientsIndex.Localizer
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_Logger
@@ -334,12 +693,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnCreateAsync
   nameWithType: ClientsIndex.OnCreateAsync
-- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(EditClientVM)
-  name: OnDeleteAsync(EditClientVM)
-  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnDeleteAsync_EditClientVM_
-  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(EditClientVM)
-  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(EditClientVM)
-  nameWithType: ClientsIndex.OnDeleteAsync(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(ListClientVM)
+  name: OnDeleteAsync(ListClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnDeleteAsync_ListClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(ListClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync(ListClientVM)
+  nameWithType: ClientsIndex.OnDeleteAsync(ListClientVM)
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync*
   name: OnDeleteAsync
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnDeleteAsync_
@@ -347,12 +706,12 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnDeleteAsync
   nameWithType: ClientsIndex.OnDeleteAsync
-- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(EditClientVM)
-  name: OnEditAsync(EditClientVM)
-  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnEditAsync_EditClientVM_
-  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(EditClientVM)
-  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(EditClientVM)
-  nameWithType: ClientsIndex.OnEditAsync(EditClientVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(ListClientVM)
+  name: OnEditAsync(ListClientVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnEditAsync_ListClientVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(ListClientVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync(ListClientVM)
+  nameWithType: ClientsIndex.OnEditAsync(ListClientVM)
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.OnEditAsync*
   name: OnEditAsync
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_OnEditAsync_
@@ -514,6 +873,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.GreenApi
   nameWithType: NewClientDialog.GreenApi
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Localizer
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Localizer
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Localizer
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Localizer
+  nameWithType: NewClientDialog.Localizer
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Localizer*
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Localizer_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Localizer
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Localizer
+  nameWithType: NewClientDialog.Localizer
 - uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_Logger
@@ -579,6 +951,63 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog.OnValidSubmitAsync
   nameWithType: NewClientDialog.OnValidSubmitAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor
+  name: NewClientDialog_razor
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor
+  nameWithType: NewClientDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.#ctor
+  name: NewClientDialog_razor()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_razor__ctor
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.#ctor
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.NewClientDialog_razor()
+  nameWithType: NewClientDialog_razor.NewClientDialog_razor()
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.#ctor*
+  name: NewClientDialog_razor
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_razor__ctor_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.NewClientDialog_razor
+  nameWithType: NewClientDialog_razor.NewClientDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.Culture
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_razor_Culture
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.Culture
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.Culture
+  nameWithType: NewClientDialog_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.Culture*
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_razor_Culture_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.Culture
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.Culture
+  nameWithType: NewClientDialog_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.resourceCulture
+  name: resourceCulture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_razor_resourceCulture
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.resourceCulture
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.resourceCulture
+  nameWithType: NewClientDialog_razor.resourceCulture
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.resourceMan
+  name: resourceMan
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_razor_resourceMan
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.resourceMan
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.resourceMan
+  nameWithType: NewClientDialog_razor.resourceMan
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.ResourceManager
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_razor_ResourceManager
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.ResourceManager
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.ResourceManager
+  nameWithType: NewClientDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.ResourceManager*
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_NewClientDialog_razor_ResourceManager_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.ResourceManager
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.ResourceManager
+  nameWithType: NewClientDialog_razor.ResourceManager
 - uid: CG.Green.Areas.Identity
   name: CG.Green.Areas.Identity
   href: api/CG.Green.Areas.Identity.html
@@ -9889,6 +10318,19 @@ references:
   commentId: T:CG.Green.ViewModels.EditClientVM
   fullName: CG.Green.ViewModels.EditClientVM
   nameWithType: EditClientVM
+- uid: CG.Green.ViewModels.EditClientVM.AllowOfflineAccess
+  name: AllowOfflineAccess
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_AllowOfflineAccess
+  commentId: P:CG.Green.ViewModels.EditClientVM.AllowOfflineAccess
+  fullName: CG.Green.ViewModels.EditClientVM.AllowOfflineAccess
+  nameWithType: EditClientVM.AllowOfflineAccess
+- uid: CG.Green.ViewModels.EditClientVM.AllowOfflineAccess*
+  name: AllowOfflineAccess
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_AllowOfflineAccess_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.AllowOfflineAccess
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.AllowOfflineAccess
+  nameWithType: EditClientVM.AllowOfflineAccess
 - uid: CG.Green.ViewModels.EditClientVM.ClientId
   name: ClientId
   href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_ClientId
@@ -9915,6 +10357,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.EditClientVM.ClientName
   nameWithType: EditClientVM.ClientName
+- uid: CG.Green.ViewModels.EditClientVM.Description
+  name: Description
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_Description
+  commentId: P:CG.Green.ViewModels.EditClientVM.Description
+  fullName: CG.Green.ViewModels.EditClientVM.Description
+  nameWithType: EditClientVM.Description
+- uid: CG.Green.ViewModels.EditClientVM.Description*
+  name: Description
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_Description_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.Description
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.Description
+  nameWithType: EditClientVM.Description
 - uid: CG.Green.ViewModels.EditClientVM.Enabled
   name: Enabled
   href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_Enabled
@@ -9928,6 +10383,148 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.EditClientVM.Enabled
   nameWithType: EditClientVM.Enabled
+- uid: CG.Green.ViewModels.EditClientVM.RequireClientSecret
+  name: RequireClientSecret
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_RequireClientSecret
+  commentId: P:CG.Green.ViewModels.EditClientVM.RequireClientSecret
+  fullName: CG.Green.ViewModels.EditClientVM.RequireClientSecret
+  nameWithType: EditClientVM.RequireClientSecret
+- uid: CG.Green.ViewModels.EditClientVM.RequireClientSecret*
+  name: RequireClientSecret
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_RequireClientSecret_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.RequireClientSecret
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.RequireClientSecret
+  nameWithType: EditClientVM.RequireClientSecret
+- uid: CG.Green.ViewModels.EditClientVM.RequireRequestObject
+  name: RequireRequestObject
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_RequireRequestObject
+  commentId: P:CG.Green.ViewModels.EditClientVM.RequireRequestObject
+  fullName: CG.Green.ViewModels.EditClientVM.RequireRequestObject
+  nameWithType: EditClientVM.RequireRequestObject
+- uid: CG.Green.ViewModels.EditClientVM.RequireRequestObject*
+  name: RequireRequestObject
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_RequireRequestObject_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.RequireRequestObject
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.RequireRequestObject
+  nameWithType: EditClientVM.RequireRequestObject
+- uid: CG.Green.ViewModels.EditClientVM.Secrets
+  name: Secrets
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_Secrets
+  commentId: P:CG.Green.ViewModels.EditClientVM.Secrets
+  fullName: CG.Green.ViewModels.EditClientVM.Secrets
+  nameWithType: EditClientVM.Secrets
+- uid: CG.Green.ViewModels.EditClientVM.Secrets*
+  name: Secrets
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_Secrets_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.Secrets
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.Secrets
+  nameWithType: EditClientVM.Secrets
+- uid: CG.Green.ViewModels.EditSecretVM
+  name: EditSecretVM
+  href: api/CG.Green.ViewModels.EditSecretVM.html
+  commentId: T:CG.Green.ViewModels.EditSecretVM
+  fullName: CG.Green.ViewModels.EditSecretVM
+  nameWithType: EditSecretVM
+- uid: CG.Green.ViewModels.EditSecretVM.Description
+  name: Description
+  href: api/CG.Green.ViewModels.EditSecretVM.html#CG_Green_ViewModels_EditSecretVM_Description
+  commentId: P:CG.Green.ViewModels.EditSecretVM.Description
+  fullName: CG.Green.ViewModels.EditSecretVM.Description
+  nameWithType: EditSecretVM.Description
+- uid: CG.Green.ViewModels.EditSecretVM.Description*
+  name: Description
+  href: api/CG.Green.ViewModels.EditSecretVM.html#CG_Green_ViewModels_EditSecretVM_Description_
+  commentId: Overload:CG.Green.ViewModels.EditSecretVM.Description
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditSecretVM.Description
+  nameWithType: EditSecretVM.Description
+- uid: CG.Green.ViewModels.EditSecretVM.Expiration
+  name: Expiration
+  href: api/CG.Green.ViewModels.EditSecretVM.html#CG_Green_ViewModels_EditSecretVM_Expiration
+  commentId: P:CG.Green.ViewModels.EditSecretVM.Expiration
+  fullName: CG.Green.ViewModels.EditSecretVM.Expiration
+  nameWithType: EditSecretVM.Expiration
+- uid: CG.Green.ViewModels.EditSecretVM.Expiration*
+  name: Expiration
+  href: api/CG.Green.ViewModels.EditSecretVM.html#CG_Green_ViewModels_EditSecretVM_Expiration_
+  commentId: Overload:CG.Green.ViewModels.EditSecretVM.Expiration
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditSecretVM.Expiration
+  nameWithType: EditSecretVM.Expiration
+- uid: CG.Green.ViewModels.EditSecretVM.IsHashed
+  name: IsHashed
+  href: api/CG.Green.ViewModels.EditSecretVM.html#CG_Green_ViewModels_EditSecretVM_IsHashed
+  commentId: P:CG.Green.ViewModels.EditSecretVM.IsHashed
+  fullName: CG.Green.ViewModels.EditSecretVM.IsHashed
+  nameWithType: EditSecretVM.IsHashed
+- uid: CG.Green.ViewModels.EditSecretVM.IsHashed*
+  name: IsHashed
+  href: api/CG.Green.ViewModels.EditSecretVM.html#CG_Green_ViewModels_EditSecretVM_IsHashed_
+  commentId: Overload:CG.Green.ViewModels.EditSecretVM.IsHashed
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditSecretVM.IsHashed
+  nameWithType: EditSecretVM.IsHashed
+- uid: CG.Green.ViewModels.EditSecretVM.Value
+  name: Value
+  href: api/CG.Green.ViewModels.EditSecretVM.html#CG_Green_ViewModels_EditSecretVM_Value
+  commentId: P:CG.Green.ViewModels.EditSecretVM.Value
+  fullName: CG.Green.ViewModels.EditSecretVM.Value
+  nameWithType: EditSecretVM.Value
+- uid: CG.Green.ViewModels.EditSecretVM.Value*
+  name: Value
+  href: api/CG.Green.ViewModels.EditSecretVM.html#CG_Green_ViewModels_EditSecretVM_Value_
+  commentId: Overload:CG.Green.ViewModels.EditSecretVM.Value
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditSecretVM.Value
+  nameWithType: EditSecretVM.Value
+- uid: CG.Green.ViewModels.ListClientVM
+  name: ListClientVM
+  href: api/CG.Green.ViewModels.ListClientVM.html
+  commentId: T:CG.Green.ViewModels.ListClientVM
+  fullName: CG.Green.ViewModels.ListClientVM
+  nameWithType: ListClientVM
+- uid: CG.Green.ViewModels.ListClientVM.ClientId
+  name: ClientId
+  href: api/CG.Green.ViewModels.ListClientVM.html#CG_Green_ViewModels_ListClientVM_ClientId
+  commentId: P:CG.Green.ViewModels.ListClientVM.ClientId
+  fullName: CG.Green.ViewModels.ListClientVM.ClientId
+  nameWithType: ListClientVM.ClientId
+- uid: CG.Green.ViewModels.ListClientVM.ClientId*
+  name: ClientId
+  href: api/CG.Green.ViewModels.ListClientVM.html#CG_Green_ViewModels_ListClientVM_ClientId_
+  commentId: Overload:CG.Green.ViewModels.ListClientVM.ClientId
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.ListClientVM.ClientId
+  nameWithType: ListClientVM.ClientId
+- uid: CG.Green.ViewModels.ListClientVM.ClientName
+  name: ClientName
+  href: api/CG.Green.ViewModels.ListClientVM.html#CG_Green_ViewModels_ListClientVM_ClientName
+  commentId: P:CG.Green.ViewModels.ListClientVM.ClientName
+  fullName: CG.Green.ViewModels.ListClientVM.ClientName
+  nameWithType: ListClientVM.ClientName
+- uid: CG.Green.ViewModels.ListClientVM.ClientName*
+  name: ClientName
+  href: api/CG.Green.ViewModels.ListClientVM.html#CG_Green_ViewModels_ListClientVM_ClientName_
+  commentId: Overload:CG.Green.ViewModels.ListClientVM.ClientName
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.ListClientVM.ClientName
+  nameWithType: ListClientVM.ClientName
+- uid: CG.Green.ViewModels.ListClientVM.Enabled
+  name: Enabled
+  href: api/CG.Green.ViewModels.ListClientVM.html#CG_Green_ViewModels_ListClientVM_Enabled
+  commentId: P:CG.Green.ViewModels.ListClientVM.Enabled
+  fullName: CG.Green.ViewModels.ListClientVM.Enabled
+  nameWithType: ListClientVM.Enabled
+- uid: CG.Green.ViewModels.ListClientVM.Enabled*
+  name: Enabled
+  href: api/CG.Green.ViewModels.ListClientVM.html#CG_Green_ViewModels_ListClientVM_Enabled_
+  commentId: Overload:CG.Green.ViewModels.ListClientVM.Enabled
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.ListClientVM.Enabled
+  nameWithType: ListClientVM.Enabled
 - uid: CG.Green.ViewModels.NewClientVM
   name: NewClientVM
   href: api/CG.Green.ViewModels.NewClientVM.html
