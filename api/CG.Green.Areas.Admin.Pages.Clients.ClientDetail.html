@@ -241,6 +241,30 @@
       </tr>
     </tbody>
   </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Clipboard_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Clipboard*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Clipboard" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Clipboard">Clipboard</h4>
+  <div class="markdown level1 summary"><p>This property contains the clipboard service for the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ClipboardService Clipboard { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ClipboardService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Dialog_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog*"></a>
   <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Dialog" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog">Dialog</h4>
   <div class="markdown level1 summary"><p>This property contains the dialog service for this page.</p>
@@ -437,9 +461,33 @@
       </tr>
     </tbody>
   </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCopyClientId_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCopyClientId*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCopyClientId" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCopyClientId">OnCopyClientId()</h4>
+  <div class="markdown level1 summary"><p>This method copies the client id to the cipboard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnCopyClientId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateSecretAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync*"></a>
   <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateSecretAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync">OnCreateSecretAsync()</h4>
-  <div class="markdown level1 summary"><p>This method deletes the given secret from the client.</p>
+  <div class="markdown level1 summary"><p>This method creates a new secret for the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -463,13 +511,13 @@
     </tbody>
   </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteSecretAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteSecretAsync_EditSecretVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync(EditSecretVM)">OnDeleteSecretAsync(EditSecretVM)</h4>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteSecretAsync_ClientSecretVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync(ClientSecretVM)">OnDeleteSecretAsync(ClientSecretVM)</h4>
   <div class="markdown level1 summary"><p>This method deletes the given secret from the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteSecretAsync(EditSecretVM secret)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task OnDeleteSecretAsync(ClientSecretVM secret)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -482,7 +530,50 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EditSecretVM</span></td>
+        <td><span class="xref">ClientSecretVM</span></td>
+        <td><span class="parametername">secret</span></td>
+        <td><p>The secret to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditSecretAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditSecretAsync*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditSecretAsync_ClientSecretVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditSecretAsync(ClientSecretVM)">OnEditSecretAsync(ClientSecretVM)</h4>
+  <div class="markdown level1 summary"><p>This method edit the given secret.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnEditSecretAsync(ClientSecretVM secret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ClientSecretVM</span></td>
         <td><span class="parametername">secret</span></td>
         <td><p>The secret to use for the operation.</p>
 </td>
@@ -530,15 +621,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnNewClientId_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnNewClientId*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnNewClientId" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnNewClientId">OnNewClientId()</h4>
-  <div class="markdown level1 summary"><p>This method generates a new random client id.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void OnNewClientId()</code></pre>
-  </div>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnValidSubmitAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnValidSubmitAsync*"></a>
   <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnValidSubmitAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnValidSubmitAsync">OnValidSubmitAsync()</h4>
   <div class="markdown level1 summary"><p>This method is called when the user submits the form.</p>
