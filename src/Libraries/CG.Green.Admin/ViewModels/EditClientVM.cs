@@ -1,6 +1,4 @@
 ﻿
-using System.Diagnostics.Contracts;
-
 namespace CG.Green.ViewModels;
 
 /// <summary>
@@ -39,7 +37,6 @@ public class EditClientVM
     /// <summary>
     /// This property contains the description for the client.
     /// </summary>
-    [Required]
     [MaxLength(Globals.Models.Clients.DescriptionLength)]
     [Display(Name = "Description")]
     public string Description { get; set; } = null!;
@@ -69,7 +66,7 @@ public class EditClientVM
     /// This property contains a list of secrets for the client.
     /// </summary>
     [Display(Name = "Secrets")]
-    public List<EditSecretVM> Secrets { get; set; } = new();
+    public List<ClientSecretVM> ClientSecrets { get; set; } = new();
 
     #endregion
 }

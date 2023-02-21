@@ -1,25 +1,11 @@
 ﻿
-namespace CG.Green.Areas.Admin.Dialogs;
+namespace CG.Green.Areas.Admin.Pages.Clients;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="DeleteDialog"/> dialog.
+/// This class is the code-behind for the <see cref="ClientSecretDialog"/> dialog.
 /// </summary>
-public partial class DeleteDialog
+public partial class ClientSecretDialog
 {
-    // *******************************************************************
-    // Fields.
-    // *******************************************************************
-
-    #region Fields
-
-    /// <summary>
-    /// This field contains the confirmation string.
-    /// </summary>
-    [Required] 
-    internal protected string _model = "";
-
-    #endregion
-
     // *******************************************************************
     // Properties.
     // *******************************************************************
@@ -36,26 +22,13 @@ public partial class DeleteDialog
     /// This property contains the edit form's model.
     /// </summary>
     [Parameter]
-    public string ObjectName { get; set; } = null!;
+    public ClientSecretVM Model { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the text for the ok button.
+    /// This property indicates whether the called is editing the secret.
     /// </summary>
     [Parameter]
-    public string YesText { get; set; } = null!;
-
-    /// <summary>
-    /// This property contains the text for the cancel button.
-    /// </summary>
-    [Parameter]
-    public string NoText { get; set; } = null!;
-
-    /// <summary>
-    /// This property indicates the caller should be forced to 
-    /// confirm the operation by entering matching text.
-    /// </summary>
-    [Parameter]
-    public bool Confirm { get; set; }
+    public bool IsEditing { get; set; }
 
     /// <summary>
     /// This property contains the dialog service for this dialog.
@@ -67,13 +40,13 @@ public partial class DeleteDialog
     /// This property contains the localizer for this dialog.
     /// </summary>
     [Inject]
-    protected IStringLocalizer<DeleteDialog> Localizer { get; set; } = null!;
+    protected IStringLocalizer<ClientSecretDialog> Localizer { get; set; } = null!;
 
     /// <summary>
     /// This property contains the logger for this dialog.
     /// </summary>
     [Inject]
-    protected ILogger<DeleteDialog> Logger { get; set; } = null!;
+    protected ILogger<ClientSecretDialog> Logger { get; set; } = null!;
 
     #endregion
 
@@ -86,13 +59,7 @@ public partial class DeleteDialog
     /// <summary>
     /// This method submits the dialog.
     /// </summary>
-    protected void OnValidSubmit(
-        EditContext editContext
-        )
-    {
-        // Close the dialog.
-        MudDialog.Close();
-    }
+    protected void OnValidSubmit() => MudDialog.Close(DialogResult.Ok(Model));
 
     // *******************************************************************
 
@@ -100,6 +67,17 @@ public partial class DeleteDialog
     /// This method cancels the dialog.
     /// </summary>
     protected void Cancel() => MudDialog.Cancel();
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method generates a new secret value.
+    /// </summary>
+    protected void OnNewSecretValue()
+    {
+        // Generate the secret value.
+        Model.Value = $"{Guid.NewGuid():N}";
+    }
 
     #endregion
 }

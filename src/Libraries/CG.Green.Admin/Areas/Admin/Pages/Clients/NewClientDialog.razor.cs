@@ -1,6 +1,4 @@
 ﻿
-using CG.Green.Areas.Admin.Dialogs;
-
 namespace CG.Green.Areas.Admin.Pages.Clients;
 
 /// <summary>
@@ -61,9 +59,7 @@ public partial class NewClientDialog
     /// <summary>
     /// This method submits the dialog.
     /// </summary>
-    protected async Task OnValidSubmitAsync(
-        EditContext editContext
-        )
+    protected async Task OnValidSubmitAsync()
     {
         // Check for a conflicting client id.
         if (await GreenApi.Clients.AnyByIdAsync(Model.ClientId))

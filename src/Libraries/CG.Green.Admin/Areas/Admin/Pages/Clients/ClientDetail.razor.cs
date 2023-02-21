@@ -72,6 +72,12 @@ public partial class ClientDetail
     protected IGreenApi GreenApi { get; set; } = null!;
 
     /// <summary>
+    /// This property contains the clipboard service for the page.
+    /// </summary>
+    [Inject]
+    protected ClipboardService Clipboard { get; set; } = null!;
+
+    /// <summary>
     /// This property contains the auto mapper for this page.
     /// </summary>
     [Inject]
@@ -156,21 +162,205 @@ public partial class ClientDetail
     /// <returns>A task to perform the operation.</returns>
     protected async Task OnValidSubmitAsync()
     {
-        // TODO : write the code for this.
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Marking the page as busy."
+                );
+
+            // We're now officially busy.
+            _isLoading = true;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Saving the client changes"
+                );
+
+            // Update the client in the api.
+            await GreenApi.Clients.UpdateAsync(
+                AutoMapper.Map<Client>(_model),
+                UserName
+                );
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Loading data for the page."
+                );
+
+            // Load the client.
+            await LoadDataAsync();
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar"
+                );
+
+            // Tell the world what we did.
+            Snackbar.Add(
+                $"Changes were saved"
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to save changes to a secret!"
+                );
+
+            // Tell the world what happened.
+            await Dialog.ShowErrorBox(ex);
+        }
+        finally
+        {
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Marking the page as idle."
+                );
+
+            // We're now officially idle.
+            _isLoading = false;
+        }
     }
 
     // *******************************************************************
 
     /// <summary>
-    /// This method generates a new random client id.
+    /// This method copies the client id to the cipboard.
     /// </summary>
-    protected void OnNewClientId()
+    protected async Task OnCopyClientId()
     {
-        // Sanity check the model.
-        if (_model is not null)
+        try
         {
-            // Set the random client id value.
-            _model.ClientId = $"{Guid.NewGuid():N}";
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Copying client id to the clipboard"
+                );
+
+            // Copy the value.
+            await Clipboard.CopyToClipboard(_model.ClientId);
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Showing the snackbar"
+                );
+
+            // Tell the world what we did.
+            Snackbar.Add(
+                $"Client Id copied to the clipboard"
+                );
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a secret!"
+                );
+
+            // Tell the world what happened.
+            await Dialog.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method creates a new secret for the client.
+    /// </summary>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task OnCreateSecretAsync()
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return;
+            }
+
+            // Create the dialog options.
+            var options = new DialogOptions
+            {
+                MaxWidth = MaxWidth.Small,
+                CloseOnEscapeKey = true,
+                FullWidth = true
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog parameters."
+                );
+
+            // Create the dialog parameters.
+            var parameters = new DialogParameters()
+            {
+                { "Model", new ClientSecretVM() }
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating new dialog."
+                );
+
+            // Create the dialog.
+            var dialog = Dialog.Show<ClientSecretDialog>(
+                "Create Secret",
+                parameters,
+                options
+                );
+
+            // Get the results of the dialog.
+            var result = await dialog.Result;
+
+            // Did the user cancel?
+            if (result.Canceled)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Recovering the dialog model."
+                );
+
+            // Recover the model.
+            var model = (ClientSecretVM)result.Data;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Add the secret to the client."
+                );
+
+            // Make sure the secret is hashed.
+            model.Value = model.Value.ToSha256();
+
+            // Add the secret to the model.
+            _model.ClientSecrets.Add(model);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a secret!"
+                );
+
+            // Tell the world what happened.
+            await Dialog.ShowErrorBox(ex);
         }
     }
 
@@ -181,23 +371,148 @@ public partial class ClientDetail
     /// </summary>
     /// <param name="secret">The secret to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
-    protected async Task OnCreateSecretAsync()
+    protected async Task OnDeleteSecretAsync(
+        ClientSecretVM secret
+        )
     {
-        // TODO : write the code for this.
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
+
+            // Prompt the user.
+            var result = await Dialog.ShowDeleteBox(
+                secret.Value
+                );
+
+            // Did the user cancel?
+            if (!result)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting a secret."
+                );
+
+            // Delete the secret
+            _model.ClientSecrets.Remove(secret);
+        }
+        catch (Exception ex)  
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete a secret!"
+                );
+
+            // Tell the world what happened.
+            await Dialog.ShowErrorBox(ex);
+        }
     }
 
     // *******************************************************************
 
     /// <summary>
-    /// This method deletes the given secret from the client.
+    /// This method edit the given secret.
     /// </summary>
     /// <param name="secret">The secret to use for the operation.</param>
     /// <returns>A task to perform the operation.</returns>
-    protected async Task OnDeleteSecretAsync(
-        EditSecretVM secret
+    protected async Task OnEditSecretAsync(
+        ClientSecretVM secret
         )
     {
-        // TODO : write the code for this.
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return;
+            }
+
+            // Create the dialog options.
+            var options = new DialogOptions
+            {
+                MaxWidth = MaxWidth.Small,
+                CloseOnEscapeKey = true,
+                FullWidth = true
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog parameters."
+                );
+
+            // Create the dialog parameters.
+            var parameters = new DialogParameters()
+            {
+                { "Model", secret },
+                { "IsEditing", true }
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating new dialog."
+                );
+
+            // Create the dialog.
+            var dialog = Dialog.Show<ClientSecretDialog>(
+                "Edit Secret",
+                parameters,
+                options
+                );
+
+            // Get the results of the dialog.
+            var result = await dialog.Result;
+
+            // Did the user cancel?
+            if (result.Canceled)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Recovering the dialog model."
+                );
+
+            // Recover the model.
+            var model = (ClientSecretVM)result.Data;
+            
+            // Should we hash the value?
+            if (!model.IsHashed)
+            {
+                // Hash the value.
+                model.Value = model.Value.ToSha256();
+                model.IsHashed = true;
+            }
+
+            // Remove the original.
+            _model.ClientSecrets.Remove(secret);
+
+            // Add the modified.
+            _model.ClientSecrets.Add(model);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to edit a secret!"
+                );
+
+            // Tell the world what happened.
+            await Dialog.ShowErrorBox(ex);
+        }
     }
 
     #endregion
@@ -244,8 +559,17 @@ public partial class ClientDetail
             // Did we succeed?
             if (client is not null)
             {
+                // Log what we are about to do.
+                Logger.LogDebug(
+                    "Wrapping the client in a VM."
+                    );
+
                 // Wrap the model.
                 _model = AutoMapper.Map<EditClientVM>(client);
+
+                // Mark any secrets as hashed since anything coming from
+                //   Duende is going to be hashed already.
+                _model.ClientSecrets.ForEach(x => x.IsHashed = true); 
             }
             else
             {

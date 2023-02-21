@@ -1,4 +1,6 @@
 ﻿
+using CG.Green.Services;
+
 namespace Microsoft.AspNetCore.Builder;
 
 /// <summary>
@@ -48,6 +50,7 @@ public static class WebApplicationBuilderExtensions012
             cfg.CreateMap<Client, ListClientVM>().ReverseMap();
             cfg.CreateMap<Client, NewClientVM>().ReverseMap();
             cfg.CreateMap<Client, EditClientVM>().ReverseMap();
+            cfg.CreateMap<Secret, ClientSecretVM>().ReverseMap();
         });
 
         // Return the application builder.

@@ -1,4 +1,5 @@
-﻿global using AutoMapper;
+﻿global using IdentityModel;
+global using AutoMapper;
 global using CG.Green.ViewModels;
 global using CG.Validations;
 global using Duende.IdentityServer.Models;
@@ -10,3 +11,5 @@ global using System.ComponentModel.DataAnnotations;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.AspNetCore.Components.Forms;
 global using Microsoft.Extensions.Localization;
+global using CG.Green.Areas.Admin.Shared;
+global using CG.Green.Services;

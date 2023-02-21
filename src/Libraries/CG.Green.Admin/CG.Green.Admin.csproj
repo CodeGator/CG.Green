@@ -29,7 +29,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Areas\Admin\Dialogs\DeleteDialog.razor.Designer.cs">
+      <Compile Update="Areas\Admin\Shared\DeleteDialog.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>DeleteDialog.razor.resx</DependentUpon>
@@ -49,10 +49,15 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>NewClientDialog.razor.resx</DependentUpon>
       </Compile>
+      <Compile Update="Areas\Admin\Pages\Clients\ClientSecretDialog.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ClientSecretDialog.razor.resx</DependentUpon>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Areas\Admin\Dialogs\DeleteDialog.razor.resx">
+      <EmbeddedResource Update="Areas\Admin\Shared\DeleteDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>DeleteDialog.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
@@ -67,6 +72,10 @@
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\NewClientDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>NewClientDialog.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\ClientSecretDialog.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ClientSecretDialog.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
 

@@ -34,26 +34,24 @@ else
                 <MudGrid>
                     <MudItem xs="12">&nbsp;</MudItem>
                     <MudItem xs="12">
-                        <MudTextField AutoFocus
-                                  Required
-                                  Immediate
-                                  OnlyValidateIfDirty
-                                  Margin="Margin.Dense"
+                        <MudTextField ReadOnly
+                                      DisableUnderLine
+                                      Margin="Margin.Dense"
                                   Counter="@(Globals.Models.Clients.ClientIdLength)"
                                   Class="ml-auto"
                                   Variant="Variant.Outlined"
                                   Label="Client Id"
-                                  Mask="@(new RegexMask(@"^[\.a-zA-Z0-9]*$"))"
                                   HelperText="This is the value external callers will use to connect to this client."
                                   Adornment="Adornment.End"
                                   AdornmentAriaLabel="generate id"
-                                  AdornmentIcon="@Icons.Material.TwoTone.AddToPhotos"
-                                  OnAdornmentClick="OnNewClientId"
+                                  AdornmentIcon="@Icons.Material.TwoTone.CopyAll"
+                                  OnAdornmentClick="OnCopyClientId"
                                   For="@(() => _model.ClientId)"
                                   @bind-Value="@_model.ClientId" />
                     </MudItem>
                     <MudItem xs="12">
-                        <MudTextField Required
+                        <MudTextField AutoFocus
+                                  Required
                                   Immediate
                                   OnlyValidateIfDirty
                                 Margin="Margin.Dense"
@@ -112,13 +110,11 @@ else
                         <MudText Class="text-muted ml-3" Typo="Typo.caption">Require client to know secret(s).</MudText>
                     </MudItem>
                     <MudItem xs="12">
-                        <MudTable Items="_model.Secrets"
+                        <MudTable Items="_model.ClientSecrets"
                                 Dense
                                 Striped
-                                CanCancelEdit
-                                IsEditRowSwitchingBlocked
-                                Loading="@_isLoading"
-                              EditTrigger="TableEditTrigger.EditButton">
+                                Virtualize
+                                Loading="@_isLoading">
                         <ToolBarContent>
                             <MudButton StartIcon="@Icons.Material.Outlined.Create"
                                        Variant="Variant.Filled"
@@ -128,15 +124,15 @@ else
                             <MudSpacer />
                         </ToolBarContent>
                         <ColGroup>
-                            <col style="width:20%" />
-                            <col style="width:35%" />
-                            <col style="width:35%" />
+                            <col />
+                            <col />
+                            <col />
                             <col />
                         </ColGroup>
                         <HeaderContent>
-                            <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Expiration)">Expiration</MudTableSortLabel></MudTh>
-                            <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
-                            <MudTh><MudTableSortLabel SortBy="new Func<EditSecretVM, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
+                            <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Expiration)">Expiration</MudTableSortLabel></MudTh>
+                            <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
+                            <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
                             <MudTh></MudTh>
                         </HeaderContent>
                         <RowTemplate Context="context2">
@@ -147,25 +143,11 @@ else
                                 <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                                OnClick="() => OnDeleteSecretAsync(context2)"
                                                Disabled="@_isLoading" />
+                                <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                               OnClick="() => OnEditSecretAsync(context2)"
+                                               Disabled="@_isLoading" />
                             </MudTd>
                         </RowTemplate>
-                        <RowEditingTemplate Context="context2">
-                            <MudTd DataLabel="Expiration">
-                                <MudTextField T="DateTime?"
-                                              Format="yyyy-MM-dd"
-                                              InputType="InputType.Date"
-                                              @bind-Value="@context2.Expiration" />
-                            </MudTd>
-                            <MudTd DataLabel="Description">
-                                <MudTextField @bind-Value="@context2.Description" />
-                            </MudTd>
-                            <MudTd DataLabel="Value">
-                                <MudTextField DisableUnderline="@context2.IsHashed"
-                                              @bind-Value="@context2.Value"
-                                              Required="@(!context2.IsHashed)"
-                                              ReadOnly="@context2.IsHashed" />
-                            </MudTd>
-                        </RowEditingTemplate>
                         <NoRecordsContent>
                             No secrets were found.
                         </NoRecordsContent>
@@ -175,25 +157,19 @@ else
                         <PagerContent>
                             <MudTablePager />
                         </PagerContent>
-                        <EditButtonContent Context="button">
-                            <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
-                        </EditButtonContent>
                         </MudTable>
                     </MudItem>
                 </MudGrid>
             </MudTabPanel>
 
             <!-- Application Uris Panel -->
-            <MudTabPanel Text="Application Uris" Icon="@Icons.Material.Outlined.SettingsApplications">
+            <MudTabPanel Text="Uris" Icon="@Icons.Material.Outlined.WebAsset">
 
             </MudTabPanel>
 
-            <MudTabPanel Text="Blah D" Icon="@Icons.Material.Outlined.Person4">
+        </MudTabs>
 
-            </MudTabPanel>
-            </MudTabs>
-
-            <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
-        </EditForm>
+        <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
+    </EditForm>
 
 }

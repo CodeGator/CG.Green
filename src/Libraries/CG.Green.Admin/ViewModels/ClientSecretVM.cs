@@ -2,9 +2,9 @@
 namespace CG.Green.ViewModels;
 
 /// <summary>
-/// This class is a view-model for editing a Duende secret.
+/// This class is a view-model that represents a Duende client secret.
 /// </summary>
-public class EditSecretVM
+public class ClientSecretVM
 {
     // *******************************************************************
     // Properties.
@@ -13,14 +13,13 @@ public class EditSecretVM
     #region Properties
 
     /// <summary>
-    /// This property indicates the expiration date/time for the secret.
+    /// This property contains the expiration date/time for the secret.
     /// </summary>
     public DateTime? Expiration { get; set; }
 
     /// <summary>
     /// This property contains the description for the secret.
     /// </summary>
-    [Required]
     [MaxLength(Globals.Models.Secrets.DescriptionLength)]
     [Display(Name = "Description")]
     public string Description { get; set; } = null!;
@@ -34,7 +33,7 @@ public class EditSecretVM
     public string Value { get; set; } = null!;
 
     /// <summary>
-    /// This property indicates whether or not the secret is hashed.
+    /// This property indicates whether the secret is hashed, or not.
     /// </summary>
     public bool IsHashed { get; set; }
 
