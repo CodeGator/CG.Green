@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Description>Data access logic for the CG.Green microservice.</Description>
+        <Description>Data-access logic for the CG.Green microservice.</Description>
     </PropertyGroup>
 
     <ItemGroup>

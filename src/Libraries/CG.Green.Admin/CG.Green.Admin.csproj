@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-        <Description>A UI for administering the CG.Green microservice.</Description>
+        <Description>Administrative extensions for the CG.Green microservice.</Description>
         <RootNamespace>CG.Green</RootNamespace>
     </PropertyGroup>
 
