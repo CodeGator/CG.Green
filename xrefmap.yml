@@ -167,6 +167,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCopyClientId
   nameWithType: ClientDetail.OnCopyClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync
+  name: OnCreatePostLogoutUriAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreatePostLogoutUriAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync()
+  nameWithType: ClientDetail.OnCreatePostLogoutUriAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync*
+  name: OnCreatePostLogoutUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreatePostLogoutUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync
+  nameWithType: ClientDetail.OnCreatePostLogoutUriAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateRedirectUriAsync
+  name: OnCreateRedirectUriAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateRedirectUriAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateRedirectUriAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateRedirectUriAsync()
+  nameWithType: ClientDetail.OnCreateRedirectUriAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateRedirectUriAsync*
+  name: OnCreateRedirectUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateRedirectUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateRedirectUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateRedirectUriAsync
+  nameWithType: ClientDetail.OnCreateRedirectUriAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync
   name: OnCreateSecretAsync()
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateSecretAsync
@@ -180,6 +206,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync
   nameWithType: ClientDetail.OnCreateSecretAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync(System.String)
+  name: OnDeletePostLogoutUriAsync(String)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeletePostLogoutUriAsync_System_String_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync(System.String)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync(System.String)
+  nameWithType: ClientDetail.OnDeletePostLogoutUriAsync(String)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync*
+  name: OnDeletePostLogoutUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeletePostLogoutUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync
+  nameWithType: ClientDetail.OnDeletePostLogoutUriAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteRedirectUriAsync(System.String)
+  name: OnDeleteRedirectUriAsync(String)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteRedirectUriAsync_System_String_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteRedirectUriAsync(System.String)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteRedirectUriAsync(System.String)
+  nameWithType: ClientDetail.OnDeleteRedirectUriAsync(String)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteRedirectUriAsync*
+  name: OnDeleteRedirectUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteRedirectUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteRedirectUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteRedirectUriAsync
+  nameWithType: ClientDetail.OnDeleteRedirectUriAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync(ClientSecretVM)
   name: OnDeleteSecretAsync(ClientSecretVM)
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteSecretAsync_ClientSecretVM_
@@ -193,6 +245,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync
   nameWithType: ClientDetail.OnDeleteSecretAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync(System.String)
+  name: OnEditPostLogoutUriAsync(String)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditPostLogoutUriAsync_System_String_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync(System.String)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync(System.String)
+  nameWithType: ClientDetail.OnEditPostLogoutUriAsync(String)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync*
+  name: OnEditPostLogoutUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditPostLogoutUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync
+  nameWithType: ClientDetail.OnEditPostLogoutUriAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditRedirectUriAsync(System.String)
+  name: OnEditRedirectUriAsync(String)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditRedirectUriAsync_System_String_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditRedirectUriAsync(System.String)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditRedirectUriAsync(System.String)
+  nameWithType: ClientDetail.OnEditRedirectUriAsync(String)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditRedirectUriAsync*
+  name: OnEditRedirectUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditRedirectUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditRedirectUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditRedirectUriAsync
+  nameWithType: ClientDetail.OnEditRedirectUriAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditSecretAsync(ClientSecretVM)
   name: OnEditSecretAsync(ClientSecretVM)
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditSecretAsync_ClientSecretVM_
@@ -1009,6 +1087,160 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.NewClientDialog_razor.ResourceManager
   nameWithType: NewClientDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog
+  name: UriDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.UriDialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog
+  nameWithType: UriDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Cancel
+  name: Cancel()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Cancel
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Cancel
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Cancel()
+  nameWithType: UriDialog.Cancel()
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Cancel
+  nameWithType: UriDialog.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Dialog
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Dialog
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Dialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Dialog
+  nameWithType: UriDialog.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Dialog*
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Dialog_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Dialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Dialog
+  nameWithType: UriDialog.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Localizer
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Localizer
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Localizer
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Localizer
+  nameWithType: UriDialog.Localizer
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Localizer*
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Localizer_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Localizer
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Localizer
+  nameWithType: UriDialog.Localizer
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Logger
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Logger
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Logger
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Logger
+  nameWithType: UriDialog.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Logger*
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Logger_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Logger
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Logger
+  nameWithType: UriDialog.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Model
+  name: Model
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Model
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Model
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Model
+  nameWithType: UriDialog.Model
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Model*
+  name: Model
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_Model_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog.Model
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.Model
+  nameWithType: UriDialog.Model
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.MudDialog
+  name: MudDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_MudDialog
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.UriDialog.MudDialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.MudDialog
+  nameWithType: UriDialog.MudDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.MudDialog*
+  name: MudDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_MudDialog_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog.MudDialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.MudDialog
+  nameWithType: UriDialog.MudDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.OnValidSubmit
+  name: OnValidSubmit()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_OnValidSubmit
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.UriDialog.OnValidSubmit
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.OnValidSubmit()
+  nameWithType: UriDialog.OnValidSubmit()
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog.OnValidSubmit*
+  name: OnValidSubmit
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_OnValidSubmit_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog.OnValidSubmit
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog.OnValidSubmit
+  nameWithType: UriDialog.OnValidSubmit
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor
+  name: UriDialog_razor
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor
+  nameWithType: UriDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.#ctor
+  name: UriDialog_razor()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_razor__ctor
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.#ctor
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.UriDialog_razor()
+  nameWithType: UriDialog_razor.UriDialog_razor()
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.#ctor*
+  name: UriDialog_razor
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_razor__ctor_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.UriDialog_razor
+  nameWithType: UriDialog_razor.UriDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.Culture
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_razor_Culture
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.Culture
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.Culture
+  nameWithType: UriDialog_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.Culture*
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_razor_Culture_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.Culture
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.Culture
+  nameWithType: UriDialog_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.resourceCulture
+  name: resourceCulture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_razor_resourceCulture
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.resourceCulture
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.resourceCulture
+  nameWithType: UriDialog_razor.resourceCulture
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.resourceMan
+  name: resourceMan
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_razor_resourceMan
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.resourceMan
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.resourceMan
+  nameWithType: UriDialog_razor.resourceMan
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.ResourceManager
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_razor_ResourceManager
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.ResourceManager
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.ResourceManager
+  nameWithType: UriDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.ResourceManager*
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_UriDialog_razor_ResourceManager_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.ResourceManager
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.UriDialog_razor.ResourceManager
+  nameWithType: UriDialog_razor.ResourceManager
 - uid: CG.Green.Areas.Admin.Shared
   name: CG.Green.Areas.Admin.Shared
   href: api/CG.Green.Areas.Admin.Shared.html
@@ -6483,6 +6715,12 @@ references:
   commentId: F:CG.Green.Globals.Models.Secrets.ValueLength
   fullName: CG.Green.Globals.Models.Secrets.ValueLength
   nameWithType: Globals.Models.Secrets.ValueLength
+- uid: CG.Green.Globals.Models.UriLength
+  name: UriLength
+  href: api/CG.Green.Globals.Models.html#CG_Green_Globals_Models_UriLength
+  commentId: F:CG.Green.Globals.Models.UriLength
+  fullName: CG.Green.Globals.Models.UriLength
+  nameWithType: Globals.Models.UriLength
 - uid: CG.Green.Globals.Models.Users
   name: Globals.Models.Users
   href: api/CG.Green.Globals.Models.Users.html
@@ -10660,6 +10898,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.EditClientVM.Enabled
   nameWithType: EditClientVM.Enabled
+- uid: CG.Green.ViewModels.EditClientVM.PostLogoutRedirectUris
+  name: PostLogoutRedirectUris
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_PostLogoutRedirectUris
+  commentId: P:CG.Green.ViewModels.EditClientVM.PostLogoutRedirectUris
+  fullName: CG.Green.ViewModels.EditClientVM.PostLogoutRedirectUris
+  nameWithType: EditClientVM.PostLogoutRedirectUris
+- uid: CG.Green.ViewModels.EditClientVM.PostLogoutRedirectUris*
+  name: PostLogoutRedirectUris
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_PostLogoutRedirectUris_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.PostLogoutRedirectUris
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.PostLogoutRedirectUris
+  nameWithType: EditClientVM.PostLogoutRedirectUris
+- uid: CG.Green.ViewModels.EditClientVM.RedirectUris
+  name: RedirectUris
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_RedirectUris
+  commentId: P:CG.Green.ViewModels.EditClientVM.RedirectUris
+  fullName: CG.Green.ViewModels.EditClientVM.RedirectUris
+  nameWithType: EditClientVM.RedirectUris
+- uid: CG.Green.ViewModels.EditClientVM.RedirectUris*
+  name: RedirectUris
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_RedirectUris_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.RedirectUris
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.RedirectUris
+  nameWithType: EditClientVM.RedirectUris
 - uid: CG.Green.ViewModels.EditClientVM.RequireClientSecret
   name: RequireClientSecret
   href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_RequireClientSecret
@@ -10750,6 +11014,25 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.NewClientVM.ClientId
   nameWithType: NewClientVM.ClientId
+- uid: CG.Green.ViewModels.UriVM
+  name: UriVM
+  href: api/CG.Green.ViewModels.UriVM.html
+  commentId: T:CG.Green.ViewModels.UriVM
+  fullName: CG.Green.ViewModels.UriVM
+  nameWithType: UriVM
+- uid: CG.Green.ViewModels.UriVM.Value
+  name: Value
+  href: api/CG.Green.ViewModels.UriVM.html#CG_Green_ViewModels_UriVM_Value
+  commentId: P:CG.Green.ViewModels.UriVM.Value
+  fullName: CG.Green.ViewModels.UriVM.Value
+  nameWithType: UriVM.Value
+- uid: CG.Green.ViewModels.UriVM.Value*
+  name: Value
+  href: api/CG.Green.ViewModels.UriVM.html#CG_Green_ViewModels_UriVM_Value_
+  commentId: Overload:CG.Green.ViewModels.UriVM.Value
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.UriVM.Value
+  nameWithType: UriVM.Value
 - uid: CG.Templates
   name: CG.Templates
   href: api/CG.Templates.html
