@@ -21,7 +21,7 @@ public class CultureController : Controller
     /// <param name="culture">The culture to use for the operation.</param>
     /// <param name="redirectUri">The URI to use for the operation.</param>
     /// <returns>The results of the action.</returns>
-    [HttpGet]
+    [HttpGet(Name = nameof(Set))]
     public IActionResult Set(
         string culture, 
         string redirectUri

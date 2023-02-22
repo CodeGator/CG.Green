@@ -18,23 +18,30 @@ internal class SwaggerConfiguration : IConfigureOptions<SwaggerGenOptions>
     /// </summary>
     internal protected readonly IApiVersionDescriptionProvider _provider;
 
-    #endregion
+	#endregion
 
-    // *******************************************************************
-    // Constructors.
-    // *******************************************************************
+	// *******************************************************************
+	// Constructors.
+	// *******************************************************************
 
-    #region Constructors
+	#region Constructors
 
-    /// <summary>
-    /// This constructor creates a new instance of the <see cref="SwaggerConfiguration"/>
-    /// class.
-    /// </summary>
-    /// <param name="provider">The <see cref="IApiVersionDescriptionProvider"> 
-    /// _provider</see> to use with this configurator.</param>
-    public SwaggerConfiguration(
-        IApiVersionDescriptionProvider provider
-        ) => this._provider = provider;
+	/// <summary>
+	/// This constructor creates a new instance of the <see cref="SwaggerConfiguration"/>
+	/// class.
+	/// </summary>
+	/// <param name="provider">The <see cref="IApiVersionDescriptionProvider"> 
+	/// _provider</see> to use with this configurator.</param>
+	public SwaggerConfiguration(
+		IApiVersionDescriptionProvider provider
+		)
+	{
+		// Validate the parameters before attempting to use them.
+		Guard.Instance().ThrowIfNull(provider, nameof(provider));
+
+		// Save the reference(s).
+		_provider = provider;
+	}
 
     #endregion
 
@@ -49,6 +56,9 @@ internal class SwaggerConfiguration : IConfigureOptions<SwaggerGenOptions>
         SwaggerGenOptions options
         )
     {
+		// Validate the parameters before attempting to use them.
+		Guard.Instance().ThrowIfNull(options, nameof(options));
+
         // Loop through the discovered API versions
         foreach (var description in _provider.ApiVersionDescriptions)
         {

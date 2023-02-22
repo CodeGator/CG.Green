@@ -46,7 +46,7 @@ public static class WebApplicationBuilderExtensions012
         // Wire up the auto-mapper.
         webApplicationBuilder.Services.AddAutoMapper(cfg =>
         {
-            // Wire up the conversion maps.
+            // Wire up the conversion maps between Duende models and our VMs.
             cfg.CreateMap<Client, ListClientVM>().ReverseMap();
             cfg.CreateMap<Client, NewClientVM>().ReverseMap();
             cfg.CreateMap<Client, EditClientVM>().ReverseMap();

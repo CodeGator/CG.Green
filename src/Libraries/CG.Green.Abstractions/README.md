@@ -1,7 +1,7 @@
 
 ### CG.Green.Abstractions - README
 
-This project contains abstractions for the **CG.Green** microservice.
+This project contains core abstractions for the **CG.Green** microservice.
 
 #### Notes
 

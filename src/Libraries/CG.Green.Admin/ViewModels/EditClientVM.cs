@@ -65,8 +65,20 @@ public class EditClientVM
     /// <summary>
     /// This property contains a list of secrets for the client.
     /// </summary>
-    [Display(Name = "Secrets")]
+    [Display(Name = "Client Secrets")]
     public List<ClientSecretVM> ClientSecrets { get; set; } = new();
 
-    #endregion
+    /// <summary>
+    /// This property contains a list of redirect URIs for the client.
+    /// </summary>
+    [Display(Name = "Redirect Uris")]
+    public List<string> RedirectUris { get; set; } = new();
+
+	/// <summary>
+	/// This property contains a list of post logout redirect URIs for the client.
+	/// </summary>
+	[Display(Name = "Post Logout Uris")]
+	public List<string> PostLogoutRedirectUris { get; set; } = new();
+
+	#endregion
 }

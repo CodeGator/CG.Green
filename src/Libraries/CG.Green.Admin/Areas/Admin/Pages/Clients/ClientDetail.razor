@@ -20,7 +20,7 @@
 else
 {
     <MudText Typo="Typo.h4">Client Details</MudText>
-    <MudText Class="py-5" Typo="Typo.body1">Use this page to edit the client</MudText>
+    <MudText Class="py-5" Typo="Typo.body1">Use this page to edit the client: <b>@_model.ClientId</b></MudText>
 
     <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
         <DataAnnotationsValidator />
@@ -110,6 +110,7 @@ else
                         <MudText Class="text-muted ml-3" Typo="Typo.caption">Require client to know secret(s).</MudText>
                     </MudItem>
                     <MudItem xs="12">
+                        <MudText Align="Align.Center" Typo="Typo.subtitle1">Client Secrets</MudText>
                         <MudTable Items="_model.ClientSecrets"
                                 Dense
                                 Striped
@@ -164,7 +165,98 @@ else
 
             <!-- Application Uris Panel -->
             <MudTabPanel Text="Uris" Icon="@Icons.Material.Outlined.WebAsset">
-
+                <MudGrid>
+                    <MudItem xs="12">
+                        <MudText Align="Align.Center" Typo="Typo.subtitle1">Redirect URIs</MudText>
+                        <MudTable Items="_model.RedirectUris"
+                                Dense
+                                Striped
+                                Virtualize
+                                Loading="@_isLoading">
+                            <ToolBarContent>
+                                <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                           Variant="Variant.Filled"
+                                           Disabled="@_isLoading"
+                                           Color="Color.Secondary"
+                                           OnClick="OnCreateRedirectUriAsync">Create</MudButton>
+                                <MudSpacer />
+                            </ToolBarContent>
+                            <ColGroup>
+                                <col style="width: 85%"/>
+                                <col />
+                            </ColGroup>
+                            <HeaderContent>
+                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                                <MudTh></MudTh>
+                            </HeaderContent>
+                            <RowTemplate Context="context2">
+                                <MudTd>@context2</MudTd>
+                                <MudTd>
+                                    <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                                   OnClick="() => OnDeleteRedirectUriAsync(context2)"
+                                                   Disabled="@_isLoading" />
+                                    <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                                   OnClick="() => OnEditRedirectUriAsync(context2)"
+                                                   Disabled="@_isLoading" />
+                                </MudTd>
+                            </RowTemplate>
+                            <NoRecordsContent>
+                                No URIs were found.
+                            </NoRecordsContent>
+                            <LoadingContent>
+                                Loading URIs ...
+                            </LoadingContent>
+                            <PagerContent>
+                                <MudTablePager />
+                            </PagerContent>
+                        </MudTable>
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudText Align="Align.Center" Typo="Typo.subtitle1">Post Logout Redirect URIs</MudText>
+                        <MudTable Items="_model.PostLogoutRedirectUris"
+                                Dense
+                                Striped
+                                Virtualize
+                                Loading="@_isLoading">
+                            <ToolBarContent>
+                                <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                           Variant="Variant.Filled"
+                                           Disabled="@_isLoading"
+                                           Color="Color.Secondary"
+                                           OnClick="OnCreatePostLogoutUriAsync">Create</MudButton>
+                                <MudSpacer />
+                            </ToolBarContent>
+                            <ColGroup>
+                                <col style="width: 85%"/>
+                                <col />
+                            </ColGroup>
+                            <HeaderContent>
+                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                                <MudTh></MudTh>
+                            </HeaderContent>
+                            <RowTemplate Context="context2">
+                                <MudTd>@context2</MudTd>
+                                <MudTd>
+                                    <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                                   OnClick="() => OnDeletePostLogoutUriAsync(context2)"
+                                                   Disabled="@_isLoading" />
+                                    <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                                   OnClick="() => OnEditPostLogoutUriAsync(context2)"
+                                                   Disabled="@_isLoading" />
+                                </MudTd>
+                            </RowTemplate>
+                            <NoRecordsContent>
+                                No URIs were found.
+                            </NoRecordsContent>
+                            <LoadingContent>
+                                Loading URIs ...
+                            </LoadingContent>
+                            <PagerContent>
+                                <MudTablePager />
+                            </PagerContent>
+                        </MudTable>
+                    </MudItem>
+                </MudGrid>
             </MudTabPanel>
 
         </MudTabs>

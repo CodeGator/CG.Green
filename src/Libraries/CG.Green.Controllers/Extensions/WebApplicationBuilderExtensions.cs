@@ -107,8 +107,8 @@ public static class WebApplicationBuilderExtensions002
         // Add the swagger configuration
         webApplicationBuilder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerConfiguration>();
 
-        // Tell the world what we are about to do.
-        bootstrapLogger?.LogDebug(
+		// Tell the world what we are about to do.
+		bootstrapLogger?.LogDebug(
             "Wiring up the auto-mapper for the controllers"
             );
 

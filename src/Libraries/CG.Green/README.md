@@ -1,7 +1,7 @@
 
 ### CG.Green - README
 
-This project contains core logic for the **CG.Green** microservice.
+This project contains core business logic for the **CG.Green** microservice.
 
 #### Notes
 

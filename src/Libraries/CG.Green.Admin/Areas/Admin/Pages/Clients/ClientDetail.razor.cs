@@ -515,19 +515,473 @@ public partial class ClientDetail
         }
     }
 
-    #endregion
-
     // *******************************************************************
-    // Private methods.
-    // *******************************************************************
-
-    #region Private methods
 
     /// <summary>
-    /// This method loads the data for the page.
+    /// This method creates a new redirect URI for the client.
     /// </summary>
     /// <returns>A task to perform the operation.</returns>
-    private async Task LoadDataAsync()
+    protected async Task OnCreateRedirectUriAsync()
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return;
+            }
+
+            // Create the dialog options.
+            var options = new DialogOptions
+            {
+                MaxWidth = MaxWidth.Small,
+                CloseOnEscapeKey = true,
+                FullWidth = true
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog parameters."
+                );
+
+            // Create the dialog parameters.
+            var parameters = new DialogParameters()
+            {
+                { "Model", "" }
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating new dialog."
+                );
+
+            // Create the dialog.
+            var dialog = Dialog.Show<UriDialog>(
+                "Create Redirect URI",
+                parameters,
+                options
+                );
+
+            // Get the results of the dialog.
+            var result = await dialog.Result;
+
+            // Did the user cancel?
+            if (result.Canceled)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Recovering the dialog model."
+                );
+
+            // Recover the model.
+            var model = (string)result.Data;
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Adding the redirect URI to the client."
+                );
+
+            // Add the URI.
+            _model.RedirectUris.Add(model);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to add a redirect URI!"
+                );
+
+            // Tell the world what happened.
+            await Dialog.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method edit the given redirect URI.
+    /// </summary>
+    /// <param name="uri">The URI to use for the operation.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task OnEditRedirectUriAsync(
+        string uri
+        )
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return;
+            }
+
+            // Create the dialog options.
+            var options = new DialogOptions
+            {
+                MaxWidth = MaxWidth.Small,
+                CloseOnEscapeKey = true,
+                FullWidth = true
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating dialog parameters."
+                );
+
+            // Create the dialog parameters.
+            var parameters = new DialogParameters()
+            {
+                { "Model", uri }
+            };
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Creating new dialog."
+                );
+
+            // Create the dialog.
+            var dialog = Dialog.Show<UriDialog>(
+                "Edit Redirect URI",
+                parameters,
+                options
+                );
+
+            // Get the results of the dialog.
+            var result = await dialog.Result;
+
+            // Did the user cancel?
+            if (result.Canceled)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Recovering the dialog model."
+                );
+
+            // Recover the model.
+            var model = (string)result.Data;
+                        
+            // Remove the original.
+            _model.RedirectUris.Remove(uri);
+
+            // Add the modified.
+            _model.RedirectUris.Add(model);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to edit a redirect URI!"
+                );
+
+            // Tell the world what happened.
+            await Dialog.ShowErrorBox(ex);
+        }
+    }
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method deletes the given redirect URI.
+    /// </summary>
+    /// <param name="uri">The URI to use for the operation.</param>
+    /// <returns>A task to perform the operation.</returns>
+    protected async Task OnDeleteRedirectUriAsync(
+        string uri
+        )
+    {
+        try
+        {
+            // Sanity check the model.
+            if (_model is null)
+            {
+                return;
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Prompting the caller."
+                );
+
+            // Prompt the user.
+            var result = await Dialog.ShowDeleteBox(
+                uri
+                );
+
+            // Did the user cancel?
+            if (!result)
+            {
+                return; // Nothing more to do.
+            }
+
+            // Log what we are about to do.
+            Logger.LogDebug(
+                "Deleting a redirect URI."
+                );
+
+            // Delete the uri
+            _model.RedirectUris.Remove(uri);
+        }
+        catch (Exception ex)
+        {
+            // Log what happened.
+            Logger.LogError(
+                ex.GetBaseException(),
+                "Failed to delete a redirect URI!"
+                );
+
+            // Tell the world what happened.
+            await Dialog.ShowErrorBox(ex);
+        }
+    }
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method creates a new post logout URI for the client.
+	/// </summary>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnCreatePostLogoutUriAsync()
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Create the dialog options.
+			var options = new DialogOptions
+			{
+				MaxWidth = MaxWidth.Small,
+				CloseOnEscapeKey = true,
+				FullWidth = true
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating dialog parameters."
+				);
+
+			// Create the dialog parameters.
+			var parameters = new DialogParameters()
+			{
+				{ "Model", "" }
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating new dialog."
+				);
+
+			// Create the dialog.
+			var dialog = Dialog.Show<UriDialog>(
+				"Create Post Logout URI",
+				parameters,
+				options
+				);
+
+			// Get the results of the dialog.
+			var result = await dialog.Result;
+
+			// Did the user cancel?
+			if (result.Canceled)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Recovering the dialog model."
+				);
+
+			// Recover the model.
+			var model = (string)result.Data;
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Adding the post logout URI to the client."
+				);
+
+			// Add the URI.
+			_model.PostLogoutRedirectUris.Add(model);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to add a post logout redirect URI!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method edit the given post logout URI.
+	/// </summary>
+	/// <param name="uri">The URI to use for the operation.</param>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnEditPostLogoutUriAsync(
+		string uri
+		)
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Create the dialog options.
+			var options = new DialogOptions
+			{
+				MaxWidth = MaxWidth.Small,
+				CloseOnEscapeKey = true,
+				FullWidth = true
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating dialog parameters."
+				);
+
+			// Create the dialog parameters.
+			var parameters = new DialogParameters()
+			{
+				{ "Model", uri }
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating new dialog."
+				);
+
+			// Create the dialog.
+			var dialog = Dialog.Show<UriDialog>(
+				"Edit Post Logout URI",
+				parameters,
+				options
+				);
+
+			// Get the results of the dialog.
+			var result = await dialog.Result;
+
+			// Did the user cancel?
+			if (result.Canceled)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Recovering the dialog model."
+				);
+
+			// Recover the model.
+			var model = (string)result.Data;
+
+			// Remove the original.
+			_model.PostLogoutRedirectUris.Remove(uri);
+
+			// Add the modified.
+			_model.PostLogoutRedirectUris.Add(model);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to edit a post logout redirect URI!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method deletes the given post logout URI.
+	/// </summary>
+	/// <param name="uri">The URI to use for the operation.</param>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnDeletePostLogoutUriAsync(
+		string uri
+		)
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Prompting the caller."
+				);
+
+			// Prompt the user.
+			var result = await Dialog.ShowDeleteBox(
+				uri
+				);
+
+			// Did the user cancel?
+			if (!result)
+			{
+				return; // Nothing more to do.
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Deleting a post logout redirect URI."
+				);
+
+			// Delete the uri
+			_model.PostLogoutRedirectUris.Remove(uri);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to delete a post logout redirect URI!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	#endregion
+
+	// *******************************************************************
+	// Private methods.
+	// *******************************************************************
+
+	#region Private methods
+
+	/// <summary>
+	/// This method loads the data for the page.
+	/// </summary>
+	/// <returns>A task to perform the operation.</returns>
+	private async Task LoadDataAsync()
     {
         try
         {

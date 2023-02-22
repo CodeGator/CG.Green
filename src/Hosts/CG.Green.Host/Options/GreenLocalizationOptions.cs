@@ -19,7 +19,7 @@ public class GreenLocalizationOptions
     public string Default { get; set; } = null!;
 
     /// <summary>
-    /// This property contains a list of available cultures.
+    /// This property contains a list of available cultures for the website.
     /// </summary>
     [Required]
     public List<string> Cultures { get; set; } = new();

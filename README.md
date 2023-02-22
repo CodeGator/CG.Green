@@ -18,7 +18,7 @@ We chose to build on Duende and ASP.NET because they are proven technologies and
 
 Keep in mind that Green is an idea - not a product. It's all likely to change, and change again, without notice. 
 
-Otherwise, the ASP.NET and Duende portions are hosted and working perfectly. The admin UI is coming along, slowly. The identity UI is functional but needs some love and attention.
+Otherwise, the ASP.NET and Duende portions are hosted and working perfectly. The admin UI is coming along, slowly. The identity UI is functional, but generally needs some love and attention.
 
 ### What does the roadmap look like?
 
@@ -27,6 +27,8 @@ We're not at a point where we can commit to a feature plan. Honestly, we might n
 ### What are the main dependencies?
 
 One of the main goals of this project is to minimize dependencies on third party libraries. Where third party libraries are used, we try to ensure that they are well established and actively developed / supported. 
+
+* [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor)
 
 * [Duende](https://duendesoftware.com/) (The library formerly known as IdentityServer4)
 
@@ -44,7 +46,7 @@ One of the main goals of this project is to minimize dependencies on third party
 
 ### What OS(s) does it support?
 
-A goal of the project is to produce a tool that can be run on (at least) Windows, and Linux. Thanks to .NET core, we operate on the following platforms:
+A goal of the project is to produce a tool that can be run on Windows and Linux. Thanks to .NET core, we operate on the following platforms:
 
 * [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) (tested)
 
@@ -58,7 +60,7 @@ We are building the project against [.NET 7.x](https://dotnet.microsoft.com/en-u
 
 ### What database(s) does it use?
 
-A goal of the project is to use a variety of back-end databases. We currently operate with:
+A goal of the project is to integrate with a variety of back-end databases. We currently operate with:
 
 * [SqlServer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
@@ -68,23 +70,19 @@ A goal of the project is to use a variety of back-end databases. We currently op
 
 * InMemory (for dev/demo/testing purposes)
 
+### Is there any documentation?
+
+There is developer documentation [HERE](https://codegator.github.io/CG.Green/) generated from XML comments.
+
+There is a WIKI (in progress) [HERE](https://github.com/CodeGator/CG.Green/wiki)
+
+We also write about projects like this one on our website [HERE](https://www.codegator.com)
+
 ### How do I contact you?
 
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.Green/issues)
 
 We also have a discussion group [HERE](https://github.com/CodeGator/CG.Green/discussions)
-
-### Is there any documentation?
-
-There is developer documentation [HERE](https://codegator.github.io/CG.Green/)
-
-There is a WIKI, in progress, [HERE](https://github.com/CodeGator/CG.Green/wiki)
-
-We also write about projects like this one on our website [HERE](https://www.codegator.com)
-
-### Can I help?
-
-We're not in position to accept contributors but we hope that changes, at some point. Keep checking back. 
 
 ## Disclaimer
 

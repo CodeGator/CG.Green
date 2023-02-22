@@ -6,18 +6,18 @@ namespace CG.Green.ViewModels;
 /// </summary>
 public class NewClientVM
 {
-    // *******************************************************************
-    // Properties.
-    // *******************************************************************
+	// *******************************************************************
+	// Properties.
+	// *******************************************************************
 
-    #region Properties
+	#region Properties
 
-    /// <summary>
-    /// This property contains the client identifier.
-    /// </summary>
-    [Required]
-    [MaxLength(Globals.Models.Clients.ClientIdLength)]
-    public string ClientId { get; set; } = null!;
+	/// <summary>
+	/// This property contains the client identifier.
+	/// </summary>
+	[Required]
+	[MaxLength(Globals.Models.Clients.ClientIdLength)]
+	public string ClientId { get; set; } = null!;
 
-    #endregion
+	#endregion
 }

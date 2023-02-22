@@ -18,6 +18,11 @@ public static class Globals
     public static class Models
     {
         /// <summary>
+        /// This constant represents the length of a URI.
+        /// </summary>
+        public const int UriLength = 400;
+
+        /// <summary>
         /// This class contains sizes for API scope properties.
         /// </summary>
         public static class ApiScopes
