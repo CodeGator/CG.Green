@@ -167,6 +167,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCopyClientId
   nameWithType: ClientDetail.OnCopyClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync
+  name: OnCreateFrontChannelLogoutUriAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateFrontChannelLogoutUriAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync()
+  nameWithType: ClientDetail.OnCreateFrontChannelLogoutUriAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync*
+  name: OnCreateFrontChannelLogoutUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateFrontChannelLogoutUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync
+  nameWithType: ClientDetail.OnCreateFrontChannelLogoutUriAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync
   name: OnCreatePostLogoutUriAsync()
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreatePostLogoutUriAsync
@@ -206,6 +219,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync
   nameWithType: ClientDetail.OnCreateSecretAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync(System.String)
+  name: OnDeleteFrontChannelLogoutUriAsync(String)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteFrontChannelLogoutUriAsync_System_String_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync(System.String)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync(System.String)
+  nameWithType: ClientDetail.OnDeleteFrontChannelLogoutUriAsync(String)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync*
+  name: OnDeleteFrontChannelLogoutUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteFrontChannelLogoutUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync
+  nameWithType: ClientDetail.OnDeleteFrontChannelLogoutUriAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync(System.String)
   name: OnDeletePostLogoutUriAsync(String)
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeletePostLogoutUriAsync_System_String_
@@ -245,6 +271,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync
   nameWithType: ClientDetail.OnDeleteSecretAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync(System.String)
+  name: OnEditFrontChannelLogoutUriAsync(String)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditFrontChannelLogoutUriAsync_System_String_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync(System.String)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync(System.String)
+  nameWithType: ClientDetail.OnEditFrontChannelLogoutUriAsync(String)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync*
+  name: OnEditFrontChannelLogoutUriAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditFrontChannelLogoutUriAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync
+  nameWithType: ClientDetail.OnEditFrontChannelLogoutUriAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync(System.String)
   name: OnEditPostLogoutUriAsync(String)
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditPostLogoutUriAsync_System_String_
@@ -1446,6 +1485,246 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Shared.DeleteDialog_razor.ResourceManager
   nameWithType: DeleteDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Shared.GroupBox
+  name: GroupBox
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html
+  commentId: T:CG.Green.Areas.Admin.Shared.GroupBox
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox
+  nameWithType: GroupBox
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Align
+  name: Align
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Align
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Align
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Align
+  nameWithType: GroupBox.Align
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Align*
+  name: Align
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Align_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Align
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Align
+  nameWithType: GroupBox.Align
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.ChildContent
+  name: ChildContent
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_ChildContent
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.ChildContent
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.ChildContent
+  nameWithType: GroupBox.ChildContent
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.ChildContent*
+  name: ChildContent
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_ChildContent_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.ChildContent
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.ChildContent
+  nameWithType: GroupBox.ChildContent
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Classname
+  name: Classname
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Classname
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Classname
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Classname
+  nameWithType: GroupBox.Classname
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Classname*
+  name: Classname
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Classname_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Classname
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Classname
+  nameWithType: GroupBox.Classname
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Color
+  name: Color
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Color
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Color
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Color
+  nameWithType: GroupBox.Color
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Color*
+  name: Color
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Color_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Color
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Color
+  nameWithType: GroupBox.Color
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Elevation
+  name: Elevation
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Elevation
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Elevation
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Elevation
+  nameWithType: GroupBox.Elevation
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Elevation*
+  name: Elevation
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Elevation_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Elevation
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Elevation
+  nameWithType: GroupBox.Elevation
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Height
+  name: Height
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Height
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Height
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Height
+  nameWithType: GroupBox.Height
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Height*
+  name: Height
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Height_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Height
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Height
+  nameWithType: GroupBox.Height
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.MaxHeight
+  name: MaxHeight
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_MaxHeight
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.MaxHeight
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.MaxHeight
+  nameWithType: GroupBox.MaxHeight
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.MaxHeight*
+  name: MaxHeight
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_MaxHeight_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.MaxHeight
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.MaxHeight
+  nameWithType: GroupBox.MaxHeight
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.MaxWidth
+  name: MaxWidth
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_MaxWidth
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.MaxWidth
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.MaxWidth
+  nameWithType: GroupBox.MaxWidth
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.MaxWidth*
+  name: MaxWidth
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_MaxWidth_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.MaxWidth
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.MaxWidth
+  nameWithType: GroupBox.MaxWidth
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.MinHeight
+  name: MinHeight
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_MinHeight
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.MinHeight
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.MinHeight
+  nameWithType: GroupBox.MinHeight
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.MinHeight*
+  name: MinHeight
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_MinHeight_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.MinHeight
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.MinHeight
+  nameWithType: GroupBox.MinHeight
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.MinWidth
+  name: MinWidth
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_MinWidth
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.MinWidth
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.MinWidth
+  nameWithType: GroupBox.MinWidth
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.MinWidth*
+  name: MinWidth
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_MinWidth_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.MinWidth
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.MinWidth
+  nameWithType: GroupBox.MinWidth
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Outlined
+  name: Outlined
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Outlined
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Outlined
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Outlined
+  nameWithType: GroupBox.Outlined
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Outlined*
+  name: Outlined
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Outlined_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Outlined
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Outlined
+  nameWithType: GroupBox.Outlined
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.RightToLeft
+  name: RightToLeft
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_RightToLeft
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.RightToLeft
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.RightToLeft
+  nameWithType: GroupBox.RightToLeft
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.RightToLeft*
+  name: RightToLeft
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_RightToLeft_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.RightToLeft
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.RightToLeft
+  nameWithType: GroupBox.RightToLeft
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Square
+  name: Square
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Square
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Square
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Square
+  nameWithType: GroupBox.Square
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Square*
+  name: Square
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Square_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Square
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Square
+  nameWithType: GroupBox.Square
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Stylename
+  name: Stylename
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Stylename
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Stylename
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Stylename
+  nameWithType: GroupBox.Stylename
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Stylename*
+  name: Stylename
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Stylename_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Stylename
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Stylename
+  nameWithType: GroupBox.Stylename
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Theme
+  name: Theme
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Theme
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Theme
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Theme
+  nameWithType: GroupBox.Theme
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Theme*
+  name: Theme
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Theme_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Theme
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Theme
+  nameWithType: GroupBox.Theme
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Title
+  name: Title
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Title
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Title
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Title
+  nameWithType: GroupBox.Title
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Title*
+  name: Title
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Title_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Title
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Title
+  nameWithType: GroupBox.Title
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Typo
+  name: Typo
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Typo
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Typo
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Typo
+  nameWithType: GroupBox.Typo
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Typo*
+  name: Typo
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Typo_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Typo
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Typo
+  nameWithType: GroupBox.Typo
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Width
+  name: Width
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Width
+  commentId: P:CG.Green.Areas.Admin.Shared.GroupBox.Width
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Width
+  nameWithType: GroupBox.Width
+- uid: CG.Green.Areas.Admin.Shared.GroupBox.Width*
+  name: Width
+  href: api/CG.Green.Areas.Admin.Shared.GroupBox.html#CG_Green_Areas_Admin_Shared_GroupBox_Width_
+  commentId: Overload:CG.Green.Areas.Admin.Shared.GroupBox.Width
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Shared.GroupBox.Width
+  nameWithType: GroupBox.Width
 - uid: CG.Green.Areas.Identity
   name: CG.Green.Areas.Identity
   href: api/CG.Green.Areas.Identity.html
@@ -6946,6 +7225,28 @@ references:
   commentId: T:CG.Green.Host.Controllers.CultureController
   fullName: CG.Green.Host.Controllers.CultureController
   nameWithType: CultureController
+- uid: CG.Green.Host.Controllers.CultureController.#ctor(ILogger{CG.Green.Host.Controllers.CultureController})
+  name: CultureController(ILogger<CultureController>)
+  href: api/CG.Green.Host.Controllers.CultureController.html#CG_Green_Host_Controllers_CultureController__ctor_ILogger_CG_Green_Host_Controllers_CultureController__
+  commentId: M:CG.Green.Host.Controllers.CultureController.#ctor(ILogger{CG.Green.Host.Controllers.CultureController})
+  name.vb: CultureController(ILogger(Of CultureController))
+  fullName: CG.Green.Host.Controllers.CultureController.CultureController(ILogger<CG.Green.Host.Controllers.CultureController>)
+  fullName.vb: CG.Green.Host.Controllers.CultureController.CultureController(ILogger(Of CG.Green.Host.Controllers.CultureController))
+  nameWithType: CultureController.CultureController(ILogger<CultureController>)
+  nameWithType.vb: CultureController.CultureController(ILogger(Of CultureController))
+- uid: CG.Green.Host.Controllers.CultureController.#ctor*
+  name: CultureController
+  href: api/CG.Green.Host.Controllers.CultureController.html#CG_Green_Host_Controllers_CultureController__ctor_
+  commentId: Overload:CG.Green.Host.Controllers.CultureController.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Host.Controllers.CultureController.CultureController
+  nameWithType: CultureController.CultureController
+- uid: CG.Green.Host.Controllers.CultureController._logger
+  name: _logger
+  href: api/CG.Green.Host.Controllers.CultureController.html#CG_Green_Host_Controllers_CultureController__logger
+  commentId: F:CG.Green.Host.Controllers.CultureController._logger
+  fullName: CG.Green.Host.Controllers.CultureController._logger
+  nameWithType: CultureController._logger
 - uid: CG.Green.Host.Controllers.CultureController.Set(System.String,System.String)
   name: Set(String, String)
   href: api/CG.Green.Host.Controllers.CultureController.html#CG_Green_Host_Controllers_CultureController_Set_System_String_System_String_
@@ -10898,6 +11199,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.EditClientVM.Enabled
   nameWithType: EditClientVM.Enabled
+- uid: CG.Green.ViewModels.EditClientVM.FrontChannelLogoutUris
+  name: FrontChannelLogoutUris
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_FrontChannelLogoutUris
+  commentId: P:CG.Green.ViewModels.EditClientVM.FrontChannelLogoutUris
+  fullName: CG.Green.ViewModels.EditClientVM.FrontChannelLogoutUris
+  nameWithType: EditClientVM.FrontChannelLogoutUris
+- uid: CG.Green.ViewModels.EditClientVM.FrontChannelLogoutUris*
+  name: FrontChannelLogoutUris
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_FrontChannelLogoutUris_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.FrontChannelLogoutUris
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.FrontChannelLogoutUris
+  nameWithType: EditClientVM.FrontChannelLogoutUris
 - uid: CG.Green.ViewModels.EditClientVM.PostLogoutRedirectUris
   name: PostLogoutRedirectUris
   href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_PostLogoutRedirectUris
