@@ -13,6 +13,160 @@ references:
   commentId: N:CG.Green.Areas.Admin.Pages.Clients
   fullName: CG.Green.Areas.Admin.Pages.Clients
   nameWithType: CG.Green.Areas.Admin.Pages.Clients
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog
+  name: ClientClaimDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog
+  nameWithType: ClientClaimDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Cancel
+  name: Cancel()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Cancel
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Cancel
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Cancel()
+  nameWithType: ClientClaimDialog.Cancel()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Cancel
+  nameWithType: ClientClaimDialog.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Dialog
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Dialog
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Dialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Dialog
+  nameWithType: ClientClaimDialog.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Dialog*
+  name: Dialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Dialog_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Dialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Dialog
+  nameWithType: ClientClaimDialog.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Localizer
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Localizer
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Localizer
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Localizer
+  nameWithType: ClientClaimDialog.Localizer
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Localizer*
+  name: Localizer
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Localizer_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Localizer
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Localizer
+  nameWithType: ClientClaimDialog.Localizer
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Logger
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Logger
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Logger
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Logger
+  nameWithType: ClientClaimDialog.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Logger*
+  name: Logger
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Logger_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Logger
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Logger
+  nameWithType: ClientClaimDialog.Logger
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Model
+  name: Model
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Model
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Model
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Model
+  nameWithType: ClientClaimDialog.Model
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Model*
+  name: Model
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_Model_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Model
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.Model
+  nameWithType: ClientClaimDialog.Model
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.MudDialog
+  name: MudDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_MudDialog
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.MudDialog
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.MudDialog
+  nameWithType: ClientClaimDialog.MudDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.MudDialog*
+  name: MudDialog
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_MudDialog_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.MudDialog
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.MudDialog
+  nameWithType: ClientClaimDialog.MudDialog
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.OnValidSubmit
+  name: OnValidSubmit()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_OnValidSubmit
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.OnValidSubmit
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.OnValidSubmit()
+  nameWithType: ClientClaimDialog.OnValidSubmit()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.OnValidSubmit*
+  name: OnValidSubmit
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_OnValidSubmit_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.OnValidSubmit
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.OnValidSubmit
+  nameWithType: ClientClaimDialog.OnValidSubmit
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor
+  name: ClientClaimDialog_razor
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html
+  commentId: T:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor
+  nameWithType: ClientClaimDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.#ctor
+  name: ClientClaimDialog_razor()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_razor__ctor
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.#ctor
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.ClientClaimDialog_razor()
+  nameWithType: ClientClaimDialog_razor.ClientClaimDialog_razor()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.#ctor*
+  name: ClientClaimDialog_razor
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_razor__ctor_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.#ctor
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.ClientClaimDialog_razor
+  nameWithType: ClientClaimDialog_razor.ClientClaimDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.Culture
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_razor_Culture
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.Culture
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.Culture
+  nameWithType: ClientClaimDialog_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.Culture*
+  name: Culture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_razor_Culture_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.Culture
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.Culture
+  nameWithType: ClientClaimDialog_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.resourceCulture
+  name: resourceCulture
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_razor_resourceCulture
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.resourceCulture
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.resourceCulture
+  nameWithType: ClientClaimDialog_razor.resourceCulture
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.resourceMan
+  name: resourceMan
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_razor_resourceMan
+  commentId: F:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.resourceMan
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.resourceMan
+  nameWithType: ClientClaimDialog_razor.resourceMan
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.ResourceManager
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_razor_ResourceManager
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.ResourceManager
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.ResourceManager
+  nameWithType: ClientClaimDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.ResourceManager*
+  name: ResourceManager
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientClaimDialog_razor_ResourceManager_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.ResourceManager
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.ResourceManager
+  nameWithType: ClientClaimDialog_razor.ResourceManager
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail
   name: ClientDetail
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html
@@ -167,6 +321,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCopyClientId
   nameWithType: ClientDetail.OnCopyClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateClaimAsync
+  name: OnCreateClaimAsync()
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateClaimAsync
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateClaimAsync
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateClaimAsync()
+  nameWithType: ClientDetail.OnCreateClaimAsync()
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateClaimAsync*
+  name: OnCreateClaimAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateClaimAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateClaimAsync
+  nameWithType: ClientDetail.OnCreateClaimAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync
   name: OnCreateFrontChannelLogoutUriAsync()
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateFrontChannelLogoutUriAsync
@@ -219,6 +386,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync
   nameWithType: ClientDetail.OnCreateSecretAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteClaimAsync(ClientClaimVM)
+  name: OnDeleteClaimAsync(ClientClaimVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteClaimAsync_ClientClaimVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteClaimAsync(ClientClaimVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteClaimAsync(ClientClaimVM)
+  nameWithType: ClientDetail.OnDeleteClaimAsync(ClientClaimVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteClaimAsync*
+  name: OnDeleteClaimAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteClaimAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteClaimAsync
+  nameWithType: ClientDetail.OnDeleteClaimAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync(System.String)
   name: OnDeleteFrontChannelLogoutUriAsync(String)
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteFrontChannelLogoutUriAsync_System_String_
@@ -271,6 +451,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync
   nameWithType: ClientDetail.OnDeleteSecretAsync
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditClaimAsync(ClientClaimVM)
+  name: OnEditClaimAsync(ClientClaimVM)
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditClaimAsync_ClientClaimVM_
+  commentId: M:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditClaimAsync(ClientClaimVM)
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditClaimAsync(ClientClaimVM)
+  nameWithType: ClientDetail.OnEditClaimAsync(ClientClaimVM)
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditClaimAsync*
+  name: OnEditClaimAsync
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditClaimAsync_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditClaimAsync
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditClaimAsync
+  nameWithType: ClientDetail.OnEditClaimAsync
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync(System.String)
   name: OnEditFrontChannelLogoutUriAsync(String)
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditFrontChannelLogoutUriAsync_System_String_
@@ -11057,6 +11250,38 @@ references:
   commentId: N:CG.Green.ViewModels
   fullName: CG.Green.ViewModels
   nameWithType: CG.Green.ViewModels
+- uid: CG.Green.ViewModels.ClientClaimVM
+  name: ClientClaimVM
+  href: api/CG.Green.ViewModels.ClientClaimVM.html
+  commentId: T:CG.Green.ViewModels.ClientClaimVM
+  fullName: CG.Green.ViewModels.ClientClaimVM
+  nameWithType: ClientClaimVM
+- uid: CG.Green.ViewModels.ClientClaimVM.Type
+  name: Type
+  href: api/CG.Green.ViewModels.ClientClaimVM.html#CG_Green_ViewModels_ClientClaimVM_Type
+  commentId: P:CG.Green.ViewModels.ClientClaimVM.Type
+  fullName: CG.Green.ViewModels.ClientClaimVM.Type
+  nameWithType: ClientClaimVM.Type
+- uid: CG.Green.ViewModels.ClientClaimVM.Type*
+  name: Type
+  href: api/CG.Green.ViewModels.ClientClaimVM.html#CG_Green_ViewModels_ClientClaimVM_Type_
+  commentId: Overload:CG.Green.ViewModels.ClientClaimVM.Type
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.ClientClaimVM.Type
+  nameWithType: ClientClaimVM.Type
+- uid: CG.Green.ViewModels.ClientClaimVM.Value
+  name: Value
+  href: api/CG.Green.ViewModels.ClientClaimVM.html#CG_Green_ViewModels_ClientClaimVM_Value
+  commentId: P:CG.Green.ViewModels.ClientClaimVM.Value
+  fullName: CG.Green.ViewModels.ClientClaimVM.Value
+  nameWithType: ClientClaimVM.Value
+- uid: CG.Green.ViewModels.ClientClaimVM.Value*
+  name: Value
+  href: api/CG.Green.ViewModels.ClientClaimVM.html#CG_Green_ViewModels_ClientClaimVM_Value_
+  commentId: Overload:CG.Green.ViewModels.ClientClaimVM.Value
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.ClientClaimVM.Value
+  nameWithType: ClientClaimVM.Value
 - uid: CG.Green.ViewModels.ClientSecretVM
   name: ClientSecretVM
   href: api/CG.Green.ViewModels.ClientSecretVM.html
@@ -11134,6 +11359,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.EditClientVM.AllowOfflineAccess
   nameWithType: EditClientVM.AllowOfflineAccess
+- uid: CG.Green.ViewModels.EditClientVM.Claims
+  name: Claims
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_Claims
+  commentId: P:CG.Green.ViewModels.EditClientVM.Claims
+  fullName: CG.Green.ViewModels.EditClientVM.Claims
+  nameWithType: EditClientVM.Claims
+- uid: CG.Green.ViewModels.EditClientVM.Claims*
+  name: Claims
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_Claims_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.Claims
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.Claims
+  nameWithType: EditClientVM.Claims
 - uid: CG.Green.ViewModels.EditClientVM.ClientId
   name: ClientId
   href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_ClientId

@@ -14,11 +14,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog.html",
+          "hash": "sXcrOyN0yE55ewSPjsGhIwsLTC/wUXGlCCM5ga1trKM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientClaimDialog_razor.html",
+          "hash": "hdR8Av9LxnWshcBnM2g5rHJMBgu8X+exoQSU+xItxF0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html",
-          "hash": "rMh9yA8UbKqMjohbUBWDfTQXLaeMl+dMWjTs4i3tlXs="
+          "hash": "st0Y6AUHAS7ZsfUqvTmuXfZXSo242lnzwmPS5drp4kQ="
         }
       },
       "is_incremental": false,
@@ -138,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.html",
-          "hash": "6KmeJ2wRTIPn3k/sQjstMO/ufGX1fVyvpm1/VrXaPXs="
+          "hash": "96H72FKgbWkHDKVsavPJl9bafgG+WZa2tjT0IJn3lC0="
         }
       },
       "is_incremental": false,
@@ -2534,6 +2558,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.ViewModels.ClientClaimVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.ViewModels.ClientClaimVM.html",
+          "hash": "8mu1nRHqf06mQnkfCOHEkjqeUaM5Jpc9qTW6PiWxnic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.ViewModels.ClientSecretVM.yml",
       "output": {
         ".html": {
@@ -2550,7 +2586,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.ViewModels.EditClientVM.html",
-          "hash": "Z5g/9SbhXtGkSvGJAPo4E00wOxQQ6C1uZB9+sdESug8="
+          "hash": "y5ppIYJ7QRxNBEe3jBTnkhpqX13CYdwfRSBaAg/F9Rg="
         }
       },
       "is_incremental": false,
@@ -2598,7 +2634,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.ViewModels.html",
-          "hash": "N4eBaNrpEdOuutUET1aN+ViKYQAX3yIA/CrSYGJ1W9g="
+          "hash": "KcFw1MrBPfpzXveYL2G+EIOeHX/GG/ZReW1ECOjXDYs="
         }
       },
       "is_incremental": false,
@@ -2850,7 +2886,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "PxMoD4+8BpP6OyReCHxnuZMR22HF90zAVUP2/hi4eqs="
+          "hash": "AkT8Kk1pM5JTnKwikjQMdcDQmIbr+8O62o8eIrri6cI="
         }
       },
       "is_incremental": false,
@@ -2969,7 +3005,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 236,
+          "total_file_count": 239,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
