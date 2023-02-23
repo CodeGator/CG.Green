@@ -1,0 +1,17 @@
+﻿@inherits MudComponentBase
+
+<div @attributes="UserAttributes" class="@Classname" style="@Stylename">
+    @if (!string.IsNullOrEmpty(Title))
+    {
+        <MudText Class="my-1" Typo="@Typo" Color="@Color" Align="@Align">@Title</MudText>
+    }
+    @ChildContent
+</div>
+
+<style>
+.groupbox {
+    border: 1px solid #BDBDBD !important;
+    border-radius: 8px;
+    padding: 10px;
+}
+</style>

@@ -13,3 +13,4 @@ global using Microsoft.AspNetCore.Components.Forms;
 global using Microsoft.Extensions.Localization;
 global using CG.Green.Areas.Admin.Shared;
 global using CG.Green.Services;
+global using MudBlazor.Utilities;

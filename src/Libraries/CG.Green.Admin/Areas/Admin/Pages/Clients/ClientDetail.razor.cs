@@ -969,6 +969,233 @@ public partial class ClientDetail
 		}
 	}
 
+	// *******************************************************************
+
+	/// <summary>
+	/// This method creates a new front channel logout URI for the client.
+	/// </summary>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnCreateFrontChannelLogoutUriAsync()
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Create the dialog options.
+			var options = new DialogOptions
+			{
+				MaxWidth = MaxWidth.Small,
+				CloseOnEscapeKey = true,
+				FullWidth = true
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating dialog parameters."
+				);
+
+			// Create the dialog parameters.
+			var parameters = new DialogParameters()
+			{
+				{ "Model", "" }
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating new dialog."
+				);
+
+			// Create the dialog.
+			var dialog = Dialog.Show<UriDialog>(
+				"Create Front Channel Logout URI",
+				parameters,
+				options
+				);
+
+			// Get the results of the dialog.
+			var result = await dialog.Result;
+
+			// Did the user cancel?
+			if (result.Canceled)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Recovering the dialog model."
+				);
+
+			// Recover the model.
+			var model = (string)result.Data;
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Adding the fromt channel logout URI to the client."
+				);
+
+			// Add the URI.
+			_model.FrontChannelLogoutUris.Add(model);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to add a front channel logout redirect URI!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method deletes the given front channel logout URI.
+	/// </summary>
+	/// <param name="uri">The URI to use for the operation.</param>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnDeleteFrontChannelLogoutUriAsync(
+		string uri
+		)
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Prompting the caller."
+				);
+
+			// Prompt the user.
+			var result = await Dialog.ShowDeleteBox(
+				uri
+				);
+
+			// Did the user cancel?
+			if (!result)
+			{
+				return; // Nothing more to do.
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Deleting a front channel logout redirect URI."
+				);
+
+			// Delete the uri
+			_model.FrontChannelLogoutUris.Remove(uri);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to delete a front channel logout redirect URI!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method edit the given front channel logout URI.
+	/// </summary>
+	/// <param name="uri">The URI to use for the operation.</param>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnEditFrontChannelLogoutUriAsync(
+		string uri
+		)
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Create the dialog options.
+			var options = new DialogOptions
+			{
+				MaxWidth = MaxWidth.Small,
+				CloseOnEscapeKey = true,
+				FullWidth = true
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating dialog parameters."
+				);
+
+			// Create the dialog parameters.
+			var parameters = new DialogParameters()
+			{
+				{ "Model", uri }
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating new dialog."
+				);
+
+			// Create the dialog.
+			var dialog = Dialog.Show<UriDialog>(
+				"Edit Front Channel Logout URI",
+				parameters,
+				options
+				);
+
+			// Get the results of the dialog.
+			var result = await dialog.Result;
+
+			// Did the user cancel?
+			if (result.Canceled)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Recovering the dialog model."
+				);
+
+			// Recover the model.
+			var model = (string)result.Data;
+
+			// Remove the original.
+			_model.FrontChannelLogoutUris.Remove(uri);
+
+			// Add the modified.
+			_model.FrontChannelLogoutUris.Add(model);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to edit a front channel logout redirect URI!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
 	#endregion
 
 	// *******************************************************************

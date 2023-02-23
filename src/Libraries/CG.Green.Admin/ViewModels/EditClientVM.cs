@@ -80,5 +80,11 @@ public class EditClientVM
 	[Display(Name = "Post Logout Uris")]
 	public List<string> PostLogoutRedirectUris { get; set; } = new();
 
+	/// <summary>
+	/// This property contains a list of front channel logout URIs for the client.
+	/// </summary>
+	[Display(Name = "Front Channel Logout Uris")]
+	public List<string> FrontChannelLogoutUris { get; set; } = new();
+
 	#endregion
 }

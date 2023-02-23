@@ -13,14 +13,14 @@
     }
     else
     {
-        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! we couldn't find that client!</MudText>
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! we couldn't find that Duende client!</MudText>
         <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => Navigation.NavigateTo("/admin/clients"))">Back to Clients</MudButton>
     }
 }
 else
 {
     <MudText Typo="Typo.h4">Client Details</MudText>
-    <MudText Class="py-5" Typo="Typo.body1">Use this page to edit the client: <b>@_model.ClientId</b></MudText>
+    <MudText Class="py-5" Typo="Typo.body1">Use this page to edit the Duende client: <b>@_model.ClientId</b></MudText>
 
     <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
         <DataAnnotationsValidator />
@@ -110,151 +110,205 @@ else
                         <MudText Class="text-muted ml-3" Typo="Typo.caption">Require client to know secret(s).</MudText>
                     </MudItem>
                     <MudItem xs="12">
-                        <MudText Align="Align.Center" Typo="Typo.subtitle1">Client Secrets</MudText>
-                        <MudTable Items="_model.ClientSecrets"
-                                Dense
-                                Striped
-                                Virtualize
-                                Loading="@_isLoading">
-                        <ToolBarContent>
-                            <MudButton StartIcon="@Icons.Material.Outlined.Create"
-                                       Variant="Variant.Filled"
-                                       Disabled="@_isLoading"
-                                       Color="Color.Secondary"
-                                       OnClick="OnCreateSecretAsync">Create</MudButton>
-                            <MudSpacer />
-                        </ToolBarContent>
-                        <ColGroup>
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                        </ColGroup>
-                        <HeaderContent>
-                            <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Expiration)">Expiration</MudTableSortLabel></MudTh>
-                            <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
-                            <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
-                            <MudTh></MudTh>
-                        </HeaderContent>
-                        <RowTemplate Context="context2">
-                            <MudTd DataLabel="Expiration">@context2.Expiration</MudTd>
-                            <MudTd DataLabel="Description">@context2.Description</MudTd>
-                            <MudTd DataLabel="Value">@context2.Value</MudTd>
-                            <MudTd>
-                                <MudIconButton Icon="@Icons.Material.Outlined.Delete"
-                                               OnClick="() => OnDeleteSecretAsync(context2)"
-                                               Disabled="@_isLoading" />
-                                <MudIconButton Icon="@Icons.Material.Outlined.Edit"
-                                               OnClick="() => OnEditSecretAsync(context2)"
-                                               Disabled="@_isLoading" />
-                            </MudTd>
-                        </RowTemplate>
-                        <NoRecordsContent>
-                            No secrets were found.
-                        </NoRecordsContent>
-                        <LoadingContent>
-                            Loading secrets ...
-                        </LoadingContent>
-                        <PagerContent>
-                            <MudTablePager />
-                        </PagerContent>
-                        </MudTable>
+                        <GroupBox Title="Client Secrets">
+                            <MudTable Items="_model.ClientSecrets"
+                                        Elevation="0"
+                                        Dense
+                                        Striped
+                                        Virtualize
+                                      Loading="@_isLoading">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                               Variant="Variant.Filled"
+                                               Disabled="@_isLoading"
+                                               Color="Color.Secondary"
+                                               OnClick="OnCreateSecretAsync">Create</MudButton>
+                                    <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
+                                </ColGroup>
+                                <HeaderContent>
+                                    <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Expiration)">Expiration</MudTableSortLabel></MudTh>
+                                    <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
+                                    <MudTh><MudTableSortLabel SortBy="new Func<ClientSecretVM, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
+                                    <MudTh></MudTh>
+                                </HeaderContent>
+                                <RowTemplate Context="context2">
+                                    <MudTd DataLabel="Expiration">@context2.Expiration</MudTd>
+                                    <MudTd DataLabel="Description">@context2.Description</MudTd>
+                                    <MudTd DataLabel="Value">@context2.Value</MudTd>
+                                    <MudTd>
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                                       OnClick="() => OnDeleteSecretAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                                       OnClick="() => OnEditSecretAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                    </MudTd>
+                                </RowTemplate>
+                                <NoRecordsContent>
+                                    No secrets were found.
+                                </NoRecordsContent>
+                                <LoadingContent>
+                                    Loading secrets ...
+                                </LoadingContent>
+                                <PagerContent>
+                                    <MudTablePager />
+                                </PagerContent>
+                            </MudTable>
+                        </GroupBox>
                     </MudItem>
                 </MudGrid>
             </MudTabPanel>
 
-            <!-- Application Uris Panel -->
+            <!-- Uris Panel -->
             <MudTabPanel Text="Uris" Icon="@Icons.Material.Outlined.WebAsset">
                 <MudGrid>
+                    <MudItem xs="12">&nbsp;</MudItem>
                     <MudItem xs="12">
-                        <MudText Align="Align.Center" Typo="Typo.subtitle1">Redirect URIs</MudText>
-                        <MudTable Items="_model.RedirectUris"
-                                Dense
-                                Striped
-                                Virtualize
-                                Loading="@_isLoading">
-                            <ToolBarContent>
-                                <MudButton StartIcon="@Icons.Material.Outlined.Create"
-                                           Variant="Variant.Filled"
-                                           Disabled="@_isLoading"
-                                           Color="Color.Secondary"
-                                           OnClick="OnCreateRedirectUriAsync">Create</MudButton>
-                                <MudSpacer />
-                            </ToolBarContent>
-                            <ColGroup>
-                                <col style="width: 85%"/>
-                                <col />
-                            </ColGroup>
-                            <HeaderContent>
-                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
-                                <MudTh></MudTh>
-                            </HeaderContent>
-                            <RowTemplate Context="context2">
-                                <MudTd>@context2</MudTd>
-                                <MudTd>
-                                    <MudIconButton Icon="@Icons.Material.Outlined.Delete"
-                                                   OnClick="() => OnDeleteRedirectUriAsync(context2)"
-                                                   Disabled="@_isLoading" />
-                                    <MudIconButton Icon="@Icons.Material.Outlined.Edit"
-                                                   OnClick="() => OnEditRedirectUriAsync(context2)"
-                                                   Disabled="@_isLoading" />
-                                </MudTd>
-                            </RowTemplate>
-                            <NoRecordsContent>
-                                No URIs were found.
-                            </NoRecordsContent>
-                            <LoadingContent>
-                                Loading URIs ...
-                            </LoadingContent>
-                            <PagerContent>
-                                <MudTablePager />
-                            </PagerContent>
-                        </MudTable>
+                        <GroupBox Title="Redirect URIs">
+                            <MudTable Items="_model.RedirectUris"
+                                    Elevation="0"
+                                    Dense
+                                    Striped
+                                    Virtualize
+                                  Loading="@_isLoading">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                               Variant="Variant.Filled"
+                                               Disabled="@_isLoading"
+                                               Color="Color.Secondary"
+                                               OnClick="OnCreateRedirectUriAsync">Create</MudButton>
+                                    <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col style="width: 85%" />
+                                    <col />
+                                </ColGroup>
+                                <HeaderContent>
+                                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                                    <MudTh></MudTh>
+                                </HeaderContent>
+                                <RowTemplate Context="context2">
+                                    <MudTd>@context2</MudTd>
+                                    <MudTd>
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                                       OnClick="() => OnDeleteRedirectUriAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                                       OnClick="() => OnEditRedirectUriAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                    </MudTd>
+                                </RowTemplate>
+                                <NoRecordsContent>
+                                    No URIs were found.
+                                </NoRecordsContent>
+                                <LoadingContent>
+                                    Loading URIs ...
+                                </LoadingContent>
+                                <PagerContent>
+                                    <MudTablePager />
+                                </PagerContent>
+                            </MudTable>
+                        </GroupBox>
                     </MudItem>
                     <MudItem xs="12">
-                        <MudText Align="Align.Center" Typo="Typo.subtitle1">Post Logout Redirect URIs</MudText>
-                        <MudTable Items="_model.PostLogoutRedirectUris"
-                                Dense
-                                Striped
-                                Virtualize
-                                Loading="@_isLoading">
-                            <ToolBarContent>
-                                <MudButton StartIcon="@Icons.Material.Outlined.Create"
-                                           Variant="Variant.Filled"
-                                           Disabled="@_isLoading"
-                                           Color="Color.Secondary"
-                                           OnClick="OnCreatePostLogoutUriAsync">Create</MudButton>
-                                <MudSpacer />
-                            </ToolBarContent>
-                            <ColGroup>
-                                <col style="width: 85%"/>
-                                <col />
-                            </ColGroup>
-                            <HeaderContent>
-                                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
-                                <MudTh></MudTh>
-                            </HeaderContent>
-                            <RowTemplate Context="context2">
-                                <MudTd>@context2</MudTd>
-                                <MudTd>
-                                    <MudIconButton Icon="@Icons.Material.Outlined.Delete"
-                                                   OnClick="() => OnDeletePostLogoutUriAsync(context2)"
-                                                   Disabled="@_isLoading" />
-                                    <MudIconButton Icon="@Icons.Material.Outlined.Edit"
-                                                   OnClick="() => OnEditPostLogoutUriAsync(context2)"
-                                                   Disabled="@_isLoading" />
-                                </MudTd>
-                            </RowTemplate>
-                            <NoRecordsContent>
-                                No URIs were found.
-                            </NoRecordsContent>
-                            <LoadingContent>
-                                Loading URIs ...
-                            </LoadingContent>
-                            <PagerContent>
-                                <MudTablePager />
-                            </PagerContent>
-                        </MudTable>
+                        <GroupBox Title="Post Logout Redirect URIs">
+                            <MudTable Items="_model.PostLogoutRedirectUris"
+                                    Elevation="0"
+                                    Dense
+                                    Striped
+                                    Virtualize
+                                  Loading="@_isLoading">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                               Variant="Variant.Filled"
+                                               Disabled="@_isLoading"
+                                               Color="Color.Secondary"
+                                               OnClick="OnCreatePostLogoutUriAsync">Create</MudButton>
+                                    <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col style="width: 85%" />
+                                    <col />
+                                </ColGroup>
+                                <HeaderContent>
+                                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                                    <MudTh></MudTh>
+                                </HeaderContent>
+                                <RowTemplate Context="context2">
+                                    <MudTd>@context2</MudTd>
+                                    <MudTd>
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                                       OnClick="() => OnDeletePostLogoutUriAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                                       OnClick="() => OnEditPostLogoutUriAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                    </MudTd>
+                                </RowTemplate>
+                                <NoRecordsContent>
+                                    No URIs were found.
+                                </NoRecordsContent>
+                                <LoadingContent>
+                                    Loading URIs ...
+                                </LoadingContent>
+                                <PagerContent>
+                                    <MudTablePager />
+                                </PagerContent>
+                            </MudTable>
+                        </GroupBox>                        
+                    </MudItem>
+                    <MudItem xs="12">
+                        <GroupBox Title="Front Channel Logout URIs">
+                            <MudTable Items="_model.FrontChannelLogoutUris"
+                                    Elevation="0"
+                                    Dense
+                                    Striped
+                                    Virtualize
+                                  Loading="@_isLoading">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                               Variant="Variant.Filled"
+                                               Disabled="@_isLoading"
+                                               Color="Color.Secondary"
+                                               OnClick="OnCreateFrontChannelLogoutUriAsync">Create</MudButton>
+                                    <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col style="width: 85%" />
+                                    <col />
+                                </ColGroup>
+                                <HeaderContent>
+                                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                                    <MudTh></MudTh>
+                                </HeaderContent>
+                                <RowTemplate Context="context2">
+                                    <MudTd>@context2</MudTd>
+                                    <MudTd>
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                                       OnClick="() => OnDeleteFrontChannelLogoutUriAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                                       OnClick="() => OnEditFrontChannelLogoutUriAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                    </MudTd>
+                                </RowTemplate>
+                                <NoRecordsContent>
+                                    No URIs were found.
+                                </NoRecordsContent>
+                                <LoadingContent>
+                                    Loading URIs ...
+                                </LoadingContent>
+                                <PagerContent>
+                                    <MudTablePager />
+                                </PagerContent>
+                            </MudTable>
+                        </GroupBox>                        
                     </MudItem>
                 </MudGrid>
             </MudTabPanel>
