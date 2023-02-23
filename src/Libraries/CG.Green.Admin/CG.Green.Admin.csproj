@@ -29,6 +29,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Compile Update="Areas\Admin\Pages\Clients\ClientClaimDialog.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ClientClaimDialog.razor.resx</DependentUpon>
+      </Compile>
       <Compile Update="Areas\Admin\Pages\Clients\UriDialog.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -62,6 +67,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\ClientClaimDialog.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ClientClaimDialog.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\UriDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>UriDialog.razor.Designer.cs</LastGenOutput>

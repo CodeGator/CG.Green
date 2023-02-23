@@ -313,6 +313,62 @@ else
                 </MudGrid>
             </MudTabPanel>
 
+            <!-- Claims Panel -->
+            <MudTabPanel Text="Claims" Icon="@Icons.Material.Outlined.Checklist">
+                <MudGrid>
+                    <MudItem xs="12">
+                        <GroupBox Title="Client Claims">
+                            <MudTable Items="_model.Claims"
+                                    Elevation="0"
+                                    Dense
+                                    Striped
+                                    Virtualize
+                                  Loading="@_isLoading">
+                                <ToolBarContent>
+                                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                               Variant="Variant.Filled"
+                                               Disabled="@_isLoading"
+                                               Color="Color.Secondary"
+                                               OnClick="OnCreateClaimAsync">Create</MudButton>
+                                    <MudSpacer />
+                                </ToolBarContent>
+                                <ColGroup>
+                                    <col style="width: 42%" />
+                                    <col style="width: 42%" />
+                                    <col />
+                                </ColGroup>
+                                <HeaderContent>
+                                    <MudTh><MudTableSortLabel SortBy="new Func<ClientClaimVM, object>(x=>x.Type)">Type</MudTableSortLabel></MudTh>
+                                    <MudTh><MudTableSortLabel SortBy="new Func<ClientClaimVM, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
+                                    <MudTh></MudTh>
+                                </HeaderContent>
+                                <RowTemplate Context="context2">
+                                    <MudTd DataLabel="Type">@context2.Type</MudTd>
+                                    <MudTd DataLabel="Value">@context2.Value</MudTd>
+                                    <MudTd>
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                                       OnClick="() => OnDeleteClaimAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                                       OnClick="() => OnEditClaimAsync(context2)"
+                                                       Disabled="@_isLoading" />
+                                    </MudTd>
+                                </RowTemplate>
+                                <NoRecordsContent>
+                                    No claims were found.
+                                </NoRecordsContent>
+                                <LoadingContent>
+                                    Loading claims ...
+                                </LoadingContent>
+                                <PagerContent>
+                                    <MudTablePager />
+                                </PagerContent>
+                            </MudTable>
+                        </GroupBox>
+                    </MudItem>
+                </MudGrid>
+            </MudTabPanel>
+
         </MudTabs>
 
         <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>

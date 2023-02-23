@@ -1,4 +1,7 @@
 ﻿
+using MudBlazor;
+using System;
+
 namespace CG.Green.Areas.Admin.Pages.Clients;
 
 /// <summary>
@@ -830,7 +833,7 @@ public partial class ClientDetail
 	// *******************************************************************
 
 	/// <summary>
-	/// This method edit the given post logout URI.
+	/// This method edits the given post logout URI.
 	/// </summary>
 	/// <param name="uri">The URI to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
@@ -1113,7 +1116,7 @@ public partial class ClientDetail
 	// *******************************************************************
 
 	/// <summary>
-	/// This method edit the given front channel logout URI.
+	/// This method edits the given front channel logout URI.
 	/// </summary>
 	/// <param name="uri">The URI to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
@@ -1189,6 +1192,233 @@ public partial class ClientDetail
 			Logger.LogError(
 				ex.GetBaseException(),
 				"Failed to edit a front channel logout redirect URI!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method creates a new claim for the client.
+	/// </summary>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnCreateClaimAsync()
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Create the dialog options.
+			var options = new DialogOptions
+			{
+				MaxWidth = MaxWidth.Small,
+				CloseOnEscapeKey = true,
+				FullWidth = true
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating dialog parameters."
+				);
+
+			// Create the dialog parameters.
+			var parameters = new DialogParameters()
+			{
+				{ "Model", new ClientClaimVM() }
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating new dialog."
+				);
+
+			// Create the dialog.
+			var dialog = Dialog.Show<ClientClaimDialog>(
+				"Create Claim",
+				parameters,
+				options
+				);
+
+			// Get the results of the dialog.
+			var result = await dialog.Result;
+
+			// Did the user cancel?
+			if (result.Canceled)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Recovering the dialog model."
+				);
+
+			// Recover the model.
+			var model = (ClientClaimVM)result.Data;
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Adding the claim to the client."
+				);
+
+			// Add the claim.
+			_model.Claims.Add(model);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to add a claim to the client!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method edits the given claim.
+	/// </summary>
+	/// <param name="claim">The claim to use for the operation.</param>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnEditClaimAsync(
+		ClientClaimVM claim
+		)
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Create the dialog options.
+			var options = new DialogOptions
+			{
+				MaxWidth = MaxWidth.Small,
+				CloseOnEscapeKey = true,
+				FullWidth = true
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating dialog parameters."
+				);
+
+			// Create the dialog parameters.
+			var parameters = new DialogParameters()
+			{
+				{ "Model", claim }
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating new dialog."
+				);
+
+			// Create the dialog.
+			var dialog = Dialog.Show<ClientClaimDialog>(
+				"Edit Claim",
+				parameters,
+				options
+				);
+
+			// Get the results of the dialog.
+			var result = await dialog.Result;
+
+			// Did the user cancel?
+			if (result.Canceled)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Recovering the dialog model."
+				);
+
+			// Recover the model.
+			var model = (ClientClaimVM)result.Data;
+
+			// Remove the original.
+			_model.Claims.Remove(claim);
+
+			// Add the modified.
+			_model.Claims.Add(model);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to edit a claim!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method deletes the given claim from the client.
+	/// </summary>
+	/// <param name="claim">The claim to use for the operation.</param>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnDeleteClaimAsync(
+		ClientClaimVM claim
+		)
+	{
+		try
+		{
+			// Sanity check the model.
+			if (_model is null)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Prompting the caller."
+				);
+
+			// Prompt the user.
+			var result = await Dialog.ShowDeleteBox(
+				claim.Type
+				);
+
+			// Did the user cancel?
+			if (!result)
+			{
+				return; // Nothing more to do.
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Deleting a claim."
+				);
+
+			// Delete the claim
+			_model.Claims.Remove(claim);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to delete a claim!"
 				);
 
 			// Tell the world what happened.

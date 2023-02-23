@@ -86,5 +86,11 @@ public class EditClientVM
 	[Display(Name = "Front Channel Logout Uris")]
 	public List<string> FrontChannelLogoutUris { get; set; } = new();
 
+	/// <summary>
+	/// This property contains a list of claims for the client.
+	/// </summary>
+	[Display(Name = "Claims")]
+	public List<ClientClaimVM> Claims { get; set; } = new();
+
 	#endregion
 }
