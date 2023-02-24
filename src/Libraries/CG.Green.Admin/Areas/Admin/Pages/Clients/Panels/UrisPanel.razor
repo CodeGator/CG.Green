@@ -1,0 +1,145 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    <MudItem xs="12">
+        <GroupBox Title="Redirect URIs">
+        <MudTable Items="Model.RedirectUris"
+                Elevation="0"
+                Dense
+                Striped
+                Virtualize
+                Loading="@_isLoading">
+            <ToolBarContent>
+                <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                            Variant="Variant.Filled"
+                            Disabled="@_isLoading"
+                            Color="Color.Secondary"
+                            OnClick="OnCreateRedirectUriAsync">Create</MudButton>
+                <MudSpacer />
+            </ToolBarContent>
+            <ColGroup>
+                <col style="width: 85%" />
+                <col />
+            </ColGroup>
+            <HeaderContent>
+                <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                <MudTh></MudTh>
+            </HeaderContent>
+            <RowTemplate Context="context2">
+                <MudTd>@context2</MudTd>
+                <MudTd>
+                    <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                    OnClick="() => OnDeleteRedirectUriAsync(context2)"
+                                    Disabled="@_isLoading" />
+                    <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                    OnClick="() => OnEditRedirectUriAsync(context2)"
+                                    Disabled="@_isLoading" />
+                </MudTd>
+            </RowTemplate>
+            <NoRecordsContent>
+                No URIs were found.
+            </NoRecordsContent>
+            <LoadingContent>
+                Loading URIs ...
+            </LoadingContent>
+            <PagerContent>
+                <MudTablePager />
+            </PagerContent>
+        </MudTable>
+    </GroupBox>
+    </MudItem>
+    <MudItem xs="12">
+        <GroupBox Title="Post Logout Redirect URIs">
+            <MudTable Items="Model.PostLogoutRedirectUris"
+                    Elevation="0"
+                    Dense
+                    Striped
+                    Virtualize
+                    Loading="@_isLoading">
+                <ToolBarContent>
+                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                Variant="Variant.Filled"
+                                Disabled="@_isLoading"
+                                Color="Color.Secondary"
+                                OnClick="OnCreatePostLogoutUriAsync">Create</MudButton>
+                    <MudSpacer />
+                </ToolBarContent>
+                <ColGroup>
+                    <col style="width: 85%" />
+                    <col />
+                </ColGroup>
+                <HeaderContent>
+                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                    <MudTh></MudTh>
+                </HeaderContent>
+                <RowTemplate Context="context2">
+                    <MudTd>@context2</MudTd>
+                    <MudTd>
+                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                        OnClick="() => OnDeletePostLogoutUriAsync(context2)"
+                                        Disabled="@_isLoading" />
+                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                        OnClick="() => OnEditPostLogoutUriAsync(context2)"
+                                        Disabled="@_isLoading" />
+                    </MudTd>
+                </RowTemplate>
+                <NoRecordsContent>
+                    No URIs were found.
+                </NoRecordsContent>
+                <LoadingContent>
+                    Loading URIs ...
+                </LoadingContent>
+                <PagerContent>
+                    <MudTablePager />
+                </PagerContent>
+            </MudTable>
+        </GroupBox>                        
+    </MudItem>
+    <MudItem xs="12">
+        <GroupBox Title="Front Channel Logout URIs">
+            <MudTable Items="Model.FrontChannelLogoutUris"
+                    Elevation="0"
+                    Dense
+                    Striped
+                    Virtualize
+                    Loading="@_isLoading">
+                <ToolBarContent>
+                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                Variant="Variant.Filled"
+                                Disabled="@_isLoading"
+                                Color="Color.Secondary"
+                                OnClick="OnCreateFrontChannelLogoutUriAsync">Create</MudButton>
+                    <MudSpacer />
+                </ToolBarContent>
+                <ColGroup>
+                    <col style="width: 85%" />
+                    <col />
+                </ColGroup>
+                <HeaderContent>
+                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                    <MudTh></MudTh>
+                </HeaderContent>
+                <RowTemplate Context="context2">
+                    <MudTd>@context2</MudTd>
+                    <MudTd>
+                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                        OnClick="() => OnDeleteFrontChannelLogoutUriAsync(context2)"
+                                        Disabled="@_isLoading" />
+                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                        OnClick="() => OnEditFrontChannelLogoutUriAsync(context2)"
+                                        Disabled="@_isLoading" />
+                    </MudTd>
+                </RowTemplate>
+                <NoRecordsContent>
+                    No URIs were found.
+                </NoRecordsContent>
+                <LoadingContent>
+                    Loading URIs ...
+                </LoadingContent>
+                <PagerContent>
+                    <MudTablePager />
+                </PagerContent>
+            </MudTable>
+        </GroupBox>                        
+    </MudItem>
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

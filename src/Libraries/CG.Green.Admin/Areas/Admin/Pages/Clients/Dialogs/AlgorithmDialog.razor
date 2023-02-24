@@ -1,0 +1,26 @@
+﻿<MudDialog>
+    <DialogContent>
+        <EditForm Model="@Model" OnValidSubmit="OnValidSubmit">
+            <MudCard Outlined>
+                <MudCardContent>
+                    <DataAnnotationsValidator />
+                    <MudTextField AutoFocus
+                                  Required
+                                  Immediate
+                                  OnlyValidateIfDirty
+                                  Margin="Margin.Dense"
+                                  Counter="@(Globals.Models.Clients.SigningAlgorithmLength)"
+                                  Variant="Variant.Outlined"
+                                  Label="Signing Algorithm"
+                                  For="@(() => Model)"
+                                  @bind-Value="@Model"
+                                  Class="ml-auto" />
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">Cancel</MudButton>
+                        <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">Save</MudButton>
+                    </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </DialogContent>
+</MudDialog>

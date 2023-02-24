@@ -1,12 +1,10 @@
 ﻿
-using System;
-
 namespace CG.Green.Areas.Admin.Pages.Clients.Panels;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="TokenPanel"/> component.
+/// This class is the code-behind for the <see cref="SecretsPanel"/> component.
 /// </summary>
-public partial class TokenPanel
+public partial class SecretsPanel
 {
 	// *******************************************************************
 	// Fields.
@@ -40,22 +38,34 @@ public partial class TokenPanel
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
+	/// This property contains the localizer for the component.
+	/// </summary>
+	[Inject]
+	protected IStringLocalizer<SecretsPanel> Localizer { get; set; } = null!;
+
+	/// <summary>
+	/// This property contains the snackbar service for the component.
+	/// </summary>
+	[Inject]
+	protected ISnackbar Snackbar { get; set; } = null!;
+
+	/// <summary>
+	/// This property contains the clipboard service for the component.
+	/// </summary>
+	[Inject]
+	protected ClipboardService Clipboard { get; set; } = null!;
+
+	/// <summary>
 	/// This property contains the dialog service for the component.
 	/// </summary>
 	[Inject]
 	protected IDialogService Dialog { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<TokenPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the logger for the component.
 	/// </summary>
 	[Inject]
-	protected ILogger<TokenPanel> Logger { get; set; } = null!;
+	protected ILogger<SecretsPanel> Logger { get; set; } = null!;
 
 	#endregion
 
@@ -64,12 +74,11 @@ public partial class TokenPanel
 	// *******************************************************************
 
 	#region Protected methods
-
 	/// <summary>
-	/// This method is called to create a new signing algorithm.
+	/// This method creates a new secret for the client.
 	/// </summary>
 	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnCreateSigningAlgorithmAsync()
+	protected async Task OnCreateSecretAsync()
 	{
 		try
 		{
@@ -95,7 +104,7 @@ public partial class TokenPanel
 			// Create the dialog parameters.
 			var parameters = new DialogParameters()
 			{
-				{ "Model", "" }
+				{ "Model", new ClientSecretVM() }
 			};
 
 			// Log what we are about to do.
@@ -104,8 +113,8 @@ public partial class TokenPanel
 				);
 
 			// Create the dialog.
-			var dialog = Dialog.Show<AlgorithmDialog>(
-				"Create a Signing Algorithm",
+			var dialog = Dialog.Show<ClientSecretDialog>(
+				"Create Secret",
 				parameters,
 				options
 				);
@@ -125,22 +134,25 @@ public partial class TokenPanel
 				);
 
 			// Recover the model.
-			var model = (string)result.Data;
+			var model = (ClientSecretVM)result.Data;
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Adding the signing algorithm to the client."
-			);
+				"Add the secret to the client."
+				);
 
-			// Add the URI.
-			Model.AllowedIdentityTokenSigningAlgorithms.Add(model);
+			// Make sure the secret is hashed.
+			model.Value = model.Value.ToSha256();
+
+			// Add the secret to the model.
+			Model.ClientSecrets.Add(model);
 		}
 		catch (Exception ex)
 		{
 			// Log what happened.
 			Logger.LogError(
 				ex.GetBaseException(),
-				"Failed to add a signing algorithm!"
+				"Failed to add a secret!"
 				);
 
 			// Tell the world what happened.
@@ -151,98 +163,12 @@ public partial class TokenPanel
 	// *******************************************************************
 
 	/// <summary>
-	/// This method is called to edit the given signing algorithm.
+	/// This method deletes the given secret from the client.
 	/// </summary>
-	/// <param name="algorithm">The algorithm to use for the operation.</param>
+	/// <param name="secret">The secret to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnEditSigningAlgorithmAsync(
-		string algorithm
-		)
-	{
-		try
-		{
-			// Sanity check the model.
-			if (Model is null)
-			{
-				return;
-			}
-
-			// Create the dialog options.
-			var options = new DialogOptions
-			{
-				MaxWidth = MaxWidth.Small,
-				CloseOnEscapeKey = true,
-				FullWidth = true
-			};
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Creating dialog parameters."
-				);
-
-			// Create the dialog parameters.
-			var parameters = new DialogParameters()
-			{
-				{ "Model", algorithm }
-			};
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Creating new dialog."
-				);
-
-			// Create the dialog.
-			var dialog = Dialog.Show<AlgorithmDialog>(
-				"Edit Signing Algorithm",
-				parameters,
-				options
-				);
-
-			// Get the results of the dialog.
-			var result = await dialog.Result;
-
-			// Did the user cancel?
-			if (result.Canceled)
-			{
-				return;
-			}
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Recovering the dialog model."
-				);
-
-			// Recover the model.
-			var model = (string)result.Data;
-
-			// Remove the original.
-			Model.AllowedIdentityTokenSigningAlgorithms.Remove(algorithm);
-
-			// Add the modified.
-			Model.AllowedIdentityTokenSigningAlgorithms.Add(model);
-		}
-		catch (Exception ex)
-		{
-			// Log what happened.
-			Logger.LogError(
-				ex.GetBaseException(),
-				"Failed to edit a signing algorithm!"
-				);
-
-			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
-		}
-	}
-
-	// *******************************************************************
-
-	/// <summary>
-	/// This method is called to delete the given signing algorithm.
-	/// </summary>
-	/// <param name="algorithm">The algorithm to use for the operation.</param>
-	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnDeleteSigningAlgorithmAsync(
-		string algorithm
+	protected async Task OnDeleteSecretAsync(
+		ClientSecretVM secret
 		)
 	{
 		try
@@ -260,7 +186,7 @@ public partial class TokenPanel
 
 			// Prompt the user.
 			var result = await Dialog.ShowDeleteBox(
-				algorithm
+				secret.Value
 				);
 
 			// Did the user cancel?
@@ -271,18 +197,113 @@ public partial class TokenPanel
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Deleting a signing algorithm."
+				"Deleting a secret."
 				);
 
-			// Delete the signing algorithm
-			Model.AllowedIdentityTokenSigningAlgorithms.Remove(algorithm);
+			// Delete the secret
+			Model.ClientSecrets.Remove(secret);
 		}
 		catch (Exception ex)
 		{
 			// Log what happened.
 			Logger.LogError(
 				ex.GetBaseException(),
-				"Failed to delete a signing algorithm!"
+				"Failed to delete a secret!"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(ex);
+		}
+	}
+
+	// *******************************************************************
+
+	/// <summary>
+	/// This method edit the given secret.
+	/// </summary>
+	/// <param name="secret">The secret to use for the operation.</param>
+	/// <returns>A task to perform the operation.</returns>
+	protected async Task OnEditSecretAsync(
+		ClientSecretVM secret
+		)
+	{
+		try
+		{
+			// Sanity check the model.
+			if (Model is null)
+			{
+				return;
+			}
+
+			// Create the dialog options.
+			var options = new DialogOptions
+			{
+				MaxWidth = MaxWidth.Small,
+				CloseOnEscapeKey = true,
+				FullWidth = true
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating dialog parameters."
+				);
+
+			// Create the dialog parameters.
+			var parameters = new DialogParameters()
+			{
+				{ "Model", secret },
+				{ "IsEditing", true }
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Creating new dialog."
+				);
+
+			// Create the dialog.
+			var dialog = Dialog.Show<ClientSecretDialog>(
+				"Edit Secret",
+				parameters,
+				options
+				);
+
+			// Get the results of the dialog.
+			var result = await dialog.Result;
+
+			// Did the user cancel?
+			if (result.Canceled)
+			{
+				return;
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Recovering the dialog model."
+				);
+
+			// Recover the model.
+			var model = (ClientSecretVM)result.Data;
+
+			// Should we hash the value?
+			if (!model.IsHashed)
+			{
+				// Hash the value.
+				model.Value = model.Value.ToSha256();
+				model.IsHashed = true;
+			}
+
+			// Remove the original.
+			Model.ClientSecrets.Remove(secret);
+
+			// Add the modified.
+			Model.ClientSecrets.Add(model);
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to edit a secret!"
 				);
 
 			// Tell the world what happened.

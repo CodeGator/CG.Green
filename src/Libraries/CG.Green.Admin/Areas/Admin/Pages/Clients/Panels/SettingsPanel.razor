@@ -1,0 +1,66 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    <MudItem xs="12">
+        <MudTextField ReadOnly
+                        DisableUnderLine
+                        Margin="Margin.Dense"
+                        Counter="@(Globals.Models.Clients.ClientIdLength)"
+                        Class="ml-auto"
+                        Variant="Variant.Outlined"
+                        Label="Client Id"
+                        HelperText="This is the value external callers will use to connect to this client."
+                        Adornment="Adornment.End"
+                        AdornmentAriaLabel="generate id"
+                        AdornmentIcon="@Icons.Material.TwoTone.CopyAll"
+                        OnAdornmentClick="OnCopyClientId"
+                        For="@(() => Model.ClientId)"
+                        @bind-Value="@Model.ClientId" />
+    </MudItem>
+    <MudItem xs="12">
+        <MudTextField AutoFocus
+                        Required
+                        Immediate
+                        OnlyValidateIfDirty
+                        Margin="Margin.Dense"
+                        Counter="@(Globals.Models.Clients.ClientNameLength)"
+                        Class="ml-auto"
+                        Variant="Variant.Outlined"
+                        Label="Client Name"
+                        For="@(() => Model.ClientName)"
+                        @bind-Value="@Model.ClientName" />
+    </MudItem>
+    <MudItem xs="12">
+        <MudTextField Immediate
+                        OnlyValidateIfDirty
+                        Margin="Margin.Dense"
+                        Counter="@(Globals.Models.Clients.DescriptionLength)"
+                        Class="ml-auto"
+                        Variant="Variant.Outlined"
+                        Label="Client Description"
+                        Lines="4"
+                        For="@(() => Model.Description)"
+                        @bind-Value="@Model.Description" />
+    </MudItem>
+    <MudItem xs="4">
+        <MudCheckBox T="bool"
+                        Class="mb-n3"
+                        @bind-Checked="Model.Enabled"
+                        Label="Is Enabled" />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">Enable/disable the client.</MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudCheckBox T="bool"
+                    Class="mb-n3"
+                    @bind-Checked="Model.AllowOfflineAccess"
+                    Label="Allow Offline Access" />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">Enable/disable refresh tokens.</MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudCheckBox T="bool"
+                    Class="mb-n3"
+                    @bind-Checked="Model.RequireRequestObject"
+                    Label="Require Request Object" />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">Require signed requests only.</MudText>
+    </MudItem>
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

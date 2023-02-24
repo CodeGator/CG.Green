@@ -67,10 +67,15 @@ public static class Globals
         /// </summary>
         public static class Clients
         {
-            /// <summary>
-            /// This constant represents the length of the ClientName property.
-            /// </summary>
-            public const int ClientNameLength = 200;
+			/// <summary>
+			/// This constant represents the length of the SigningAlgorithm property.
+			/// </summary>
+			public const int SigningAlgorithmLength = 10;
+
+			/// <summary>
+			/// This constant represents the length of the ClientName property.
+			/// </summary>
+			public const int ClientNameLength = 200;
 
             /// <summary>
             /// This constant represents the length of the ClientId property.

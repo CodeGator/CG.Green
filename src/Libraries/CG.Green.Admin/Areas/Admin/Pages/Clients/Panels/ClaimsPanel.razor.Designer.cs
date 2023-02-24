@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Green.Areas.Admin.Shared {
+namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Shared {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class DeleteDialog_razor {
+    internal class ClaimsPanel_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal DeleteDialog_razor() {
+        internal ClaimsPanel_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Shared {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Shared.DeleteDialog.razor", typeof(DeleteDialog_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.razor", typeof(ClaimsPanel_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,38 +61,56 @@ namespace CG.Green.Areas.Admin.Shared {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Confirm.
+        ///   Looks up a localized string similar to Client Claims.
         /// </summary>
-        internal static string Confirm {
+        internal static string ClientClaims {
             get {
-                return ResourceManager.GetString("Confirm", resourceCulture);
+                return ResourceManager.GetString("ClientClaims", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please type in &apos;{0}&apos; to confirm..
+        ///   Looks up a localized string similar to Create.
         /// </summary>
-        internal static string LongConfirm {
+        internal static string Create {
             get {
-                return ResourceManager.GetString("LongConfirm", resourceCulture);
+                return ResourceManager.GetString("Create", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;b&gt;Warning:&lt;/b&gt;&amp;nbsp;this action cannot be undone!.
+        ///   Looks up a localized string similar to Loading claims.
         /// </summary>
-        internal static string Warning {
+        internal static string LoadingClaims {
             get {
-                return ResourceManager.GetString("Warning", resourceCulture);
+                return ResourceManager.GetString("LoadingClaims", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Are you sure you want to delete &lt;b&gt;{0}&lt;/b&gt;?.
+        ///   Looks up a localized string similar to No claims were found..
         /// </summary>
-        internal static string YouSure {
+        internal static string NoClaims {
             get {
-                return ResourceManager.GetString("YouSure", resourceCulture);
+                return ResourceManager.GetString("NoClaims", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type.
+        /// </summary>
+        internal static string Type {
+            get {
+                return ResourceManager.GetString("Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        internal static string Value {
+            get {
+                return ResourceManager.GetString("Value", resourceCulture);
             }
         }
     }

@@ -12,7 +12,7 @@ public partial class ClientsIndex
 
     #region Fields
 
-    // <summary>
+    /// <summary>
     /// This field contains a reference to breadcrumbs for the view.
     /// </summary>
     internal protected readonly List<BreadcrumbItem> _crumbs = new()

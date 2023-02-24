@@ -1,1 +1,174 @@
-﻿<p>This is the token panel.</p>
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    
+    <!-- Access Token Group -->
+    <MudItem xs="12">
+        <GroupBox Title="Access Tokens">
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudTextField AutoFocus
+                                  Margin="Margin.Dense"
+                                  Class="ml-auto"
+                                  Variant="Variant.Outlined"
+                                  InputType="InputType.Number"
+                                  Label="Access Token Lifetime"
+                                  HelperText="Lifetime of an access token in seconds."
+                                  For="@(() => Model.AccessTokenLifetime)"
+                                  @bind-Value="@Model.AccessTokenLifetime" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudSelect T="AccessTokenType"
+                               Dense
+                               Variant="Variant.Outlined"
+                               Margin="Margin.Dense"
+                               Label="Access Token Type"
+                               @bind-Value="Model.AccessTokenType"
+                               HelperText="Specifies whether the access token is a reference token or a self contained JWT token.">
+                        @foreach (var enumValue in Enum.GetValues<AccessTokenType>())
+                        {
+                            <MudSelectItem Value=@enumValue>@Enum.GetName(typeof(AccessTokenType), enumValue)</MudSelectItem>
+                        }
+                    </MudSelect>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudSwitch Label="Allow access tokens via browser"
+                               Color="Color.Tertiary"
+                               Class="mt-n2"
+                               @bind-Checked="@Model.AllowAccessTokensViaBrowser" />
+                    <MudText Class="ml-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">Controls whether access tokens are transmitted via the browser, for this client.</MudText>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudSwitch Label="Update access token claims on refresh"
+                               Color="Color.Tertiary"
+                               Class="mt-n2"
+                               @bind-Checked="@Model.UpdateAccessTokenClaimsOnRefresh" />
+                    <MudText Class="ml-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">Controls whether the access token (and its claims) should be updated on a refresh token request</MudText>
+                </MudItem>
+            </MudGrid>
+        </GroupBox>
+    </MudItem>
+    
+    <!-- Identity Token Group -->
+    <MudItem xs="12">
+        <GroupBox Title="Identity Tokens">
+            <MudItem xs="12">
+                <MudTextField Margin="Margin.Dense"
+                              Class="ml-auto"
+                              Variant="Variant.Outlined"
+                              InputType="InputType.Number"
+                              Label="Identity Token Lifetime"
+                              HelperText="Lifetime of an identity token in seconds."
+                              For="@(() => Model.IdentityTokenLifetime)"
+                              @bind-Value="@Model.IdentityTokenLifetime" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudSwitch Label="Always include user claims in identity token"
+                           Class="mt-2"
+                           Color="Color.Tertiary"
+                           @bind-Checked="@Model.AlwaysIncludeUserClaimsInIdToken" />
+                <MudText Class="ml-2 mb-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">When requesting both an id token and access token, should the user claims always be added to the id token instead of requiring the client to use the userinfo endpoint.</MudText>
+            </MudItem>  
+            <MudItem xs="12">
+                <GroupBox Class="mt-4" Title="Allowed Signing Algorithms">
+                    <MudText Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">Signing algorithm for identity token. If empty, will use the Duende default signing algorithm.</MudText>
+                    <MudTable Items="Model.AllowedIdentityTokenSigningAlgorithms">
+                        <ToolBarContent>
+                            <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                       Variant="Variant.Filled"
+                                       Disabled="@_isLoading"
+                                       Color="Color.Primary"
+                                       OnClick="OnCreateSigningAlgorithmAsync">Create</MudButton>
+                            <MudSpacer />
+                        </ToolBarContent>
+                        <ColGroup>
+                            <col style="width:85%" />
+                            <col />
+                        </ColGroup>
+                        <HeaderContent>
+                            <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                            <MudTh></MudTh>
+                        </HeaderContent>
+                        <RowTemplate>
+                            <MudTd>@context</MudTd>
+                            <MudTd>
+                                <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                               OnClick="() => OnDeleteSigningAlgorithmAsync(context)"
+                                               Disabled="@_isLoading" />
+                                <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                               OnClick="() => OnEditSigningAlgorithmAsync(context)"
+                                               Disabled="@_isLoading" />
+                            </MudTd>
+                        </RowTemplate>
+                        <PagerContent>
+                            <MudTablePager />
+                        </PagerContent>
+                        <NoRecordsContent>
+                            No signing algorithms were found.
+                        </NoRecordsContent>
+                        <LoadingContent>
+                            Loading signing algorithms ...
+                        </LoadingContent>
+                    </MudTable>
+                </GroupBox>                
+            </MudItem>
+        </GroupBox>
+    </MudItem>
+
+    <!-- Refresh Token Group -->
+    <MudItem xs="12">
+        <GroupBox Title="Refresh Tokens">
+            <MudItem xs="12">
+                <MudSelect T="TokenExpiration"
+                           Dense
+                           Class="mb-4"
+                           Label="Refresh Token Expiration"
+                           Variant="Variant.Outlined"
+                           Margin="Margin.Dense"
+                           @bind-Value="Model.RefreshTokenExpiration"
+                           HelperText="Absolute: the refresh token will expire on a fixed point in time. Sliding: when refreshing the token, the lifetime of the refresh token will be renewed.">
+                    @foreach (var enumValue in Enum.GetValues<TokenExpiration>())
+                    {
+                        <MudSelectItem Value=@enumValue>@Enum.GetName(typeof(TokenExpiration), enumValue)</MudSelectItem>
+                    }
+                </MudSelect>
+            </MudItem>
+            <MudItem xs="12">
+                <MudSelect T="TokenUsage"
+                           Dense
+                           Class="mb-4"
+                           Label="Refresh Token Usage"
+                           Variant="Variant.Outlined"
+                           Margin="Margin.Dense"
+                           @bind-Value="Model.RefreshTokenUsage"
+                           HelperText="ReUse: the refresh token handle will stay the same when refreshing tokens. OneTime: the refresh token handle will be updated when refreshing tokens.">
+                    @foreach (var enumValue in Enum.GetValues<TokenUsage>())
+                    {
+                        <MudSelectItem Value=@enumValue>@Enum.GetName(typeof(TokenUsage), enumValue)</MudSelectItem>
+                    }
+                </MudSelect>
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Margin="Margin.Dense"
+                              Class="ml-auto mb-4"
+                              Variant="Variant.Outlined"
+                              InputType="InputType.Number"
+                              Label="Absolute Refresh Token Lifetime"
+                              HelperText="Absolute lifetime of a refresh token in seconds."
+                              For="@(() => Model.AbsoluteRefreshTokenLifetime)"
+                              @bind-Value="@Model.AbsoluteRefreshTokenLifetime" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Margin="Margin.Dense"
+                              Class="ml-auto mb-4"
+                              Variant="Variant.Outlined"
+                              InputType="InputType.Number"
+                              Label="Sliding Refresh Token Lifetime"
+                              HelperText="Sliding lifetime of a refresh token in seconds."
+                              For="@(() => Model.SlidingRefreshTokenLifetime)"
+                              @bind-Value="@Model.SlidingRefreshTokenLifetime" />
+            </MudItem>
+        </GroupBox>
+    </MudItem>
+
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

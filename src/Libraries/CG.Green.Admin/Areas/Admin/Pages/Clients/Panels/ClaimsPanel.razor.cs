@@ -1,12 +1,10 @@
 ﻿
-using System;
-
 namespace CG.Green.Areas.Admin.Pages.Clients.Panels;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="TokenPanel"/> component.
+/// This class is the code-behind for the <see cref="ClaimsPanel"/> component.
 /// </summary>
-public partial class TokenPanel
+public partial class ClaimsPanel
 {
 	// *******************************************************************
 	// Fields.
@@ -15,9 +13,9 @@ public partial class TokenPanel
 	#region Fields
 
 	/// <summary>
-	/// This field indicates the panel is loading data.
+	/// This field indicates whether or not the panel is busy.
 	/// </summary>
-	internal protected bool _isLoading;
+	internal protected bool _isBusy;
 
 	#endregion
 
@@ -40,22 +38,34 @@ public partial class TokenPanel
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
+	/// This property contains the localizer for the component.
+	/// </summary>
+	[Inject]
+	protected IStringLocalizer<ClaimsPanel> Localizer { get; set; } = null!;
+
+	/// <summary>
+	/// This property contains the snackbar service for the component.
+	/// </summary>
+	[Inject]
+	protected ISnackbar Snackbar { get; set; } = null!;
+
+	/// <summary>
+	/// This property contains the clipboard service for the component.
+	/// </summary>
+	[Inject]
+	protected ClipboardService Clipboard { get; set; } = null!;
+
+	/// <summary>
 	/// This property contains the dialog service for the component.
 	/// </summary>
 	[Inject]
 	protected IDialogService Dialog { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<TokenPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the logger for the component.
 	/// </summary>
 	[Inject]
-	protected ILogger<TokenPanel> Logger { get; set; } = null!;
+	protected ILogger<ClaimsPanel> Logger { get; set; } = null!;
 
 	#endregion
 
@@ -66,10 +76,10 @@ public partial class TokenPanel
 	#region Protected methods
 
 	/// <summary>
-	/// This method is called to create a new signing algorithm.
+	/// This method creates a new claim for the client.
 	/// </summary>
 	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnCreateSigningAlgorithmAsync()
+	protected async Task OnCreateClaimAsync()
 	{
 		try
 		{
@@ -95,7 +105,7 @@ public partial class TokenPanel
 			// Create the dialog parameters.
 			var parameters = new DialogParameters()
 			{
-				{ "Model", "" }
+				{ "Model", new ClientClaimVM() }
 			};
 
 			// Log what we are about to do.
@@ -104,8 +114,8 @@ public partial class TokenPanel
 				);
 
 			// Create the dialog.
-			var dialog = Dialog.Show<AlgorithmDialog>(
-				"Create a Signing Algorithm",
+			var dialog = Dialog.Show<ClientClaimDialog>(
+				"Create Claim",
 				parameters,
 				options
 				);
@@ -125,22 +135,22 @@ public partial class TokenPanel
 				);
 
 			// Recover the model.
-			var model = (string)result.Data;
+			var model = (ClientClaimVM)result.Data;
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Adding the signing algorithm to the client."
+				"Adding the claim to the client."
 			);
 
-			// Add the URI.
-			Model.AllowedIdentityTokenSigningAlgorithms.Add(model);
+			// Add the claim.
+			Model.Claims.Add(model);
 		}
 		catch (Exception ex)
 		{
 			// Log what happened.
 			Logger.LogError(
 				ex.GetBaseException(),
-				"Failed to add a signing algorithm!"
+				"Failed to add a claim to the client!"
 				);
 
 			// Tell the world what happened.
@@ -151,12 +161,12 @@ public partial class TokenPanel
 	// *******************************************************************
 
 	/// <summary>
-	/// This method is called to edit the given signing algorithm.
+	/// This method edits the given claim.
 	/// </summary>
-	/// <param name="algorithm">The algorithm to use for the operation.</param>
+	/// <param name="claim">The claim to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnEditSigningAlgorithmAsync(
-		string algorithm
+	protected async Task OnEditClaimAsync(
+		ClientClaimVM claim
 		)
 	{
 		try
@@ -183,7 +193,7 @@ public partial class TokenPanel
 			// Create the dialog parameters.
 			var parameters = new DialogParameters()
 			{
-				{ "Model", algorithm }
+				{ "Model", claim }
 			};
 
 			// Log what we are about to do.
@@ -192,8 +202,8 @@ public partial class TokenPanel
 				);
 
 			// Create the dialog.
-			var dialog = Dialog.Show<AlgorithmDialog>(
-				"Edit Signing Algorithm",
+			var dialog = Dialog.Show<ClientClaimDialog>(
+				"Edit Claim",
 				parameters,
 				options
 				);
@@ -213,20 +223,20 @@ public partial class TokenPanel
 				);
 
 			// Recover the model.
-			var model = (string)result.Data;
+			var model = (ClientClaimVM)result.Data;
 
 			// Remove the original.
-			Model.AllowedIdentityTokenSigningAlgorithms.Remove(algorithm);
+			Model.Claims.Remove(claim);
 
 			// Add the modified.
-			Model.AllowedIdentityTokenSigningAlgorithms.Add(model);
+			Model.Claims.Add(model);
 		}
 		catch (Exception ex)
 		{
 			// Log what happened.
 			Logger.LogError(
 				ex.GetBaseException(),
-				"Failed to edit a signing algorithm!"
+				"Failed to edit a claim!"
 				);
 
 			// Tell the world what happened.
@@ -237,12 +247,12 @@ public partial class TokenPanel
 	// *******************************************************************
 
 	/// <summary>
-	/// This method is called to delete the given signing algorithm.
+	/// This method deletes the given claim from the client.
 	/// </summary>
-	/// <param name="algorithm">The algorithm to use for the operation.</param>
+	/// <param name="claim">The claim to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnDeleteSigningAlgorithmAsync(
-		string algorithm
+	protected async Task OnDeleteClaimAsync(
+		ClientClaimVM claim
 		)
 	{
 		try
@@ -260,7 +270,7 @@ public partial class TokenPanel
 
 			// Prompt the user.
 			var result = await Dialog.ShowDeleteBox(
-				algorithm
+				claim.Type
 				);
 
 			// Did the user cancel?
@@ -271,18 +281,18 @@ public partial class TokenPanel
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Deleting a signing algorithm."
-				);
+				"Deleting a claim."
+			);
 
-			// Delete the signing algorithm
-			Model.AllowedIdentityTokenSigningAlgorithms.Remove(algorithm);
+			// Delete the claim
+			Model.Claims.Remove(claim);
 		}
 		catch (Exception ex)
 		{
 			// Log what happened.
 			Logger.LogError(
 				ex.GetBaseException(),
-				"Failed to delete a signing algorithm!"
+				"Failed to delete a claim!"
 				);
 
 			// Tell the world what happened.

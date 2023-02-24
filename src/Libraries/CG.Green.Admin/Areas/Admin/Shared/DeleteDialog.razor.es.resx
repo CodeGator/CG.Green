@@ -117,10 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Test" xml:space="preserve">
-    <value>Prueba</value>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmar</value>
   </data>
-  <data name="Test1" xml:space="preserve">
-    <value>Test1</value>
+  <data name="LongConfirm" xml:space="preserve">
+    <value>Escriba '{0}' para confirmar.</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>&lt;b&gt;Advertencia:&lt;/b&gt;&amp;nbsp;¡esta acción no se puede deshacer!</value>
+  </data>
+  <data name="YouSure" xml:space="preserve">
+    <value>¿Estás seguro de que quieres eliminar &lt;b&gt;{0}&lt;/b&gt;?</value>
   </data>
 </root>
