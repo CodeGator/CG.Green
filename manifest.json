@@ -18,7 +18,19 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html",
-          "hash": "st0Y6AUHAS7ZsfUqvTmuXfZXSo242lnzwmPS5drp4kQ="
+          "hash": "Nk/Lfqw5oNc9+sq4UhkgO21TOlvzQKuHjAyQeZSM2bg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_es.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_es.html",
+          "hash": "u92hFkBV638lrV/8ueRgEf5wEmxREtjFMgnMeMX9nvg="
         }
       },
       "is_incremental": false,
@@ -30,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html",
-          "hash": "gnI0vTdywmcUDxkq8FnXfvttpMNAZaQtyvt8xndmdbY="
+          "hash": "f+HIkJzMjd63dN7RWRHbwRT3NBUp8xZmpqSfBqhH4Pk="
         }
       },
       "is_incremental": false,
@@ -42,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.html",
-          "hash": "1OeWkiYoH0E+zJf5i9jFsnVLMRfq0wCP2xpCvjFMd4Q="
+          "hash": "WjchnU9XSQ4blNk9Iz//8yvbORxULmCwN7IeSEGrGj4="
         }
       },
       "is_incremental": false,
@@ -54,7 +66,31 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.html",
-          "hash": "4yfOCH51uOuzzhVilbwWDoiUwoNRZmod5iQkn3mHqZE="
+          "hash": "pnEVdPWdiDBnE8WFjkW1ZuFMSmmQA8cLQ1GRoMLpDPw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog.html",
+          "hash": "qgL99qVaeQ2vbw+c0DWygjZahl4WajXI+8BRMbarpmU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html",
+          "hash": "DdM+vfWhVRJLrnO5875g1plIf93ceahNmmsZJ2Co/tk="
         }
       },
       "is_incremental": false,
@@ -162,7 +198,103 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.html",
-          "hash": "ERBwrJEDETIjo/nAKaW+LUitE688AHOut5n1lyDZQkw="
+          "hash": "Zr5FUA2fUSjovFbONlMUyPNS6/nhJ9cx1HLpIR0umV8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel.html",
+          "hash": "8WUAi1JCDaZPv8xGf2F+ETGoBM4Y0tJVyWdJPnMyl/w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.html",
+          "hash": "pQd6sfd0xHHVRSBIPO+WTXRY+20N92DaqEWJz2t5oiY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.html",
+          "hash": "toav/s6HnUYQBHDouRmXglV9xLAaz0fqNHIi6dI5IxA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html",
+          "hash": "Cqu2VMVy4L5G5CknbrWg2aZXsD5yo0CHcDmWkLnA++k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel.html",
+          "hash": "E5LYORRSA4vIeYY/z0ts2gNxXbGqEdCLCmp0poldOL4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html",
+          "hash": "95XzT79ggvM+jWyNC/an06s/WxEiMDau2gcINQHmXBc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel.html",
+          "hash": "IZkIgqlpICUeVUMYuz9UA2gyosIUDlaVDufbz+uh9ks="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html",
+          "hash": "JwaJn7wW/DgdWrcIs0udM5fyCXCnwyyJL6t8E/rGks8="
         }
       },
       "is_incremental": false,
@@ -174,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.html",
-          "hash": "IJagf0xo0ECcx6XjyFoEOPPsy+ixLPZNppQHfoPvyjM="
+          "hash": "ETYzCSHmPTnacbFwcssBEdbfv6lb2xPJE69Akft8uh0="
         }
       },
       "is_incremental": false,
@@ -194,11 +326,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel.html",
+          "hash": "2Ke1pKIjVqTxnUaWhfO6twOl4DhXk0Eu9h9jo5pqEeI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.html",
-          "hash": "ciVyn3Y8mr33MonlmE02KSci0a5cTMdrShHRK29keBA="
+          "hash": "IiZwjHEpiGriYzWcLc6cZ/jLq18gwl231uBpXXp5P7c="
         }
       },
       "is_incremental": false,
@@ -210,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.html",
-          "hash": "js4cnLQrHXsytn2r3IruyNzR8TA66fKb8xU/73dAYjE="
+          "hash": "znoBP8EARHdXXsua9llriMp4qAo5zAx98PVz4kiE0hQ="
         }
       },
       "is_incremental": false,
@@ -234,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Shared.DeleteDialog_razor.html",
-          "hash": "ABlpVBYEes92jgXs0kk2hSWlTYsHIUEFCkdojI9MlXs="
+          "hash": "lS/3dzHuaElje3l/wdLYEzQBMGA5i6d39CG83TIE1aE="
         }
       },
       "is_incremental": false,
@@ -1470,7 +1614,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Globals.Models.Clients.html",
-          "hash": "yV76Lqx3UT+n00CuVo5jOfIhh8HzxyuyZcMClUR3z7E="
+          "hash": "Q7MCUjkCctQS5uUqzIVczXE/JiE9eJuuomcnVMEsrSA="
         }
       },
       "is_incremental": false,
@@ -1686,7 +1830,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Home.Index_razor.html",
-          "hash": "JrQGD6DXKp6/2V12XeCbldAI1Q6jqEMc5vNKqT6Rc4Q="
+          "hash": "MKc1iFQwUrhZg22m+oZyNJ1DV97o7XYqvccXWhQJPEM="
         }
       },
       "is_incremental": false,
@@ -2634,7 +2778,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.ViewModels.EditClientVM.html",
-          "hash": "y5ppIYJ7QRxNBEe3jBTnkhpqX13CYdwfRSBaAg/F9Rg="
+          "hash": "2RGdO6pwTofdwwbaOKICP6L715RbK0WEstJIUeJJkJY="
         }
       },
       "is_incremental": false,
@@ -2934,7 +3078,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "AnjtOYVvSkyXhlU7OYnWAsHV4BHtkR+a/z5dQMcqbbs="
+          "hash": "bk7GQO40RftO/7LQIW+G4to2cQWzkIjbxII6NWmqV5g="
         }
       },
       "is_incremental": false,
@@ -3053,7 +3197,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 243,
+          "total_file_count": 255,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

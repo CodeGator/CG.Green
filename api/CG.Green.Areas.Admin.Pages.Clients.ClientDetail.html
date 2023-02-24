@@ -124,7 +124,8 @@
   <h3 id="fields">Fields
   </h3>
   <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail__crumbs" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail._crumbs">_crumbs</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This field contains a reference to breadcrumbs for the view.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -140,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">MudBlazor.BreadcrumbItem</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">BreadcrumbItem</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -241,30 +242,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Clipboard_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Clipboard*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Clipboard" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Clipboard">Clipboard</h4>
-  <div class="markdown level1 summary"><p>This property contains the clipboard service for the page.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ClipboardService Clipboard { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ClipboardService</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Dialog_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog*"></a>
   <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Dialog" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Dialog">Dialog</h4>
   <div class="markdown level1 summary"><p>This property contains the dialog service for this page.</p>
@@ -284,7 +261,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MudBlazor.IDialogService</span></td>
+        <td><span class="xref">IDialogService</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -333,6 +310,30 @@
     <tbody>
       <tr>
         <td><span class="xref">IHttpContextAccessor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Localizer_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Localizer*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_Localizer" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.Localizer">Localizer</h4>
+  <div class="markdown level1 summary"><p>This property contains the localizer for the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IStringLocalizer&lt;ClientDetail&gt; Localizer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IStringLocalizer</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.html">ClientDetail</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -404,7 +405,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MudBlazor.ISnackbar</span></td>
+        <td><span class="xref">ISnackbar</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -445,585 +446,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">async Task LoadDataAsync()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCopyClientId_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCopyClientId*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCopyClientId" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCopyClientId">OnCopyClientId()</h4>
-  <div class="markdown level1 summary"><p>This method copies the client id to the cipboard.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCopyClientId()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateClaimAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateClaimAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateClaimAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateClaimAsync">OnCreateClaimAsync()</h4>
-  <div class="markdown level1 summary"><p>This method creates a new claim for the client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCreateClaimAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateFrontChannelLogoutUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateFrontChannelLogoutUriAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateFrontChannelLogoutUriAsync">OnCreateFrontChannelLogoutUriAsync()</h4>
-  <div class="markdown level1 summary"><p>This method creates a new front channel logout URI for the client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCreateFrontChannelLogoutUriAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreatePostLogoutUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreatePostLogoutUriAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreatePostLogoutUriAsync">OnCreatePostLogoutUriAsync()</h4>
-  <div class="markdown level1 summary"><p>This method creates a new post logout URI for the client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCreatePostLogoutUriAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateRedirectUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateRedirectUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateRedirectUriAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateRedirectUriAsync">OnCreateRedirectUriAsync()</h4>
-  <div class="markdown level1 summary"><p>This method creates a new redirect URI for the client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCreateRedirectUriAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateSecretAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnCreateSecretAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnCreateSecretAsync">OnCreateSecretAsync()</h4>
-  <div class="markdown level1 summary"><p>This method creates a new secret for the client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCreateSecretAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteClaimAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteClaimAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteClaimAsync_ClientClaimVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteClaimAsync(ClientClaimVM)">OnDeleteClaimAsync(ClientClaimVM)</h4>
-  <div class="markdown level1 summary"><p>This method deletes the given claim from the client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteClaimAsync(ClientClaimVM claim)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ClientClaimVM</span></td>
-        <td><span class="parametername">claim</span></td>
-        <td><p>The claim to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteFrontChannelLogoutUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteFrontChannelLogoutUriAsync_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteFrontChannelLogoutUriAsync(System.String)">OnDeleteFrontChannelLogoutUriAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method deletes the given front channel logout URI.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteFrontChannelLogoutUriAsync(string uri)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">uri</span></td>
-        <td><p>The URI to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeletePostLogoutUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeletePostLogoutUriAsync_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeletePostLogoutUriAsync(System.String)">OnDeletePostLogoutUriAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method deletes the given post logout URI.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeletePostLogoutUriAsync(string uri)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">uri</span></td>
-        <td><p>The URI to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteRedirectUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteRedirectUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteRedirectUriAsync_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteRedirectUriAsync(System.String)">OnDeleteRedirectUriAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method deletes the given redirect URI.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteRedirectUriAsync(string uri)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">uri</span></td>
-        <td><p>The URI to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteSecretAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnDeleteSecretAsync_ClientSecretVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnDeleteSecretAsync(ClientSecretVM)">OnDeleteSecretAsync(ClientSecretVM)</h4>
-  <div class="markdown level1 summary"><p>This method deletes the given secret from the client.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteSecretAsync(ClientSecretVM secret)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ClientSecretVM</span></td>
-        <td><span class="parametername">secret</span></td>
-        <td><p>The secret to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditClaimAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditClaimAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditClaimAsync_ClientClaimVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditClaimAsync(ClientClaimVM)">OnEditClaimAsync(ClientClaimVM)</h4>
-  <div class="markdown level1 summary"><p>This method edits the given claim.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnEditClaimAsync(ClientClaimVM claim)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ClientClaimVM</span></td>
-        <td><span class="parametername">claim</span></td>
-        <td><p>The claim to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditFrontChannelLogoutUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditFrontChannelLogoutUriAsync_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditFrontChannelLogoutUriAsync(System.String)">OnEditFrontChannelLogoutUriAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method edits the given front channel logout URI.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnEditFrontChannelLogoutUriAsync(string uri)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">uri</span></td>
-        <td><p>The URI to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditPostLogoutUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditPostLogoutUriAsync_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditPostLogoutUriAsync(System.String)">OnEditPostLogoutUriAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method edits the given post logout URI.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnEditPostLogoutUriAsync(string uri)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">uri</span></td>
-        <td><p>The URI to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditRedirectUriAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditRedirectUriAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditRedirectUriAsync_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditRedirectUriAsync(System.String)">OnEditRedirectUriAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method edit the given redirect URI.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnEditRedirectUriAsync(string uri)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">uri</span></td>
-        <td><p>The URI to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditSecretAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditSecretAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_ClientDetail_OnEditSecretAsync_ClientSecretVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.ClientDetail.OnEditSecretAsync(ClientSecretVM)">OnEditSecretAsync(ClientSecretVM)</h4>
-  <div class="markdown level1 summary"><p>This method edit the given secret.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnEditSecretAsync(ClientSecretVM secret)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ClientSecretVM</span></td>
-        <td><span class="parametername">secret</span></td>
-        <td><p>The secret to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

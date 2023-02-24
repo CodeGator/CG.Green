@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TokenPanel
+    <title>Class ClaimsPanel
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TokenPanel
+    <meta name="title" content="Class ClaimsPanel
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,18 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel">
   
   
-  <h1 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel" class="text-break">Class TokenPanel
+  <h1 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel" class="text-break">Class ClaimsPanel
   </h1>
-  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.html">TokenPanel</a> component.</p>
+  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.html">ClaimsPanel</a> component.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">TokenPanel</span></div>
+    <div class="level1"><span class="xref">ClaimsPanel</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -117,19 +117,19 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.html">CG.Green.Areas.Admin.Pages.Clients.Panels</a></h6>
   <h6><strong>Assembly</strong>: CG.Green.Admin.dll</h6>
-  <h5 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_syntax">Syntax</h5>
+  <h5 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TokenPanel</code></pre>
+    <pre><code class="lang-csharp hljs">public class ClaimsPanel</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel__isLoading" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel._isLoading">_isLoading</h4>
-  <div class="markdown level1 summary"><p>This field indicates the panel is loading data.</p>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel__isBusy" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel._isBusy">_isBusy</h4>
+  <div class="markdown level1 summary"><p>This field indicates whether or not the panel is busy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool _isLoading</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool _isBusy</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,8 +148,32 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Dialog_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Dialog*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Dialog" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Dialog">Dialog</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Clipboard_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Clipboard*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Clipboard" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Clipboard">Clipboard</h4>
+  <div class="markdown level1 summary"><p>This property contains the clipboard service for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ClipboardService Clipboard { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ClipboardService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Dialog_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Dialog*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Dialog" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Dialog">Dialog</h4>
   <div class="markdown level1 summary"><p>This property contains the dialog service for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -172,14 +196,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Localizer_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Localizer*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Localizer" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Localizer">Localizer</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Localizer_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Localizer*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Localizer" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Localizer">Localizer</h4>
   <div class="markdown level1 summary"><p>This property contains the localizer for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IStringLocalizer&lt;TokenPanel&gt; Localizer { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IStringLocalizer&lt;ClaimsPanel&gt; Localizer { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,19 +215,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IStringLocalizer</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.html">TokenPanel</a>&gt;</td>
+        <td><span class="xref">IStringLocalizer</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.html">ClaimsPanel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Logger_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Logger*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Logger" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Logger">Logger</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Logger_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Logger*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Logger" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>This property contains the logger for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ILogger&lt;TokenPanel&gt; Logger { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ILogger&lt;ClaimsPanel&gt; Logger { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,13 +239,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.html">TokenPanel</a>&gt;</td>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.html">ClaimsPanel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Model_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Model*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Model" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Model">Model</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Model_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Model*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Model" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Model">Model</h4>
   <div class="markdown level1 summary"><p>This property contains the model for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -244,8 +268,32 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Theme_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Theme*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_Theme" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.Theme">Theme</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Snackbar_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Snackbar*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Snackbar" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Snackbar">Snackbar</h4>
+  <div class="markdown level1 summary"><p>This property contains the snackbar service for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISnackbar Snackbar { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISnackbar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Theme_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Theme*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_Theme" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.Theme">Theme</h4>
   <div class="markdown level1 summary"><p>This property contains the MudBlazor them for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -270,14 +318,14 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_OnCreateSigningAlgorithmAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.OnCreateSigningAlgorithmAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_OnCreateSigningAlgorithmAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.OnCreateSigningAlgorithmAsync">OnCreateSigningAlgorithmAsync()</h4>
-  <div class="markdown level1 summary"><p>This method is called to create a new signing algorithm.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_OnCreateClaimAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.OnCreateClaimAsync*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_OnCreateClaimAsync" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.OnCreateClaimAsync">OnCreateClaimAsync()</h4>
+  <div class="markdown level1 summary"><p>This method creates a new claim for the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCreateSigningAlgorithmAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task OnCreateClaimAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -295,14 +343,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_OnDeleteSigningAlgorithmAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.OnDeleteSigningAlgorithmAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_OnDeleteSigningAlgorithmAsync_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.OnDeleteSigningAlgorithmAsync(System.String)">OnDeleteSigningAlgorithmAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method is called to delete the given signing algorithm.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_OnDeleteClaimAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.OnDeleteClaimAsync*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_OnDeleteClaimAsync_ClientClaimVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.OnDeleteClaimAsync(ClientClaimVM)">OnDeleteClaimAsync(ClientClaimVM)</h4>
+  <div class="markdown level1 summary"><p>This method deletes the given claim from the client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteSigningAlgorithmAsync(string algorithm)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task OnDeleteClaimAsync(ClientClaimVM claim)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -315,9 +363,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">algorithm</span></td>
-        <td><p>The algorithm to use for the operation.</p>
+        <td><span class="xref">ClientClaimVM</span></td>
+        <td><span class="parametername">claim</span></td>
+        <td><p>The claim to use for the operation.</p>
 </td>
       </tr>
     </tbody>
@@ -338,14 +386,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_OnEditSigningAlgorithmAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.OnEditSigningAlgorithmAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_OnEditSigningAlgorithmAsync_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel.OnEditSigningAlgorithmAsync(System.String)">OnEditSigningAlgorithmAsync(String)</h4>
-  <div class="markdown level1 summary"><p>This method is called to edit the given signing algorithm.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_OnEditClaimAsync_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.OnEditClaimAsync*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_OnEditClaimAsync_ClientClaimVM_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel.OnEditClaimAsync(ClientClaimVM)">OnEditClaimAsync(ClientClaimVM)</h4>
+  <div class="markdown level1 summary"><p>This method edits the given claim.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnEditSigningAlgorithmAsync(string algorithm)</code></pre>
+    <pre><code class="lang-csharp hljs">protected async Task OnEditClaimAsync(ClientClaimVM claim)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -358,9 +406,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">algorithm</span></td>
-        <td><p>The algorithm to use for the operation.</p>
+        <td><span class="xref">ClientClaimVM</span></td>
+        <td><span class="parametername">claim</span></td>
+        <td><p>The claim to use for the operation.</p>
 </td>
       </tr>
     </tbody>
