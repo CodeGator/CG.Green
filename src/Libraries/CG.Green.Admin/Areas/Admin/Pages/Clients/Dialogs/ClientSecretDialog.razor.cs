@@ -1,10 +1,10 @@
 ﻿
-namespace CG.Green.Areas.Admin.Pages.Clients;
+namespace CG.Green.Areas.Admin.Pages.Clients.Dialogs;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="UriDialog"/> dialog.
+/// This class is the code-behind for the <see cref="ClientSecretDialog"/> dialog.
 /// </summary>
-public partial class UriDialog
+public partial class ClientSecretDialog
 {
     // *******************************************************************
     // Properties.
@@ -22,25 +22,31 @@ public partial class UriDialog
     /// This property contains the edit form's model.
     /// </summary>
     [Parameter]
-    public string Model { get; set; } = null!;
+    public ClientSecretVM Model { get; set; } = null!;
+
+    /// <summary>
+    /// This property indicates whether the called is editing the secret.
+    /// </summary>
+    [Parameter]
+    public bool IsEditing { get; set; }
 
     /// <summary>
     /// This property contains the dialog service for this dialog.
     /// </summary>
     [Inject]
     protected IDialogService Dialog { get; set; } = null!;
-        
+
     /// <summary>
     /// This property contains the localizer for this dialog.
     /// </summary>
     [Inject]
-    protected IStringLocalizer<UriDialog> Localizer { get; set; } = null!;
+    protected IStringLocalizer<ClientSecretDialog> Localizer { get; set; } = null!;
 
     /// <summary>
     /// This property contains the logger for this dialog.
     /// </summary>
     [Inject]
-    protected ILogger<UriDialog> Logger { get; set; } = null!;
+    protected ILogger<ClientSecretDialog> Logger { get; set; } = null!;
 
     #endregion
 
@@ -61,6 +67,17 @@ public partial class UriDialog
     /// This method cancels the dialog.
     /// </summary>
     protected void Cancel() => MudDialog.Cancel();
+
+    // *******************************************************************
+
+    /// <summary>
+    /// This method generates a new secret value.
+    /// </summary>
+    protected void OnNewSecretValue()
+    {
+        // Generate the secret value.
+        Model.Value = $"{Guid.NewGuid():N}";
+    }
 
     #endregion
 }

@@ -14,3 +14,5 @@ global using Microsoft.Extensions.Localization;
 global using CG.Green.Areas.Admin.Shared;
 global using CG.Green.Services;
 global using MudBlazor.Utilities;
+global using CG.Green.Areas.Admin.Pages.Clients.Dialogs;
+global using CG.Green.Areas.Admin.Pages.Clients.Panels; 

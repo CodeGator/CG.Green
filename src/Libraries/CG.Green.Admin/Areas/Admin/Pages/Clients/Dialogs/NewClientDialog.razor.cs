@@ -1,5 +1,5 @@
 ﻿
-namespace CG.Green.Areas.Admin.Pages.Clients;
+namespace CG.Green.Areas.Admin.Pages.Clients.Dialogs;
 
 /// <summary>
 /// This class is the code-behind for the <see cref="NewClientDialog"/> dialog.
