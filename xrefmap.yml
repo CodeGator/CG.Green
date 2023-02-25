@@ -282,6 +282,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ClientDetail_razor
   nameWithType: ClientDetail_razor.ClientDetail_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Admin
+  name: Admin
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Admin
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Admin
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Admin
+  nameWithType: ClientDetail_razor.Admin
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Admin*
+  name: Admin
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Admin_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Admin
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Admin
+  nameWithType: ClientDetail_razor.Admin
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Advanced
   name: Advanced
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Advanced
@@ -308,6 +321,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.BackToClients
   nameWithType: ClientDetail_razor.BackToClients
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Broke
+  nameWithType: ClientDetail_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Broke
+  nameWithType: ClientDetail_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ChangesSaved
+  name: ChangesSaved
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_ChangesSaved
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ChangesSaved
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ChangesSaved
+  nameWithType: ClientDetail_razor.ChangesSaved
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ChangesSaved*
+  name: ChangesSaved
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_ChangesSaved_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ChangesSaved
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.ChangesSaved
+  nameWithType: ClientDetail_razor.ChangesSaved
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Claims
   name: Claims
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Claims
@@ -321,6 +360,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Claims
   nameWithType: ClientDetail_razor.Claims
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Clients
+  name: Clients
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Clients
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Clients
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Clients
+  nameWithType: ClientDetail_razor.Clients
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Clients*
+  name: Clients
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Clients_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Clients
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Clients
+  nameWithType: ClientDetail_razor.Clients
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Culture
@@ -334,6 +386,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Culture
   nameWithType: ClientDetail_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Details
+  name: Details
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Details
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Details
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Details
+  nameWithType: ClientDetail_razor.Details
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Details*
+  name: Details
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Details_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Details
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Details
+  nameWithType: ClientDetail_razor.Details
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Home
+  name: Home
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Home
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Home
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Home
+  nameWithType: ClientDetail_razor.Home
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Home*
+  name: Home
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_Home_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Home
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.Home
+  nameWithType: ClientDetail_razor.Home
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.NotFound
   name: NotFound
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientDetail_razor_NotFound
@@ -759,6 +837,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.Admin
   nameWithType: ClientsIndex_razor.Admin
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.Broke
+  nameWithType: ClientsIndex_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.Broke
+  nameWithType: ClientsIndex_razor.Broke
 - uid: CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.Clients
   name: Clients
   href: api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.html#CG_Green_Areas_Admin_Pages_Clients_ClientsIndex_razor_Clients
@@ -1062,6 +1153,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.AlgorithmDialog_razor
   nameWithType: AlgorithmDialog_razor.AlgorithmDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Broke
+  nameWithType: AlgorithmDialog_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Broke
+  nameWithType: AlgorithmDialog_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Cancel
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_Cancel
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Cancel
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Cancel
+  nameWithType: AlgorithmDialog_razor.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Cancel
+  nameWithType: AlgorithmDialog_razor.Cancel
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_Culture
@@ -1100,6 +1217,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.ResourceManager
   nameWithType: AlgorithmDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Save
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_Save
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Save
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Save
+  nameWithType: AlgorithmDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Save*
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_Save_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Save
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.Save
+  nameWithType: AlgorithmDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.SigningAlgorithm
+  name: SigningAlgorithm
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_SigningAlgorithm
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.SigningAlgorithm
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.SigningAlgorithm
+  nameWithType: AlgorithmDialog_razor.SigningAlgorithm
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.SigningAlgorithm*
+  name: SigningAlgorithm
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_AlgorithmDialog_razor_SigningAlgorithm_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.SigningAlgorithm
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.AlgorithmDialog_razor.SigningAlgorithm
+  nameWithType: AlgorithmDialog_razor.SigningAlgorithm
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog
   name: ClientClaimDialog
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog.html
@@ -1216,6 +1359,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.ClientClaimDialog_razor
   nameWithType: ClientClaimDialog_razor.ClientClaimDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Cancel
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Cancel
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Cancel
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Cancel
+  nameWithType: ClientClaimDialog_razor.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Cancel
+  nameWithType: ClientClaimDialog_razor.Cancel
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Culture
@@ -1254,6 +1410,45 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.ResourceManager
   nameWithType: ClientClaimDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Save
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Save
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Save
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Save
+  nameWithType: ClientClaimDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Save*
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Save_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Save
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Save
+  nameWithType: ClientClaimDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Type
+  name: Type
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Type
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Type
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Type
+  nameWithType: ClientClaimDialog_razor.Type
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Type*
+  name: Type
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Type_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Type
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Type
+  nameWithType: ClientClaimDialog_razor.Type
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Value
+  name: Value
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Value
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Value
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Value
+  nameWithType: ClientClaimDialog_razor.Value
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Value*
+  name: Value
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientClaimDialog_razor_Value_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Value
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientClaimDialog_razor.Value
+  nameWithType: ClientClaimDialog_razor.Value
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog
   name: ClientSecretDialog
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog.html
@@ -1396,6 +1591,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.ClientSecretDialog_razor
   nameWithType: ClientSecretDialog_razor.ClientSecretDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Cancel
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_Cancel
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Cancel
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Cancel
+  nameWithType: ClientSecretDialog_razor.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Cancel
+  nameWithType: ClientSecretDialog_razor.Cancel
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_Culture
@@ -1434,6 +1642,58 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.ResourceManager
   nameWithType: ClientSecretDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Save
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_Save
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Save
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Save
+  nameWithType: ClientSecretDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Save*
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_Save_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Save
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.Save
+  nameWithType: ClientSecretDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretDescription
+  name: SecretDescription
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_SecretDescription
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretDescription
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretDescription
+  nameWithType: ClientSecretDialog_razor.SecretDescription
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretDescription*
+  name: SecretDescription
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_SecretDescription_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretDescription
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretDescription
+  nameWithType: ClientSecretDialog_razor.SecretDescription
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretExpiration
+  name: SecretExpiration
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_SecretExpiration
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretExpiration
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretExpiration
+  nameWithType: ClientSecretDialog_razor.SecretExpiration
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretExpiration*
+  name: SecretExpiration
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_SecretExpiration_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretExpiration
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretExpiration
+  nameWithType: ClientSecretDialog_razor.SecretExpiration
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretValue
+  name: SecretValue
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_SecretValue
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretValue
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretValue
+  nameWithType: ClientSecretDialog_razor.SecretValue
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretValue*
+  name: SecretValue
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_ClientSecretDialog_razor_SecretValue_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretValue
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.ClientSecretDialog_razor.SecretValue
+  nameWithType: ClientSecretDialog_razor.SecretValue
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog
   name: NewClientDialog
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog.html
@@ -1576,6 +1836,45 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.NewClientDialog_razor
   nameWithType: NewClientDialog_razor.NewClientDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Cancel
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_Cancel
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Cancel
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Cancel
+  nameWithType: NewClientDialog_razor.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Cancel
+  nameWithType: NewClientDialog_razor.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientId
+  name: ClientId
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_ClientId
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientId
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientId
+  nameWithType: NewClientDialog_razor.ClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientId*
+  name: ClientId
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_ClientId_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientId
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientId
+  nameWithType: NewClientDialog_razor.ClientId
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientIdHelp
+  name: ClientIdHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_ClientIdHelp
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientIdHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientIdHelp
+  nameWithType: NewClientDialog_razor.ClientIdHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientIdHelp*
+  name: ClientIdHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_ClientIdHelp_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientIdHelp
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ClientIdHelp
+  nameWithType: NewClientDialog_razor.ClientIdHelp
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_Culture
@@ -1614,6 +1913,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.ResourceManager
   nameWithType: NewClientDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Save
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_Save
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Save
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Save
+  nameWithType: NewClientDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Save*
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_NewClientDialog_razor_Save_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Save
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.NewClientDialog_razor.Save
+  nameWithType: NewClientDialog_razor.Save
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog
   name: UriDialog
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog.html
@@ -1730,6 +2042,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.UriDialog_razor
   nameWithType: UriDialog_razor.UriDialog_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Cancel
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_UriDialog_razor_Cancel
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Cancel
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Cancel
+  nameWithType: UriDialog_razor.Cancel
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Cancel*
+  name: Cancel
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_UriDialog_razor_Cancel_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Cancel
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Cancel
+  nameWithType: UriDialog_razor.Cancel
 - uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_UriDialog_razor_Culture
@@ -1768,6 +2093,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.ResourceManager
   nameWithType: UriDialog_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Save
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_UriDialog_razor_Save
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Save
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Save
+  nameWithType: UriDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Save*
+  name: Save
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_UriDialog_razor_Save_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Save
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.Save
+  nameWithType: UriDialog_razor.Save
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.URI
+  name: URI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_UriDialog_razor_URI
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.URI
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.URI
+  nameWithType: UriDialog_razor.URI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.URI*
+  name: URI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.html#CG_Green_Areas_Admin_Pages_Clients_Dialogs_UriDialog_razor_URI_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.URI
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog_razor.URI
+  nameWithType: UriDialog_razor.URI
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels
   name: CG.Green.Areas.Admin.Pages.Clients.Panels
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.html
@@ -1844,6 +2195,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.AdvancedPanel_razor
   nameWithType: AdvancedPanel_razor.AdvancedPanel_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_AdvancedPanel_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.Broke
+  nameWithType: AdvancedPanel_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_AdvancedPanel_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.Broke
+  nameWithType: AdvancedPanel_razor.Broke
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_AdvancedPanel_razor_Culture
@@ -2056,6 +2420,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClaimsPanel_razor
   nameWithType: ClaimsPanel_razor.ClaimsPanel_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Broke
+  nameWithType: ClaimsPanel_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Broke
+  nameWithType: ClaimsPanel_razor.Broke
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaims
   name: ClientClaims
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_ClientClaims
@@ -2082,6 +2459,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Create
   nameWithType: ClaimsPanel_razor.Create
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.CreateClaim
+  name: CreateClaim
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_CreateClaim
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.CreateClaim
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.CreateClaim
+  nameWithType: ClaimsPanel_razor.CreateClaim
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.CreateClaim*
+  name: CreateClaim
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_CreateClaim_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.CreateClaim
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.CreateClaim
+  nameWithType: ClaimsPanel_razor.CreateClaim
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_Culture
@@ -2095,6 +2485,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Culture
   nameWithType: ClaimsPanel_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.EditClaim
+  name: EditClaim
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_EditClaim
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.EditClaim
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.EditClaim
+  nameWithType: ClaimsPanel_razor.EditClaim
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.EditClaim*
+  name: EditClaim
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_EditClaim_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.EditClaim
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.EditClaim
+  nameWithType: ClaimsPanel_razor.EditClaim
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.LoadingClaims
   name: LoadingClaims
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_LoadingClaims
@@ -2146,6 +2549,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ResourceManager
   nameWithType: ClaimsPanel_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.RowsPerPage
+  name: RowsPerPage
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_RowsPerPage
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.RowsPerPage
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.RowsPerPage
+  nameWithType: ClaimsPanel_razor.RowsPerPage
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.RowsPerPage*
+  name: RowsPerPage
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_RowsPerPage_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.RowsPerPage
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.RowsPerPage
+  nameWithType: ClaimsPanel_razor.RowsPerPage
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Type
   name: Type
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_Type
@@ -2333,6 +2749,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.SecretsPanel_razor
   nameWithType: SecretsPanel_razor.SecretsPanel_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Broke
+  nameWithType: SecretsPanel_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Broke
+  nameWithType: SecretsPanel_razor.Broke
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Create
   name: Create
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_Create
@@ -2346,6 +2775,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Create
   nameWithType: SecretsPanel_razor.Create
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.CreateSecret
+  name: CreateSecret
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_CreateSecret
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.CreateSecret
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.CreateSecret
+  nameWithType: SecretsPanel_razor.CreateSecret
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.CreateSecret*
+  name: CreateSecret
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_CreateSecret_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.CreateSecret
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.CreateSecret
+  nameWithType: SecretsPanel_razor.CreateSecret
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_Culture
@@ -2372,6 +2814,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Description
   nameWithType: SecretsPanel_razor.Description
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.EditSecret
+  name: EditSecret
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_EditSecret
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.EditSecret
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.EditSecret
+  nameWithType: SecretsPanel_razor.EditSecret
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.EditSecret*
+  name: EditSecret
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_EditSecret_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.EditSecret
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.EditSecret
+  nameWithType: SecretsPanel_razor.EditSecret
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Expiration
   name: Expiration
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_Expiration
@@ -2462,6 +2917,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.ResourceManager
   nameWithType: SecretsPanel_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.RowsPerPage
+  name: RowsPerPage
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_RowsPerPage
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.RowsPerPage
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.RowsPerPage
+  nameWithType: SecretsPanel_razor.RowsPerPage
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.RowsPerPage*
+  name: RowsPerPage
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_RowsPerPage_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.RowsPerPage
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.RowsPerPage
+  nameWithType: SecretsPanel_razor.RowsPerPage
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.Value
   name: Value
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SecretsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SecretsPanel_razor_Value
@@ -2636,6 +3104,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccessHelp
   nameWithType: SettingsPanel_razor.AllowOfflineAccessHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Broke
+  nameWithType: SettingsPanel_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Broke
+  nameWithType: SettingsPanel_razor.Broke
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.ClientDescription
   name: ClientDescription
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_ClientDescription
@@ -2688,6 +3169,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.ClientName
   nameWithType: SettingsPanel_razor.ClientName
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.CopyClipboard
+  name: CopyClipboard
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_CopyClipboard
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.CopyClipboard
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.CopyClipboard
+  nameWithType: SettingsPanel_razor.CopyClipboard
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.CopyClipboard*
+  name: CopyClipboard
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_CopyClipboard_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.CopyClipboard
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.CopyClipboard
+  nameWithType: SettingsPanel_razor.CopyClipboard
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_Culture
@@ -3082,6 +3576,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AlwaysIncludeUserClaimsInIdentityTokenHelp
   nameWithType: TokenPanel_razor.AlwaysIncludeUserClaimsInIdentityTokenHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Broke
+  nameWithType: TokenPanel_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Broke
+  nameWithType: TokenPanel_razor.Broke
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Create
   name: Create
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_Create
@@ -3095,6 +3602,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Create
   nameWithType: TokenPanel_razor.Create
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CreateSigningAlgorithm
+  name: CreateSigningAlgorithm
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_CreateSigningAlgorithm
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CreateSigningAlgorithm
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CreateSigningAlgorithm
+  nameWithType: TokenPanel_razor.CreateSigningAlgorithm
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CreateSigningAlgorithm*
+  name: CreateSigningAlgorithm
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_CreateSigningAlgorithm_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CreateSigningAlgorithm
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CreateSigningAlgorithm
+  nameWithType: TokenPanel_razor.CreateSigningAlgorithm
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_Culture
@@ -3108,6 +3628,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Culture
   nameWithType: TokenPanel_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.EditSigningAlgorithm
+  name: EditSigningAlgorithm
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_EditSigningAlgorithm
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.EditSigningAlgorithm
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.EditSigningAlgorithm
+  nameWithType: TokenPanel_razor.EditSigningAlgorithm
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.EditSigningAlgorithm*
+  name: EditSigningAlgorithm
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_EditSigningAlgorithm_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.EditSigningAlgorithm
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.EditSigningAlgorithm
+  nameWithType: TokenPanel_razor.EditSigningAlgorithm
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.IdentityTokenLifetime
   name: IdentityTokenLifetime
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_IdentityTokenLifetime
@@ -3263,6 +3796,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.ResourceManager
   nameWithType: TokenPanel_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.RowsPerPage
+  name: RowsPerPage
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_RowsPerPage
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.RowsPerPage
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.RowsPerPage
+  nameWithType: TokenPanel_razor.RowsPerPage
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.RowsPerPage*
+  name: RowsPerPage
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_RowsPerPage_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.RowsPerPage
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.RowsPerPage
+  nameWithType: TokenPanel_razor.RowsPerPage
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.SlidingRefreshTokenLifetime
   name: SlidingRefreshTokenLifetime
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_SlidingRefreshTokenLifetime
@@ -3554,6 +4100,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.UrisPanel_razor
   nameWithType: UrisPanel_razor.UrisPanel_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Broke
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_Broke
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Broke
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Broke
+  nameWithType: UrisPanel_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_Broke_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Broke
+  nameWithType: UrisPanel_razor.Broke
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Create
   name: Create
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_Create
@@ -3567,6 +4126,45 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Create
   nameWithType: UrisPanel_razor.Create
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateFrontChannelLogoutURI
+  name: CreateFrontChannelLogoutURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_CreateFrontChannelLogoutURI
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateFrontChannelLogoutURI
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateFrontChannelLogoutURI
+  nameWithType: UrisPanel_razor.CreateFrontChannelLogoutURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateFrontChannelLogoutURI*
+  name: CreateFrontChannelLogoutURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_CreateFrontChannelLogoutURI_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateFrontChannelLogoutURI
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateFrontChannelLogoutURI
+  nameWithType: UrisPanel_razor.CreateFrontChannelLogoutURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreatePostLogoutURI
+  name: CreatePostLogoutURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_CreatePostLogoutURI
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreatePostLogoutURI
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreatePostLogoutURI
+  nameWithType: UrisPanel_razor.CreatePostLogoutURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreatePostLogoutURI*
+  name: CreatePostLogoutURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_CreatePostLogoutURI_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreatePostLogoutURI
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreatePostLogoutURI
+  nameWithType: UrisPanel_razor.CreatePostLogoutURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateRedirectURI
+  name: CreateRedirectURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_CreateRedirectURI
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateRedirectURI
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateRedirectURI
+  nameWithType: UrisPanel_razor.CreateRedirectURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateRedirectURI*
+  name: CreateRedirectURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_CreateRedirectURI_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateRedirectURI
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.CreateRedirectURI
+  nameWithType: UrisPanel_razor.CreateRedirectURI
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Culture
   name: Culture
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_Culture
@@ -3580,6 +4178,45 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.Culture
   nameWithType: UrisPanel_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditFrontChannelLogoutURI
+  name: EditFrontChannelLogoutURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_EditFrontChannelLogoutURI
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditFrontChannelLogoutURI
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditFrontChannelLogoutURI
+  nameWithType: UrisPanel_razor.EditFrontChannelLogoutURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditFrontChannelLogoutURI*
+  name: EditFrontChannelLogoutURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_EditFrontChannelLogoutURI_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditFrontChannelLogoutURI
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditFrontChannelLogoutURI
+  nameWithType: UrisPanel_razor.EditFrontChannelLogoutURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditPostLogoutURI
+  name: EditPostLogoutURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_EditPostLogoutURI
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditPostLogoutURI
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditPostLogoutURI
+  nameWithType: UrisPanel_razor.EditPostLogoutURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditPostLogoutURI*
+  name: EditPostLogoutURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_EditPostLogoutURI_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditPostLogoutURI
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditPostLogoutURI
+  nameWithType: UrisPanel_razor.EditPostLogoutURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditRedirectURI
+  name: EditRedirectURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_EditRedirectURI
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditRedirectURI
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditRedirectURI
+  nameWithType: UrisPanel_razor.EditRedirectURI
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditRedirectURI*
+  name: EditRedirectURI
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_EditRedirectURI_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditRedirectURI
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.EditRedirectURI
+  nameWithType: UrisPanel_razor.EditRedirectURI
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.FrontChannelLogoutURIs
   name: FrontChannelLogoutURIs
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_FrontChannelLogoutURIs
@@ -3670,6 +4307,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.ResourceManager
   nameWithType: UrisPanel_razor.ResourceManager
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.RowsPerPage
+  name: RowsPerPage
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_RowsPerPage
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.RowsPerPage
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.RowsPerPage
+  nameWithType: UrisPanel_razor.RowsPerPage
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.RowsPerPage*
+  name: RowsPerPage
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_UrisPanel_razor_RowsPerPage_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.RowsPerPage
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.RowsPerPage
+  nameWithType: UrisPanel_razor.RowsPerPage
 - uid: CG.Green.Areas.Admin.Shared
   name: CG.Green.Areas.Admin.Shared
   href: api/CG.Green.Areas.Admin.Shared.html
@@ -10029,6 +10679,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Home.Index_razor.Index_razor
   nameWithType: Index_razor.Index_razor
+- uid: CG.Green.Host.Pages.Home.Index_razor.Broke
+  name: Broke
+  href: api/CG.Green.Host.Pages.Home.Index_razor.html#CG_Green_Host_Pages_Home_Index_razor_Broke
+  commentId: P:CG.Green.Host.Pages.Home.Index_razor.Broke
+  fullName: CG.Green.Host.Pages.Home.Index_razor.Broke
+  nameWithType: Index_razor.Broke
+- uid: CG.Green.Host.Pages.Home.Index_razor.Broke*
+  name: Broke
+  href: api/CG.Green.Host.Pages.Home.Index_razor.html#CG_Green_Host_Pages_Home_Index_razor_Broke_
+  commentId: Overload:CG.Green.Host.Pages.Home.Index_razor.Broke
+  isSpec: "True"
+  fullName: CG.Green.Host.Pages.Home.Index_razor.Broke
+  nameWithType: Index_razor.Broke
 - uid: CG.Green.Host.Pages.Home.Index_razor.Culture
   name: Culture
   href: api/CG.Green.Host.Pages.Home.Index_razor.html#CG_Green_Host_Pages_Home_Index_razor_Culture
@@ -10067,32 +10730,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Host.Pages.Home.Index_razor.ResourceManager
   nameWithType: Index_razor.ResourceManager
-- uid: CG.Green.Host.Pages.Home.Index_razor.Test
-  name: Test
-  href: api/CG.Green.Host.Pages.Home.Index_razor.html#CG_Green_Host_Pages_Home_Index_razor_Test
-  commentId: P:CG.Green.Host.Pages.Home.Index_razor.Test
-  fullName: CG.Green.Host.Pages.Home.Index_razor.Test
-  nameWithType: Index_razor.Test
-- uid: CG.Green.Host.Pages.Home.Index_razor.Test*
-  name: Test
-  href: api/CG.Green.Host.Pages.Home.Index_razor.html#CG_Green_Host_Pages_Home_Index_razor_Test_
-  commentId: Overload:CG.Green.Host.Pages.Home.Index_razor.Test
-  isSpec: "True"
-  fullName: CG.Green.Host.Pages.Home.Index_razor.Test
-  nameWithType: Index_razor.Test
-- uid: CG.Green.Host.Pages.Home.Index_razor.Test1
-  name: Test1
-  href: api/CG.Green.Host.Pages.Home.Index_razor.html#CG_Green_Host_Pages_Home_Index_razor_Test1
-  commentId: P:CG.Green.Host.Pages.Home.Index_razor.Test1
-  fullName: CG.Green.Host.Pages.Home.Index_razor.Test1
-  nameWithType: Index_razor.Test1
-- uid: CG.Green.Host.Pages.Home.Index_razor.Test1*
-  name: Test1
-  href: api/CG.Green.Host.Pages.Home.Index_razor.html#CG_Green_Host_Pages_Home_Index_razor_Test1_
-  commentId: Overload:CG.Green.Host.Pages.Home.Index_razor.Test1
-  isSpec: "True"
-  fullName: CG.Green.Host.Pages.Home.Index_razor.Test1
-  nameWithType: Index_razor.Test1
 - uid: CG.Green.Host.Shared
   name: CG.Green.Host.Shared
   href: api/CG.Green.Host.Shared.html
