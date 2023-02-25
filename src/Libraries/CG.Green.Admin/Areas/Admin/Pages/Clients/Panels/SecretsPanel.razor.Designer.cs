@@ -61,6 +61,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something broke!.
+        /// </summary>
+        internal static string Broke {
+            get {
+                return ResourceManager.GetString("Broke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string Create {
@@ -70,11 +79,29 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Secret.
+        /// </summary>
+        internal static string CreateSecret {
+            get {
+                return ResourceManager.GetString("CreateSecret", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
         internal static string Description {
             get {
                 return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Secret.
+        /// </summary>
+        internal static string EditSecret {
+            get {
+                return ResourceManager.GetString("EditSecret", resourceCulture);
             }
         }
         
@@ -120,6 +147,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static string RequireSecret {
             get {
                 return ResourceManager.GetString("RequireSecret", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rows per page:.
+        /// </summary>
+        internal static string RowsPerPage {
+            get {
+                return ResourceManager.GetString("RowsPerPage", resourceCulture);
             }
         }
         

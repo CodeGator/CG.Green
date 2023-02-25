@@ -11,7 +11,7 @@
                                   Margin="Margin.Dense"
                                   Counter="@(Globals.Models.Claims.TypeLength)"
                                   Variant="Variant.Outlined"
-                                  Label="Type"
+                                  Label=@Localizer["Type"]
                                   For="@(() => Model.Type)"
                                   @bind-Value="@Model.Type"
                                   Class="ml-auto" />
@@ -20,14 +20,14 @@
                                   Margin="Margin.Dense"
                                   Counter="@(Globals.Models.Claims.ValueLength)"
                                   Variant="Variant.Outlined"
-                                  Label="Value"
+                                  Label=@Localizer["Value"]
                                   For="@(() => Model.Value)"
                                   @bind-Value="@Model.Value"
                                   Class="ml-auto" />
                 </MudCardContent>
                 <MudCardActions>
-                    <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">Cancel</MudButton>
-                    <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">Save</MudButton>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">@Localizer["Cancel"]</MudButton>
+                    <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">@Localizer["Save"]</MudButton>
                 </MudCardActions>
             </MudCard>
         </EditForm>

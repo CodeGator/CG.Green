@@ -79,6 +79,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something broke!.
+        /// </summary>
+        internal static string Broke {
+            get {
+                return ResourceManager.GetString("Broke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Client Description.
         /// </summary>
         internal static string ClientDescription {
@@ -111,6 +120,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static string ClientName {
             get {
                 return ResourceManager.GetString("ClientName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client Id copied to the clipboard.
+        /// </summary>
+        internal static string CopyClipboard {
+            get {
+                return ResourceManager.GetString("CopyClipboard", resourceCulture);
             }
         }
         

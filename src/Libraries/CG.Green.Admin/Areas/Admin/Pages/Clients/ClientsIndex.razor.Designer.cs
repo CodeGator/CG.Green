@@ -70,6 +70,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something broke!.
+        /// </summary>
+        internal static string Broke {
+            get {
+                return ResourceManager.GetString("Broke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clients.
         /// </summary>
         internal static string Clients {

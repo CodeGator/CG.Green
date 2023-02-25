@@ -117,22 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Create" xml:space="preserve">
-    <value>Crear</value>
+  <data name="Broke" xml:space="preserve">
+    <value>¡Algo se rompió!</value>
   </data>
-  <data name="FrontChannelLogoutURIs" xml:space="preserve">
-    <value>URI de cierre de sesión del canal frontal</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
   </data>
-  <data name="LoadingUris" xml:space="preserve">
-    <value>Cargando URIs ...</value>
+  <data name="Save" xml:space="preserve">
+    <value>Ahorrar</value>
   </data>
-  <data name="NoUris" xml:space="preserve">
-    <value>No se encontraron URI.</value>
-  </data>
-  <data name="PostLogoutRedirectURIs" xml:space="preserve">
-    <value>URI de redirección posterior al cierre de sesión</value>
-  </data>
-  <data name="RedirectURIs" xml:space="preserve">
-    <value>Redirect URIs</value>
+  <data name="SigningAlgorithm" xml:space="preserve">
+    <value>Algoritmo de Firma</value>
   </data>
 </root>

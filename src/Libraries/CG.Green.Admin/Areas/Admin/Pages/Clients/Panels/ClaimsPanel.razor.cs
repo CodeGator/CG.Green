@@ -115,7 +115,7 @@ public partial class ClaimsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientClaimDialog>(
-				"Create Claim",
+				Localizer["CreateClaim"],
 				parameters,
 				options
 				);
@@ -154,7 +154,10 @@ public partial class ClaimsPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -203,7 +206,7 @@ public partial class ClaimsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientClaimDialog>(
-				"Edit Claim",
+				Localizer["EditClaim"],
 				parameters,
 				options
 				);
@@ -240,7 +243,10 @@ public partial class ClaimsPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -296,7 +302,10 @@ public partial class ClaimsPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 

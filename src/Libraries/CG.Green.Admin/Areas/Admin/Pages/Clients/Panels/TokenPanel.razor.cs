@@ -1,6 +1,4 @@
 ﻿
-using System;
-
 namespace CG.Green.Areas.Admin.Pages.Clients.Panels;
 
 /// <summary>
@@ -105,7 +103,7 @@ public partial class TokenPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<AlgorithmDialog>(
-				"Create a Signing Algorithm",
+				Localizer["CreateSigningAlgorithm"],
 				parameters,
 				options
 				);
@@ -144,7 +142,10 @@ public partial class TokenPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -193,7 +194,7 @@ public partial class TokenPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<AlgorithmDialog>(
-				"Edit Signing Algorithm",
+				Localizer["EditSigningAlgorithm"],
 				parameters,
 				options
 				);
@@ -230,7 +231,10 @@ public partial class TokenPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -286,7 +290,10 @@ public partial class TokenPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 

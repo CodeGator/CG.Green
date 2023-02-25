@@ -114,7 +114,7 @@ public partial class SecretsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientSecretDialog>(
-				"Create Secret",
+				Localizer["CreateSecret"],
 				parameters,
 				options
 				);
@@ -156,7 +156,10 @@ public partial class SecretsPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -212,7 +215,10 @@ public partial class SecretsPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -262,7 +268,7 @@ public partial class SecretsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientSecretDialog>(
-				"Edit Secret",
+				Localizer["EditSecret"],
 				parameters,
 				options
 				);
@@ -307,7 +313,10 @@ public partial class SecretsPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 

@@ -59,5 +59,32 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Dialogs {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancelar.
+        /// </summary>
+        internal static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ahorrar.
+        /// </summary>
+        internal static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to URI.
+        /// </summary>
+        internal static string URI {
+            get {
+                return ResourceManager.GetString("URI", resourceCulture);
+            }
+        }
     }
 }

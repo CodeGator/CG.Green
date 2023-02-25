@@ -61,20 +61,11 @@ namespace CG.Green.Host.Pages.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Test.
+        ///   Looks up a localized string similar to Something broke!.
         /// </summary>
-        public static string Test {
+        public static string Broke {
             get {
-                return ResourceManager.GetString("Test", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Test1.
-        /// </summary>
-        public static string Test1 {
-            get {
-                return ResourceManager.GetString("Test1", resourceCulture);
+                return ResourceManager.GetString("Broke", resourceCulture);
             }
         }
     }

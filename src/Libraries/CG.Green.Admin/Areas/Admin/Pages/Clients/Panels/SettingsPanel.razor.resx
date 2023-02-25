@@ -123,6 +123,9 @@
   <data name="AllowOfflineAccessHelp" xml:space="preserve">
     <value>Enable/disable refresh tokens.</value>
   </data>
+  <data name="Broke" xml:space="preserve">
+    <value>Something broke!</value>
+  </data>
   <data name="ClientDescription" xml:space="preserve">
     <value>Client Description</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="ClientName" xml:space="preserve">
     <value>Client Name</value>
+  </data>
+  <data name="CopyClipboard" xml:space="preserve">
+    <value>Client Id copied to the clipboard</value>
   </data>
   <data name="IsEnabled" xml:space="preserve">
     <value>Is Enabled</value>

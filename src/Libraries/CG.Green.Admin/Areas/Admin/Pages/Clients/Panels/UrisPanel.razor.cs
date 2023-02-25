@@ -115,7 +115,7 @@ public partial class UrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"Create Post Logout URI",
+				Localizer["CreatePostLogoutURI"],
 				parameters,
 				options
 				);
@@ -154,7 +154,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -203,7 +206,7 @@ public partial class UrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"Edit Post Logout URI",
+				Localizer["EditPostLogoutURI"],
 				parameters,
 				options
 				);
@@ -240,7 +243,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -296,7 +302,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -342,7 +351,7 @@ public partial class UrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"Create Front Channel Logout URI",
+				Localizer["CreateFrontChannelLogoutURI"],
 				parameters,
 				options
 				);
@@ -381,7 +390,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -437,7 +449,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -486,7 +501,7 @@ public partial class UrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"Edit Front Channel Logout URI",
+				Localizer["EditFrontChannelLogoutURI"],
 				parameters,
 				options
 				);
@@ -523,7 +538,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -569,7 +587,7 @@ public partial class UrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"Create Redirect URI",
+				Localizer["CreateRedirectURI"],
 				parameters,
 				options
 				);
@@ -608,7 +626,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -657,7 +678,7 @@ public partial class UrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"Edit Redirect URI",
+				Localizer["EditRedirectURI"],
 				parameters,
 				options
 				);
@@ -694,7 +715,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
@@ -750,7 +774,10 @@ public partial class UrisPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 

@@ -117,14 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
   <data name="Advanced" xml:space="preserve">
     <value>Advanced</value>
   </data>
   <data name="BackToClients" xml:space="preserve">
     <value>Back to Clients</value>
   </data>
+  <data name="Broke" xml:space="preserve">
+    <value>Something broke!</value>
+  </data>
+  <data name="ChangesSaved" xml:space="preserve">
+    <value>Changes were saved</value>
+  </data>
   <data name="Claims" xml:space="preserve">
     <value>Claims</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>Ooops! we couldn't find that Duende client!</value>

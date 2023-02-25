@@ -117,8 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Broke" xml:space="preserve">
+    <value>Something broke!</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Create</value>
+  </data>
+  <data name="CreateFrontChannelLogoutURI" xml:space="preserve">
+    <value>Create Front Channel Logout URI</value>
+  </data>
+  <data name="CreatePostLogoutURI" xml:space="preserve">
+    <value>Create Post Logout URI</value>
+  </data>
+  <data name="CreateRedirectURI" xml:space="preserve">
+    <value>Create Redirect URI</value>
+  </data>
+  <data name="EditFrontChannelLogoutURI" xml:space="preserve">
+    <value>Edit Front Channel Logout URI</value>
+  </data>
+  <data name="EditPostLogoutURI" xml:space="preserve">
+    <value>Edit Post Logout URI</value>
+  </data>
+  <data name="EditRedirectURI" xml:space="preserve">
+    <value>Edit Redirect URI</value>
   </data>
   <data name="FrontChannelLogoutURIs" xml:space="preserve">
     <value>Front Channel Logout URIs</value>
@@ -133,6 +154,9 @@
     <value>Post Logout Redirect URIs</value>
   </data>
   <data name="RedirectURIs" xml:space="preserve">
-    <value>URI de Redirección</value>
+    <value>Redirect URIs</value>
+  </data>
+  <data name="RowsPerPage" xml:space="preserve">
+    <value>Rows per page:</value>
   </data>
 </root>

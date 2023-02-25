@@ -120,6 +120,9 @@
   <data name="Admin" xml:space="preserve">
     <value>Administrador</value>
   </data>
+  <data name="Broke" xml:space="preserve">
+    <value>¡Algo se rompió!</value>
+  </data>
   <data name="Clients" xml:space="preserve">
     <value>Clientes</value>
   </data>

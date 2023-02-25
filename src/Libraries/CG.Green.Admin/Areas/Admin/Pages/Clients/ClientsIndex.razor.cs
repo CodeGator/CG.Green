@@ -149,7 +149,10 @@ public partial class ClientsIndex
                 );
 
             // Tell the world what happened.
-            await Dialog.ShowErrorBox(ex);
+            await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
         }
     }
 
@@ -311,7 +314,10 @@ public partial class ClientsIndex
                 );
 
             // Tell the world what happened.
-            await Dialog.ShowErrorBox(ex);
+            await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
         }
     }
 
@@ -377,7 +383,10 @@ public partial class ClientsIndex
                 );
 
             // Tell the world what happened.
-            await Dialog.ShowErrorBox(ex);
+            await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
         }
     }
 
@@ -448,7 +457,10 @@ public partial class ClientsIndex
                 );
 
             // Tell the world what happened.
-            await Dialog.ShowErrorBox(ex);
+            await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
         }
     }
 
@@ -494,7 +506,10 @@ public partial class ClientsIndex
                 );
 
             // Tell the world what happened.
-            await Dialog.ShowErrorBox(ex);
+            await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
         }
     }
 

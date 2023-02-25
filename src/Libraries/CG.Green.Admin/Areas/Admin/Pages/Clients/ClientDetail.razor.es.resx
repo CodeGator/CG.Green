@@ -117,14 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Admin" xml:space="preserve">
+    <value>Administrador</value>
+  </data>
   <data name="Advanced" xml:space="preserve">
     <value>Avanzado</value>
   </data>
   <data name="BackToClients" xml:space="preserve">
     <value>Volver a los Clientes</value>
   </data>
+  <data name="Broke" xml:space="preserve">
+    <value>¡Algo se rompió!</value>
+  </data>
+  <data name="ChangesSaved" xml:space="preserve">
+    <value>Los cambios fueron guardados</value>
+  </data>
   <data name="Claims" xml:space="preserve">
     <value>Reclamos</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Hogar</value>
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>¡Uy! ¡No pudimos encontrar a ese cliente ¡Uy!</value>

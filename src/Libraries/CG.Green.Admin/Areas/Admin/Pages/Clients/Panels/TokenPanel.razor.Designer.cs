@@ -178,11 +178,38 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something broke!.
+        /// </summary>
+        internal static string Broke {
+            get {
+                return ResourceManager.GetString("Broke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string Create {
             get {
                 return ResourceManager.GetString("Create", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Signing Algorithm.
+        /// </summary>
+        internal static string CreateSigningAlgorithm {
+            get {
+                return ResourceManager.GetString("CreateSigningAlgorithm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Signing Algorithm.
+        /// </summary>
+        internal static string EditSigningAlgorithm {
+            get {
+                return ResourceManager.GetString("EditSigningAlgorithm", resourceCulture);
             }
         }
         
@@ -273,6 +300,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static string RefreshTokenUsageHelp {
             get {
                 return ResourceManager.GetString("RefreshTokenUsageHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rows per page:.
+        /// </summary>
+        internal static string RowsPerPage {
+            get {
+                return ResourceManager.GetString("RowsPerPage", resourceCulture);
             }
         }
         

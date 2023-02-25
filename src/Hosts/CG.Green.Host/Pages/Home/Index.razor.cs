@@ -240,7 +240,10 @@ public partial class Index
                 );
 
             // Display the error message.
-            await DialogService.ShowErrorBox(ex);
+            await DialogService.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
         }
     }
 

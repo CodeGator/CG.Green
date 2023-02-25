@@ -123,6 +123,9 @@
   <data name="AllowOfflineAccessHelp" xml:space="preserve">
     <value>Habilitar/deshabilitar Tokens de Actualización.</value>
   </data>
+  <data name="Broke" xml:space="preserve">
+    <value>¡Algo se rompió!</value>
+  </data>
   <data name="ClientDescription" xml:space="preserve">
     <value>Descripción del Cliente</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="ClientName" xml:space="preserve">
     <value>Nombre del Cliente</value>
+  </data>
+  <data name="CopyClipboard" xml:space="preserve">
+    <value>ID de cliente copiado al portapapeles</value>
   </data>
   <data name="IsEnabled" xml:space="preserve">
     <value>Está Habilitado</value>

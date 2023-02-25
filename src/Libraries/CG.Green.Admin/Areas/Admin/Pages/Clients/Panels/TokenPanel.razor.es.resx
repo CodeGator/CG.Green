@@ -156,8 +156,17 @@
   <data name="AlwaysIncludeUserClaimsInIdentityTokenHelp" xml:space="preserve">
     <value>Al solicitar un token de identificación y un token de acceso, las reclamaciones del usuario siempre deben agregarse al token de identificación en lugar de requerir que el cliente use el punto final de información de usuario.</value>
   </data>
+  <data name="Broke" xml:space="preserve">
+    <value>¡Algo se rompió!</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Crear</value>
+  </data>
+  <data name="CreateSigningAlgorithm" xml:space="preserve">
+    <value>Crear Algoritmo de Firma</value>
+  </data>
+  <data name="EditSigningAlgorithm" xml:space="preserve">
+    <value>Editar Algoritmo de Firma</value>
   </data>
   <data name="IdentityTokenLifetime" xml:space="preserve">
     <value>Vida útil del token de identidad</value>
@@ -188,6 +197,9 @@
   </data>
   <data name="RefreshTokenUsageHelp" xml:space="preserve">
     <value>Reutilizar: el identificador del token de actualización permanecerá igual cuando se actualicen los tokens. OneTime: el identificador del token de actualización se actualizará al actualizar los tokens.</value>
+  </data>
+  <data name="RowsPerPage" xml:space="preserve">
+    <value>Filas por página:</value>
   </data>
   <data name="SlidingRefreshTokenLifetime" xml:space="preserve">
     <value>Duración del Token de Actualización Deslizante</value>

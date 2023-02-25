@@ -61,11 +61,74 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something broke!.
+        /// </summary>
+        internal static string Broke {
+            get {
+                return ResourceManager.GetString("Broke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string Create {
             get {
                 return ResourceManager.GetString("Create", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Front Channel Logout URI.
+        /// </summary>
+        internal static string CreateFrontChannelLogoutURI {
+            get {
+                return ResourceManager.GetString("CreateFrontChannelLogoutURI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Post Logout URI.
+        /// </summary>
+        internal static string CreatePostLogoutURI {
+            get {
+                return ResourceManager.GetString("CreatePostLogoutURI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Redirect URI.
+        /// </summary>
+        internal static string CreateRedirectURI {
+            get {
+                return ResourceManager.GetString("CreateRedirectURI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Front Channel Logout URI.
+        /// </summary>
+        internal static string EditFrontChannelLogoutURI {
+            get {
+                return ResourceManager.GetString("EditFrontChannelLogoutURI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Post Logout URI.
+        /// </summary>
+        internal static string EditPostLogoutURI {
+            get {
+                return ResourceManager.GetString("EditPostLogoutURI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Redirect URI.
+        /// </summary>
+        internal static string EditRedirectURI {
+            get {
+                return ResourceManager.GetString("EditRedirectURI", resourceCulture);
             }
         }
         
@@ -106,11 +169,20 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to URI de Redirección.
+        ///   Looks up a localized string similar to Redirect URIs.
         /// </summary>
         internal static string RedirectURIs {
             get {
                 return ResourceManager.GetString("RedirectURIs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rows per page:.
+        /// </summary>
+        internal static string RowsPerPage {
+            get {
+                return ResourceManager.GetString("RowsPerPage", resourceCulture);
             }
         }
     }

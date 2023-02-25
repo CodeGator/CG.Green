@@ -61,6 +61,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something broke!.
+        /// </summary>
+        internal static string Broke {
+            get {
+                return ResourceManager.GetString("Broke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Client Claims.
         /// </summary>
         internal static string ClientClaims {
@@ -79,6 +88,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Claim.
+        /// </summary>
+        internal static string CreateClaim {
+            get {
+                return ResourceManager.GetString("CreateClaim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Claim.
+        /// </summary>
+        internal static string EditClaim {
+            get {
+                return ResourceManager.GetString("EditClaim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Loading claims.
         /// </summary>
         internal static string LoadingClaims {
@@ -93,6 +120,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static string NoClaims {
             get {
                 return ResourceManager.GetString("NoClaims", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rows per page:.
+        /// </summary>
+        internal static string RowsPerPage {
+            get {
+                return ResourceManager.GetString("RowsPerPage", resourceCulture);
             }
         }
         

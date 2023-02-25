@@ -119,10 +119,10 @@ public partial class ClientDetail
             // Create the bread crumbs for the page.
             _crumbs = new()
             {
-                new BreadcrumbItem("Home", href: "/"),
-                new BreadcrumbItem("Admin", href: "/admin", disabled: true),
-                new BreadcrumbItem("Clients", href: "/admin/clients"),
-                new BreadcrumbItem("Details", href: $"/admin/clients/{ClientId}/detail")
+                new BreadcrumbItem(Localizer["Home"], href: "/"),
+                new BreadcrumbItem(Localizer["Admin"], href: "/admin", disabled: true),
+                new BreadcrumbItem(Localizer["Clients"], href: "/admin/clients"),
+                new BreadcrumbItem(Localizer["Details"], href: $"/admin/clients/{ClientId}/detail")
             };
 
             // Log what we are about to do.
@@ -150,7 +150,10 @@ public partial class ClientDetail
                 );
 
             // Tell the world what happened.
-            await Dialog.ShowErrorBox(ex);
+            await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
         }
     }
 
@@ -204,7 +207,7 @@ public partial class ClientDetail
 
             // Tell the world what we did.
             Snackbar.Add(
-                $"Changes were saved"
+                Localizer["ChangesSaved"]
                 );
         }
         catch (Exception ex)
@@ -216,7 +219,10 @@ public partial class ClientDetail
                 );
 
             // Tell the world what happened.
-            await Dialog.ShowErrorBox(ex);
+            await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
         }
         finally
         {

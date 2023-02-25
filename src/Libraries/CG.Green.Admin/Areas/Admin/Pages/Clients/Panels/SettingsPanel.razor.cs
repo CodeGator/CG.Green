@@ -102,7 +102,7 @@ public partial class SettingsPanel
 
 			// Tell the world what we did.
 			Snackbar.Add(
-				$"Client Id copied to the clipboard"
+				Localizer["CopyClipboard"]
 				);
 		}
 		catch (Exception ex)
@@ -114,7 +114,10 @@ public partial class SettingsPanel
 				);
 
 			// Tell the world what happened.
-			await Dialog.ShowErrorBox(ex);
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
 		}
 	}
 
