@@ -74,6 +74,11 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>TokenPanel.razor.resx</DependentUpon>
       </Compile>
+      <Compile Update="Areas\Admin\Pages\Clients\Panels\UrisPanel.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>UrisPanel.razor.resx</DependentUpon>
+      </Compile>
       <Compile Update="Areas\Admin\Shared\DeleteDialog.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -132,6 +137,10 @@
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\TokenPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>TokenPanel.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\UrisPanel.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>UrisPanel.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Shared\DeleteDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>

@@ -1,5 +1,4 @@
 ﻿
-using AutoMapper;
 using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 
 namespace CG.Green.Host.Controllers;

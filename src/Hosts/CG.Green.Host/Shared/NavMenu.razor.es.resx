@@ -117,88 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AbsoluteRefreshTokenLifetime" xml:space="preserve">
-    <value>Absolute Refresh Token Lifetime</value>
+  <data name="About" xml:space="preserve">
+    <value>Acerca de</value>
   </data>
-  <data name="AbsoluteRefreshTokenLifetimeHelp" xml:space="preserve">
-    <value>Absolute lifetime of a refresh token in seconds.</value>
+  <data name="Admin" xml:space="preserve">
+    <value>Administrador</value>
   </data>
-  <data name="AccessTokenLifetime" xml:space="preserve">
-    <value>Access Token Lifetime</value>
+  <data name="Clients" xml:space="preserve">
+    <value>Clientes</value>
   </data>
-  <data name="AccessTokenLifetimeHelp" xml:space="preserve">
-    <value>Lifetime of an access token in seconds.</value>
+  <data name="Debugging" xml:space="preserve">
+    <value>Depuración</value>
   </data>
-  <data name="AccessTokens" xml:space="preserve">
-    <value>Access Tokens</value>
+  <data name="DiscoveryEndpoint" xml:space="preserve">
+    <value>Punto Final de Descubrimiento</value>
   </data>
-  <data name="AccessTokenType" xml:space="preserve">
-    <value>Access Token Type</value>
+  <data name="Help" xml:space="preserve">
+    <value>Ayuda</value>
   </data>
-  <data name="AccessTokenTypeHelp" xml:space="preserve">
-    <value>Specifies whether the access token is a reference token or a self contained JWT token.</value>
+  <data name="Home" xml:space="preserve">
+    <value>Hogar</value>
   </data>
-  <data name="AllowAccessTokensViaBrowser" xml:space="preserve">
-    <value>Allow access tokens via browser</value>
-  </data>
-  <data name="AllowAccessTokensViaBrowserHelp" xml:space="preserve">
-    <value>Controls whether access tokens are transmitted via the browser, for this client.</value>
-  </data>
-  <data name="AllowedSigningAlgorithms" xml:space="preserve">
-    <value>Allowed Signing Algorithms</value>
-  </data>
-  <data name="AllowedSigningAlgorithmsHelp" xml:space="preserve">
-    <value>Signing algorithm for identity token. If empty, will use the Duende default signing algorithm</value>
-  </data>
-  <data name="AlwaysIncludeUserClaimsInIdentityToken" xml:space="preserve">
-    <value>Always include user claims in identity token</value>
-  </data>
-  <data name="AlwaysIncludeUserClaimsInIdentityTokenHelp" xml:space="preserve">
-    <value>When requesting both an id token and access token, should the user claims always be added to the id token instead of requiring the client to use the userinfo endpoint.</value>
-  </data>
-  <data name="Create" xml:space="preserve">
-    <value>Create</value>
-  </data>
-  <data name="IdentityTokenLifetime" xml:space="preserve">
-    <value>Identity Token Lifetime</value>
-  </data>
-  <data name="IdentityTokenLifetimeHelp" xml:space="preserve">
-    <value>Lifetime of an identity token in seconds.</value>
-  </data>
-  <data name="IdentityTokens" xml:space="preserve">
-    <value>Identity Tokens</value>
-  </data>
-  <data name="LoadingSigningAlgorithms" xml:space="preserve">
-    <value>Loading signing algorithms ...</value>
-  </data>
-  <data name="NoSigningAlgorithms" xml:space="preserve">
-    <value>No signing algorithms were found.</value>
-  </data>
-  <data name="RefreshTokenExpiration" xml:space="preserve">
-    <value>Refresh Token Expiration</value>
-  </data>
-  <data name="RefreshTokenExpirationHelp" xml:space="preserve">
-    <value>Absolute: the refresh token will expire on a fixed point in time. Sliding: when refreshing the token, the lifetime of the refresh token will be renewed.</value>
-  </data>
-  <data name="RefreshTokens" xml:space="preserve">
-    <value>Refresh Tokens</value>
-  </data>
-  <data name="RefreshTokenUsage" xml:space="preserve">
-    <value>Refresh Token Usage</value>
-  </data>
-  <data name="RefreshTokenUsageHelp" xml:space="preserve">
-    <value>ReUse: the refresh token handle will stay the same when refreshing tokens. OneTime: the refresh token handle will be updated when refreshing tokens.</value>
-  </data>
-  <data name="SlidingRefreshTokenLifetime" xml:space="preserve">
-    <value>Sliding Refresh Token Lifetime</value>
-  </data>
-  <data name="SlidingRefreshTokenLifetimeHelp" xml:space="preserve">
-    <value>Sliding lifetime of a refresh token in seconds.</value>
-  </data>
-  <data name="UpdateAccessTokenClaimsOnRefresh" xml:space="preserve">
-    <value>Update access token claims on refresh</value>
-  </data>
-  <data name="UpdateAccessTokenClaimsOnRefreshHelp" xml:space="preserve">
-    <value>Controls whether the access token (and its claims) should be updated on a refresh token request</value>
+  <data name="WhoAmI" xml:space="preserve">
+    <value>¿Quién Soy?</value>
   </data>
 </root>

@@ -59,5 +59,95 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow Offline Access.
+        /// </summary>
+        internal static string AllowOfflineAccess {
+            get {
+                return ResourceManager.GetString("AllowOfflineAccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable/disable refresh tokens..
+        /// </summary>
+        internal static string AllowOfflineAccessHelp {
+            get {
+                return ResourceManager.GetString("AllowOfflineAccessHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client Description.
+        /// </summary>
+        internal static string ClientDescription {
+            get {
+                return ResourceManager.GetString("ClientDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client Id.
+        /// </summary>
+        internal static string ClientId {
+            get {
+                return ResourceManager.GetString("ClientId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is the value external callers will use to connect to this client..
+        /// </summary>
+        internal static string ClientIdHelp {
+            get {
+                return ResourceManager.GetString("ClientIdHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client Name.
+        /// </summary>
+        internal static string ClientName {
+            get {
+                return ResourceManager.GetString("ClientName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Enabled.
+        /// </summary>
+        internal static string IsEnabled {
+            get {
+                return ResourceManager.GetString("IsEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable/disable the client..
+        /// </summary>
+        internal static string IsEnabledHelp {
+            get {
+                return ResourceManager.GetString("IsEnabledHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Require Request Object.
+        /// </summary>
+        internal static string RequireRequestObject {
+            get {
+                return ResourceManager.GetString("RequireRequestObject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Require signed requests only..
+        /// </summary>
+        internal static string RequireRequestObjectHelp {
+            get {
+                return ResourceManager.GetString("RequireRequestObjectHelp", resourceCulture);
+            }
+        }
     }
 }

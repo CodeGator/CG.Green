@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Green.Areas.Admin.Pages.Clients {
+namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ClientsIndex_razor {
+    internal class UrisPanel_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ClientsIndex_razor() {
+        internal UrisPanel_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.razor", typeof(ClientsIndex_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel.razor", typeof(UrisPanel_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,24 +61,6 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Admin.
-        /// </summary>
-        internal static string Admin {
-            get {
-                return ResourceManager.GetString("Admin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Clients.
-        /// </summary>
-        internal static string Clients {
-            get {
-                return ResourceManager.GetString("Clients", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string Create {
@@ -88,83 +70,47 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enabled.
+        ///   Looks up a localized string similar to Front Channel Logout URIs.
         /// </summary>
-        internal static string Enabled {
+        internal static string FrontChannelLogoutURIs {
             get {
-                return ResourceManager.GetString("Enabled", resourceCulture);
+                return ResourceManager.GetString("FrontChannelLogoutURIs", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Home.
+        ///   Looks up a localized string similar to Loading URIs ....
         /// </summary>
-        internal static string Home {
+        internal static string LoadingUris {
             get {
-                return ResourceManager.GetString("Home", resourceCulture);
+                return ResourceManager.GetString("LoadingUris", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Id.
+        ///   Looks up a localized string similar to No URIs were found..
         /// </summary>
-        internal static string Id {
+        internal static string NoUris {
             get {
-                return ResourceManager.GetString("Id", resourceCulture);
+                return ResourceManager.GetString("NoUris", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loading clients ....
+        ///   Looks up a localized string similar to Post Logout Redirect URIs.
         /// </summary>
-        internal static string Loading {
+        internal static string PostLogoutRedirectURIs {
             get {
-                return ResourceManager.GetString("Loading", resourceCulture);
+                return ResourceManager.GetString("PostLogoutRedirectURIs", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No clients were found..
+        ///   Looks up a localized string similar to URI de Redirección.
         /// </summary>
-        internal static string NoClients {
+        internal static string RedirectURIs {
             get {
-                return ResourceManager.GetString("NoClients", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Use this page to administer Duende clients.
-        /// </summary>
-        internal static string PageDesc {
-            get {
-                return ResourceManager.GetString("PageDesc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Rows per page:.
-        /// </summary>
-        internal static string RowsPerPage {
-            get {
-                return ResourceManager.GetString("RowsPerPage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search.
-        /// </summary>
-        internal static string Search {
-            get {
-                return ResourceManager.GetString("Search", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Clients.
-        /// </summary>
-        internal static string Title {
-            get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("RedirectURIs", resourceCulture);
             }
         }
     }

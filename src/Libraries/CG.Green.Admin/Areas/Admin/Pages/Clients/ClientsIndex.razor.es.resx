@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Admin" xml:space="preserve">
+    <value>Administrador</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Crear</value>
   </data>
   <data name="Enabled" xml:space="preserve">
     <value>Activado</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Hogar</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>Id</value>
@@ -134,6 +143,9 @@
   </data>
   <data name="PageDesc" xml:space="preserve">
     <value>Use esta página para administrar clientes Duende</value>
+  </data>
+  <data name="RowsPerPage" xml:space="preserve">
+    <value>Filas por página:</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Buscar</value>

@@ -1,11 +1,12 @@
-﻿
-<p>
-    <label>
-        <select @bind="Culture">
-            @foreach (var culture in Options.Value.Cultures.Select(x => new CultureInfo(x)).ToArray())
-            {
-                <option value="@culture">@culture.DisplayName</option>
-            }
-        </select>
-    </label>
+﻿<p>
+    <MudSelect Variant="Variant.Text" 
+               @bind-Value="@Culture" 
+               FullWidth
+               DisableUnderLine
+               Class="mb-2 mt-n3">
+        @foreach (var culture in Options.Value.Cultures.Select(x => new CultureInfo(x)).ToArray())
+        {
+            <MudSelectItem Value="@culture">@culture.DisplayName</MudSelectItem>
+        }
+    </MudSelect>
 </p>

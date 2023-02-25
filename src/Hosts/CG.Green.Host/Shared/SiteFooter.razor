@@ -1,19 +1,16 @@
-﻿@inherits Footer
-
-<MudAppBar Bottom="true" Color="Color.Inherit" Dense Elevation="0">
-    <MudGrid>
-        <MudItem xs="12">
-            @ChildContent
-        </MudItem>
-        <MudItem xs="2">
+﻿<MudAppBar Bottom="true" 
+           Color="Color.Inherit" 
+           Dense 
+           Fixed
+           Elevation="0">
+    <MudGrid Justify="Justify.FlexStart" Spacing="1">
+        <MudItem xs="12">&nbsp;</MudItem>
+        <MudItem xs="3">
             <CultureSelector />
         </MudItem>
-        <MudItem xs="10">
-            <MudText Style="font-size: x-small" Align="Align.Right">@Assembly.GetEntryAssembly()?.ReadCopyright()</MudText>
+        <MudItem xs="6">
+            <MudText Class="mt-2" Style="font-size: x-small" Align="Align.Center">@Assembly.GetEntryAssembly()?.ReadCopyright()</MudText>
         </MudItem>
+        <MudItem xs="3">&nbsp;</MudItem>
     </MudGrid>
 </MudAppBar>
-
-@code {
-
-}

@@ -1,7 +1,7 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
-        <GroupBox Title="Redirect URIs">
+        <GroupBox Title=@Localizer["RedirectURIs"]>
         <MudTable Items="Model.RedirectUris"
                 Elevation="0"
                 Dense
@@ -13,7 +13,7 @@
                             Variant="Variant.Filled"
                             Disabled="@_isLoading"
                             Color="Color.Secondary"
-                            OnClick="OnCreateRedirectUriAsync">Create</MudButton>
+                            OnClick="OnCreateRedirectUriAsync">@Localizer["Create"]</MudButton>
                 <MudSpacer />
             </ToolBarContent>
             <ColGroup>
@@ -36,10 +36,10 @@
                 </MudTd>
             </RowTemplate>
             <NoRecordsContent>
-                No URIs were found.
+                @Localizer["NoUris"]
             </NoRecordsContent>
             <LoadingContent>
-                Loading URIs ...
+                    @Localizer["LoadingUris"]
             </LoadingContent>
             <PagerContent>
                 <MudTablePager />
@@ -48,7 +48,7 @@
     </GroupBox>
     </MudItem>
     <MudItem xs="12">
-        <GroupBox Title="Post Logout Redirect URIs">
+        <GroupBox Title=@Localizer["PostLogoutRedirectURIs"]>
             <MudTable Items="Model.PostLogoutRedirectUris"
                     Elevation="0"
                     Dense
@@ -60,7 +60,7 @@
                                 Variant="Variant.Filled"
                                 Disabled="@_isLoading"
                                 Color="Color.Secondary"
-                                OnClick="OnCreatePostLogoutUriAsync">Create</MudButton>
+                                OnClick="OnCreatePostLogoutUriAsync">@Localizer["Create"]</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -83,10 +83,10 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    No URIs were found.
+                    @Localizer["NoUris"]
                 </NoRecordsContent>
                 <LoadingContent>
-                    Loading URIs ...
+                    @Localizer["LoadingUris"]
                 </LoadingContent>
                 <PagerContent>
                     <MudTablePager />
@@ -95,7 +95,7 @@
         </GroupBox>                        
     </MudItem>
     <MudItem xs="12">
-        <GroupBox Title="Front Channel Logout URIs">
+        <GroupBox Title=@Localizer["FrontChannelLogoutURIs"]>
             <MudTable Items="Model.FrontChannelLogoutUris"
                     Elevation="0"
                     Dense
@@ -107,7 +107,7 @@
                                 Variant="Variant.Filled"
                                 Disabled="@_isLoading"
                                 Color="Color.Secondary"
-                                OnClick="OnCreateFrontChannelLogoutUriAsync">Create</MudButton>
+                                OnClick="OnCreateFrontChannelLogoutUriAsync">@Localizer["Create"]</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -130,10 +130,10 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    No URIs were found.
+                    @Localizer["NoUris"]
                 </NoRecordsContent>
                 <LoadingContent>
-                    Loading URIs ...
+                    @Localizer["LoadingUris"]
                 </LoadingContent>
                 <PagerContent>
                     <MudTablePager />

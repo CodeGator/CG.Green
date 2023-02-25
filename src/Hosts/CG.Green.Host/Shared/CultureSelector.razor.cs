@@ -51,22 +51,21 @@ public partial class CultureSelector
         }
     }
 
-    #endregion
+	#endregion
 
-    // *******************************************************************
-    // Protected methods.
-    // *******************************************************************
+	// *******************************************************************
+	// Protected methods.
+	// *******************************************************************
 
-    #region Protected methods
+	#region Protected methods
 
-    /// <summary>
-    /// This method is called to initialize the component.
-    /// </summary>
-    protected override void OnInitialized()
+	/// <summary>
+	/// This method is called to initialize the component.
+	/// </summary>
+	protected override void OnInitialized()
     {
         Culture = CultureInfo.CurrentCulture;
     }
 
     #endregion
-
 }

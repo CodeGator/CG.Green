@@ -67,8 +67,3 @@ a, .btn-link {
     content: "An error has occurred."
 }
 
-.groupbox {
-    border: @($"1px solid {@GreenTheme.Instance().Palette.GrayLight} !important");
-    border-radius: 8px;
-    padding: 10px;
-}

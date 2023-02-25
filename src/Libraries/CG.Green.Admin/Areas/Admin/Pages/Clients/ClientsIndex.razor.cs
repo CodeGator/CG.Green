@@ -6,21 +6,16 @@ namespace CG.Green.Areas.Admin.Pages.Clients;
 /// </summary>
 public partial class ClientsIndex
 {
-    // *******************************************************************
-    // Fields.
-    // *******************************************************************
+	// *******************************************************************
+	// Fields.
+	// *******************************************************************
 
-    #region Fields
+	#region Fields
 
-    /// <summary>
-    /// This field contains a reference to breadcrumbs for the view.
-    /// </summary>
-    internal protected readonly List<BreadcrumbItem> _crumbs = new()
-    {
-        new BreadcrumbItem("Home", href: "/"),
-        new BreadcrumbItem("Admin", href: "/admin", disabled: true),
-        new BreadcrumbItem("Clients", href: "/admin/clients")
-    };
+	/// <summary>
+	/// This field contains a reference to breadcrumbs.
+	/// </summary>
+	internal protected List<BreadcrumbItem> _crumbs = new();
 
     /// <summary>
     /// This field contains the list of clients.
@@ -121,8 +116,16 @@ public partial class ClientsIndex
     {
         try
         {
-            // Log what we are about to do.
-            Logger.LogDebug(
+			// Build the localized breadcrumbs.
+			_crumbs = new()
+			{
+				new BreadcrumbItem(Localizer["Home"], href: "/"),
+				new BreadcrumbItem(Localizer["Admin"], href: "/admin", disabled: true),
+				new BreadcrumbItem(Localizer["Clients"], href: "/admin/clients")
+			};
+
+			// Log what we are about to do.
+			Logger.LogDebug(
                 "Loading data for the page."
                 );
 
