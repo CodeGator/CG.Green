@@ -15,8 +15,7 @@ public partial class MainLayout
 	/// This field indicates when the drawer is open.
 	/// </summary>
 	internal protected bool _drawerOpen;
-
-	
+		
 	#endregion
 
 	// *******************************************************************
