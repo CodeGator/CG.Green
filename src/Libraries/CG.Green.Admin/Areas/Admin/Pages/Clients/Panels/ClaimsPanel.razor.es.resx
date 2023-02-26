@@ -117,11 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AlwaysSendClientClaims" xml:space="preserve">
+    <value>Enviar siempre las reclamaciones de los clientes</value>
+  </data>
+  <data name="AlwaysSendClientClaimsHelp" xml:space="preserve">
+    <value>Envíe siempre las reclamaciones de los clientes independientemente de los tipos de subvención seleccionados.</value>
+  </data>
   <data name="Broke" xml:space="preserve">
     <value>¡Algo se rompió!</value>
   </data>
   <data name="ClientClaims" xml:space="preserve">
     <value>Reclamaciones de clientes</value>
+  </data>
+  <data name="ClientClaimsPrefix" xml:space="preserve">
+    <value>Prefijo de Reclamaciones de Clientes</value>
+  </data>
+  <data name="ClientClaimsPrefixHelp" xml:space="preserve">
+    <value>El valor con el que anteponer las reclamaciones del cliente.</value>
   </data>
   <data name="Create" xml:space="preserve">
     <value>Crear</value>

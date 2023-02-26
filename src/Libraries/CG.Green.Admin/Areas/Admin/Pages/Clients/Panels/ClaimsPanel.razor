@@ -1,6 +1,23 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
+        <MudTextField AutoFocus
+                      Margin="Margin.Dense"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["ClientClaimsPrefix"]
+                      HelperText=@Localizer["ClientClaimsPrefixHelp"]
+                      For="@(() => Model.ClientClaimsPrefix)"
+                      @bind-Value="@Model.ClientClaimsPrefix" />
+        </MudItem>
+    <MudItem xs="12">
+        <MudSwitch Label=@Localizer["AlwaysSendClientClaims"]
+                   Class="mt-2"
+                   Color="Color.Tertiary"
+                   @bind-Checked="@Model.AlwaysSendClientClaims" />
+        <MudText Class="ml-2 mb-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">@Localizer["AlwaysSendClientClaimsHelp"]</MudText>
+    </MudItem>
+    <MudItem xs="12">
         <GroupBox Title=@Localizer["ClientClaims"]>
             <MudTable Items="Model.Claims"
                     Elevation="0"

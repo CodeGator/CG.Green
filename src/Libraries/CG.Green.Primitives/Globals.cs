@@ -68,6 +68,11 @@ public static class Globals
         public static class Clients
         {
 			/// <summary>
+			/// This constant represents the length of the ClientClaimsPrefix property.
+			/// </summary>
+			public const int ClientClaimsPrefixLength = 200;
+
+			/// <summary>
 			/// This constant represents the length of the SigningAlgorithm property.
 			/// </summary>
 			public const int SigningAlgorithmLength = 10;

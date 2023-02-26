@@ -61,6 +61,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Always send client claims.
+        /// </summary>
+        internal static string AlwaysSendClientClaims {
+            get {
+                return ResourceManager.GetString("AlwaysSendClientClaims", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Always send client claims regardless of the selected grant types..
+        /// </summary>
+        internal static string AlwaysSendClientClaimsHelp {
+            get {
+                return ResourceManager.GetString("AlwaysSendClientClaimsHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Something broke!.
         /// </summary>
         internal static string Broke {
@@ -75,6 +93,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static string ClientClaims {
             get {
                 return ResourceManager.GetString("ClientClaims", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client Claims Prefix.
+        /// </summary>
+        internal static string ClientClaimsPrefix {
+            get {
+                return ResourceManager.GetString("ClientClaimsPrefix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The value to prefix client claims with..
+        /// </summary>
+        internal static string ClientClaimsPrefixHelp {
+            get {
+                return ResourceManager.GetString("ClientClaimsPrefixHelp", resourceCulture);
             }
         }
         

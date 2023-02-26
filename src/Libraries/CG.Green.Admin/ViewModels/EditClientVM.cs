@@ -65,6 +65,13 @@ public class EditClientVM
 	public bool AlwaysIncludeUserClaimsInIdToken { get; set; } = false;
 
 	/// <summary>
+	/// This property indicates whether client claims should always be sent.
+	/// </summary>
+	[Required]
+	[Display(Name = "Allow Send Client Claims")]
+	public bool AlwaysSendClientClaims { get; set; } = false;
+
+	/// <summary>
 	/// This property contains the lifetime of an access token, for the client.
 	/// </summary>
 	[Required]
@@ -98,6 +105,13 @@ public class EditClientVM
     [MaxLength(Globals.Models.Clients.ClientIdLength)]
     [Display(Name = "Client Id")]
     public string ClientId { get; set; } = null!;
+
+	/// <summary>
+	/// This property contains the client claims prefix for the client.
+	/// </summary>
+	[MaxLength(Globals.Models.Clients.ClientClaimsPrefixLength)]
+	[Display(Name = "Client ClaimsPrefix")]
+	public string ClientClaimsPrefix { get; set; } = null!;
 
 	/// <summary>
 	/// This property contains a list of secrets for the client.

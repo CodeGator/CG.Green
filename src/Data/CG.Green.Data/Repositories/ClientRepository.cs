@@ -513,9 +513,12 @@ internal class ClientRepository : IClientRepository
             entity.PostLogoutRedirectUris = clientEntity.PostLogoutRedirectUris;
             entity.AllowedCorsOrigins = clientEntity.AllowedCorsOrigins;
             entity.Claims = clientEntity.Claims;
+			entity.AlwaysSendClientClaims = clientEntity.AlwaysSendClientClaims;
+			entity.AlwaysIncludeUserClaimsInIdToken = clientEntity.AlwaysIncludeUserClaimsInIdToken;
+			entity.ClientClaimsPrefix = clientEntity.ClientClaimsPrefix;
 
-            // Log what we are about to do.
-            _logger.LogDebug(
+			// Log what we are about to do.
+			_logger.LogDebug(
                 "Saving changes to the {ctx} data-context",
                 nameof(ConfigurationDbContext)
                 );
