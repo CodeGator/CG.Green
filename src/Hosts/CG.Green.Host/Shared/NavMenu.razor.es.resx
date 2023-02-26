@@ -132,6 +132,9 @@
   <data name="DiscoveryEndpoint" xml:space="preserve">
     <value>Punto Final de Descubrimiento</value>
   </data>
+  <data name="Health" xml:space="preserve">
+    <value>Controles de Salud</value>
+  </data>
   <data name="Help" xml:space="preserve">
     <value>Ayuda</value>
   </data>

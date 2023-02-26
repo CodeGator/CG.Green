@@ -132,6 +132,9 @@
   <data name="DiscoveryEndpoint" xml:space="preserve">
     <value>Discovery Endpoint</value>
   </data>
+  <data name="Health" xml:space="preserve">
+    <value>Health Checks</value>
+  </data>
   <data name="Help" xml:space="preserve">
     <value>Help</value>
   </data>

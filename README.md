@@ -14,11 +14,13 @@ Our main goal is to produce a tool that can be dropped into production, cheaply 
 
 We chose to build on Duende and ASP.NET because they are proven technologies and offer some of the most flexibility, along with the lowest overall cost of ownership.
 
-### What works, and what doesn't, at this point?
+### What works, at this point?
 
-Keep in mind that Green is an idea - not a product. It's all likely to change, and change again, without notice. 
+The ASP.NET and Duende portions are hosted and working perfectly. 
 
-Otherwise, the ASP.NET and Duende portions are hosted and working perfectly. The admin UI is coming along, slowly. The identity UI is functional, but generally needs some love and attention.
+The admin UI is coming along, slowly. This piece alone is a hefty undertaking, so it will take time to finish.
+
+The identity UI is functional, but generally needs some love and attention.
 
 ### What does the roadmap look like?
 

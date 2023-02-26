@@ -173,8 +173,17 @@ public static class WebApplicationBuilderExtensions005
         // Clear the builder cache.
         BuilderCache.Builders.Clear();
 
-        // Return the application builder.
-        return webApplicationBuilder;
+		// Tell the world what we are about to do.
+		bootstrapLogger?.LogDebug(
+			"Adding Sql-Server health checks, for the DAL"
+			);
+
+		// Add SQL-Server specific health checks.
+		webApplicationBuilder.Services.AddHealthChecks()
+			.AddSqlServer(connectionString);
+
+		// Return the application builder.
+		return webApplicationBuilder;
     }
 
     #endregion

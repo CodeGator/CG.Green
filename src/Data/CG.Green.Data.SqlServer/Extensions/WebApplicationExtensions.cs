@@ -93,8 +93,8 @@ public static class WebApplicationExtensions003
                 );
         }
 
-        // Return the application.
-        return webApplication;
+		// Return the application.
+		return webApplication;
     }
 
     #endregion

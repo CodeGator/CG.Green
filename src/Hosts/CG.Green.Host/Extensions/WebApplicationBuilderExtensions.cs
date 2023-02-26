@@ -47,11 +47,24 @@ public static class WebApplicationBuilderExtensions015
             out var greenLocalizationOptions
             );
 
-        // Add localization support.
-        webApplicationBuilder.Services.AddLocalization();
-        
-        // Return the application builder.
-        return webApplicationBuilder;
+		// Tell the world what we are about to do.
+		bootstrapLogger?.LogDebug(
+			"Adding localization services"
+			);
+
+		// Add localization support.
+		webApplicationBuilder.Services.AddLocalization();
+
+		// Tell the world what we are about to do.
+		bootstrapLogger?.LogDebug(
+			"Configuring the health checks"
+			);
+
+		// Add health checks.
+		webApplicationBuilder.Services.AddHealthChecks();
+
+		// Return the application builder.
+		return webApplicationBuilder;
     }
 
     #endregion

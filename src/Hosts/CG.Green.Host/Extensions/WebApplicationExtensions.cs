@@ -1,7 +1,4 @@
 ﻿
-using CG.Green.Host;
-using Microsoft.Extensions.Options;
-
 namespace Microsoft.AspNetCore.Builder;
 
 /// <summary>
@@ -51,8 +48,25 @@ public static class WebApplicationExtensions015
                 .SetDefaultCulture(cultureOptions.Value.Default)
         );
 
-        // Return the application.
-        return webApplication;
+		// Log what we are about to do.
+		webApplication.Logger.LogDebug(
+			"Adding health checks."
+			);
+
+		// Add health checks.
+		webApplication.UseHealthChecks("/health");
+
+		// Log what we are about to do.
+		//webApplication.Logger.LogDebug(
+	//		"Mapping health checks."
+//			);
+
+		// Map the health checks
+		//webApplication.MapHealthChecks("/health")
+		//	.RequireAuthorization();
+
+		// Return the application.
+		return webApplication;
     }
 
     #endregion

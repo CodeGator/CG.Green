@@ -65,22 +65,6 @@ public static class WebApplicationBuilderExtensions001
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Wiring up the Green directors"
-            );
-
-        // Add the directors.
-        //webApplicationBuilder.Services.AddScoped<IContentDirector, ContentDirector>();
-
-        // Tell the world what we are about to do.
-        bootstrapLogger?.LogDebug(
-            "Wiring up the Green factories"
-            );
-
-        // Add the factories.
-        //webApplicationBuilder.Services.AddScoped<IProcessorFactory, ProcessorFactory>();
-
-        // Tell the world what we are about to do.
-        bootstrapLogger?.LogDebug(
             "Wiring up the shared cryptographers"
             );
 
