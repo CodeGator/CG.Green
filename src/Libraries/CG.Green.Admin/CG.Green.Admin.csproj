@@ -59,6 +59,11 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>ClaimsPanel.razor.resx</DependentUpon>
       </Compile>
+      <Compile Update="Areas\Admin\Pages\Clients\Panels\CorsPanel.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CorsPanel.razor.resx</DependentUpon>
+      </Compile>
       <Compile Update="Areas\Admin\Pages\Clients\Panels\SecretsPanel.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -114,6 +119,9 @@
         <LastGenOutput>AlgorithmDialog.razor.Designer.cs</LastGenOutput>
         <Generator>ResXFileCodeGenerator</Generator>
       </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\UriDialog.razor.es.resx">
+        <Generator></Generator>
+      </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\UriDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>UriDialog.razor.Designer.cs</LastGenOutput>
@@ -125,6 +133,10 @@
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClaimsPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>ClaimsPanel.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\CorsPanel.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>CorsPanel.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\SecretsPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>

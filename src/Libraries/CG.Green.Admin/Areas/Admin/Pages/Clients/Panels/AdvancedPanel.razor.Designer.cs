@@ -70,6 +70,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CORS.
+        /// </summary>
+        internal static string CORS {
+            get {
+                return ResourceManager.GetString("CORS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tokens.
         /// </summary>
         internal static string Tokens {

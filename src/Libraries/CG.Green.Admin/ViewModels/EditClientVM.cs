@@ -21,6 +21,13 @@ public class EditClientVM
 	public int AbsoluteRefreshTokenLifetime { get; set; }
 
 	/// <summary>
+	/// This property contains the allowed CORS origins for the client.
+	/// </summary>
+	[Required]
+	[Display(Name = "Allow CORS Origins")]
+	public List<string> AllowedCorsOrigins { get; set; } = new();
+
+	/// <summary>
 	/// This property indicates whether the client can access tokens via browser.
 	/// </summary>
 	[Required]
@@ -41,6 +48,13 @@ public class EditClientVM
 	[Required]
 	[Display(Name = "Allow Access Tokens Via Browser")]
 	public List<string> AllowedIdentityTokenSigningAlgorithms { get; set; } = new();
+
+	/// <summary>
+	/// This property contains the allowed scopes for the client.
+	/// </summary>
+	[Required]
+	[Display(Name = "Allowed Scopes")]
+	public IEnumerable<string> AllowedScopes { get; set; } = new List<string>();
 
 	/// <summary>
 	/// This property indicates whether the identity token should always 
@@ -202,6 +216,12 @@ public class EditClientVM
 		"ImplicitAndClientCredentials",
 		"ResourceOwnerPassword",
 	};
+
+	/// <summary>
+	/// This property contains a list of valid scopes.
+	/// </summary>
+	[Display(Name = "Valid Scopes")]
+	public List<string> ValidScopes { get; set; } = new();
 
 	#endregion
 }

@@ -123,6 +123,12 @@
   <data name="AllowedGrantTypeHelp" xml:space="preserve">
     <value>The type of grant to use for this client.</value>
   </data>
+  <data name="AllowedScopes" xml:space="preserve">
+    <value>Allowed Scopes</value>
+  </data>
+  <data name="AllowedScopesHelp" xml:space="preserve">
+    <value>The scopes this client will ask for</value>
+  </data>
   <data name="AllowOfflineAccess" xml:space="preserve">
     <value>Allow Offline Access</value>
   </data>
@@ -143,6 +149,9 @@
   </data>
   <data name="ClientName" xml:space="preserve">
     <value>Client Name</value>
+  </data>
+  <data name="ClientNameHelp" xml:space="preserve">
+    <value>Internal name for this client.</value>
   </data>
   <data name="CopyClipboard" xml:space="preserve">
     <value>Client Id copied to the clipboard</value>

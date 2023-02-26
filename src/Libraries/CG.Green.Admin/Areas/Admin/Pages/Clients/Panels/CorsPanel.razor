@@ -1,0 +1,50 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    <MudItem xs="12">
+        <GroupBox Title=@Localizer["CORS"]>
+            <MudTable Items="Model.AllowedCorsOrigins"
+                      Elevation="0"
+                      Dense
+                      Striped
+                      Virtualize
+                      Loading="@_isLoading">
+                <ToolBarContent>
+                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                               Variant="Variant.Filled"
+                               Disabled="@_isLoading"
+                               Color="Color.Secondary"
+                               OnClick="OnCreateCorsUriAsync">@Localizer["Create"]</MudButton>
+                    <MudSpacer />
+                </ToolBarContent>
+                <ColGroup>
+                    <col style="width: 85%" />
+                    <col />
+                </ColGroup>
+                <HeaderContent>
+                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                    <MudTh></MudTh>
+                </HeaderContent>
+                <RowTemplate Context="context2">
+                    <MudTd>@context2</MudTd>
+                    <MudTd>
+                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                       OnClick="() => OnDeleteCorsUriAsync(context2)"
+                                       Disabled="@_isLoading" />
+                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                       OnClick="() => OnEditCorsUriAsync(context2)"
+                                       Disabled="@_isLoading" />
+                    </MudTd>
+                </RowTemplate>
+                <NoRecordsContent>
+                    @Localizer["NoCors"]
+                </NoRecordsContent>
+                <LoadingContent>
+                    @Localizer["LoadingCors"]
+                </LoadingContent>
+                <PagerContent>
+                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                </PagerContent>
+            </MudTable>
+        </GroupBox>
+    </MudItem>
+</MudGrid>

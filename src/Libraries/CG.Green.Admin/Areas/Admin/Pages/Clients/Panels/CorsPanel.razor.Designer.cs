@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Green.Areas.Admin.Pages.Clients.Dialogs {
+namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Dialogs {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class UriDialog_razor {
+    internal class CorsPanel_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal UriDialog_razor() {
+        internal CorsPanel_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Dialogs {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog.razor", typeof(UriDialog_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.CorsPanel.razor", typeof(CorsPanel_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,56 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Dialogs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to Something broke!.
         /// </summary>
-        internal static string Cancel {
+        internal static string Broke {
             get {
-                return ResourceManager.GetString("Cancel", resourceCulture);
+                return ResourceManager.GetString("Broke", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save.
+        ///   Looks up a localized string similar to Create CORS Origin.
         /// </summary>
-        internal static string Save {
+        internal static string CreateCORS {
             get {
-                return ResourceManager.GetString("Save", resourceCulture);
+                return ResourceManager.GetString("CreateCORS", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to URI.
+        ///   Looks up a localized string similar to Edit CORS Origin.
         /// </summary>
-        internal static string URI {
+        internal static string EditCORS {
             get {
-                return ResourceManager.GetString("URI", resourceCulture);
+                return ResourceManager.GetString("EditCORS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading CORS.
+        /// </summary>
+        internal static string LoadingCORS {
+            get {
+                return ResourceManager.GetString("LoadingCORS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No CORS origins were found..
+        /// </summary>
+        internal static string NoCORS {
+            get {
+                return ResourceManager.GetString("NoCORS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rows per page:.
+        /// </summary>
+        internal static string RowsPerPage {
+            get {
+                return ResourceManager.GetString("RowsPerPage", resourceCulture);
             }
         }
     }

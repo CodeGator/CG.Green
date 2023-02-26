@@ -123,6 +123,12 @@
   <data name="AllowedGrantTypeHelp" xml:space="preserve">
     <value>El tipo de subvención a utilizar para este cliente.</value>
   </data>
+  <data name="AllowedScopes" xml:space="preserve">
+    <value>Ámbitos Permitidos</value>
+  </data>
+  <data name="AllowedScopesHelp" xml:space="preserve">
+    <value>Los alcances que este cliente solicitará</value>
+  </data>
   <data name="AllowOfflineAccess" xml:space="preserve">
     <value>Permitir Acceso sin Conexión</value>
   </data>
@@ -143,6 +149,9 @@
   </data>
   <data name="ClientName" xml:space="preserve">
     <value>Nombre del Cliente</value>
+  </data>
+  <data name="ClientNameHelp" xml:space="preserve">
+    <value>Nombre interno para este cliente.</value>
   </data>
   <data name="CopyClipboard" xml:space="preserve">
     <value>ID de cliente copiado al portapapeles</value>

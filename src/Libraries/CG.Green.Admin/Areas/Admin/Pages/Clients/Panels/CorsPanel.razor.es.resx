@@ -120,10 +120,19 @@
   <data name="Broke" xml:space="preserve">
     <value>¡Algo se rompió!</value>
   </data>
-  <data name="CORS" xml:space="preserve">
-    <value>CORS</value>
+  <data name="CreateCORS" xml:space="preserve">
+    <value>Crear origen CORS</value>
   </data>
-  <data name="Tokens" xml:space="preserve">
-    <value>Fichas</value>
+  <data name="EditCORS" xml:space="preserve">
+    <value>Editar origen CORS</value>
+  </data>
+  <data name="LoadingCORS" xml:space="preserve">
+    <value>Cargando CORS</value>
+  </data>
+  <data name="NoClaims" xml:space="preserve">
+    <value>No se encontraron orígenes CORS</value>
+  </data>
+  <data name="RowsPerPage" xml:space="preserve">
+    <value>Filas por página:</value>
   </data>
 </root>

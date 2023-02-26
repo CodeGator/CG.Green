@@ -79,6 +79,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Allowed Scopes.
+        /// </summary>
+        internal static string AllowedScopes {
+            get {
+                return ResourceManager.GetString("AllowedScopes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The scopes this client will ask for.
+        /// </summary>
+        internal static string AllowedScopesHelp {
+            get {
+                return ResourceManager.GetString("AllowedScopesHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Allow Offline Access.
         /// </summary>
         internal static string AllowOfflineAccess {
@@ -138,6 +156,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static string ClientName {
             get {
                 return ResourceManager.GetString("ClientName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internal name for this client..
+        /// </summary>
+        internal static string ClientNameHelp {
+            get {
+                return ResourceManager.GetString("ClientNameHelp", resourceCulture);
             }
         }
         

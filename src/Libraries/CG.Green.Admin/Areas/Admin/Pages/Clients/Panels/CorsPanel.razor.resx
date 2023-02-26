@@ -118,12 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Broke" xml:space="preserve">
-    <value>¡Algo se rompió!</value>
+    <value>Something broke!</value>
   </data>
-  <data name="CORS" xml:space="preserve">
-    <value>CORS</value>
+  <data name="CreateCORS" xml:space="preserve">
+    <value>Create CORS Origin</value>
   </data>
-  <data name="Tokens" xml:space="preserve">
-    <value>Fichas</value>
+  <data name="EditCORS" xml:space="preserve">
+    <value>Edit CORS Origin</value>
+  </data>
+  <data name="LoadingCORS" xml:space="preserve">
+    <value>Loading CORS</value>
+  </data>
+  <data name="NoCORS" xml:space="preserve">
+    <value>No CORS origins were found.</value>
+  </data>
+  <data name="RowsPerPage" xml:space="preserve">
+    <value>Rows per page:</value>
   </data>
 </root>

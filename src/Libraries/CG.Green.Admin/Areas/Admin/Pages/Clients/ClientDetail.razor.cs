@@ -290,7 +290,12 @@ public partial class ClientDetail
 
                 // Mark any secrets as hashed since anything coming from
                 //   Duende is going to be hashed already.
-                _model.ClientSecrets.ForEach(x => x.IsHashed = true); 
+                _model.ClientSecrets.ForEach(x => x.IsHashed = true);
+
+				// Get the list of available scope names.
+				_model.ValidScopes = (await GreenApi.ApiScopes.FindAllAsync())
+					.Select(x => x.Name)
+					.ToList();
             }
             else
             {

@@ -23,9 +23,10 @@
                         OnlyValidateIfDirty
                         Margin="Margin.Dense"
                         Counter="@(Globals.Models.Clients.ClientNameLength)"
-                        Class="ml-auto"
+                        Class="ml-auto mb-n4"
                         Variant="Variant.Outlined"
                         Label=@Localizer["ClientName"]
+                        HelperText=@Localizer["ClientNameHelp"]
                         For="@(() => Model.ClientName)"
                         @bind-Value="@Model.ClientName" />
     </MudItem>
@@ -34,7 +35,7 @@
                         OnlyValidateIfDirty
                         Margin="Margin.Dense"
                         Counter="@(Globals.Models.Clients.DescriptionLength)"
-                        Class="ml-auto"
+                        Class="ml-auto mb-n6"
                         Variant="Variant.Outlined"
                         Label=@Localizer["ClientDescription"]
                         Lines="4"
@@ -73,6 +74,21 @@
             @foreach (var grantType in Model.ValidGrantTypes.Order())
             {
                 <MudSelectItem Value=@grantType>@grantType</MudSelectItem>
+            }
+        </MudSelect>
+    </MudItem>
+    <MudItem xs="12">
+        <MudSelect T="string"
+                   Dense
+                   MultiSelection
+                   Variant="Variant.Outlined"
+                   Margin="Margin.Dense"
+                   Label=@Localizer["AllowedScopes"]
+                   @bind-SelectedValues="Model.AllowedScopes"
+                   HelperText=@Localizer["AllowedScopesHelp"]>
+            @foreach (var scope in Model.ValidScopes.Order())
+            {
+                <MudSelectItem Value=@scope>@scope</MudSelectItem>
             }
         </MudSelect>
     </MudItem>
