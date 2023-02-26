@@ -68,5 +68,176 @@ namespace CG.Green.Host.Pages.Home {
                 return ResourceManager.GetString("Broke", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open-source, 100% free to use.
+        /// </summary>
+        public static string Bullet1 {
+            get {
+                return ResourceManager.GetString("Bullet1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to * (Additional third party license(s) may apply. CodeGator does not grant permissions to any third party license(s).
+        /// </summary>
+        public static string Bullet10 {
+            get {
+                return ResourceManager.GetString("Bullet10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Written 100% in &lt;strong&gt;C#&lt;/strong&gt;, &lt;strong&gt;.NET 7.x&lt;/strong&gt;, and &lt;strong&gt;Blazor&lt;/strong&gt;.
+        /// </summary>
+        public static string Bullet2 {
+            get {
+                return ResourceManager.GetString("Bullet2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leverages the &lt;a style=&quot;color: {0}&quot; href=&quot;https://mudblazor.com&quot;&gt;MudBlazor&lt;/a&gt; library for a clean, reliable UI..
+        /// </summary>
+        public static string Bullet3 {
+            get {
+                return ResourceManager.GetString("Bullet3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Built on top of the &lt;a style=&quot;color: {0}&quot; href=&quot;https://duendesoftware.com/&quot;&gt;Duende&lt;/a&gt; and &lt;a style=&quot;color: {1}&quot; href=&quot;https://github.com/dotnet/aspnetcore&quot;&gt;ASP.NET&lt;/a&gt; libraries..
+        /// </summary>
+        public static string Bullet4 {
+            get {
+                return ResourceManager.GetString("Bullet4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available &lt;a style=&quot;color: {0}&quot; href=&quot;https://www.microsoft.com/en-us/sql-server/sql-server-downloads&quot;&gt;SQL-Server&lt;/a&gt; provider, for data access..
+        /// </summary>
+        public static string Bullet5 {
+            get {
+                return ResourceManager.GetString("Bullet5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available &lt;a style=&quot;color: {0}&quot; href=&quot;https://www.sqlite.org/index.html&quot;&gt;SQLite&lt;/a&gt; provider, for data access..
+        /// </summary>
+        public static string Bullet6 {
+            get {
+                return ResourceManager.GetString("Bullet6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available &lt;a style=&quot;color: {0}&quot; href=&quot;https://www.mysql.com&quot;&gt;MySql&lt;/a&gt; provider, for data access..
+        /// </summary>
+        public static string Bullet7 {
+            get {
+                return ResourceManager.GetString("Bullet7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available In-Memory provider, for developmemt / demo purposes..
+        /// </summary>
+        public static string Bullet8 {
+            get {
+                return ResourceManager.GetString("Bullet8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Easily adaptable to work with any EFCORE capable database library..
+        /// </summary>
+        public static string Bullet9 {
+            get {
+                return ResourceManager.GetString("Bullet9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Password.
+        /// </summary>
+        public static string ConfirmPassword {
+            get {
+                return ResourceManager.GetString("ConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Account.
+        /// </summary>
+        public static string CreateAccount {
+            get {
+                return ResourceManager.GetString("CreateAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to license.
+        /// </summary>
+        public static string License {
+            get {
+                return ResourceManager.GetString("License", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Log in to get started!.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An identity microservice.
+        /// </summary>
+        public static string Microservice {
+            get {
+                return ResourceManager.GetString("Microservice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We need to create a site administrator before we do anything else..
+        /// </summary>
+        public static string SiteAdmin {
+            get {
+                return ResourceManager.GetString("SiteAdmin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Name.
+        /// </summary>
+        public static string UserName {
+            get {
+                return ResourceManager.GetString("UserName", resourceCulture);
+            }
+        }
     }
 }

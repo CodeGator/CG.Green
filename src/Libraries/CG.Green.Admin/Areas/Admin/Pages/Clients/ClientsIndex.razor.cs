@@ -47,7 +47,7 @@ public partial class ClientsIndex
     protected IGreenApi GreenApi { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the MudBalazor theme for this page.
+    /// This property contains the MudBlazor theme for this page.
     /// </summary>
     [CascadingParameter(Name = "Theme")]
     public MudTheme Theme { get; set; } = null!;

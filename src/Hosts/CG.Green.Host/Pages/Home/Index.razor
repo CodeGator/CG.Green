@@ -12,30 +12,31 @@
 
         <AuthorizeView>
             <NotAuthorized>
-                <MudAlert Class="my-8" Severity="Severity.Info">Log in to get started!</MudAlert>
+                <MudAlert Class="my-8" Severity="Severity.Info">@Localizer["Login"]</MudAlert>
             </NotAuthorized>
         </AuthorizeView>
 
-        <MudText Class="pt-3" Typo="Typo.h6">An identity microservice</MudText>
+        <MudText Class="pt-3" Typo="Typo.h6">@Localizer["Microservice"]</MudText>
         <ul style="list-style-type:square;">
-        <li style="margin: 10px">Open-source, 100% free to use (<a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://opensource.org/licenses/MIT">MIT</a> license *).</li>
-        <li style="margin: 10px">Written 100% in <strong>C#</strong>, <strong>.NET 7.x</strong>, and <strong>Blazor</strong>.</li>
-        <li style="margin: 10px">Leverages the <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://mudblazor.com">MudBlazor</a> library for a clean, reliable UI.</li>
-        <li style="margin: 10px">Built on top of the <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://duendesoftware.com/">Duende</a> and <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://github.com/dotnet/aspnetcore">ASP.NET</a> libraries.</li>
-        <li style="margin: 10px">Available <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">SQL-Server</a> provider, for data access.</li>
-        <li style="margin: 10px">Available <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://www.sqlite.org/index.html">SQLite</a> provider, for data access.</li>
-        <li style="margin: 10px">Available <a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://www.mysql.com">MySql</a> provider, for data access.</li>
-        <li style="margin: 10px">Available In-Memory provider, for developmemt / demo purposes.</li>
-        <li style="margin: 10px">Easily adaptable to work with any EFCORE capable database library.</li>
+
+        <li style="margin: 10px">@Localizer["Bullet1"] (<a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://opensource.org/licenses/MIT">MIT</a> @Localizer["License"] *).</li>
+        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet2"]))</li>
+        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet3", GreenTheme.Instance().Palette.Info]))</li>
+        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet4", GreenTheme.Instance().Palette.Info, GreenTheme.Instance().Palette.Info]))</li>
+        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet5", GreenTheme.Instance().Palette.Info]))</li>
+        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet6", GreenTheme.Instance().Palette.Info]))</li>
+        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet7", GreenTheme.Instance().Palette.Info]))</li>
+        <li style="margin: 10px">@Localizer["Bullet8"]</li>
+        <li style="margin: 10px">@Localizer["Bullet9"]</li>
         </ul>
         <br />
-        <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-4" Typo="Typo.caption">* (Additional third party license(s) may apply. CodeGator does not grant permissions to any third party license(s))</MudText>
+        <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-4" Typo="Typo.caption">@Localizer["Bullet10"])</MudText>
     </div>
 }
 else if (_model.User is null)
 {
     <MudText Typo="Typo.h4">@typeof(Index).Assembly.ReadProduct()</MudText>
-    <MudText Class="my-2" Typo="Typo.body1">We need to create a site administrator before we do anything else.</MudText>
+    <MudText Class="my-2" Typo="Typo.body1">@Localizer["SiteAdmin"]</MudText>
 
     <hr />
 
@@ -50,7 +51,7 @@ else if (_model.User is null)
                                             Immediate
                                     Counter="@(Globals.Models.Users.UserNameLength)"
                                     Variant="Variant.Outlined"
-                                    Label="User Name"
+                                    Label=@Localizer["UserName"]
                                     For="@(() => _model.UserName)"
                                     @bind-Value="@_model.UserName"
                                     Class="ml-auto" />
@@ -58,7 +59,7 @@ else if (_model.User is null)
                                             Immediate
                                     Counter="@(Globals.Models.Users.EmailLength)"
                                     Variant="Variant.Outlined"
-                                    Label="Email"
+                                    Label=@Localizer["Email"]
                                     For="@(() => _model.Email)"
                                     @bind-Value="@_model.Email"
                                     Class="ml-auto" />
@@ -67,7 +68,7 @@ else if (_model.User is null)
                                             Immediate
                                     Counter="@(Globals.Models.Users.PasswordHashLength)"
                                     Variant="Variant.Outlined"
-                                    Label="Password"
+                                    Label=@Localizer["Password"]
                                     For="@(() => _model.Password)"
                                     @bind-Value="@_model.Password"
                                     InputType="@_passwordInput"
@@ -79,7 +80,7 @@ else if (_model.User is null)
                                             Immediate
                                     Counter="@(Globals.Models.Users.PasswordHashLength)"
                                     Variant="Variant.Outlined"
-                                    Label="Confirm Password"
+                                    Label=@Localizer["ConfirmPassword"]
                                     For="@(() => _model.ConfirmPassword)"
                                     @bind-Value="@_model.ConfirmPassword"
                                     InputType="@_passwordInput"
@@ -93,7 +94,7 @@ else if (_model.User is null)
                                 FullWidth
                                 Variant="Variant.Filled"
                                 Color="Color.Primary"
-                                Class="ml-auto">Create Account</MudButton>
+                                Class="ml-auto">@Localizer["CreateAccount"]</MudButton>
                     </MudCardActions>
                 </MudCard>
             </EditForm>

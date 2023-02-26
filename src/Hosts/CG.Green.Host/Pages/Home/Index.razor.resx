@@ -120,4 +120,61 @@
   <data name="Broke" xml:space="preserve">
     <value>Something broke!</value>
   </data>
+  <data name="Bullet1" xml:space="preserve">
+    <value>Open-source, 100% free to use</value>
+  </data>
+  <data name="Bullet10" xml:space="preserve">
+    <value>* (Additional third party license(s) may apply. CodeGator does not grant permissions to any third party license(s)</value>
+  </data>
+  <data name="Bullet2" xml:space="preserve">
+    <value>Written 100% in &lt;strong&gt;C#&lt;/strong&gt;, &lt;strong&gt;.NET 7.x&lt;/strong&gt;, and &lt;strong&gt;Blazor&lt;/strong&gt;</value>
+  </data>
+  <data name="Bullet3" xml:space="preserve">
+    <value>Leverages the &lt;a style="color: {0}" href="https://mudblazor.com"&gt;MudBlazor&lt;/a&gt; library for a clean, reliable UI.</value>
+  </data>
+  <data name="Bullet4" xml:space="preserve">
+    <value>Built on top of the &lt;a style="color: {0}" href="https://duendesoftware.com/"&gt;Duende&lt;/a&gt; and &lt;a style="color: {1}" href="https://github.com/dotnet/aspnetcore"&gt;ASP.NET&lt;/a&gt; libraries.</value>
+  </data>
+  <data name="Bullet5" xml:space="preserve">
+    <value>Available &lt;a style="color: {0}" href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"&gt;SQL-Server&lt;/a&gt; provider, for data access.</value>
+  </data>
+  <data name="Bullet6" xml:space="preserve">
+    <value>Available &lt;a style="color: {0}" href="https://www.sqlite.org/index.html"&gt;SQLite&lt;/a&gt; provider, for data access.</value>
+  </data>
+  <data name="Bullet7" xml:space="preserve">
+    <value>Available &lt;a style="color: {0}" href="https://www.mysql.com"&gt;MySql&lt;/a&gt; provider, for data access.</value>
+  </data>
+  <data name="Bullet8" xml:space="preserve">
+    <value>Available In-Memory provider, for developmemt / demo purposes.</value>
+  </data>
+  <data name="Bullet9" xml:space="preserve">
+    <value>Easily adaptable to work with any EFCORE capable database library.</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>Create Account</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>license</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Log in to get started!</value>
+  </data>
+  <data name="Microservice" xml:space="preserve">
+    <value>An identity microservice</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SiteAdmin" xml:space="preserve">
+    <value>We need to create a site administrator before we do anything else.</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
 </root>

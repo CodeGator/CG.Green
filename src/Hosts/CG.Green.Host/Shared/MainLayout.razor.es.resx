@@ -117,64 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Broke" xml:space="preserve">
-    <value>¡Algo se rompió!</value>
-  </data>
-  <data name="Bullet1" xml:space="preserve">
-    <value>Código abierto, 100% de uso gratuito</value>
-  </data>
-  <data name="Bullet10" xml:space="preserve">
-    <value>* (Se pueden aplicar licencias de terceros adicionales. CodeGator no otorga permisos a ninguna licencia de terceros)</value>
-  </data>
-  <data name="Bullet2" xml:space="preserve">
-    <value>Escrito 100% en &lt;strong&gt;C#&lt;/strong&gt;, &lt;strong&gt;.NET 7.x&lt;/strong&gt; y &lt;strong&gt;Blazor&lt;/strong&gt;</value>
-  </data>
-  <data name="Bullet3" xml:space="preserve">
-    <value>Aprovecha la biblioteca &lt;a style="color: {0}" href="https://mudblazor.com"&gt;MudBlazor&lt;/a&gt; para una interfaz de usuario limpia y confiable.UI.</value>
-  </data>
-  <data name="Bullet4" xml:space="preserve">
-    <value>Construido sobre el &lt;a style="color: {0}" href="https://duendesoftware.com/"&gt;Duende&lt;/a&gt; y &lt;a style="color: {1}" href="https ://github.com/dotnet/aspnetcore"&gt;ASP.NET&lt;/a&gt; bibliotecas.</value>
-  </data>
-  <data name="Bullet5" xml:space="preserve">
-    <value>Proveedor de &lt;a style="color: {0}" href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"&gt;SQL-Server&lt;/a&gt; disponible, para acceso a los datos.</value>
-  </data>
-  <data name="Bullet6" xml:space="preserve">
-    <value>Disponible proveedor de &lt;a style="color: {0}" href="https://www.sqlite.org/index.html"&gt;SQLite&lt;/a&gt;, para acceso a datos.</value>
-  </data>
-  <data name="Bullet7" xml:space="preserve">
-    <value>Disponible proveedor de &lt;a style="color: {0}" href="https://www.mysql.com"&gt;MySql&lt;/a&gt;, para acceso a datos.</value>
-  </data>
-  <data name="Bullet8" xml:space="preserve">
-    <value>Proveedor In-Memory disponible, para fines de desarrollo/demostración.</value>
-  </data>
-  <data name="Bullet9" xml:space="preserve">
-    <value>Fácilmente adaptable para trabajar con cualquier biblioteca de base de datos compatible con EFCORE.</value>
-  </data>
-  <data name="ConfirmPassword" xml:space="preserve">
-    <value>Confirmar Contraseña</value>
-  </data>
-  <data name="CreateAccount" xml:space="preserve">
-    <value>Crear una cuenta</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>Correo electrónico</value>
-  </data>
-  <data name="License" xml:space="preserve">
-    <value>licencia</value>
-  </data>
-  <data name="Login" xml:space="preserve">
-    <value>¡Inicia sesión para empezar!</value>
-  </data>
-  <data name="Microservice" xml:space="preserve">
-    <value>Un microservicio de identidad</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Contraseña</value>
-  </data>
-  <data name="SiteAdmin" xml:space="preserve">
-    <value>Necesitamos crear un administrador del sitio antes de hacer cualquier otra cosa.</value>
-  </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Nombre de usuario</value>
+  <data name="Version" xml:space="preserve">
+    <value>Versión: {0}</value>
   </data>
 </root>

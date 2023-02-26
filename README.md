@@ -28,25 +28,19 @@ We're not at a point where we can commit to a feature plan. Honestly, we might n
 
 One of the main goals of this project is to minimize dependencies on third party libraries. Where third party libraries are used, we try to ensure that they are well established and actively developed / supported. 
 
-* [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor)
-
 * [Duende](https://duendesoftware.com/) (The library formerly known as IdentityServer4)
 
 * [Microsoft Identity UI](https://github.com/dotnet/aspnetcore)
 
 * [MudBlazor](https://mudblazor.com/)
 
-* [Serilog](https://serilog.net/)  
-
 * [Entity Framework Core](https://github.com/dotnet/efcore)
 
 * [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
 
-* [AutoMapper](https://automapper.org/)
-
 ### What OS(s) does it support?
 
-A goal of the project is to produce a tool that can be run on Windows and Linux. Thanks to .NET core, we operate on the following platforms:
+A goal of the project is to produce a tool that can be run on Windows and Linux. Thanks to .NET core, we operate on the following operating systems:
 
 * [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) (tested)
 
@@ -69,6 +63,12 @@ A goal of the project is to integrate with a variety of back-end databases. We c
 * [MySql](https://mysql.com)
 
 * InMemory (for dev/demo/testing purposes)
+
+### What languages does the UI support?
+
+* English
+
+* Spanish (in progress)
 
 ### Is there any documentation?
 

@@ -12,7 +12,7 @@ public partial class SiteFooter
 	#region Properties
 
 	/// <summary>
-	/// This property contains the MudBalazor theme for this component.
+	/// This property contains the MudBlazor theme for this component.
 	/// </summary>
 	[CascadingParameter(Name = "Theme")]
 	public MudTheme Theme { get; set; } = null!;
