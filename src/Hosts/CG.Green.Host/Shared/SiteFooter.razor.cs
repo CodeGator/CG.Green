@@ -30,5 +30,6 @@ public partial class SiteFooter
 	protected ILogger<SiteFooter> Logger { get; set; } = null!;
 
 	#endregion
+
 }
 

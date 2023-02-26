@@ -47,9 +47,9 @@ public static class WebApplicationBuilderExtensions012
             // Wire up the conversion maps between Duende models and our VMs.
             cfg.CreateMap<Client, ListClientVM>().ReverseMap();
             cfg.CreateMap<Client, NewClientVM>().ReverseMap();
-            cfg.CreateMap<Client, EditClientVM>().ReverseMap();
-            cfg.CreateMap<Secret, ClientSecretVM>().ReverseMap();
+			cfg.CreateMap<Secret, ClientSecretVM>().ReverseMap();
 			cfg.CreateMap<ClientClaim, ClientClaimVM>().ReverseMap();
+			cfg.CreateMap<Client, EditClientVM>().ReverseMap();
 		});
 
         // Return the application builder.

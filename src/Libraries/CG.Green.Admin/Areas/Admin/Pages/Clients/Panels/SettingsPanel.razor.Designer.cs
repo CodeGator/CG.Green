@@ -61,6 +61,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Allowed GrantTypes.
+        /// </summary>
+        internal static string AllowedGrantType {
+            get {
+                return ResourceManager.GetString("AllowedGrantType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The type of grant to use for this client..
+        /// </summary>
+        internal static string AllowedGrantTypeHelp {
+            get {
+                return ResourceManager.GetString("AllowedGrantTypeHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Allow Offline Access.
         /// </summary>
         internal static string AllowOfflineAccess {

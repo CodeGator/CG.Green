@@ -62,5 +62,19 @@
                     Label=@Localizer["RequireRequestObject"] />
         <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["RequireRequestObjectHelp"]</MudText>
     </MudItem>
+    <MudItem xs="12">
+        <MudSelect T="string"
+                   Dense
+                   Variant="Variant.Outlined"
+                   Margin="Margin.Dense"
+                   Label=@Localizer["AllowedGrantType"]
+                   @bind-SelectedValues="Model.AllowedGrantTypes"
+                   HelperText=@Localizer["AllowedGrantTypeHelp"]>
+            @foreach (var grantType in Model.ValidGrantTypes.Order())
+            {
+                <MudSelectItem Value=@grantType>@grantType</MudSelectItem>
+            }
+        </MudSelect>
+    </MudItem>
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>

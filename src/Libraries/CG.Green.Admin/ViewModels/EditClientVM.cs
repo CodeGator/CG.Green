@@ -28,6 +28,13 @@ public class EditClientVM
 	public bool AllowAccessTokensViaBrowser { get; set; }
 
 	/// <summary>
+	/// This property contains the allowed grant types for the client.
+	/// </summary>
+	[Required]
+	[Display(Name = "Allowed Grant Types")]
+	public IEnumerable<string> AllowedGrantTypes { get; set; } = new List<string>();
+
+	/// <summary>
 	/// This property contains the allowed identity token signing algorithms,
 	/// for the client.
 	/// </summary>
@@ -177,6 +184,24 @@ public class EditClientVM
 	/// </summary>
 	[Display(Name = "Update Access Token Claims On Refresh")]
 	public bool UpdateAccessTokenClaimsOnRefresh { get; set; }
+
+	/// <summary>
+	/// This property contains a list of valid grant type combinations.
+	/// </summary>
+	[Display(Name = "Valid Grant Types")]
+	public List<string> ValidGrantTypes { get; set; } = new()
+	{
+		"Ciba",
+		"ClientCredentials",
+		"Code",
+		"CodeAndClientCredentials",
+		"DeviceFlow",
+		"Hybrid",
+		"HybridAndClientCredentials",
+		"Implicit",
+		"ImplicitAndClientCredentials",
+		"ResourceOwnerPassword",
+	};
 
 	#endregion
 }

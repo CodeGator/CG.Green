@@ -27,16 +27,16 @@ else
         <ValidationSummary />
         <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">@Localizer["SaveChanges"]</MudButton>
         <MudTabs>
-        <MudTabPanel Text=@Localizer["Settings"] Icon="@Icons.Material.Outlined.Settings">
+        <MudTabPanel Text=@Localizer["Settings"]>
                 <SettingsPanel Model="@_model" />
         </MudTabPanel>
-        <MudTabPanel Text=@Localizer["Secrets"] Icon="@Icons.Material.Outlined.FrontHand">
+        <MudTabPanel Text=@Localizer["Secrets"]>
                 <SecretsPanel Model="@_model" />
         </MudTabPanel>
-            <MudTabPanel Text=@Localizer["Uris"] Icon="@Icons.Material.Outlined.WebAsset">
+            <MudTabPanel Text=@Localizer["Uris"]>
                 <UrisPanel Model="@_model" />
             </MudTabPanel>
-            <MudTabPanel Text=@Localizer["Claims"] Icon="@Icons.Material.Outlined.Checklist">
+            <MudTabPanel Text=@Localizer["Claims"]>
                 <ClaimsPanel Model="@_model" />
             </MudTabPanel>
             <MudTabPanel Text=@Localizer["Advanced"]>
