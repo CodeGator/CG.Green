@@ -2433,6 +2433,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClaimsPanel_razor
   nameWithType: ClaimsPanel_razor.ClaimsPanel_razor
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaims
+  name: AlwaysSendClientClaims
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_AlwaysSendClientClaims
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaims
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaims
+  nameWithType: ClaimsPanel_razor.AlwaysSendClientClaims
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaims*
+  name: AlwaysSendClientClaims
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_AlwaysSendClientClaims_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaims
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaims
+  nameWithType: ClaimsPanel_razor.AlwaysSendClientClaims
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaimsHelp
+  name: AlwaysSendClientClaimsHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_AlwaysSendClientClaimsHelp
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaimsHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaimsHelp
+  nameWithType: ClaimsPanel_razor.AlwaysSendClientClaimsHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaimsHelp*
+  name: AlwaysSendClientClaimsHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_AlwaysSendClientClaimsHelp_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaimsHelp
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.AlwaysSendClientClaimsHelp
+  nameWithType: ClaimsPanel_razor.AlwaysSendClientClaimsHelp
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Broke
   name: Broke
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_Broke
@@ -2459,6 +2485,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaims
   nameWithType: ClaimsPanel_razor.ClientClaims
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefix
+  name: ClientClaimsPrefix
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_ClientClaimsPrefix
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefix
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefix
+  nameWithType: ClaimsPanel_razor.ClientClaimsPrefix
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefix*
+  name: ClientClaimsPrefix
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_ClientClaimsPrefix_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefix
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefix
+  nameWithType: ClaimsPanel_razor.ClientClaimsPrefix
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefixHelp
+  name: ClientClaimsPrefixHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_ClientClaimsPrefixHelp
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefixHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefixHelp
+  nameWithType: ClaimsPanel_razor.ClientClaimsPrefixHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefixHelp*
+  name: ClientClaimsPrefixHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_ClientClaimsPrefixHelp_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefixHelp
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.ClientClaimsPrefixHelp
+  nameWithType: ClaimsPanel_razor.ClientClaimsPrefixHelp
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.Create
   name: Create
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ClaimsPanel_razor_Create
@@ -10295,6 +10347,12 @@ references:
   commentId: T:CG.Green.Globals.Models.Clients
   fullName: CG.Green.Globals.Models.Clients
   nameWithType: Globals.Models.Clients
+- uid: CG.Green.Globals.Models.Clients.ClientClaimsPrefixLength
+  name: ClientClaimsPrefixLength
+  href: api/CG.Green.Globals.Models.Clients.html#CG_Green_Globals_Models_Clients_ClientClaimsPrefixLength
+  commentId: F:CG.Green.Globals.Models.Clients.ClientClaimsPrefixLength
+  fullName: CG.Green.Globals.Models.Clients.ClientClaimsPrefixLength
+  nameWithType: Globals.Models.Clients.ClientClaimsPrefixLength
 - uid: CG.Green.Globals.Models.Clients.ClientIdLength
   name: ClientIdLength
   href: api/CG.Green.Globals.Models.Clients.html#CG_Green_Globals_Models_Clients_ClientIdLength
@@ -15150,6 +15208,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.EditClientVM.AlwaysIncludeUserClaimsInIdToken
   nameWithType: EditClientVM.AlwaysIncludeUserClaimsInIdToken
+- uid: CG.Green.ViewModels.EditClientVM.AlwaysSendClientClaims
+  name: AlwaysSendClientClaims
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_AlwaysSendClientClaims
+  commentId: P:CG.Green.ViewModels.EditClientVM.AlwaysSendClientClaims
+  fullName: CG.Green.ViewModels.EditClientVM.AlwaysSendClientClaims
+  nameWithType: EditClientVM.AlwaysSendClientClaims
+- uid: CG.Green.ViewModels.EditClientVM.AlwaysSendClientClaims*
+  name: AlwaysSendClientClaims
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_AlwaysSendClientClaims_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.AlwaysSendClientClaims
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.AlwaysSendClientClaims
+  nameWithType: EditClientVM.AlwaysSendClientClaims
 - uid: CG.Green.ViewModels.EditClientVM.Claims
   name: Claims
   href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_Claims
@@ -15163,6 +15234,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.ViewModels.EditClientVM.Claims
   nameWithType: EditClientVM.Claims
+- uid: CG.Green.ViewModels.EditClientVM.ClientClaimsPrefix
+  name: ClientClaimsPrefix
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_ClientClaimsPrefix
+  commentId: P:CG.Green.ViewModels.EditClientVM.ClientClaimsPrefix
+  fullName: CG.Green.ViewModels.EditClientVM.ClientClaimsPrefix
+  nameWithType: EditClientVM.ClientClaimsPrefix
+- uid: CG.Green.ViewModels.EditClientVM.ClientClaimsPrefix*
+  name: ClientClaimsPrefix
+  href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_ClientClaimsPrefix_
+  commentId: Overload:CG.Green.ViewModels.EditClientVM.ClientClaimsPrefix
+  isSpec: "True"
+  fullName: CG.Green.ViewModels.EditClientVM.ClientClaimsPrefix
+  nameWithType: EditClientVM.ClientClaimsPrefix
 - uid: CG.Green.ViewModels.EditClientVM.ClientId
   name: ClientId
   href: api/CG.Green.ViewModels.EditClientVM.html#CG_Green_ViewModels_EditClientVM_ClientId
