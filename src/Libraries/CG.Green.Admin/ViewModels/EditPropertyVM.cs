@@ -16,13 +16,13 @@ public class EditPropertyVM
 	/// This property contains the property key.
 	/// </summary>
 	[Required]
-	[Display(Name = "Key")]
+	[Display(ShortName = "Key")]
 	public string Key { get; set; } = null!;
 
 	/// <summary>
 	/// This property contains the property value.
 	/// </summary>
-	[Display(Name = "Value")]
+	[Display(ShortName = "Value")]
 	public string Value { get; set; } = null!;
 
 	#endregion

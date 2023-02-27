@@ -16,7 +16,8 @@ public class UriVM
     /// This property contains the value of the URI.
     /// </summary>
     [Required]
-    [MaxLength(Globals.Models.UriLength)]
+	[Display(ShortName = "Value")]
+	[MaxLength(Globals.Models.UriLength)]
     public string Value { get; set; } = "";
 
     #endregion

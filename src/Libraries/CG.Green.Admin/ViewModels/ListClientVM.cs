@@ -17,7 +17,7 @@ public class ListClientVM
     /// </summary>
     [Required]
     [MaxLength(Globals.Models.Clients.ClientIdLength)]
-    [Display(Name = "Client Id")]
+    [Display(ShortName = "ClientId")]
     public string ClientId { get; set; } = null!;
 
     /// <summary>
@@ -25,13 +25,13 @@ public class ListClientVM
     /// </summary>
     [Required]
     [MaxLength(Globals.Models.Clients.ClientNameLength)]
-    [Display(Name = "Client Name")]
+    [Display(ShortName = "ClientName")]
     public string ClientName { get; set; } = null!;
 
     /// <summary>
     /// This property indicates whether or not the client is enabled.
     /// </summary>
-    [Display(Name = "Enabled")]
+    [Display(ShortName = "Enabled")]
     public bool Enabled { get; set; }
 
     #endregion

@@ -6,22 +6,23 @@ namespace CG.Green.ViewModels;
 /// </summary>
 public class ClientSecretVM
 {
-    // *******************************************************************
-    // Properties.
-    // *******************************************************************
+	// *******************************************************************
+	// Properties.
+	// *******************************************************************
 
-    #region Properties
+	#region Properties
 
-    /// <summary>
-    /// This property contains the expiration date/time for the secret.
-    /// </summary>
-    public DateTime? Expiration { get; set; }
+	/// <summary>
+	/// This property contains the expiration date/time for the secret.
+	/// </summary>
+	[Display(ShortName = "Expiration")]
+	public DateTime? Expiration { get; set; }
 
     /// <summary>
     /// This property contains the description for the secret.
     /// </summary>
     [MaxLength(Globals.Models.Secrets.DescriptionLength)]
-    [Display(Name = "Description")]
+    [Display(ShortName = "Description")]
     public string Description { get; set; } = null!;
 
     /// <summary>
@@ -29,13 +30,14 @@ public class ClientSecretVM
     /// </summary>
     [Required]
     [MaxLength(Globals.Models.Secrets.ValueLength)]
-    [Display(Name = "Value")]
+    [Display(ShortName = "Value")]
     public string Value { get; set; } = null!;
 
-    /// <summary>
-    /// This property indicates whether the secret is hashed, or not.
-    /// </summary>
-    public bool IsHashed { get; set; }
+	/// <summary>
+	/// This property indicates whether the secret is hashed, or not.
+	/// </summary>
+	[Display(ShortName = "IsHashed")]
+	public bool IsHashed { get; set; }
 
     #endregion
 }
