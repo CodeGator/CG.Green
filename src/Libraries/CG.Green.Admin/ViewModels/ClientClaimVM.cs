@@ -2,7 +2,7 @@
 namespace CG.Green.ViewModels;
 
 /// <summary>
-/// This class is a view-model that represents a client claim.
+/// This class is a view-model that represents a Duende client claim.
 /// </summary>
 public class ClientClaimVM
 {

@@ -168,6 +168,12 @@
   <data name="RequireConsentHelp" xml:space="preserve">
     <value>Mostrar una pantalla de consentimiento para este cliente.</value>
   </data>
+  <data name="RequirePkce" xml:space="preserve">
+    <value>Requerir PKCE</value>
+  </data>
+  <data name="RequirePkceHelp" xml:space="preserve">
+    <value>Clave de prueba para el intercambio de códigos</value>
+  </data>
   <data name="RequireRequestObject" xml:space="preserve">
     <value>Requerir Objeto de Solicitud</value>
   </data>

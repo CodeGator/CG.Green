@@ -214,6 +214,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Require PKCE.
+        /// </summary>
+        internal static string RequirePkce {
+            get {
+                return ResourceManager.GetString("RequirePkce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proof Key for Code Exchange.
+        /// </summary>
+        internal static string RequirePkceHelp {
+            get {
+                return ResourceManager.GetString("RequirePkceHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Require Request Object.
         /// </summary>
         internal static string RequireRequestObject {
