@@ -162,6 +162,12 @@
   <data name="IsEnabledHelp" xml:space="preserve">
     <value>Enable/disable the client.</value>
   </data>
+  <data name="RequireConsent" xml:space="preserve">
+    <value>Require Consent</value>
+  </data>
+  <data name="RequireConsentHelp" xml:space="preserve">
+    <value>Display a consent screen for this client.</value>
+  </data>
   <data name="RequireRequestObject" xml:space="preserve">
     <value>Require Request Object</value>
   </data>

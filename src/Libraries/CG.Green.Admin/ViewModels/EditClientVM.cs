@@ -187,11 +187,11 @@ public class EditClientVM
 	public TokenUsage RefreshTokenUsage { get; set; }
 
 	/// <summary>
-	/// This property indicates whether or not the client is required
-	/// to send signed requests only.
+	/// This property indicates whether or not a consent screen is required
+	/// for the client.
 	/// </summary>
-	[Display(Name = "Required Request Object")]
-    public bool RequireRequestObject { get; set; }
+	[Display(Name = "Require Consent")]
+	public bool RequireConsent { get; set; }
 
     /// <summary>
     /// This property indicates whether or not the client is required
@@ -199,11 +199,18 @@ public class EditClientVM
     /// </summary>
     [Display(Name = "Require Client Secret")]
     public bool RequireClientSecret { get; set; }
-	
-    /// <summary>
-    /// This property contains a list of redirect URIs for the client.
-    /// </summary>
-    [Display(Name = "Redirect Uris")]
+
+	/// <summary>
+	/// This property indicates whether or not the client is required
+	/// to send signed requests only.
+	/// </summary>
+	[Display(Name = "Required Request Object")]
+	public bool RequireRequestObject { get; set; }
+
+	/// <summary>
+	/// This property contains a list of redirect URIs for the client.
+	/// </summary>
+	[Display(Name = "Redirect Uris")]
     public List<string> RedirectUris { get; set; } = new();
 
 	/// <summary>

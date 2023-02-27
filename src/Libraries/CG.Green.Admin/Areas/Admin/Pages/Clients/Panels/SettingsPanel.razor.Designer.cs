@@ -196,6 +196,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Require Consent.
+        /// </summary>
+        internal static string RequireConsent {
+            get {
+                return ResourceManager.GetString("RequireConsent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Display a consent screen for this client..
+        /// </summary>
+        internal static string RequireConsentHelp {
+            get {
+                return ResourceManager.GetString("RequireConsentHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Require Request Object.
         /// </summary>
         internal static string RequireRequestObject {

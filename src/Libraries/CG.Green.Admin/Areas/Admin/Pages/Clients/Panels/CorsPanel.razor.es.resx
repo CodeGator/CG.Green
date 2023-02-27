@@ -120,6 +120,9 @@
   <data name="Broke" xml:space="preserve">
     <value>¡Algo se rompió!</value>
   </data>
+  <data name="CORS" xml:space="preserve">
+    <value>Intercambio de Recursos Originales Cruzados</value>
+  </data>
   <data name="CreateCORS" xml:space="preserve">
     <value>Crear origen CORS</value>
   </data>
