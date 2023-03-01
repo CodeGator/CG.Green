@@ -118,6 +118,13 @@
     <MudItem xs="12">
         <GroupBox Title=@Localizer["RefreshTokens"]>
             <MudItem xs="12">
+                <MudCheckBox T="bool"
+                             Class="mb-n3"
+                             @bind-Checked="Model.AllowOfflineAccess"
+                             Label=@Localizer["AllowOfflineAccess"] />
+                <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["AllowOfflineAccessHelp"]</MudText>
+            </MudItem>
+            <MudItem xs="12">
                 <MudSelect T="TokenExpiration"
                            Dense
                            Class="mb-4"

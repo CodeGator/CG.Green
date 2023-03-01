@@ -97,20 +97,20 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Allow Offline Access.
+        ///   Looks up a localized string similar to Allow Plain Text PKCE.
         /// </summary>
-        internal static string AllowOfflineAccess {
+        internal static string AllowPlainTextPkce {
             get {
-                return ResourceManager.GetString("AllowOfflineAccess", resourceCulture);
+                return ResourceManager.GetString("AllowPlainTextPkce", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enable/disable refresh tokens..
+        ///   Looks up a localized string similar to Allow PKCE to be sent in plain text..
         /// </summary>
-        internal static string AllowOfflineAccessHelp {
+        internal static string AllowPlainTextPkceHelp {
             get {
-                return ResourceManager.GetString("AllowOfflineAccessHelp", resourceCulture);
+                return ResourceManager.GetString("AllowPlainTextPkceHelp", resourceCulture);
             }
         }
         

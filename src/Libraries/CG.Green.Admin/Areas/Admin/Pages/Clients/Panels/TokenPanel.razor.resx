@@ -150,6 +150,12 @@
   <data name="AllowedSigningAlgorithmsHelp" xml:space="preserve">
     <value>Signing algorithm for identity token. If empty, will use the Duende default signing algorithm</value>
   </data>
+  <data name="AllowOfflineAccess" xml:space="preserve">
+    <value>Allow Offline Access</value>
+  </data>
+  <data name="AllowOfflineAccessHelp" xml:space="preserve">
+    <value>Enable/disable refresh tokens.</value>
+  </data>
   <data name="AlwaysIncludeUserClaimsInIdentityToken" xml:space="preserve">
     <value>Always include user claims in identity token</value>
   </data>

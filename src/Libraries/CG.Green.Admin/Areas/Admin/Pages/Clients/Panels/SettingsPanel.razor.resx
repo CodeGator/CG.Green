@@ -129,11 +129,11 @@
   <data name="AllowedScopesHelp" xml:space="preserve">
     <value>The scopes this client will ask for</value>
   </data>
-  <data name="AllowOfflineAccess" xml:space="preserve">
-    <value>Allow Offline Access</value>
+  <data name="AllowPlainTextPkce" xml:space="preserve">
+    <value>Allow Plain Text PKCE</value>
   </data>
-  <data name="AllowOfflineAccessHelp" xml:space="preserve">
-    <value>Enable/disable refresh tokens.</value>
+  <data name="AllowPlainTextPkceHelp" xml:space="preserve">
+    <value>Allow PKCE to be sent in plain text.</value>
   </data>
   <data name="Broke" xml:space="preserve">
     <value>Something broke!</value>

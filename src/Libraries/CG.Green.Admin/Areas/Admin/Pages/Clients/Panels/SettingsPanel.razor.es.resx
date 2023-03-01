@@ -129,11 +129,11 @@
   <data name="AllowedScopesHelp" xml:space="preserve">
     <value>Los alcances que este cliente solicitará</value>
   </data>
-  <data name="AllowOfflineAccess" xml:space="preserve">
-    <value>Permitir Acceso sin Conexión</value>
+  <data name="AllowPlainTextPkce" xml:space="preserve">
+    <value>Permitir texto sin formato PKCE</value>
   </data>
-  <data name="AllowOfflineAccessHelp" xml:space="preserve">
-    <value>Habilitar/deshabilitar Tokens de Actualización.</value>
+  <data name="AllowPlainTextPkceHelp" xml:space="preserve">
+    <value>Permita que PKCE se envíe en texto sin formato.</value>
   </data>
   <data name="Broke" xml:space="preserve">
     <value>¡Algo se rompió!</value>

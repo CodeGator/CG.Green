@@ -160,6 +160,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Allow Offline Access.
+        /// </summary>
+        internal static string AllowOfflineAccess {
+            get {
+                return ResourceManager.GetString("AllowOfflineAccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable/disable refresh tokens..
+        /// </summary>
+        internal static string AllowOfflineAccessHelp {
+            get {
+                return ResourceManager.GetString("AllowOfflineAccessHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Always include user claims in identity token.
         /// </summary>
         internal static string AlwaysIncludeUserClaimsInIdentityToken {

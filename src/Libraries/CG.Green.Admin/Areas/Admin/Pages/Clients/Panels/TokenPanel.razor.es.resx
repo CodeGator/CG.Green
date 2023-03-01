@@ -150,6 +150,12 @@
   <data name="AllowedSigningAlgorithmsHelp" xml:space="preserve">
     <value>Algoritmo de firma para token de identidad. Si está vacío, utilizará el algoritmo de firma predeterminado de Duende</value>
   </data>
+  <data name="AllowOfflineAccess" xml:space="preserve">
+    <value>Permitir Acceso sin Conexión</value>
+  </data>
+  <data name="AllowOfflineAccessHelp" xml:space="preserve">
+    <value>Habilitar/deshabilitar Tokens de Actualización.</value>
+  </data>
   <data name="AlwaysIncludeUserClaimsInIdentityToken" xml:space="preserve">
     <value>Incluya siempre los reclamos de los usuarios en el token de identidad</value>
   </data>
