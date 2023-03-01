@@ -61,6 +61,52 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back Channel Logout.
+        /// </summary>
+        internal static string BackChannelLogout {
+            get {
+                return ResourceManager.GetString("BackChannelLogout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back Channel Logout Session Required.
+        /// </summary>
+        internal static string BackChannelLogoutSessionRequired {
+            get {
+                return ResourceManager.GetString("BackChannelLogoutSessionRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indicates whether or not the user&apos;s session id should be sent to the Back Channel Logout URI..
+        /// </summary>
+        internal static string BackChannelLogoutSessionRequiredHelp {
+            get {
+                return ResourceManager.GetString("BackChannelLogoutSessionRequiredHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back Channel Logout URI.
+        /// </summary>
+        internal static string BackChannelLogoutUri {
+            get {
+                return ResourceManager.GetString("BackChannelLogoutUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The logout URI for HTTP back-channel based 
+        ///	logout..
+        /// </summary>
+        internal static string BackChannelLogoutUriHelp {
+            get {
+                return ResourceManager.GetString("BackChannelLogoutUriHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Something broke!.
         /// </summary>
         internal static string Broke {

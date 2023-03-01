@@ -141,5 +141,30 @@
             </MudTable>
         </GroupBox>                        
     </MudItem>
+    <MudItem xs="12">
+        <GroupBox Title=@Localizer["BackChannelLogout"]>
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudTextField Immediate
+                                  OnlyValidateIfDirty
+                                  Margin="Margin.Dense"
+                                  Counter="@(Globals.Models.Clients.ClientNameLength)"
+                                  Class="ml-auto mb-n4"
+                                  Variant="Variant.Outlined"
+                                  Label=@Localizer["BackChannelLogoutUri"]
+                                  HelperText=@Localizer["BackChannelLogoutUriHelp"]
+                                  For="@(() => Model.BackChannelLogoutUri)"
+                                  @bind-Value="@Model.BackChannelLogoutUri" />
+                    </MudItem>
+            </MudGrid>
+        </GroupBox>
+    </MudItem>
+    <MudItem xs="12">
+        <MudCheckBox T="bool"
+            Class="mb-n3"
+            @bind-Checked="Model.BackChannelLogoutSessionRequired"
+            Label=@Localizer["BackChannelLogoutSessionRequired"] />
+         <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["BackChannelLogoutSessionRequiredHelp"]</MudText>
+    </MudItem>
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>

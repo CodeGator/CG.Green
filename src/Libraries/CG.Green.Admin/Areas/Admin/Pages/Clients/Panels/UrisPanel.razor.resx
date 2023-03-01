@@ -117,6 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackChannelLogout" xml:space="preserve">
+    <value>Back Channel Logout</value>
+  </data>
+  <data name="BackChannelLogoutSessionRequired" xml:space="preserve">
+    <value>Back Channel Logout Session Required</value>
+  </data>
+  <data name="BackChannelLogoutSessionRequiredHelp" xml:space="preserve">
+    <value>Indicates whether or not the user's session id should be sent to the Back Channel Logout URI.</value>
+  </data>
+  <data name="BackChannelLogoutUri" xml:space="preserve">
+    <value>Back Channel Logout URI</value>
+  </data>
+  <data name="BackChannelLogoutUriHelp" xml:space="preserve">
+    <value>The logout URI for HTTP back-channel based 
+	logout.</value>
+  </data>
   <data name="Broke" xml:space="preserve">
     <value>Something broke!</value>
   </data>

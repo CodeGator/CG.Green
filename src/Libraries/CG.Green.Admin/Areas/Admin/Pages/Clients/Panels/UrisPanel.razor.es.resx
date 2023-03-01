@@ -117,6 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackChannelLogout" xml:space="preserve">
+    <value>Cierre de sesión del canal posterior</value>
+  </data>
+  <data name="BackChannelLogoutSessionRequiredHelp" xml:space="preserve">
+    <value>Indica si la identificación de la sesión del usuario debe enviarse o no al URI de cierre de sesión del canal trasero.</value>
+  </data>
+  <data name="BackChannelLogoutUri" xml:space="preserve">
+    <value>URI de cierre de sesión de canal posterior</value>
+  </data>
+  <data name="BackChannelLogoutUriHelp" xml:space="preserve">
+    <value>El URI de cierre de sesión para el canal de retorno HTTP basado
+cerrar sesión.</value>
+  </data>
   <data name="Broke" xml:space="preserve">
     <value>¡Algo se rompió!</value>
   </data>
