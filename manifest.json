@@ -270,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.html",
-          "hash": "WSW2WxoMRPukCiyCqZsaKk2RIrasq4rgMaLwmFRDJmA="
+          "hash": "gwVqysPYRYAYYaNthcEV3rHhqNIQIl5NSdVmYzXjOTw="
         }
       },
       "is_incremental": false,
@@ -342,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html",
-          "hash": "2JZA27mifWcGgdYF1BqY3ISECCbEaUrmlPOm43kfPF4="
+          "hash": "O6wDytcXzb4to7PgO9kHcSUkjoht7THi8azO2gv60/U="
         }
       },
       "is_incremental": false,
@@ -366,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html",
-          "hash": "A6bjP6KdY56eb14+iazXK9ybJzmQ1d/3BEEPISWdVgo="
+          "hash": "ALOCZRxyTuT1EXDfGgagjprh3FECGWuygKQNj/2edtE="
         }
       },
       "is_incremental": false,

@@ -2853,6 +2853,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.Culture
   nameWithType: ConsentPanel_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUri
+  name: LogoUri
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ConsentPanel_razor_LogoUri
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUri
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUri
+  nameWithType: ConsentPanel_razor.LogoUri
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUri*
+  name: LogoUri
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ConsentPanel_razor_LogoUri_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUri
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUri
+  nameWithType: ConsentPanel_razor.LogoUri
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUriHelp
+  name: LogoUriHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ConsentPanel_razor_LogoUriHelp
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUriHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUriHelp
+  nameWithType: ConsentPanel_razor.LogoUriHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUriHelp*
+  name: LogoUriHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ConsentPanel_razor_LogoUriHelp_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUriHelp
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.LogoUriHelp
+  nameWithType: ConsentPanel_razor.LogoUriHelp
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.RequireConsent
   name: RequireConsent
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_ConsentPanel_razor_RequireConsent
@@ -3710,32 +3736,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowedScopesHelp
   nameWithType: SettingsPanel_razor.AllowedScopesHelp
-- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccess
-  name: AllowOfflineAccess
-  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_AllowOfflineAccess
-  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccess
-  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccess
-  nameWithType: SettingsPanel_razor.AllowOfflineAccess
-- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccess*
-  name: AllowOfflineAccess
-  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_AllowOfflineAccess_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccess
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkce
+  name: AllowPlainTextPkce
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_AllowPlainTextPkce
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkce
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkce
+  nameWithType: SettingsPanel_razor.AllowPlainTextPkce
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkce*
+  name: AllowPlainTextPkce
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_AllowPlainTextPkce_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkce
   isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccess
-  nameWithType: SettingsPanel_razor.AllowOfflineAccess
-- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccessHelp
-  name: AllowOfflineAccessHelp
-  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_AllowOfflineAccessHelp
-  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccessHelp
-  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccessHelp
-  nameWithType: SettingsPanel_razor.AllowOfflineAccessHelp
-- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccessHelp*
-  name: AllowOfflineAccessHelp
-  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_AllowOfflineAccessHelp_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccessHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkce
+  nameWithType: SettingsPanel_razor.AllowPlainTextPkce
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkceHelp
+  name: AllowPlainTextPkceHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_AllowPlainTextPkceHelp
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkceHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkceHelp
+  nameWithType: SettingsPanel_razor.AllowPlainTextPkceHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkceHelp*
+  name: AllowPlainTextPkceHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_AllowPlainTextPkceHelp_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkceHelp
   isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowOfflineAccessHelp
-  nameWithType: SettingsPanel_razor.AllowOfflineAccessHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.AllowPlainTextPkceHelp
+  nameWithType: SettingsPanel_razor.AllowPlainTextPkceHelp
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Broke
   name: Broke
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_Broke
@@ -3840,6 +3866,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.Culture
   nameWithType: SettingsPanel_razor.Culture
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLogin
+  name: EnableLocalLogin
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_EnableLocalLogin
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLogin
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLogin
+  nameWithType: SettingsPanel_razor.EnableLocalLogin
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLogin*
+  name: EnableLocalLogin
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_EnableLocalLogin_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLogin
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLogin
+  nameWithType: SettingsPanel_razor.EnableLocalLogin
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLoginHelp
+  name: EnableLocalLoginHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_EnableLocalLoginHelp
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLoginHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLoginHelp
+  nameWithType: SettingsPanel_razor.EnableLocalLoginHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLoginHelp*
+  name: EnableLocalLoginHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_EnableLocalLoginHelp_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLoginHelp
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.EnableLocalLoginHelp
+  nameWithType: SettingsPanel_razor.EnableLocalLoginHelp
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.IsEnabled
   name: IsEnabled
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_SettingsPanel_razor_IsEnabled
@@ -4221,6 +4273,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowedSigningAlgorithmsHelp
   nameWithType: TokenPanel_razor.AllowedSigningAlgorithmsHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccess
+  name: AllowOfflineAccess
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_AllowOfflineAccess
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccess
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccess
+  nameWithType: TokenPanel_razor.AllowOfflineAccess
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccess*
+  name: AllowOfflineAccess
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_AllowOfflineAccess_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccess
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccess
+  nameWithType: TokenPanel_razor.AllowOfflineAccess
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccessHelp
+  name: AllowOfflineAccessHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_AllowOfflineAccessHelp
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccessHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccessHelp
+  nameWithType: TokenPanel_razor.AllowOfflineAccessHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccessHelp*
+  name: AllowOfflineAccessHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_AllowOfflineAccessHelp_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccessHelp
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AllowOfflineAccessHelp
+  nameWithType: TokenPanel_razor.AllowOfflineAccessHelp
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.AlwaysIncludeUserClaimsInIdentityToken
   name: AlwaysIncludeUserClaimsInIdentityToken
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_AlwaysIncludeUserClaimsInIdentityToken
@@ -4260,6 +4338,32 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Broke
   nameWithType: TokenPanel_razor.Broke
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSession
+  name: CoordinateLifetimeWithUserSession
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_CoordinateLifetimeWithUserSession
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSession
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSession
+  nameWithType: TokenPanel_razor.CoordinateLifetimeWithUserSession
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSession*
+  name: CoordinateLifetimeWithUserSession
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_CoordinateLifetimeWithUserSession_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSession
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSession
+  nameWithType: TokenPanel_razor.CoordinateLifetimeWithUserSession
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSessionHelp
+  name: CoordinateLifetimeWithUserSessionHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_CoordinateLifetimeWithUserSessionHelp
+  commentId: P:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSessionHelp
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSessionHelp
+  nameWithType: TokenPanel_razor.CoordinateLifetimeWithUserSessionHelp
+- uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSessionHelp*
+  name: CoordinateLifetimeWithUserSessionHelp
+  href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_CoordinateLifetimeWithUserSessionHelp_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSessionHelp
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.CoordinateLifetimeWithUserSessionHelp
+  nameWithType: TokenPanel_razor.CoordinateLifetimeWithUserSessionHelp
 - uid: CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.Create
   name: Create
   href: api/CG.Green.Areas.Admin.Pages.Clients.Panels.TokenPanel_razor.html#CG_Green_Areas_Admin_Pages_Clients_Panels_TokenPanel_razor_Create
