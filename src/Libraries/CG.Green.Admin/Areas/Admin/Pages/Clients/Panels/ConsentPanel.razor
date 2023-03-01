@@ -24,5 +24,17 @@
                       For="@(() => Model.ConsentLifetime)"
                       @bind-Value="@Model.ConsentLifetime" />
     </MudItem>
+    <MudItem xs="12">
+        <MudTextField Immediate
+                      OnlyValidateIfDirty
+                      Margin="Margin.Dense"
+                      Counter="@(Globals.Models.Clients.LogoUriLength)"
+                      Class="ml-auto mb-n4"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["LogoUri"]
+                      HelperText=@Localizer["LogoUriHelp"]
+                      For="@(() => Model.LogoUri)"
+                      @bind-Value="@Model.LogoUri" />
+        </MudItem>
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>

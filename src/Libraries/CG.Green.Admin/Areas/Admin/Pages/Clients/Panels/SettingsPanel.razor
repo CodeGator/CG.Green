@@ -99,5 +99,12 @@
                      Label=@Localizer["AllowPlainTextPkce"] />
         <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["AllowPlainTextPkceHelp"]</MudText>
     </MudItem>
+    <MudItem xs="12">
+        <MudCheckBox T="bool"
+                     Class="mt-n3 mb-n3"
+                     @bind-Checked="Model.EnableLocalLogin"
+                     Label=@Localizer["EnableLocalLogin"] />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["EnableLocalLogin"]</MudText>
+    </MudItem>
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>

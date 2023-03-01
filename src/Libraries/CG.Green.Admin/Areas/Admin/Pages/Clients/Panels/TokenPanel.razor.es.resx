@@ -165,6 +165,12 @@
   <data name="Broke" xml:space="preserve">
     <value>¡Algo se rompió!</value>
   </data>
+  <data name="CoordinateLifetimeWithUserSession" xml:space="preserve">
+    <value>Coordinar la vida útil con la sesión del usuario</value>
+  </data>
+  <data name="CoordinateLifetimeWithUserSessionHelp" xml:space="preserve">
+    <value>Ate la vida útil del token del cliente a la vida útil de la sesión del usuario.</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Crear</value>
   </data>

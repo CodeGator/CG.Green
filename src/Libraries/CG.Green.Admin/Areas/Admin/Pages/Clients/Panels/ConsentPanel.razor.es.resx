@@ -129,6 +129,12 @@
   <data name="ConsentLifetimeHelp" xml:space="preserve">
     <value>Duración del consentimiento en segundos</value>
   </data>
+  <data name="LogoUri" xml:space="preserve">
+    <value>Logotipo URI</value>
+  </data>
+  <data name="LogoUriHelp" xml:space="preserve">
+    <value>Ubicación de un logotipo para la pantalla de consentimiento.</value>
+  </data>
   <data name="RequireConsent" xml:space="preserve">
     <value>Requerir Consentimiento</value>
   </data>

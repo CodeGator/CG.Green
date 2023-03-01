@@ -71,7 +71,7 @@
             <MudItem xs="12">
                 <GroupBox Class="mt-4" Title=@Localizer["AllowedSigningAlgorithms"]>
                     <MudText Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">@Localizer["AllowedSigningAlgorithmsHelp"]</MudText>
-                    <MudTable Items="Model.AllowedIdentityTokenSigningAlgorithms">
+                    <MudTable Items="Model.AllowedIdentityTokenSigningAlgorithms" Elevation="0">
                         <ToolBarContent>
                             <MudButton StartIcon="@Icons.Material.Outlined.Create"
                                        Variant="Variant.Filled"
@@ -173,6 +173,13 @@
                               HelperText=@Localizer["SlidingRefreshTokenLifetimeHelp"]
                               For="@(() => Model.SlidingRefreshTokenLifetime)"
                               @bind-Value="@Model.SlidingRefreshTokenLifetime" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudCheckBox T="bool?"
+                             Class="mb-n3"
+                             @bind-Checked="Model.CoordinateLifetimeWithUserSession"
+                             Label=@Localizer["CoordinateLifetimeWithUserSession"] />
+                <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["CoordinateLifetimeWithUserSessionHelp"]</MudText>
             </MudItem>
         </GroupBox>
     </MudItem>

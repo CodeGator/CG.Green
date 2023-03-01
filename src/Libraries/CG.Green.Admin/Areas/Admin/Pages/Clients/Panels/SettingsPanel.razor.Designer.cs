@@ -178,6 +178,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enable Local Login.
+        /// </summary>
+        internal static string EnableLocalLogin {
+            get {
+                return ResourceManager.GetString("EnableLocalLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow local logins.
+        /// </summary>
+        internal static string EnableLocalLoginHelp {
+            get {
+                return ResourceManager.GetString("EnableLocalLoginHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Is Enabled.
         /// </summary>
         internal static string IsEnabled {

@@ -156,6 +156,12 @@
   <data name="CopyClipboard" xml:space="preserve">
     <value>ID de cliente copiado al portapapeles</value>
   </data>
+  <data name="EnableLocalLogin" xml:space="preserve">
+    <value>Habilitar inicio de sesión local</value>
+  </data>
+  <data name="EnableLocalLoginHelp" xml:space="preserve">
+    <value>Permitir inicios de sesión locales</value>
+  </data>
   <data name="IsEnabled" xml:space="preserve">
     <value>Está Habilitado</value>
   </data>

@@ -205,6 +205,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Coordinate Lifetime with User Session.
+        /// </summary>
+        internal static string CoordinateLifetimeWithUserSession {
+            get {
+                return ResourceManager.GetString("CoordinateLifetimeWithUserSession", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tie the client&apos;s token lifetime to the user&apos;s session lifetime..
+        /// </summary>
+        internal static string CoordinateLifetimeWithUserSessionHelp {
+            get {
+                return ResourceManager.GetString("CoordinateLifetimeWithUserSessionHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string Create {

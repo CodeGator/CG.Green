@@ -97,6 +97,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Logo URI.
+        /// </summary>
+        internal static string LogoUri {
+            get {
+                return ResourceManager.GetString("LogoUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location of a logo for the consent screen..
+        /// </summary>
+        internal static string LogoUriHelp {
+            get {
+                return ResourceManager.GetString("LogoUriHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Require Consent.
         /// </summary>
         internal static string RequireConsent {

@@ -156,6 +156,12 @@
   <data name="CopyClipboard" xml:space="preserve">
     <value>Client Id copied to the clipboard</value>
   </data>
+  <data name="EnableLocalLogin" xml:space="preserve">
+    <value>Enable Local Login</value>
+  </data>
+  <data name="EnableLocalLoginHelp" xml:space="preserve">
+    <value>Allow local logins</value>
+  </data>
   <data name="IsEnabled" xml:space="preserve">
     <value>Is Enabled</value>
   </data>
