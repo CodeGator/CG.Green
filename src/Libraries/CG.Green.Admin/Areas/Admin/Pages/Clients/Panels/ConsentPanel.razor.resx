@@ -117,61 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AllowedGrantType" xml:space="preserve">
-    <value>Tipos de Subvenciones Permitidas</value>
+  <data name="AllowRememberConsent" xml:space="preserve">
+    <value>Allow Remember Consent</value>
   </data>
-  <data name="AllowedGrantTypeHelp" xml:space="preserve">
-    <value>El tipo de subvención a utilizar para este cliente.</value>
+  <data name="AllowRememberConsentHelp" xml:space="preserve">
+    <value>Allow consent to be rembered for the client.</value>
   </data>
-  <data name="AllowedScopes" xml:space="preserve">
-    <value>Ámbitos Permitidos</value>
+  <data name="ConsentLifetime" xml:space="preserve">
+    <value>Consent Lifetime</value>
   </data>
-  <data name="AllowedScopesHelp" xml:space="preserve">
-    <value>Los alcances que este cliente solicitará</value>
+  <data name="ConsentLifetimeHelp" xml:space="preserve">
+    <value>Consent lifetime in seconds</value>
   </data>
-  <data name="AllowOfflineAccess" xml:space="preserve">
-    <value>Permitir Acceso sin Conexión</value>
+  <data name="RequireConsent" xml:space="preserve">
+    <value>Require Consent</value>
   </data>
-  <data name="AllowOfflineAccessHelp" xml:space="preserve">
-    <value>Habilitar/deshabilitar Tokens de Actualización.</value>
-  </data>
-  <data name="Broke" xml:space="preserve">
-    <value>¡Algo se rompió!</value>
-  </data>
-  <data name="ClientDescription" xml:space="preserve">
-    <value>Descripción del Cliente</value>
-  </data>
-  <data name="ClientId" xml:space="preserve">
-    <value>Id del Cliente</value>
-  </data>
-  <data name="ClientIdHelp" xml:space="preserve">
-    <value>Este es el valor que usarán los llamantes externos para conectarse a este cliente.</value>
-  </data>
-  <data name="ClientName" xml:space="preserve">
-    <value>Nombre del Cliente</value>
-  </data>
-  <data name="ClientNameHelp" xml:space="preserve">
-    <value>Nombre interno para este cliente.</value>
-  </data>
-  <data name="CopyClipboard" xml:space="preserve">
-    <value>ID de cliente copiado al portapapeles</value>
-  </data>
-  <data name="IsEnabled" xml:space="preserve">
-    <value>Está Habilitado</value>
-  </data>
-  <data name="IsEnabledHelp" xml:space="preserve">
-    <value>Habilitar / Deshabilitar el Cliente.</value>
-  </data>
-  <data name="RequirePkce" xml:space="preserve">
-    <value>Requerir PKCE</value>
-  </data>
-  <data name="RequirePkceHelp" xml:space="preserve">
-    <value>Clave de prueba para el intercambio de códigos</value>
-  </data>
-  <data name="RequireRequestObject" xml:space="preserve">
-    <value>Requerir Objeto de Solicitud</value>
-  </data>
-  <data name="RequireRequestObjectHelp" xml:space="preserve">
-    <value>Requiere solo solicitudes firmadas.</value>
+  <data name="RequireConsentHelp" xml:space="preserve">
+    <value>Display a consent screen for this client.</value>
   </data>
 </root>

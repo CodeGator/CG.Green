@@ -59,6 +59,11 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>ClaimsPanel.razor.resx</DependentUpon>
       </Compile>
+      <Compile Update="Areas\Admin\Pages\Clients\Panels\ConsentPanel.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ConsentPanel.razor.resx</DependentUpon>
+      </Compile>
       <Compile Update="Areas\Admin\Pages\Clients\Panels\CorsPanel.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -143,6 +148,10 @@
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClaimsPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>ClaimsPanel.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ConsentPanel.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ConsentPanel.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\CorsPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>

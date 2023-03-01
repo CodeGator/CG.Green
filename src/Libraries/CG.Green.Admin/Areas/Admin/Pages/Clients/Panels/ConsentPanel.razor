@@ -1,0 +1,28 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    <MudItem xs="4">
+        <MudCheckBox T="bool"
+                     Class="mt-n3 mb-n3"
+                     @bind-Checked="Model.RequireConsent"
+                     Label=@Localizer["RequireConsent"] />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["RequireConsentHelp"]</MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudCheckBox T="bool"
+                     Class="mt-n3 mb-n3"
+                     @bind-Checked="Model.AllowRememberConsent"
+                     Label=@Localizer["AllowRememberConsent"] />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["AllowRememberHelp"]</MudText>
+    </MudItem>
+    <MudItem xs="12">
+        <MudTextField Margin="Margin.Dense"
+                      Class="ml-auto mb-4"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.Number"
+                      Label=@Localizer["ConsentLifetime"]
+                      HelperText=@Localizer["ConsentLifetimeHelp"]
+                      For="@(() => Model.ConsentLifetime)"
+                      @bind-Value="@Model.ConsentLifetime" />
+    </MudItem>
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

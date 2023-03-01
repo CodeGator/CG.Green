@@ -120,6 +120,9 @@
   <data name="Broke" xml:space="preserve">
     <value>Something broke!</value>
   </data>
+  <data name="Consent" xml:space="preserve">
+    <value>Consent</value>
+  </data>
   <data name="CORS" xml:space="preserve">
     <value>CORS</value>
   </data>

@@ -95,13 +95,6 @@
     <MudItem xs="4">
         <MudCheckBox T="bool"
                      Class="mt-n3 mb-n3"
-                     @bind-Checked="Model.RequireConsent"
-                     Label=@Localizer["RequireConsent"] />
-        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["RequireConsentHelp"]</MudText>
-    </MudItem>
-    <MudItem xs="4">
-        <MudCheckBox T="bool"
-                     Class="mt-n3 mb-n3"
                      @bind-Checked="Model.RequirePkce"
                      Label=@Localizer["RequirePkce"] />
         <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["RequirePkceHelp"]</MudText>
