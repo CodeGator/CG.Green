@@ -171,8 +171,22 @@ public static class WebApplicationBuilderExtensions004
                     ));
         });
 
-        // Clear the builder cache.
-        BuilderCache.Builders.Clear();
+		// Tell the world what we are about to do.
+		bootstrapLogger?.LogDebug(
+			"Adding Sqlite health checks, for the DAL"
+			);
+
+		// Add Sqlite specific health checks.
+		webApplicationBuilder.Services.AddHealthChecks()
+			.AddSqlite(connectionString);
+
+		// Tell the world what we are about to do.
+		bootstrapLogger?.LogDebug(
+			"Clearing the identity builder cache"
+			);
+
+		// Clear the builder cache.
+		BuilderCache.Builders.Clear();
 
         // Return the application builder.
         return webApplicationBuilder;

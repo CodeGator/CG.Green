@@ -171,8 +171,22 @@ public static class WebApplicationBuilderExtensions004
                     ));
         });
 
-        // Clear the builder cache.
-        BuilderCache.Builders.Clear();
+		// Tell the world what we are about to do.
+		bootstrapLogger?.LogDebug(
+			"Adding MySql health checks, for the DAL"
+			);
+
+		// Add MySql specific health checks.
+		webApplicationBuilder.Services.AddHealthChecks()
+			.AddMySql(connectionString);
+
+		// Tell the world what we are about to do.
+		bootstrapLogger?.LogDebug(
+			"Clearing the identity builder cache"
+			);
+
+		// Clear the builder cache.
+		BuilderCache.Builders.Clear();
 
         // Return the application builder.
         return webApplicationBuilder;
