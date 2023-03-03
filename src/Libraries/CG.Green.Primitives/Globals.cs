@@ -106,7 +106,12 @@ public static class Globals
             /// This constant represents the length of the LogoUri property.
             /// </summary>
             public const int LogoUriLength = 2000;
-        }
+
+			/// <summary>
+			/// This constant represents the length of an identity provider name.
+			/// </summary>
+			public const int IdentityProviderNameLength = 200;
+		}
 
         /// <summary>
         /// This class contains sizes for property properties.

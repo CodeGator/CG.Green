@@ -96,6 +96,11 @@
     </MudItem>
     <MudItem xs="12">
         <GroupBox Title=@Localizer["FrontChannelLogoutURIs"]>
+            <MudCheckBox T="bool"
+                            Class="mb-n3"
+                            @bind-Checked="Model.FrontChannelLogoutSessionRequired"
+                            Label=@Localizer["FrontChannelLogoutSessionRequired"] />
+            <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["FrontChannelLogoutSessionRequiredHelp"]</MudText>
             <MudTable Items="Model.FrontChannelLogoutUris"
                     Elevation="0"
                     Dense
@@ -145,6 +150,13 @@
         <GroupBox Title=@Localizer["BackChannelLogout"]>
             <MudGrid>
                 <MudItem xs="12">
+                    <MudCheckBox T="bool"
+                                 Class="mb-n3"
+                                 @bind-Checked="Model.BackChannelLogoutSessionRequired"
+                                 Label=@Localizer["BackChannelLogoutSessionRequired"] />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["BackChannelLogoutSessionRequiredHelp"]</MudText>
+                </MudItem>
+                <MudItem xs="12">
                     <MudTextField Immediate
                                   OnlyValidateIfDirty
                                   Margin="Margin.Dense"
@@ -155,16 +167,9 @@
                                   HelperText=@Localizer["BackChannelLogoutUriHelp"]
                                   For="@(() => Model.BackChannelLogoutUri)"
                                   @bind-Value="@Model.BackChannelLogoutUri" />
-                    </MudItem>
+                </MudItem>                    
             </MudGrid>
         </GroupBox>
-    </MudItem>
-    <MudItem xs="12">
-        <MudCheckBox T="bool"
-            Class="mb-n3"
-            @bind-Checked="Model.BackChannelLogoutSessionRequired"
-            Label=@Localizer["BackChannelLogoutSessionRequired"] />
-         <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["BackChannelLogoutSessionRequiredHelp"]</MudText>
-    </MudItem>
+    </MudItem>   
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>

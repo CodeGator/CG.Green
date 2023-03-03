@@ -232,7 +232,7 @@ public class EditClientVM
 	/// used with this client.
 	/// </summary>
 	[Display(ShortName = "IdentityProviderRestrictions")]
-	public List<string> IdentityProviderRestrictions { get; set; } = new();
+	public List<ProviderVM> IdentityProviderRestrictions { get; set; } = new();
 
 	/// <summary>
 	/// This property contains the lifetime of an identity token, for the client.

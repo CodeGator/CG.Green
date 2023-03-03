@@ -160,7 +160,7 @@
     <value>Enable Local Login</value>
   </data>
   <data name="EnableLocalLoginHelp" xml:space="preserve">
-    <value>Allow local logins</value>
+    <value>Allow local logins with user name / password</value>
   </data>
   <data name="IsEnabled" xml:space="preserve">
     <value>Is Enabled</value>

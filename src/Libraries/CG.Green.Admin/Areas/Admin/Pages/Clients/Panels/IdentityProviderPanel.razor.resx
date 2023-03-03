@@ -117,66 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BackChannelLogout" xml:space="preserve">
-    <value>Back Channel Logout</value>
-  </data>
-  <data name="BackChannelLogoutSessionRequired" xml:space="preserve">
-    <value>Back Channel Logout Session Required</value>
-  </data>
-  <data name="BackChannelLogoutSessionRequiredHelp" xml:space="preserve">
-    <value>Indicates whether or not the user's session id should be sent to the Back Channel Logout URI.</value>
-  </data>
-  <data name="BackChannelLogoutUri" xml:space="preserve">
-    <value>Back Channel Logout URI</value>
-  </data>
-  <data name="BackChannelLogoutUriHelp" xml:space="preserve">
-    <value>The logout URI for HTTP back-channel based 
-	logout.</value>
-  </data>
-  <data name="Broke" xml:space="preserve">
-    <value>Something broke!</value>
-  </data>
   <data name="Create" xml:space="preserve">
     <value>Create</value>
   </data>
-  <data name="CreateFrontChannelLogoutURI" xml:space="preserve">
-    <value>Create Front Channel Logout URI</value>
+  <data name="CreateRestriction" xml:space="preserve">
+    <value>Create Restriction</value>
   </data>
-  <data name="CreatePostLogoutURI" xml:space="preserve">
-    <value>Create Post Logout URI</value>
+  <data name="IdentityProviderRestrictions" xml:space="preserve">
+    <value>Identity Provider Restrictions</value>
   </data>
-  <data name="CreateRedirectURI" xml:space="preserve">
-    <value>Create Redirect URI</value>
+  <data name="LoadingProviders" xml:space="preserve">
+    <value>Loading provider restrictions</value>
   </data>
-  <data name="EditFrontChannelLogoutURI" xml:space="preserve">
-    <value>Edit Front Channel Logout URI</value>
-  </data>
-  <data name="EditPostLogoutURI" xml:space="preserve">
-    <value>Edit Post Logout URI</value>
-  </data>
-  <data name="EditRedirectURI" xml:space="preserve">
-    <value>Edit Redirect URI</value>
-  </data>
-  <data name="FrontChannelLogoutSessionRequired" xml:space="preserve">
-    <value>Front Channel Logout Session Required</value>
-  </data>
-  <data name="FrontChannelLogoutSessionRequiredHelp" xml:space="preserve">
-    <value>Indicates whether or not the user's session id should be sent to the Front Channel Logout URI.</value>
-  </data>
-  <data name="FrontChannelLogoutURIs" xml:space="preserve">
-    <value>Front Channel Logout URIs</value>
-  </data>
-  <data name="LoadingUris" xml:space="preserve">
-    <value>Loading URIs ...</value>
-  </data>
-  <data name="NoUris" xml:space="preserve">
-    <value>No URIs were found.</value>
-  </data>
-  <data name="PostLogoutRedirectURIs" xml:space="preserve">
-    <value>Post Logout Redirect URIs</value>
-  </data>
-  <data name="RedirectURIs" xml:space="preserve">
-    <value>Redirect URIs</value>
+  <data name="NoProviders" xml:space="preserve">
+    <value>No restrictions where found</value>
   </data>
   <data name="RowsPerPage" xml:space="preserve">
     <value>Rows per page:</value>

@@ -126,6 +126,9 @@
   <data name="CORS" xml:space="preserve">
     <value>CORS</value>
   </data>
+  <data name="IdentityProviderRestrictions" xml:space="preserve">
+    <value>Proveedores de identidad</value>
+  </data>
   <data name="Tokens" xml:space="preserve">
     <value>Fichas</value>
   </data>

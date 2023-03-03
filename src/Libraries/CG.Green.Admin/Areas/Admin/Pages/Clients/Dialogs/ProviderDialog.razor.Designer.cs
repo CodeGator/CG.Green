@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
+namespace CG.Green.Areas.Admin.Pages.Clients.Dialogs {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class AdvancedPanel_razor {
+    internal class ProviderDialog_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal AdvancedPanel_razor() {
+        internal ProviderDialog_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel.razor", typeof(AdvancedPanel_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Dialogs.ProviderDialog.razor", typeof(ProviderDialog_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,47 +61,38 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something broke!.
+        ///   Looks up a localized string similar to Cancel.
         /// </summary>
-        internal static string Broke {
+        internal static string Cancel {
             get {
-                return ResourceManager.GetString("Broke", resourceCulture);
+                return ResourceManager.GetString("Cancel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Consent.
+        ///   Looks up a localized string similar to Name.
         /// </summary>
-        internal static string Consent {
+        internal static string Name {
             get {
-                return ResourceManager.GetString("Consent", resourceCulture);
+                return ResourceManager.GetString("Name", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CORS.
+        ///   Looks up a localized string similar to Enter the provider name.
         /// </summary>
-        internal static string CORS {
+        internal static string NameHelp {
             get {
-                return ResourceManager.GetString("CORS", resourceCulture);
+                return ResourceManager.GetString("NameHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Identity Providers.
+        ///   Looks up a localized string similar to Save.
         /// </summary>
-        internal static string IdentityProviderRestrictions {
+        internal static string Save {
             get {
-                return ResourceManager.GetString("IdentityProviderRestrictions", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tokens.
-        /// </summary>
-        internal static string Tokens {
-            get {
-                return ResourceManager.GetString("Tokens", resourceCulture);
+                return ResourceManager.GetString("Save", resourceCulture);
             }
         }
     }

@@ -49,7 +49,10 @@ public static class WebApplicationBuilderExtensions012
             cfg.CreateMap<Client, NewClientVM>().ReverseMap();
 			cfg.CreateMap<Secret, ClientSecretVM>().ReverseMap();
 			cfg.CreateMap<ClientClaim, ClientClaimVM>().ReverseMap();
-			cfg.CreateMap<Client, EditClientVM>().ReverseMap();
+			cfg.CreateMap<Client, EditClientVM>()
+				.ForMember(dest => dest.IdentityProviderRestrictions, opt => opt.MapFrom(src => src.IdentityProviderRestrictions.Select(x => new ProviderVM() { Name = x })))
+				.ReverseMap()
+				.ForMember(dest => dest.IdentityProviderRestrictions, opt => opt.MapFrom(src => src.IdentityProviderRestrictions.Select(x => x.Name)));
 		});
 
         // Return the application builder.

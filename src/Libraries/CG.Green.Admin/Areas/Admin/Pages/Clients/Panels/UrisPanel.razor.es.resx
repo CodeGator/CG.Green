@@ -154,6 +154,12 @@ cerrar sesión.</value>
   <data name="EditRedirectURI" xml:space="preserve">
     <value>Editar URI de Redirección</value>
   </data>
+  <data name="FrontChannelLogoutSessionRequired" xml:space="preserve">
+    <value>Sesión de cierre de sesión de canal frontal requerida</value>
+  </data>
+  <data name="FrontChannelLogoutSessionRequiredHelp" xml:space="preserve">
+    <value>Indica si la identificación de la sesión del usuario debe enviarse o no al URI de cierre de sesión del canal frontal.</value>
+  </data>
   <data name="FrontChannelLogoutURIs" xml:space="preserve">
     <value>URI de cierre de sesión del canal frontal</value>
   </data>

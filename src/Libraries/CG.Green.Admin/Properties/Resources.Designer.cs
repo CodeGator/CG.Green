@@ -394,6 +394,15 @@ namespace CG.Green.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pair Wise Subject Salt.
         /// </summary>
         internal static string PairWiseSubjectSalt {

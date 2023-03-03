@@ -160,7 +160,7 @@
     <value>Habilitar inicio de sesión local</value>
   </data>
   <data name="EnableLocalLoginHelp" xml:space="preserve">
-    <value>Permitir inicios de sesión locales</value>
+    <value>Permitir inicios de sesión locales con nombre de usuario/contraseña</value>
   </data>
   <data name="IsEnabled" xml:space="preserve">
     <value>Está Habilitado</value>

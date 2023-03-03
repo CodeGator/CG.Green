@@ -179,6 +179,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Front Channel Logout Session Required.
+        /// </summary>
+        internal static string FrontChannelLogoutSessionRequired {
+            get {
+                return ResourceManager.GetString("FrontChannelLogoutSessionRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indicates whether or not the user&apos;s session id should be sent to the Front Channel Logout URI..
+        /// </summary>
+        internal static string FrontChannelLogoutSessionRequiredHelp {
+            get {
+                return ResourceManager.GetString("FrontChannelLogoutSessionRequiredHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Front Channel Logout URIs.
         /// </summary>
         internal static string FrontChannelLogoutURIs {

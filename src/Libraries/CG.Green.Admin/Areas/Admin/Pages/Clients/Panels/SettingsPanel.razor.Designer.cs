@@ -187,7 +187,7 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Allow local logins.
+        ///   Looks up a localized string similar to Allow local logins with user name / password.
         /// </summary>
         internal static string EnableLocalLoginHelp {
             get {
