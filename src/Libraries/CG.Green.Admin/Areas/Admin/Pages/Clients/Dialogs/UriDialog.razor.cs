@@ -22,7 +22,7 @@ public partial class UriDialog
     /// This property contains the edit form's model.
     /// </summary>
     [Parameter]
-    public string Model { get; set; } = null!;
+    public EditUriVM Model { get; set; } = null!;
 
     /// <summary>
     /// This property contains the dialog service for this dialog.

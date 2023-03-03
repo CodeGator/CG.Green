@@ -50,9 +50,18 @@ public static class WebApplicationBuilderExtensions012
 			cfg.CreateMap<Secret, ClientSecretVM>().ReverseMap();
 			cfg.CreateMap<ClientClaim, ClientClaimVM>().ReverseMap();
 			cfg.CreateMap<Client, EditClientVM>()
-				.ForMember(dest => dest.IdentityProviderRestrictions, opt => opt.MapFrom(src => src.IdentityProviderRestrictions.Select(x => new ProviderVM() { Name = x })))
+				.ForMember(dest => dest.IdentityProviderRestrictions, opt => opt.MapFrom(src => src.IdentityProviderRestrictions.Select(x => new EditProviderVM() { Name = x })))
+				.ForMember(dest => dest.RedirectUris, opt => opt.MapFrom(src => src.RedirectUris.Select(x => new EditUriVM() { Value = x })))
+				.ForMember(dest => dest.PostLogoutRedirectUris, opt => opt.MapFrom(src => src.PostLogoutRedirectUris.Select(x => new EditUriVM() { Value = x })))
+				.ForMember(dest => dest.FrontChannelLogoutUri, opt => opt.MapFrom(src => new EditUriVM() { Value = src.FrontChannelLogoutUri }))
+				.ForMember(dest => dest.BackChannelLogoutUri, opt => opt.MapFrom(src => new EditUriVM() { Value = src.BackChannelLogoutUri }))
 				.ReverseMap()
-				.ForMember(dest => dest.IdentityProviderRestrictions, opt => opt.MapFrom(src => src.IdentityProviderRestrictions.Select(x => x.Name)));
+				.ForMember(dest => dest.IdentityProviderRestrictions, opt => opt.MapFrom(src => src.IdentityProviderRestrictions.Select(x => x.Name)))
+				.ForMember(dest => dest.RedirectUris, opt => opt.MapFrom(src => src.RedirectUris.Select(x => x.Value)))
+				.ForMember(dest => dest.PostLogoutRedirectUris, opt => opt.MapFrom(src => src.PostLogoutRedirectUris.Select(x => x.Value)))
+				.ForMember(dest => dest.FrontChannelLogoutUri, opt => opt.MapFrom(src => src.FrontChannelLogoutUri.Value))
+				.ForMember(dest => dest.BackChannelLogoutUri, opt => opt.MapFrom(src => src.BackChannelLogoutUri.Value))
+				; 
 		});
 
         // Return the application builder.

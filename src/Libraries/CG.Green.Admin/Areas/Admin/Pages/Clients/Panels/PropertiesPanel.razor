@@ -1,0 +1,54 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+        <MudItem xs="12">
+        <GroupBox Title=@Localizer["Properties"]>
+            <MudTable Items="Model.Properties"
+                    Elevation="0"
+                    Dense
+                    Striped
+                    Virtualize
+                    Loading="@_isLoading">
+                <ToolBarContent>
+                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                Variant="Variant.Filled"
+                                Disabled="@_isLoading"
+                                Color="Color.Secondary"
+                                OnClick="OnCreatePropertyAsync">@Localizer["Create"]</MudButton>
+                    <MudSpacer />
+                </ToolBarContent>
+                <ColGroup>
+                    <col style="width: 42%" />
+                    <col style="width: 42%" />
+                    <col />
+                </ColGroup>
+                <HeaderContent>
+                    <MudTh><MudTableSortLabel SortBy="new Func<EditPropertyVM, object>(x=>x.Key)">@Localizer["Key"]</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<EditPropertyVM, object>(x=>x.Value)">@Localizer["Value"]</MudTableSortLabel></MudTh>
+                    <MudTh></MudTh>
+                </HeaderContent>
+                <RowTemplate Context="context2">
+                    <MudTd DataLabel=@Localizer["Key"]>@context2.Key</MudTd>
+                    <MudTd DataLabel=@Localizer["Value"]>@context2.Value</MudTd>
+                    <MudTd>
+                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                        OnClick="() => OnDeletePropertyAsync(context2)"
+                                        Disabled="@_isLoading" />
+                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                        OnClick="() => OnEditPropertyAsync(context2)"
+                                        Disabled="@_isLoading" />
+                    </MudTd>
+                </RowTemplate>
+                <NoRecordsContent>
+                    @Localizer["NoProperties"]
+                </NoRecordsContent>
+                <LoadingContent>
+                        @Localizer["LoadingProperties"]
+                </LoadingContent>
+                <PagerContent>
+                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                </PagerContent>
+            </MudTable>
+        </GroupBox>
+    </MudItem>
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

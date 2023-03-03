@@ -12,7 +12,7 @@
                      Class="mt-n3 mb-n3"
                      @bind-Checked="Model.AllowRememberConsent"
                      Label=@Localizer["AllowRememberConsent"] />
-        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["AllowRememberHelp"]</MudText>
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["AllowRememberConsentHelp"]</MudText>
     </MudItem>
     <MudItem xs="12">
         <MudTextField Margin="Margin.Dense"
@@ -35,6 +35,18 @@
                       HelperText=@Localizer["LogoUriHelp"]
                       For="@(() => Model.LogoUri)"
                       @bind-Value="@Model.LogoUri" />
-        </MudItem>
+    </MudItem>
+    <MudItem xs="12">
+    <MudTextField Immediate
+                    OnlyValidateIfDirty
+                    Margin="Margin.Dense"
+                    Counter="@(Globals.Models.Clients.ClientUriLength)"
+                    Class="ml-auto mb-n4"
+                    Variant="Variant.Outlined"
+                    Label=@Localizer["ClientUri"]
+                    HelperText=@Localizer["ClientUriHelp"]
+                    For="@(() => Model.ClientUri)"
+                    @bind-Value="@Model.ClientUri" />
+    </MudItem>
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>

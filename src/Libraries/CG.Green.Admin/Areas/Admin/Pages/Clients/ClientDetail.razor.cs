@@ -186,9 +186,12 @@ public partial class ClientDetail
                 "Saving the client changes"
                 );
 
-            // Update the client in the api.
-            await GreenApi.Clients.UpdateAsync(
-                AutoMapper.Map<Client>(_model),
+			// Map back to the Duende model.
+			var dirtyModel = AutoMapper.Map<Client>(_model);
+
+			// Update the client in the api.
+			await GreenApi.Clients.UpdateAsync(
+                dirtyModel,
                 UserName
                 );
 

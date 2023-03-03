@@ -105,7 +105,7 @@ public partial class UrisPanel
 			// Create the dialog parameters.
 			var parameters = new DialogParameters()
 			{
-				{ "Model", "" }
+				{ "Model", new EditUriVM() }
 			};
 
 			// Log what we are about to do.
@@ -135,7 +135,7 @@ public partial class UrisPanel
 				);
 
 			// Recover the model.
-			var model = (string)result.Data;
+			var model = (EditUriVM)result.Data;
 
 			// Log what we are about to do.
 			Logger.LogDebug(
@@ -169,7 +169,7 @@ public partial class UrisPanel
 	/// <param name="uri">The URI to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected async Task OnEditPostLogoutUriAsync(
-		string uri
+		EditUriVM uri
 		)
 	{
 		try
@@ -226,7 +226,7 @@ public partial class UrisPanel
 				);
 
 			// Recover the model.
-			var model = (string)result.Data;
+			var model = (EditUriVM)result.Data;
 
 			// Remove the original.
 			Model.PostLogoutRedirectUris.Remove(uri);
@@ -258,7 +258,7 @@ public partial class UrisPanel
 	/// <param name="uri">The URI to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected async Task OnDeletePostLogoutUriAsync(
-		string uri
+		EditUriVM uri
 		)
 	{
 		try
@@ -276,7 +276,7 @@ public partial class UrisPanel
 
 			// Prompt the user.
 			var result = await Dialog.ShowDeleteBox(
-				uri
+				uri.Value
 				);
 
 			// Did the user cancel?
@@ -299,242 +299,6 @@ public partial class UrisPanel
 			Logger.LogError(
 				ex.GetBaseException(),
 				"Failed to delete a post logout redirect URI!"
-				);
-
-			// Tell the world what happened.
-			await Dialog.ShowErrorBox(
-				exception: ex,
-				title: Localizer["Broke"]
-				);
-		}
-	}
-
-	// *******************************************************************
-
-	/// <summary>
-	/// This method creates a new front channel logout URI for the client.
-	/// </summary>
-	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnCreateFrontChannelLogoutUriAsync()
-	{
-		try
-		{
-			// Sanity check the model.
-			if (Model is null)
-			{
-				return;
-			}
-
-			// Create the dialog options.
-			var options = new DialogOptions
-			{
-				MaxWidth = MaxWidth.Small,
-				CloseOnEscapeKey = true,
-				FullWidth = true
-			};
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Creating dialog parameters."
-				);
-
-			// Create the dialog parameters.
-			var parameters = new DialogParameters()
-			{
-				{ "Model", "" }
-			};
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Creating new dialog."
-				);
-
-			// Create the dialog.
-			var dialog = Dialog.Show<UriDialog>(
-				Localizer["CreateFrontChannelLogoutURI"],
-				parameters,
-				options
-				);
-
-			// Get the results of the dialog.
-			var result = await dialog.Result;
-
-			// Did the user cancel?
-			if (result.Canceled)
-			{
-				return;
-			}
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Recovering the dialog model."
-				);
-
-			// Recover the model.
-			var model = (string)result.Data;
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Adding the fromt channel logout URI to the client."
-				);
-
-			// Add the URI.
-			Model.FrontChannelLogoutUris.Add(model);
-		}
-		catch (Exception ex)
-		{
-			// Log what happened.
-			Logger.LogError(
-				ex.GetBaseException(),
-				"Failed to add a front channel logout redirect URI!"
-				);
-
-			// Tell the world what happened.
-			await Dialog.ShowErrorBox(
-				exception: ex,
-				title: Localizer["Broke"]
-				);
-		}
-	}
-
-	// *******************************************************************
-
-	/// <summary>
-	/// This method deletes the given front channel logout URI.
-	/// </summary>
-	/// <param name="uri">The URI to use for the operation.</param>
-	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnDeleteFrontChannelLogoutUriAsync(
-		string uri
-		)
-	{
-		try
-		{
-			// Sanity check the model.
-			if (Model is null)
-			{
-				return;
-			}
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Prompting the caller."
-				);
-
-			// Prompt the user.
-			var result = await Dialog.ShowDeleteBox(
-				uri
-				);
-
-			// Did the user cancel?
-			if (!result)
-			{
-				return; // Nothing more to do.
-			}
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Deleting a front channel logout redirect URI."
-				);
-
-			// Delete the uri
-			Model.FrontChannelLogoutUris.Remove(uri);
-		}
-		catch (Exception ex)
-		{
-			// Log what happened.
-			Logger.LogError(
-				ex.GetBaseException(),
-				"Failed to delete a front channel logout redirect URI!"
-				);
-
-			// Tell the world what happened.
-			await Dialog.ShowErrorBox(
-				exception: ex,
-				title: Localizer["Broke"]
-				);
-		}
-	}
-
-	// *******************************************************************
-
-	/// <summary>
-	/// This method edits the given front channel logout URI.
-	/// </summary>
-	/// <param name="uri">The URI to use for the operation.</param>
-	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnEditFrontChannelLogoutUriAsync(
-		string uri
-		)
-	{
-		try
-		{
-			// Sanity check the model.
-			if (Model is null)
-			{
-				return;
-			}
-
-			// Create the dialog options.
-			var options = new DialogOptions
-			{
-				MaxWidth = MaxWidth.Small,
-				CloseOnEscapeKey = true,
-				FullWidth = true
-			};
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Creating dialog parameters."
-				);
-
-			// Create the dialog parameters.
-			var parameters = new DialogParameters()
-			{
-				{ "Model", uri }
-			};
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Creating new dialog."
-				);
-
-			// Create the dialog.
-			var dialog = Dialog.Show<UriDialog>(
-				Localizer["EditFrontChannelLogoutURI"],
-				parameters,
-				options
-				);
-
-			// Get the results of the dialog.
-			var result = await dialog.Result;
-
-			// Did the user cancel?
-			if (result.Canceled)
-			{
-				return;
-			}
-
-			// Log what we are about to do.
-			Logger.LogDebug(
-				"Recovering the dialog model."
-				);
-
-			// Recover the model.
-			var model = (string)result.Data;
-
-			// Remove the original.
-			Model.FrontChannelLogoutUris.Remove(uri);
-
-			// Add the modified.
-			Model.FrontChannelLogoutUris.Add(model);
-		}
-		catch (Exception ex)
-		{
-			// Log what happened.
-			Logger.LogError(
-				ex.GetBaseException(),
-				"Failed to edit a front channel logout redirect URI!"
 				);
 
 			// Tell the world what happened.
@@ -577,7 +341,7 @@ public partial class UrisPanel
 			// Create the dialog parameters.
 			var parameters = new DialogParameters()
 			{
-				{ "Model", "" }
+				{ "Model", new EditUriVM() }
 			};
 
 			// Log what we are about to do.
@@ -607,7 +371,7 @@ public partial class UrisPanel
 				);
 
 			// Recover the model.
-			var model = (string)result.Data;
+			var model = (EditUriVM)result.Data;
 
 			// Log what we are about to do.
 			Logger.LogDebug(
@@ -641,7 +405,7 @@ public partial class UrisPanel
 	/// <param name="uri">The URI to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected async Task OnEditRedirectUriAsync(
-		string uri
+		EditUriVM uri
 		)
 	{
 		try
@@ -698,7 +462,7 @@ public partial class UrisPanel
 				);
 
 			// Recover the model.
-			var model = (string)result.Data;
+			var model = (EditUriVM)result.Data;
 
 			// Remove the original.
 			Model.RedirectUris.Remove(uri);
@@ -730,7 +494,7 @@ public partial class UrisPanel
 	/// <param name="uri">The URI to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected async Task OnDeleteRedirectUriAsync(
-		string uri
+		EditUriVM uri
 		)
 	{
 		try
@@ -748,7 +512,7 @@ public partial class UrisPanel
 
 			// Prompt the user.
 			var result = await Dialog.ShowDeleteBox(
-				uri
+				uri.Value
 				);
 
 			// Did the user cancel?

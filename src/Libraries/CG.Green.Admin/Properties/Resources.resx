@@ -207,8 +207,8 @@
   <data name="FrontChannelLogoutSessionRequired" xml:space="preserve">
     <value>Front Channel Logout Session Required</value>
   </data>
-  <data name="FrontChannelLogoutUris" xml:space="preserve">
-    <value>Front Channel Logout Uris</value>
+  <data name="FrontChannelLogoutUri" xml:space="preserve">
+    <value>Front Channel Logout URI</value>
   </data>
   <data name="IdentityProviderRestrictions" xml:space="preserve">
     <value>Identity Provider Restrictions</value>

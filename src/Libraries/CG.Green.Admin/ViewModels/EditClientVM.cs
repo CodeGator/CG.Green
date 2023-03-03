@@ -124,7 +124,7 @@ public class EditClientVM
 	/// logout.
 	/// </summary>
 	[Display(ShortName = "BackChannelLogoutURI")]
-	public string BackChannelLogoutUri { get; set; } = null!;
+	public EditUriVM BackChannelLogoutUri { get; set; } = null!;
 
 	/// <summary>
 	/// This property indicates the backchannel authentication request
@@ -171,7 +171,6 @@ public class EditClientVM
 	/// <summary>
 	/// This property contains the URI for the client.
 	/// </summary>
-	[Required]
 	[MaxLength(Globals.Models.Clients.ClientUriLength)]
 	[Display(ShortName = "ClientURI")]
 	public string ClientUri { get; set; } = null!;
@@ -222,17 +221,17 @@ public class EditClientVM
 	public bool FrontChannelLogoutSessionRequired { get; set; }
 
 	/// <summary>
-	/// This property contains a list of front channel logout URIs for the client.
+	/// This property contains a front channel logout URI for the client.
 	/// </summary>
-	[Display(ShortName = "FrontChannelLogoutUris")]
-	public List<string> FrontChannelLogoutUris { get; set; } = new();
+	[Display(ShortName = "FrontChannelLogoutUri")]
+	public EditUriVM FrontChannelLogoutUri { get; set; } = new();
 
 	/// <summary>
 	/// This property indicates which external identity providers can be
 	/// used with this client.
 	/// </summary>
 	[Display(ShortName = "IdentityProviderRestrictions")]
-	public List<ProviderVM> IdentityProviderRestrictions { get; set; } = new();
+	public List<EditProviderVM> IdentityProviderRestrictions { get; set; } = new();
 
 	/// <summary>
 	/// This property contains the lifetime of an identity token, for the client.
@@ -256,7 +255,6 @@ public class EditClientVM
 	/// <summary>
 	/// This property contains the URI for the client consent screen.
 	/// </summary>
-	[Required]
 	[MaxLength(Globals.Models.Clients.LogoUriLength)]
 	[Display(ShortName = "LogoURI")]
 	public string LogoUri { get; set; } = null!;
@@ -279,7 +277,7 @@ public class EditClientVM
 	/// This property contains a list of post logout redirect URIs for the client.
 	/// </summary>
 	[Display(ShortName = "PostLogoutUris")]
-	public List<string> PostLogoutRedirectUris { get; set; } = new();
+	public List<EditUriVM> PostLogoutRedirectUris { get; set; } = new();
 	
 	/// <summary>
 	/// This property contains any custom properties for the client.
@@ -297,7 +295,7 @@ public class EditClientVM
 	/// This property contains a list of redirect URIs for the client.
 	/// </summary>
 	[Display(ShortName = "RedirectUris")]
-	public List<string> RedirectUris { get; set; } = new();
+	public List<EditUriVM> RedirectUris { get; set; } = new();
 
 	/// <summary>
 	/// This property contains the expiration of a refresh token, for the client.

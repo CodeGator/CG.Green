@@ -331,11 +331,11 @@ namespace CG.Green.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Front Channel Logout Uris.
+        ///   Looks up a localized string similar to Front Channel Logout URI.
         /// </summary>
-        internal static string FrontChannelLogoutUris {
+        internal static string FrontChannelLogoutUri {
             get {
-                return ResourceManager.GetString("FrontChannelLogoutUris", resourceCulture);
+                return ResourceManager.GetString("FrontChannelLogoutUri", resourceCulture);
             }
         }
         

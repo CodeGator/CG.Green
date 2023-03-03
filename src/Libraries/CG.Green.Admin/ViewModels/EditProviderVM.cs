@@ -4,7 +4,7 @@ namespace CG.Green.ViewModels;
 /// <summary>
 /// This class is a view-model that represents a Duende identity provider.
 /// </summary>
-public class ProviderVM
+public class EditProviderVM
 {
 	// *******************************************************************
 	// Properties.
@@ -17,6 +17,7 @@ public class ProviderVM
 	/// </summary>
 	[Required]
 	[Display(ShortName = "Name")]
+	[MaxLength(Globals.Models.Clients.IdentityProviderNameLength)]
 	public string Name { get; set; } = null!;
 
 	#endregion

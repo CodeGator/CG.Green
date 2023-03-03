@@ -130,8 +130,7 @@
     <value>Back Channel Logout URI</value>
   </data>
   <data name="BackChannelLogoutUriHelp" xml:space="preserve">
-    <value>The logout URI for HTTP back-channel based 
-	logout.</value>
+    <value>The logout URI for HTTP back-channel based logout.</value>
   </data>
   <data name="Broke" xml:space="preserve">
     <value>Something broke!</value>
@@ -157,14 +156,20 @@
   <data name="EditRedirectURI" xml:space="preserve">
     <value>Edit Redirect URI</value>
   </data>
+  <data name="FrontChannelLogout" xml:space="preserve">
+    <value>Front Channel Logout</value>
+  </data>
+  <data name="FrontChannelLogoutHelp" xml:space="preserve">
+    <value>The logout URI for HTTP front-channel based logout</value>
+  </data>
   <data name="FrontChannelLogoutSessionRequired" xml:space="preserve">
     <value>Front Channel Logout Session Required</value>
   </data>
   <data name="FrontChannelLogoutSessionRequiredHelp" xml:space="preserve">
     <value>Indicates whether or not the user's session id should be sent to the Front Channel Logout URI.</value>
   </data>
-  <data name="FrontChannelLogoutURIs" xml:space="preserve">
-    <value>Front Channel Logout URIs</value>
+  <data name="FrontChannelLogoutUri" xml:space="preserve">
+    <value>Front Channel Logout URI</value>
   </data>
   <data name="LoadingUris" xml:space="preserve">
     <value>Loading URIs ...</value>

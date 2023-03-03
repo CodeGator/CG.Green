@@ -17,12 +17,14 @@ public class EditPropertyVM
 	/// </summary>
 	[Required]
 	[Display(ShortName = "Key")]
+	[MaxLength(Globals.Models.Clients.PropertyKeyLength)]
 	public string Key { get; set; } = null!;
 
 	/// <summary>
 	/// This property contains the property value.
 	/// </summary>
 	[Display(ShortName = "Value")]
+	[MaxLength(Globals.Models.Clients.PropertyValueLength)]
 	public string Value { get; set; } = null!;
 
 	#endregion

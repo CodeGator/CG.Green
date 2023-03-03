@@ -12,8 +12,8 @@
                                   Counter="@(Globals.Models.UriLength)"
                                   Variant="Variant.Outlined"
                                   Label=@Localizer["URI"]
-                                  For="@(() => Model)"
-                                  @bind-Value="@Model"
+                                  For="@(() => Model.Value)"
+                                  @bind-Value="@Model.Value"
                                   Class="ml-auto" />
                     </MudCardContent>
                     <MudCardActions>

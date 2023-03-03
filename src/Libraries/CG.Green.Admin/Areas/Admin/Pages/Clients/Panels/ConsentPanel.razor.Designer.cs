@@ -79,6 +79,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Client URI.
+        /// </summary>
+        internal static string ClientUri {
+            get {
+                return ResourceManager.GetString("ClientUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Url to display on the consent screen..
+        /// </summary>
+        internal static string ClientUriHelp {
+            get {
+                return ResourceManager.GetString("ClientUriHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Consent Lifetime.
         /// </summary>
         internal static string ConsentLifetime {
@@ -106,7 +124,7 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Location of a logo for the consent screen..
+        ///   Looks up a localized string similar to Location of a logo to display on the consent screen..
         /// </summary>
         internal static string LogoUriHelp {
             get {

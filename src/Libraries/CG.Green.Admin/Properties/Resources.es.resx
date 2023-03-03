@@ -207,8 +207,8 @@
   <data name="FrontChannelLogoutSessionRequired" xml:space="preserve">
     <value>Sesión de cierre de sesión de canal frontal requerida</value>
   </data>
-  <data name="FrontChannelLogoutUris" xml:space="preserve">
-    <value>Uris de cierre de sesión del canal frontal</value>
+  <data name="FrontChannelLogoutUri" xml:space="preserve">
+    <value>URI de cierre de sesión del canal frontal</value>
   </data>
   <data name="IdentityProviderRestrictions" xml:space="preserve">
     <value>Restricciones del proveedor de identidad</value>

@@ -97,8 +97,7 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The logout URI for HTTP back-channel based 
-        ///	logout..
+        ///   Looks up a localized string similar to The logout URI for HTTP back-channel based logout..
         /// </summary>
         internal static string BackChannelLogoutUriHelp {
             get {
@@ -179,6 +178,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Front Channel Logout.
+        /// </summary>
+        internal static string FrontChannelLogout {
+            get {
+                return ResourceManager.GetString("FrontChannelLogout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The logout URI for HTTP front-channel based logout.
+        /// </summary>
+        internal static string FrontChannelLogoutHelp {
+            get {
+                return ResourceManager.GetString("FrontChannelLogoutHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Front Channel Logout Session Required.
         /// </summary>
         internal static string FrontChannelLogoutSessionRequired {
@@ -197,11 +214,11 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Front Channel Logout URIs.
+        ///   Looks up a localized string similar to Front Channel Logout URI.
         /// </summary>
-        internal static string FrontChannelLogoutURIs {
+        internal static string FrontChannelLogoutUri {
             get {
-                return ResourceManager.GetString("FrontChannelLogoutURIs", resourceCulture);
+                return ResourceManager.GetString("FrontChannelLogoutUri", resourceCulture);
             }
         }
         

@@ -123,6 +123,12 @@
   <data name="AllowRememberConsentHelp" xml:space="preserve">
     <value>Allow consent to be rembered for the client.</value>
   </data>
+  <data name="ClientUri" xml:space="preserve">
+    <value>Client URI</value>
+  </data>
+  <data name="ClientUriHelp" xml:space="preserve">
+    <value>Url to display on the consent screen.</value>
+  </data>
   <data name="ConsentLifetime" xml:space="preserve">
     <value>Consent Lifetime</value>
   </data>
@@ -133,7 +139,7 @@
     <value>Logo URI</value>
   </data>
   <data name="LogoUriHelp" xml:space="preserve">
-    <value>Location of a logo for the consent screen.</value>
+    <value>Location of a logo to display on the consent screen.</value>
   </data>
   <data name="RequireConsent" xml:space="preserve">
     <value>Require Consent</value>

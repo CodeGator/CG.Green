@@ -23,7 +23,7 @@ public partial class ProviderDialog
 	/// This property contains the edit form's model.
 	/// </summary>
 	[Parameter]
-	public ProviderVM Model { get; set; } = null!;
+	public EditProviderVM Model { get; set; } = null!;
 
 	/// <summary>
 	/// This property contains the dialog service for this dialog.

@@ -21,11 +21,11 @@
                     <col />
                 </ColGroup>
                 <HeaderContent>
-                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<EditUriVM, object>(x=>x.Value)"></MudTableSortLabel></MudTh>
                     <MudTh></MudTh>
                 </HeaderContent>
                 <RowTemplate Context="context2">
-                    <MudTd>@context2</MudTd>
+                    <MudTd>@context2.Value</MudTd>
                     <MudTd>
                         <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                         OnClick="() => OnDeleteRedirectUriAsync(context2)"
@@ -68,11 +68,11 @@
                     <col />
                 </ColGroup>
                 <HeaderContent>
-                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<EditUriVM, object>(x=>x.Value)"></MudTableSortLabel></MudTh>
                     <MudTh></MudTh>
                 </HeaderContent>
                 <RowTemplate Context="context2">
-                    <MudTd>@context2</MudTd>
+                    <MudTd>@context2.Value</MudTd>
                     <MudTd>
                         <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                         OnClick="() => OnDeletePostLogoutUriAsync(context2)"
@@ -95,55 +95,22 @@
         </GroupBox>                        
     </MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["FrontChannelLogoutURIs"]>
+        <GroupBox Title=@Localizer["FrontChannelLogout"]>
             <MudCheckBox T="bool"
                             Class="mb-n3"
                             @bind-Checked="Model.FrontChannelLogoutSessionRequired"
                             Label=@Localizer["FrontChannelLogoutSessionRequired"] />
             <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["FrontChannelLogoutSessionRequiredHelp"]</MudText>
-            <MudTable Items="Model.FrontChannelLogoutUris"
-                    Elevation="0"
-                    Dense
-                    Striped
-                    Virtualize
-                    Loading="@_isLoading">
-                <ToolBarContent>
-                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
-                                Variant="Variant.Filled"
-                                Disabled="@_isLoading"
-                                Color="Color.Secondary"
-                                OnClick="OnCreateFrontChannelLogoutUriAsync">@Localizer["Create"]</MudButton>
-                    <MudSpacer />
-                </ToolBarContent>
-                <ColGroup>
-                    <col style="width: 85%" />
-                    <col />
-                </ColGroup>
-                <HeaderContent>
-                    <MudTh><MudTableSortLabel SortBy="new Func<string, object>(x=>x)"></MudTableSortLabel></MudTh>
-                    <MudTh></MudTh>
-                </HeaderContent>
-                <RowTemplate Context="context2">
-                    <MudTd>@context2</MudTd>
-                    <MudTd>
-                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
-                                        OnClick="() => OnDeleteFrontChannelLogoutUriAsync(context2)"
-                                        Disabled="@_isLoading" />
-                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
-                                        OnClick="() => OnEditFrontChannelLogoutUriAsync(context2)"
-                                        Disabled="@_isLoading" />
-                    </MudTd>
-                </RowTemplate>
-                <NoRecordsContent>
-                    @Localizer["NoUris"]
-                </NoRecordsContent>
-                <LoadingContent>
-                    @Localizer["LoadingUris"]
-                </LoadingContent>
-                <PagerContent>
-                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
-                </PagerContent>
-            </MudTable>
+            <MudTextField Immediate
+                            OnlyValidateIfDirty
+                          Margin="Margin.Dense"
+                          Counter="@(Globals.Models.Clients.FrontChannelLogoutUriLength)"
+                          Class="ml-auto mb-2 mt-4"
+                          Variant="Variant.Outlined"
+                          Label=@Localizer["FrontChannelLogoutUri"]
+                          HelperText=@Localizer["FrontChannelLogoutUriHelp"]
+                          For="@(() => Model.FrontChannelLogoutUri.Value)"
+                          @bind-Value="@Model.FrontChannelLogoutUri.Value" />
         </GroupBox>                        
     </MudItem>
     <MudItem xs="12">
@@ -155,19 +122,17 @@
                                  @bind-Checked="Model.BackChannelLogoutSessionRequired"
                                  Label=@Localizer["BackChannelLogoutSessionRequired"] />
                     <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["BackChannelLogoutSessionRequiredHelp"]</MudText>
-                </MudItem>
-                <MudItem xs="12">
                     <MudTextField Immediate
-                                  OnlyValidateIfDirty
+                                    OnlyValidateIfDirty
                                   Margin="Margin.Dense"
-                                  Counter="@(Globals.Models.Clients.ClientNameLength)"
-                                  Class="ml-auto mb-n4"
+                                  Counter="@(Globals.Models.Clients.BackChannelLogoutUriLength)"
+                                  Class="ml-auto mb-2 mt-4"
                                   Variant="Variant.Outlined"
                                   Label=@Localizer["BackChannelLogoutUri"]
                                   HelperText=@Localizer["BackChannelLogoutUriHelp"]
-                                  For="@(() => Model.BackChannelLogoutUri)"
-                                  @bind-Value="@Model.BackChannelLogoutUri" />
-                </MudItem>                    
+                                  For="@(() => Model.BackChannelLogoutUri.Value)"
+                                  @bind-Value="@Model.BackChannelLogoutUri.Value" />
+                </MudItem>
             </MudGrid>
         </GroupBox>
     </MudItem>   

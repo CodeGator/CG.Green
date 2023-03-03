@@ -120,6 +120,9 @@
   <data name="BackChannelLogout" xml:space="preserve">
     <value>Cierre de sesión del canal posterior</value>
   </data>
+  <data name="BackChannelLogoutSessionRequired" xml:space="preserve">
+    <value>Se requiere sesión de cierre de sesión de canal secundario</value>
+  </data>
   <data name="BackChannelLogoutSessionRequiredHelp" xml:space="preserve">
     <value>Indica si la identificación de la sesión del usuario debe enviarse o no al URI de cierre de sesión del canal trasero.</value>
   </data>
@@ -154,14 +157,21 @@ cerrar sesión.</value>
   <data name="EditRedirectURI" xml:space="preserve">
     <value>Editar URI de Redirección</value>
   </data>
+  <data name="FrontChannelLogout" xml:space="preserve">
+    <value>Cierre de sesión del canal frontal</value>
+  </data>
   <data name="FrontChannelLogoutSessionRequired" xml:space="preserve">
     <value>Sesión de cierre de sesión de canal frontal requerida</value>
   </data>
   <data name="FrontChannelLogoutSessionRequiredHelp" xml:space="preserve">
     <value>Indica si la identificación de la sesión del usuario debe enviarse o no al URI de cierre de sesión del canal frontal.</value>
   </data>
-  <data name="FrontChannelLogoutURIs" xml:space="preserve">
+  <data name="FrontChannelLogoutUri" xml:space="preserve">
     <value>URI de cierre de sesión del canal frontal</value>
+  </data>
+  <data name="FrontChannelLogoutUriHelp" xml:space="preserve">
+    <value>El URI de cierre de sesión para el canal frontal basado en HTTP
+Cerrar sesión.</value>
   </data>
   <data name="LoadingUris" xml:space="preserve">
     <value>Cargando URIs ...</value>

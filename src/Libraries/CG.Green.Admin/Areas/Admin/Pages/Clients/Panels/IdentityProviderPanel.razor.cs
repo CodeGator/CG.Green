@@ -99,7 +99,7 @@ public partial class IdentityProviderPanel
 			// Create the dialog parameters.
 			var parameters = new DialogParameters()
 			{
-				{ "Model", new ProviderVM() }
+				{ "Model", new EditProviderVM() }
 			};
 
 			// Log what we are about to do.
@@ -129,7 +129,7 @@ public partial class IdentityProviderPanel
 				);
 
 			// Recover the model.
-			var model = (ProviderVM)result.Data;
+			var model = (EditProviderVM)result.Data;
 
 			// Log what we are about to do.
 			Logger.LogDebug(
@@ -163,7 +163,7 @@ public partial class IdentityProviderPanel
 	/// <param name="provider">The identity provider to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected async Task OnEditRestrictionAsync(
-		ProviderVM provider
+		EditProviderVM provider
 		)
 	{
 		try
@@ -220,7 +220,7 @@ public partial class IdentityProviderPanel
 				);
 
 			// Recover the model.
-			var model = (ProviderVM)result.Data;
+			var model = (EditProviderVM)result.Data;
 
 			// Remove the original.
 			Model.IdentityProviderRestrictions.Remove(provider);
@@ -252,7 +252,7 @@ public partial class IdentityProviderPanel
 	/// <param name="provider">The identity provider to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected async Task OnDeleteRestrictionAsync(
-		ProviderVM provider
+		EditProviderVM provider
 		)
 	{
 		try

@@ -4,7 +4,7 @@ namespace CG.Green.ViewModels;
 /// <summary>
 /// This class is a view-model that represents a URI.
 /// </summary>
-public class UriVM
+public class EditUriVM
 {
     // *******************************************************************
     // Properties.

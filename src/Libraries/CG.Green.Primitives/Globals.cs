@@ -68,6 +68,11 @@ public static class Globals
         public static class Clients
         {
 			/// <summary>
+			/// This constant represents the length of the BackChannelLogoutUri property.
+			/// </summary>
+			public const int BackChannelLogoutUriLength = 2000;
+
+			/// <summary>
 			/// This constant represents the length of the ClientClaimsPrefix property.
 			/// </summary>
 			public const int ClientClaimsPrefixLength = 200;
@@ -111,6 +116,16 @@ public static class Globals
 			/// This constant represents the length of an identity provider name.
 			/// </summary>
 			public const int IdentityProviderNameLength = 200;
+
+			/// <summary>
+			/// This constant represents the length of a property key.
+			/// </summary>
+			public const int PropertyKeyLength = 250;
+
+			/// <summary>
+			/// This constant represents the length of a property value.
+			/// </summary>
+			public const int PropertyValueLength = 2000;
 		}
 
         /// <summary>
