@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientDetail_razor.html",
-          "hash": "UwCZk7h90DXE2IEIuZP0S7Hr3Fb9+gQ/BFBNg7zenaA="
+          "hash": "mNDiyUsBxlj6WyPxlYbXIeQM70oiO7jTDr/sg1upNko="
         }
       },
       "is_incremental": false,
@@ -170,11 +170,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ProviderDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ProviderDialog.html",
+          "hash": "xTRLn7ExgnGYKJYaYJjoTtzyC6gnUWJrG0GURlGeXPg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ProviderDialog_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.ProviderDialog_razor.html",
+          "hash": "b19IModw9HmW7j2ywBfYxyB7s+Al6x7m+LSyY9hWqEs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.UriDialog.html",
-          "hash": "2mP9jsDqtHT5RNd9a7tb7GcjYXpuO4UjF/XcLH786Vo="
+          "hash": "8fj2w/eoxaaYhVefuW9gmrk1G3py1bnjKBMHUamKPig="
         }
       },
       "is_incremental": false,
@@ -198,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Dialogs.html",
-          "hash": "Zr5FUA2fUSjovFbONlMUyPNS6/nhJ9cx1HLpIR0umV8="
+          "hash": "SId1dc1KZrEecHqANxn6FbqKjxnWnWx1QsOoCaJcXqQ="
         }
       },
       "is_incremental": false,
@@ -222,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel_razor.html",
-          "hash": "c8SYW8cxWrukonhGLMt9KC56PExsLXMaO/DE7T3saT0="
+          "hash": "qjMo/koOACGByhRRcFQZ42orK1VM7Eb9/cgk/ANxG+E="
         }
       },
       "is_incremental": false,
@@ -270,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.ConsentPanel_razor.html",
-          "hash": "gwVqysPYRYAYYaNthcEV3rHhqNIQIl5NSdVmYzXjOTw="
+          "hash": "QC1ZE1q/4IzRgrHLuNzW36TYURpaRqSVLtH7AUpqON0="
         }
       },
       "is_incremental": false,
@@ -295,6 +319,90 @@
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.CorsPanel_razor.html",
           "hash": "BfomowMJL4xDdD5mCLVZYrwIFnlDUgWzKhDkttPo4No="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.IdentityProviderPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.IdentityProviderPanel.html",
+          "hash": "W3QqaMxxJnr6hTkk7YQykciBdq4LVh+fg7woGJ1MtVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.IdentityProviderPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.IdentityProviderPanel_razor.html",
+          "hash": "j92ZulKd8y2gLlClgj+t2o+VxRY9EUYL2rD3U331xb8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.MiscPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.MiscPanel.html",
+          "hash": "EWQjV8ehT6ufKhhKMdGuNMWpKhU7horzaL4gr3WpMXU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.MiscPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.MiscPanel_razor.html",
+          "hash": "vRQvNFvbtbv0no+8IlDfSErt7QJXr8ER8pljKgkwE3o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.PkcePanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.PkcePanel.html",
+          "hash": "CcUPU/l1EECNVwaX6ZGqlOZ0MeWjcLnGjl76N6w6Mxw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.PkcePanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.PkcePanel_razor.html",
+          "hash": "FDfyqVtigaRiPmX53C+rCkjYNwXtwuSiuxl+JAWYQTk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.PropertiesPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.PropertiesPanel.html",
+          "hash": "b2kWPv0mnLzwnG64hEv+rD757xoxSGEGSpnFYDaP7QQ="
         }
       },
       "is_incremental": false,
@@ -342,7 +450,31 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SettingsPanel_razor.html",
-          "hash": "O6wDytcXzb4to7PgO9kHcSUkjoht7THi8azO2gv60/U="
+          "hash": "fwRPs/ffpN8F3h5AS5lx7vAy6painJRrYiOGKIpu3xI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SsoPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SsoPanel.html",
+          "hash": "dBcsbWA0bofkLDd+qgMfhN9NhQNMMj2Ye2IlKdfpETc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SsoPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.SsoPanel_razor.html",
+          "hash": "n/c9KLSVVDWZoDG1zAXx4MyFO/fZUcrjLCnqGK2oZ74="
         }
       },
       "is_incremental": false,
@@ -378,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel.html",
-          "hash": "2Ke1pKIjVqTxnUaWhfO6twOl4DhXk0Eu9h9jo5pqEeI="
+          "hash": "2mSSSOllNlUpCTNYFwTJAp+AARDi61/w+YYm8YYQbsw="
         }
       },
       "is_incremental": false,
@@ -390,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html",
-          "hash": "XXBy6zFn1W6Srzb+GlQ2xRJ3niV3a2m5AQcRSrytHbo="
+          "hash": "ILoR9Jw1+6lvSELWu117nBVqfpx6CivgPcvUoU7C/qE="
         }
       },
       "is_incremental": false,
@@ -402,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.html",
-          "hash": "9viLPmRRp7O73GPl3hzM2DdCZokFMoDR9Wf2IYiLo9U="
+          "hash": "secnHYmyf0ZXPrCXhhsr3bn/6VmqX0XSlSdbioUX2oQ="
         }
       },
       "is_incremental": false,
@@ -1674,7 +1806,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Globals.Models.Clients.html",
-          "hash": "RCus04pXi3XgrM5RfxQJLbMwQ+K6+j/uJRARn7oyCKM="
+          "hash": "LzTxd6cFFp98o8cWKA6xepvHxGBMKTKd5QGR2P60Qa4="
         }
       },
       "is_incremental": false,
@@ -2694,7 +2826,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Properties.Resources.html",
-          "hash": "uHiwJVq9MM1VENwhXN8e+5GGHi4Q6NaBtjr/GaG25Es="
+          "hash": "3YWUm5DWlJHEUHdMQLFRPiEhXf46SLoaZ8bJXGu2At8="
         }
       },
       "is_incremental": false,
@@ -2898,7 +3030,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.ViewModels.EditClientVM.html",
-          "hash": "mQaecLsnDJ6QZb4WgJAhv87xs7ROkhdlYORXGPFG3Z8="
+          "hash": "Ek79W1E/+GKr85PirgHQGNoJXBpZNcZrocKhoo1lTZU="
         }
       },
       "is_incremental": false,
@@ -2911,6 +3043,30 @@
         ".html": {
           "relative_path": "api/CG.Green.ViewModels.EditPropertyVM.html",
           "hash": "qFd6p4/ZmQXsja0RuamtIOQSQKh+9yaGaJyJ3JQdKHs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.ViewModels.EditProviderVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.ViewModels.EditProviderVM.html",
+          "hash": "uvef33aWZ2HR0RdaNt3XgFbuIKp86DKmlqWVhdmsg4w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.ViewModels.EditUriVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.ViewModels.EditUriVM.html",
+          "hash": "Kc0MrjN8AV3tRmF8mEkjxT0xYTNhfZRfzdwvkYE1T1c="
         }
       },
       "is_incremental": false,
@@ -2942,23 +3098,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Green.ViewModels.UriVM.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Green.ViewModels.UriVM.html",
-          "hash": "X6AudesXvUqfWDlcDk35O6AMIdsnji0/MRZQHxKYlNY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.ViewModels.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.ViewModels.html",
-          "hash": "eEpTI9qGOEpmBeWbhuz3vd8kjYd6C8JNuVy+JTCBIRE="
+          "hash": "ckjCNA6WQdhEPIgXDHsN0tqdXyMwO4rxOwks3X8X0us="
         }
       },
       "is_incremental": false,
@@ -3210,7 +3354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "WsJW8/3SDWN7i34hlX00yHIfQo2Q1cYqoADqtk1UVXQ="
+          "hash": "n/Sl0AO5lCs7XnwW2CZvUmMK3E1axDegoAAZrx/tICA="
         }
       },
       "is_incremental": false,
@@ -3329,7 +3473,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 266,
+          "total_file_count": 278,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
