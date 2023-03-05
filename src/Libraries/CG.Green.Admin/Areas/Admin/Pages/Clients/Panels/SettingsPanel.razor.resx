@@ -129,11 +129,11 @@
   <data name="AllowedScopesHelp" xml:space="preserve">
     <value>The scopes this client will ask for</value>
   </data>
-  <data name="AllowPlainTextPkce" xml:space="preserve">
-    <value>Allow Plain Text PKCE</value>
+  <data name="AuthorizationCodeLifetime" xml:space="preserve">
+    <value>Authorization Code Lifetime</value>
   </data>
-  <data name="AllowPlainTextPkceHelp" xml:space="preserve">
-    <value>Allow PKCE to be sent in plain text.</value>
+  <data name="AuthorizationCodeLifetimeHelp" xml:space="preserve">
+    <value>The lifetime of an authorization code in seconds.</value>
   </data>
   <data name="Broke" xml:space="preserve">
     <value>Something broke!</value>
@@ -162,17 +162,17 @@
   <data name="EnableLocalLoginHelp" xml:space="preserve">
     <value>Allow local logins with user name / password</value>
   </data>
+  <data name="IncludeJwtId" xml:space="preserve">
+    <value>Include Jwt Id</value>
+  </data>
+  <data name="IncludeJwtIdHelp" xml:space="preserve">
+    <value>Whether or not JWT access tokens should include an identifier</value>
+  </data>
   <data name="IsEnabled" xml:space="preserve">
     <value>Is Enabled</value>
   </data>
   <data name="IsEnabledHelp" xml:space="preserve">
     <value>Enable/disable the client.</value>
-  </data>
-  <data name="RequirePkce" xml:space="preserve">
-    <value>Require PKCE</value>
-  </data>
-  <data name="RequirePkceHelp" xml:space="preserve">
-    <value>Proof Key for Code Exchange</value>
   </data>
   <data name="RequireRequestObject" xml:space="preserve">
     <value>Require Request Object</value>

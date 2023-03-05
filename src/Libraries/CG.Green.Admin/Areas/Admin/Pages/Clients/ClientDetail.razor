@@ -42,6 +42,9 @@ else
             <MudTabPanel Text=@Localizer["Advanced"]>
                 <AdvancedPanel Model="@_model" />
             </MudTabPanel>
+            <MudTabPanel Text=@Localizer["Misc"]>
+                <MiscPanel Model="@_model" />
+            </MudTabPanel>
         </MudTabs>
         <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">@Localizer["SaveChanges"]</MudButton>
     </EditForm>

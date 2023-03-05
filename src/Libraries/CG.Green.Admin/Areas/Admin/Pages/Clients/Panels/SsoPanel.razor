@@ -1,0 +1,34 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    <MudItem xs="12">
+        <MudTextField AutoFocus 
+                      Margin="Margin.Dense"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.Number"
+                      Label=@Localizer["UserSsoLifetime"]
+                      HelperText=@Localizer["UserSsoLifetimeHelp"]
+                      For="@(() => Model.UserSsoLifetime)"
+                      @bind-Value="@Model.UserSsoLifetime" />
+    </MudItem>
+    <MudItem xs="12">
+    <MudCheckBox T="bool"
+                    Class="mb-n3"
+                    @bind-Checked="Model.FrontChannelLogoutSessionRequired"
+                    Label=@Localizer["FrontChannelLogoutSessionRequired"] />
+    <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["FrontChannelLogoutSessionRequiredHelp"]</MudText>
+    </MudItem>
+    <MudItem xs="12">
+        <MudTextField Immediate
+                        OnlyValidateIfDirty
+                        Margin="Margin.Dense"
+                        Counter="@(Globals.Models.Clients.FrontChannelLogoutUriLength)"
+                        Class="ml-auto mb-2 mt-4"
+                        Variant="Variant.Outlined"
+                        Label=@Localizer["FrontChannelLogoutUri"]
+                        HelperText=@Localizer["FrontChannelLogoutUriHelp"]
+                        For="@(() => Model.FrontChannelLogoutUri.Value)"
+                        @bind-Value="@Model.FrontChannelLogoutUri.Value" />
+    </MudItem>
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

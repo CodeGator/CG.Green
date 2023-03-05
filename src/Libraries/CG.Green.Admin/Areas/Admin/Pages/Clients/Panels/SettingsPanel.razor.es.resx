@@ -129,11 +129,11 @@
   <data name="AllowedScopesHelp" xml:space="preserve">
     <value>Los alcances que este cliente solicitará</value>
   </data>
-  <data name="AllowPlainTextPkce" xml:space="preserve">
-    <value>Permitir texto sin formato PKCE</value>
+  <data name="AuthorizationCodeLifetime" xml:space="preserve">
+    <value>Código de autorización de por vida</value>
   </data>
-  <data name="AllowPlainTextPkceHelp" xml:space="preserve">
-    <value>Permita que PKCE se envíe en texto sin formato.</value>
+  <data name="AuthorizationCodeLifetimeHelp" xml:space="preserve">
+    <value>La vida útil de un código de autorización en segundos.</value>
   </data>
   <data name="Broke" xml:space="preserve">
     <value>¡Algo se rompió!</value>
@@ -162,17 +162,17 @@
   <data name="EnableLocalLoginHelp" xml:space="preserve">
     <value>Permitir inicios de sesión locales con nombre de usuario/contraseña</value>
   </data>
+  <data name="IncludeJwtId" xml:space="preserve">
+    <value>Incluir ID de Jwt</value>
+  </data>
+  <data name="IncludeJwtIdHelp" xml:space="preserve">
+    <value>Si los tokens de acceso JWT deben incluir o no un identificador</value>
+  </data>
   <data name="IsEnabled" xml:space="preserve">
     <value>Está Habilitado</value>
   </data>
   <data name="IsEnabledHelp" xml:space="preserve">
     <value>Habilitar / Deshabilitar el Cliente.</value>
-  </data>
-  <data name="RequirePkce" xml:space="preserve">
-    <value>Requerir PKCE</value>
-  </data>
-  <data name="RequirePkceHelp" xml:space="preserve">
-    <value>Clave de prueba para el intercambio de códigos</value>
   </data>
   <data name="RequireRequestObject" xml:space="preserve">
     <value>Requerir Objeto de Solicitud</value>

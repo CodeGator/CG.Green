@@ -68,6 +68,16 @@ public static class Globals
         public static class Clients
         {
 			/// <summary>
+			/// This constant represents the length of the UserCodeType property.
+			/// </summary>
+			public const int UserCodeTypeLength = 100;
+
+			/// <summary>
+			/// This constant represents the length of the PairWiseSubjectSalt property.
+			/// </summary>
+			public const int PairWiseSubjectSaltLength = 200;
+
+			/// <summary>
 			/// This constant represents the length of the BackChannelLogoutUri property.
 			/// </summary>
 			public const int BackChannelLogoutUriLength = 2000;

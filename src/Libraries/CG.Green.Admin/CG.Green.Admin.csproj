@@ -79,6 +79,16 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>IdentityProviderPanel.razor.resx</DependentUpon>
       </Compile>
+      <Compile Update="Areas\Admin\Pages\Clients\Panels\MiscPanel.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>MiscPanel.razor.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Areas\Admin\Pages\Clients\Panels\PkcePanel.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PkcePanel.razor.resx</DependentUpon>
+      </Compile>
       <Compile Update="Areas\Admin\Pages\Clients\Panels\SecretsPanel.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -88,6 +98,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>SettingsPanel.razor.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Areas\Admin\Pages\Clients\Panels\SsoPanel.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SsoPanel.razor.resx</DependentUpon>
       </Compile>
       <Compile Update="Areas\Admin\Pages\Clients\Panels\TokenPanel.razor.Designer.cs">
         <DesignTime>True</DesignTime>
@@ -175,6 +190,14 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>IdentityProviderPanel.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\MiscPanel.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>MiscPanel.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\PkcePanel.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>PkcePanel.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\SecretsPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>SecretsPanel.razor.Designer.cs</LastGenOutput>
@@ -182,6 +205,10 @@
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\SettingsPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>SettingsPanel.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\SsoPanel.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>SsoPanel.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\TokenPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>

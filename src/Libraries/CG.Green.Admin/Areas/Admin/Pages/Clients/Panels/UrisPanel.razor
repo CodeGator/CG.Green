@@ -95,25 +95,6 @@
         </GroupBox>                        
     </MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["FrontChannelLogout"]>
-            <MudCheckBox T="bool"
-                            Class="mb-n3"
-                            @bind-Checked="Model.FrontChannelLogoutSessionRequired"
-                            Label=@Localizer["FrontChannelLogoutSessionRequired"] />
-            <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["FrontChannelLogoutSessionRequiredHelp"]</MudText>
-            <MudTextField Immediate
-                            OnlyValidateIfDirty
-                          Margin="Margin.Dense"
-                          Counter="@(Globals.Models.Clients.FrontChannelLogoutUriLength)"
-                          Class="ml-auto mb-2 mt-4"
-                          Variant="Variant.Outlined"
-                          Label=@Localizer["FrontChannelLogoutUri"]
-                          HelperText=@Localizer["FrontChannelLogoutUriHelp"]
-                          For="@(() => Model.FrontChannelLogoutUri.Value)"
-                          @bind-Value="@Model.FrontChannelLogoutUri.Value" />
-        </GroupBox>                        
-    </MudItem>
-    <MudItem xs="12">
         <GroupBox Title=@Localizer["BackChannelLogout"]>
             <MudGrid>
                 <MudItem xs="12">

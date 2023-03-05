@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class AdvancedPanel_razor {
+    internal class SsoPanel_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal AdvancedPanel_razor() {
+        internal SsoPanel_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.AdvancedPanel.razor", typeof(AdvancedPanel_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.SsoPanel.razor", typeof(SsoPanel_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,74 +61,56 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something broke!.
+        ///   Looks up a localized string similar to Front Channel Logout Session Required.
         /// </summary>
-        internal static string Broke {
+        internal static string FrontChannelLogoutSessionRequired {
             get {
-                return ResourceManager.GetString("Broke", resourceCulture);
+                return ResourceManager.GetString("FrontChannelLogoutSessionRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Consent.
+        ///   Looks up a localized string similar to Indicates whether or not the user&apos;s session id should be sent to the Front Channel Logout URI..
         /// </summary>
-        internal static string Consent {
+        internal static string FrontChannelLogoutSessionRequiredHelp {
             get {
-                return ResourceManager.GetString("Consent", resourceCulture);
+                return ResourceManager.GetString("FrontChannelLogoutSessionRequiredHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CORS.
+        ///   Looks up a localized string similar to Front Channel Logout URI.
         /// </summary>
-        internal static string CORS {
+        internal static string FrontChannelLogoutUri {
             get {
-                return ResourceManager.GetString("CORS", resourceCulture);
+                return ResourceManager.GetString("FrontChannelLogoutUri", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Device.
+        ///   Looks up a localized string similar to The logout URI for HTTP front-channel based logout.
         /// </summary>
-        internal static string Device {
+        internal static string FrontChannelLogoutUriHelp {
             get {
-                return ResourceManager.GetString("Device", resourceCulture);
+                return ResourceManager.GetString("FrontChannelLogoutUriHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Identity Providers.
+        ///   Looks up a localized string similar to User SSO Lifetime.
         /// </summary>
-        internal static string IdentityProviderRestrictions {
+        internal static string UserSsoLifetime {
             get {
-                return ResourceManager.GetString("IdentityProviderRestrictions", resourceCulture);
+                return ResourceManager.GetString("UserSsoLifetime", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PKCE.
+        ///   Looks up a localized string similar to The maximum duration (in seconds) since the last time the user authenticated..
         /// </summary>
-        internal static string Pkce {
+        internal static string UserSsoLifetimeHelp {
             get {
-                return ResourceManager.GetString("Pkce", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SSO.
-        /// </summary>
-        internal static string SSO {
-            get {
-                return ResourceManager.GetString("SSO", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tokens.
-        /// </summary>
-        internal static string Tokens {
-            get {
-                return ResourceManager.GetString("Tokens", resourceCulture);
+                return ResourceManager.GetString("UserSsoLifetimeHelp", resourceCulture);
             }
         }
     }

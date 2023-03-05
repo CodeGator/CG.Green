@@ -1,0 +1,34 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    <MudItem xs="12">
+        <MudTextField Margin="Margin.Dense"
+                      Counter="@(Globals.Models.Clients.PairWiseSubjectSaltLength)"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["PairWiseSubjectSalt"]
+                      HelperText=@Localizer["PairWiseSubjectSaltHelp"]
+                      For="@(() => Model.PairWiseSubjectSalt)"
+                      @bind-Value="@Model.PairWiseSubjectSalt" />
+    </MudItem>
+    <MudItem xs="12">
+    <MudTextField Margin="Margin.Dense"
+                    Class="ml-auto"
+                    Variant="Variant.Outlined"
+                    InputType="InputType.Number"
+                    Label=@Localizer["CibaLifetime"]
+                    HelperText=@Localizer["CibaLifetimeHelp"]
+                    For="@(() => Model.CibaLifetime)"
+                    @bind-Value="@Model.CibaLifetime" />
+    </MudItem>
+    <MudItem xs="12">
+        <MudTextField Margin="Margin.Dense"
+                      Counter="@(Globals.Models.Clients.UserCodeTypeLength)"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["UserCodeType"]
+                      HelperText=@Localizer["UserCodeTypeHelp"]
+                      For="@(() => Model.UserCodeType)"
+                      @bind-Value="@Model.UserCodeType" />
+    </MudItem>
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

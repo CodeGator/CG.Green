@@ -129,6 +129,12 @@
   <data name="IdentityProviderRestrictions" xml:space="preserve">
     <value>Proveedores de identidad</value>
   </data>
+  <data name="Pkce" xml:space="preserve">
+    <value>PKCE</value>
+  </data>
+  <data name="SSO" xml:space="preserve">
+    <value>SSO</value>
+  </data>
   <data name="Tokens" xml:space="preserve">
     <value>Fichas</value>
   </data>

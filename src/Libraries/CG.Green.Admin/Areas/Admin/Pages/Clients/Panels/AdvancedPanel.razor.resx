@@ -126,8 +126,17 @@
   <data name="CORS" xml:space="preserve">
     <value>CORS</value>
   </data>
+  <data name="Device" xml:space="preserve">
+    <value>Device</value>
+  </data>
   <data name="IdentityProviderRestrictions" xml:space="preserve">
     <value>Identity Providers</value>
+  </data>
+  <data name="Pkce" xml:space="preserve">
+    <value>PKCE</value>
+  </data>
+  <data name="SSO" xml:space="preserve">
+    <value>SSO</value>
   </data>
   <data name="Tokens" xml:space="preserve">
     <value>Tokens</value>

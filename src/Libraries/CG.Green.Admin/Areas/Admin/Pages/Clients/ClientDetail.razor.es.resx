@@ -144,6 +144,9 @@
   <data name="Home" xml:space="preserve">
     <value>Hogar</value>
   </data>
+  <data name="Misc" xml:space="preserve">
+    <value>Misceláneos</value>
+  </data>
   <data name="NotFound" xml:space="preserve">
     <value>¡Uy! ¡No pudimos encontrar a ese cliente ¡Uy!</value>
   </data>

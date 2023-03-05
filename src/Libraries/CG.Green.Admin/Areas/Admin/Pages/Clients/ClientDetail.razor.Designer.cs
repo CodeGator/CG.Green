@@ -142,6 +142,15 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Miscellaneous.
+        /// </summary>
+        internal static string Misc {
+            get {
+                return ResourceManager.GetString("Misc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ooops! we couldn&apos;t find that Duende client!.
         /// </summary>
         internal static string NotFound {

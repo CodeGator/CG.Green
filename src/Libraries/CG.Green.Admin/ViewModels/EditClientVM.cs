@@ -361,7 +361,7 @@ public class EditClientVM
 
 	/// <summary>
 	/// This property indicates the maximum duration (in seconds) since
-	/// to last time the user authenticated.
+	/// the last time the user authenticated.
 	/// </summary>
 	[Display(ShortName = "UserSSOLifetime")]
 	public int? UserSsoLifetime { get; set; }

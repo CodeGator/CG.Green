@@ -178,51 +178,6 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Front Channel Logout.
-        /// </summary>
-        internal static string FrontChannelLogout {
-            get {
-                return ResourceManager.GetString("FrontChannelLogout", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The logout URI for HTTP front-channel based logout.
-        /// </summary>
-        internal static string FrontChannelLogoutHelp {
-            get {
-                return ResourceManager.GetString("FrontChannelLogoutHelp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Front Channel Logout Session Required.
-        /// </summary>
-        internal static string FrontChannelLogoutSessionRequired {
-            get {
-                return ResourceManager.GetString("FrontChannelLogoutSessionRequired", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Indicates whether or not the user&apos;s session id should be sent to the Front Channel Logout URI..
-        /// </summary>
-        internal static string FrontChannelLogoutSessionRequiredHelp {
-            get {
-                return ResourceManager.GetString("FrontChannelLogoutSessionRequiredHelp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Front Channel Logout URI.
-        /// </summary>
-        internal static string FrontChannelLogoutUri {
-            get {
-                return ResourceManager.GetString("FrontChannelLogoutUri", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Loading URIs ....
         /// </summary>
         internal static string LoadingUris {

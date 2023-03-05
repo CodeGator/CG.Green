@@ -117,59 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BackChannelLogout" xml:space="preserve">
-    <value>Cierre de sesión del canal posterior</value>
+  <data name="FrontChannelLogoutSessionRequired" xml:space="preserve">
+    <value>Sesión de cierre de sesión de canal frontal requerida</value>
   </data>
-  <data name="BackChannelLogoutSessionRequired" xml:space="preserve">
-    <value>Se requiere sesión de cierre de sesión de canal secundario</value>
+  <data name="FrontChannelLogoutSessionRequiredHelp" xml:space="preserve">
+    <value>Indica si la identificación de la sesión del usuario debe enviarse o no al URI de cierre de sesión del canal frontal.</value>
   </data>
-  <data name="BackChannelLogoutSessionRequiredHelp" xml:space="preserve">
-    <value>Indica si la identificación de la sesión del usuario debe enviarse o no al URI de cierre de sesión del canal trasero.</value>
+  <data name="FrontChannelLogoutUri" xml:space="preserve">
+    <value>URI de cierre de sesión del canal frontal</value>
   </data>
-  <data name="BackChannelLogoutUri" xml:space="preserve">
-    <value>URI de cierre de sesión de canal posterior</value>
+  <data name="FrontChannelLogoutUriHelp" xml:space="preserve">
+    <value>El URI de cierre de sesión para el canal frontal basado en HTTP
+Cerrar sesión.</value>
   </data>
-  <data name="BackChannelLogoutUriHelp" xml:space="preserve">
-    <value>El URI de cierre de sesión para el canal de retorno HTTP basado
-cerrar sesión.</value>
+  <data name="UserSsoLifetime" xml:space="preserve">
+    <value>Duración del SSO del usuario</value>
   </data>
-  <data name="Broke" xml:space="preserve">
-    <value>¡Algo se rompió!</value>
-  </data>
-  <data name="Create" xml:space="preserve">
-    <value>Crear</value>
-  </data>
-  <data name="CreateFrontChannelLogoutURI" xml:space="preserve">
-    <value>Crear URI de Cierre de Sesión de Canal Frontal</value>
-  </data>
-  <data name="CreatePostLogoutURI" xml:space="preserve">
-    <value>Crear URI de Cierre de Sesión Posterior</value>
-  </data>
-  <data name="CreateRedirectURI" xml:space="preserve">
-    <value>Crear URI de Redirección</value>
-  </data>
-  <data name="EditFrontChannelLogoutURI" xml:space="preserve">
-    <value>Editar URI de Cierre de Sesión del Canal Frontal</value>
-  </data>
-  <data name="EditPostLogoutURI" xml:space="preserve">
-    <value>Editar Publicación URI de Cierre de Sesión</value>
-  </data>
-  <data name="EditRedirectURI" xml:space="preserve">
-    <value>Editar URI de Redirección</value>
-  </data>
-  <data name="LoadingUris" xml:space="preserve">
-    <value>Cargando URIs ...</value>
-  </data>
-  <data name="NoUris" xml:space="preserve">
-    <value>No se encontraron URI.</value>
-  </data>
-  <data name="PostLogoutRedirectURIs" xml:space="preserve">
-    <value>URI de redirección posterior al cierre de sesión</value>
-  </data>
-  <data name="RedirectURIs" xml:space="preserve">
-    <value>URI de Redirección</value>
-  </data>
-  <data name="RowsPerPage" xml:space="preserve">
-    <value>Filas por página:</value>
+  <data name="UserSsoLifetimeHelp" xml:space="preserve">
+    <value>La duración máxima (en segundos) desde la última vez que el usuario se autenticó.</value>
   </data>
 </root>

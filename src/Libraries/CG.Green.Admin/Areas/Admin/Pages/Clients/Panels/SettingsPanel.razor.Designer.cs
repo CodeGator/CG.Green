@@ -97,20 +97,20 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Allow Plain Text PKCE.
+        ///   Looks up a localized string similar to Authorization Code Lifetime.
         /// </summary>
-        internal static string AllowPlainTextPkce {
+        internal static string AuthorizationCodeLifetime {
             get {
-                return ResourceManager.GetString("AllowPlainTextPkce", resourceCulture);
+                return ResourceManager.GetString("AuthorizationCodeLifetime", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Allow PKCE to be sent in plain text..
+        ///   Looks up a localized string similar to The lifetime of an authorization code in seconds..
         /// </summary>
-        internal static string AllowPlainTextPkceHelp {
+        internal static string AuthorizationCodeLifetimeHelp {
             get {
-                return ResourceManager.GetString("AllowPlainTextPkceHelp", resourceCulture);
+                return ResourceManager.GetString("AuthorizationCodeLifetimeHelp", resourceCulture);
             }
         }
         
@@ -196,6 +196,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Include Jwt Id.
+        /// </summary>
+        internal static string IncludeJwtId {
+            get {
+                return ResourceManager.GetString("IncludeJwtId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether or not JWT access tokens should include an identifier.
+        /// </summary>
+        internal static string IncludeJwtIdHelp {
+            get {
+                return ResourceManager.GetString("IncludeJwtIdHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Is Enabled.
         /// </summary>
         internal static string IsEnabled {
@@ -210,24 +228,6 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         internal static string IsEnabledHelp {
             get {
                 return ResourceManager.GetString("IsEnabledHelp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Require PKCE.
-        /// </summary>
-        internal static string RequirePkce {
-            get {
-                return ResourceManager.GetString("RequirePkce", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Proof Key for Code Exchange.
-        /// </summary>
-        internal static string RequirePkceHelp {
-            get {
-                return ResourceManager.GetString("RequirePkceHelp", resourceCulture);
             }
         }
         

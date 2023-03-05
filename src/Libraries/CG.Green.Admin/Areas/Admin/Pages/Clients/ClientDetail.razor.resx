@@ -144,6 +144,9 @@
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="Misc" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
   <data name="NotFound" xml:space="preserve">
     <value>Ooops! we couldn't find that Duende client!</value>
   </data>
