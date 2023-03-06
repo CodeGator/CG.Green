@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.ClientsIndex_razor.html",
-          "hash": "JUfiKF2pSgP3RpZ/UzDA9dahISJJdkYcmBuNVgWQLEM="
+          "hash": "UPyKmIMYcP5OR4ZAEg5Bs950NOtxb1CkZcUp9eSY9D4="
         }
       },
       "is_incremental": false,
@@ -366,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.MiscPanel_razor.html",
-          "hash": "vRQvNFvbtbv0no+8IlDfSErt7QJXr8ER8pljKgkwE3o="
+          "hash": "GsKuHrnwTknSo1hkvnFCepTQ0NEwDR7L+6mrSiHa4kM="
         }
       },
       "is_incremental": false,
@@ -522,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.Panels.UrisPanel_razor.html",
-          "hash": "ILoR9Jw1+6lvSELWu117nBVqfpx6CivgPcvUoU7C/qE="
+          "hash": "Bwh7rVHtmcaz3CPv9a37rGspJIqTvkHM/gnTsysMxms="
         }
       },
       "is_incremental": false,
@@ -547,6 +547,78 @@
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Clients.html",
           "hash": "znoBP8EARHdXXsua9llriMp4qAo5zAx98PVz4kiE0hQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.html",
+          "hash": "EuuUZ0zjBA9FxGA3Ffb+26Fbp0l9cYU5wMinTdtY1U4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog_razor.html",
+          "hash": "KpLrCnhfMBNLXomxxAEapkU9xscSeAOyLArz63MCxVY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Dialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Dialogs.html",
+          "hash": "nP85dbUlbuDZcnkD4wteEqSO2Iu0Zxms+MTzXdmwQqI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Users.UsersIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.UsersIndex.html",
+          "hash": "2IgDTcRXWAgZ/i9uNujJN4fkwC16HeAflomyidpHEws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Users.UsersIndex_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.UsersIndex_razor.html",
+          "hash": "oJBTnX/7wpW8tivH/oRCnNYkS1cQ+veW51eVL2wmSWM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.html",
+          "hash": "xFtf7H3j5C91nD3+7cl6ZB2RrOAKfnfUVv/w5MpYoTo="
         }
       },
       "is_incremental": false,
@@ -1806,7 +1878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Globals.Models.Clients.html",
-          "hash": "LzTxd6cFFp98o8cWKA6xepvHxGBMKTKd5QGR2P60Qa4="
+          "hash": "ZccY+vZjXPaSjmCfFLig/6bMwyCoJXCKZkW+aq8wsEc="
         }
       },
       "is_incremental": false,
@@ -2826,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Properties.Resources.html",
-          "hash": "3YWUm5DWlJHEUHdMQLFRPiEhXf46SLoaZ8bJXGu2At8="
+          "hash": "ipRv528zX51LY/Fc8ki+BckhcTHxJUPCrkx1OGWdh60="
         }
       },
       "is_incremental": false,
@@ -3086,6 +3158,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.ViewModels.ListUserVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.ViewModels.ListUserVM.html",
+          "hash": "Ls7oc10VlWKG4KR1KJ3qb8mAi6ckwavDIIeISPKLmxw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.ViewModels.NewClientVM.yml",
       "output": {
         ".html": {
@@ -3098,11 +3182,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.ViewModels.NewUserVM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.ViewModels.NewUserVM.html",
+          "hash": "OBDhAmAWy2rAxqcMDipEiQr0sOPYU58VIbMz0fWFK6E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.ViewModels.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.ViewModels.html",
-          "hash": "ckjCNA6WQdhEPIgXDHsN0tqdXyMwO4rxOwks3X8X0us="
+          "hash": "H/obfP7Lj4P52aVhBxLsvhiKtTqz4EMPhkAbjeeD2bs="
         }
       },
       "is_incremental": false,
@@ -3354,7 +3450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "n/Sl0AO5lCs7XnwW2CZvUmMK3E1axDegoAAZrx/tICA="
+          "hash": "y6pjOuCUBwiVtwP0zBdvPfued8BsU57Bq1vO3Yr0/i4="
         }
       },
       "is_incremental": false,
@@ -3473,7 +3569,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 278,
+          "total_file_count": 286,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
