@@ -68,6 +68,11 @@ public static class Globals
         public static class Clients
         {
 			/// <summary>
+			/// This constant represents the length of the ProtocolType property.
+			/// </summary>
+			public const int ProtocolTypeLength = 200;
+
+			/// <summary>
 			/// This constant represents the length of the UserCodeType property.
 			/// </summary>
 			public const int UserCodeTypeLength = 100;

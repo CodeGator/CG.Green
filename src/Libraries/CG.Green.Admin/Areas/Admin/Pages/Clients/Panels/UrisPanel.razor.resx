@@ -162,6 +162,12 @@
   <data name="NoUris" xml:space="preserve">
     <value>No URIs were found.</value>
   </data>
+  <data name="PollingInterval" xml:space="preserve">
+    <value>Polling Interval</value>
+  </data>
+  <data name="PollingIntervalHelp" xml:space="preserve">
+    <value>The backchannel polling interval, in seconds.</value>
+  </data>
   <data name="PostLogoutRedirectURIs" xml:space="preserve">
     <value>Post Logout Redirect URIs</value>
   </data>

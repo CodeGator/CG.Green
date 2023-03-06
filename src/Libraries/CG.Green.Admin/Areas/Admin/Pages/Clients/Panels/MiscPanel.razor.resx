@@ -129,6 +129,12 @@
   <data name="PairWiseSubjectSaltHelp" xml:space="preserve">
     <value>A SALT value for generating pairwise subject IDs.</value>
   </data>
+  <data name="ProtocolType" xml:space="preserve">
+    <value>Protocol Type</value>
+  </data>
+  <data name="ProtocolTypeHelp" xml:space="preserve">
+    <value>The protocol type for the client.</value>
+  </data>
   <data name="UserCodeType" xml:space="preserve">
     <value>User Code Type</value>
   </data>

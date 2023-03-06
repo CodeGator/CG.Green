@@ -259,6 +259,24 @@ namespace CG.Green.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Confirm Password.
+        /// </summary>
+        internal static string ConfirmPassword {
+            get {
+                return ResourceManager.GetString("ConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The password and confirmation password do not match..
+        /// </summary>
+        internal static string ConfirmPasswordError {
+            get {
+                return ResourceManager.GetString("ConfirmPasswordError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Consent Lifetime.
         /// </summary>
         internal static string ConsentLifetime {
@@ -385,6 +403,15 @@ namespace CG.Green.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The {0} must be at least {2} and at max {1} characters long..
+        /// </summary>
+        internal static string LengthError {
+            get {
+                return ResourceManager.GetString("LengthError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Logo URI.
         /// </summary>
         internal static string LogoURI {
@@ -408,6 +435,42 @@ namespace CG.Green.Properties {
         internal static string PairWiseSubjectSalt {
             get {
                 return ResourceManager.GetString("PairWiseSubjectSalt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; must have at least one uppercase (&apos;A&apos;-&apos;Z&apos;)..
+        /// </summary>
+        internal static string PasswordCaseError {
+            get {
+                return ResourceManager.GetString("PasswordCaseError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; must have at least one digit (&apos;0&apos;-&apos;9&apos;)..
+        /// </summary>
+        internal static string PasswordDigitsError {
+            get {
+                return ResourceManager.GetString("PasswordDigitsError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; must have at least one non alphanumeric character..
+        /// </summary>
+        internal static string PasswordNonAlphaError {
+            get {
+                return ResourceManager.GetString("PasswordNonAlphaError", resourceCulture);
             }
         }
         

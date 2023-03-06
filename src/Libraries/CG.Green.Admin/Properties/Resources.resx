@@ -183,6 +183,12 @@
   <data name="ClientURI" xml:space="preserve">
     <value>Client URI</value>
   </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="ConfirmPasswordError" xml:space="preserve">
+    <value>The password and confirmation password do not match.</value>
+  </data>
   <data name="ConsentLifetime" xml:space="preserve">
     <value>Consent Lifetime</value>
   </data>
@@ -225,6 +231,9 @@
   <data name="Key" xml:space="preserve">
     <value>Key</value>
   </data>
+  <data name="LengthError" xml:space="preserve">
+    <value>The {0} must be at least {2} and at max {1} characters long.</value>
+  </data>
   <data name="LogoURI" xml:space="preserve">
     <value>Logo URI</value>
   </data>
@@ -233,6 +242,18 @@
   </data>
   <data name="PairWiseSubjectSalt" xml:space="preserve">
     <value>Pair Wise Subject Salt</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordCaseError" xml:space="preserve">
+    <value>'{0}' must have at least one uppercase ('A'-'Z').</value>
+  </data>
+  <data name="PasswordDigitsError" xml:space="preserve">
+    <value>'{0}' must have at least one digit ('0'-'9').</value>
+  </data>
+  <data name="PasswordNonAlphaError" xml:space="preserve">
+    <value>'{0}' must have at least one non alphanumeric character.</value>
   </data>
   <data name="PollingInterval" xml:space="preserve">
     <value>Polling Interval</value>

@@ -163,6 +163,12 @@ cerrar sesión.</value>
   <data name="NoUris" xml:space="preserve">
     <value>No se encontraron URI.</value>
   </data>
+  <data name="PollingInterval" xml:space="preserve">
+    <value>Intervalo de votación</value>
+  </data>
+  <data name="PollingIntervalHelp" xml:space="preserve">
+    <value>El intervalo de sondeo del canal secundario, en segundos.</value>
+  </data>
   <data name="PostLogoutRedirectURIs" xml:space="preserve">
     <value>URI de redirección posterior al cierre de sesión</value>
   </data>

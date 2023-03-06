@@ -129,6 +129,12 @@
   <data name="PairWiseSubjectSaltHelp" xml:space="preserve">
     <value>Un valor SALT para generar ID de sujetos por pares.</value>
   </data>
+  <data name="ProtocolType" xml:space="preserve">
+    <value>Tipo de protocolo</value>
+  </data>
+  <data name="ProtocolTypeHelp" xml:space="preserve">
+    <value>El tipo de protocolo para el cliente.</value>
+  </data>
   <data name="UserCodeType" xml:space="preserve">
     <value>Tipo de código de usuario</value>
   </data>

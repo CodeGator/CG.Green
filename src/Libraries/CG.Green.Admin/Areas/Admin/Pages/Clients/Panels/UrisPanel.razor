@@ -104,7 +104,7 @@
                                  Label=@Localizer["BackChannelLogoutSessionRequired"] />
                     <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["BackChannelLogoutSessionRequiredHelp"]</MudText>
                     <MudTextField Immediate
-                                    OnlyValidateIfDirty
+                                   OnlyValidateIfDirty
                                   Margin="Margin.Dense"
                                   Counter="@(Globals.Models.Clients.BackChannelLogoutUriLength)"
                                   Class="ml-auto mb-2 mt-4"
@@ -113,6 +113,17 @@
                                   HelperText=@Localizer["BackChannelLogoutUriHelp"]
                                   For="@(() => Model.BackChannelLogoutUri.Value)"
                                   @bind-Value="@Model.BackChannelLogoutUri.Value" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Margin="Margin.Dense"
+                                  OnlyValidateIfDirty
+                                  Class="ml-auto"
+                                  Variant="Variant.Outlined"
+                                  InputType="InputType.Number"
+                                  Label=@Localizer["PollingInterval"]
+                                  HelperText=@Localizer["PollingIntervalHelp"]
+                                  For="@(() => Model.PollingInterval)"
+                                  @bind-Value="@Model.PollingInterval" />
                 </MudItem>
             </MudGrid>
         </GroupBox>

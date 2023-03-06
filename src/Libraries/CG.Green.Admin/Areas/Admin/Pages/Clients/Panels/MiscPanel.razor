@@ -30,5 +30,15 @@
                       For="@(() => Model.UserCodeType)"
                       @bind-Value="@Model.UserCodeType" />
     </MudItem>
+    <MudItem xs="12">
+        <MudTextField Margin="Margin.Dense"
+                      Counter="@(Globals.Models.Clients.ProtocolTypeLength)"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["ProtocolType"]
+                      HelperText=@Localizer["ProtocolTypeHelp"]
+                      For="@(() => Model.ProtocolType)"
+                      @bind-Value="@Model.ProtocolType" />
+    </MudItem>
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>

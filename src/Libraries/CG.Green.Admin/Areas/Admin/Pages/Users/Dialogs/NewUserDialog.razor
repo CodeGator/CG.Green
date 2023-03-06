@@ -1,0 +1,62 @@
+﻿<MudDialog>
+    <DialogContent>
+        <EditForm Model="@Model" OnValidSubmit="OnValidSubmitAsync">
+            <MudCard Outlined>
+                <MudCardContent>
+                    <DataAnnotationsValidator />
+                    <MudTextField AutoFocus
+                                  Required
+                                  Immediate
+                                  OnlyValidateIfDirty
+                                  Margin="Margin.Dense"
+                                  Counter="@(Globals.Models.Users.UserNameLength)"
+                                  Variant="Variant.Outlined"
+                                  Label=@Localizer["UserName"]
+                                  HelperText=@Localizer["UserNameHelp"]
+                                  For="@(() => Model.UserName)"
+                                  @bind-Value="@Model.UserName"
+                                  Class="ml-auto" />
+                    <MudTextField Required
+                                  Immediate
+                                  Counter="@(Globals.Models.Users.EmailLength)"
+                                  Variant="Variant.Outlined"
+                                  Label=@Localizer["Email"]
+                                  HelperText=@Localizer["EmailHelp"]
+                                  For="@(() => Model.Email)"
+                                  @bind-Value="@Model.Email"
+                                  Class="ml-auto" />
+                    <MudTextField Required
+                                  Immediate
+                                  Counter="@(Globals.Models.Users.PasswordHashLength)"
+                                  Variant="Variant.Outlined"
+                                  Label=@Localizer["Password"]
+                                  HelperText=@Localizer["PasswordHelp"]
+                                  For="@(() => Model.Password)"
+                                  @bind-Value="@Model.Password"
+                                  InputType="@_passwordInput"
+                                  Adornment="Adornment.End"
+                                  AdornmentIcon="@_passwordInputIcon"
+                                  OnAdornmentClick="TogglePasswordVisibility"
+                                  Class="ml-auto" />
+                    <MudTextField Required
+                                  Immediate
+                                  Counter="@(Globals.Models.Users.PasswordHashLength)"
+                                  Variant="Variant.Outlined"
+                                  Label=@Localizer["ConfirmPassword"]
+                                  HelperText=@Localizer["ConfirmPasswordHelp"]
+                                  For="@(() => Model.ConfirmPassword)"
+                                  InputType="@_passwordInput"
+                                  Adornment="Adornment.End"
+                                  AdornmentIcon="@_passwordInputIcon"
+                                  OnAdornmentClick="TogglePasswordVisibility"
+                                  @bind-Value="@Model.ConfirmPassword"
+                                  Class="ml-auto" />
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">@Localizer["Cancel"]</MudButton>
+                        <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">@Localizer["Save"]</MudButton>
+                    </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </DialogContent>
+</MudDialog>

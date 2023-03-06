@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Green.Areas.Admin.Pages.Clients {
+namespace CG.Green.Areas.Admin.Pages.Users.Dialogs {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ClientsIndex_razor {
+    internal class NewUserDialog_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ClientsIndex_razor() {
+        internal NewUserDialog_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.ClientsIndex.razor", typeof(ClientsIndex_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.razor", typeof(NewUserDialog_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,128 +61,92 @@ namespace CG.Green.Areas.Admin.Pages.Clients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Admin.
+        ///   Looks up a localized string similar to Cancel.
         /// </summary>
-        internal static string Admin {
+        internal static string Cancel {
             get {
-                return ResourceManager.GetString("Admin", resourceCulture);
+                return ResourceManager.GetString("Cancel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something broke!.
+        ///   Looks up a localized string similar to Confirm Password.
         /// </summary>
-        internal static string Broke {
+        internal static string ConfirmPassword {
             get {
-                return ResourceManager.GetString("Broke", resourceCulture);
+                return ResourceManager.GetString("ConfirmPassword", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clients.
+        ///   Looks up a localized string similar to Confirm the user password..
         /// </summary>
-        internal static string Clients {
+        internal static string ConfirmPasswordHelp {
             get {
-                return ResourceManager.GetString("Clients", resourceCulture);
+                return ResourceManager.GetString("ConfirmPasswordHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create.
+        ///   Looks up a localized string similar to Email.
         /// </summary>
-        internal static string Create {
+        internal static string Email {
             get {
-                return ResourceManager.GetString("Create", resourceCulture);
+                return ResourceManager.GetString("Email", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create Client.
+        ///   Looks up a localized string similar to The email address for the user..
         /// </summary>
-        internal static string CreateClient {
+        internal static string EmailHelp {
             get {
-                return ResourceManager.GetString("CreateClient", resourceCulture);
+                return ResourceManager.GetString("EmailHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enabled.
+        ///   Looks up a localized string similar to Password.
         /// </summary>
-        internal static string Enabled {
+        internal static string Password {
             get {
-                return ResourceManager.GetString("Enabled", resourceCulture);
+                return ResourceManager.GetString("Password", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Home.
+        ///   Looks up a localized string similar to The password for the user..
         /// </summary>
-        internal static string Home {
+        internal static string PasswordHelp {
             get {
-                return ResourceManager.GetString("Home", resourceCulture);
+                return ResourceManager.GetString("PasswordHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Id.
+        ///   Looks up a localized string similar to Save.
         /// </summary>
-        internal static string Id {
+        internal static string Save {
             get {
-                return ResourceManager.GetString("Id", resourceCulture);
+                return ResourceManager.GetString("Save", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loading clients ....
+        ///   Looks up a localized string similar to User Name.
         /// </summary>
-        internal static string Loading {
+        internal static string UserName {
             get {
-                return ResourceManager.GetString("Loading", resourceCulture);
+                return ResourceManager.GetString("UserName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No clients were found..
+        ///   Looks up a localized string similar to The name for the user..
         /// </summary>
-        internal static string NoClients {
+        internal static string UserNameHelp {
             get {
-                return ResourceManager.GetString("NoClients", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Use this page to administer Duende clients.
-        /// </summary>
-        internal static string PageDesc {
-            get {
-                return ResourceManager.GetString("PageDesc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Rows per page:.
-        /// </summary>
-        internal static string RowsPerPage {
-            get {
-                return ResourceManager.GetString("RowsPerPage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search.
-        /// </summary>
-        internal static string Search {
-            get {
-                return ResourceManager.GetString("Search", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Clients.
-        /// </summary>
-        internal static string Title {
-            get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("UserNameHelp", resourceCulture);
             }
         }
     }

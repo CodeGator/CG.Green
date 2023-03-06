@@ -60,8 +60,9 @@ public static class WebApplicationBuilderExtensions012
 				.ForMember(dest => dest.RedirectUris, opt => opt.MapFrom(src => src.RedirectUris.Select(x => x.Value)))
 				.ForMember(dest => dest.PostLogoutRedirectUris, opt => opt.MapFrom(src => src.PostLogoutRedirectUris.Select(x => x.Value)))
 				.ForMember(dest => dest.FrontChannelLogoutUri, opt => opt.MapFrom(src => src.FrontChannelLogoutUri.Value))
-				.ForMember(dest => dest.BackChannelLogoutUri, opt => opt.MapFrom(src => src.BackChannelLogoutUri.Value))
-				; 
+				.ForMember(dest => dest.BackChannelLogoutUri, opt => opt.MapFrom(src => src.BackChannelLogoutUri.Value));
+			cfg.CreateMap<GreenUser, ListUserVM>().ReverseMap();
+			cfg.CreateMap<GreenUser, NewUserVM>().ReverseMap();
 		});
 
         // Return the application builder.

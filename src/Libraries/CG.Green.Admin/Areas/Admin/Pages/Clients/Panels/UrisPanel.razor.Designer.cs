@@ -196,6 +196,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Polling Interval.
+        /// </summary>
+        internal static string PollingInterval {
+            get {
+                return ResourceManager.GetString("PollingInterval", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The backchannel polling interval, in seconds..
+        /// </summary>
+        internal static string PollingIntervalHelp {
+            get {
+                return ResourceManager.GetString("PollingIntervalHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Post Logout Redirect URIs.
         /// </summary>
         internal static string PostLogoutRedirectURIs {

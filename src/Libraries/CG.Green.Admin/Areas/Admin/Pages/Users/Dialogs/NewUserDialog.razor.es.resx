@@ -117,34 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About" xml:space="preserve">
-    <value>About</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
   </data>
-  <data name="Admin" xml:space="preserve">
-    <value>Admin</value>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirmar Contraseña</value>
   </data>
-  <data name="Clients" xml:space="preserve">
-    <value>Clients</value>
+  <data name="ConfirmPasswordHelp" xml:space="preserve">
+    <value>Confirme la contraseña de usuario.</value>
   </data>
-  <data name="Debugging" xml:space="preserve">
-    <value>Debugging</value>
+  <data name="Email" xml:space="preserve">
+    <value>Correo electrónico</value>
   </data>
-  <data name="DiscoveryEndpoint" xml:space="preserve">
-    <value>Discovery Endpoint</value>
+  <data name="EmailHelp" xml:space="preserve">
+    <value>La dirección de correo electrónico del usuario.</value>
   </data>
-  <data name="Health" xml:space="preserve">
-    <value>Health Checks</value>
+  <data name="Password" xml:space="preserve">
+    <value>Contraseña</value>
   </data>
-  <data name="Help" xml:space="preserve">
-    <value>Help</value>
+  <data name="PasswordHelp" xml:space="preserve">
+    <value>La contraseña para el usuario.</value>
   </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
+  <data name="Save" xml:space="preserve">
+    <value>Ahorrar</value>
   </data>
-  <data name="Users" xml:space="preserve">
-    <value>Users</value>
+  <data name="UserName" xml:space="preserve">
+    <value>Nombre de usuario</value>
   </data>
-  <data name="WhoAmI" xml:space="preserve">
-    <value>Who Am I?</value>
+  <data name="UserNameHelp" xml:space="preserve">
+    <value>El nombre para el usuario.</value>
   </data>
 </root>

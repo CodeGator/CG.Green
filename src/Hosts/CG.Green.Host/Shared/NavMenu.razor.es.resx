@@ -141,6 +141,9 @@
   <data name="Home" xml:space="preserve">
     <value>Hogar</value>
   </data>
+  <data name="Users" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
   <data name="WhoAmI" xml:space="preserve">
     <value>¿Quién Soy?</value>
   </data>

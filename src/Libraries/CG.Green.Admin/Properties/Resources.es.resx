@@ -183,6 +183,12 @@
   <data name="ClientURI" xml:space="preserve">
     <value>URL del cliente</value>
   </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirmar Contraseña</value>
+  </data>
+  <data name="ConfirmPasswordError" xml:space="preserve">
+    <value>La contraseña y la contraseña de confirmación no coinciden.</value>
+  </data>
   <data name="ConsentLifetime" xml:space="preserve">
     <value>Consentimiento de por vida</value>
   </data>
@@ -225,6 +231,9 @@
   <data name="Key" xml:space="preserve">
     <value>Llave</value>
   </data>
+  <data name="LengthError" xml:space="preserve">
+    <value>El {0} debe tener al menos {2} y un máximo de {1} caracteres.</value>
+  </data>
   <data name="LogoURI" xml:space="preserve">
     <value>URL del logotipo</value>
   </data>
@@ -233,6 +242,18 @@
   </data>
   <data name="PairWiseSubjectSalt" xml:space="preserve">
     <value>Sal sujeto por pares</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="PasswordCaseError" xml:space="preserve">
+    <value>'{0}' debe tener al menos una letra mayúscula ('A'-'Z').</value>
+  </data>
+  <data name="PasswordDigitsError" xml:space="preserve">
+    <value>'{0}' debe tener al menos un dígito ('0'-'9').</value>
+  </data>
+  <data name="PasswordNonAlphaError" xml:space="preserve">
+    <value>'{0}' debe tener al menos un carácter no alfanumérico.</value>
   </data>
   <data name="PollingInterval" xml:space="preserve">
     <value>Intervalo de votación</value>

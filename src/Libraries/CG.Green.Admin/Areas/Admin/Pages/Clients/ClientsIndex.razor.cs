@@ -241,7 +241,7 @@ public partial class ClientsIndex
 
             // Create the dialog.
             var dialog = Dialog.Show<NewClientDialog>(
-                "Create Client",
+                Localizer["CreateClient"],
                 parameters,
                 options
                 );

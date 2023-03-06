@@ -97,6 +97,24 @@ namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Protocol Type.
+        /// </summary>
+        internal static string ProtocolType {
+            get {
+                return ResourceManager.GetString("ProtocolType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The protocol type for the client..
+        /// </summary>
+        internal static string ProtocolTypeHelp {
+            get {
+                return ResourceManager.GetString("ProtocolTypeHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User Code Type.
         /// </summary>
         internal static string UserCodeType {
