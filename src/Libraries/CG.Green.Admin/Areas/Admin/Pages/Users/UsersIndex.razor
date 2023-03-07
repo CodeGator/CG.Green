@@ -15,7 +15,7 @@
                   Dense
                   Striped
                   Virtualize
-                  Filter="new Func<ListUserVM,bool>(FilterFunc1)">
+                  Filter="new Func<ListGreenUserVM,bool>(FilterFunc1)">
             <ToolBarContent>
                 <MudButton StartIcon="@Icons.Material.Outlined.Create"
                            Variant="Variant.Filled"
@@ -35,8 +35,8 @@
                 <col />
             </ColGroup>
             <HeaderContent>
-                <MudTh><MudTableSortLabel SortBy="new Func<ListUserVM, object>(x=>x.UserName)">@Localizer["UserName"]</MudTableSortLabel></MudTh>
-                <MudTh><MudTableSortLabel SortBy="new Func<ListUserVM, object>(x=>x.Email)">@Localizer["Email"]</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListGreenUserVM, object>(x=>x.UserName)">@Localizer["UserName"]</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListGreenUserVM, object>(x=>x.Email)">@Localizer["Email"]</MudTableSortLabel></MudTh>
                 <MudTh></MudTh>
             </HeaderContent>
             <RowTemplate>

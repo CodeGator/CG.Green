@@ -70,6 +70,15 @@ namespace CG.Green.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Access Failed Count.
+        /// </summary>
+        internal static string AccessFailedCount {
+            get {
+                return ResourceManager.GetString("AccessFailedCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Access Token Lifetime.
         /// </summary>
         internal static string AccessTokenLifetime {
@@ -313,6 +322,24 @@ namespace CG.Green.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email Confirmed.
+        /// </summary>
+        internal static string EmailConfirmed {
+            get {
+                return ResourceManager.GetString("EmailConfirmed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enabled.
         /// </summary>
         internal static string Enabled {
@@ -408,6 +435,24 @@ namespace CG.Green.Properties {
         internal static string LengthError {
             get {
                 return ResourceManager.GetString("LengthError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lockout Enabled.
+        /// </summary>
+        internal static string LockoutEnabled {
+            get {
+                return ResourceManager.GetString("LockoutEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lockout End.
+        /// </summary>
+        internal static string LockoutEnd {
+            get {
+                return ResourceManager.GetString("LockoutEnd", resourceCulture);
             }
         }
         
@@ -583,6 +628,15 @@ namespace CG.Green.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Two Factor Enabled.
+        /// </summary>
+        internal static string TwoFactorEnabled {
+            get {
+                return ResourceManager.GetString("TwoFactorEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Type.
         /// </summary>
         internal static string Type {
@@ -606,6 +660,15 @@ namespace CG.Green.Properties {
         internal static string UserCodeType {
             get {
                 return ResourceManager.GetString("UserCodeType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Name.
+        /// </summary>
+        internal static string UserName {
+            get {
+                return ResourceManager.GetString("UserName", resourceCulture);
             }
         }
         

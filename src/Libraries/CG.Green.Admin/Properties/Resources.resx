@@ -120,6 +120,9 @@
   <data name="AbsoluteRefreshTokenLifetime" xml:space="preserve">
     <value>Absolute Refresh Token Lifetime</value>
   </data>
+  <data name="AccessFailedCount" xml:space="preserve">
+    <value>Access Failed Count</value>
+  </data>
   <data name="AccessTokenLifetime" xml:space="preserve">
     <value>Access Token Lifetime</value>
   </data>
@@ -201,6 +204,12 @@
   <data name="DeviceCodeLifetime" xml:space="preserve">
     <value>Device Code Lifetime</value>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailConfirmed" xml:space="preserve">
+    <value>Email Confirmed</value>
+  </data>
   <data name="Enabled" xml:space="preserve">
     <value>Enabled</value>
   </data>
@@ -233,6 +242,12 @@
   </data>
   <data name="LengthError" xml:space="preserve">
     <value>The {0} must be at least {2} and at max {1} characters long.</value>
+  </data>
+  <data name="LockoutEnabled" xml:space="preserve">
+    <value>Lockout Enabled</value>
+  </data>
+  <data name="LockoutEnd" xml:space="preserve">
+    <value>Lockout End</value>
   </data>
   <data name="LogoURI" xml:space="preserve">
     <value>Logo URI</value>
@@ -291,6 +306,9 @@
   <data name="SlidingRefreshTokenLifetime" xml:space="preserve">
     <value>Sliding Refresh Token Lifetime</value>
   </data>
+  <data name="TwoFactorEnabled" xml:space="preserve">
+    <value>Two Factor Enabled</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>Type</value>
   </data>
@@ -299,6 +317,9 @@
   </data>
   <data name="UserCodeType" xml:space="preserve">
     <value>User Code Type</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
   </data>
   <data name="UserSSOLifetime" xml:space="preserve">
     <value>User SSO Lifetime</value>

@@ -120,43 +120,55 @@
   <data name="Admin" xml:space="preserve">
     <value>Administrador</value>
   </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Avanzado</value>
+  </data>
+  <data name="BackToClients" xml:space="preserve">
+    <value>Volver a los Clientes</value>
+  </data>
   <data name="Broke" xml:space="preserve">
     <value>¡Algo se rompió!</value>
   </data>
-  <data name="Create" xml:space="preserve">
-    <value>Crear</value>
+  <data name="ChangesSaved" xml:space="preserve">
+    <value>Los cambios fueron guardados</value>
   </data>
-  <data name="CreateUser" xml:space="preserve">
-    <value>Crear usuario</value>
+  <data name="Claims" xml:space="preserve">
+    <value>Reclamos</value>
   </data>
-  <data name="Email" xml:space="preserve">
-    <value>Correo electrónico</value>
+  <data name="Clients" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalles</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Hogar</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Cargando usuarios...</value>
+    <value>Cargando</value>
   </data>
-  <data name="NoClients" xml:space="preserve">
-    <value>No se encontraron usuarios.</value>
+  <data name="Misc" xml:space="preserve">
+    <value>Misceláneos</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>¡Uy! ¡No pudimos encontrar a ese cliente ¡Uy!</value>
   </data>
   <data name="PageDesc" xml:space="preserve">
-    <value>Use esta página para administrar usuarios de ASP.NET</value>
+    <value>Utilice esta página para editar el cliente Duende</value>
   </data>
-  <data name="RowsPerPage" xml:space="preserve">
-    <value>Filas por página:</value>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Guardar Cambios</value>
   </data>
-  <data name="Search" xml:space="preserve">
-    <value>Buscar</value>
+  <data name="Secrets" xml:space="preserve">
+    <value>Misterios</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ajustes</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Usuarios</value>
+    <value>Detalles del Cliente</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Nombre de usuario</value>
-  </data>
-  <data name="Users" xml:space="preserve">
-    <value>Usuarios</value>
+  <data name="Uris" xml:space="preserve">
+    <value>URIs</value>
   </data>
 </root>

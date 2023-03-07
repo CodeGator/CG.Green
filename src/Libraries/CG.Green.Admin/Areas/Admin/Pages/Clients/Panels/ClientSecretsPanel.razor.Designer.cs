@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Green.Areas.Admin.Pages.Users {
+namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Users {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class UsersIndex_razor {
+    internal class ClientSecretsPanel_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal UsersIndex_razor() {
+        internal ClientSecretsPanel_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Users.UsersIndex.razor", typeof(UsersIndex_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSecretsPanel.razor", typeof(ClientSecretsPanel_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,15 +57,6 @@ namespace CG.Green.Areas.Admin.Pages.Users {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Admin.
-        /// </summary>
-        internal static string Admin {
-            get {
-                return ResourceManager.GetString("Admin", resourceCulture);
             }
         }
         
@@ -88,34 +79,52 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create User.
+        ///   Looks up a localized string similar to Create Secret.
         /// </summary>
-        internal static string CreateUser {
+        internal static string CreateSecret {
             get {
-                return ResourceManager.GetString("CreateUser", resourceCulture);
+                return ResourceManager.GetString("CreateSecret", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email.
+        ///   Looks up a localized string similar to Description.
         /// </summary>
-        internal static string Email {
+        internal static string Description {
             get {
-                return ResourceManager.GetString("Email", resourceCulture);
+                return ResourceManager.GetString("Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Home.
+        ///   Looks up a localized string similar to Edit Secret.
         /// </summary>
-        internal static string Home {
+        internal static string EditSecret {
             get {
-                return ResourceManager.GetString("Home", resourceCulture);
+                return ResourceManager.GetString("EditSecret", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loading users ....
+        ///   Looks up a localized string similar to Expiration.
+        /// </summary>
+        internal static string Expiration {
+            get {
+                return ResourceManager.GetString("Expiration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client Secrets.
+        /// </summary>
+        internal static string GroupTitle {
+            get {
+                return ResourceManager.GetString("GroupTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading secrets ....
         /// </summary>
         internal static string Loading {
             get {
@@ -124,20 +133,20 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No users were found..
+        ///   Looks up a localized string similar to No secrets were found..
         /// </summary>
-        internal static string NoClients {
+        internal static string NoSecrets {
             get {
-                return ResourceManager.GetString("NoClients", resourceCulture);
+                return ResourceManager.GetString("NoSecrets", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Use this page to administer ASP.NET users.
+        ///   Looks up a localized string similar to Requerir secreto de cliente.
         /// </summary>
-        internal static string PageDesc {
+        internal static string RequireSecret {
             get {
-                return ResourceManager.GetString("PageDesc", resourceCulture);
+                return ResourceManager.GetString("RequireSecret", resourceCulture);
             }
         }
         
@@ -151,38 +160,11 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search.
+        ///   Looks up a localized string similar to Value.
         /// </summary>
-        internal static string Search {
+        internal static string Value {
             get {
-                return ResourceManager.GetString("Search", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Users.
-        /// </summary>
-        internal static string Title {
-            get {
-                return ResourceManager.GetString("Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User Name.
-        /// </summary>
-        internal static string UserName {
-            get {
-                return ResourceManager.GetString("UserName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Users.
-        /// </summary>
-        internal static string Users {
-            get {
-                return ResourceManager.GetString("Users", resourceCulture);
+                return ResourceManager.GetString("Value", resourceCulture);
             }
         }
     }

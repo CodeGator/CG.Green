@@ -56,15 +56,6 @@ public static class WebApplicationExtensions015
 		// Add health checks.
 		webApplication.UseHealthChecks("/health");
 
-		// Log what we are about to do.
-		//webApplication.Logger.LogDebug(
-	//		"Mapping health checks."
-//			);
-
-		// Map the health checks
-		//webApplication.MapHealthChecks("/health")
-		//	.RequireAuthorization();
-
 		// Return the application.
 		return webApplication;
     }

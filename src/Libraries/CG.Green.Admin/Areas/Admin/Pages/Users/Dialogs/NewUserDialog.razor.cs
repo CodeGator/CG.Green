@@ -7,24 +7,6 @@ namespace CG.Green.Areas.Admin.Pages.Users.Dialogs;
 public partial class NewUserDialog
 {
 	// *******************************************************************
-	// Fields.
-	// *******************************************************************
-
-	#region Fields
-
-	/// <summary>
-	/// This field indicates the type of the password control.
-	/// </summary>
-	private InputType _passwordInput = InputType.Password;
-
-	/// <summary>
-	/// This field contains the icon for the password control.
-	/// </summary>
-	private string _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
-
-	#endregion
-
-	// *******************************************************************
 	// Properties.
 	// *******************************************************************
 
@@ -40,7 +22,7 @@ public partial class NewUserDialog
 	/// This property contains the edit form's model.
 	/// </summary>
 	[Parameter]
-	public NewUserVM Model { get; set; } = null!;
+	public NewGreenUserVM Model { get; set; } = null!;
 		
 	/// <summary>
 	/// This property contains the localizer for this dialog.
@@ -77,25 +59,6 @@ public partial class NewUserDialog
 	/// This method cancels the dialog.
 	/// </summary>
 	protected void Cancel() => MudDialog.Cancel();
-
-	// *******************************************************************
-
-	/// <summary>
-	/// This method toggles the password control between secure and not secure.
-	/// </summary>
-	protected void TogglePasswordVisibility()
-	{
-		if (_passwordInput != InputType.Password)
-		{
-			_passwordInputIcon = Icons.Material.Filled.VisibilityOff;
-			_passwordInput = InputType.Password;
-		}
-		else
-		{
-			_passwordInputIcon = Icons.Material.Filled.Visibility;
-			_passwordInput = InputType.Text;
-		}
-	}
 
 	#endregion
 }

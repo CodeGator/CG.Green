@@ -118,45 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Admin" xml:space="preserve">
-    <value>Administrador</value>
+    <value>Admin</value>
   </data>
-  <data name="Broke" xml:space="preserve">
-    <value>¡Algo se rompió!</value>
+  <data name="BackToUsers" xml:space="preserve">
+    <value>Back to Users</value>
   </data>
-  <data name="Create" xml:space="preserve">
-    <value>Crear</value>
-  </data>
-  <data name="CreateUser" xml:space="preserve">
-    <value>Crear usuario</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>Correo electrónico</value>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Hogar</value>
+    <value>Home</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Cargando usuarios...</value>
+    <value>Loading</value>
   </data>
-  <data name="NoClients" xml:space="preserve">
-    <value>No se encontraron usuarios.</value>
+  <data name="NotFound" xml:space="preserve">
+    <value>Ooops! we couldn't find that ASP.NET user!</value>
   </data>
   <data name="PageDesc" xml:space="preserve">
-    <value>Use esta página para administrar usuarios de ASP.NET</value>
+    <value>Use this page to edit the ASP.NET user</value>
   </data>
-  <data name="RowsPerPage" xml:space="preserve">
-    <value>Filas por página:</value>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Save Changes</value>
   </data>
-  <data name="Search" xml:space="preserve">
-    <value>Buscar</value>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Usuarios</value>
-  </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Nombre de usuario</value>
+    <value>User Details</value>
   </data>
   <data name="Users" xml:space="preserve">
-    <value>Usuarios</value>
+    <value>Users</value>
   </data>
 </root>

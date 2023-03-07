@@ -49,6 +49,7 @@ public static class WebApplicationBuilderExtensions012
             cfg.CreateMap<Client, NewClientVM>().ReverseMap();
 			cfg.CreateMap<Secret, ClientSecretVM>().ReverseMap();
 			cfg.CreateMap<ClientClaim, ClientClaimVM>().ReverseMap();
+			
 			cfg.CreateMap<Client, EditClientVM>()
 				.ForMember(dest => dest.IdentityProviderRestrictions, opt => opt.MapFrom(src => src.IdentityProviderRestrictions.Select(x => new EditProviderVM() { Name = x })))
 				.ForMember(dest => dest.RedirectUris, opt => opt.MapFrom(src => src.RedirectUris.Select(x => new EditUriVM() { Value = x })))
@@ -61,8 +62,10 @@ public static class WebApplicationBuilderExtensions012
 				.ForMember(dest => dest.PostLogoutRedirectUris, opt => opt.MapFrom(src => src.PostLogoutRedirectUris.Select(x => x.Value)))
 				.ForMember(dest => dest.FrontChannelLogoutUri, opt => opt.MapFrom(src => src.FrontChannelLogoutUri.Value))
 				.ForMember(dest => dest.BackChannelLogoutUri, opt => opt.MapFrom(src => src.BackChannelLogoutUri.Value));
-			cfg.CreateMap<GreenUser, ListUserVM>().ReverseMap();
-			cfg.CreateMap<GreenUser, NewUserVM>().ReverseMap();
+			
+			cfg.CreateMap<GreenUser, ListGreenUserVM>().ReverseMap();
+			cfg.CreateMap<GreenUser, NewGreenUserVM>().ReverseMap();
+			cfg.CreateMap<GreenUser, EditGreenUserVM>().ReverseMap();
 		});
 
         // Return the application builder.

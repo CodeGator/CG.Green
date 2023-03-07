@@ -1,0 +1,74 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    <MudItem xs="12">
+        <MudTextField AutoFocus
+                      Immediate
+                      Margin="Margin.Dense"
+                      Counter="@(Globals.Models.Users.UserNameLength)"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["UserName"]
+                      HelperText=@Localizer["UserNameHelp"]
+                      For="@(() => Model.UserName)"
+                      @bind-Value="@Model.UserName" />
+    </MudItem>
+    <MudItem xs="12">
+        <MudTextField Immediate
+                      Margin="Margin.Dense"
+                      Counter="@(Globals.Models.Users.EmailLength)"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.Email"
+                      Label=@Localizer["Email"]
+                      HelperText=@Localizer["EmailHelp"]
+                      For="@(() => Model.Email)"
+                      @bind-Value="@Model.Email" />
+    </MudItem>
+    <MudItem xs="12">
+        <MudCheckBox T="bool"
+                    Class="mb-n3"
+                    @bind-Checked="Model.EmailConfirmed"
+                     Label=@Localizer["EmailConfirmed"] />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["EmailConfirmedHelp"]</MudText>
+    </MudItem>
+    <MudItem xs="12">
+        <MudCheckBox T="bool"
+                    Class="mb-n3"
+                    @bind-Checked="Model.TwoFactorEnabled"
+                     Label=@Localizer["TwoFactorEnabled"] />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["TwoFactorEnabledHelp"]</MudText>
+    </MudItem>
+    <MudItem xs="12">
+        <MudCheckBox T="bool"
+                    Class="mb-n3"
+                    @bind-Checked="Model.LockoutEnabled"
+                     Label=@Localizer["LockoutEnabled"] />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["LockoutEnabledHelp"]</MudText>
+    </MudItem>
+    @if (Model.LockoutEnabled)
+    {
+        <MudItem xs="12">
+            <MudTextField Margin="Margin.Dense"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.DateTimeLocal"
+                      Format="s"
+                      Clearable
+                      Label=@Localizer["LockoutEnd"]
+                      HelperText=@Localizer["LockoutEndHelp"]
+                      For="@(() => Model.LockoutEnd)"
+                      @bind-Value="@Model.LockoutEnd" />
+        </MudItem>
+    }
+    <MudItem xs="12">
+        <MudTextField Margin="Margin.Dense"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.Number"
+                      Label=@Localizer["AccessFailedCount"]
+                      HelperText=@Localizer["AccessFailedCountHelp"]
+                      For="@(() => Model.AccessFailedCount)"
+                      @bind-Value="@Model.AccessFailedCount" />
+    </MudItem>
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Green.Areas.Admin.Pages.Users {
+namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Users {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class UsersIndex_razor {
+    internal class ClientClaimsPanel_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal UsersIndex_razor() {
+        internal ClientClaimsPanel_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Users.UsersIndex.razor", typeof(UsersIndex_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.ClientClaimsPanel.razor", typeof(ClientClaimsPanel_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,11 +61,20 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Admin.
+        ///   Looks up a localized string similar to Always send client claims.
         /// </summary>
-        internal static string Admin {
+        internal static string AlwaysSendClientClaims {
             get {
-                return ResourceManager.GetString("Admin", resourceCulture);
+                return ResourceManager.GetString("AlwaysSendClientClaims", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Always send client claims regardless of the selected grant types..
+        /// </summary>
+        internal static string AlwaysSendClientClaimsHelp {
+            get {
+                return ResourceManager.GetString("AlwaysSendClientClaimsHelp", resourceCulture);
             }
         }
         
@@ -79,6 +88,33 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Client Claims.
+        /// </summary>
+        internal static string ClientClaims {
+            get {
+                return ResourceManager.GetString("ClientClaims", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client Claims Prefix.
+        /// </summary>
+        internal static string ClientClaimsPrefix {
+            get {
+                return ResourceManager.GetString("ClientClaimsPrefix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The value to prefix client claims with..
+        /// </summary>
+        internal static string ClientClaimsPrefixHelp {
+            get {
+                return ResourceManager.GetString("ClientClaimsPrefixHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string Create {
@@ -88,56 +124,38 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create User.
+        ///   Looks up a localized string similar to Create Claim.
         /// </summary>
-        internal static string CreateUser {
+        internal static string CreateClaim {
             get {
-                return ResourceManager.GetString("CreateUser", resourceCulture);
+                return ResourceManager.GetString("CreateClaim", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email.
+        ///   Looks up a localized string similar to Edit Claim.
         /// </summary>
-        internal static string Email {
+        internal static string EditClaim {
             get {
-                return ResourceManager.GetString("Email", resourceCulture);
+                return ResourceManager.GetString("EditClaim", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Home.
+        ///   Looks up a localized string similar to Loading claims.
         /// </summary>
-        internal static string Home {
+        internal static string LoadingClaims {
             get {
-                return ResourceManager.GetString("Home", resourceCulture);
+                return ResourceManager.GetString("LoadingClaims", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loading users ....
+        ///   Looks up a localized string similar to No claims were found..
         /// </summary>
-        internal static string Loading {
+        internal static string NoClaims {
             get {
-                return ResourceManager.GetString("Loading", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to No users were found..
-        /// </summary>
-        internal static string NoClients {
-            get {
-                return ResourceManager.GetString("NoClients", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Use this page to administer ASP.NET users.
-        /// </summary>
-        internal static string PageDesc {
-            get {
-                return ResourceManager.GetString("PageDesc", resourceCulture);
+                return ResourceManager.GetString("NoClaims", resourceCulture);
             }
         }
         
@@ -151,38 +169,20 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search.
+        ///   Looks up a localized string similar to Type.
         /// </summary>
-        internal static string Search {
+        internal static string Type {
             get {
-                return ResourceManager.GetString("Search", resourceCulture);
+                return ResourceManager.GetString("Type", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Users.
+        ///   Looks up a localized string similar to Value.
         /// </summary>
-        internal static string Title {
+        internal static string Value {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User Name.
-        /// </summary>
-        internal static string UserName {
-            get {
-                return ResourceManager.GetString("UserName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Users.
-        /// </summary>
-        internal static string Users {
-            get {
-                return ResourceManager.GetString("Users", resourceCulture);
+                return ResourceManager.GetString("Value", resourceCulture);
             }
         }
     }

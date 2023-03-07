@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Users {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class UsersIndex_razor {
+    internal class UsersDetail_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal UsersIndex_razor() {
+        internal UsersDetail_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Users.UsersIndex.razor", typeof(UsersIndex_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Users.UsersDetail.razor", typeof(UsersDetail_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,38 +70,20 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something broke!.
+        ///   Looks up a localized string similar to Back to Users.
         /// </summary>
-        internal static string Broke {
+        internal static string BackToUsers {
             get {
-                return ResourceManager.GetString("Broke", resourceCulture);
+                return ResourceManager.GetString("BackToUsers", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create.
+        ///   Looks up a localized string similar to Details.
         /// </summary>
-        internal static string Create {
+        internal static string Details {
             get {
-                return ResourceManager.GetString("Create", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Create User.
-        /// </summary>
-        internal static string CreateUser {
-            get {
-                return ResourceManager.GetString("CreateUser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Email.
-        /// </summary>
-        internal static string Email {
-            get {
-                return ResourceManager.GetString("Email", resourceCulture);
+                return ResourceManager.GetString("Details", resourceCulture);
             }
         }
         
@@ -115,7 +97,7 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loading users ....
+        ///   Looks up a localized string similar to Loading.
         /// </summary>
         internal static string Loading {
             get {
@@ -124,16 +106,16 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No users were found..
+        ///   Looks up a localized string similar to Ooops! we couldn&apos;t find that ASP.NET user!.
         /// </summary>
-        internal static string NoClients {
+        internal static string NotFound {
             get {
-                return ResourceManager.GetString("NoClients", resourceCulture);
+                return ResourceManager.GetString("NotFound", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Use this page to administer ASP.NET users.
+        ///   Looks up a localized string similar to Use this page to edit the ASP.NET user.
         /// </summary>
         internal static string PageDesc {
             get {
@@ -142,38 +124,29 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rows per page:.
+        ///   Looks up a localized string similar to Save Changes.
         /// </summary>
-        internal static string RowsPerPage {
+        internal static string SaveChanges {
             get {
-                return ResourceManager.GetString("RowsPerPage", resourceCulture);
+                return ResourceManager.GetString("SaveChanges", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search.
+        ///   Looks up a localized string similar to Settings.
         /// </summary>
-        internal static string Search {
+        internal static string Settings {
             get {
-                return ResourceManager.GetString("Search", resourceCulture);
+                return ResourceManager.GetString("Settings", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Users.
+        ///   Looks up a localized string similar to User Details.
         /// </summary>
         internal static string Title {
             get {
                 return ResourceManager.GetString("Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User Name.
-        /// </summary>
-        internal static string UserName {
-            get {
-                return ResourceManager.GetString("UserName", resourceCulture);
             }
         }
         

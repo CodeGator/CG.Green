@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Green.Areas.Admin.Pages.Users {
+namespace CG.Green.Areas.Admin.Pages.Clients.Panels {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace CG.Green.Areas.Admin.Pages.Users {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class UsersIndex_razor {
+    internal class ClientConsentPanel_razor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal UsersIndex_razor() {
+        internal ClientConsentPanel_razor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Users.UsersIndex.razor", typeof(UsersIndex_razor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Green.Areas.Admin.Pages.Clients.Panels.ClientConsentPanel.razor", typeof(ClientConsentPanel_razor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,128 +61,92 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Admin.
+        ///   Looks up a localized string similar to Allow Remember Consent.
         /// </summary>
-        internal static string Admin {
+        internal static string AllowRememberConsent {
             get {
-                return ResourceManager.GetString("Admin", resourceCulture);
+                return ResourceManager.GetString("AllowRememberConsent", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something broke!.
+        ///   Looks up a localized string similar to Allow consent to be rembered for the client..
         /// </summary>
-        internal static string Broke {
+        internal static string AllowRememberConsentHelp {
             get {
-                return ResourceManager.GetString("Broke", resourceCulture);
+                return ResourceManager.GetString("AllowRememberConsentHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create.
+        ///   Looks up a localized string similar to Client URI.
         /// </summary>
-        internal static string Create {
+        internal static string ClientUri {
             get {
-                return ResourceManager.GetString("Create", resourceCulture);
+                return ResourceManager.GetString("ClientUri", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create User.
+        ///   Looks up a localized string similar to Url to display on the consent screen..
         /// </summary>
-        internal static string CreateUser {
+        internal static string ClientUriHelp {
             get {
-                return ResourceManager.GetString("CreateUser", resourceCulture);
+                return ResourceManager.GetString("ClientUriHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email.
+        ///   Looks up a localized string similar to Consent Lifetime.
         /// </summary>
-        internal static string Email {
+        internal static string ConsentLifetime {
             get {
-                return ResourceManager.GetString("Email", resourceCulture);
+                return ResourceManager.GetString("ConsentLifetime", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Home.
+        ///   Looks up a localized string similar to Consent lifetime in seconds.
         /// </summary>
-        internal static string Home {
+        internal static string ConsentLifetimeHelp {
             get {
-                return ResourceManager.GetString("Home", resourceCulture);
+                return ResourceManager.GetString("ConsentLifetimeHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loading users ....
+        ///   Looks up a localized string similar to Logo URI.
         /// </summary>
-        internal static string Loading {
+        internal static string LogoUri {
             get {
-                return ResourceManager.GetString("Loading", resourceCulture);
+                return ResourceManager.GetString("LogoUri", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No users were found..
+        ///   Looks up a localized string similar to Location of a logo to display on the consent screen..
         /// </summary>
-        internal static string NoClients {
+        internal static string LogoUriHelp {
             get {
-                return ResourceManager.GetString("NoClients", resourceCulture);
+                return ResourceManager.GetString("LogoUriHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Use this page to administer ASP.NET users.
+        ///   Looks up a localized string similar to Require Consent.
         /// </summary>
-        internal static string PageDesc {
+        internal static string RequireConsent {
             get {
-                return ResourceManager.GetString("PageDesc", resourceCulture);
+                return ResourceManager.GetString("RequireConsent", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rows per page:.
+        ///   Looks up a localized string similar to Display a consent screen for this client..
         /// </summary>
-        internal static string RowsPerPage {
+        internal static string RequireConsentHelp {
             get {
-                return ResourceManager.GetString("RowsPerPage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search.
-        /// </summary>
-        internal static string Search {
-            get {
-                return ResourceManager.GetString("Search", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Users.
-        /// </summary>
-        internal static string Title {
-            get {
-                return ResourceManager.GetString("Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User Name.
-        /// </summary>
-        internal static string UserName {
-            get {
-                return ResourceManager.GetString("UserName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Users.
-        /// </summary>
-        internal static string Users {
-            get {
-                return ResourceManager.GetString("Users", resourceCulture);
+                return ResourceManager.GetString("RequireConsentHelp", resourceCulture);
             }
         }
     }

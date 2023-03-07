@@ -120,6 +120,9 @@
   <data name="AbsoluteRefreshTokenLifetime" xml:space="preserve">
     <value>Vida útil del token de actualización absoluta</value>
   </data>
+  <data name="AccessFailedCount" xml:space="preserve">
+    <value>Número de accesos fallidos</value>
+  </data>
   <data name="AccessTokenLifetime" xml:space="preserve">
     <value>Vida útil del token de acceso</value>
   </data>
@@ -201,6 +204,12 @@
   <data name="DeviceCodeLifetime" xml:space="preserve">
     <value>Vida útil del código del dispositivo</value>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="EmailConfirmed" xml:space="preserve">
+    <value>Correo electrónico confirmado</value>
+  </data>
   <data name="Enabled" xml:space="preserve">
     <value>Activado</value>
   </data>
@@ -233,6 +242,12 @@
   </data>
   <data name="LengthError" xml:space="preserve">
     <value>El {0} debe tener al menos {2} y un máximo de {1} caracteres.</value>
+  </data>
+  <data name="LockoutEnabled" xml:space="preserve">
+    <value>Bloqueo habilitado</value>
+  </data>
+  <data name="LockoutEnd" xml:space="preserve">
+    <value>Fin del bloqueo</value>
   </data>
   <data name="LogoURI" xml:space="preserve">
     <value>URL del logotipo</value>
@@ -291,6 +306,9 @@
   <data name="SlidingRefreshTokenLifetime" xml:space="preserve">
     <value>Duración del token de actualización deslizante</value>
   </data>
+  <data name="TwoFactorEnabled" xml:space="preserve">
+    <value>Dos factores habilitados</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>Tipo</value>
   </data>
@@ -299,6 +317,9 @@
   </data>
   <data name="UserCodeType" xml:space="preserve">
     <value>Tipo de código de usuario</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nombre de usuario</value>
   </data>
   <data name="UserSSOLifetime" xml:space="preserve">
     <value>Duración del SSO del usuario</value>

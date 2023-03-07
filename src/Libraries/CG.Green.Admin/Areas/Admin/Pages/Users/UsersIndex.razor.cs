@@ -1,4 +1,5 @@
 ﻿
+
 namespace CG.Green.Areas.Admin.Pages.Users;
 
 /// <summary>
@@ -20,7 +21,7 @@ public partial class UsersIndex
 	/// <summary>
 	/// This field contains the list of users.
 	/// </summary>
-	internal protected List<ListUserVM> _users = new();
+	internal protected List<ListGreenUserVM> _users = new();
 
 	/// <summary>
 	/// This field indicates when the page is loading data.
@@ -164,7 +165,7 @@ public partial class UsersIndex
 	/// </summary>
 	/// <param name="element">The element to use for the operation.</param>
 	/// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
-	protected bool FilterFunc1(ListUserVM element) =>
+	protected bool FilterFunc1(ListGreenUserVM element) =>
 		FilterFunc(element, _gridSearchString);
 
 	// *******************************************************************
@@ -176,7 +177,7 @@ public partial class UsersIndex
 	/// <param name="searchString">The search string to use for the operation.</param>
 	/// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
 	protected bool FilterFunc(
-		ListUserVM element,
+		ListGreenUserVM element,
 		string searchString
 		)
 	{
@@ -232,7 +233,7 @@ public partial class UsersIndex
 			// Create the dialog parameters.
 			var parameters = new DialogParameters()
 			{
-				{ "Model", new NewUserVM() }
+				{ "Model", new NewGreenUserVM() }
 			};
 
 			// Log what we are about to do.
@@ -262,7 +263,7 @@ public partial class UsersIndex
 				);
 
 			// Recover the model.
-			var model = (NewUserVM)result.Data;
+			var model = (NewGreenUserVM)result.Data;
 
 			// Log what we are about to do.
 			Logger.LogDebug(
@@ -286,7 +287,7 @@ public partial class UsersIndex
 
 			// Go to the detail page.
 			Navigation.NavigateTo(
-				$"/admin/users/{Uri.EscapeDataString(newUser.Email ?? "")}/detail"
+				$"/admin/users/{Uri.EscapeDataString(newUser.Id ?? "")}/detail"
 				);
 		}
 		catch (Exception ex)
@@ -318,11 +319,22 @@ public partial class UsersIndex
 	/// </summary>
 	/// <param name="user">The user to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
-	protected async Task OnEditAsync(
-		ListUserVM user
+	protected Task OnEditAsync(
+		ListGreenUserVM user
 		)
 	{
-		// TODO : write the code for this.
+		// Log what we are about to do.
+		Logger.LogDebug(
+			"Navigating to the user detail page."
+			);
+
+		// Go to the detail page.
+		Navigation.NavigateTo(
+			$"/admin/users/{Uri.EscapeDataString(user.Id)}/detail"
+			);
+
+		// Return the task.
+		return Task.CompletedTask;
 	}
 
 	// *******************************************************************
@@ -333,10 +345,68 @@ public partial class UsersIndex
 	/// <param name="user">The user to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected async Task OnDeleteAsync(
-		ListUserVM user
+		ListGreenUserVM user
 		)
 	{
-		// TODO : write the code for this.
+		try
+		{
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Prompting the caller."
+				);
+
+			// Prompt the user.
+			var result = await Dialog.ShowDeleteBox(
+				user.UserName
+				);
+
+			// Did the user cancel?
+			if (!result)
+			{
+				return; // Nothing more to do.
+			}
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Deleting a client."
+				);
+
+			// Convert to the ASP.NET model.
+			var greenUser = AutoMapper.Map<GreenUser>(user);
+
+			// Delete the user.
+			await GreenApi.Users.DeleteAsync(
+				greenUser,
+				UserName
+				);
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Loading data for the page."
+				);
+
+			// Load the clients.
+			await LoadDataAsync();
+		}
+		catch (Exception ex)
+		{
+			// Log what happened.
+			Logger.LogError(
+				ex.GetBaseException(),
+				"Failed to delete a user!"
+				);
+
+			// Log what we are about to do.
+			Logger.LogDebug(
+				"Showing the message box"
+				);
+
+			// Tell the world what happened.
+			await Dialog.ShowErrorBox(
+				exception: ex,
+				title: Localizer["Broke"]
+				);
+		}
 	}
 
 	#endregion
@@ -378,7 +448,7 @@ public partial class UsersIndex
 
 			// Get the list of users.
 			_users = (await GreenApi.Users.FindAllAsync())
-				.Select(x => AutoMapper.Map<ListUserVM>(x))
+				.Select(x => AutoMapper.Map<ListGreenUserVM>(x))
 					.ToList();
 		}
 		finally
