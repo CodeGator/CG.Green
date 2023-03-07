@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UsersIndex
+    <title>Class UsersDetail
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UsersIndex
+    <meta name="title" content="Class UsersDetail
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,18 +78,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail">
   
   
-  <h1 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex" class="text-break">Class UsersIndex
+  <h1 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail" class="text-break">Class UsersDetail
   </h1>
-  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Green.Areas.Admin.Pages.Users.UsersIndex.html">UsersIndex</a> page.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UsersIndex</span></div>
+    <div class="level1"><span class="xref">UsersDetail</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -117,13 +116,13 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Areas.Admin.Pages.Users.html">CG.Green.Areas.Admin.Pages.Users</a></h6>
   <h6><strong>Assembly</strong>: CG.Green.Admin.dll</h6>
-  <h5 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_syntax">Syntax</h5>
+  <h5 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UsersIndex</code></pre>
+    <pre><code class="lang-csharp hljs">public class UsersDetail</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex__crumbs" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex._crumbs">_crumbs</h4>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail__crumbs" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail._crumbs">_crumbs</h4>
   <div class="markdown level1 summary"><p>This field contains a reference to breadcrumbs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -146,30 +145,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex__gridSearchString" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex._gridSearchString">_gridSearchString</h4>
-  <div class="markdown level1 summary"><p>This field contains the current search string.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string _gridSearchString</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex__isLoading" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex._isLoading">_isLoading</h4>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail__isLoading" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail._isLoading">_isLoading</h4>
   <div class="markdown level1 summary"><p>This field indicates when the page is loading data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -192,13 +168,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex__users" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex._users">_users</h4>
-  <div class="markdown level1 summary"><p>This field contains the list of users.</p>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail__model" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail._model">_model</h4>
+  <div class="markdown level1 summary"><p>This field contains the model for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;ListGreenUserVM&gt; _users</code></pre>
+    <pre><code class="lang-csharp hljs">protected EditGreenUserVM? _model</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -210,15 +186,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">ListGreenUserVM</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EditGreenUserVM</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_AutoMapper_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.AutoMapper*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_AutoMapper" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.AutoMapper">AutoMapper</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_AutoMapper_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.AutoMapper*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_AutoMapper" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.AutoMapper">AutoMapper</h4>
   <div class="markdown level1 summary"><p>This property contains the auto mapper for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -241,8 +217,8 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Dialog_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Dialog*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Dialog" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Dialog">Dialog</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Dialog_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Dialog*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Dialog" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Dialog">Dialog</h4>
   <div class="markdown level1 summary"><p>This property contains the dialog service for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -265,9 +241,9 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_GreenApi_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.GreenApi*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_GreenApi" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.GreenApi">GreenApi</h4>
-  <div class="markdown level1 summary"><p>This property contains the green api for this page.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_GreenApi_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.GreenApi*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_GreenApi" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.GreenApi">GreenApi</h4>
+  <div class="markdown level1 summary"><p>This property contains the green API for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -289,8 +265,8 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_HttpContext_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.HttpContext*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_HttpContext" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.HttpContext">HttpContext</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_HttpContext_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.HttpContext*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_HttpContext" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.HttpContext">HttpContext</h4>
   <div class="markdown level1 summary"><p>This property contains the HTTP context accessor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -313,14 +289,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Localizer_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Localizer*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Localizer" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Localizer">Localizer</h4>
-  <div class="markdown level1 summary"><p>This property contains the localizer for this page.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Localizer_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Localizer*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Localizer" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Localizer">Localizer</h4>
+  <div class="markdown level1 summary"><p>This property contains the localizer for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IStringLocalizer&lt;UsersIndex&gt; Localizer { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IStringLocalizer&lt;UsersDetail&gt; Localizer { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -332,19 +308,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IStringLocalizer</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Users.UsersIndex.html">UsersIndex</a>&gt;</td>
+        <td><span class="xref">IStringLocalizer</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Users.UsersDetail.html">UsersDetail</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Logger_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Logger*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Logger" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Logger">Logger</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Logger_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Logger*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Logger" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>This property contains the logger for this page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ILogger&lt;UsersIndex&gt; Logger { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ILogger&lt;UsersDetail&gt; Logger { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -356,13 +332,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Users.UsersIndex.html">UsersIndex</a>&gt;</td>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Users.UsersDetail.html">UsersDetail</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Navigation_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Navigation*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Navigation" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Navigation">Navigation</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Navigation_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Navigation*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Navigation" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Navigation">Navigation</h4>
   <div class="markdown level1 summary"><p>This property contains the navigation manager for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -385,9 +361,9 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Snackbar_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Snackbar*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Snackbar" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Snackbar">Snackbar</h4>
-  <div class="markdown level1 summary"><p>This property contains the snackbar service for this page.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Snackbar_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Snackbar*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_Snackbar" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.Snackbar">Snackbar</h4>
+  <div class="markdown level1 summary"><p>This property contains the snackbar service for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -409,14 +385,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Theme_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Theme*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_Theme" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.Theme">Theme</h4>
-  <div class="markdown level1 summary"><p>This property contains the MudBlazor theme for this page.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_UserId_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.UserId*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_UserId" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.UserId">UserId</h4>
+  <div class="markdown level1 summary"><p>This property contains the identifier for the user.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MudTheme Theme { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string UserId { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -428,13 +404,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MudTheme</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_UserName_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.UserName*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_UserName" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.UserName">UserName</h4>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_UserName_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.UserName*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_UserName" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.UserName">UserName</h4>
   <div class="markdown level1 summary"><p>This property contains the name of the current user, or the word
 'anonymous' if nobody is currently authenticated.</p>
 </div>
@@ -460,102 +436,9 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_FilterFunc_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.FilterFunc*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_FilterFunc_ListGreenUserVM_System_String_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.FilterFunc(ListGreenUserVM,System.String)">FilterFunc(ListGreenUserVM, String)</h4>
-  <div class="markdown level1 summary"><p>This method performs a search of the users.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool FilterFunc(ListGreenUserVM element, string searchString)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ListGreenUserVM</span></td>
-        <td><span class="parametername">element</span></td>
-        <td><p>The element to uses for the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">searchString</span></td>
-        <td><p>The search string to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if a match was found; <code>false</code> otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_FilterFunc1_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.FilterFunc1*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_FilterFunc1_ListGreenUserVM_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.FilterFunc1(ListGreenUserVM)">FilterFunc1(ListGreenUserVM)</h4>
-  <div class="markdown level1 summary"><p>This method adapts the <a class="xref" href="CG.Green.Areas.Admin.Pages.Users.UsersIndex.html#CG_Green_Areas_Admin_Pages_Users_UsersIndex_FilterFunc_ListGreenUserVM_System_String_">FilterFunc(ListGreenUserVM, String)</a> method for use with
-a <see cref="!:MudTable&lt;T>"></see> control.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool FilterFunc1(ListGreenUserVM element)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ListGreenUserVM</span></td>
-        <td><span class="parametername">element</span></td>
-        <td><p>The element to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if a match was found; <code>false</code> otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_LoadDataAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.LoadDataAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_LoadDataAsync" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.LoadDataAsync">LoadDataAsync()</h4>
-  <div class="markdown level1 summary"><p>This method loads data for the page.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_LoadDataAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.LoadDataAsync*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_LoadDataAsync" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.LoadDataAsync">LoadDataAsync()</h4>
+  <div class="markdown level1 summary"><p>This method loads the data for the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -578,125 +461,39 @@ a <see cref="!:MudTable&lt;T>"></see> control.</p>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_OnCreateAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.OnCreateAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_OnCreateAsync" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.OnCreateAsync">OnCreateAsync()</h4>
-  <div class="markdown level1 summary"><p>This method creates a new ASP.NET user.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnCreateAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_OnDeleteAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.OnDeleteAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_OnDeleteAsync_ListGreenUserVM_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.OnDeleteAsync(ListGreenUserVM)">OnDeleteAsync(ListGreenUserVM)</h4>
-  <div class="markdown level1 summary"><p>This method deletes the given ASP.NET user.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnDeleteAsync(ListGreenUserVM user)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ListGreenUserVM</span></td>
-        <td><span class="parametername">user</span></td>
-        <td><p>The user to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_OnEditAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.OnEditAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_OnEditAsync_ListGreenUserVM_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.OnEditAsync(ListGreenUserVM)">OnEditAsync(ListGreenUserVM)</h4>
-  <div class="markdown level1 summary"><p>This method edits the given ASP.NET user.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task OnEditAsync(ListGreenUserVM user)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ListGreenUserVM</span></td>
-        <td><span class="parametername">user</span></td>
-        <td><p>The user to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A task to perform the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_OnInitializedAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.OnInitializedAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersIndex_OnInitializedAsync" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersIndex.OnInitializedAsync">OnInitializedAsync()</h4>
-  <div class="markdown level1 summary"><p>This method initializes the page.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_OnInitializedAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.OnInitializedAsync*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_OnInitializedAsync" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.OnInitializedAsync">OnInitializedAsync()</h4>
+  <div class="markdown level1 summary"><p>This method is called to initialize the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override async Task OnInitializedAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_OnValidSubmitAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.OnValidSubmitAsync*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Users_UsersDetail_OnValidSubmitAsync" data-uid="CG.Green.Areas.Admin.Pages.Users.UsersDetail.OnValidSubmitAsync">OnValidSubmitAsync()</h4>
+  <div class="markdown level1 summary"><p>This method is called when the user submits the form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnValidSubmitAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">

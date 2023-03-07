@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class NewUserDialog
+    <title>Class ClientSsoPanel
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class NewUserDialog
+    <meta name="title" content="Class ClientSsoPanel
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,17 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog">
+            <article class="content wrap" id="_content" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel">
   
   
-  <h1 id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog" class="text-break">Class NewUserDialog
+  <h1 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel" class="text-break">Class ClientSsoPanel
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.html">ClientSsoPanel</a> component.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">NewUserDialog</span></div>
+    <div class="level1"><span class="xref">ClientSsoPanel</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -114,22 +115,47 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Areas.Admin.Pages.Users.Dialogs.html">CG.Green.Areas.Admin.Pages.Users.Dialogs</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.html">CG.Green.Areas.Admin.Pages.Clients.Panels</a></h6>
   <h6><strong>Assembly</strong>: CG.Green.Admin.dll</h6>
-  <h5 id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_syntax">Syntax</h5>
+  <h5 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NewUserDialog</code></pre>
+    <pre><code class="lang-csharp hljs">public class ClientSsoPanel</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel__isLoading" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel._isLoading">_isLoading</h4>
+  <div class="markdown level1 summary"><p>This field indicates the panel is loading data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isLoading</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_Localizer_" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.Localizer*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_Localizer" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.Localizer">Localizer</h4>
-  <div class="markdown level1 summary"><p>This property contains the localizer for this dialog.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Clipboard_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Clipboard*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Clipboard" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Clipboard">Clipboard</h4>
+  <div class="markdown level1 summary"><p>This property contains the clipboard service for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IStringLocalizer&lt;NewUserDialog&gt; Localizer { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ClipboardService Clipboard { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,19 +167,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IStringLocalizer</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.html">NewUserDialog</a>&gt;</td>
+        <td><span class="xref">ClipboardService</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_Logger_" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.Logger*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_Logger" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.Logger">Logger</h4>
-  <div class="markdown level1 summary"><p>This property contains the logger for this dialog.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Dialog_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Dialog*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Dialog" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Dialog">Dialog</h4>
+  <div class="markdown level1 summary"><p>This property contains the dialog service for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ILogger&lt;NewUserDialog&gt; Logger { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IDialogService Dialog { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -165,19 +191,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.html">NewUserDialog</a>&gt;</td>
+        <td><span class="xref">IDialogService</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_Model_" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.Model*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_Model" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.Model">Model</h4>
-  <div class="markdown level1 summary"><p>This property contains the edit form's model.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Localizer_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Localizer*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Localizer" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Localizer">Localizer</h4>
+  <div class="markdown level1 summary"><p>This property contains the localizer for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NewGreenUserVM Model { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IStringLocalizer&lt;ClientSsoPanel&gt; Localizer { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -189,19 +215,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">NewGreenUserVM</span></td>
+        <td><span class="xref">IStringLocalizer</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.html">ClientSsoPanel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_MudDialog_" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.MudDialog*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_MudDialog" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.MudDialog">MudDialog</h4>
-  <div class="markdown level1 summary"><p>This property contains the dialog reference.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Logger_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Logger*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Logger" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>This property contains the logger for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MudDialogInstance MudDialog { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ILogger&lt;ClientSsoPanel&gt; Logger { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,32 +239,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MudDialogInstance</span></td>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.html">ClientSsoPanel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <a id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_Cancel_" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.Cancel*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_Cancel" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.Cancel">Cancel()</h4>
-  <div class="markdown level1 summary"><p>This method cancels the dialog.</p>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Model_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Model*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Model" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Model">Model</h4>
+  <div class="markdown level1 summary"><p>This property contains the model for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void Cancel()</code></pre>
+    <pre><code class="lang-csharp hljs">public EditClientVM Model { get; set; }</code></pre>
   </div>
-  <a id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_OnValidSubmitAsync_" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.OnValidSubmitAsync*"></a>
-  <h4 id="CG_Green_Areas_Admin_Pages_Users_Dialogs_NewUserDialog_OnValidSubmitAsync" data-uid="CG.Green.Areas.Admin.Pages.Users.Dialogs.NewUserDialog.OnValidSubmitAsync">OnValidSubmitAsync()</h4>
-  <div class="markdown level1 summary"><p>This method submits the dialog.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected async Task OnValidSubmitAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -248,7 +263,55 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">EditClientVM</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Snackbar_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Snackbar*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Snackbar" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Snackbar">Snackbar</h4>
+  <div class="markdown level1 summary"><p>This property contains the snackbar service for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISnackbar Snackbar { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISnackbar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Theme_" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Theme*"></a>
+  <h4 id="CG_Green_Areas_Admin_Pages_Clients_Panels_ClientSsoPanel_Theme" data-uid="CG.Green.Areas.Admin.Pages.Clients.Panels.ClientSsoPanel.Theme">Theme</h4>
+  <div class="markdown level1 summary"><p>This property contains the MudBlazor them for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MudTheme Theme { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MudTheme</span></td>
         <td></td>
       </tr>
     </tbody>
