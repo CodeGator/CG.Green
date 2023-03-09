@@ -1,4 +1,5 @@
-﻿namespace CG.Green.Host.Shared;
+﻿
+namespace CG.Green.Host.Shared;
 
 /// <summary>
 /// This class is the code-behind for the <see cref="SiteFooter"/> component.
@@ -24,12 +25,17 @@ public partial class SiteFooter
 	protected IStringLocalizer<SiteFooter> Localizer { get; set; } = null!;
 
 	/// <summary>
+	/// This property contains the navigation service for this component.
+	/// </summary>
+	[Inject]
+	protected NavigationManager Navigation { get; set; } = null!;
+
+	/// <summary>
 	/// This property contains the logger for this component.
 	/// </summary>
 	[Inject]
 	protected ILogger<SiteFooter> Logger { get; set; } = null!;
 
 	#endregion
-
 }
 

@@ -1,11 +1,10 @@
 ﻿
-
-namespace CG.Green.Areas.Admin.Pages.Users;
+namespace CG.Green.Areas.Admin.Pages.Roles;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="UsersIndex"/> page.
+/// This class is the code-behind for the <see cref="RolesIndex"/> page.
 /// </summary>
-public partial class UsersIndex
+public partial class RolesIndex
 {
 	// *******************************************************************
 	// Fields.
@@ -19,9 +18,9 @@ public partial class UsersIndex
 	internal protected List<BreadcrumbItem> _crumbs = new();
 
 	/// <summary>
-	/// This field contains the list of users.
+	/// This field contains the list of roles.
 	/// </summary>
-	internal protected List<ListGreenUserVM> _users = new();
+	internal protected List<ListGreenRoleVM> _roles = new();
 
 	/// <summary>
 	/// This field indicates when the page is loading data.
@@ -63,7 +62,7 @@ public partial class UsersIndex
 	/// This property contains the localizer for this page.
 	/// </summary>
 	[Inject]
-	protected IStringLocalizer<UsersIndex> Localizer { get; set; } = null!;
+	protected IStringLocalizer<RolesIndex> Localizer { get; set; } = null!;
 
 	/// <summary>
 	/// This property contains the dialog service for this page.
@@ -99,7 +98,7 @@ public partial class UsersIndex
 	/// This property contains the logger for this page.
 	/// </summary>
 	[Inject]
-	protected ILogger<UsersIndex> Logger { get; set; } = null!;
+	protected ILogger<RolesIndex> Logger { get; set; } = null!;
 
 	#endregion
 
@@ -165,19 +164,19 @@ public partial class UsersIndex
 	/// </summary>
 	/// <param name="element">The element to use for the operation.</param>
 	/// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
-	protected bool FilterFunc1(ListGreenUserVM element) =>
+	protected bool FilterFunc1(ListGreenRoleVM element) =>
 		FilterFunc(element, _gridSearchString);
 
 	// *******************************************************************
 
 	/// <summary>
-	/// This method performs a search of the users.
+	/// This method performs a search of the roles.
 	/// </summary>
 	/// <param name="element">The element to use for the operation.</param>
 	/// <param name="searchString">The search string to use for the operation.</param>
 	/// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
 	protected bool FilterFunc(
-		ListGreenUserVM element,
+		ListGreenRoleVM element,
 		string searchString
 		)
 	{
@@ -185,14 +184,7 @@ public partial class UsersIndex
 		{
 			return true;
 		}
-		if ((element.UserName ?? "").Contains(
-			searchString,
-			StringComparison.OrdinalIgnoreCase)
-			)
-		{
-			return true;
-		}
-		if ((element.Email ?? "").Contains(
+		if ((element.Name ?? "").Contains(
 			searchString,
 			StringComparison.OrdinalIgnoreCase)
 			)
@@ -315,22 +307,22 @@ public partial class UsersIndex
 	// *******************************************************************
 
 	/// <summary>
-	/// This method edits the given ASP.NET user.
+	/// This method edits the given ASP.NET role.
 	/// </summary>
-	/// <param name="user">The user to use for the operation.</param>
+	/// <param name="role">The role to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected Task OnEditAsync(
-		ListGreenUserVM user
+		ListGreenRoleVM role
 		)
 	{
 		// Log what we are about to do.
 		Logger.LogDebug(
-			"Navigating to the user detail page."
+			"Navigating to the role detail page."
 			);
 
 		// Go to the detail page.
 		Navigation.NavigateTo(
-			$"/admin/users/{Uri.EscapeDataString(user.Id)}/detail"
+			$"/admin/roles/{Uri.EscapeDataString(role.Id)}/detail"
 			);
 
 		// Return the task.
@@ -340,12 +332,12 @@ public partial class UsersIndex
 	// *******************************************************************
 
 	/// <summary>
-	/// This method deletes the given ASP.NET user.
+	/// This method deletes the given ASP.NET role.
 	/// </summary>
-	/// <param name="user">The user to use for the operation.</param>
+	/// <param name="role">The role to use for the operation.</param>
 	/// <returns>A task to perform the operation.</returns>
 	protected async Task OnDeleteAsync(
-		ListGreenUserVM user
+		ListGreenRoleVM role
 		)
 	{
 		try
@@ -355,9 +347,9 @@ public partial class UsersIndex
 				"Prompting the caller."
 				);
 
-			// Prompt the user.
+			// Prompt the role.
 			var result = await Dialog.ShowDeleteBox(
-				user.UserName
+				role.Name
 				);
 
 			// Did the user cancel?
@@ -368,15 +360,15 @@ public partial class UsersIndex
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Deleting a user."
+				"Deleting a role."
 				);
 
 			// Convert to the ASP.NET model.
-			var greenUser = AutoMapper.Map<GreenUser>(user);
+			var greenRole = AutoMapper.Map<GreenRole>(role);
 
-			// Delete the user.
-			await GreenApi.Users.DeleteAsync(
-				greenUser,
+			// Delete the role.
+			await GreenApi.Roles.DeleteAsync(
+				greenRole,
 				UserName
 				);
 
@@ -393,7 +385,7 @@ public partial class UsersIndex
 			// Log what happened.
 			Logger.LogError(
 				ex.GetBaseException(),
-				"Failed to delete a user!"
+				"Failed to delete a role!"
 				);
 
 			// Log what we are about to do.
@@ -435,20 +427,20 @@ public partial class UsersIndex
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Clearing any old users."
-				);
+				"Clearing any old roles."
+			);
 
-			// Get rid of any old users.
-			_users.Clear();
+			// Get rid of any old roles.
+			_roles.Clear();
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Fetching users from the API."
-				);
+				"Fetching roles from the API."
+			);
 
-			// Get the list of users.
-			_users = (await GreenApi.Users.FindAllAsync())
-				.Select(x => AutoMapper.Map<ListGreenUserVM>(x))
+			// Get the list of roles.
+			_roles = (await GreenApi.Roles.FindAllAsync())
+				.Select(x => AutoMapper.Map<ListGreenRoleVM>(x))
 					.ToList();
 		}
 		finally

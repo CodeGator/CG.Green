@@ -115,6 +115,16 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>ClientUrisPanel.razor.resx</DependentUpon>
       </Compile>
+      <Compile Update="Areas\Admin\Pages\Roles\RolesDetail.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>RolesDetail.razor.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Areas\Admin\Pages\Roles\RolesIndex.razor.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>RolesIndex.razor.resx</DependentUpon>
+      </Compile>
       <Compile Update="Areas\Admin\Pages\Users\Dialogs\NewUserDialog.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -239,6 +249,14 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>ClientUrisPanel.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Roles\RolesDetail.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>RolesDetail.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Areas\Admin\Pages\Roles\RolesIndex.razor.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>RolesIndex.razor.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Users\Dialogs\NewUserDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>NewUserDialog.razor.Designer.cs</LastGenOutput>
@@ -282,6 +300,11 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Shared.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\Admin\Pages\Roles\Dialogs\" />
+      <Folder Include="Areas\Admin\Pages\Roles\Panels\" />
     </ItemGroup>
 
 </Project>

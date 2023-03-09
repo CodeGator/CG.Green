@@ -59,5 +59,131 @@ namespace CG.Green.Areas.Admin.Pages.Users.Panels {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Access Failed Count.
+        /// </summary>
+        internal static string AccessFailedCount {
+            get {
+                return ResourceManager.GetString("AccessFailedCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The failed login count for the user..
+        /// </summary>
+        internal static string AccessFailedCountHelp {
+            get {
+                return ResourceManager.GetString("AccessFailedCountHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email Confirmed.
+        /// </summary>
+        internal static string EmailConfirmed {
+            get {
+                return ResourceManager.GetString("EmailConfirmed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the user&apos;s email address has been confirmed.
+        /// </summary>
+        internal static string EmailConfirmedHelp {
+            get {
+                return ResourceManager.GetString("EmailConfirmedHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email for the user.
+        /// </summary>
+        internal static string EmailHelp {
+            get {
+                return ResourceManager.GetString("EmailHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lockout Enabled.
+        /// </summary>
+        internal static string LockoutEnabled {
+            get {
+                return ResourceManager.GetString("LockoutEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the user can be locked out..
+        /// </summary>
+        internal static string LockoutEnabledHelp {
+            get {
+                return ResourceManager.GetString("LockoutEnabledHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lockout End.
+        /// </summary>
+        internal static string LockoutEnd {
+            get {
+                return ResourceManager.GetString("LockoutEnd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The end date for the user&apos;s lockout..
+        /// </summary>
+        internal static string LockoutEndHelp {
+            get {
+                return ResourceManager.GetString("LockoutEndHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Two Factor Enabled.
+        /// </summary>
+        internal static string TwoFactorEnabled {
+            get {
+                return ResourceManager.GetString("TwoFactorEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the user is configured to two factor authentication..
+        /// </summary>
+        internal static string TwoFactorEnabledHelp {
+            get {
+                return ResourceManager.GetString("TwoFactorEnabledHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Name.
+        /// </summary>
+        internal static string UserName {
+            get {
+                return ResourceManager.GetString("UserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name for the user.
+        /// </summary>
+        internal static string UserNameHelp {
+            get {
+                return ResourceManager.GetString("UserNameHelp", resourceCulture);
+            }
+        }
     }
 }

@@ -1,0 +1,7 @@
+﻿@page "/admin/roles/{RoleId}/detail"
+@attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
+
+<PageTitle>@Localizer["Title"]</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+

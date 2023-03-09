@@ -172,7 +172,7 @@ public partial class ClientsIndex
     /// <summary>
     /// This method performs a search of the clients.
     /// </summary>
-    /// <param name="element">The element to uses for the operation.</param>
+    /// <param name="element">The element to use for the operation.</param>
     /// <param name="searchString">The search string to use for the operation.</param>
     /// <returns><c>true</c> if a match was found; <c>false</c> otherwise.</returns>
     protected bool FilterFunc(
