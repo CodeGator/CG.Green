@@ -115,6 +115,15 @@ namespace CG.Green.Areas.Admin.Pages.Users.Panels {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Id.
+        /// </summary>
+        internal static string Id {
+            get {
+                return ResourceManager.GetString("Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Lockout Enabled.
         /// </summary>
         internal static string LockoutEnabled {

@@ -1,6 +1,9 @@
 ﻿
 namespace CG.Green.Areas.Admin.Pages.Users;
 
+/// <summary>
+/// This class is the code-behind for the <see cref="UsersDetail"/> page.
+/// </summary>
 public partial class UsersDetail
 {
 	// *******************************************************************

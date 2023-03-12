@@ -1,5 +1,6 @@
 ﻿global using AutoMapper;
 global using CG.Green.Areas.Admin.Pages.Clients.Dialogs;
+global using CG.Green.Areas.Admin.Pages.Roles.Dialogs;
 global using CG.Green.Areas.Admin.Pages.Users.Dialogs;
 global using CG.Green.Areas.Admin.Shared;
 global using CG.Green.Identity.Models;

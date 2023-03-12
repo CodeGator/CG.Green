@@ -1,5 +1,4 @@
 ﻿
-
 namespace CG.Green.Areas.Admin.Pages.Roles;
 
 /// <summary>
@@ -196,6 +195,13 @@ public partial class RolesDetail
 				UserName
 				);
 
+			// Update the claims in the api.
+			await GreenApi.RoleClaims.UpdateAsync(
+				dirtyModel,
+				_model.Claims,
+				UserName
+				);
+
 			// Log what we are about to do.
 			Logger.LogDebug(
 				"Loading data for the page."
@@ -291,6 +297,11 @@ public partial class RolesDetail
 
 				// Wrap the model.
 				_model = AutoMapper.Map<EditGreenRoleVM>(role);
+
+				// Add the claims.
+				_model.Claims = (await GreenApi.RoleClaims.FindByRoleIdAsync(
+					role.Id
+					)).ToList();
 			}
 			else
 			{

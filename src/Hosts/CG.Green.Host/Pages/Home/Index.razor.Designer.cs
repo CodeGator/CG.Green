@@ -88,6 +88,24 @@ namespace CG.Green.Host.Pages.Home {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Admin section with pages for clients, users, roles, etc..
+        /// </summary>
+        public static string Bullet11 {
+            get {
+                return ResourceManager.GetString("Bullet11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debugging section with pages for user claims, open API, health checks, etc..
+        /// </summary>
+        public static string Bullet12 {
+            get {
+                return ResourceManager.GetString("Bullet12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Written 100% in &lt;strong&gt;C#&lt;/strong&gt;, &lt;strong&gt;.NET 7.x&lt;/strong&gt;, and &lt;strong&gt;Blazor&lt;/strong&gt;.
         /// </summary>
         public static string Bullet2 {

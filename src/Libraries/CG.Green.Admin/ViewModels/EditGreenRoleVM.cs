@@ -26,5 +26,11 @@ public class EditGreenRoleVM
 	[Display(ShortName = "Name")]
 	public string Name { get; set; } = null!;
 
+	/// <summary>
+	/// This property contains the claims for the role.
+	/// </summary>
+	[Display(ShortName = "Claims")]
+	public List<GreenRoleClaim> Claims { get; set; } = new();
+
 	#endregion
 }

@@ -1,4 +1,6 @@
 ﻿
+
+
 namespace CG.Green.Areas.Admin.Pages.Roles;
 
 /// <summary>
@@ -225,7 +227,7 @@ public partial class RolesIndex
 			// Create the dialog parameters.
 			var parameters = new DialogParameters()
 			{
-				{ "Model", new NewGreenUserVM() }
+				{ "Model", new EditGreenRoleVM() }
 			};
 
 			// Log what we are about to do.
@@ -234,8 +236,8 @@ public partial class RolesIndex
 				);
 
 			// Create the dialog.
-			var dialog = Dialog.Show<NewUserDialog>(
-				Localizer["CreateUser"],
+			var dialog = Dialog.Show<EditRoleDialog>(
+				Localizer["CreateRole"],
 				parameters,
 				options
 				);
@@ -255,20 +257,19 @@ public partial class RolesIndex
 				);
 
 			// Recover the model.
-			var model = (NewGreenUserVM)result.Data;
+			var model = (EditGreenRoleVM)result.Data;
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Creating the new user."
+				"Creating the new role."
 				);
 
-			// Map the VM to an ASP.NET user.
-			var user = AutoMapper.Map<GreenUser>(model);
+			// Map the VM to an ASP.NET role.
+			var role = AutoMapper.Map<GreenRole>(model);
 
-			// Create the new user.
-			var newUser = await GreenApi.Users.CreateAsync(
-				user,
-				model.Password,
+			// Create the new role.
+			var newRole = await GreenApi.Roles.CreateAsync(
+				role,
 				UserName
 				);
 
@@ -279,7 +280,7 @@ public partial class RolesIndex
 
 			// Go to the detail page.
 			Navigation.NavigateTo(
-				$"/admin/users/{Uri.EscapeDataString(newUser.Id ?? "")}/detail"
+				$"/admin/roles/{Uri.EscapeDataString(newRole.Id ?? "")}/detail"
 				);
 		}
 		catch (Exception ex)
@@ -287,7 +288,7 @@ public partial class RolesIndex
 			// Log what happened.
 			Logger.LogError(
 				ex.GetBaseException(),
-				"Failed to create a user!"
+				"Failed to create a role!"
 				);
 
 			// Log what we are about to do.
@@ -301,7 +302,6 @@ public partial class RolesIndex
 				title: Localizer["Broke"]
 				);
 		}
-
 	}
 
 	// *******************************************************************

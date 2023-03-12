@@ -187,7 +187,9 @@ public partial class ClientsDetail
                 );
 
 			// Map back to the Duende model.
-			var dirtyModel = AutoMapper.Map<Client>(_model);
+			var dirtyModel = AutoMapper.Map<Client>(
+				_model
+				);
 
 			// Update the client in the api.
 			await GreenApi.Clients.UpdateAsync(

@@ -5,3 +5,38 @@
 
 <MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
 
+@if (_model is null)
+{
+    if (_isLoading)
+    {
+        <MudText Typo="Typo.h6" Color="Color.Primary">@Localizer["Loading"] ...</MudText>
+    }
+    else
+    {
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">@Localizer["NotFound"]</MudText>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => Navigation.NavigateTo("/admin/roles"))">@Localizer["BackToRoles"]</MudButton>
+    }
+}
+else
+{
+    <MudText Typo="Typo.h4">@Localizer["Title"]</MudText>
+    <MudText Class="py-5" Typo="Typo.body1">@Localizer["PageDesc"]: <b>@_model.Name</b></MudText>
+
+    <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">@Localizer["SaveChanges"]</MudButton>
+
+        <MudTabs>
+            <MudTabPanel Text=@Localizer["Settings"]>
+                <RoleSettingsPanel Model="@_model" />
+            </MudTabPanel>
+            <MudTabPanel Text=@Localizer["Claims"]>
+                <RoleClaimsPanel Model="@_model" />
+            </MudTabPanel>
+        </MudTabs>
+
+        <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">@Localizer["SaveChanges"]</MudButton>
+    </EditForm>
+}
+

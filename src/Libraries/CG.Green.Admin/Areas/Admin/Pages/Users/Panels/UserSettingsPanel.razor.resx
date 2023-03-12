@@ -135,6 +135,9 @@
   <data name="EmailHelp" xml:space="preserve">
     <value>Email for the user</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
   <data name="LockoutEnabled" xml:space="preserve">
     <value>Lockout Enabled</value>
   </data>

@@ -172,6 +172,13 @@ internal class GreenRoleManager : IGreenRoleManager
 
         try
         {
+			// Is the id field missing, or empty?
+			if (string.IsNullOrEmpty(greenRole.Id))
+			{
+				// Role Manager requires us to populate the id field.
+				greenRole.Id = $"{Guid.NewGuid()}";
+			}
+
             // Create the new role.
             var result = await _roleManager.CreateAsync(
                 greenRole

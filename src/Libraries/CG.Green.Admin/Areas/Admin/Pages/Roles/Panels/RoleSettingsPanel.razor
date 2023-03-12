@@ -1,0 +1,30 @@
+﻿<MudGrid>
+    <MudItem xs="12">&nbsp;</MudItem>
+    <MudItem xs="12">
+        <MudTextField ReadOnly
+                      DisableUnderLine
+                      Margin="Margin.Dense"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["Id"]
+                      Adornment="Adornment.End"
+                      AdornmentAriaLabel="copy id"
+                      AdornmentIcon="@Icons.Material.TwoTone.CopyAll"
+                      OnAdornmentClick="OnCopyRoleId"
+                      For="@(() => Model.Id)"
+                      @bind-Value="@Model.Id" />
+    </MudItem>
+    <MudItem xs="12">
+        <MudTextField AutoFocus
+                      Immediate
+                      Margin="Margin.Dense"
+                      Counter="@(Globals.Models.Roles.NameLength)"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["Name"]
+                      HelperText=@Localizer["NameHelp"]
+                      For="@(() => Model.Name)"
+                      @bind-Value="@Model.Name" />
+    </MudItem>
+    <MudItem xs="12">&nbsp;</MudItem>
+</MudGrid>

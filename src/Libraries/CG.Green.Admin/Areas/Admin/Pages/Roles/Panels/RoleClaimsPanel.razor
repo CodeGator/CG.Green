@@ -1,24 +1,7 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
-        <MudTextField AutoFocus
-                      Margin="Margin.Dense"
-                      Class="ml-auto"
-                      Variant="Variant.Outlined"
-                      Label=@Localizer["ClientClaimsPrefix"]
-                      HelperText=@Localizer["ClientClaimsPrefixHelp"]
-                      For="@(() => Model.ClientClaimsPrefix)"
-                      @bind-Value="@Model.ClientClaimsPrefix" />
-        </MudItem>
-    <MudItem xs="12">
-        <MudSwitch Label=@Localizer["AlwaysSendClientClaims"]
-                   Class="mt-2"
-                   Color="Color.Tertiary"
-                   @bind-Checked="@Model.AlwaysSendClientClaims" />
-        <MudText Class="ml-2 mb-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">@Localizer["AlwaysSendClientClaimsHelp"]</MudText>
-    </MudItem>
-    <MudItem xs="12">
-        <GroupBox Title=@Localizer["ClientClaims"]>
+        <GroupBox Title=@Localizer["Claims"]>
             <MudTable Items="Model.Claims"
                     Elevation="0"
                     Dense
@@ -39,13 +22,13 @@
                     <col />
                 </ColGroup>
                 <HeaderContent>
-                    <MudTh><MudTableSortLabel SortBy="new Func<ClientClaimVM, object>(x=>x.Type)">@Localizer["Type"]</MudTableSortLabel></MudTh>
-                    <MudTh><MudTableSortLabel SortBy="new Func<ClientClaimVM, object>(x=>x.Value)">@Localizer["Value"]</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<GreenRoleClaim, object>(x=>x.ClaimType)">@Localizer["Type"]</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<GreenRoleClaim, object>(x=>x.ClaimValue)">@Localizer["Value"]</MudTableSortLabel></MudTh>
                     <MudTh></MudTh>
                 </HeaderContent>
                 <RowTemplate Context="context2">
-                    <MudTd DataLabel=@Localizer["Type"]>@context2.Type</MudTd>
-                    <MudTd DataLabel=@Localizer["Value"]>@context2.Value</MudTd>
+                    <MudTd DataLabel=@Localizer["Type"]>@context2.ClaimType</MudTd>
+                    <MudTd DataLabel=@Localizer["Value"]>@context2.ClaimValue</MudTd>
                     <MudTd>
                         <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                         OnClick="() => OnDeleteClaimAsync(context2)"

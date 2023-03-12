@@ -117,25 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BackToRoles" xml:space="preserve">
-    <value>Back to Roles</value>
+  <data name="Id" xml:space="preserve">
+    <value>Identificación</value>
   </data>
-  <data name="Claims" xml:space="preserve">
-    <value>Claims</value>
+  <data name="Name" xml:space="preserve">
+    <value>Nombre</value>
   </data>
-  <data name="Loading" xml:space="preserve">
-    <value>Loading</value>
-  </data>
-  <data name="NotFound" xml:space="preserve">
-    <value>Ooops! we couldn't find that ASP.NET role!</value>
-  </data>
-  <data name="PageDesc" xml:space="preserve">
-    <value>Use this page to edit the ASP.NET role</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Role Details</value>
+  <data name="NameHelp" xml:space="preserve">
+    <value>El nombre del rol</value>
   </data>
 </root>

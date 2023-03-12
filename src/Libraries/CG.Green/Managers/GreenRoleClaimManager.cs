@@ -287,10 +287,24 @@ internal class GreenRoleClaimManager : IGreenRoleClaimManager
 
         try
         {
+			// Look for the tracked entity.
+			var trackedRole = await _roleManager.FindByIdAsync(
+				greenRole.Id
+				).ConfigureAwait(false);
+
+			// Did we fail to locate the entity?
+			if (trackedRole is null)
+			{
+				// Panic!!
+				throw new KeyNotFoundException(
+					message: $"role: {greenRole.Id} was not found!"
+					);
+			}
+
             // Get the role's existing claims.
             var existingClaims = (await _roleManager.GetClaimsAsync(
-                greenRole
-                )).ToList();
+				trackedRole
+				)).ToList();
 
             // Did we fail?
             if (!existingClaims.Any())
@@ -303,7 +317,7 @@ internal class GreenRoleClaimManager : IGreenRoleClaimManager
                 {
                     // Assign the claim to the role.
                     await _roleManager.AddClaimAsync(
-                        greenRole,
+						trackedRole,
                         new Claim(
                             roleClaim.ClaimType ?? "",
                             roleClaim.ClaimValue ?? ""
@@ -326,7 +340,7 @@ internal class GreenRoleClaimManager : IGreenRoleClaimManager
                 {
                     // Remove the claim from the role.
                     await _roleManager.RemoveClaimAsync(
-                        greenRole,
+						trackedRole,
                         new Claim(
                             roleClaim.Type ?? "",
                             roleClaim.Value ?? ""
@@ -344,7 +358,7 @@ internal class GreenRoleClaimManager : IGreenRoleClaimManager
                 {
                     // Assign the claim to the role.
                     await _roleManager.AddClaimAsync(
-                        greenRole,
+						trackedRole,
                         new Claim(
                             roleClaim.ClaimType ?? "",
                             roleClaim.ClaimValue ?? ""
@@ -354,7 +368,7 @@ internal class GreenRoleClaimManager : IGreenRoleClaimManager
             }
 
             // Return the result.
-            return greenRole;
+            return trackedRole;
         }
         catch (Exception ex)
         {

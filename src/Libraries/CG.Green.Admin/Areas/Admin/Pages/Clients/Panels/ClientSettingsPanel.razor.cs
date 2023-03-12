@@ -110,7 +110,7 @@ public partial class ClientSettingsPanel
 			// Log what happened.
 			Logger.LogError(
 				ex.GetBaseException(),
-				"Failed to add a secret!"
+				"Failed to copy the id!"
 				);
 
 			// Tell the world what happened.

@@ -1,10 +1,10 @@
 ﻿
-namespace CG.Green.Areas.Admin.Pages.Users.Panels;
+namespace CG.Green.Areas.Admin.Pages.Roles.Panels;
 
 /// <summary>
-/// This class is the code-behind for the <see cref="UserSettingsPanel"/> component.
+/// This class is the code-behind for the <see cref="RoleSettingsPanel"/> page.
 /// </summary>
-public partial class UserSettingsPanel
+public partial class RoleSettingsPanel
 {
 	// *******************************************************************
 	// Fields.
@@ -29,7 +29,7 @@ public partial class UserSettingsPanel
 	/// This property contains the model for the component.
 	/// </summary>
 	[Parameter]
-	public EditGreenUserVM Model { get; set; } = null!;
+	public EditGreenRoleVM Model { get; set; } = null!;
 
 	/// <summary>
 	/// This property contains the MudBlazor them for the component.
@@ -41,7 +41,7 @@ public partial class UserSettingsPanel
 	/// This property contains the localizer for the component.
 	/// </summary>
 	[Inject]
-	protected IStringLocalizer<UserSettingsPanel> Localizer { get; set; } = null!;
+	protected IStringLocalizer<RoleSettingsPanel> Localizer { get; set; } = null!;
 
 	/// <summary>
 	/// This property contains the snackbar service for the component.
@@ -65,7 +65,7 @@ public partial class UserSettingsPanel
 	/// This property contains the logger for the component.
 	/// </summary>
 	[Inject]
-	protected ILogger<UserSettingsPanel> Logger { get; set; } = null!;
+	protected ILogger<RoleSettingsPanel> Logger { get; set; } = null!;
 
 	#endregion
 
@@ -75,9 +75,9 @@ public partial class UserSettingsPanel
 
 	#region Protected methods
 	/// <summary>
-	/// This method copies the user id to the cipboard.
+	/// This method copies the role id to the cipboard.
 	/// </summary>
-	protected async Task OnCopyUserId()
+	protected async Task OnCopyRoleId()
 	{
 		try
 		{
@@ -89,7 +89,7 @@ public partial class UserSettingsPanel
 
 			// Log what we are about to do.
 			Logger.LogDebug(
-				"Copying user id to the clipboard"
+				"Copying role id to the clipboard"
 				);
 
 			// Copy the value.
@@ -123,4 +123,3 @@ public partial class UserSettingsPanel
 
 	#endregion
 }
-

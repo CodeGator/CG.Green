@@ -1,8 +1,22 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
+        <MudTextField ReadOnly
+                      DisableUnderLine
+                      Margin="Margin.Dense"
+                      Class="ml-auto"
+                      Variant="Variant.Outlined"
+                      Label=@Localizer["Id"]
+                      Adornment="Adornment.End"
+                      AdornmentAriaLabel="copy id"
+                      AdornmentIcon="@Icons.Material.TwoTone.CopyAll"
+                      OnAdornmentClick="OnCopyUserId"
+                      For="@(() => Model.Id)"
+                      @bind-Value="@Model.Id" />
+        </MudItem>
+    <MudItem xs="12">
         <MudTextField AutoFocus
-                      Immediate
+                      sImmediate
                       Margin="Margin.Dense"
                       Counter="@(Globals.Models.Users.UserNameLength)"
                       Class="ml-auto"

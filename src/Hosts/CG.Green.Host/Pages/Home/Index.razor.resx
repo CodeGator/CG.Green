@@ -126,6 +126,12 @@
   <data name="Bullet10" xml:space="preserve">
     <value>* (Additional third party license(s) may apply. CodeGator does not grant permissions to any third party license(s)</value>
   </data>
+  <data name="Bullet11" xml:space="preserve">
+    <value>Admin section with pages for clients, users, roles, etc.</value>
+  </data>
+  <data name="Bullet12" xml:space="preserve">
+    <value>Debugging section with pages for user claims, open API, health checks, etc.</value>
+  </data>
   <data name="Bullet2" xml:space="preserve">
     <value>Written 100% in &lt;strong&gt;C#&lt;/strong&gt;, &lt;strong&gt;.NET 7.x&lt;/strong&gt;, and &lt;strong&gt;Blazor&lt;/strong&gt;</value>
   </data>

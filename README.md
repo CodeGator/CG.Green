@@ -10,7 +10,7 @@
 
 Green is an idea for an identity microservice. Essentially, we stood up the ASP.NET and Duende libraries as a Blazor microservice, then we added some additional administrative and nice-to-have debugging features.
 
-Our main goal is to produce a tool that can be dropped into production, cheaply and easily, to provide secure, reliable identity services - without costing a fortune to operate or requiring a PHD to understand. 
+Our main goal is to produce a tool that can be dropped into production, cheaply and easily, to provide extensible, secure, reliable identity services - without costing a fortune to operate or requiring a PHD to understand. 
 
 We chose to build on Duende and ASP.NET because they are proven technologies and offer some of the most flexibility, along with the lowest overall cost of ownership.
 
@@ -18,7 +18,7 @@ We chose to build on Duende and ASP.NET because they are proven technologies and
 
 The ASP.NET and Duende portions are hosted and working perfectly. 
 
-The admin UI is coming along, slowly. This piece alone is a hefty undertaking, so it will take time to finish.
+The admin UI is coming along, nicely. 
 
 The identity UI is functional, but generally needs some love and attention.
 
