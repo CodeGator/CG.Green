@@ -554,6 +554,102 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.html",
+          "hash": "z4+yhlYZ3F0dd0WGgsZD7judwdBBUF/0mN2Z9JRZo5Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.html",
+          "hash": "C1EXaAORA8tFcRHd1k9XBvWVLHtuPxmdchloSjGzLcE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.html",
+          "hash": "covQfdaWstKZtZZYgZwBpD2w/W9GO7nxKfaTiIwQPYk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.html",
+          "hash": "NqZybdp5wK2hoyinNUzB9rKQow6r35mYJGS8EQHMDNg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html",
+          "hash": "euz7VihBQErsuUP7cTVD6ECAYXlKmVYxnUwuHTici8I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.html",
+          "hash": "TJtBJGuylPwOqvf0p635kHLQpnLk3Iuo07WgdbGgVm0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html",
+          "hash": "E2RNqnYRV6lrlhrpXeYduROsR4S7+MixQNH5yNUs9vE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.Panels.html",
+          "hash": "gZUqvEX6LouaDlM1cxAR5MDDO53wMM92FvGkAHy4sZc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail.yml",
       "output": {
         ".html": {
@@ -570,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html",
-          "hash": "PaSkjZlyx9AyCr0bgy8ta8+qoYu+rPwvnV+f5gz0bXE="
+          "hash": "lov0WWIKmNBivC6oTRnpCh2Mlre7PuxQ9UhVmXY/Ocs="
         }
       },
       "is_incremental": false,
@@ -650,11 +746,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Panels.UserClaimsPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Panels.UserClaimsPanel.html",
+          "hash": "oAf8OTyZDX79fhQM6OaG+JJcpZr81ZOhWC+PHl5B+gA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Panels.UserSettingsPanel.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Panels.UserSettingsPanel.html",
-          "hash": "WhIgSiXudUhKcMc3p1qXPcpA0vtzz+I+cgg4z62oK/U="
+          "hash": "ITHlT4VH9FcTcrecKLwqrtoSBT88/gRjDvcGni7xeCI="
         }
       },
       "is_incremental": false,
@@ -666,7 +774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Panels.UserSettingsPanel_razor.html",
-          "hash": "JKVBqH2oSZCbxrPAlDNRtBNwRuGqupkHV3OttOv9j5s="
+          "hash": "H9eolK/Ifn/alyt8z93s9SV+tES8+PWLQ5PMFy1H5p4="
         }
       },
       "is_incremental": false,
@@ -678,7 +786,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.Panels.html",
-          "hash": "wjkpV9gNXFe8YaMndkQnTM8s5TxayjDJkhCNqMlz8HM="
+          "hash": "qgkAEhqViJlFCVB+v0EEr8dacw/UK4Yx7thfbXVLmLY="
         }
       },
       "is_incremental": false,
@@ -690,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.UsersDetail.html",
-          "hash": "qMZrjD+M5kwlKAV2JkxliIkX2PhJgGqo7iiNKYK9jAY="
+          "hash": "mmSylqF4RaVJ9um/zL2yDgZYuRGAon+95P0GjLRJHdA="
         }
       },
       "is_incremental": false,
@@ -738,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.html",
-          "hash": "Lwr8LhPt7c2IhECZ0qGmbH6NpMEtR5fJ1QNkoSMNLso="
+          "hash": "Nm/Jb1PUDNq92/RwtfszCgZvDCgzY/09yGAiOupCj64="
         }
       },
       "is_incremental": false,
@@ -2214,7 +2322,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Host.Pages.Home.Index_razor.html",
-          "hash": "BOUawxbDG3OGVUjPzzzmombTraV1RdIKKyRpgzb0JlI="
+          "hash": "KK1VSrJuvFfM4OC/pQmC+agM9qrULx5K0SL8LDFrmEc="
         }
       },
       "is_incremental": false,
@@ -3234,7 +3342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.ViewModels.EditGreenRoleVM.html",
-          "hash": "8TnZ3xoEFICw/yZhpYSjJE4/OEWpvmaqafQPjC4yBYE="
+          "hash": "Uo5xeWbMjywzC60NkhS+8/5fRMuKd1zHVXHPfbhpeDQ="
         }
       },
       "is_incremental": false,
@@ -3606,7 +3714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Gul0r+3aZLyxTQY6dy93glMA71v4rQtJEn0Q/0JCVkE="
+          "hash": "ikHpfLyvOanjlcodvRlY+7ImLs14b4+9zqoHAK3Yhtk="
         }
       },
       "is_incremental": false,
@@ -3725,7 +3833,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 299,
+          "total_file_count": 308,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
