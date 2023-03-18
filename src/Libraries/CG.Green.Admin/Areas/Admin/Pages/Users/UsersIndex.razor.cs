@@ -1,5 +1,4 @@
 ﻿
-
 namespace CG.Green.Areas.Admin.Pages.Users;
 
 /// <summary>
@@ -40,6 +39,12 @@ public partial class UsersIndex
 	// *******************************************************************
 
 	#region Properties
+
+	/// <summary>
+	/// This property contains the feature manager for this page.
+	/// </summary>
+	[Inject]
+	protected IFeatureManager Features { get; set; } = null!;
 
 	/// <summary>
 	/// This property contains the green api for this page.

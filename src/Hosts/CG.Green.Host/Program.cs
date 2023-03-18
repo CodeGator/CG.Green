@@ -1,3 +1,4 @@
+using Microsoft.FeatureManagement;
 using Serilog;
 
 // Uncomment this line to help troubleshoot startup problems.
@@ -42,9 +43,10 @@ try
     builder.Services.AddRazorPages();
     builder.Services.AddServerSideBlazor();
     builder.Services.AddHttpContextAccessor();
-
-    // Log what we are about to do.
-    BootstrapLogger.Instance().LogDebug(
+	builder.Services.AddFeatureManagement(builder.Configuration.GetSection("Features"));
+	
+	// Log what we are about to do.
+	BootstrapLogger.Instance().LogDebug(
         "Adding MudBlazor startup"
         );
 

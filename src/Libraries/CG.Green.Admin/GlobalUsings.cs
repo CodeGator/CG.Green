@@ -18,3 +18,4 @@ global using Microsoft.Extensions.Logging;
 global using MudBlazor;
 global using MudBlazor.Utilities;
 global using System.ComponentModel.DataAnnotations;
+global using Microsoft.FeatureManagement;
