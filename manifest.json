@@ -822,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Green.Areas.Admin.Pages.Users.UsersIndex.html",
-          "hash": "Np7cmYwxoJ954IU4oc29vJaElkMWOzamzoHgH+Z6e/0="
+          "hash": "8w6cy/4Zf27+eoDJ7XUBAY3Af/30KOgP/lVmuUSi7rI="
         }
       },
       "is_incremental": false,
@@ -3590,11 +3590,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.yml",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.html",
-          "hash": "hV6EBNpW5g6DNPXm2xvq9PejRq1fT/93qWScQgyyzyY="
+          "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.html",
+          "hash": "vOQk9y3AnSRRtRO44nAnMHUae07T/4Iv/wmQdz6kT5M="
         }
       },
       "is_incremental": false,
@@ -3602,11 +3602,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.yml",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.html",
-          "hash": "gAu5BAv0uMTePjaufPRygA6mnrVVLTZPWmNXARRq4oQ="
+          "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.html",
+          "hash": "3t+UW/G5FjKtkK6h0s4ttv/SzqUBg6hX10EYwdEQNCE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.html",
+          "hash": "uSSZZ+lyV/N6JI47QvwH8998TiFaAUoDOGTQtsoqd3E="
         }
       },
       "is_incremental": false,
@@ -3678,7 +3690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.html",
-          "hash": "M3tpMHAzrbtasxzX1Jr7pz7XI13K6yzI/fkIPLqHa1k="
+          "hash": "swckFHg6mXYXzTl1isRTqtX7qOZppnv9i7dr/p0hH7s="
         }
       },
       "is_incremental": false,
@@ -3714,7 +3726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ikHpfLyvOanjlcodvRlY+7ImLs14b4+9zqoHAK3Yhtk="
+          "hash": "IM1w92++R0yI37OE+qzLrIAKfxmYTtMBYJW+lSnsYnU="
         }
       },
       "is_incremental": false,
@@ -3833,7 +3845,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 308,
+          "total_file_count": 309,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -8909,6 +8909,19 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Users.UsersIndex.Dialog
   nameWithType: UsersIndex.Dialog
+- uid: CG.Green.Areas.Admin.Pages.Users.UsersIndex.Features
+  name: Features
+  href: api/CG.Green.Areas.Admin.Pages.Users.UsersIndex.html#CG_Green_Areas_Admin_Pages_Users_UsersIndex_Features
+  commentId: P:CG.Green.Areas.Admin.Pages.Users.UsersIndex.Features
+  fullName: CG.Green.Areas.Admin.Pages.Users.UsersIndex.Features
+  nameWithType: UsersIndex.Features
+- uid: CG.Green.Areas.Admin.Pages.Users.UsersIndex.Features*
+  name: Features
+  href: api/CG.Green.Areas.Admin.Pages.Users.UsersIndex.html#CG_Green_Areas_Admin_Pages_Users_UsersIndex_Features_
+  commentId: Overload:CG.Green.Areas.Admin.Pages.Users.UsersIndex.Features
+  isSpec: "True"
+  fullName: CG.Green.Areas.Admin.Pages.Users.UsersIndex.Features
+  nameWithType: UsersIndex.Features
 - uid: CG.Green.Areas.Admin.Pages.Users.UsersIndex.FilterFunc(ListGreenUserVM,System.String)
   name: FilterFunc(ListGreenUserVM, String)
   href: api/CG.Green.Areas.Admin.Pages.Users.UsersIndex.html#CG_Green_Areas_Admin_Pages_Users_UsersIndex_FilterFunc_ListGreenUserVM_System_String_
@@ -22104,50 +22117,72 @@ references:
   isSpec: "True"
   fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions007.AddGreenIdentity
   nameWithType: WebApplicationBuilderExtensions007.AddGreenIdentity
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012
-  name: WebApplicationBuilderExtensions012
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.html
-  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012
-  nameWithType: WebApplicationBuilderExtensions012
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.AddGreenAdministration(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008
+  name: WebApplicationBuilderExtensions008
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.html
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008
+  nameWithType: WebApplicationBuilderExtensions008
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.AddMySqlDataAccess(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+  name: AddMySqlDataAccess(WebApplicationBuilder, String, Nullable<ILogger>)
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions008_AddMySqlDataAccess_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.AddMySqlDataAccess(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+  name.vb: AddMySqlDataAccess(WebApplicationBuilder, String, Nullable(Of ILogger))
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.AddMySqlDataAccess(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable<ILogger>)
+  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.AddMySqlDataAccess(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable(Of ILogger))
+  nameWithType: WebApplicationBuilderExtensions008.AddMySqlDataAccess(WebApplicationBuilder, String, Nullable<ILogger>)
+  nameWithType.vb: WebApplicationBuilderExtensions008.AddMySqlDataAccess(WebApplicationBuilder, String, Nullable(Of ILogger))
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.AddMySqlDataAccess*
+  name: AddMySqlDataAccess
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions008_AddMySqlDataAccess_
+  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.AddMySqlDataAccess
+  isSpec: "True"
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions008.AddMySqlDataAccess
+  nameWithType: WebApplicationBuilderExtensions008.AddMySqlDataAccess
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009
+  name: WebApplicationBuilderExtensions009
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.html
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009
+  nameWithType: WebApplicationBuilderExtensions009
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.AddGreenAdministration(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
   name: AddGreenAdministration(WebApplicationBuilder, String, Nullable<ILogger>)
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions012_AddGreenAdministration_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
-  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.AddGreenAdministration(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions009_AddGreenAdministration_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.AddGreenAdministration(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
   name.vb: AddGreenAdministration(WebApplicationBuilder, String, Nullable(Of ILogger))
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.AddGreenAdministration(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable<ILogger>)
-  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.AddGreenAdministration(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable(Of ILogger))
-  nameWithType: WebApplicationBuilderExtensions012.AddGreenAdministration(WebApplicationBuilder, String, Nullable<ILogger>)
-  nameWithType.vb: WebApplicationBuilderExtensions012.AddGreenAdministration(WebApplicationBuilder, String, Nullable(Of ILogger))
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.AddGreenAdministration*
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.AddGreenAdministration(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable<ILogger>)
+  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.AddGreenAdministration(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable(Of ILogger))
+  nameWithType: WebApplicationBuilderExtensions009.AddGreenAdministration(WebApplicationBuilder, String, Nullable<ILogger>)
+  nameWithType.vb: WebApplicationBuilderExtensions009.AddGreenAdministration(WebApplicationBuilder, String, Nullable(Of ILogger))
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.AddGreenAdministration*
   name: AddGreenAdministration
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions012_AddGreenAdministration_
-  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.AddGreenAdministration
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions009_AddGreenAdministration_
+  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.AddGreenAdministration
   isSpec: "True"
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions012.AddGreenAdministration
-  nameWithType: WebApplicationBuilderExtensions012.AddGreenAdministration
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015
-  name: WebApplicationBuilderExtensions015
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.html
-  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015
-  nameWithType: WebApplicationBuilderExtensions015
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.AddGreenLocalization(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions009.AddGreenAdministration
+  nameWithType: WebApplicationBuilderExtensions009.AddGreenAdministration
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010
+  name: WebApplicationBuilderExtensions010
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.html
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010
+  nameWithType: WebApplicationBuilderExtensions010
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.AddGreenLocalization(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
   name: AddGreenLocalization(WebApplicationBuilder, String, Nullable<ILogger>)
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions015_AddGreenLocalization_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
-  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.AddGreenLocalization(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions010_AddGreenLocalization_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.AddGreenLocalization(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
   name.vb: AddGreenLocalization(WebApplicationBuilder, String, Nullable(Of ILogger))
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.AddGreenLocalization(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable<ILogger>)
-  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.AddGreenLocalization(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable(Of ILogger))
-  nameWithType: WebApplicationBuilderExtensions015.AddGreenLocalization(WebApplicationBuilder, String, Nullable<ILogger>)
-  nameWithType.vb: WebApplicationBuilderExtensions015.AddGreenLocalization(WebApplicationBuilder, String, Nullable(Of ILogger))
-- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.AddGreenLocalization*
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.AddGreenLocalization(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable<ILogger>)
+  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.AddGreenLocalization(Microsoft.AspNetCore.Builder.WebApplicationBuilder, System.String, System.Nullable(Of ILogger))
+  nameWithType: WebApplicationBuilderExtensions010.AddGreenLocalization(WebApplicationBuilder, String, Nullable<ILogger>)
+  nameWithType.vb: WebApplicationBuilderExtensions010.AddGreenLocalization(WebApplicationBuilder, String, Nullable(Of ILogger))
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.AddGreenLocalization*
   name: AddGreenLocalization
-  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions015_AddGreenLocalization_
-  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.AddGreenLocalization
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions010_AddGreenLocalization_
+  commentId: Overload:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.AddGreenLocalization
   isSpec: "True"
-  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions015.AddGreenLocalization
-  nameWithType: WebApplicationBuilderExtensions015.AddGreenLocalization
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions010.AddGreenLocalization
+  nameWithType: WebApplicationBuilderExtensions010.AddGreenLocalization
 - uid: Microsoft.AspNetCore.Builder.WebApplicationExtensions001
   name: WebApplicationExtensions001
   href: api/Microsoft.AspNetCore.Builder.WebApplicationExtensions001.html
