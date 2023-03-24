@@ -356,10 +356,24 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
 
         try
         {
+			// Find the tracked entity.
+			var trackedUser = await _signInManager.UserManager.FindByIdAsync(
+				greenUser.Id
+				).ConfigureAwait(false);
+
+			// Did we fail?
+			if (trackedUser is null)
+			{
+				// Panic!!
+				throw new KeyNotFoundException(
+					$"Failed to find user: {greenUser.Id}"
+				);
+			}
+
             // Get the user's existing claims.
             var existingClaims = (await _signInManager.UserManager.GetClaimsAsync(
-                greenUser
-                )).ToList();
+				trackedUser
+				)).ToList();
 
             // Did we fail?
             if (!existingClaims.Any())
@@ -372,7 +386,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
                 {
                     // Assign the claim to the user.
                     await _signInManager.UserManager.AddClaimAsync(
-                        greenUser,
+						trackedUser,
                         new Claim(
                             userClaim.ClaimType ?? "",
                             userClaim.ClaimValue ?? ""
@@ -387,7 +401,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
 
                 // Find any claims that were deleted.
                 var deletedClaims = existingClaims.Where(p1 =>
-                    userClaims.All(p2 => p2.GetHashCode() != p1.GetHashCode())
+                    userClaims.All(p2 => p2.ClaimType != p1.Type)
                     ).ToList();
 
                 // Loop through the deleted claims.
@@ -395,7 +409,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
                 {
                     // Remove the claim from the user.
                     await _signInManager.UserManager .RemoveClaimAsync(
-                        greenUser,
+						trackedUser,
                         new Claim(
                             userClaim.Type ?? "",
                             userClaim.Value ?? ""
@@ -405,7 +419,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
 
                 // Find any claims that were added.
                 var addedClaims = userClaims.Where(p1 =>
-                    existingClaims.All(p2 => p2.GetHashCode() != p1.GetHashCode())
+                    existingClaims.All(p2 => p2.Type != p1.ClaimType)
                     ).ToList();
 
                 // Loop through the added claims.
@@ -413,7 +427,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
                 {
                     // Assign the claim to the user.
                     await _signInManager.UserManager.AddClaimAsync(
-                        greenUser,
+						trackedUser,
                         new Claim(
                             userClaim.ClaimType ?? "",
                             userClaim.ClaimValue ?? ""
@@ -423,7 +437,7 @@ internal class GreenUserClaimManager : IGreenUserClaimManager
             }
 
             // Return the result.
-            return greenUser;
+            return trackedUser;
         }
         catch (Exception ex)
         {

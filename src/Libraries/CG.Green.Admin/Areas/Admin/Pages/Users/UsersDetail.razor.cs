@@ -204,6 +204,23 @@ public partial class UsersDetail
 
 			// Log what we are about to do.
 			Logger.LogDebug(
+				"Saving the claims changes"
+				);
+
+			// Map back to the ASP.NET model.
+			var dirtyClaims = _model.Claims.Select(x =>
+				AutoMapper.Map<GreenUserClaim>(x)
+				);
+
+			// Update the claims in the api.
+			await GreenApi.UserClaims.UpdateAsync(
+				dirtyModel,
+				dirtyClaims,
+				UserName
+				);
+
+			// Log what we are about to do.
+			Logger.LogDebug(
 				"Loading data for the page."
 				);
 
@@ -297,6 +314,15 @@ public partial class UsersDetail
 
 				// Wrap the model.
 				_model = AutoMapper.Map<EditGreenUserVM>(user);
+
+				// Did we succeed?
+				if (_model is not null)
+				{
+					// Convert the associated claims.
+					_model.Claims = (await GreenApi.UserClaims.FindByUserIdAsync(UserId))
+						.Select(x => AutoMapper.Map<EditUserClaimVM>(x))
+						.ToList();
+				}
 			}
 			else
 			{

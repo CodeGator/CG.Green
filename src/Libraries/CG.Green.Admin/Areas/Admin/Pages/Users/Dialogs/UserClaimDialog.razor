@@ -1,0 +1,35 @@
+﻿<MudDialog>
+    <DialogContent>
+        <EditForm Model="@Model" OnValidSubmit="OnValidSubmit">
+            <MudCard Outlined>
+                <MudCardContent>
+                    <DataAnnotationsValidator />
+                    <MudTextField AutoFocus
+                                  Required
+                                  Immediate
+                                  OnlyValidateIfDirty
+                                  Margin="Margin.Dense"
+                                  Counter="@(Globals.Models.Claims.TypeLength)"
+                                  Variant="Variant.Outlined"
+                                  Label=@Localizer["Type"]
+                                  For="@(() => Model.ClaimType)"
+                                  @bind-Value="@Model.ClaimType"
+                                  Class="ml-auto" />
+                    <MudTextField Immediate
+                                  OnlyValidateIfDirty
+                                  Margin="Margin.Dense"
+                                  Counter="@(Globals.Models.Claims.ValueLength)"
+                                  Variant="Variant.Outlined"
+                                  Label=@Localizer["Value"]
+                                  For="@(() => Model.ClaimValue)"
+                                  @bind-Value="@Model.ClaimValue"
+                                  Class="ml-auto" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">@Localizer["Cancel"]</MudButton>
+                    <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">@Localizer["Save"]</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </DialogContent>
+</MudDialog>

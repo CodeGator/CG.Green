@@ -67,6 +67,8 @@ public static class WebApplicationBuilderExtensions009
 			cfg.CreateMap<GreenUser, NewGreenUserVM>().ReverseMap();
 			cfg.CreateMap<GreenUser, EditGreenUserVM>().ReverseMap();
 
+			cfg.CreateMap<GreenUserClaim, EditUserClaimVM>().ReverseMap();
+
 			cfg.CreateMap<GreenRole, ListGreenRoleVM>().ReverseMap();
 			cfg.CreateMap<GreenRole, EditGreenRoleVM>().ReverseMap();
 		});

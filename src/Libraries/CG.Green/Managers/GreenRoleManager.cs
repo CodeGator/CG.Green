@@ -91,8 +91,10 @@ internal class GreenRoleManager : IGreenRoleManager
         }
     }
 
-    /// <inheritdoc/>
-    public virtual Task<bool> AnyByNameAsync(
+	// *******************************************************************
+
+	/// <inheritdoc/>
+	public virtual Task<bool> AnyByNameAsync(
        string roleName,
        CancellationToken cancellationToken = default
        )

@@ -1,7 +1,55 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
-
-
+    <MudItem xs="12">
+        <GroupBox Title=@Localizer["UserClaims"]>
+            <MudTable Items="Model.Claims"
+                    Elevation="0"
+                    Dense
+                    Striped
+                    Virtualize
+                    Loading="@_isBusy">
+                <ToolBarContent>
+                    <MudButton StartIcon="@Icons.Material.Outlined.Create"
+                                Variant="Variant.Filled"
+                                Disabled="@_isBusy"
+                                Color="Color.Secondary"
+                                OnClick="OnCreateClaimAsync">@Localizer["Create"]</MudButton>
+                    <MudSpacer />
+                </ToolBarContent>
+                <ColGroup>
+                    <col style="width: 42%" />
+                    <col style="width: 42%" />
+                    <col />
+                </ColGroup>
+                <HeaderContent>
+                    <MudTh><MudTableSortLabel SortBy="new Func<EditUserClaimVM, object>(x=>x.ClaimType)">@Localizer["Type"]</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<EditUserClaimVM, object>(x=>x.ClaimValue)">@Localizer["Value"]</MudTableSortLabel></MudTh>
+                    <MudTh></MudTh>
+                </HeaderContent>
+                <RowTemplate Context="context2">
+                    <MudTd DataLabel=@Localizer["Type"]>@context2.ClaimType</MudTd>
+                    <MudTd DataLabel=@Localizer["Value"]>@context2.ClaimValue</MudTd>
+                    <MudTd>
+                        <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                        OnClick="() => OnDeleteClaimAsync(context2)"
+                                        Disabled="@_isBusy" />
+                        <MudIconButton Icon="@Icons.Material.Outlined.Edit"
+                                        OnClick="() => OnEditClaimAsync(context2)"
+                                        Disabled="@_isBusy" />
+                    </MudTd>
+                </RowTemplate>
+                <NoRecordsContent>
+                    @Localizer["NoClaims"]
+                </NoRecordsContent>
+                <LoadingContent>
+                    @Localizer["LoadingClaims"] ...
+                </LoadingContent>
+                <PagerContent>
+                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                </PagerContent>
+            </MudTable>
+        </GroupBox>
+    </MudItem>
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>
 

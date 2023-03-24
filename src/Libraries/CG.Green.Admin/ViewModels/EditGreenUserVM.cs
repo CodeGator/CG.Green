@@ -68,5 +68,11 @@ public class EditGreenUserVM
 	[Display(ShortName = "Email")]
 	public string Email { get; set; } = null!;
 
+	/// <summary>
+	/// This property contains the claims for the user.
+	/// </summary>
+	[Display(ShortName = "Claims")]
+	public List<EditUserClaimVM> Claims { get; set; } = new();
+
 	#endregion
 }

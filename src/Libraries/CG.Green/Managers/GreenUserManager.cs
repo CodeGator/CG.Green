@@ -1,4 +1,6 @@
 ﻿
+using CG.Green.Identity.Models;
+
 namespace CG.Green.Managers;
 
 /// <summary>
@@ -325,10 +327,35 @@ internal class GreenUserManager : IGreenUserManager
 
         try
         {
-            // Update the user.
-            var result = await _signInManager.UserManager.UpdateAsync(
-                greenUser
-                ).ConfigureAwait(false);
+			// Look for the tracked instance.
+			var trackedUser = await _signInManager.UserManager.FindByIdAsync(
+				greenUser.Id
+				);
+
+			// Did we fail?
+			if (trackedUser is null)
+			{
+				// Panic!!
+				throw new KeyNotFoundException(
+					$"User: {greenUser.Id} was not found!"
+					);
+			}
+
+			// Update the properties.
+			trackedUser.Email = greenUser.Email;
+			trackedUser.NormalizedEmail = greenUser.Email?.ToUpper();
+			trackedUser.UserName = greenUser.UserName;
+			trackedUser.NormalizedUserName = greenUser.UserName?.ToUpper();
+			trackedUser.LockoutEnabled = greenUser.LockoutEnabled;
+			trackedUser.LockoutEnd = greenUser.LockoutEnd;
+			trackedUser.EmailConfirmed = greenUser.EmailConfirmed;
+			trackedUser.AccessFailedCount = greenUser.AccessFailedCount;	
+			trackedUser.TwoFactorEnabled = greenUser.TwoFactorEnabled;
+
+			// Update the user.
+			var result = await _signInManager.UserManager.UpdateAsync(
+				trackedUser
+				).ConfigureAwait(false);
 
             // Did we fail?
             if (!result.Succeeded)
@@ -339,22 +366,8 @@ internal class GreenUserManager : IGreenUserManager
                     );
             }
 
-            // Look for the user.
-            var user = await _signInManager.UserManager.FindByEmailAsync(
-                greenUser.Email ?? ""
-                ).ConfigureAwait(false);
-
-            // Did we fail?
-            if (user is null)
-            {
-                // Panic!!
-                throw new KeyNotFoundException(
-                    $"Failed to find user: {greenUser.Email}"
-                    );
-            }
-
             // Return the results.
-            return user;
+            return trackedUser;
         }
         catch (Exception ex)
         {
