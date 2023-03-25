@@ -2408,19 +2408,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.Cancel
   nameWithType: EditRoleDialog.Cancel
-- uid: CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.Localizer
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.html#CG_Green_Areas_Admin_Pages_Roles_Dialogs_EditRoleDialog_Localizer
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.Localizer
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.Localizer
-  nameWithType: EditRoleDialog.Localizer
-- uid: CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.Localizer*
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.html#CG_Green_Areas_Admin_Pages_Roles_Dialogs_EditRoleDialog_Localizer_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.Localizer
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.Localizer
-  nameWithType: EditRoleDialog.Localizer
 - uid: CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.EditRoleDialog.html#CG_Green_Areas_Admin_Pages_Roles_Dialogs_EditRoleDialog_Logger
@@ -2505,19 +2492,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.Dialog
   nameWithType: RoleClaimDialog.Dialog
-- uid: CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.Localizer
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.html#CG_Green_Areas_Admin_Pages_Roles_Dialogs_RoleClaimDialog_Localizer
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.Localizer
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.Localizer
-  nameWithType: RoleClaimDialog.Localizer
-- uid: CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.Localizer*
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.html#CG_Green_Areas_Admin_Pages_Roles_Dialogs_RoleClaimDialog_Localizer_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.Localizer
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.Localizer
-  nameWithType: RoleClaimDialog.Localizer
 - uid: CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Pages.Roles.Dialogs.RoleClaimDialog.html#CG_Green_Areas_Admin_Pages_Roles_Dialogs_RoleClaimDialog_Logger
@@ -2601,19 +2575,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Dialog
   nameWithType: RoleClaimsPanel.Dialog
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Localizer
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_Localizer
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Localizer
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Localizer
-  nameWithType: RoleClaimsPanel.Localizer
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Localizer*
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_Localizer_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Localizer
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Localizer
-  nameWithType: RoleClaimsPanel.Localizer
 - uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_Logger
@@ -2705,63 +2666,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel.Theme
   nameWithType: RoleClaimsPanel.Theme
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor
-  name: RoleClaimsPanel_razor
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html
-  commentId: T:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor
-  nameWithType: RoleClaimsPanel_razor
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.#ctor
-  name: RoleClaimsPanel_razor()
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_razor__ctor
-  commentId: M:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.#ctor
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.RoleClaimsPanel_razor()
-  nameWithType: RoleClaimsPanel_razor.RoleClaimsPanel_razor()
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.#ctor*
-  name: RoleClaimsPanel_razor
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_razor__ctor_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.#ctor
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.RoleClaimsPanel_razor
-  nameWithType: RoleClaimsPanel_razor.RoleClaimsPanel_razor
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.Culture
-  name: Culture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_razor_Culture
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.Culture
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.Culture
-  nameWithType: RoleClaimsPanel_razor.Culture
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.Culture*
-  name: Culture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_razor_Culture_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.Culture
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.Culture
-  nameWithType: RoleClaimsPanel_razor.Culture
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.resourceCulture
-  name: resourceCulture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_razor_resourceCulture
-  commentId: F:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.resourceCulture
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.resourceCulture
-  nameWithType: RoleClaimsPanel_razor.resourceCulture
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.resourceMan
-  name: resourceMan
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_razor_resourceMan
-  commentId: F:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.resourceMan
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.resourceMan
-  nameWithType: RoleClaimsPanel_razor.resourceMan
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.ResourceManager
-  name: ResourceManager
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_razor_ResourceManager
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.ResourceManager
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.ResourceManager
-  nameWithType: RoleClaimsPanel_razor.ResourceManager
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.ResourceManager*
-  name: ResourceManager
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleClaimsPanel_razor_ResourceManager_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.ResourceManager
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleClaimsPanel_razor.ResourceManager
-  nameWithType: RoleClaimsPanel_razor.ResourceManager
 - uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel
   name: RoleSettingsPanel
   href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.html
@@ -2800,19 +2704,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Dialog
   nameWithType: RoleSettingsPanel.Dialog
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Localizer
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_Localizer
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Localizer
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Localizer
-  nameWithType: RoleSettingsPanel.Localizer
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Localizer*
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_Localizer_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Localizer
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Localizer
-  nameWithType: RoleSettingsPanel.Localizer
 - uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_Logger
@@ -2878,102 +2769,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel.Theme
   nameWithType: RoleSettingsPanel.Theme
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor
-  name: RoleSettingsPanel_razor
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html
-  commentId: T:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor
-  nameWithType: RoleSettingsPanel_razor
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.#ctor
-  name: RoleSettingsPanel_razor()
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor__ctor
-  commentId: M:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.#ctor
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.RoleSettingsPanel_razor()
-  nameWithType: RoleSettingsPanel_razor.RoleSettingsPanel_razor()
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.#ctor*
-  name: RoleSettingsPanel_razor
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor__ctor_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.#ctor
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.RoleSettingsPanel_razor
-  nameWithType: RoleSettingsPanel_razor.RoleSettingsPanel_razor
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Culture
-  name: Culture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_Culture
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Culture
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Culture
-  nameWithType: RoleSettingsPanel_razor.Culture
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Culture*
-  name: Culture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_Culture_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Culture
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Culture
-  nameWithType: RoleSettingsPanel_razor.Culture
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Id
-  name: Id
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_Id
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Id
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Id
-  nameWithType: RoleSettingsPanel_razor.Id
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Id*
-  name: Id
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_Id_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Id
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Id
-  nameWithType: RoleSettingsPanel_razor.Id
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Name
-  name: Name
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_Name
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Name
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Name
-  nameWithType: RoleSettingsPanel_razor.Name
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Name*
-  name: Name
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_Name_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Name
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.Name
-  nameWithType: RoleSettingsPanel_razor.Name
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.NameHelp
-  name: NameHelp
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_NameHelp
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.NameHelp
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.NameHelp
-  nameWithType: RoleSettingsPanel_razor.NameHelp
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.NameHelp*
-  name: NameHelp
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_NameHelp_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.NameHelp
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.NameHelp
-  nameWithType: RoleSettingsPanel_razor.NameHelp
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.resourceCulture
-  name: resourceCulture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_resourceCulture
-  commentId: F:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.resourceCulture
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.resourceCulture
-  nameWithType: RoleSettingsPanel_razor.resourceCulture
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.resourceMan
-  name: resourceMan
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_resourceMan
-  commentId: F:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.resourceMan
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.resourceMan
-  nameWithType: RoleSettingsPanel_razor.resourceMan
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.ResourceManager
-  name: ResourceManager
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_ResourceManager
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.ResourceManager
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.ResourceManager
-  nameWithType: RoleSettingsPanel_razor.ResourceManager
-- uid: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.ResourceManager*
-  name: ResourceManager
-  href: api/CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.html#CG_Green_Areas_Admin_Pages_Roles_Panels_RoleSettingsPanel_razor_ResourceManager_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.ResourceManager
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.Panels.RoleSettingsPanel_razor.ResourceManager
-  nameWithType: RoleSettingsPanel_razor.ResourceManager
 - uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail
   name: RolesDetail
   href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail.html
@@ -3063,19 +2858,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail.LoadDataAsync
   nameWithType: RolesDetail.LoadDataAsync
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail.Localizer
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_Localizer
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail.Localizer
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail.Localizer
-  nameWithType: RolesDetail.Localizer
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail.Localizer*
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_Localizer_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail.Localizer
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail.Localizer
-  nameWithType: RolesDetail.Localizer
 - uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_Logger
@@ -3167,154 +2949,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail.UserName
   nameWithType: RolesDetail.UserName
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor
-  name: RolesDetail_razor
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html
-  commentId: T:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor
-  nameWithType: RolesDetail_razor
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.#ctor
-  name: RolesDetail_razor()
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor__ctor
-  commentId: M:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.#ctor
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.RolesDetail_razor()
-  nameWithType: RolesDetail_razor.RolesDetail_razor()
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.#ctor*
-  name: RolesDetail_razor
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor__ctor_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.#ctor
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.RolesDetail_razor
-  nameWithType: RolesDetail_razor.RolesDetail_razor
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.BackToRoles
-  name: BackToRoles
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_BackToRoles
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.BackToRoles
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.BackToRoles
-  nameWithType: RolesDetail_razor.BackToRoles
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.BackToRoles*
-  name: BackToRoles
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_BackToRoles_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.BackToRoles
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.BackToRoles
-  nameWithType: RolesDetail_razor.BackToRoles
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Claims
-  name: Claims
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Claims
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Claims
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Claims
-  nameWithType: RolesDetail_razor.Claims
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Claims*
-  name: Claims
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Claims_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Claims
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Claims
-  nameWithType: RolesDetail_razor.Claims
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Culture
-  name: Culture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Culture
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Culture
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Culture
-  nameWithType: RolesDetail_razor.Culture
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Culture*
-  name: Culture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Culture_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Culture
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Culture
-  nameWithType: RolesDetail_razor.Culture
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Loading
-  name: Loading
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Loading
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Loading
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Loading
-  nameWithType: RolesDetail_razor.Loading
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Loading*
-  name: Loading
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Loading_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Loading
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Loading
-  nameWithType: RolesDetail_razor.Loading
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.NotFound
-  name: NotFound
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_NotFound
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.NotFound
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.NotFound
-  nameWithType: RolesDetail_razor.NotFound
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.NotFound*
-  name: NotFound
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_NotFound_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.NotFound
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.NotFound
-  nameWithType: RolesDetail_razor.NotFound
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.PageDesc
-  name: PageDesc
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_PageDesc
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.PageDesc
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.PageDesc
-  nameWithType: RolesDetail_razor.PageDesc
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.PageDesc*
-  name: PageDesc
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_PageDesc_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.PageDesc
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.PageDesc
-  nameWithType: RolesDetail_razor.PageDesc
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.resourceCulture
-  name: resourceCulture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_resourceCulture
-  commentId: F:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.resourceCulture
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.resourceCulture
-  nameWithType: RolesDetail_razor.resourceCulture
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.resourceMan
-  name: resourceMan
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_resourceMan
-  commentId: F:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.resourceMan
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.resourceMan
-  nameWithType: RolesDetail_razor.resourceMan
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.ResourceManager
-  name: ResourceManager
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_ResourceManager
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.ResourceManager
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.ResourceManager
-  nameWithType: RolesDetail_razor.ResourceManager
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.ResourceManager*
-  name: ResourceManager
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_ResourceManager_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.ResourceManager
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.ResourceManager
-  nameWithType: RolesDetail_razor.ResourceManager
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Settings
-  name: Settings
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Settings
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Settings
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Settings
-  nameWithType: RolesDetail_razor.Settings
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Settings*
-  name: Settings
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Settings_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Settings
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Settings
-  nameWithType: RolesDetail_razor.Settings
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Title
-  name: Title
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Title
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Title
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Title
-  nameWithType: RolesDetail_razor.Title
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Title*
-  name: Title
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesDetail_razor_Title_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Title
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesDetail_razor.Title
-  nameWithType: RolesDetail_razor.Title
 - uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex
   name: RolesIndex
   href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex.html
@@ -3436,19 +3070,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex.LoadDataAsync
   nameWithType: RolesIndex.LoadDataAsync
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex.Localizer
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_Localizer
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesIndex.Localizer
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex.Localizer
-  nameWithType: RolesIndex.Localizer
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex.Localizer*
-  name: Localizer
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_Localizer_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesIndex.Localizer
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex.Localizer
-  nameWithType: RolesIndex.Localizer
 - uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex.Logger
   name: Logger
   href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_Logger
@@ -3566,63 +3187,6 @@ references:
   isSpec: "True"
   fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex.UserName
   nameWithType: RolesIndex.UserName
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor
-  name: RolesIndex_razor
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html
-  commentId: T:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor
-  nameWithType: RolesIndex_razor
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.#ctor
-  name: RolesIndex_razor()
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_razor__ctor
-  commentId: M:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.#ctor
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.RolesIndex_razor()
-  nameWithType: RolesIndex_razor.RolesIndex_razor()
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.#ctor*
-  name: RolesIndex_razor
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_razor__ctor_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.#ctor
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.RolesIndex_razor
-  nameWithType: RolesIndex_razor.RolesIndex_razor
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.Culture
-  name: Culture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_razor_Culture
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.Culture
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.Culture
-  nameWithType: RolesIndex_razor.Culture
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.Culture*
-  name: Culture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_razor_Culture_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.Culture
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.Culture
-  nameWithType: RolesIndex_razor.Culture
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.resourceCulture
-  name: resourceCulture
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_razor_resourceCulture
-  commentId: F:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.resourceCulture
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.resourceCulture
-  nameWithType: RolesIndex_razor.resourceCulture
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.resourceMan
-  name: resourceMan
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_razor_resourceMan
-  commentId: F:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.resourceMan
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.resourceMan
-  nameWithType: RolesIndex_razor.resourceMan
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.ResourceManager
-  name: ResourceManager
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_razor_ResourceManager
-  commentId: P:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.ResourceManager
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.ResourceManager
-  nameWithType: RolesIndex_razor.ResourceManager
-- uid: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.ResourceManager*
-  name: ResourceManager
-  href: api/CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.html#CG_Green_Areas_Admin_Pages_Roles_RolesIndex_razor_ResourceManager_
-  commentId: Overload:CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.ResourceManager
-  isSpec: "True"
-  fullName: CG.Green.Areas.Admin.Pages.Roles.RolesIndex_razor.ResourceManager
-  nameWithType: RolesIndex_razor.ResourceManager
 - uid: CG.Green.Areas.Admin.Pages.Users
   name: CG.Green.Areas.Admin.Pages.Users
   href: api/CG.Green.Areas.Admin.Pages.Users.html
