@@ -38,12 +38,6 @@ public partial class UserSettingsPanel
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<UserSettingsPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the snackbar service for the component.
 	/// </summary>
 	[Inject]
@@ -102,7 +96,7 @@ public partial class UserSettingsPanel
 
 			// Tell the world what we did.
 			Snackbar.Add(
-				Localizer["CopyClipboard"]
+				"Id copied to clipboard"
 				);
 		}
 		catch (Exception ex)
@@ -116,7 +110,7 @@ public partial class UserSettingsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}

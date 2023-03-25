@@ -64,12 +64,6 @@ public partial class DeleteDialog
     protected IDialogService Dialog { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the localizer for this dialog.
-    /// </summary>
-    [Inject]
-    protected IStringLocalizer<DeleteDialog> Localizer { get; set; } = null!;
-
-    /// <summary>
     /// This property contains the logger for this dialog.
     /// </summary>
     [Inject]

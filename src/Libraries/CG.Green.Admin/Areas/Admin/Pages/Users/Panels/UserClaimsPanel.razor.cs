@@ -38,12 +38,6 @@ public partial class UserClaimsPanel
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<UserClaimsPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the snackbar service for the component.
 	/// </summary>
 	[Inject]
@@ -109,7 +103,7 @@ public partial class UserClaimsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UserClaimDialog>(
-				Localizer["CreateClaim"],
+				"Create Claim",
 				parameters,
 				options
 				);
@@ -150,7 +144,7 @@ public partial class UserClaimsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -200,7 +194,7 @@ public partial class UserClaimsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UserClaimDialog>(
-				Localizer["EditClaim"],
+				"Edit Claim",
 				parameters,
 				options
 				);
@@ -239,7 +233,7 @@ public partial class UserClaimsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -298,7 +292,7 @@ public partial class UserClaimsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}

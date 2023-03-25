@@ -11,8 +11,8 @@
                                   Margin="Margin.Dense"
                                   Counter="@(Globals.Models.Users.UserNameLength)"
                                   Variant="Variant.Outlined"
-                                  Label=@Localizer["UserName"]
-                                  HelperText=@Localizer["UserNameHelp"]
+                                  Label="User Name"
+                                  HelperText="Name for the user"
                                   For="@(() => Model.UserName)"
                                   @bind-Value="@Model.UserName"
                                   Class="ml-auto" />
@@ -20,8 +20,8 @@
                                   Immediate
                                   Counter="@(Globals.Models.Users.EmailLength)"
                                   Variant="Variant.Outlined"
-                                  Label=@Localizer["Email"]
-                                  HelperText=@Localizer["EmailHelp"]
+                                  Label="Email"
+                                  HelperText="Email for the user"
                                   For="@(() => Model.Email)"
                                   @bind-Value="@Model.Email"
                                   Class="ml-auto" />
@@ -29,8 +29,8 @@
                                   Immediate
                                   Counter="@(Globals.Models.Users.PasswordHashLength)"
                                   Variant="Variant.Outlined"
-                                  Label=@Localizer["Password"]
-                                  HelperText=@Localizer["PasswordHelp"]
+                                  Label="Password"
+                                  HelperText="Password for the user"
                                   For="@(() => Model.Password)"
                                   @bind-Value="@Model.Password"
                                   Class="ml-auto" />
@@ -38,15 +38,15 @@
                                   Immediate
                                   Counter="@(Globals.Models.Users.PasswordHashLength)"
                                   Variant="Variant.Outlined"
-                                  Label=@Localizer["ConfirmPassword"]
-                                  HelperText=@Localizer["ConfirmPasswordHelp"]
+                                  Label="Confirm Password"
+                                  HelperText="Confirm the password"
                                   For="@(() => Model.ConfirmPassword)"
                                   @bind-Value="@Model.ConfirmPassword"
                                   Class="ml-auto" />
                     </MudCardContent>
                     <MudCardActions>
-                        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">@Localizer["Cancel"]</MudButton>
-                        <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">@Localizer["Save"]</MudButton>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">Cancel</MudButton>
+                        <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">Save</MudButton>
                     </MudCardActions>
             </MudCard>
         </EditForm>

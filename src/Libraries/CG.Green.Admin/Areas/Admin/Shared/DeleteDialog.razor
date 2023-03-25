@@ -1,18 +1,19 @@
 ﻿<EditForm Model="@_model" OnValidSubmit="OnValidSubmit">
     <MudDialog>
         <DialogContent>
-            <MudText Align="Align.Center" Typo="Typo.body2">@(new MarkupString(Localizer["YouSure", ObjectName]))</MudText>
-            <MudChip Style="display: flex;justify-content:center" DisableRipple Class="my-8" Color="Color.Warning">@(new MarkupString(Localizer["Warning"]))</MudChip>
+            <MudText Align="Align.Center" Typo="Typo.body2">
+                @(new MarkupString($"Are you sure you want to delete <b>{ObjectName} </ b >?"))</MudText>
+                <MudChip Style="display: flex;justify-content:center" DisableRipple Class="my-8" Color="Color.Warning">@(new MarkupString("<b>Warning:</b>&nbsp;this action cannot be undone!"))</MudChip>
             @if (Confirm)
             {
                 <DataAnnotationsValidator />
-                <MudText Class="mb-4" Typo="Typo.body2">@Localizer["LongConfirm", ObjectName]</MudText>
+                <MudText Class="mb-4" Typo="Typo.body2">@($"Please type in '{ObjectName}' to confirm.")</MudText>
                 <MudTextField AutoFocus
                               Required
                               OnlyValidateIfDirty
                           Margin="Margin.Dense"
                           Variant="Variant.Outlined"
-                          Label=@Localizer["Confirm"]
+                          Label="Confirm"
                           For="@(() => _model)"
                           @bind-Value="@_model"
                           Class="ml-auto" />

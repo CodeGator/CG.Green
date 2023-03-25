@@ -1,12 +1,12 @@
 ﻿@page "/admin/users"
 @attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
 
-<PageTitle>@Localizer["Title"]</PageTitle>
+<PageTitle>Users</PageTitle>
 
 <MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
 
-<MudText Typo="Typo.h4">@Localizer["Title"]</MudText>
-<MudText Class="pb-4" Typo="Typo.body1">@Localizer["PageDesc"]</MudText>
+<MudText Typo="Typo.h4">Users</MudText>
+<MudText Class="pb-4" Typo="Typo.body1">Use this page to edit ASP.NET users</MudText>
 
 @*<FeatureFlagView FlagName="UserAdminUI">
     <h1>Feature A is enabled!</h1>
@@ -25,10 +25,10 @@
                            Variant="Variant.Filled"
                            Disabled="@_isLoading"
                            Color="Color.Primary"
-                           OnClick="OnCreateAsync">@Localizer["Create"]</MudButton>
+                           OnClick="OnCreateAsync">Create</MudButton>
                 <MudSpacer />
                 <MudTextField @bind-Value="_gridSearchString"
-                              Placeholder=@Localizer["Search"]
+                              Placeholder="Search"
                               Adornment="Adornment.Start"
                               AdornmentIcon="@Icons.Material.Outlined.Search"
                               IconSize="Size.Medium" Class="mt-0"></MudTextField>
@@ -39,13 +39,13 @@
                 <col />
             </ColGroup>
             <HeaderContent>
-                <MudTh><MudTableSortLabel SortBy="new Func<ListGreenUserVM, object>(x=>x.UserName)">@Localizer["UserName"]</MudTableSortLabel></MudTh>
-                <MudTh><MudTableSortLabel SortBy="new Func<ListGreenUserVM, object>(x=>x.Email)">@Localizer["Email"]</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListGreenUserVM, object>(x=>x.UserName)">User Name</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListGreenUserVM, object>(x=>x.Email)">Email</MudTableSortLabel></MudTh>
                 <MudTh></MudTh>
             </HeaderContent>
             <RowTemplate>
-                <MudTd DataLabel=@Localizer["UserName"]>@context.UserName</MudTd>
-                <MudTd DataLabel=@Localizer["Email"]>@context.Email</MudTd>
+                <MudTd DataLabel="User Name">@context.UserName</MudTd>
+                <MudTd DataLabel="Email">@context.Email</MudTd>
                 <MudTd>
                     <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                    OnClick="() => OnDeleteAsync(context)"
@@ -56,13 +56,13 @@
                 </MudTd>
             </RowTemplate>
             <PagerContent>
-                <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                <MudTablePager />
             </PagerContent>
             <NoRecordsContent>
-                @Localizer["NoUsers"]
+                No users found
             </NoRecordsContent>
             <LoadingContent>
-                @Localizer["Loading"]
+                Loading ...
             </LoadingContent>
         </MudTable>
     </MudItem>

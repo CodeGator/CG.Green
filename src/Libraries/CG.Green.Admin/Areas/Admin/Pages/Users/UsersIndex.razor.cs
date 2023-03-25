@@ -65,12 +65,6 @@ public partial class UsersIndex
 	protected IMapper AutoMapper { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for this page.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<UsersIndex> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the dialog service for this page.
 	/// </summary>
 	[Inject]
@@ -125,9 +119,9 @@ public partial class UsersIndex
 			// Build the localized breadcrumbs.
 			_crumbs = new()
 			{
-				new BreadcrumbItem(Localizer["Home"], href: "/"),
-				new BreadcrumbItem(Localizer["Admin"], href: "/admin", disabled: true),
-				new BreadcrumbItem(Localizer["Users"], href: "/admin/users")
+				new BreadcrumbItem("Home", href: "/"),
+				new BreadcrumbItem("Admin", href: "/admin", disabled: true),
+				new BreadcrumbItem("Users", href: "/admin/users")
 			};
 
 			// Log what we are about to do.
@@ -157,7 +151,7 @@ public partial class UsersIndex
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -248,7 +242,7 @@ public partial class UsersIndex
 
 			// Create the dialog.
 			var dialog = Dialog.Show<NewUserDialog>(
-				Localizer["CreateUser"],
+				"Create User",
 				parameters,
 				options
 				);
@@ -311,7 +305,7 @@ public partial class UsersIndex
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 
@@ -409,7 +403,7 @@ public partial class UsersIndex
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}

@@ -31,25 +31,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Areas\Admin\Pages\Users\Dialogs\NewUserDialog.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>NewUserDialog.razor.resx</DependentUpon>
-      </Compile>
       <Compile Update="Areas\Admin\Pages\Users\Panels\UserSettingsPanel.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>UserSettingsPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Users\UsersDetail.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>UsersDetail.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Users\UsersIndex.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>UsersIndex.razor.resx</DependentUpon>
       </Compile>
       <Compile Update="Areas\Admin\Shared\DeleteDialog.razor.Designer.cs">
         <DesignTime>True</DesignTime>
@@ -69,21 +54,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Areas\Admin\Pages\Users\Dialogs\NewUserDialog.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>NewUserDialog.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Users\Panels\UserSettingsPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>UserSettingsPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Users\UsersDetail.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>UsersDetail.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Users\UsersIndex.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>UsersIndex.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Shared\DeleteDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>

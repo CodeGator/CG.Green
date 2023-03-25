@@ -6,7 +6,7 @@
                       Margin="Margin.Dense"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
-                      Label=@Localizer["Id"]
+                      Label="Id"
                       Adornment="Adornment.End"
                       AdornmentAriaLabel="copy id"
                       AdornmentIcon="@Icons.Material.TwoTone.CopyAll"
@@ -21,8 +21,8 @@
                       Counter="@(Globals.Models.Users.UserNameLength)"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
-                      Label=@Localizer["UserName"]
-                      HelperText=@Localizer["UserNameHelp"]
+                      Label="User Name"
+                      HelperText="Name for the user"
                       For="@(() => Model.UserName)"
                       @bind-Value="@Model.UserName" />
     </MudItem>
@@ -33,8 +33,8 @@
                       Class="ml-auto"
                       Variant="Variant.Outlined"
                       InputType="InputType.Email"
-                      Label=@Localizer["Email"]
-                      HelperText=@Localizer["EmailHelp"]
+                      Label="Email"
+                      HelperText="Email for the user"
                       For="@(() => Model.Email)"
                       @bind-Value="@Model.Email" />
     </MudItem>
@@ -42,22 +42,22 @@
         <MudCheckBox T="bool"
                     Class="mb-n3"
                     @bind-Checked="Model.EmailConfirmed"
-                     Label=@Localizer["EmailConfirmed"] />
-        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["EmailConfirmedHelp"]</MudText>
+                     Label="Email Confirmed" />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">Whether or not the email address is confirmed</MudText>
     </MudItem>
     <MudItem xs="12">
         <MudCheckBox T="bool"
                     Class="mb-n3"
                     @bind-Checked="Model.TwoFactorEnabled"
-                     Label=@Localizer["TwoFactorEnabled"] />
-        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["TwoFactorEnabledHelp"]</MudText>
+                     Label="TwoFactorEnabled" />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">Whether the account uses two factor authentication</MudText>
     </MudItem>
     <MudItem xs="12">
         <MudCheckBox T="bool"
                     Class="mb-n3"
                     @bind-Checked="Model.LockoutEnabled"
-                     Label=@Localizer["LockoutEnabled"] />
-        <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["LockoutEnabledHelp"]</MudText>
+                     Label="Lockout Enabled" />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">Whether the account can be locked out</MudText>
     </MudItem>
     @if (Model.LockoutEnabled)
     {
@@ -68,8 +68,8 @@
                       InputType="InputType.DateTimeLocal"
                       Format="s"
                       Clearable
-                      Label=@Localizer["LockoutEnd"]
-                      HelperText=@Localizer["LockoutEndHelp"]
+                      Label="Lockout End"
+                      HelperText="The end date for a lockout period"
                       For="@(() => Model.LockoutEnd)"
                       @bind-Value="@Model.LockoutEnd" />
         </MudItem>
@@ -79,8 +79,8 @@
                       Class="ml-auto"
                       Variant="Variant.Outlined"
                       InputType="InputType.Number"
-                      Label=@Localizer["AccessFailedCount"]
-                      HelperText=@Localizer["AccessFailedCountHelp"]
+                      Label="Access Failed Count"
+                      HelperText="The failed login count for the account"
                       For="@(() => Model.AccessFailedCount)"
                       @bind-Value="@Model.AccessFailedCount" />
     </MudItem>
