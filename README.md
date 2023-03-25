@@ -8,27 +8,9 @@
 
 ### What does it do?
 
-Green is an idea for an identity microservice. Essentially, we stood up the ASP.NET and Duende libraries as a Blazor microservice, then we added some additional administrative and nice-to-have debugging features.
-
-Our main goal is to produce a tool that can be dropped into production, cheaply and easily, to provide extensible, secure, reliable identity services - without costing a fortune to operate or requiring a PHD to understand. 
-
-We chose to build on Duende and ASP.NET because they are proven technologies and offer some of the most flexibility, along with the lowest overall cost of ownership.
-
-### What works, at this point?
-
-The ASP.NET and Duende portions are hosted and working perfectly. 
-
-The admin UI is coming along, nicely. 
-
-The identity UI is functional, but generally needs some love and attention.
-
-### What does the roadmap look like?
-
-We're not at a point where we can commit to a feature plan. Honestly, we might not ever be. Still, keep checking back. You never know.
+Green is an idea for an identity microservice. 
 
 ### What are the main dependencies?
-
-One of the main goals of this project is to minimize dependencies on third party libraries. Where third party libraries are used, we try to ensure that they are well established and actively developed / supported. 
 
 * [Duende](https://duendesoftware.com/) (The library formerly known as IdentityServer4)
 
@@ -65,12 +47,6 @@ A goal of the project is to integrate with a variety of back-end databases. We c
 * [MySql](https://mysql.com)
 
 * InMemory (for dev/demo/testing purposes)
-
-### What languages does the UI support?
-
-* English
-
-* Spanish (in progress)
 
 ### Is there any documentation?
 
