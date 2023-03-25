@@ -96,7 +96,7 @@ public partial class ClientSettingsPanel
 
 			// Tell the world what we did.
 			Snackbar.Add(
-				"CopyClipboard"
+				"Id copied to clipboard"
 				);
 		}
 		catch (Exception ex)
@@ -110,7 +110,7 @@ public partial class ClientSettingsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}

@@ -6,7 +6,7 @@
                       Margin="Margin.Dense"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
-                      Label=@Localizer["Id"]
+                      Label="Id"
                       Adornment="Adornment.End"
                       AdornmentAriaLabel="copy id"
                       AdornmentIcon="@Icons.Material.TwoTone.CopyAll"
@@ -21,8 +21,8 @@
                       Counter="@(Globals.Models.Roles.NameLength)"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
-                      Label=@Localizer["Name"]
-                      HelperText=@Localizer["NameHelp"]
+                      Label="Name"
+                      HelperText="The name for the role"
                       For="@(() => Model.Name)"
                       @bind-Value="@Model.Name" />
     </MudItem>

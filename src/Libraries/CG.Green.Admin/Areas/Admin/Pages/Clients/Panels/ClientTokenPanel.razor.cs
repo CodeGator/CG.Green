@@ -97,7 +97,7 @@ public partial class ClientTokenPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<AlgorithmDialog>(
-				"CreateSigningAlgorithm",
+				"Create Signing Algorithm",
 				parameters,
 				options
 				);
@@ -138,7 +138,7 @@ public partial class ClientTokenPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -188,7 +188,7 @@ public partial class ClientTokenPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<AlgorithmDialog>(
-				"EditSigningAlgorithm",
+				"Edit Signing Algorithm",
 				parameters,
 				options
 				);
@@ -227,7 +227,7 @@ public partial class ClientTokenPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -286,7 +286,7 @@ public partial class ClientTokenPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}

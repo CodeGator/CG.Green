@@ -1,12 +1,12 @@
 ﻿@page "/admin/roles"
 @attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
 
-<PageTitle>@Localizer["Title"]</PageTitle>
+<PageTitle>Roles</PageTitle>
 
 <MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
 
-<MudText Typo="Typo.h4">@Localizer["Title"]</MudText>
-<MudText Class="pb-4" Typo="Typo.body1">@Localizer["PageDesc"]</MudText>
+<MudText Typo="Typo.h4">Roles</MudText>
+<MudText Class="pb-4" Typo="Typo.body1">Use this page to edit ASP.NET roles</MudText>
 
 <MudGrid>
     <MudItem xs="12">
@@ -21,10 +21,10 @@
                            Variant="Variant.Filled"
                            Disabled="@_isLoading"
                            Color="Color.Primary"
-                           OnClick="OnCreateAsync">@Localizer["Create"]</MudButton>
+                           OnClick="OnCreateAsync">Create</MudButton>
                 <MudSpacer />
                 <MudTextField @bind-Value="_gridSearchString"
-                              Placeholder=@Localizer["Search"]
+                              Placeholder="Search"
                               Adornment="Adornment.Start"
                               AdornmentIcon="@Icons.Material.Outlined.Search"
                               IconSize="Size.Medium" Class="mt-0"></MudTextField>
@@ -34,11 +34,11 @@
                 <col />
             </ColGroup>
             <HeaderContent>
-                <MudTh><MudTableSortLabel SortBy="new Func<ListGreenRoleVM, object>(x=>x.Name)">@Localizer["RoleName"]</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListGreenRoleVM, object>(x=>x.Name)">Role Name</MudTableSortLabel></MudTh>
                 <MudTh></MudTh>
             </HeaderContent>
             <RowTemplate>
-                <MudTd DataLabel=@Localizer["RoleName"]>@context.Name</MudTd>
+                <MudTd DataLabel="Role Name">@context.Name</MudTd>
                 <MudTd>
                     <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                    OnClick="() => OnDeleteAsync(context)"
@@ -49,13 +49,13 @@
                 </MudTd>
             </RowTemplate>
             <PagerContent>
-                <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                <MudTablePager />
             </PagerContent>
             <NoRecordsContent>
-                @Localizer["NoRoles"]
+                No roles found
             </NoRecordsContent>
             <LoadingContent>
-                @Localizer["Loading"]
+                Loading ...
             </LoadingContent>
         </MudTable>
         </MudItem>

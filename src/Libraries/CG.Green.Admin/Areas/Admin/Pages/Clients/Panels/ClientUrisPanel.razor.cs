@@ -109,7 +109,7 @@ public partial class ClientUrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"CreatePostLogoutURI",
+				"Create Post Logout URI",
 				parameters,
 				options
 				);
@@ -150,7 +150,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -200,7 +200,7 @@ public partial class ClientUrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"EditPostLogoutURI",
+				"Edit Post Logout URI",
 				parameters,
 				options
 				);
@@ -239,7 +239,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -298,7 +298,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -345,7 +345,7 @@ public partial class ClientUrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"CreateRedirectURI",
+				"Create Redirect URI",
 				parameters,
 				options
 				);
@@ -386,7 +386,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -436,7 +436,7 @@ public partial class ClientUrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"EditRedirectURI",
+				"Edit Redirect URI",
 				parameters,
 				options
 				);
@@ -475,7 +475,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -534,7 +534,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}

@@ -60,12 +60,6 @@ public partial class RolesDetail
 	protected IHttpContextAccessor HttpContext { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the page.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<RolesDetail> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the navigation manager for the page.
 	/// </summary>
 	[Inject]
@@ -119,10 +113,10 @@ public partial class RolesDetail
 			// Create the bread crumbs for the page.
 			_crumbs = new()
 			{
-				new BreadcrumbItem(Localizer["Home"], href: "/"),
-				new BreadcrumbItem(Localizer["Admin"], href: "/admin", disabled: true),
-				new BreadcrumbItem(Localizer["Roles"], href: "/admin/roles"),
-				new BreadcrumbItem(Localizer["Details"], href: $"/admin/roles/{RoleId}/detail")
+				new BreadcrumbItem("Home", href: "/"),
+				new BreadcrumbItem("Admin", href: "/admin", disabled: true),
+				new BreadcrumbItem("Roles", href: "/admin/roles"),
+				new BreadcrumbItem("Details", href: $"/admin/roles/{RoleId}/detail")
 			};
 
 			// Log what we are about to do.
@@ -152,7 +146,7 @@ public partial class RolesDetail
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -217,7 +211,7 @@ public partial class RolesDetail
 
 			// Tell the world what we did.
 			Snackbar.Add(
-				Localizer["ChangesSaved"]
+				"Changes Saved"
 				);
 		}
 		catch (Exception ex)
@@ -231,7 +225,7 @@ public partial class RolesDetail
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 		finally

@@ -218,7 +218,7 @@ public partial class ClientsDetail
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
         }
         finally

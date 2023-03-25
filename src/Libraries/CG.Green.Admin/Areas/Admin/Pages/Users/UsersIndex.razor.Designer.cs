@@ -70,7 +70,7 @@ namespace CG.Green.Areas.Admin.Pages.Users {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something broke!.
+        ///   Looks up a localized string similar to Something Broke!.
         /// </summary>
         internal static string Broke {
             get {

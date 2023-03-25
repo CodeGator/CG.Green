@@ -61,12 +61,6 @@ public partial class RolesIndex
 	protected IMapper AutoMapper { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for this page.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<RolesIndex> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the dialog service for this page.
 	/// </summary>
 	[Inject]
@@ -121,9 +115,9 @@ public partial class RolesIndex
 			// Build the localized breadcrumbs.
 			_crumbs = new()
 			{
-				new BreadcrumbItem(Localizer["Home"], href: "/"),
-				new BreadcrumbItem(Localizer["Admin"], href: "/admin", disabled: true),
-				new BreadcrumbItem(Localizer["Users"], href: "/admin/users")
+				new BreadcrumbItem("Home", href: "/"),
+				new BreadcrumbItem("Admin", href: "/admin", disabled: true),
+				new BreadcrumbItem("Users", href: "/admin/users")
 			};
 
 			// Log what we are about to do.
@@ -153,7 +147,7 @@ public partial class RolesIndex
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -237,7 +231,7 @@ public partial class RolesIndex
 
 			// Create the dialog.
 			var dialog = Dialog.Show<EditRoleDialog>(
-				Localizer["CreateRole"],
+				"Create Role",
 				parameters,
 				options
 				);
@@ -299,7 +293,7 @@ public partial class RolesIndex
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -396,7 +390,7 @@ public partial class RolesIndex
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
 		}
 	}

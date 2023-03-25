@@ -145,7 +145,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
         }
     }
@@ -235,7 +235,7 @@ public partial class ClientsIndex
 
             // Create the dialog.
             var dialog = Dialog.Show<NewClientDialog>(
-                "CreateClient",
+                "Create Client",
                 parameters,
                 options
                 );
@@ -290,7 +290,7 @@ public partial class ClientsIndex
 
                 // Prompt the user.
                 await Dialog.ShowMessageBox(
-                    title: "Something broke!",
+                    title: "Something Broke!",
                     message: "That client id is already in use!"
                     );
                 return;
@@ -310,7 +310,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
         }
     }
@@ -379,7 +379,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
         }
     }
@@ -453,7 +453,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
         }
     }
@@ -502,7 +502,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
         }
     }

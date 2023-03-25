@@ -109,7 +109,7 @@ public partial class ClientClaimsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientClaimDialog>(
-				"CreateClaim",
+				"Create Claim",
 				parameters,
 				options
 				);
@@ -150,7 +150,7 @@ public partial class ClientClaimsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -200,7 +200,7 @@ public partial class ClientClaimsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientClaimDialog>(
-				"EditClaim",
+				"Edit Claim",
 				parameters,
 				options
 				);
@@ -239,7 +239,7 @@ public partial class ClientClaimsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -298,7 +298,7 @@ public partial class ClientClaimsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}

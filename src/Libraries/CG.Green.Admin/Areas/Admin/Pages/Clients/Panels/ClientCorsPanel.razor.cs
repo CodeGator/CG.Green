@@ -96,7 +96,7 @@ public partial class ClientCorsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"CreateCORS",
+				"Create CORS",
 				parameters,
 				options
 				);
@@ -137,7 +137,7 @@ public partial class ClientCorsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -196,7 +196,7 @@ public partial class ClientCorsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -246,7 +246,7 @@ public partial class ClientCorsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				"EditCORS",
+				"Edit CORS",
 				parameters,
 				options
 				);
@@ -285,7 +285,7 @@ public partial class ClientCorsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}

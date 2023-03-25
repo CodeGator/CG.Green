@@ -108,7 +108,7 @@ public partial class ClientSecretsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientSecretDialog>(
-				"CreateSecret",
+				"Create Secret",
 				parameters,
 				options
 				);
@@ -152,7 +152,7 @@ public partial class ClientSecretsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -211,7 +211,7 @@ public partial class ClientSecretsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -262,7 +262,7 @@ public partial class ClientSecretsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientSecretDialog>(
-				"EditSecret",
+				"Edit Secret",
 				parameters,
 				options
 				);
@@ -309,7 +309,7 @@ public partial class ClientSecretsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}

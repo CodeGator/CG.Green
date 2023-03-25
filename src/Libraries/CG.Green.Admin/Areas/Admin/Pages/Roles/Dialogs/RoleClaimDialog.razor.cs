@@ -31,12 +31,6 @@ public partial class RoleClaimDialog
 	protected IDialogService Dialog { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for this dialog.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<RoleClaimDialog> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the logger for this dialog.
 	/// </summary>
 	[Inject]

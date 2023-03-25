@@ -31,26 +31,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Areas\Admin\Pages\Roles\Panels\RoleClaimsPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>RoleClaimsPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Roles\Panels\RoleSettingsPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>RoleSettingsPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Roles\RolesDetail.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>RolesDetail.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Roles\RolesIndex.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>RolesIndex.razor.resx</DependentUpon>
-      </Compile>
       <Compile Update="Areas\Admin\Pages\Users\Dialogs\NewUserDialog.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -89,22 +69,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Areas\Admin\Pages\Roles\Panels\RoleClaimsPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>RoleClaimsPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Roles\Panels\RoleSettingsPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>RoleSettingsPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Roles\RolesDetail.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>RolesDetail.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Roles\RolesIndex.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>RolesIndex.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Users\Dialogs\NewUserDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>NewUserDialog.razor.Designer.cs</LastGenOutput>

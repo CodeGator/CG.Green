@@ -103,7 +103,7 @@ public partial class ClientIdentityProviderPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ProviderDialog>(
-				"CreateRestriction",
+				"Create Restriction",
 				parameters,
 				options
 				);
@@ -144,7 +144,7 @@ public partial class ClientIdentityProviderPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -194,7 +194,7 @@ public partial class ClientIdentityProviderPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ProviderDialog>(
-				"EditRestriction",
+				"Edit Restriction",
 				parameters,
 				options
 				);
@@ -233,7 +233,7 @@ public partial class ClientIdentityProviderPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}
@@ -292,7 +292,7 @@ public partial class ClientIdentityProviderPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: "Something broke!"
+				title: "Something Broke!"
 				);
 		}
 	}

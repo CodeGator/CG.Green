@@ -1,7 +1,7 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["Claims"]>
+        <GroupBox Title="Claims">
             <MudTable Items="Model.Claims"
                     Elevation="0"
                     Dense
@@ -13,7 +13,7 @@
                                 Variant="Variant.Filled"
                                 Disabled="@_isBusy"
                                 Color="Color.Secondary"
-                                OnClick="OnCreateClaimAsync">@Localizer["Create"]</MudButton>
+                                OnClick="OnCreateClaimAsync">Create</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -22,13 +22,13 @@
                     <col />
                 </ColGroup>
                 <HeaderContent>
-                    <MudTh><MudTableSortLabel SortBy="new Func<GreenRoleClaim, object>(x=>x.ClaimType)">@Localizer["Type"]</MudTableSortLabel></MudTh>
-                    <MudTh><MudTableSortLabel SortBy="new Func<GreenRoleClaim, object>(x=>x.ClaimValue)">@Localizer["Value"]</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<GreenRoleClaim, object>(x=>x.ClaimType)">Type</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<GreenRoleClaim, object>(x=>x.ClaimValue)">Value</MudTableSortLabel></MudTh>
                     <MudTh></MudTh>
                 </HeaderContent>
                 <RowTemplate Context="context2">
-                    <MudTd DataLabel=@Localizer["Type"]>@context2.ClaimType</MudTd>
-                    <MudTd DataLabel=@Localizer["Value"]>@context2.ClaimValue</MudTd>
+                    <MudTd DataLabel=Type>@context2.ClaimType</MudTd>
+                    <MudTd DataLabel=Value>@context2.ClaimValue</MudTd>
                     <MudTd>
                         <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                         OnClick="() => OnDeleteClaimAsync(context2)"
@@ -39,13 +39,13 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    @Localizer["NoClaims"]
+                    No claims found
                 </NoRecordsContent>
                 <LoadingContent>
-                    @Localizer["LoadingClaims"] ...
+                    Loading ...
                 </LoadingContent>
                 <PagerContent>
-                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                    <MudTablePager />
                 </PagerContent>
             </MudTable>
         </GroupBox>
