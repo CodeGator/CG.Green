@@ -129,7 +129,7 @@ interface.</p>
   <h3 id="constructors">Constructors
   </h3>
   <a id="CG_Green_Managers_GreenUserManager__ctor_" data-uid="CG.Green.Managers.GreenUserManager.#ctor*"></a>
-  <h4 id="CG_Green_Managers_GreenUserManager__ctor_SignInManager_GreenUser__ILogger_CG_Green_Managers_IGreenUserManager__" data-uid="CG.Green.Managers.GreenUserManager.#ctor(SignInManager{GreenUser},ILogger{CG.Green.Managers.IGreenUserManager})">GreenUserManager(SignInManager&lt;GreenUser&gt;, ILogger&lt;IGreenUserManager&gt;)</h4>
+  <h4 id="CG_Green_Managers_GreenUserManager__ctor_SignInManager_CG_Green_Identity_Models_GreenUser__ILogger_CG_Green_Managers_IGreenUserManager__" data-uid="CG.Green.Managers.GreenUserManager.#ctor(SignInManager{CG.Green.Identity.Models.GreenUser},ILogger{CG.Green.Managers.IGreenUserManager})">GreenUserManager(SignInManager&lt;GreenUser&gt;, ILogger&lt;IGreenUserManager&gt;)</h4>
   <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Green.Managers.GreenUserManager.html">GreenUserManager</a>
 class.</p>
 </div>
@@ -149,7 +149,7 @@ class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SignInManager</span>&lt;<span class="xref">GreenUser</span>&gt;</td>
+        <td><span class="xref">SignInManager</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a>&gt;</td>
         <td><span class="parametername">signInManager</span></td>
         <td><p>The ASP.NET sign-in manager to use with
 this manager.</p>
@@ -206,7 +206,7 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SignInManager</span>&lt;<span class="xref">GreenUser</span>&gt;</td>
+        <td><span class="xref">SignInManager</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -294,7 +294,7 @@ this manager.</p>
     </tbody>
   </table>
   <a id="CG_Green_Managers_GreenUserManager_CreateAsync_" data-uid="CG.Green.Managers.GreenUserManager.CreateAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenUserManager_CreateAsync_GreenUser_System_String_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenUserManager.CreateAsync(GreenUser,System.String,System.String,CancellationToken)">CreateAsync(GreenUser, String, String, CancellationToken)</h4>
+  <h4 id="CG_Green_Managers_GreenUserManager_CreateAsync_CG_Green_Identity_Models_GreenUser_System_String_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenUserManager.CreateAsync(CG.Green.Identity.Models.GreenUser,System.String,System.String,CancellationToken)">CreateAsync(GreenUser, String, String, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -312,7 +312,7 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GreenUser</span></td>
+        <td><a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a></td>
         <td><span class="parametername">greenUser</span></td>
         <td></td>
       </tr>
@@ -343,13 +343,13 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">GreenUser</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="CG_Green_Managers_GreenUserManager_DeleteAsync_" data-uid="CG.Green.Managers.GreenUserManager.DeleteAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenUserManager_DeleteAsync_GreenUser_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenUserManager.DeleteAsync(GreenUser,System.String,CancellationToken)">DeleteAsync(GreenUser, String, CancellationToken)</h4>
+  <h4 id="CG_Green_Managers_GreenUserManager_DeleteAsync_CG_Green_Identity_Models_GreenUser_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenUserManager.DeleteAsync(CG.Green.Identity.Models.GreenUser,System.String,CancellationToken)">DeleteAsync(GreenUser, String, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -367,7 +367,7 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GreenUser</span></td>
+        <td><a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a></td>
         <td><span class="parametername">greenUser</span></td>
         <td></td>
       </tr>
@@ -433,7 +433,7 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">GreenUser</span>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -444,7 +444,7 @@ this manager.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual async Task&lt;GreenUser?&gt; FindByIdAsync(string userId, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;GreenUser&gt; FindByIdAsync(string userId, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -478,13 +478,13 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">GreenUser</span>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="CG_Green_Managers_GreenUserManager_UpdateAsync_" data-uid="CG.Green.Managers.GreenUserManager.UpdateAsync*"></a>
-  <h4 id="CG_Green_Managers_GreenUserManager_UpdateAsync_GreenUser_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenUserManager.UpdateAsync(GreenUser,System.String,CancellationToken)">UpdateAsync(GreenUser, String, CancellationToken)</h4>
+  <h4 id="CG_Green_Managers_GreenUserManager_UpdateAsync_CG_Green_Identity_Models_GreenUser_System_String_CancellationToken_" data-uid="CG.Green.Managers.GreenUserManager.UpdateAsync(CG.Green.Identity.Models.GreenUser,System.String,CancellationToken)">UpdateAsync(GreenUser, String, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -502,7 +502,7 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GreenUser</span></td>
+        <td><a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a></td>
         <td><span class="parametername">greenUser</span></td>
         <td></td>
       </tr>
@@ -528,7 +528,7 @@ this manager.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">GreenUser</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="CG.Green.Identity.Models.GreenUser.html">GreenUser</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
