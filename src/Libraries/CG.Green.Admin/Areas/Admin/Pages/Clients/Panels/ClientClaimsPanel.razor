@@ -5,20 +5,20 @@
                       Margin="Margin.Dense"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
-                      Label=@Localizer["ClientClaimsPrefix"]
-                      HelperText=@Localizer["ClientClaimsPrefixHelp"]
+                      Label="Client Claims Prefix"
+                      HelperText="The value to prefix client claims with."
                       For="@(() => Model.ClientClaimsPrefix)"
                       @bind-Value="@Model.ClientClaimsPrefix" />
         </MudItem>
     <MudItem xs="12">
-        <MudSwitch Label=@Localizer["AlwaysSendClientClaims"]
+        <MudSwitch Label="Always send client claims"
                    Class="mt-2"
                    Color="Color.Tertiary"
                    @bind-Checked="@Model.AlwaysSendClientClaims" />
-        <MudText Class="ml-2 mb-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">@Localizer["AlwaysSendClientClaimsHelp"]</MudText>
+        <MudText Class="ml-2 mb-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">"Always send client claims regardless of the selected grant type(s)."</MudText>
     </MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["ClientClaims"]>
+        <GroupBox Title="Client Claims">
             <MudTable Items="Model.Claims"
                     Elevation="0"
                     Dense
@@ -30,7 +30,7 @@
                                 Variant="Variant.Filled"
                                 Disabled="@_isBusy"
                                 Color="Color.Secondary"
-                                OnClick="OnCreateClaimAsync">@Localizer["Create"]</MudButton>
+                                OnClick="OnCreateClaimAsync">Create</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -39,13 +39,13 @@
                     <col />
                 </ColGroup>
                 <HeaderContent>
-                    <MudTh><MudTableSortLabel SortBy="new Func<ClientClaimVM, object>(x=>x.Type)">@Localizer["Type"]</MudTableSortLabel></MudTh>
-                    <MudTh><MudTableSortLabel SortBy="new Func<ClientClaimVM, object>(x=>x.Value)">@Localizer["Value"]</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<ClientClaimVM, object>(x=>x.Type)">Type</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<ClientClaimVM, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
                     <MudTh></MudTh>
                 </HeaderContent>
                 <RowTemplate Context="context2">
-                    <MudTd DataLabel=@Localizer["Type"]>@context2.Type</MudTd>
-                    <MudTd DataLabel=@Localizer["Value"]>@context2.Value</MudTd>
+                    <MudTd DataLabel="Type">@context2.Type</MudTd>
+                    <MudTd DataLabel="Value">@context2.Value</MudTd>
                     <MudTd>
                         <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                         OnClick="() => OnDeleteClaimAsync(context2)"
@@ -56,13 +56,13 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    @Localizer["NoClaims"]
+                    No claims found.
                 </NoRecordsContent>
                 <LoadingContent>
-                    @Localizer["LoadingClaims"] ...
+                    Loading ...
                 </LoadingContent>
                 <PagerContent>
-                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                    <MudTablePager />
                 </PagerContent>
             </MudTable>
         </GroupBox>

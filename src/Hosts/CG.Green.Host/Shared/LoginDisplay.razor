@@ -2,11 +2,11 @@
     <Authorized>
         <MudButton Href="Identity/Account/Manage" Color="Color.Inherit">@context.User.Identity?.Name</MudButton>
         <form method="post" action="Identity/Account/LogOut">
-            <MudButton ButtonType="ButtonType.Submit" Color="Color.Inherit">@Localizer["LogOut"]</MudButton>
+            <MudButton ButtonType="ButtonType.Submit" Color="Color.Inherit">Log Out</MudButton>
         </form>
     </Authorized>
     <NotAuthorized>
         @*<MudButton Link="Identity/Account/Register" Color="Color.Inherit">Register</MudButton>*@
-        <MudButton Link="Identity/Account/Login?redirectUri=/" Color="Color.Inherit">@Localizer["LogIn"]</MudButton>
+        <MudButton Link="Identity/Account/Login?redirectUri=/" Color="Color.Inherit">Log In</MudButton>
     </NotAuthorized>
 </AuthorizeView>

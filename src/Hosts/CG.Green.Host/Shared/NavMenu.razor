@@ -1,26 +1,26 @@
 ﻿<MudNavMenu>
-    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">@Localizer["Home"]</MudNavLink>
+    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
 
     <AuthorizeView Policy=@PolicyNameDefaults.SuperAdminPolicy>
         <Authorized>
-            <MudNavGroup Icon="@Icons.Material.TwoTone.AdminPanelSettings" Title=@Localizer["Admin"]>
-                <MudNavLink Href="/admin/clients" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Apps">@Localizer["Clients"]</MudNavLink>
-                <MudNavLink Href="/admin/roles" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Badge">@Localizer["Roles"]</MudNavLink>
-                <MudNavLink Href="/admin/users" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Person">@Localizer["Users"]</MudNavLink>
+            <MudNavGroup Icon="@Icons.Material.TwoTone.AdminPanelSettings" Title="Admin">
+                <MudNavLink Href="/admin/clients" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Apps">Clients</MudNavLink>
+                <MudNavLink Href="/admin/roles" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Badge">Roles</MudNavLink>
+                <MudNavLink Href="/admin/users" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Person">Users</MudNavLink>
             </MudNavGroup>
-            <MudNavGroup Icon="@Icons.Material.TwoTone.BugReport" Title=@Localizer["Debugging"]>
-                <MudNavLink Href=".well-known/openid-configuration" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Biotech">@Localizer["DiscoveryEndpoint"]</MudNavLink>
+            <MudNavGroup Icon="@Icons.Material.TwoTone.BugReport" Title="Debugging">
+                <MudNavLink Href=".well-known/openid-configuration" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Biotech">Discovery Endpoint</MudNavLink>
                 <MudNavLink Href="swagger" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Info">Swagger</MudNavLink>
-                <MudNavLink Href="debugging/whoami" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Face">@Localizer["WhoAmI"]</MudNavLink>
-                <MudNavLink Href="/health" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Healing">@Localizer["Health"]</MudNavLink>
+                <MudNavLink Href="debugging/whoami" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Face">Who Am I?</MudNavLink>
+                <MudNavLink Href="/health" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.Healing">Health</MudNavLink>
             </MudNavGroup>
         </Authorized>
     </AuthorizeView>
 
     <AuthorizeView>
         <Authorized>
-            <MudNavGroup Icon="@Icons.Material.TwoTone.Help" Title=@Localizer["Help"]>
-                <MudNavLink Href="help/about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.QuestionAnswer">@Localizer["About"]</MudNavLink>
+            <MudNavGroup Icon="@Icons.Material.TwoTone.Help" Title=Help>
+                <MudNavLink Href="help/about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.TwoTone.QuestionAnswer">About</MudNavLink>
             </MudNavGroup>
         </Authorized>        
     </AuthorizeView>  

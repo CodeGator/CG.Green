@@ -32,12 +32,6 @@ public partial class ClientAdvancedPanel
 	public EditClientVM Model { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientAdvancedPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the logger for the component.
 	/// </summary>
 	[Inject]

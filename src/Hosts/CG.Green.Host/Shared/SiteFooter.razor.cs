@@ -19,12 +19,6 @@ public partial class SiteFooter
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for this component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<SiteFooter> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the navigation service for this component.
 	/// </summary>
 	[Inject]

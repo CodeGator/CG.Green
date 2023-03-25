@@ -64,8 +64,7 @@ try
         );
 
     // Add Green stuff.
-    builder.AddGreenLocalization(bootstrapLogger: BootstrapLogger.Instance())
-        .AddGreenRepositories(bootstrapLogger: BootstrapLogger.Instance())
+    builder.AddGreenRepositories(bootstrapLogger: BootstrapLogger.Instance())
         .AddGreenManagers(bootstrapLogger: BootstrapLogger.Instance())
         .AddGreenIdentity(bootstrapLogger: BootstrapLogger.Instance())
         .AddGreenAdministration(bootstrapLogger: BootstrapLogger.Instance())
@@ -111,8 +110,7 @@ try
         .UseSeeding();
 
     // Use Green stuff.
-    app.UseGreenLocalization()
-        .UseGreenIdentity()
+    app.UseGreenIdentity()
         .UseGreenControllers();
 
     // Run the application.

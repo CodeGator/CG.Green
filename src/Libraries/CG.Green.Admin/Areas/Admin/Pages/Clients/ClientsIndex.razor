@@ -1,12 +1,12 @@
 ﻿@page "/admin/clients"
 @attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
 
-<PageTitle>@Localizer["Title"]</PageTitle>
+<PageTitle>Clients</PageTitle>
 
 <MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
 
-<MudText Typo="Typo.h4">@Localizer["Title"]</MudText>
-<MudText Class="pb-4" Typo="Typo.body1">@Localizer["PageDesc"]</MudText>
+<MudText Typo="Typo.h4">Clients</MudText>
+<MudText Class="pb-4" Typo="Typo.body1">Use this page to administer Duende clients</MudText>
 
 <MudGrid>
     <MudItem xs="12">
@@ -21,10 +21,10 @@
                            Variant="Variant.Filled"
                            Disabled="@_isLoading"
                            Color="Color.Primary"
-                           OnClick="OnCreateAsync">@Localizer["Create"]</MudButton>
+                           OnClick="OnCreateAsync">Create</MudButton>
                 <MudSpacer />
                 <MudTextField @bind-Value="_gridSearchString"
-                              Placeholder=@Localizer["Search"]
+                              Placeholder="Search"
                               Adornment="Adornment.Start"
                               AdornmentIcon="@Icons.Material.Outlined.Search"
                               IconSize="Size.Medium" Class="mt-0"></MudTextField>
@@ -35,8 +35,8 @@
                 <col />
             </ColGroup>
             <HeaderContent>
-                <MudTh><MudTableSortLabel SortBy="new Func<ListClientVM, object>(x=>x.Enabled)">@Localizer["Enabled"]</MudTableSortLabel></MudTh>
-                <MudTh><MudTableSortLabel SortBy="new Func<ListClientVM, object>(x=>x.ClientId)">@Localizer["Id"]</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListClientVM, object>(x=>x.Enabled)">Enabled</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<ListClientVM, object>(x=>x.ClientId)">Id</MudTableSortLabel></MudTh>
                 <MudTh></MudTh>
             </HeaderContent>
             <RowTemplate>
@@ -63,13 +63,13 @@
                 </MudTd>
             </RowTemplate>
             <PagerContent>
-                <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                <MudTablePager />
             </PagerContent>
             <NoRecordsContent>
-                @Localizer["NoClients"]
+                No clients found
             </NoRecordsContent>
             <LoadingContent>
-                @Localizer["Loading"]
+                Loading ...
             </LoadingContent>
         </MudTable>
     </MudItem>

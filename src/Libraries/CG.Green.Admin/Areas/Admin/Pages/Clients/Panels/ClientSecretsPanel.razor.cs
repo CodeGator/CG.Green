@@ -38,12 +38,6 @@ public partial class ClientSecretsPanel
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientSecretsPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the snackbar service for the component.
 	/// </summary>
 	[Inject]
@@ -114,7 +108,7 @@ public partial class ClientSecretsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientSecretDialog>(
-				Localizer["CreateSecret"],
+				"CreateSecret",
 				parameters,
 				options
 				);
@@ -158,7 +152,7 @@ public partial class ClientSecretsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -217,7 +211,7 @@ public partial class ClientSecretsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -268,7 +262,7 @@ public partial class ClientSecretsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ClientSecretDialog>(
-				Localizer["EditSecret"],
+				"EditSecret",
 				parameters,
 				options
 				);
@@ -315,7 +309,7 @@ public partial class ClientSecretsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}

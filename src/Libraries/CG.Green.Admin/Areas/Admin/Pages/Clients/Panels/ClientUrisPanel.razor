@@ -1,7 +1,7 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["RedirectURIs"]>
+        <GroupBox Title="Redirect URIs">
             <MudTable Items="Model.RedirectUris"
                     Elevation="0"
                     Dense
@@ -13,7 +13,7 @@
                                 Variant="Variant.Filled"
                                 Disabled="@_isLoading"
                                 Color="Color.Secondary"
-                                OnClick="OnCreateRedirectUriAsync">@Localizer["Create"]</MudButton>
+                                OnClick="OnCreateRedirectUriAsync">"Create"</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -36,19 +36,19 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    @Localizer["NoUris"]
+                    No URIs found
                 </NoRecordsContent>
                 <LoadingContent>
-                        @Localizer["LoadingUris"]
+                    Loading ...
                 </LoadingContent>
                 <PagerContent>
-                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                    <MudTablePager />
                 </PagerContent>
             </MudTable>
         </GroupBox>
     </MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["PostLogoutRedirectURIs"]>
+        <GroupBox Title="Post Logout Redirect URIs">
             <MudTable Items="Model.PostLogoutRedirectUris"
                     Elevation="0"
                     Dense
@@ -60,7 +60,7 @@
                                 Variant="Variant.Filled"
                                 Disabled="@_isLoading"
                                 Color="Color.Secondary"
-                                OnClick="OnCreatePostLogoutUriAsync">@Localizer["Create"]</MudButton>
+                                OnClick="OnCreatePostLogoutUriAsync">Create</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -83,34 +83,34 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    @Localizer["NoUris"]
+                    No URIs found
                 </NoRecordsContent>
                 <LoadingContent>
-                    @Localizer["LoadingUris"]
+                    Loading ...
                 </LoadingContent>
                 <PagerContent>
-                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"]/>
+                    <MudTablePager />
                 </PagerContent>
             </MudTable>
         </GroupBox>                        
     </MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["BackChannelLogout"]>
+        <GroupBox Title="Back Channel Logout">
             <MudGrid>
                 <MudItem xs="12">
                     <MudCheckBox T="bool"
                                  Class="mb-n3"
                                  @bind-Checked="Model.BackChannelLogoutSessionRequired"
-                                 Label=@Localizer["BackChannelLogoutSessionRequired"] />
-                    <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["BackChannelLogoutSessionRequiredHelp"]</MudText>
+                                 Label="Back Channel Logout Session Required" />
+                    <MudText Class="text-muted ml-3" Typo="Typo.caption">Indicates whether or not the user's session id should be sent to the Back Channel Logout URI.</MudText>
                     <MudTextField Immediate
                                    OnlyValidateIfDirty
                                   Margin="Margin.Dense"
                                   Counter="@(Globals.Models.Clients.BackChannelLogoutUriLength)"
                                   Class="ml-auto mb-2 mt-4"
                                   Variant="Variant.Outlined"
-                                  Label=@Localizer["BackChannelLogoutUri"]
-                                  HelperText=@Localizer["BackChannelLogoutUriHelp"]
+                                  Label="Back Channel Logout URI"
+                                  HelperText="The logout URI for HTTP back-channel based logout."
                                   For="@(() => Model.BackChannelLogoutUri.Value)"
                                   @bind-Value="@Model.BackChannelLogoutUri.Value" />
                 </MudItem>
@@ -120,8 +120,8 @@
                                   Class="ml-auto"
                                   Variant="Variant.Outlined"
                                   InputType="InputType.Number"
-                                  Label=@Localizer["PollingInterval"]
-                                  HelperText=@Localizer["PollingIntervalHelp"]
+                                  Label="Polling Interval"
+                                  HelperText="The backchannel polling interval, in seconds."
                                   For="@(() => Model.PollingInterval)"
                                   @bind-Value="@Model.PollingInterval" />
                 </MudItem>

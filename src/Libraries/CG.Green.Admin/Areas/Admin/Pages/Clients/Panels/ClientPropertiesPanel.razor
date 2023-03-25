@@ -1,7 +1,7 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
         <MudItem xs="12">
-        <GroupBox Title=@Localizer["Properties"]>
+        <GroupBox Title="Properties">
             <MudTable Items="Model.Properties"
                     Elevation="0"
                     Dense
@@ -13,7 +13,7 @@
                                 Variant="Variant.Filled"
                                 Disabled="@_isLoading"
                                 Color="Color.Secondary"
-                                OnClick="OnCreatePropertyAsync">@Localizer["Create"]</MudButton>
+                                OnClick="OnCreatePropertyAsync">Create</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -22,13 +22,13 @@
                     <col />
                 </ColGroup>
                 <HeaderContent>
-                    <MudTh><MudTableSortLabel SortBy="new Func<EditPropertyVM, object>(x=>x.Key)">@Localizer["Key"]</MudTableSortLabel></MudTh>
-                    <MudTh><MudTableSortLabel SortBy="new Func<EditPropertyVM, object>(x=>x.Value)">@Localizer["Value"]</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<EditPropertyVM, object>(x=>x.Key)">Key</MudTableSortLabel></MudTh>
+                    <MudTh><MudTableSortLabel SortBy="new Func<EditPropertyVM, object>(x=>x.Value)">Value</MudTableSortLabel></MudTh>
                     <MudTh></MudTh>
                 </HeaderContent>
                 <RowTemplate Context="context2">
-                    <MudTd DataLabel=@Localizer["Key"]>@context2.Key</MudTd>
-                    <MudTd DataLabel=@Localizer["Value"]>@context2.Value</MudTd>
+                    <MudTd DataLabel="Key">@context2.Key</MudTd>
+                    <MudTd DataLabel="Value">@context2.Value</MudTd>
                     <MudTd>
                         <MudIconButton Icon="@Icons.Material.Outlined.Delete"
                                         OnClick="() => OnDeletePropertyAsync(context2)"
@@ -39,13 +39,13 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    @Localizer["NoProperties"]
+                    No properties found
                 </NoRecordsContent>
                 <LoadingContent>
-                        @Localizer["LoadingProperties"]
+                    Loading ...
                 </LoadingContent>
                 <PagerContent>
-                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                    <MudTablePager />
                 </PagerContent>
             </MudTable>
         </GroupBox>

@@ -44,12 +44,6 @@ public partial class ClientTokenPanel
 	protected IDialogService Dialog { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientTokenPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the logger for the component.
 	/// </summary>
 	[Inject]
@@ -103,7 +97,7 @@ public partial class ClientTokenPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<AlgorithmDialog>(
-				Localizer["CreateSigningAlgorithm"],
+				"CreateSigningAlgorithm",
 				parameters,
 				options
 				);
@@ -144,7 +138,7 @@ public partial class ClientTokenPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -194,7 +188,7 @@ public partial class ClientTokenPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<AlgorithmDialog>(
-				Localizer["EditSigningAlgorithm"],
+				"EditSigningAlgorithm",
 				parameters,
 				options
 				);
@@ -233,7 +227,7 @@ public partial class ClientTokenPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -292,7 +286,7 @@ public partial class ClientTokenPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}

@@ -59,12 +59,6 @@ public partial class ClientsIndex
     protected IMapper AutoMapper { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the localizer for this page.
-    /// </summary>
-    [Inject]
-    protected IStringLocalizer<ClientsIndex> Localizer { get; set; } = null!;
-
-    /// <summary>
     /// This property contains the dialog service for this page.
     /// </summary>
     [Inject]
@@ -119,9 +113,9 @@ public partial class ClientsIndex
 			// Build the localized breadcrumbs.
 			_crumbs = new()
 			{
-				new BreadcrumbItem(Localizer["Home"], href: "/"),
-				new BreadcrumbItem(Localizer["Admin"], href: "/admin", disabled: true),
-				new BreadcrumbItem(Localizer["Clients"], href: "/admin/clients")
+				new BreadcrumbItem("Home", href: "/"),
+				new BreadcrumbItem("Admin", href: "/admin", disabled: true),
+				new BreadcrumbItem("Clients", href: "/admin/clients")
 			};
 
 			// Log what we are about to do.
@@ -151,7 +145,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
         }
     }
@@ -241,7 +235,7 @@ public partial class ClientsIndex
 
             // Create the dialog.
             var dialog = Dialog.Show<NewClientDialog>(
-                Localizer["CreateClient"],
+                "CreateClient",
                 parameters,
                 options
                 );
@@ -316,7 +310,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
         }
     }
@@ -385,7 +379,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
         }
     }
@@ -459,7 +453,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
         }
     }
@@ -508,7 +502,7 @@ public partial class ClientsIndex
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
         }
     }

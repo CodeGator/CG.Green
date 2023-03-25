@@ -43,12 +43,6 @@ public partial class ClientCorsPanel
 	protected IDialogService Dialog { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientCorsPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the logger for the component.
 	/// </summary>
 	[Inject]
@@ -102,7 +96,7 @@ public partial class ClientCorsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				Localizer["CreateCORS"],
+				"CreateCORS",
 				parameters,
 				options
 				);
@@ -143,7 +137,7 @@ public partial class ClientCorsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -202,7 +196,7 @@ public partial class ClientCorsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -252,7 +246,7 @@ public partial class ClientCorsPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				Localizer["EditCORS"],
+				"EditCORS",
 				parameters,
 				options
 				);
@@ -291,7 +285,7 @@ public partial class ClientCorsPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}

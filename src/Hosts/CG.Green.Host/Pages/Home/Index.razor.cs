@@ -43,12 +43,6 @@ public partial class Index
     internal protected IGreenApi GreenApi { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the localizer for this page.
-    /// </summary>
-    [Inject]
-    internal protected IStringLocalizer<Index> Localizer { get; set; } = null!;
-
-    /// <summary>
     /// This property contains the dialog service for this page.
     /// </summary>
     [Inject]
@@ -242,7 +236,7 @@ public partial class Index
             // Display the error message.
             await DialogService.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
         }
     }

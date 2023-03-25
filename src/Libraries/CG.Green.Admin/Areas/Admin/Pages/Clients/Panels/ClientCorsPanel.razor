@@ -1,7 +1,7 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["CORS"]>
+        <GroupBox Title="Cross Original Resource Sharing (CORS)">
             <MudTable Items="Model.AllowedCorsOrigins"
                       Elevation="0"
                       Dense
@@ -13,7 +13,7 @@
                                Variant="Variant.Filled"
                                Disabled="@_isLoading"
                                Color="Color.Secondary"
-                               OnClick="OnCreateCorsUriAsync">@Localizer["Create"]</MudButton>
+                               OnClick="OnCreateCorsUriAsync">Create</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -36,13 +36,13 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    @Localizer["NoCors"]
+                    No CORS found!
                 </NoRecordsContent>
                 <LoadingContent>
-                    @Localizer["LoadingCors"]
+                    Loading ...
                 </LoadingContent>
                 <PagerContent>
-                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                    <MudTablePager />
                 </PagerContent>
             </MudTable>
         </GroupBox>

@@ -5,8 +5,8 @@
                       Counter="@(Globals.Models.Clients.PairWiseSubjectSaltLength)"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
-                      Label=@Localizer["PairWiseSubjectSalt"]
-                      HelperText=@Localizer["PairWiseSubjectSaltHelp"]
+                      Label="Pairwise Subject Salt"
+                      HelperText="A SALT value for generating pairwise subject IDs."
                       For="@(() => Model.PairWiseSubjectSalt)"
                       @bind-Value="@Model.PairWiseSubjectSalt" />
     </MudItem>
@@ -15,8 +15,8 @@
                     Class="ml-auto"
                     Variant="Variant.Outlined"
                     InputType="InputType.Number"
-                    Label=@Localizer["CibaLifetime"]
-                    HelperText=@Localizer["CibaLifetimeHelp"]
+                    Label="CIBA lifetime"
+                    HelperText="The backchannel authentication request lifetime, in seconds."
                     For="@(() => Model.CibaLifetime)"
                     @bind-Value="@Model.CibaLifetime" />
     </MudItem>
@@ -25,8 +25,8 @@
                       Counter="@(Globals.Models.Clients.UserCodeTypeLength)"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
-                      Label=@Localizer["UserCodeType"]
-                      HelperText=@Localizer["UserCodeTypeHelp"]
+                      Label="User Code Type"
+                      HelperText="The type of device flow user code"
                       For="@(() => Model.UserCodeType)"
                       @bind-Value="@Model.UserCodeType" />
     </MudItem>
@@ -35,8 +35,8 @@
                       Counter="@(Globals.Models.Clients.ProtocolTypeLength)"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
-                      Label=@Localizer["ProtocolType"]
-                      HelperText=@Localizer["ProtocolTypeHelp"]
+                      Label="Protocol Type"
+                      HelperText="The protocol type for the client."
                       For="@(() => Model.ProtocolType)"
                       @bind-Value="@Model.ProtocolType" />
     </MudItem>

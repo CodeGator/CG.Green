@@ -37,12 +37,6 @@ public partial class NewClientDialog
     protected IGreenApi GreenApi { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the localizer for this dialog.
-    /// </summary>
-    [Inject]
-    protected IStringLocalizer<NewClientDialog> Localizer { get; set; } = null!;
-
-    /// <summary>
     /// This property contains the logger for this dialog.
     /// </summary>
     [Inject]

@@ -1,7 +1,7 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["IdentityProviderRestrictions"]>
+        <GroupBox Title="Identity Provider Restrictions">
             <MudTable Items="Model.IdentityProviderRestrictions"
                       Elevation="0"
                       Dense
@@ -13,7 +13,7 @@
                                Variant="Variant.Filled"
                                Disabled="@_isLoading"
                                Color="Color.Secondary"
-                               OnClick="OnCreateRestrictionAsync">@Localizer["Create"]</MudButton>
+                               OnClick="OnCreateRestrictionAsync">Create</MudButton>
                     <MudSpacer />
                 </ToolBarContent>
                 <ColGroup>
@@ -36,13 +36,13 @@
                     </MudTd>
                 </RowTemplate>
                 <NoRecordsContent>
-                    @Localizer["NoProviders"]
+                    No restrictions found
                 </NoRecordsContent>
                 <LoadingContent>
-                    @Localizer["LoadingProviders"]
+                    Loading ...
                 </LoadingContent>
                 <PagerContent>
-                    <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                    <MudTablePager />
                 </PagerContent>
             </MudTable>
         </GroupBox>

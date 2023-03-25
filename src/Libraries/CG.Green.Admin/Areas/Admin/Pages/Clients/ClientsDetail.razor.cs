@@ -60,12 +60,6 @@ public partial class ClientsDetail
     protected IHttpContextAccessor HttpContext { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the page.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientsDetail> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the navigation manager for the page.
 	/// </summary>
 	[Inject]
@@ -119,10 +113,10 @@ public partial class ClientsDetail
             // Create the bread crumbs for the page.
             _crumbs = new()
             {
-                new BreadcrumbItem(Localizer["Home"], href: "/"),
-                new BreadcrumbItem(Localizer["Admin"], href: "/admin", disabled: true),
-                new BreadcrumbItem(Localizer["Clients"], href: "/admin/clients"),
-                new BreadcrumbItem(Localizer["Details"], href: $"/admin/clients/{ClientId}/detail")
+                new BreadcrumbItem("Home", href: "/"),
+                new BreadcrumbItem("Admin", href: "/admin", disabled: true),
+                new BreadcrumbItem("Clients", href: "/admin/clients"),
+                new BreadcrumbItem("Details", href: $"/admin/clients/{ClientId}/detail")
             };
 
             // Log what we are about to do.
@@ -152,7 +146,7 @@ public partial class ClientsDetail
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something Broke!"
 				);
         }
     }
@@ -211,9 +205,7 @@ public partial class ClientsDetail
                 );
 
             // Tell the world what we did.
-            Snackbar.Add(
-                Localizer["ChangesSaved"]
-                );
+            Snackbar.Add("The changes were saved");
         }
         catch (Exception ex)
         {
@@ -226,7 +218,7 @@ public partial class ClientsDetail
             // Tell the world what happened.
             await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
         }
         finally

@@ -1,23 +1,23 @@
 ﻿<MudTabs>
-    <MudTabPanel Text=@Localizer["Consent"]>
+    <MudTabPanel Text="Consent">
         <ClientConsentPanel Model="@Model" />
     </MudTabPanel>
-    <MudTabPanel Text=@Localizer["CORS"]>
+    <MudTabPanel Text="CORS">
         <ClientCorsPanel Model="@Model" />
     </MudTabPanel>
-    <MudTabPanel Text=@Localizer["IdentityProviderRestrictions"]>
+    <MudTabPanel Text="Identity Providers">
         <ClientIdentityProviderPanel Model="@Model" />
     </MudTabPanel>
-    <MudTabPanel Text=@Localizer["Pkce"]>
+    <MudTabPanel Text="Pkce">
         <ClientPkcePanel Model="@Model" />
     </MudTabPanel>
-    <MudTabPanel Text=@Localizer["Properties"]>
+    <MudTabPanel Text="Properties">
         <ClientPropertiesPanel Model="@Model" />
     </MudTabPanel>
-    <MudTabPanel Text=@Localizer["SSO"]>
+    <MudTabPanel Text="SSO">
         <ClientSsoPanel Model="@Model" />
     </MudTabPanel>
-    <MudTabPanel Text=@Localizer["Tokens"]>
+    <MudTabPanel Text="Tokens">
         <ClientTokenPanel Model="@Model" />
     </MudTabPanel>  
 </MudTabs>

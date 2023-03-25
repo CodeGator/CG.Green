@@ -1,34 +1,34 @@
 ﻿<MudGrid>
     <MudItem xs="12">&nbsp;</MudItem>
     <MudItem xs="12">
-        <MudTextField AutoFocus 
+        <MudTextField AutoFocus
                       Margin="Margin.Dense"
                       Class="ml-auto"
                       Variant="Variant.Outlined"
                       InputType="InputType.Number"
-                      Label=@Localizer["UserSsoLifetime"]
-                      HelperText=@Localizer["UserSsoLifetimeHelp"]
+                      Label="User SSO Lifetime"
+                      HelperText="The maximum duration (in seconds) since the last time the user authenticated."
                       For="@(() => Model.UserSsoLifetime)"
-                      @bind-Value="@Model.UserSsoLifetime" />
+        @bind-Value="@Model.UserSsoLifetime" />
     </MudItem>
     <MudItem xs="12">
-    <MudCheckBox T="bool"
-                    Class="mb-n3"
-                    @bind-Checked="Model.FrontChannelLogoutSessionRequired"
-                    Label=@Localizer["FrontChannelLogoutSessionRequired"] />
-    <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["FrontChannelLogoutSessionRequiredHelp"]</MudText>
+        <MudCheckBox T="bool"
+                     Class="mb-n3"
+        @bind-Checked="Model.FrontChannelLogoutSessionRequired"
+                     Label="Front Channel Logout Session Required" />
+        <MudText Class="text-muted ml-3" Typo="Typo.caption">Indicates whether or not the user's session id should be sent to the Front Channel Logout URI.</MudText>
     </MudItem>
     <MudItem xs="12">
         <MudTextField Immediate
                         OnlyValidateIfDirty
-                        Margin="Margin.Dense"
-                        Counter="@(Globals.Models.Clients.FrontChannelLogoutUriLength)"
-                        Class="ml-auto mb-2 mt-4"
-                        Variant="Variant.Outlined"
-                        Label=@Localizer["FrontChannelLogoutUri"]
-                        HelperText=@Localizer["FrontChannelLogoutUriHelp"]
-                        For="@(() => Model.FrontChannelLogoutUri.Value)"
-                        @bind-Value="@Model.FrontChannelLogoutUri.Value" />
+                      Margin="Margin.Dense"
+                      Counter="@(Globals.Models.Clients.FrontChannelLogoutUriLength)"
+                      Class="ml-auto mb-2 mt-4"
+                      Variant="Variant.Outlined"
+                      Label="Front Channel Logout URI"
+                      HelperText="The logout URI for HTTP front-channel based logout"
+                      For="@(() => Model.FrontChannelLogoutUri.Value)"
+        @bind-Value="@Model.FrontChannelLogoutUri.Value" />
     </MudItem>
     <MudItem xs="12">&nbsp;</MudItem>
 </MudGrid>

@@ -45,12 +45,6 @@ public partial class ClientPropertiesPanel
 	protected ISnackbar Snackbar { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientPropertiesPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the dialog service for the component.
 	/// </summary>
 	[Inject]

@@ -12,33 +12,15 @@
 
         <AuthorizeView>
             <NotAuthorized>
-                <MudAlert Class="my-8" Severity="Severity.Info">@Localizer["Login"]</MudAlert>
+                <MudAlert Class="my-8" Severity="Severity.Info">Login</MudAlert>
             </NotAuthorized>
         </AuthorizeView>
-
-        <MudText Class="pt-3" Typo="Typo.h6">@Localizer["Microservice"]</MudText>
-        <ul style="list-style-type:square;">
-
-        <li style="margin: 10px">@Localizer["Bullet1"] (<a style=@($"color: {GreenTheme.Instance().Palette.Info}") href="https://opensource.org/licenses/MIT">MIT</a> @Localizer["License"] *).</li>
-        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet2"]))</li>
-        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet3", GreenTheme.Instance().Palette.Info]))</li>
-        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet4", GreenTheme.Instance().Palette.Info, GreenTheme.Instance().Palette.Info]))</li>
-        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet5", GreenTheme.Instance().Palette.Info]))</li>
-        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet6", GreenTheme.Instance().Palette.Info]))</li>
-        <li style="margin: 10px">@(new MarkupString(Localizer["Bullet7", GreenTheme.Instance().Palette.Info]))</li>
-        <li style="margin: 10px">@Localizer["Bullet8"]</li>
-        <li style="margin: 10px">@Localizer["Bullet9"]</li>
-        <li style="margin: 10px">@Localizer["Bullet11"]</li>
-        <li style="margin: 10px">@Localizer["Bullet12"]</li>
-        </ul>
-        <br />
-        <MudText Style=@($"color: {GreenTheme.Instance().Palette.GrayDefault}") Class="px-4" Typo="Typo.caption">@Localizer["Bullet10"])</MudText>
     </div>
 }
 else if (_model.User is null)
 {
     <MudText Typo="Typo.h4">@typeof(Index).Assembly.ReadProduct()</MudText>
-    <MudText Class="my-2" Typo="Typo.body1">@Localizer["SiteAdmin"]</MudText>
+    <MudText Class="my-2" Typo="Typo.body1">SiteAdmin</MudText>
 
     <hr />
 
@@ -53,7 +35,7 @@ else if (_model.User is null)
                                             Immediate
                                     Counter="@(Globals.Models.Users.UserNameLength)"
                                     Variant="Variant.Outlined"
-                                    Label=@Localizer["UserName"]
+                                    Label="User Name"
                                     For="@(() => _model.UserName)"
                                     @bind-Value="@_model.UserName"
                                     Class="ml-auto" />
@@ -61,7 +43,7 @@ else if (_model.User is null)
                                             Immediate
                                     Counter="@(Globals.Models.Users.EmailLength)"
                                     Variant="Variant.Outlined"
-                                    Label=@Localizer["Email"]
+                                    Label="Email"
                                     For="@(() => _model.Email)"
                                     @bind-Value="@_model.Email"
                                     Class="ml-auto" />
@@ -70,7 +52,7 @@ else if (_model.User is null)
                                             Immediate
                                     Counter="@(Globals.Models.Users.PasswordHashLength)"
                                     Variant="Variant.Outlined"
-                                    Label=@Localizer["Password"]
+                                    Label="Password"
                                     For="@(() => _model.Password)"
                                     @bind-Value="@_model.Password"
                                     InputType="@_passwordInput"
@@ -82,7 +64,7 @@ else if (_model.User is null)
                                             Immediate
                                     Counter="@(Globals.Models.Users.PasswordHashLength)"
                                     Variant="Variant.Outlined"
-                                    Label=@Localizer["ConfirmPassword"]
+                                    Label="Confirm Password"
                                     For="@(() => _model.ConfirmPassword)"
                                     @bind-Value="@_model.ConfirmPassword"
                                     InputType="@_passwordInput"
@@ -96,7 +78,7 @@ else if (_model.User is null)
                                 FullWidth
                                 Variant="Variant.Filled"
                                 Color="Color.Primary"
-                                Class="ml-auto">@Localizer["CreateAccount"]</MudButton>
+                                Class="ml-auto">Create Account</MudButton>
                     </MudCardActions>
                 </MudCard>
             </EditForm>

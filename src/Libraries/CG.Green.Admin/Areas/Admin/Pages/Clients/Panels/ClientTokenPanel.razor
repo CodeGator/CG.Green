@@ -3,7 +3,7 @@
     
     <!-- Access Token Group -->
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["AccessTokens"]>
+        <GroupBox Title="Access Tokens">
             <MudGrid>
                 <MudItem xs="12">
                     <MudTextField AutoFocus
@@ -11,8 +11,8 @@
                                   Class="ml-auto"
                                   Variant="Variant.Outlined"
                                   InputType="InputType.Number"
-                                  Label=@Localizer["AccessTokenLifetime"]
-                                  HelperText=@Localizer["AccessTokenLifetimeHelp"]
+                                  Label="Access Token Lifetime"
+                                  HelperText="Lifetime of an access token in seconds."
                                   For="@(() => Model.AccessTokenLifetime)"
                                   @bind-Value="@Model.AccessTokenLifetime" />
                 </MudItem>
@@ -21,9 +21,9 @@
                                Dense
                                Variant="Variant.Outlined"
                                Margin="Margin.Dense"
-                               Label=@Localizer["AccessTokenType"]
+                               Label="Access Token Type"
                                @bind-Value="Model.AccessTokenType"
-                               HelperText=@Localizer["AccessTokenTypeHelp"]>
+                               HelperText="Specifies whether the access token is a reference token or a self contained JWT token.">
                         @foreach (var enumValue in Enum.GetValues<AccessTokenType>())
                         {
                             <MudSelectItem Value=@enumValue>@Enum.GetName(typeof(AccessTokenType), enumValue)</MudSelectItem>
@@ -31,18 +31,18 @@
                     </MudSelect>
                 </MudItem>
                 <MudItem xs="12">
-                    <MudSwitch Label=@Localizer["AllowAccessTokensViaBrowser"]
+                    <MudSwitch Label="Allow access tokens via browser"
                                Color="Color.Tertiary"
                                Class="mt-n2"
                                @bind-Checked="@Model.AllowAccessTokensViaBrowser" />
-                    <MudText Class="ml-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">@Localizer["AllowAccessTokensViaBrowserHelp"]</MudText>
+                    <MudText Class="ml-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">Controls whether access tokens are transmitted via the browser, for this client.</MudText>
                 </MudItem>
                 <MudItem xs="12">
-                    <MudSwitch Label=@Localizer["UpdateAccessTokenClaimsOnRefresh"]
+                    <MudSwitch Label="Update access token claims on refresh"
                                Color="Color.Tertiary"
                                Class="mt-n2"
                                @bind-Checked="@Model.UpdateAccessTokenClaimsOnRefresh" />
-                    <MudText Class="ml-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">@Localizer["UpdateAccessTokenClaimsOnRefreshHelp"]</MudText>
+                    <MudText Class="ml-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">Controls whether the access token (and its claims) should be updated on a refresh token request</MudText>
                 </MudItem>
             </MudGrid>
         </GroupBox>
@@ -50,34 +50,34 @@
     
     <!-- Identity Token Group -->
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["IdentityTokens"]>
+        <GroupBox Title="Identity Tokens">
             <MudItem xs="12">
                 <MudTextField Margin="Margin.Dense"
                               Class="ml-auto"
                               Variant="Variant.Outlined"
                               InputType="InputType.Number"
-                              Label=@Localizer["IdentityTokenLifetime"]
-                              HelperText=@Localizer["IdentityTokenLifetimeHelp"]
+                              Label="Identity Token Lifetime"
+                              HelperText="Lifetime of an identity token in seconds."
                               For="@(() => Model.IdentityTokenLifetime)"
                               @bind-Value="@Model.IdentityTokenLifetime" />
             </MudItem>
             <MudItem xs="12">
-                <MudSwitch Label=@Localizer["AlwaysIncludeUserClaimsInIdentityToken"]
+                <MudSwitch Label="Always include user claims in identity token"
                            Class="mt-2"
                            Color="Color.Tertiary"
                            @bind-Checked="@Model.AlwaysIncludeUserClaimsInIdToken" />
-                <MudText Class="ml-2 mb-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">@Localizer["AlwaysIncludeUserClaimsInIdentityTokenHelp"]</MudText>
+                <MudText Class="ml-2 mb-2" Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">Should user claims always be added to the id token instead of requiring the client to use the userinfo endpoint.</MudText>
             </MudItem>  
             <MudItem xs="12">
-                <GroupBox Class="mt-4" Title=@Localizer["AllowedSigningAlgorithms"]>
-                    <MudText Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">@Localizer["AllowedSigningAlgorithmsHelp"]</MudText>
+                <GroupBox Class="mt-4" Title="Allowed Signing Algorithms">
+                    <MudText Style=@($"color: {Theme.Palette.GrayDark}") Typo="Typo.caption">Signing algorithm for identity token. If empty, will use the Duende default signing algorithm</MudText>
                     <MudTable Items="Model.AllowedIdentityTokenSigningAlgorithms" Elevation="0">
                         <ToolBarContent>
                             <MudButton StartIcon="@Icons.Material.Outlined.Create"
                                        Variant="Variant.Filled"
                                        Disabled="@_isLoading"
                                        Color="Color.Primary"
-                                       OnClick="OnCreateSigningAlgorithmAsync">@Localizer["Create"]</MudButton>
+                                       OnClick="OnCreateSigningAlgorithmAsync">Create</MudButton>
                             <MudSpacer />
                         </ToolBarContent>
                         <ColGroup>
@@ -100,13 +100,13 @@
                             </MudTd>
                         </RowTemplate>
                         <PagerContent>
-                            <MudTablePager RowsPerPageString=@Localizer["RowsPerPage"] />
+                            <MudTablePager />
                         </PagerContent>
                         <NoRecordsContent>
-                            @Localizer["NoSigningAlgorithms"]
+                            No algorithms found
                         </NoRecordsContent>
                         <LoadingContent>
-                            @Localizer["LoadingSigningAlgorithms"]
+                            Loading ...
                         </LoadingContent>
                     </MudTable>
                 </GroupBox>                
@@ -116,23 +116,23 @@
 
     <!-- Refresh Token Group -->
     <MudItem xs="12">
-        <GroupBox Title=@Localizer["RefreshTokens"]>
+        <GroupBox Title="Refresh Tokens">
             <MudItem xs="12">
                 <MudCheckBox T="bool"
                              Class="mb-n3"
                              @bind-Checked="Model.AllowOfflineAccess"
-                             Label=@Localizer["AllowOfflineAccess"] />
-                <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["AllowOfflineAccessHelp"]</MudText>
+                             Label="Allow Offline Access" />
+                <MudText Class="text-muted ml-3" Typo="Typo.caption">Enable/disable refresh tokens.</MudText>
             </MudItem>
             <MudItem xs="12">
                 <MudSelect T="TokenExpiration"
                            Dense
                            Class="mb-4"
-                           Label=@Localizer["RefreshTokenExpiration"]
+                           Label="Refresh Token Expiration"
                            Variant="Variant.Outlined"
                            Margin="Margin.Dense"
                            @bind-Value="Model.RefreshTokenExpiration"
-                           HelperText=@Localizer["RefreshTokenExpirationHelp"]>
+                           HelperText="Absolute: the refresh token will expire on a fixed point in time. Sliding: when refreshing the token, the lifetime of the refresh token will be renewed.">
                     @foreach (var enumValue in Enum.GetValues<TokenExpiration>())
                     {
                         <MudSelectItem Value=@enumValue>@Enum.GetName(typeof(TokenExpiration), enumValue)</MudSelectItem>
@@ -143,11 +143,11 @@
                 <MudSelect T="TokenUsage"
                            Dense
                            Class="mb-4"
-                           Label=@Localizer["RefreshTokenUsage"]
+                           Label="Refresh Token Usage"
                            Variant="Variant.Outlined"
                            Margin="Margin.Dense"
                            @bind-Value="Model.RefreshTokenUsage"
-                           HelperText=@Localizer["RefreshTokenUsageHelp"]>
+                           HelperText="ReUse: the refresh token handle will stay the same when refreshing tokens. OneTime: the refresh token handle will be updated when refreshing tokens.">
                     @foreach (var enumValue in Enum.GetValues<TokenUsage>())
                     {
                         <MudSelectItem Value=@enumValue>@Enum.GetName(typeof(TokenUsage), enumValue)</MudSelectItem>
@@ -159,8 +159,8 @@
                               Class="ml-auto mb-4"
                               Variant="Variant.Outlined"
                               InputType="InputType.Number"
-                              Label=@Localizer["AbsoluteRefreshTokenLifetime"]
-                              HelperText=@Localizer["AbsoluteRefreshTokenLifetimeHelp"]
+                              Label="Absolute Refresh Token Lifetime"
+                              HelperText="Absolute lifetime of a refresh token in seconds."
                               For="@(() => Model.AbsoluteRefreshTokenLifetime)"
                               @bind-Value="@Model.AbsoluteRefreshTokenLifetime" />
             </MudItem>
@@ -169,8 +169,8 @@
                               Class="ml-auto mb-4"
                               Variant="Variant.Outlined"
                               InputType="InputType.Number"
-                              Label=@Localizer["SlidingRefreshTokenLifetime"]
-                              HelperText=@Localizer["SlidingRefreshTokenLifetimeHelp"]
+                              Label="Sliding Refresh Token Lifetime"
+                              HelperText="Sliding lifetime of a refresh token in seconds."
                               For="@(() => Model.SlidingRefreshTokenLifetime)"
                               @bind-Value="@Model.SlidingRefreshTokenLifetime" />
             </MudItem>
@@ -178,8 +178,8 @@
                 <MudCheckBox T="bool?"
                              Class="mb-n3"
                              @bind-Checked="Model.CoordinateLifetimeWithUserSession"
-                             Label=@Localizer["CoordinateLifetimeWithUserSession"] />
-                <MudText Class="text-muted ml-3" Typo="Typo.caption">@Localizer["CoordinateLifetimeWithUserSessionHelp"]</MudText>
+                             Label="Coordinate Lifetime with User Session" />
+                <MudText Class="text-muted ml-3" Typo="Typo.caption">Tie the client's token lifetime to the user's session lifetime.</MudText>
             </MudItem>
         </GroupBox>
     </MudItem>

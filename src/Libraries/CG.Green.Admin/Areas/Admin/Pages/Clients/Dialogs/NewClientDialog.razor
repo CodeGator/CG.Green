@@ -11,9 +11,9 @@
                                   Margin="Margin.Dense"
                                   Counter="@(Globals.Models.Clients.ClientIdLength)"
                                   Variant="Variant.Outlined"
-                                  Label=@Localizer["ClientId"]
+                                  Label="Client Id"
                                   Mask="@(new RegexMask(@"^[\.a-zA-Z0-9]*$"))"
-                                  HelperText=@Localizer["ClientIdHelp"]
+                                  HelperText="Use letters, numbers, or periods to form a client name."
                                   For="@(() => Model.ClientId)"
                                   @bind-Value="@Model.ClientId"
                                   Adornment="Adornment.End"
@@ -23,8 +23,8 @@
                                   Class="ml-auto" />
                     </MudCardContent>
                     <MudCardActions>
-                        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">@Localizer["Cancel"]</MudButton>
-                        <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">@Localizer["Save"]</MudButton>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="mr-2 ml-auto" OnClick="Cancel">Cancel</MudButton>
+                        <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Primary">Save</MudButton>
                     </MudCardActions>
             </MudCard>
         </EditForm>

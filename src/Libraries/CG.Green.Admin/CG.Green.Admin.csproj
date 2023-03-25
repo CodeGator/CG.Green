@@ -31,91 +31,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Areas\Admin\Pages\Clients\ClientsDetail.razor.Designer.cs">
-        <DependentUpon>ClientsDetail.razor.resx</DependentUpon>
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Dialogs\ClientClaimDialog.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientClaimDialog.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Dialogs\AlgorithmDialog.razor.Designer.cs">
-        <DependentUpon>AlgorithmDialog.razor.resx</DependentUpon>
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Dialogs\ProviderDialog.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ProviderDialog.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Dialogs\UriDialog.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>UriDialog.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientAdvancedPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientAdvancedPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientClaimsPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientClaimsPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientConsentPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientConsentPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientCorsPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientCorsPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientIdentityProviderPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientIdentityProviderPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientMiscPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientMiscPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientPkcePanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientPkcePanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientSecretsPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientSecretsPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientSettingsPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientSettingsPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientSsoPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientSsoPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientTokenPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientTokenPanel.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Panels\ClientUrisPanel.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientUrisPanel.razor.resx</DependentUpon>
-      </Compile>
       <Compile Update="Areas\Admin\Pages\Roles\Panels\RoleClaimsPanel.razor.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -161,21 +76,6 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>DeleteDialog.razor.resx</DependentUpon>
       </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\ClientsIndex.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientsIndex.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Dialogs\NewClientDialog.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>NewClientDialog.razor.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Areas\Admin\Pages\Clients\Dialogs\ClientSecretDialog.razor.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ClientSecretDialog.razor.resx</DependentUpon>
-      </Compile>
       <Compile Update="Properties\Resources.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -189,77 +89,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\ClientsDetail.razor.resx">
-        <LastGenOutput>ClientsDetail.razor.Designer.cs</LastGenOutput>
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\ClientClaimDialog.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientClaimDialog.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\AlgorithmDialog.razor.resx">
-        <LastGenOutput>AlgorithmDialog.razor.Designer.cs</LastGenOutput>
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\ProviderDialog.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ProviderDialog.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\UriDialog.razor.es.resx">
-        <Generator></Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\UriDialog.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>UriDialog.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientAdvancedPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientAdvancedPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientClaimsPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientClaimsPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientConsentPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientConsentPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientCorsPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientCorsPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientIdentityProviderPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientIdentityProviderPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientMiscPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientMiscPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientPkcePanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientPkcePanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientSecretsPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientSecretsPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientSettingsPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientSettingsPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientSsoPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientSsoPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientTokenPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientTokenPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Panels\ClientUrisPanel.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientUrisPanel.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
       <EmbeddedResource Update="Areas\Admin\Pages\Roles\Panels\RoleClaimsPanel.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>RoleClaimsPanel.razor.Designer.cs</LastGenOutput>
@@ -295,21 +124,6 @@
       <EmbeddedResource Update="Areas\Admin\Shared\DeleteDialog.razor.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>DeleteDialog.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\ClientsDetail.razor.es.resx">
-        <Generator></Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\ClientsIndex.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientsIndex.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\NewClientDialog.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>NewClientDialog.razor.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Areas\Admin\Pages\Clients\Dialogs\ClientSecretDialog.razor.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>ClientSecretDialog.razor.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Properties\Resources.resx">
         <Generator>ResXFileCodeGenerator</Generator>

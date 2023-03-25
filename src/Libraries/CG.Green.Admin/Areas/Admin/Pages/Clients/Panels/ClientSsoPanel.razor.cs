@@ -38,12 +38,6 @@ public partial class ClientSsoPanel
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientSsoPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the snackbar service for the component.
 	/// </summary>
 	[Inject]
@@ -68,5 +62,4 @@ public partial class ClientSsoPanel
 	protected ILogger<ClientSsoPanel> Logger { get; set; } = null!;
 
 	#endregion
-
 }

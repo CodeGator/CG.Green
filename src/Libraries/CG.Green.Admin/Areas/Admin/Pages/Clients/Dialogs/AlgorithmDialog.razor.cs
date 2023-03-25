@@ -31,12 +31,6 @@ public partial class AlgorithmDialog
     protected IDialogService Dialog { get; set; } = null!;
         
     /// <summary>
-    /// This property contains the localizer for this dialog.
-    /// </summary>
-    [Inject]
-    protected IStringLocalizer<AlgorithmDialog> Localizer { get; set; } = null!;
-
-    /// <summary>
     /// This property contains the logger for this dialog.
     /// </summary>
     [Inject]

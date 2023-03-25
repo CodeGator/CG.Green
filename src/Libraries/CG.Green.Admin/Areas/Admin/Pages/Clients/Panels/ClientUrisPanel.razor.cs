@@ -38,12 +38,6 @@ public partial class ClientUrisPanel
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientUrisPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the snackbar service for the component.
 	/// </summary>
 	[Inject]
@@ -115,7 +109,7 @@ public partial class ClientUrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				Localizer["CreatePostLogoutURI"],
+				"CreatePostLogoutURI",
 				parameters,
 				options
 				);
@@ -156,7 +150,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -206,7 +200,7 @@ public partial class ClientUrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				Localizer["EditPostLogoutURI"],
+				"EditPostLogoutURI",
 				parameters,
 				options
 				);
@@ -245,7 +239,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -304,7 +298,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -351,7 +345,7 @@ public partial class ClientUrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				Localizer["CreateRedirectURI"],
+				"CreateRedirectURI",
 				parameters,
 				options
 				);
@@ -392,7 +386,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -442,7 +436,7 @@ public partial class ClientUrisPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<UriDialog>(
-				Localizer["EditRedirectURI"],
+				"EditRedirectURI",
 				parameters,
 				options
 				);
@@ -481,7 +475,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -540,7 +534,7 @@ public partial class ClientUrisPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}

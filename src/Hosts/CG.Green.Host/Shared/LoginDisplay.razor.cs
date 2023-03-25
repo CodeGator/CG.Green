@@ -18,12 +18,6 @@ public partial class LoginDisplay
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for this component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<LoginDisplay> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the logger for this component.
 	/// </summary>
 	[Inject]

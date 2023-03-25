@@ -44,12 +44,6 @@ public partial class ClientIdentityProviderPanel
 	protected ISnackbar Snackbar { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientIdentityProviderPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the dialog service for the component.
 	/// </summary>
 	[Inject]
@@ -109,7 +103,7 @@ public partial class ClientIdentityProviderPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ProviderDialog>(
-				Localizer["CreateRestriction"],
+				"CreateRestriction",
 				parameters,
 				options
 				);
@@ -150,7 +144,7 @@ public partial class ClientIdentityProviderPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -200,7 +194,7 @@ public partial class ClientIdentityProviderPanel
 
 			// Create the dialog.
 			var dialog = Dialog.Show<ProviderDialog>(
-				Localizer["EditRestriction"],
+				"EditRestriction",
 				parameters,
 				options
 				);
@@ -239,7 +233,7 @@ public partial class ClientIdentityProviderPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}
@@ -298,7 +292,7 @@ public partial class ClientIdentityProviderPanel
 			// Tell the world what happened.
 			await Dialog.ShowErrorBox(
 				exception: ex,
-				title: Localizer["Broke"]
+				title: "Something broke!"
 				);
 		}
 	}

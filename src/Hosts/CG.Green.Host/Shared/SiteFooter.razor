@@ -2,13 +2,9 @@
            Color="Color.Inherit" 
            Dense 
            Elevation="0">
-    <MudGrid Class="mt-1">
-        <MudItem xs="3">
-            <CultureSelector />            
+    <MudGrid>
+        <MudItem xs="12">
+            <MudText Style="font-size: x-small" Align="Align.Center">@Assembly.GetEntryAssembly()?.ReadCopyright()</MudText>
         </MudItem>
-        <MudItem xs="6">
-            <MudText Class="mt-2" Style="font-size: x-small" Align="Align.Center">@Assembly.GetEntryAssembly()?.ReadCopyright()</MudText>
-        </MudItem>
-        <MudItem xs="3">&nbsp;</MudItem>
     </MudGrid>
 </MudAppBar>

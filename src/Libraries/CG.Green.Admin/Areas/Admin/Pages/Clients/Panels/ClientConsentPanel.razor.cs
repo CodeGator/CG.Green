@@ -38,12 +38,6 @@ public partial class ClientConsentPanel
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for the component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<ClientConsentPanel> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the snackbar service for the component.
 	/// </summary>
 	[Inject]
@@ -68,5 +62,4 @@ public partial class ClientConsentPanel
 	protected ILogger<ClientConsentPanel> Logger { get; set; } = null!;
 
 	#endregion
-
 }

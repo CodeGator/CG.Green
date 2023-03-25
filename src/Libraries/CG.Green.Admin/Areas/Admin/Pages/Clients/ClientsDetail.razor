@@ -1,7 +1,7 @@
 ﻿@page "/admin/clients/{ClientId}/detail"
 @attribute [Authorize(Policy = PolicyNameDefaults.SuperAdminPolicy)]
 
-<PageTitle>@Localizer["Title"]</PageTitle>
+<PageTitle>Client Details</PageTitle>
 
 <MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
 
@@ -9,43 +9,43 @@
 {
     if (_isLoading)
     {
-        <MudText Typo="Typo.h6" Color="Color.Primary">@Localizer["Loading"] ...</MudText>
+        <MudText Typo="Typo.h6" Color="Color.Primary">Loading ...</MudText>
     }
     else
     {
-        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">@Localizer["NotFound"]</MudText>
-        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => Navigation.NavigateTo("/admin/clients"))">@Localizer["BackToClients"]</MudButton>
+        <MudText Class="py-5" Typo="Typo.h6" Color="Color.Warning">Ooops! We failed to find that client!</MudText>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => Navigation.NavigateTo("/admin/clients"))">Back to clients</MudButton>
     }
 }
 else
 {
-    <MudText Typo="Typo.h4">@Localizer["Title"]</MudText>
-    <MudText Class="py-5" Typo="Typo.body1">@Localizer["PageDesc"]: <b>@_model.ClientId</b></MudText>
+    <MudText Typo="Typo.h4">Client Details</MudText>
+    <MudText Class="py-5" Typo="Typo.body1">Use this page to edit the Duende client: <b>@_model.ClientId</b></MudText>
 
     <EditForm Model="_model" OnValidSubmit="OnValidSubmitAsync">
         <DataAnnotationsValidator />
         <ValidationSummary />
-        <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">@Localizer["SaveChanges"]</MudButton>
+        <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
         <MudTabs>
-            <MudTabPanel Text=@Localizer["Settings"]>
+            <MudTabPanel Text=Settings>
                 <ClientSettingsPanel Model="@_model" />
             </MudTabPanel>
-            <MudTabPanel Text=@Localizer["Secrets"]>
+            <MudTabPanel Text=Secrets>
                 <ClientSecretsPanel Model="@_model" />
             </MudTabPanel>
-            <MudTabPanel Text=@Localizer["Uris"]>
+            <MudTabPanel Text=Uris>
                 <ClientUrisPanel Model="@_model" />
             </MudTabPanel>
-            <MudTabPanel Text=@Localizer["Claims"]>
+            <MudTabPanel Text=Claims>
                 <ClientClaimsPanel Model="@_model" />
             </MudTabPanel>
-            <MudTabPanel Text=@Localizer["Advanced"]>
+            <MudTabPanel Text=Advanced>
                 <ClientAdvancedPanel Model="@_model" />
             </MudTabPanel>
-            <MudTabPanel Text=@Localizer["Misc"]>
+            <MudTabPanel Text=Misc>
                 <ClientMiscPanel Model="@_model" />
             </MudTabPanel>
         </MudTabs>
-        <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">@Localizer["SaveChanges"]</MudButton>
+        <MudButton Class="my-2" ButtonType="ButtonType.Submit" FullWidth Variant="Variant.Filled" Color="Color.Primary">Save Changes</MudButton>
     </EditForm>
 }

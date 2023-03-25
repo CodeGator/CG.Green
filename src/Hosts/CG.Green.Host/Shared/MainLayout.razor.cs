@@ -31,12 +31,6 @@ public partial class MainLayout
 	public MudTheme Theme { get; set; } = null!;
 
 	/// <summary>
-	/// This property contains the localizer for this component.
-	/// </summary>
-	[Inject]
-	protected IStringLocalizer<MainLayout> Localizer { get; set; } = null!;
-
-	/// <summary>
 	/// This property contains the logger for this component.
 	/// </summary>
 	[Inject]

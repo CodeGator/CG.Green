@@ -37,12 +37,6 @@ public partial class ClientSecretDialog
     protected IDialogService Dialog { get; set; } = null!;
 
     /// <summary>
-    /// This property contains the localizer for this dialog.
-    /// </summary>
-    [Inject]
-    protected IStringLocalizer<ClientSecretDialog> Localizer { get; set; } = null!;
-
-    /// <summary>
     /// This property contains the logger for this dialog.
     /// </summary>
     [Inject]
